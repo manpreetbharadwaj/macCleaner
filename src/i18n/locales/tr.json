@@ -1,0 +1,1007 @@
+{
+  "meta": {
+    "englishName": "Turkish",
+    "nativeName": "Türkçe",
+    "dir": "ltr",
+    "order": 15
+  },
+  "common": {
+    "tagline": "Toparlayın. Önemli olanı saklayın.",
+    "unknown": "Bilinmiyor",
+    "notAvailable": "Kullanılamıyor",
+    "cancel": "Vazgeç",
+    "close": "Kapat",
+    "clear": "Temizle",
+    "continue": "Devam",
+    "back": "Geri",
+    "dismiss": "Kapat",
+    "refresh": "Yenile",
+    "rescan": "Yeniden tara",
+    "scanAgain": "Tekrar tara",
+    "search": "Ara",
+    "noMatches": "Sonuç yok.",
+    "reset": "Sıfırla",
+    "off": "Kapalı",
+    "no": "Hayır",
+    "selectAll": "Tümünü seç",
+    "selectItem": "{{name}} öğesini seç",
+    "quickLook": "Hızlı Bakış",
+    "revealInFinder": "Finder’da Göster",
+    "showInFinder": "Finder’da Göster",
+    "neverSuggest": "Bir daha önerme",
+    "moveToTrash": "Çöp Sepeti’ne Taşı",
+    "items_one": "{{count}} öğe",
+    "items_other": "{{count}} öğe",
+    "files_one": "{{count}} dosya",
+    "files_other": "{{count}} dosya",
+    "openSystemSettings": "Sistem Ayarları’nı Aç",
+    "open": "Aç"
+  },
+  "safety": {
+    "green": "Güvenli",
+    "orange": "Gözden geçir",
+    "red": "Korumalı"
+  },
+  "scanGate": {
+    "scanningTitle": "Mac’iniz taranıyor…",
+    "gettingStarted": "Başlatılıyor…",
+    "promptTitle": {
+      "largeFiles": "Büyük dosyaları bulmak için tarayın",
+      "downloads": "Eski indirmeleri bulmak için tarayın",
+      "duplicates": "Kopya dosyaları bulmak için tarayın",
+      "apps": "Uygulamaları ve artıklarını bulmak için tarayın",
+      "systemJunk": "Sistem çöplerini bulmak için tarayın",
+      "storage": "Depolama alanını neyin kullandığını görmek için tarayın",
+      "smartClean": "Nelerin kaldırılabileceğini görmek için tarayın"
+    },
+    "promptSubtitle": "Hızlı ve yerel bir tarama Mac’inizde neler olduğunu gösterir. Siz gözden geçirmeden hiçbir şey kaldırılmaz.",
+    "scanButton": "Mac’imi tara"
+  },
+  "selectionBar": {
+    "selected_one": "{{count}} öğe seçildi",
+    "selected_other": "{{count}} öğe seçildi",
+    "willMove": "{{size}} Çöp Sepeti’ne taşınacak"
+  },
+  "items": {
+    "dev": {
+      "xcodeDerivedData": {
+        "name": "Xcode DerivedData",
+        "why": "Xcode’un bir sonraki derlemede otomatik olarak yeniden oluşturduğu ara derleme ürünleri.",
+        "what": "Xcode yeniden dizinleyip derlerken bir sonraki derlemeniz daha uzun sürer."
+      },
+      "xcodeArchives": {
+        "name": "Xcode Arşivleri",
+        "why": "App Store gönderimleri ve TestFlight dağıtımı için arşivlenmiş derlemeler.",
+        "what": "O derleme için artık dSYM dışa aktaramaz veya yeniden gönderemezsiniz."
+      },
+      "xcodeDeviceSupportIos": {
+        "name": "iOS Aygıt Desteği",
+        "why": "Geçmişte bağladığınız iOS aygıtları için önbelleğe alınmış hata ayıklama sembolleri.",
+        "what": "Aygıtı bir sonraki bağlayışınızda Xcode desteği yeniden indirir."
+      },
+      "xcodeDeviceSupportWatchos": {
+        "name": "watchOS Aygıt Desteği",
+        "why": "Test yaptığınız eşlenmiş Apple Watch’lar için önbelleğe alınmış hata ayıklama sembolleri.",
+        "what": "Aygıtı bir sonraki bağlayışınızda Xcode desteği yeniden indirir."
+      },
+      "xcodeSimulatorCaches": {
+        "name": "Simülatör Önbellekleri",
+        "why": "iOS/watchOS Simülatörü’nün gerektiğinde otomatik olarak yeniden oluşturduğu veriler.",
+        "what": "Etkisi yok: Simülatör önbelleğini otomatik olarak yeniden oluşturur."
+      },
+      "xcodeSimulatorDevices": {
+        "name": "Simülatör Aygıtları",
+        "why": "Yüklü test uygulaması verileri dahil, her simüle edilmiş iOS/watchOS/tvOS aygıtının depolama alanı.",
+        "what": "Simülatör aygıtlarının ve üzerlerine yüklenen uygulama verilerinin yeniden oluşturulması gerekir."
+      },
+      "npmCache": {
+        "name": "npm Önbelleği",
+        "why": "npm’in gelecekteki yüklemelerde ağı atlayabilmek için sakladığı indirilmiş paket arşivleri.",
+        "what": "Gelecekteki npm yüklemeleri yerel önbellek yerine paketleri yeniden indirir."
+      },
+      "yarnCache": {
+        "name": "Yarn Önbelleği",
+        "why": "Yarn’ın tüm projeleriniz için sakladığı paket önbelleği.",
+        "what": "Yüklemeler ağı kullanır; zaten yüklü projeler etkilenmez."
+      },
+      "pnpmStore": {
+        "name": "pnpm Deposu",
+        "why": "pnpm’in tüm projeleriniz için sakladığı paylaşılan paket deposu.",
+        "what": "Yüklemeler ağı kullanır; zaten yüklü projeler etkilenmez."
+      },
+      "metroCache": {
+        "name": "Metro Paketleyici Önbelleği",
+        "why": "Metro’nun (React Native) sistemin geçici klasörüne yazdığı geçici önbellek.",
+        "what": "Projenizde “npx react-native start --reset-cache” ile temizleyin: MacBook Cleaner’ın asla dokunmadığı bir sistem klasöründedir."
+      },
+      "gradleCaches": {
+        "name": "Gradle Önbellekleri",
+        "why": "Android/Gradle projelerinin paylaştığı indirilmiş bağımlılıklar ve derleme meta verileri.",
+        "what": "Gradle bir sonraki derlemede bağımlılıkları yeniden indirip çözümler (ilk derleme daha yavaştır)."
+      },
+      "androidAvd": {
+        "name": "Android Emülatörü Görüntüleri",
+        "why": "Sanal aygıt görüntüleri ve Android emülatörlerinize yüklenen tüm veriler.",
+        "what": "Yeniden kullandığınız her emülatörü yeniden oluşturmanız gerekir; içindeki test uygulaması verileri kaybolur."
+      },
+      "cocoapodsCache": {
+        "name": "CocoaPods Önbelleği",
+        "why": "Tüm iOS projeleriniz için önbelleğe alınmış pod tanımları ve kaynakları.",
+        "what": "“pod install” bir sonraki çalışmada pod’ları yeniden indirir."
+      },
+      "unknown": {
+        "why": "Bu Mac’te algılanan bir geliştirici aracının kullandığı depolama alanı.",
+        "what": "Kaldırmadan önce gözden geçirin: aracın bu verileri yeniden oluşturması gerekebilir."
+      }
+    },
+    "updatedRecently": "Yakın zamanda güncellendi",
+    "browser": {
+      "name": "{{browser}} Önbelleği ve Geçici Dosyaları",
+      "why": "Tarayıcının otomatik olarak yeniden oluşturduğu önbelleğe alınmış web sitesi verileri.",
+      "what": "Web siteleri bir sonraki ziyaretinizde tüm içeriği yeniden yükler. Parolalar, çerezler ve yer işaretlerine dokunulmaz.",
+      "notCleanedYet": "Bu uygulamayla henüz temizlenmedi"
+    },
+    "file": {
+      "duplicate": {
+        "why": "Bu dosya, boyutuna ve içeriğinin başından ve sonundan alınan bir örneğe göre bulunan başka bir dosyayla eşleşiyor gibi görünüyor.",
+        "what": "Yalnızca bu kopya etkilenir; başka hiçbir şeye dokunulmaz. Bu kesin değil, olası bir eşleşmedir."
+      },
+      "installer": {
+        "why": "İnternetten indirilmiş bir yükleyici.",
+        "what": "Yazılımı yeniden yüklemeniz gerekirse yükleyiciyi tekrar indirin."
+      },
+      "archive": {
+        "why": "Sıkıştırılmış bir arşiv.",
+        "what": "İçeriğini başka bir yere zaten çıkardıysanız arşiv genellikle güvenle kaldırılabilir."
+      },
+      "large": {
+        "why": "Dosyalarınız arasında büyük bir dosya; daha belirli bir tür belirleyemedik."
+      },
+      "old": {
+        "why": "180 günden uzun süredir değiştirilmedi."
+      },
+      "download": {
+        "why": "İndirilenler klasörünüzdeki bir dosya."
+      },
+      "yourFile": "Bu sizin dosyanız: herhangi bir şeyi kaldırmadan önce gözden geçirin.",
+      "reviewFirst": "Kaldırmadan önce gözden geçirin.",
+      "found": "Tarama sırasında bulunan bir dosya."
+    },
+    "system": {
+      "logsWhy": "Bir uygulamanın veya macOS’in otomatik olarak yazdığı günlük dosyaları.",
+      "cacheWhy": "Bir uygulamanın veya macOS’in açılışları hızlandırmak için otomatik oluşturduğu önbellek verileri.",
+      "what": "Etkisi yok: gerektiğinde otomatik olarak yeniden oluşturulur."
+    },
+    "sensitive": {
+      "devWhat": "Bu öğenin adı hassas veriler içerdiğini düşündürüyor. Varsayılan olarak korunur: Finder’da kendiniz gözden geçirin.",
+      "systemWhat": "Bu öğenin adı hassas veriler içerdiğini düşündürüyor. Varsayılan olarak korunur.",
+      "fileWhy": "Bu öğenin adı hassas veya önemli veriler içerdiğini düşündürüyor.",
+      "fileWhat": "Varsayılan olarak korunur: kaldırmayı düşünmeden önce Finder’da kendiniz gözden geçirin."
+    }
+  },
+  "nav": {
+    "dashboard": "Genel Bakış",
+    "smartClean": "Smart Clean",
+    "storage": "Depolama",
+    "largeFiles": "Büyük Dosyalar",
+    "downloads": "İndirilenler",
+    "duplicates": "Kopyalar",
+    "apps": "Uygulama Temizliği",
+    "systemJunk": "Sistem Çöpü",
+    "performance": "Performans",
+    "schedule": "Zamanlanmış Temizlik",
+    "settings": "Ayarlar",
+    "groups": {
+      "explore": "Keşfet",
+      "cleanUp": "Temizle",
+      "monitor": "İzle",
+      "automate": "Otomatikleştir"
+    }
+  },
+  "sidebar": {
+    "percentUsed": "{{percent}} kullanıldı",
+    "freeOf": "{{total}} alanın <b>{{free}}</b> kadarı boş"
+  },
+  "progress": {
+    "overview": "Depolama analiz ediliyor…",
+    "developer": "Geliştirici araçları taranıyor…",
+    "browsers": "Tarayıcı önbellekleri taranıyor…",
+    "applications": "Yüklü uygulamalar taranıyor…",
+    "files": "İndirilenler, Masaüstü ve Belgeler taranıyor…",
+    "finalizing": "Geri kazanılabilir alan hesaplanıyor…",
+    "preparing": "Temizlik hazırlanıyor…",
+    "moving": "{{index}}/{{total}} taşınıyor: {{name}}",
+    "verifying": "Sonuçlar doğrulanıyor…",
+    "done": "Temizlik tamamlandı."
+  },
+  "onboarding": {
+    "stepOf": "Adım {{step}}/{{total}}",
+    "permissionsEyebrow": "İzinler",
+    "startCleaning": "Temizliğe Başla",
+    "meet": {
+      "title": "MacBook Cleaner ile tanışın",
+      "body": "Mac’inizi temiz, hızlı ve düzenli tutun."
+    },
+    "space": {
+      "title": "Neyin yer kapladığını görün",
+      "body": "Büyük dosyaları, eski indirmeleri, çöpleri ve unutulmuş uygulama verilerini bulun."
+    },
+    "safe": {
+      "title": "Güvenle temizleyin",
+      "body": "Herhangi bir şey kaldırılmadan önce her şeyi siz gözden geçirirsiniz."
+    },
+    "permission": {
+      "title": "İsteğe bağlı bir izin",
+      "body": "macOS, Tam Disk Erişimi vermediğiniz sürece uygulama önbellekleri, Çöp Sepeti ve Mail verileri gibi bazı konumları gizli tutar. MacBook Cleaner bu izin olmadan da çalışır ama daha az şey görür.",
+      "local": "Tarama tamamen bu Mac’te yapılır. Hiçbir şey yüklenmez.",
+      "folders": "macOS, MacBook Cleaner İndirilenler, Belgeler ve Masaüstü’nü okumadan önce de izin isteyebilir. Oradaki büyük ve kopya dosyaları bulmak için izin verin.",
+      "changeLater": "Bunu istediğiniz zaman Sistem Ayarları’ndaki Gizlilik ve Güvenlik bölümünden değiştirebilirsiniz."
+    },
+    "chips": {
+      "largeFiles": "Büyük dosyalar",
+      "oldDownloads": "Eski indirmeler",
+      "systemJunk": "Sistem çöpü",
+      "appLeftovers": "Uygulama artıkları",
+      "movedToTrash": "Çöp Sepeti’ne taşınır",
+      "alwaysRecoverable": "Her zaman geri alınabilir",
+      "personalFiles": "Kişisel dosyalar",
+      "neverAutoSelected": "Asla otomatik seçilmez"
+    }
+  },
+  "breakdown": {
+    "applications": {
+      "label": "Uygulamalar",
+      "description": "Uygulamalar klasörlerinizdeki uygulamalar"
+    },
+    "documents": {
+      "label": "Belgeler",
+      "description": "Belgeler ve Masaüstü"
+    },
+    "photos": {
+      "label": "Fotoğraflar",
+      "description": "Fotoğraflar arşivi dahil Resimler klasörünüz"
+    },
+    "videos": {
+      "label": "Videolar",
+      "description": "Filmler klasörünüz"
+    },
+    "downloads": {
+      "label": "İndirilenler",
+      "description": "İndirilenler klasöründeki her şey"
+    },
+    "cache": {
+      "label": "Önbellek",
+      "description": "Kitaplığınızdaki uygulama önbellekleri ve günlükleri"
+    },
+    "other": {
+      "label": "Diğer",
+      "description": "Müzik, Mail, Mesajlar ve diğer uygulama verileri"
+    },
+    "systemData": {
+      "label": "Sistem Verileri",
+      "description": "macOS, anlık görüntüler ve bir klasöre atfedilemeyen alan"
+    }
+  },
+  "fileTypes": {
+    "video": "Videolar",
+    "diskImage": "Disk görüntüleri",
+    "archive": "Arşivler",
+    "installer": "Yükleyiciler",
+    "document": "Belgeler",
+    "image": "Resimler",
+    "audio": "Ses",
+    "other": "Diğer"
+  },
+  "smartClean": {
+    "groups": {
+      "systemJunk": {
+        "title": "Sistem Çöpü",
+        "description": "Kendi kendine yeniden oluşturulan uygulama ve sistem önbellekleri."
+      },
+      "browser": {
+        "title": "Tarayıcı Önbellekleri",
+        "description": "Önbelleğe alınmış web sayfaları ve görüntüler. Parolalar, çerezler ve yer işaretlerine dokunulmaz."
+      },
+      "appLeftovers": {
+        "title": "Uygulama Artıkları",
+        "description": "Artık yüklü olmayan uygulamaların önbellekleri."
+      },
+      "logs": {
+        "title": "Günlükler ve Çökme Raporları",
+        "description": "Uygulamaların zamanla yazdığı tanılama günlükleri. Güvenle silinebilir."
+      },
+      "developer": {
+        "title": "Geliştirici Çöpü",
+        "description": "Araçlarınızın yeniden oluşturabileceği derleme ürünleri ve paket önbellekleri."
+      },
+      "oldDownloads": {
+        "title": "Eski İndirmeler",
+        "description": "Bir süre önce indirdiğiniz yükleyiciler, arşivler ve dosyalar. Karar sizin: hiçbir şey önceden seçili değil."
+      }
+    },
+    "stages": {
+      "caches": "Sistem önbellekleri taranıyor…",
+      "temp": "Geçici dosyalar denetleniyor…",
+      "leftovers": "Uygulama artıkları denetleniyor…",
+      "downloads": "İndirmeler analiz ediliyor…",
+      "largeFiles": "Büyük dosyalar aranıyor…",
+      "reclaimable": "Geri kazanılabilir alan hesaplanıyor…"
+    },
+    "selectAllIn": "{{group}} içindekilerin tümünü seç",
+    "yourFiles": "Dosyalarınız",
+    "toReview_one": "Gözden geçirilecek {{count}} öğe",
+    "toReview_other": "Gözden geçirilecek {{count}} öğe",
+    "selectedOf_one": "{{count}} öğeden {{selected}} tanesi seçildi",
+    "selectedOf_other": "{{count}} öğeden {{selected}} tanesi seçildi",
+    "showMore_one": "{{count}} tane daha göster",
+    "showMore_other": "{{count}} tane daha göster",
+    "intro": "Bir tarama önbellekleri, artıkları, günlükleri ve unutulmuş indirmeleri bulur. Herhangi bir şey kaldırılmadan önce her şeyi siz gözden geçirirsiniz.",
+    "onDevice": "%100 aygıtta",
+    "toTrash": "Her şey Çöp Sepeti’ne gider",
+    "personalNeverPreselected": "Kişisel dosyalar asla önceden seçilmez",
+    "scanningEyebrow": "Taranıyor",
+    "scanningTitle": "Mac’iniz taranıyor",
+    "scanComplete": "Tarama tamamlandı",
+    "canFreeUp": "Mac’inizde boşaltılabilecek alan",
+    "safeRightAway": "<b>{{size}}</b> hemen güvenle temizlenebilir. Gerisi sizin gözden geçirmenizi bekliyor.",
+    "tidyTitle": "Mac’iniz zaten düzenli",
+    "tidySubtitle": "Şu anda temizlemeye değer bir şey bulamadık. Bir hafta sonra tekrar bakın veya zamanlanmış temizliği açın.",
+    "trashNote": "Zaten Çöp Sepeti’nde. Emin olduğunuzda Finder’dan boşaltın: MacBook Cleaner onu asla sizin yerinize boşaltmaz.",
+    "restoreNote": "Çöp Sepeti’ne taşındı: her şeyi geri yükleyebilirsiniz.",
+    "cleanSize": "{{size}} temizle"
+  },
+  "dashboard": {
+    "greeting": {
+      "morning": "Günaydın",
+      "afternoon": "İyi günler",
+      "evening": "İyi akşamlar"
+    },
+    "subtitle": "Mac’iniz küçük bir toparlanmayı hak ediyor.",
+    "scanned": "Tarandı: {{when}}",
+    "scanning": "Taranıyor…",
+    "scan": "Tara",
+    "macStorage": "Mac Depolama Alanı",
+    "explore": "Keşfet",
+    "used": "Kullanılan",
+    "total": "Toplam",
+    "free": "Boş",
+    "percentFull": "{{percent}} dolu",
+    "potentialCleanup": "Olası temizlik",
+    "scanToFindOut": "Öğrenmek için tarayın",
+    "allCaughtUp": "Her şey yolunda ✨",
+    "waitingForReview": "{{size}} gözden geçirmenizi bekliyor.",
+    "nothingToClean": "Şu anda temizlenecek bir şey yok.",
+    "readyToClean": "Güvenle temizlenmeye hazır",
+    "moreWaiting": "{{size}} daha gözden geçirmenizi bekliyor.",
+    "findSafe": "Güvenle kaldırılabilecekleri bulun",
+    "findSafeBody": "Önbellekler, artıklar, eski indirmeler ve daha fazlası; sizin gözden geçirmenizle.",
+    "reviewAndClean": "Gözden Geçir ve Temizle",
+    "tiles": {
+      "largeFiles_one": "{{size}} üzerinde {{count}} dosya",
+      "largeFiles_other": "{{size}} üzerinde {{count}} dosya",
+      "oldDownloadsTitle": "Eski indirmeler",
+      "oldDownloads_one": "Gözden geçirilecek {{count}} öğe",
+      "oldDownloads_other": "Gözden geçirilecek {{count}} öğe",
+      "duplicatesTitle": "Kopyalar",
+      "duplicates_one": "{{count}} kopya grubu",
+      "duplicates_other": "{{count}} kopya grubu",
+      "appLeftoversTitle": "Uygulama artıkları",
+      "appsInstalled_one": "{{count}} uygulama yüklü",
+      "appsInstalled_other": "{{count}} uygulama yüklü",
+      "notScanned": "Henüz taranmadı"
+    },
+    "lastCleanup": "Son temizlik",
+    "noCleanups": "Henüz temizlik yok: ilki bir tık uzağınızda.",
+    "trash": "Çöp Sepeti",
+    "trashEmpty": "Bu alanı geri kazanmak için Finder’dan boşaltın",
+    "trashNeedsAccess": "Ölçmek için Tam Disk Erişimi gerekir",
+    "scheduledCleanup": "Zamanlanmış temizlik",
+    "nextRun": "Sonraki: {{when}}",
+    "scheduleHint": "Dağınıklığı otomatik olarak kontrol altında tutar"
+  },
+  "schedule": {
+    "frequency": {
+      "daily": "Her gün",
+      "weekly": "Her hafta",
+      "biweekly": "2 haftada bir",
+      "monthly": "Her ay"
+    }
+  },
+  "storage": {
+    "subtitle": "Mac’inizin depolama alanını gerçekte neyin kapladığını anlayın.",
+    "totalStorage": "Toplam depolama",
+    "details": "Ayrıntılar",
+    "noItems": "Burada listelenecek kadar büyük tek bir öğe yok.",
+    "showingLargest": "Bulunan en büyük öğeler gösteriliyor ({{size}} ve üzeri dosyalar).",
+    "explain": {
+      "photos": "Fotoğraflar arşiviniz Fotoğraflar uygulaması tarafından yönetilir; bu nedenle MacBook Cleaner oradan asla tek tek fotoğraf kaldırmaz. Yer kazanmak için Fotoğraflar → Ayarlar → iCloud’da “Mac Saklama Alanını Optimize Et”i açın.",
+      "other": "Müzik, Mail, Mesajlar ekleri ve uygulamaların Kitaplığınızda tuttuğu veriler. Bunların çoğunu o uygulamalar yönetir: doğrudan onların içinden temizleyin.",
+      "systemData": "macOS’in kendisi, yerel Time Machine anlık görüntüleri, sanal bellek ve bir klasöre atfedilemeyen her şey. macOS bu alanı yönetir ve yere ihtiyaç duyduğunda anlık görüntüleri otomatik olarak kaldırır."
+    },
+    "links": {
+      "apps": "Uygulama Temizliği’ni Aç",
+      "largeFiles": "Büyük Dosyaları Bul",
+      "largeVideos": "Büyük Videoları Bul",
+      "downloads": "İndirilenler Temizliği’ni Aç",
+      "systemJunk": "Sistem Çöpü’nü Aç"
+    }
+  },
+  "largeFiles": {
+    "subtitle": "Gigabaytlarca yer kaplayan unutulmuş dosyaları bulun.",
+    "atLeast": "{{size}} ve üzeri",
+    "sortLargest": "En büyük",
+    "sortOldest": "En eski",
+    "all": "Tümü",
+    "emptyTitle": "Büyük dosya bulunamadı",
+    "emptySubtitle": "Mac’iniz zaten düzenli.",
+    "modified": "Değiştirilme",
+    "size": "Boyut",
+    "footnote": "İndirilenler, Masaüstü, Belgeler ve Filmler tarandı. Uygulama arşivleri (Fotoğraflar, iMovie, Final Cut) asla açılmaz."
+  },
+  "downloads": {
+    "subtitle": "Yükleyicileri, arşivleri ve unutulmuş indirmeleri temizleyin.",
+    "selectOldInstallers": "Eski yükleyicileri seç",
+    "emptyTitle": "İndirilenler klasörünüz boş",
+    "emptySubtitle": "İndirilenler’de {{size}} üzerinde bir şey yok. Harika.",
+    "kinds": {
+      "installers": "Yükleyiciler ve disk görüntüleri",
+      "duplicates": "Kopya indirmeler",
+      "large": "Büyük indirmeler"
+    },
+    "showing": "Gösterilen: <b>{{label}}</b>",
+    "showAll": "Tümünü göster",
+    "duplicateNote": "Kopya",
+    "age": {
+      "today": "Bugün",
+      "week": "Bu hafta",
+      "month": "Bu ay",
+      "older30": "30 günden eski",
+      "older90": "90 günden eski"
+    }
+  },
+  "duplicates": {
+    "subtitle": "Bayt bayt doğrulanmış özdeş dosyalar. Her zaman bir kopya saklanır.",
+    "oneKept": "Her zaman en az bir kopya saklanır.",
+    "keepOldest": "En eskiyi sakla",
+    "keepNewest": "En yeniyi sakla",
+    "emptyTitle": "Kopya dosya bulunamadı",
+    "emptySubtitle": "Burada temizlenecek bir şey yok.",
+    "totalWasted": "Toplam boşa harcanan",
+    "matchedBy": "Önce boyuta, ardından tüm içeriğin sağlama toplamına göre eşleştirildi.",
+    "copiesEach_one": "{{count}} kopya · her biri {{size}}",
+    "copiesEach_other": "{{count}} kopya · her biri {{size}}",
+    "wasted": "Boşa harcanan",
+    "newest": "En yeni",
+    "oldest": "En eski",
+    "kept": "Saklanır",
+    "moveToTrash": "Kopyaları Çöp Sepeti’ne Taşı",
+    "sets_one": "<b>{{count}}</b> grup",
+    "sets_other": "<b>{{count}}</b> grup",
+    "copies_one": "<b>{{count}}</b> kopya",
+    "copies_other": "<b>{{count}}</b> kopya"
+  },
+  "errors": {
+    "native": {
+      "invalidPath": "Dosya yolu geçersiz.",
+      "gone": "Dosya artık mevcut değil.",
+      "protectedSystem": "Bu korumalı bir macOS konumudur ({{path}}) ve kaldırılamaz.",
+      "homeFolder": "Ana klasörünüzün kendisi asla kaldırılamaz.",
+      "protectedFolder": "{{path}} korumalı bir klasördür ve tamamen kaldırılamaz.",
+      "outsideHome": "Yalnızca ana klasörünüzdeki dosyalar kaldırılabilir.",
+      "sensitive": "Bu öğe hassas veriler içerebileceği için korunuyor.",
+      "noAccess": "Bu öğeye erişilemiyor: izin reddedildi veya artık mevcut değil.",
+      "rootFolder": "Kök klasör kaldırılamaz.",
+      "macos": "macOS bir hata bildirdi ({{code}}): {{detail}}",
+      "trashFailed": "Bu öğe Çöp Sepeti’ne taşınamadı.",
+      "protectedItem": "Korumalı öğeler temizlenemez.",
+      "notApp": "Bu, kaldırılabilecek bir uygulama değil.",
+      "notInApplications": "Yalnızca doğrudan bir Uygulamalar klasöründeki uygulamalar kaldırılabilir.",
+      "systemApp": "Apple uygulamaları macOS’in bir parçasıdır ve korunur.",
+      "self": "MacBook Cleaner kendini kaldıramaz.",
+      "previewHomeOnly": "Önizleme yalnızca ana klasörünüzdeki dosyalar için kullanılabilir.",
+      "loginDevBuild": "“Girişte aç” yalnızca yüklü uygulamada kullanılabilir, geliştirme derlemesinde değil.",
+      "notInstalled": "MacBook Cleaner bir disk görüntüsünden veya İndirilenler klasörünüzden çalışıyor. Uygulamalar klasörünüze taşıyın, oradan açın ve yeniden deneyin.",
+      "noHome": "Ana klasörünüz bulunamadı.",
+      "scheduleFailed": "macOS zamanlanmış temizlik yardımcısını başlatamadı.",
+      "unknown": "Bir şeyler ters gitti: {{detail}}",
+      "appMoved": "Bu uygulama artık o konumda değil.",
+      "linkBlocked": "Bu bağlantı açılamıyor.",
+      "browserFailed": "Varsayılan tarayıcınız açılamadı.",
+      "noAppSupport": "MacBook Cleaner kendi veri klasörüne erişemedi.",
+      "invalidTime": "Bu saat geçerli değil."
+    },
+    "generic": "Bir şeyler ters gitti."
+  },
+  "apps": {
+    "footprint": {
+      "cache": "Önbellek",
+      "networkCache": "Ağ önbelleği",
+      "logs": "Günlükler",
+      "savedState": "Kaydedilmiş pencere durumu",
+      "websiteData": "Web sitesi verileri",
+      "support": "Destek dosyaları",
+      "preferences": "Tercihler",
+      "container": "Korumalı alan kapsayıcısı"
+    },
+    "subtitle": "Uygulamaları önbellekleri, günlükleri ve artıklarıyla birlikte kaldırın.",
+    "emptyTitle": "Uygulama bulunamadı",
+    "emptySubtitle": "Uygulamalar klasörünüz okunamadı.",
+    "search": "Uygulamalarda ara",
+    "sort": {
+      "size": "Boyut",
+      "name": "Ad",
+      "leastUsed": "En az kullanılan"
+    },
+    "notUsedInMonths": "Aylardır kullanılmadı",
+    "opened": "Açıldı: {{when}}",
+    "usageUnknown": "Kullanım bilinmiyor",
+    "application": "Uygulama",
+    "partOfMacOS": "macOS’in parçası",
+    "version": "Sürüm {{version}}",
+    "lastOpened": "Son açılma: {{when}}",
+    "lastOpenedUnknown": "Son açılma bilinmiyor",
+    "noLeftovers": "Bu uygulama için önbellek, günlük veya destek dosyası bulunamadı.",
+    "explainer": "Önbellekler ve günlükler güvenle silinebilir. Destek dosyaları ve tercihler bu uygulamaya ait ayarlarınızı ve verilerinizi içerir: bunları silmek uygulamayı sıfırlar. Temizlemeden veya kaldırmadan önce uygulamadan çıkın.",
+    "revealFiles": "Dosyaları Göster",
+    "cleanData": "Uygulama Verilerini Temizle",
+    "uninstall": "Uygulamayı Kaldır",
+    "cleanedUp": "{{app}} temizlendi",
+    "uninstalled": "{{app}} kaldırıldı"
+  },
+  "systemJunk": {
+    "subtitle": "Mac’inizin kendi kendine yeniden oluşturduğu önbellekler, günlükler ve geçici dosyalar.",
+    "selectAllSafe": "Tüm güvenli öğeleri seç",
+    "safeToClean": "Temizlemesi güvenli",
+    "safeBody": "Gerektiğinde otomatik olarak yeniden oluşturulur. Kişisel veri içermez.",
+    "reviewRecommended": "Gözden geçirme önerilir",
+    "reviewBody": "Kaldırılabilir ancak yeniden indirme, yeniden oluşturma veya yeniden oturum açma gerektirebilir.",
+    "emptyTitle": "Çöp bulunamadı",
+    "emptySubtitle": "Önbellekleriniz ve günlükleriniz zaten küçük.",
+    "safeSubtitle": "Uygulama önbellekleri, tarayıcı önbellekleri ve günlükler",
+    "reviewSubtitle": "Kaldırmadan önce gözden geçirin",
+    "developer": "Geliştirici Temizliği",
+    "developerSubtitle": "Xcode, simülatörler, paket yöneticileri ve derleme önbellekleri",
+    "devHidden": "{{size}} geliştirici önbelleği gizlendi. <link>Geliştirici Temizliği’ni aç</link>",
+    "clean": "Temizle"
+  },
+  "settings": {
+    "notifications": "Bildirimler",
+    "subtitle": "MacBook Cleaner’ı çalışma şeklinize göre ayarlayın.",
+    "appearance": "Görünüm",
+    "theme": "Tema",
+    "themeSubtitle": "macOS’i izleyin veya bir tema seçin.",
+    "themeLight": "Açık",
+    "themeDark": "Koyu",
+    "themeSystem": "Sistem",
+    "general": "Genel",
+    "language": "Dil",
+    "languageFollowsMac": "Mac’inizin dilini izler.",
+    "languageChosen": "Mac’iniz hangi dili kullanırsa kullansın aynı kalır.",
+    "launchAtLogin": "Girişte aç",
+    "launchAtLoginSubtitle": "Oturum açtığınızda MacBook Cleaner’ı açın.",
+    "notificationsSubtitle": "Zamanlanmış temizlik hatırlatmaları ve özetleri.",
+    "macNotificationSettings": "macOS bildirim ayarları",
+    "scheduleOn": "Açık · {{frequency}}, saat {{time}}",
+    "cleanupBehavior": "Temizlik davranışı",
+    "moveToTrash": "Dosyaları Çöp Sepeti’ne taşı",
+    "moveToTrashSubtitle": "Her zaman açık. MacBook Cleaner hiçbir şeyi kalıcı olarak silmez: Çöp Sepeti’ni ne zaman boşaltacağınıza siz karar verirsiniz.",
+    "always": "Her zaman",
+    "confirmBefore": "Temizlemeden önce onayla",
+    "confirmBeforeSubtitle": "Kapalıyken yalnızca güvenli öğeler içeren temizlikler onay istemez. Kendi dosyalarınız ve gözden geçirilecek öğeler her zaman sorulur.",
+    "developer": "Geliştirici Temizliği",
+    "developerSubtitle": "Xcode, Simülatör, npm, Gradle ve diğer derleme önbelleklerini göster.",
+    "exclusions": "Tarama İstisnaları",
+    "exclusionsSubtitle": "Burada listelenen dosya ve klasörler, el ile veya zamanlanmış hiçbir temizlikte önerilmez.",
+    "exclusionsInput": "Hariç tutulacak klasör veya dosya yolu",
+    "add": "Ekle",
+    "noExclusions": "Henüz istisna yok. Herhangi bir öğeyi kendi satırındaki “Bir daha önerme” düğmesiyle de gizleyebilirsiniz.",
+    "removeExclusion": "{{path}} öğesini kaldır",
+    "privacy": "Gizlilik ve İzinler",
+    "fdaGranted": "Verildi: MacBook Cleaner temizlediği her şeyi ölçebilir.",
+    "fdaOptional": "İsteğe bağlı. MacBook Cleaner’ın macOS’in gizli tuttuğu önbellekleri, Çöp Sepeti’ni ve uygulama verilerini görmesini sağlar.",
+    "granted": "Verildi",
+    "recheck": "Yeniden denetle",
+    "filesStay": "Dosyalarınız Mac’inizde kalır",
+    "filesStaySubtitle": "Tarama yerel olarak yapılır. Hiçbir şey yüklenmez ve dosya içerikleri yalnızca kopyaları doğrulamak için okunur.",
+    "about": "Hakkında",
+    "checkUpdates": "Güncellemeleri Denetle",
+    "privacyPolicy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "showWelcome": "Hoş Geldiniz ekranını tekrar göster",
+    "resetAll": "Tüm verileri sıfırla",
+    "resetTitle": "MacBook Cleaner sıfırlansın mı?",
+    "resetBody": "Bu işlem ayarlarınızı, istisnalarınızı, zamanlamayı ve temizlik geçmişini siler ve zamanlanmış temizliği kapatır. Dosyalarınıza ve Çöp Sepeti’ne dokunulmaz."
+  },
+  "scheduleScreen": {
+    "subtitle": "Gereksiz dağınıklığı otomatik olarak kontrol altında tutun.",
+    "howOften": "Sıklık",
+    "howOftenSubtitle": "MacBook Cleaner arka planda sessizce denetler; hiçbir pencere açılmaz.",
+    "at": "Saat",
+    "nextRun": "Sonraki çalışma: {{when}}",
+    "whenItRuns": "Çalıştığında",
+    "remind": "Bana hatırlat",
+    "remindBody": "Temizlenecek yeterince şey olduğunda veya depolama alanı azaldığında bildirim gönder.",
+    "auto": "Otomatik temizle",
+    "autoBody": "Uygun geliştirici önbelleklerini Çöp Sepeti’ne taşı, ardından neyin temizlendiğini bildir.",
+    "eligible": "Uygun kategoriler",
+    "eligibleSubtitle": "Yalnızca önbellekler ve çöpler zamanlanabilir.",
+    "categories": {
+      "developer": "Geliştirici önbellekleri",
+      "developerDetail": "Xcode DerivedData, npm, Yarn, pnpm, Gradle, CocoaPods",
+      "system": "Sistem ve uygulama önbellekleri",
+      "systemDetail": "Kitaplığınızdaki önbellekler ve günlükler",
+      "browser": "Tarayıcı önbellekleri",
+      "browserDetail": "Safari, Chrome, Edge ve Firefox önbellekleri"
+    },
+    "cleanedAutomatically": "Otomatik olarak temizlenir",
+    "inReminders": "Hatırlatmalara dahil",
+    "neverRemoved": "Asla otomatik kaldırılmaz",
+    "never": {
+      "desktop": "Masaüstündeki dosyalar",
+      "personal": "Kişisel klasörler",
+      "label": "Asla"
+    },
+    "onlyTrash": "Zamanlanmış çalışmalar öğeleri yalnızca Çöp Sepeti’ne taşır.",
+    "status": "Durum",
+    "backgroundJob": "Arka plan görevi",
+    "active": "Etkin",
+    "notInstalled": "Yüklü değil",
+    "lastRun": "Son çalışma",
+    "recentRuns": "Son çalışmalar",
+    "found": "{{size}} bulundu",
+    "needsApplications": "Zamanlama için MacBook Cleaner’ın Uygulamalar klasörünüzde olması gerekir.",
+    "unsaved": "Kaydedilmemiş değişiklikleriniz var",
+    "discard": "Vazgeç",
+    "saving": "Kaydediliyor…",
+    "save": "Zamanlamayı Kaydet",
+    "consent": {
+      "title": "Otomatik temizlik açılsın mı?",
+      "intro": "Siz yokken MacBook Cleaner bu öğeleri Çöp Sepeti’ne taşır, başka hiçbir şeyi değil:",
+      "jsCaches": "npm, Yarn ve pnpm önbellekleri",
+      "limits": "Yalnızca temizlenecek en az {{min}} olduğunda çalışır, bir seferde asla {{max}} veya {{items}} öğeden fazlasını taşımaz, istisnalarınızı her zaman atlar ve size bir özet gönderir. Siz boşaltana kadar her şey Çöp Sepeti’nde kalır.",
+      "keepReminders": "Hatırlatmalarla devam et",
+      "turnOn": "Aç"
+    }
+  },
+  "toasts": {
+    "scanFailed": "Tarama başarısız oldu: {{error}}",
+    "excluded": "Anlaşıldı: bu öğe bir daha önerilmeyecek.",
+    "revealFailed": "Finder’da gösterilemiyor: {{error}}",
+    "quickLookPreview": "Hızlı Bakış masaüstü uygulamasında burada açılır.",
+    "previewFailed": "Önizlenemiyor: {{error}}",
+    "scheduleSaved": "Zamanlama kaydedildi: MacBook Cleaner göz kulak olacak.",
+    "scheduleOff": "Zamanlanmış temizlik kapatıldı."
+  },
+  "language": {
+    "title": "Dil",
+    "subtitle": "Değişiklikler yeniden başlatmadan hemen uygulanır.",
+    "search": "Dillerde ara",
+    "system": "Sistem Varsayılanı",
+    "systemDetail": "Mac’inizi izler (şu anda {{language}})",
+    "systemDetailPending": "Mac’inizin dilini izler"
+  },
+  "permissions": {
+    "fullDiskAccess": {
+      "label": "Tam Disk Erişimi"
+    }
+  },
+  "cleanup": {
+    "failureName": "temizlik",
+    "aboutToRemove": "<b>{{size}}</b> kaldırmak üzeresiniz",
+    "willMove_one": "{{count}} öğe Çöp Sepeti’ne taşınacak; Çöp Sepeti’ni boşaltana kadar geri koyabilirsiniz.",
+    "willMove_other": "{{count}} öğe Çöp Sepeti’ne taşınacak; Çöp Sepeti’ni boşaltana kadar hepsini geri koyabilirsiniz.",
+    "notPermanent": "Çöp Sepeti’ne taşınır: hiçbir şey kalıcı olarak silinmez.",
+    "personalWarning_one": "Bunlardan {{count}} tanesi sizin dosyanız: artık ihtiyacınız olmadığından emin olun.",
+    "personalWarning_other": "Bunlardan {{count}} tanesi kendi dosyalarınız veya uygulama ayarlarınız: artık ihtiyacınız olmadığından emin olun.",
+    "reviewWarning_one": "{{count}} öğe yeniden indirme, yeniden oluşturma veya yeniden oturum açma gerektirebilir.",
+    "reviewWarning_other": "{{count}} öğe yeniden indirme, yeniden oluşturma veya yeniden oturum açma gerektirebilir.",
+    "hideList": "Dosya listesini gizle",
+    "reviewFilesLink": "Dosyaları gözden geçir",
+    "ack": "Bu öğeleri gözden geçirdim ve Çöp Sepeti’ne taşımak istiyorum.",
+    "reviewFiles": "Dosyaları Gözden Geçir",
+    "cleanNow": "Şimdi Temizle",
+    "cleaning": "Temizleniyor…",
+    "preparing": "Hazırlanıyor…",
+    "nothingRemoved": "Hiçbir şey kaldırılmadı",
+    "complete": "Temizlik tamamlandı",
+    "youFreed": "Boşalttığınız alan",
+    "breathingRoom": "Mac’iniz artık daha rahat nefes alıyor.",
+    "recoverable": "Her şey Çöp Sepeti’nde olduğu için geri alınabilir. Alan, Çöp Sepeti’ni boşalttığınızda tamamen boşalır.",
+    "openTrash": "Çöp Sepeti’ni Aç",
+    "failedCount_one": "{{count}} öğe taşınamadı",
+    "failedCount_other": "{{count}} öğe taşınamadı",
+    "viewStorage": "Depolamayı Görüntüle",
+    "backToDashboard": "Genel Bakış’a Dön"
+  },
+  "performance": {
+    "subtitle": "Mac’inizin durumunu görün: CPU, bellek, uygulamalar, pil ve daha fazlası.",
+    "live": "Canlı",
+    "updatedAt": "Güncellenme: {{time}}",
+    "readError": "Bazı bilgiler okunamadı: {{error}}",
+    "tabs": {
+      "overview": "Genel Bakış",
+      "apps": "Çalışan Uygulamalar",
+      "battery": "Pil",
+      "mac": "Mac Bilgileri"
+    },
+    "runningApps": "Çalışan uygulamalar",
+    "runningAppsSubtitle": "Şu anda en çok belleği ve CPU’yu hangi uygulamaların kullandığı.",
+    "cpu": "CPU",
+    "memory": "Bellek",
+    "uptime": "Çalışma süresi",
+    "sinceRestart": "Son yeniden başlatmadan bu yana",
+    "measuring": "Ölçülüyor…",
+    "checking": "Denetleniyor…",
+    "idlePercent": "{{percent}} boşta",
+    "available": "{{size}} kullanılabilir",
+    "availableLabel": "Kullanılabilir",
+    "ofTotal": "/ {{total}}",
+    "aboutX": "{{name}} hakkında",
+    "moreInfo": "Daha fazla bilgi",
+    "chart60s": "60 sn önce",
+    "chartNow2": "şimdi",
+    "chartNow": "{{label}}, şu anda {{value}}",
+    "cpuUsage": "CPU kullanımı",
+    "cpuUsageTip": "Mac’inizin toplam işlem gücünün kullanılan kısmı; birkaç saniyede bir tüm çekirdeklerde ölçülür.",
+    "cpuChart": "Son 60 saniyedeki CPU kullanımı",
+    "cpuParts": {
+      "user": "Kullanıcı",
+      "userTip": "Uygulamalara ve kendi işlemlerinize harcanan süre.",
+      "system": "Sistem",
+      "systemTip": "macOS’in kendisinde geçen süre: sürücüler, dosya sistemi, ağ.",
+      "idle": "Boşta",
+      "idleTip": "Şu anda boşta olan işlem kapasitesi."
+    },
+    "cpuCores": {
+      "label": "Çekirdekler",
+      "split": "{{performance}} performans + {{efficiency}} verimlilik"
+    },
+    "memoryUsed": "Kullanılan bellek",
+    "memoryUsedTip": "Uygulama belleği + kalıcı + sıkıştırılmış: Etkinlik Monitörü’ndeki “Kullanılan Bellek” değerinin aynısı. Önbelleğe alınmış dosyalar sayılmaz, çünkü macOS gerektiğinde onları anında boşaltır.",
+    "memoryChart": "Son 60 saniyede kullanılan bellek",
+    "pressureIs": "Baskı: {{pressure}}",
+    "pressureTip": "macOS’in, uygulamaların yeterli belleği olup olmadığını gösteren kendi ölçüsü. Normal baskıyla yüksek kullanım sağlıklıdır: macOS boş belleği bilerek kullanır.",
+    "pressure": {
+      "normal": "normal",
+      "warning": "yükseldi",
+      "critical": "yüksek"
+    },
+    "memParts": {
+      "app": "Uygulama belleği",
+      "appTip": "Uygulamalarınızın etkin olarak kullandığı bellek.",
+      "wired": "Kalıcı",
+      "wiredTip": "macOS’in kendisinin ihtiyaç duyduğu, sıkıştıramayacağı veya taşıyamayacağı bellek.",
+      "compressed": "Sıkıştırılmış",
+      "compressedTip": "macOS’in yer açmak için sıkıştırdığı bellek: normal ve verimli bir teknik.",
+      "cached": "Önbelleğe alınmış dosyalar",
+      "cachedTip": "macOS’in daha hızlı açmak için bellekte tuttuğu son kullanılan dosyalar. Bir uygulamanın yere ihtiyacı olduğu anda otomatik olarak boşaltılır.",
+      "swap": "Kullanılan takas",
+      "swapTip": "macOS’in geçici olarak SSD’nize taşıdığı bellek. Biraz takas normaldir; yüksek baskıyla birlikte çok fazla takas, daha az uygulama açık olmasının Mac’inize iyi geleceği anlamına gelir."
+    },
+    "duration": {
+      "dh": "{{d}} g {{h}} sa",
+      "hm": "{{h}} sa {{m}} dk",
+      "m": "{{m}} dk",
+      "lessThanMinute": "< 1 dk"
+    },
+    "device": {
+      "thisMac": "Bu Mac",
+      "memory": "{{size}} bellek",
+      "storage": "{{size}} depolama",
+      "battery": "Pil: {{condition}}"
+    },
+    "health": {
+      "title": "Mac Sağlığı",
+      "subtitle": "Anlaşılır bir özet. Her durum doğrudan macOS’ten gelir.",
+      "memoryDetail": "Bellek baskısı",
+      "memoryTip": "Bellek baskısı, macOS’in bellek boşaltmak için ne kadar çalışması gerektiğini gösteren kendi ölçüsüdür. “Normal”, belleğin çoğu kullanılıyor olsa bile uygulamaların yeterli belleği olduğu anlamına gelir.",
+      "storageFree": "{{size}} boş",
+      "runningLow": "Azalıyor",
+      "gettingFull": "Doluyor",
+      "plentyOfRoom": "Bol yer var",
+      "storageTip": "Boş alan {{full}} altına düşünce “Doluyor”, {{low}} altına düşünce “Azalıyor” gösterilir: macOS’in güncellemeler, önbellekler ve sanal bellek için boş alana ihtiyacı vardır.",
+      "noBattery": "Pil yok",
+      "batteryDetail": "Pil durumu",
+      "desktopMac": "Masaüstü Mac",
+      "batteryTip": "macOS’in bildirdiği pil durumu; Sistem Ayarları → Pil’deki ile aynıdır.",
+      "cpuInUse": "{{percent}} kullanımda",
+      "light": "Hafif etkinlik",
+      "moderate": "Orta etkinlik",
+      "busy": "Çok yoğun",
+      "cpuTip": "Mac’inizin toplam işlem gücünün şu anda tüm çekirdeklerde ne kadarının kullanıldığı.",
+      "uptimeTip": "Mac’inizin son başlatmadan bu yana ne kadar süredir çalıştığı. Arada bir yeniden başlatmak macOS’in güncellemeleri yüklemeyi bitirmesini sağlar.",
+      "asOfLastCheck": "macOS’in son denetimine göre",
+      "checkInSettings": "Sistem Ayarları’nda denetle",
+      "macosTip": "macOS’in otomatik Yazılım Güncelleme denetiminin sonucuna dayanır. MacBook Cleaner, Apple sunucularıyla asla kendisi iletişim kurmaz."
+    },
+    "os": {
+      "updateAvailable": "Güncelleme var",
+      "upToDate": "Güncel",
+      "statusUnknown": "Durum bilinmiyor",
+      "version": "Sürüm",
+      "build": "Derleme",
+      "architecture": "Mimari",
+      "appleSilicon": "Apple çipi (arm64)",
+      "intel": "Intel (x86_64)",
+      "kernel": "Darwin çekirdeği",
+      "kernelTip": "macOS’in üzerine kurulu olduğu açık kaynaklı çekirdek. Çoğunlukla sorun giderme için kullanışlıdır.",
+      "availableFromApple": "Apple’dan kullanılabilir",
+      "noUpdatesFound": "macOS son denetiminde güncelleme bulmadı.",
+      "openToCheck": "En son macOS sürümünü denetlemek için Yazılım Güncelleme’yi açın.",
+      "lastChecked": "macOS son olarak {{when}} denetledi. MacBook Cleaner bu sonucu okur ve Apple ile asla kendisi iletişim kurmaz.",
+      "checkUpdates": "macOS güncellemelerini denetle",
+      "openSoftwareUpdate": "Yazılım Güncelleme’yi Aç"
+    },
+    "battery": {
+      "conditionNormal": "Normal",
+      "conditionService": "Servis önerilir",
+      "conditionIs": "Durum: {{condition}}",
+      "charging": "Şarj oluyor",
+      "onBattery": "Pil gücüyle",
+      "fullyCharged": "Tamamen şarj oldu",
+      "notCharging": "Şarj olmuyor",
+      "untilFull": "Dolmasına {{time}}",
+      "remaining": "{{time}} kaldı",
+      "powerAdapter": "Güç adaptörü",
+      "batteryPower": "Pil gücü",
+      "maxCapacity": "Maksimum kapasite",
+      "maxCapacityTip": "Pilin yeniyken olduğu duruma kıyasla şu anda ne kadar şarj tutabildiği. macOS tarafından bildirilir: Sistem Ayarları → Pil → Pil Sağlığı’ndaki değerin aynısı.",
+      "capacityNote": "Kapasite, pil yaşlandıkça doğal olarak azalır. MacBook Cleaner bunu yalnızca gösterir: hiçbir uygulama pil kapasitesini geri getiremez.",
+      "cycleCount": "Döngü sayısı",
+      "cyclesOfDesign": "Pilin kendi bildirdiği {{design}} döngülük tasarım ömrünün {{cycles}} döngüsü",
+      "cycleExplain": "Döngü sayısı, Mac’inizin pilinin geçirdiği tam şarj döngüsü sayısıdır. Kapasitenin %100’ünü kullanmak, birden çok kısmi şarja yayılsa bile bir döngü sayılır.",
+      "details": "Pil ayrıntıları",
+      "charge": "Şarj",
+      "chargingLabel": "Şarj",
+      "powerSource": "Güç kaynağı",
+      "timeRemaining": "Kalan süre",
+      "notApplicable": "Uygulanamaz",
+      "calculating": "Hesaplanıyor…",
+      "timeTip": "macOS bir tahmin vermeden önce mevcut kullanımınızı bir süre gözlemler.",
+      "condition": "Durum",
+      "conditionTip": "macOS tarafından bildirilir. “Normal”, pilin beklendiği gibi çalıştığı; “Servis önerilir”, Apple’ın pili kontrol ettirmenizi önerdiği anlamına gelir.",
+      "designCapacity": "Tasarım kapasitesi",
+      "designCapacityTip": "Pilin yeniyken tutabildiği şarj miktarı.",
+      "fullCapacity": "Tam şarj kapasitesi",
+      "fullCapacityTip": "Pilin bugün tam dolu olduğunda tuttuğu şarj miktarı.",
+      "currentCharge": "Mevcut şarj",
+      "mah": "{{value}} mAh"
+    },
+    "apps": {
+      "inUse": "Ön planda",
+      "hidden": "Gizli",
+      "thisApp": "Bu uygulama",
+      "kind": {
+        "app": "Uygulama",
+        "background": "Arka plan",
+        "backgroundProcess": "Arka plan işlemi",
+        "system": "Sistem işlemi"
+      },
+      "processes_one": "{{count}} işlem",
+      "processes_other": "{{count}} işlem",
+      "filter": {
+        "apps": "Uygulamalar",
+        "background": "Arka plan",
+        "all": "Tümü"
+      },
+      "showSystem": "Sistem işlemlerini göster",
+      "search": "Çalışan uygulamalarda ara",
+      "cols": {
+        "app": "Uygulama",
+        "name": "Ad",
+        "running": "Çalışma"
+      },
+      "cpuTip": "Mac’inizin toplam işlem gücündeki payı. Etkinlik Monitörü bunun yerine %100’ü aşabilen çekirdek başına değerler gösterir.",
+      "memoryTip": "Fiziksel bellek ayak izi: Etkinlik Monitörü’nün Bellek sütunundaki değer. Uygulamalar yardımcı işlemlerini de içerir.",
+      "nothing": "Gösterilecek bir şey yok.",
+      "showMore_one": "Daha fazla göster ({{count}} gizli)",
+      "showMore_other": "Daha fazla göster ({{count}} gizli)",
+      "seeAll": "Tüm çalışan uygulamaları gör",
+      "footnote_one": "Bu Mac’te {{count}} işlem var. Uygulamalar yardımcı işlemlerini de içerir. macOS, uygulamaların diğer kullanıcıların sistem işlemlerinin CPU ve belleğini okumasına izin vermez; bu yüzden bunlar için “—” gösterilir.",
+      "footnote_other": "Bu Mac’te {{count}} işlem var. Uygulamalar yardımcı işlemlerini de içerir. macOS, uygulamaların diğer kullanıcıların sistem işlemlerinin CPU ve belleğini okumasına izin vermez; bu yüzden bunlar için “—” gösterilir."
+    },
+    "macUptime": "Mac çalışma süresi",
+    "lastStarted": "Son başlatma: {{when}}",
+    "uptimeUnits": {
+      "days_one": "gün",
+      "days_other": "gün",
+      "hours_one": "saat",
+      "hours_other": "saat",
+      "minutes_one": "dakika",
+      "minutes_other": "dakika"
+    },
+    "details": {
+      "title": "{{name}} ayrıntıları",
+      "quit": "Artık çalışmıyor",
+      "cpuTip": "Şu anda Mac’inizin toplam işlem gücündeki payı.",
+      "memoryTip": "Yardımcı işlemler dahil fiziksel bellek ayak izi.",
+      "runningFor": "Çalışma süresi",
+      "threads": "İş parçacıkları",
+      "threadsTip": "Uygulamanın aynı anda yürüttüğü bağımsız görevler. Yoğun uygulamalar genellikle onlarca kullanır.",
+      "launched": "Başlatıldı",
+      "state": "Durum",
+      "status": {
+        "running": "Çalışıyor",
+        "idle": "Boşta: giriş bekliyor",
+        "stopped": "Durduruldu"
+      },
+      "pid": "İşlem kimliği",
+      "processes": "İşlemler",
+      "withHelpers_one": "{{count}} (uygulama + yardımcılar)",
+      "withHelpers_other": "{{count}} (uygulama + yardımcılar)",
+      "owner": "Sahip",
+      "you": "Siz",
+      "systemOwner": "Sistem",
+      "version": "Sürüm",
+      "executable": "Yürütülebilir dosya",
+      "quitHint": "Bir uygulamadan çıkmak için uygulamanın kendi Çık komutunu (⌘Q) kullanın veya Dock’ta sağ tıklayın; böylece önce çalışmanızı kaydedebilir."
+    },
+    "mac": {
+      "hardware": "Donanım",
+      "model": "Model",
+      "modelId": "Model tanımlayıcısı",
+      "modelIdTip": "Apple’ın bu Mac modeli için kullandığı dahili ad: teknik özellikleri veya destek makalelerini ararken işe yarar.",
+      "chip": "Çip",
+      "cores_one": "{{count}} çekirdek",
+      "cores_other": "{{count}} çekirdek",
+      "coresSplit_one": "{{count}} çekirdek ({{performance}} performans, {{efficiency}} verimlilik)",
+      "coresSplit_other": "{{count}} çekirdek ({{performance}} performans, {{efficiency}} verimlilik)",
+      "coresThreads_one": "{{count}} çekirdek, {{threads}} iş parçacığı",
+      "coresThreads_other": "{{count}} çekirdek, {{threads}} iş parçacığı",
+      "graphics": "Grafik",
+      "gpuCores_one": "{{gpu}}, {{count}} çekirdekli GPU",
+      "gpuCores_other": "{{gpu}}, {{count}} çekirdekli GPU",
+      "storageValue": "{{total}} ({{free}} kullanılabilir)",
+      "hostname": "Ana makine adı",
+      "hostnameTip": "Mac’inizin yerel ağdaki adı. Yalnızca burada gösterilir, hiçbir yere gönderilmez.",
+      "note": "Not",
+      "rosetta": "MacBook Cleaner Rosetta altında çalışıyor",
+      "displays": "Ekranlar",
+      "builtIn": "Yerleşik",
+      "main": "Ana",
+      "looksLike": "{{resolution}} gibi görünür",
+      "pixels": "{{pixels}} piksel",
+      "localNote": "Bu bilgilerin tümü macOS’ten yerel olarak okunur ve Mac’inizde kalır. MacBook Cleaner seri numaranızı okumaz."
+    },
+    "storage": {
+      "recoverable": "Olası geri kazanılabilir alan",
+      "runScan": "Tarama yap",
+      "openCleaner": "Depolama temizliğini aç",
+      "breakdown": "Depolama dağılımı"
+    }
+  },
+  "native": {
+    "number": {
+      "decimal": ",",
+      "gb": "{{value}} GB"
+    },
+    "notifications": {
+      "autoCleanDone": "Otomatik temizlik {{size}} güvenli önbelleği Çöp Sepeti’ne taşıdı.",
+      "autoCleanPartial": "Otomatik temizlik {{size}} Çöp Sepeti’ne taşıdı. Bazı öğeler taşınamadı ({{failed}}).",
+      "lowSpace": "Mac’inizde yalnızca {{size}} boş alan kaldı. Depolama önerilerini gözden geçirin.",
+      "reviewable": "{{size}} temizlik için gözden geçirilebilir."
+    },
+    "menu": {
+      "about": "{{app}} Hakkında",
+      "services": "Servisler",
+      "hide": "{{app}} Uygulamasını Gizle",
+      "hideOthers": "Diğerlerini Gizle",
+      "showAll": "Tümünü Göster",
+      "quit": "{{app}} Uygulamasından Çık",
+      "edit": "Düzen",
+      "undo": "Geri Al",
+      "redo": "Yinele",
+      "cut": "Kes",
+      "copy": "Kopyala",
+      "paste": "Yapıştır",
+      "selectAll": "Tümünü Seç",
+      "view": "Görüntü",
+      "fullScreen": "Tam Ekrana Geç",
+      "window": "Pencere",
+      "minimize": "Küçült",
+      "zoom": "Büyüt/Küçült",
+      "closeWindow": "Pencereyi Kapat"
+    },
+    "appleEventsUsage": "MacBook Cleaner, onayladığınız öğeleri Çöp Sepeti’ne taşımak için Finder’dan izin ister; böylece Çöp Sepeti’ni boşaltana kadar onları geri yükleyebilirsiniz."
+  }
+}

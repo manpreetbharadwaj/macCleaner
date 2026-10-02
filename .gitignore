@@ -1,0 +1,18 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+*.log
+.env
+.env.*
+# Updater signing keys must never be committed
+*.key
+*.key.pub
+*.pem
+/release/
+.firebase/
+.backups/
+
+# TypeScript incremental build cache
+*.tsbuildinfo

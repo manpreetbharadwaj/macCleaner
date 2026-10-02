@@ -1,0 +1,138 @@
+mod app_footprint;
+mod applications;
+mod auto_clean;
+mod background;
+mod browsers;
+mod commands;
+mod dedup;
+mod developer;
+mod diagnostics;
+mod disk;
+mod dto;
+mod external_url;
+mod i18n;
+mod locale;
+mod menu;
+mod login_item;
+mod native_notifications;
+mod perf;
+mod scanner;
+mod schedule;
+mod state;
+mod trash;
+
+#[cfg_attr(mobile, tauri::mobile_entry_point)]
+pub fn run() {
+    // First thing, before any branch below: a panic anywhere (GUI, headless
+    // scan, diagnostics) is appended to startup-crash.log even if the normal
+    // logger never got initialized.
+    diagnostics::install_panic_hook();
+
+    // Headless mode: launchd invokes this same binary with this flag (see
+    // schedule.rs). No window, no webview — just a scan + maybe a
+    // notification, then exit. Checked before touching `tauri::Builder` at
+    // all, since `Builder::build()` alone never creates windows or runs
+    // `.setup()` (both happen only once the event loop starts via `.run()`
+    // — verified by reading tauri's app.rs), but `.run()` itself would
+    // block waiting for window-close/quit, which never comes here.
+    // `background::run()` needs no `tauri::Context`/`AppHandle` at all —
+    // notifications go through `native_notifications::send`, which talks to
+    // `UNUserNotificationCenter` directly — so `tauri::generate_context!()`
+    // (which can only be invoked once per binary) is only ever called below,
+    // in the one branch that actually needs it.
+    if std::env::args().any(|a| a == "--background-scan") {
+        // `--dry-run` runs the exact same scan + auto-clean eligibility
+        // pipeline but never calls trash — see background.rs and
+        // auto_clean.rs. A legitimate, permanent internal tool (not a
+        // temporary test hook), used to validate the policy on a real Mac
+        // before ever letting it delete anything unattended.
+        let dry_run = std::env::args().any(|a| a == "--dry-run");
+        background::run(dry_run);
+        return;
+    }
+
+    // Read-only diagnostic: prints this bundle's real, current
+    // UNAuthorizationStatus and exits. See native_notifications.rs's
+    // `print_authorization_status` doc comment for why this exists instead
+    // of guessing from system databases.
+    if std::env::args().any(|a| a == "--check-notification-permission") {
+        native_notifications::print_authorization_status();
+        return;
+    }
+
+    // Diagnostic: sends one real test notification through the exact same
+    // `native_notifications::send` used by real scheduled runs and prints
+    // whether it reported success — see native_notifications.rs.
+    if std::env::args().any(|a| a == "--send-test-notification") {
+        native_notifications::send_test_notification();
+        return;
+    }
+
+    tauri::Builder::default()
+        .setup(|app| {
+            // Always on (not just in debug builds): a shipped build that
+            // fails to open must leave a trace in
+            // ~/Library/Logs/com.macbookcleaner.app/. The plugin's
+            // default rotation keeps a single file; the size cap bounds it.
+            app.handle().plugin(
+                tauri_plugin_log::Builder::default()
+                    .level(log::LevelFilter::Info)
+                    .max_file_size(512 * 1024)
+                    .build(),
+            )?;
+            diagnostics::log_startup_banner(&app.package_info().version.to_string());
+            // Registers this process as the UNUserNotificationCenter
+            // delegate so a notification click — whether this app was
+            // already running or just got launched by the click itself —
+            // is resolved to an in-app route. See native_notifications.rs
+            // for why tauri-plugin-notification alone can't do this.
+            native_notifications::install_delegate(app.handle().clone());
+            native_notifications::request_authorization();
+            // Localized menu bar from the first frame (the UI re-syncs it on every language change).
+            let language = i18n::current_language();
+            log::info!("Language: Mac prefers {:?} → using {language}", locale::preferred_languages());
+            if let Err(e) = menu::apply(app.handle(), &language) {
+                log::warn!("Could not localize the menu bar: {e}");
+            }
+            Ok(())
+        })
+        .plugin(tauri_plugin_notification::init())
+        .invoke_handler(tauri::generate_handler![
+            commands::get_system_overview,
+            commands::check_path_access,
+            commands::reveal_in_finder,
+            commands::open_full_disk_access_settings,
+            commands::run_full_scan,
+            commands::trash_items,
+            commands::get_app_state,
+            commands::save_app_state,
+            commands::install_schedule,
+            commands::remove_schedule,
+            commands::get_schedule_status,
+            commands::heal_schedule_path,
+            commands::get_notification_permission_state,
+            commands::request_notification_permission,
+            commands::open_notification_settings,
+            commands::open_external_url,
+            commands::get_pending_notification_route,
+            commands::get_app_footprint,
+            commands::get_app_icon,
+            commands::uninstall_app,
+            commands::quick_look,
+            commands::get_trash_info,
+            commands::open_trash,
+            commands::get_launch_at_login,
+            commands::set_launch_at_login,
+            locale::get_preferred_languages,
+            menu::set_app_language,
+            perf::perf_system_info,
+            perf::perf_live_metrics,
+            perf::perf_processes,
+            perf::perf_process_details,
+            perf::perf_battery,
+            perf::perf_update_status,
+            perf::perf_open_software_update,
+        ])
+        .run(tauri::generate_context!())
+        .expect("error while running tauri application");
+}

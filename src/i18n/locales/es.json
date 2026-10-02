@@ -1,0 +1,1035 @@
+{
+  "meta": {
+    "englishName": "Spanish",
+    "nativeName": "Español",
+    "dir": "ltr",
+    "order": 4
+  },
+  "common": {
+    "tagline": "Ordena. Conserva lo que importa.",
+    "unknown": "Desconocido",
+    "notAvailable": "No disponible",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "clear": "Borrar",
+    "continue": "Continuar",
+    "back": "Atrás",
+    "dismiss": "Descartar",
+    "refresh": "Actualizar",
+    "rescan": "Volver a analizar",
+    "scanAgain": "Analizar de nuevo",
+    "search": "Buscar",
+    "noMatches": "No hay coincidencias.",
+    "reset": "Restablecer",
+    "off": "Desactivado",
+    "no": "No",
+    "selectAll": "Seleccionar todo",
+    "selectItem": "Seleccionar {{name}}",
+    "quickLook": "Vista Rápida",
+    "revealInFinder": "Mostrar en el Finder",
+    "showInFinder": "Mostrar en el Finder",
+    "neverSuggest": "No volver a sugerir",
+    "moveToTrash": "Trasladar a la Papelera",
+    "items_one": "{{count}} ítem",
+    "items_many": "{{count}} ítems",
+    "items_other": "{{count}} ítems",
+    "files_one": "{{count}} archivo",
+    "files_many": "{{count}} archivos",
+    "files_other": "{{count}} archivos",
+    "openSystemSettings": "Abrir Ajustes del Sistema",
+    "open": "Abrir"
+  },
+  "safety": {
+    "green": "Seguro",
+    "orange": "Revisar",
+    "red": "Protegido"
+  },
+  "scanGate": {
+    "scanningTitle": "Analizando tu Mac…",
+    "gettingStarted": "Empezando…",
+    "promptTitle": {
+      "largeFiles": "Analiza para encontrar archivos grandes",
+      "downloads": "Analiza para encontrar descargas antiguas",
+      "duplicates": "Analiza para encontrar archivos duplicados",
+      "apps": "Analiza para encontrar apps y sus restos",
+      "systemJunk": "Analiza para encontrar basura del sistema",
+      "storage": "Analiza para ver qué ocupa tu almacenamiento",
+      "smartClean": "Analiza para ver qué se puede eliminar"
+    },
+    "promptSubtitle": "Un análisis rápido y local muestra qué hay en tu Mac. No se elimina nada sin que lo revises.",
+    "scanButton": "Analizar mi Mac"
+  },
+  "selectionBar": {
+    "selected_one": "{{count}} ítem seleccionado",
+    "selected_many": "{{count}} ítems seleccionados",
+    "selected_other": "{{count}} ítems seleccionados",
+    "willMove": "Se trasladarán {{size}} a la Papelera"
+  },
+  "items": {
+    "dev": {
+      "xcodeDerivedData": {
+        "name": "Xcode DerivedData",
+        "why": "Productos intermedios de compilación que Xcode regenera automáticamente en la siguiente compilación.",
+        "what": "Tu próxima compilación tardará más mientras Xcode vuelve a indexar y compilar."
+      },
+      "xcodeArchives": {
+        "name": "Archivos de Xcode",
+        "why": "Compilaciones archivadas para envíos a la App Store y distribución por TestFlight.",
+        "what": "Ya no podrás exportar los dSYM de esa compilación concreta ni volver a enviarla."
+      },
+      "xcodeDeviceSupportIos": {
+        "name": "Soporte de dispositivos iOS",
+        "why": "Símbolos de depuración en caché de dispositivos iOS que conectaste en el pasado.",
+        "what": "Xcode volverá a descargar el soporte del dispositivo la próxima vez que lo conectes."
+      },
+      "xcodeDeviceSupportWatchos": {
+        "name": "Soporte de dispositivos watchOS",
+        "why": "Símbolos de depuración en caché de Apple Watch enlazados con los que hiciste pruebas.",
+        "what": "Xcode volverá a descargar el soporte del dispositivo la próxima vez que lo conectes."
+      },
+      "xcodeSimulatorCaches": {
+        "name": "Cachés del Simulador",
+        "why": "Datos que el Simulador de iOS/watchOS reconstruye automáticamente cuando hace falta.",
+        "what": "Sin efecto: el Simulador reconstruye su caché automáticamente."
+      },
+      "xcodeSimulatorDevices": {
+        "name": "Dispositivos del Simulador",
+        "why": "Almacenamiento de cada dispositivo iOS/watchOS/tvOS simulado, incluidos los datos de apps de prueba instaladas.",
+        "what": "Habrá que volver a crear los dispositivos del Simulador y los datos de las apps instaladas en ellos."
+      },
+      "npmCache": {
+        "name": "Caché de npm",
+        "why": "Archivos de paquetes descargados que npm guarda para que futuras instalaciones no usen la red.",
+        "what": "Las futuras instalaciones de npm volverán a descargar los paquetes en lugar de usar la caché local."
+      },
+      "yarnCache": {
+        "name": "Caché de Yarn",
+        "why": "Caché de paquetes que Yarn guarda para todos tus proyectos.",
+        "what": "Las instalaciones usarán la red; los proyectos ya instalados no se ven afectados."
+      },
+      "pnpmStore": {
+        "name": "Almacén de pnpm",
+        "why": "Almacén de paquetes compartido que pnpm guarda para todos tus proyectos.",
+        "what": "Las instalaciones usarán la red; los proyectos ya instalados no se ven afectados."
+      },
+      "metroCache": {
+        "name": "Caché del bundler Metro",
+        "why": "Caché temporal que Metro (React Native) escribe en la carpeta temporal del sistema.",
+        "what": "Bórrala desde tu proyecto con «npx react-native start --reset-cache»: está en una carpeta del sistema que MacBook Cleaner nunca toca."
+      },
+      "gradleCaches": {
+        "name": "Cachés de Gradle",
+        "why": "Dependencias descargadas y metadatos de compilación compartidos por proyectos Android/Gradle.",
+        "what": "Gradle volverá a descargar y resolver las dependencias en la próxima compilación (la primera será más lenta)."
+      },
+      "androidAvd": {
+        "name": "Imágenes del emulador de Android",
+        "why": "Imágenes de dispositivos virtuales y todos los datos instalados en tus emuladores de Android.",
+        "what": "Tendrás que volver a crear cada emulador que uses; se perderán los datos de apps de prueba que contenga."
+      },
+      "cocoapodsCache": {
+        "name": "Caché de CocoaPods",
+        "why": "Especificaciones y fuentes de pods en caché para todos tus proyectos de iOS.",
+        "what": "«pod install» volverá a descargar los pods la próxima vez que se ejecute."
+      },
+      "unknown": {
+        "why": "Almacenamiento usado por una herramienta de desarrollo detectada en este Mac.",
+        "what": "Revisa antes de eliminar: puede que la herramienta tenga que regenerar estos datos."
+      }
+    },
+    "updatedRecently": "Actualizado recientemente",
+    "browser": {
+      "name": "Caché y archivos temporales de {{browser}}",
+      "why": "Datos de sitios web en caché que el navegador reconstruye automáticamente.",
+      "what": "Los sitios web volverán a cargar todo su contenido en tu próxima visita. Contraseñas, cookies y marcadores no se tocan.",
+      "notCleanedYet": "Aún no limpiado con esta app"
+    },
+    "file": {
+      "duplicate": {
+        "why": "Este archivo parece coincidir con otro encontrado, según su tamaño y una muestra de su contenido (inicio y final).",
+        "what": "Solo se vería afectada esta copia; nada más. Es una coincidencia probable, no garantizada."
+      },
+      "installer": {
+        "why": "Un instalador descargado de internet.",
+        "what": "Vuelve a descargar el instalador si necesitas reinstalar el software."
+      },
+      "archive": {
+        "why": "Un archivo comprimido.",
+        "what": "Si ya extrajiste su contenido en otro lugar, normalmente se puede eliminar sin problema."
+      },
+      "large": {
+        "why": "Un archivo grande entre tus archivos; no pudimos determinar un tipo más concreto."
+      },
+      "old": {
+        "why": "Sin modificar desde hace más de 180 días."
+      },
+      "download": {
+        "why": "Un archivo de tu carpeta Descargas."
+      },
+      "yourFile": "Este es tu archivo: revísalo antes de eliminar nada.",
+      "reviewFirst": "Revisa antes de eliminar.",
+      "found": "Un archivo encontrado durante el análisis."
+    },
+    "system": {
+      "logsWhy": "Archivos de registro que una app o macOS escribió automáticamente.",
+      "cacheWhy": "Datos en caché que una app o macOS creó automáticamente para que los arranques sean más rápidos.",
+      "what": "Sin efecto: se regenera automáticamente cuando hace falta."
+    },
+    "sensitive": {
+      "devWhat": "El nombre de este ítem sugiere datos confidenciales. Protegido por omisión: revísalo tú mismo en el Finder.",
+      "systemWhat": "El nombre de este ítem sugiere datos confidenciales. Protegido por omisión.",
+      "fileWhy": "El nombre de este ítem sugiere datos confidenciales o importantes.",
+      "fileWhat": "Protegido por omisión: revísalo tú mismo en el Finder antes de plantearte eliminarlo."
+    }
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "smartClean": "Smart Clean",
+    "storage": "Almacenamiento",
+    "largeFiles": "Archivos grandes",
+    "downloads": "Descargas",
+    "duplicates": "Duplicados",
+    "apps": "Limpieza de apps",
+    "systemJunk": "Basura del sistema",
+    "performance": "Rendimiento",
+    "schedule": "Limpieza programada",
+    "settings": "Ajustes",
+    "groups": {
+      "explore": "Explorar",
+      "cleanUp": "Limpiar",
+      "monitor": "Supervisar",
+      "automate": "Automatizar"
+    }
+  },
+  "sidebar": {
+    "percentUsed": "{{percent}} en uso",
+    "freeOf": "<b>{{free}}</b> libres de {{total}}"
+  },
+  "progress": {
+    "overview": "Analizando el almacenamiento…",
+    "developer": "Analizando herramientas de desarrollo…",
+    "browsers": "Analizando cachés de navegadores…",
+    "applications": "Analizando aplicaciones instaladas…",
+    "files": "Analizando Descargas, Escritorio y Documentos…",
+    "finalizing": "Calculando el espacio recuperable…",
+    "preparing": "Preparando la limpieza…",
+    "moving": "Trasladando {{index}} de {{total}}: {{name}}",
+    "verifying": "Verificando resultados…",
+    "done": "Limpieza completada."
+  },
+  "onboarding": {
+    "stepOf": "Paso {{step}} de {{total}}",
+    "permissionsEyebrow": "Permisos",
+    "startCleaning": "Empezar a limpiar",
+    "meet": {
+      "title": "Te presentamos MacBook Cleaner",
+      "body": "Mantén tu Mac limpio, rápido y ordenado."
+    },
+    "space": {
+      "title": "Descubre qué ocupa espacio",
+      "body": "Encuentra archivos grandes, descargas antiguas, basura y datos de apps olvidados."
+    },
+    "safe": {
+      "title": "Limpia con seguridad",
+      "body": "Revisas todo antes de que se elimine nada."
+    },
+    "permission": {
+      "title": "Un permiso opcional",
+      "body": "macOS mantiene privados algunos lugares, como las cachés de apps, la Papelera y los datos de Mail, a menos que concedas acceso total al disco. MacBook Cleaner funciona sin él, pero verá menos.",
+      "local": "El análisis se realiza íntegramente en este Mac. No se sube nada.",
+      "folders": "macOS también puede preguntar antes de que MacBook Cleaner lea Descargas, Documentos y Escritorio. Permítelo para encontrar ahí archivos grandes y duplicados.",
+      "changeLater": "Puedes cambiarlo en cualquier momento en Ajustes del Sistema, en Privacidad y seguridad."
+    },
+    "chips": {
+      "largeFiles": "Archivos grandes",
+      "oldDownloads": "Descargas antiguas",
+      "systemJunk": "Basura del sistema",
+      "appLeftovers": "Restos de apps",
+      "movedToTrash": "Trasladado a la Papelera",
+      "alwaysRecoverable": "Siempre recuperable",
+      "personalFiles": "Archivos personales",
+      "neverAutoSelected": "Nunca seleccionados automáticamente"
+    }
+  },
+  "breakdown": {
+    "applications": {
+      "label": "Aplicaciones",
+      "description": "Apps de tus carpetas Aplicaciones"
+    },
+    "documents": {
+      "label": "Documentos",
+      "description": "Documentos y Escritorio"
+    },
+    "photos": {
+      "label": "Fotos",
+      "description": "Tu carpeta Imágenes, incluida la fototeca"
+    },
+    "videos": {
+      "label": "Vídeos",
+      "description": "Tu carpeta Películas"
+    },
+    "downloads": {
+      "label": "Descargas",
+      "description": "Todo lo que hay en la carpeta Descargas"
+    },
+    "cache": {
+      "label": "Caché",
+      "description": "Cachés y registros de apps en tu Biblioteca"
+    },
+    "other": {
+      "label": "Otros",
+      "description": "Música, Mail, Mensajes y otros datos de apps"
+    },
+    "systemData": {
+      "label": "Datos del sistema",
+      "description": "macOS, instantáneas y espacio que no se puede atribuir a una carpeta"
+    }
+  },
+  "fileTypes": {
+    "video": "Vídeos",
+    "diskImage": "Imágenes de disco",
+    "archive": "Archivos comprimidos",
+    "installer": "Instaladores",
+    "document": "Documentos",
+    "image": "Imágenes",
+    "audio": "Audio",
+    "other": "Otros"
+  },
+  "smartClean": {
+    "groups": {
+      "systemJunk": {
+        "title": "Basura del sistema",
+        "description": "Cachés de apps y del sistema que se reconstruyen solas."
+      },
+      "browser": {
+        "title": "Cachés de navegadores",
+        "description": "Páginas web e imágenes en caché. Contraseñas, cookies y marcadores no se tocan."
+      },
+      "appLeftovers": {
+        "title": "Restos de apps",
+        "description": "Cachés de apps que ya no están instaladas."
+      },
+      "logs": {
+        "title": "Registros e informes de fallos",
+        "description": "Registros de diagnóstico que las apps escriben con el tiempo. Se pueden borrar sin riesgo."
+      },
+      "developer": {
+        "title": "Basura de desarrollo",
+        "description": "Productos de compilación y cachés de paquetes que tus herramientas pueden regenerar."
+      },
+      "oldDownloads": {
+        "title": "Descargas antiguas",
+        "description": "Instaladores, archivos comprimidos y otros archivos que descargaste hace tiempo. Tú decides: no hay nada preseleccionado."
+      }
+    },
+    "stages": {
+      "caches": "Analizando cachés del sistema…",
+      "temp": "Revisando archivos temporales…",
+      "leftovers": "Revisando restos de apps…",
+      "downloads": "Analizando descargas…",
+      "largeFiles": "Buscando archivos grandes…",
+      "reclaimable": "Calculando el espacio recuperable…"
+    },
+    "selectAllIn": "Seleccionar todo en {{group}}",
+    "yourFiles": "Tus archivos",
+    "toReview_one": "{{count}} por revisar",
+    "toReview_many": "{{count}} por revisar",
+    "toReview_other": "{{count}} por revisar",
+    "selectedOf_one": "{{selected}} de {{count}} seleccionado",
+    "selectedOf_many": "{{selected}} de {{count}} seleccionados",
+    "selectedOf_other": "{{selected}} de {{count}} seleccionados",
+    "showMore_one": "Mostrar {{count}} más",
+    "showMore_many": "Mostrar {{count}} más",
+    "showMore_other": "Mostrar {{count}} más",
+    "intro": "Un análisis encuentra cachés, restos, registros y descargas olvidadas. Revisas todo antes de que se elimine nada.",
+    "onDevice": "100 % en el dispositivo",
+    "toTrash": "Todo va a la Papelera",
+    "personalNeverPreselected": "Los archivos personales nunca se preseleccionan",
+    "scanningEyebrow": "Analizando",
+    "scanningTitle": "Analizando tu Mac",
+    "scanComplete": "Análisis completado",
+    "canFreeUp": "Tu Mac puede liberar",
+    "safeRightAway": "<b>{{size}}</b> se pueden limpiar de forma segura ahora mismo. El resto espera a que lo revises.",
+    "tidyTitle": "Tu Mac ya está ordenado",
+    "tidySubtitle": "Ahora mismo no hemos encontrado nada que merezca la pena limpiar. Vuelve dentro de una semana o activa la limpieza programada.",
+    "trashNote": "Ya está en la Papelera. Vacíala en el Finder cuando estés seguro: MacBook Cleaner nunca la vacía por ti.",
+    "restoreNote": "Trasladado a la Papelera: puedes restaurar cualquier cosa.",
+    "cleanSize": "Limpiar {{size}}"
+  },
+  "dashboard": {
+    "greeting": {
+      "morning": "Buenos días",
+      "afternoon": "Buenas tardes",
+      "evening": "Buenas noches"
+    },
+    "subtitle": "Tu Mac merece una pequeña puesta a punto.",
+    "scanned": "Analizado {{when}}",
+    "scanning": "Analizando…",
+    "scan": "Analizar",
+    "macStorage": "Almacenamiento del Mac",
+    "explore": "Explorar",
+    "used": "En uso",
+    "total": "Total",
+    "free": "Libre",
+    "percentFull": "{{percent}} lleno",
+    "potentialCleanup": "Limpieza posible",
+    "scanToFindOut": "Analiza para averiguarlo",
+    "allCaughtUp": "Todo al día ✨",
+    "waitingForReview": "{{size}} esperan tu revisión.",
+    "nothingToClean": "Ahora mismo no hay nada que limpiar.",
+    "readyToClean": "Listo para limpiar de forma segura",
+    "moreWaiting": "{{size}} más esperan tu revisión.",
+    "findSafe": "Encuentra lo que se puede eliminar sin riesgo",
+    "findSafeBody": "Cachés, restos, descargas antiguas y más, revisados por ti.",
+    "reviewAndClean": "Revisar y limpiar",
+    "tiles": {
+      "largeFiles_one": "{{count}} archivo de más de {{size}}",
+      "largeFiles_many": "{{count}} archivos de más de {{size}}",
+      "largeFiles_other": "{{count}} archivos de más de {{size}}",
+      "oldDownloadsTitle": "Descargas antiguas",
+      "oldDownloads_one": "{{count}} ítem por revisar",
+      "oldDownloads_many": "{{count}} ítems por revisar",
+      "oldDownloads_other": "{{count}} ítems por revisar",
+      "duplicatesTitle": "Duplicados",
+      "duplicates_one": "{{count}} grupo de copias",
+      "duplicates_many": "{{count}} grupos de copias",
+      "duplicates_other": "{{count}} grupos de copias",
+      "appLeftoversTitle": "Restos de apps",
+      "appsInstalled_one": "{{count}} app instalada",
+      "appsInstalled_many": "{{count}} apps instaladas",
+      "appsInstalled_other": "{{count}} apps instaladas",
+      "notScanned": "Aún sin analizar"
+    },
+    "lastCleanup": "Última limpieza",
+    "noCleanups": "Aún no hay limpiezas: la primera está a un clic.",
+    "trash": "Papelera",
+    "trashEmpty": "Vacíala en el Finder para recuperar este espacio",
+    "trashNeedsAccess": "Necesita acceso total al disco para medirla",
+    "scheduledCleanup": "Limpieza programada",
+    "nextRun": "Próxima: {{when}}",
+    "scheduleHint": "Mantiene el desorden a raya automáticamente"
+  },
+  "schedule": {
+    "frequency": {
+      "daily": "Diaria",
+      "weekly": "Semanal",
+      "biweekly": "Cada 2 semanas",
+      "monthly": "Mensual"
+    }
+  },
+  "storage": {
+    "subtitle": "Entiende qué ocupa realmente el almacenamiento de tu Mac.",
+    "totalStorage": "Almacenamiento total",
+    "details": "Detalles",
+    "noItems": "No hay ítems individuales lo bastante grandes para mostrarse aquí.",
+    "showingLargest": "Se muestran los ítems más grandes encontrados (archivos de {{size}} o más).",
+    "explain": {
+      "photos": "Tu fototeca la gestiona la app Fotos, por lo que MacBook Cleaner nunca elimina fotos sueltas de ella. Para ahorrar espacio, activa «Optimizar almacenamiento del Mac» en Fotos → Ajustes → iCloud.",
+      "other": "Música, Mail, adjuntos de Mensajes y datos que las apps guardan en tu Biblioteca. La mayoría los gestionan esas apps: límpialos desde ellas directamente.",
+      "systemData": "El propio macOS, las instantáneas locales de Time Machine, la memoria virtual y todo lo que no se puede atribuir a una carpeta. macOS gestiona este espacio y elimina las instantáneas automáticamente cuando lo necesita."
+    },
+    "links": {
+      "apps": "Abrir la limpieza de apps",
+      "largeFiles": "Buscar archivos grandes",
+      "largeVideos": "Buscar vídeos grandes",
+      "downloads": "Abrir la limpieza de descargas",
+      "systemJunk": "Abrir la basura del sistema"
+    }
+  },
+  "largeFiles": {
+    "subtitle": "Encuentra archivos olvidados que ocupan gigabytes.",
+    "atLeast": "{{size}} o más",
+    "sortLargest": "Más grandes",
+    "sortOldest": "Más antiguos",
+    "all": "Todos",
+    "emptyTitle": "No se encontraron archivos grandes",
+    "emptySubtitle": "Tu Mac ya está ordenado.",
+    "modified": "Modificado",
+    "size": "Tamaño",
+    "footnote": "Se analizaron Descargas, Escritorio, Documentos y Películas. Las bibliotecas de apps (Fotos, iMovie, Final Cut) nunca se abren."
+  },
+  "downloads": {
+    "subtitle": "Elimina instaladores, archivos comprimidos y descargas olvidadas.",
+    "selectOldInstallers": "Seleccionar instaladores antiguos",
+    "emptyTitle": "Tu carpeta Descargas está vacía",
+    "emptySubtitle": "No hay nada de más de {{size}} en Descargas. Bien hecho.",
+    "kinds": {
+      "installers": "Instaladores e imágenes de disco",
+      "duplicates": "Descargas duplicadas",
+      "large": "Descargas grandes"
+    },
+    "showing": "Mostrando: <b>{{label}}</b>",
+    "showAll": "Mostrar todo",
+    "duplicateNote": "Duplicado",
+    "age": {
+      "today": "Hoy",
+      "week": "Esta semana",
+      "month": "Este mes",
+      "older30": "Hace más de 30 días",
+      "older90": "Hace más de 90 días"
+    }
+  },
+  "duplicates": {
+    "subtitle": "Archivos idénticos, confirmados byte a byte. Siempre se conserva una copia.",
+    "oneKept": "Siempre se conserva al menos una copia.",
+    "keepOldest": "Conservar el más antiguo",
+    "keepNewest": "Conservar el más reciente",
+    "emptyTitle": "No se encontraron archivos duplicados",
+    "emptySubtitle": "Aquí no hay nada que limpiar.",
+    "totalWasted": "Espacio desperdiciado total",
+    "matchedBy": "Comparados por tamaño y después por una suma de comprobación de todo el contenido.",
+    "copiesEach_one": "{{count}} copia · {{size}} cada una",
+    "copiesEach_many": "{{count}} copias · {{size}} cada una",
+    "copiesEach_other": "{{count}} copias · {{size}} cada una",
+    "wasted": "Desperdiciado",
+    "newest": "Más reciente",
+    "oldest": "Más antiguo",
+    "kept": "Se conserva",
+    "moveToTrash": "Trasladar duplicados a la Papelera",
+    "sets_one": "<b>{{count}}</b> grupo",
+    "sets_many": "<b>{{count}}</b> grupos",
+    "sets_other": "<b>{{count}}</b> grupos",
+    "copies_one": "<b>{{count}}</b> copia",
+    "copies_many": "<b>{{count}}</b> copias",
+    "copies_other": "<b>{{count}}</b> copias"
+  },
+  "errors": {
+    "native": {
+      "invalidPath": "La ruta del archivo no es válida.",
+      "gone": "El archivo ya no existe.",
+      "protectedSystem": "Es una ubicación protegida de macOS ({{path}}) y no se puede eliminar.",
+      "homeFolder": "Tu carpeta de inicio nunca se puede eliminar.",
+      "protectedFolder": "{{path}} es una carpeta protegida y no se puede eliminar por completo.",
+      "outsideHome": "Solo se pueden eliminar archivos dentro de tu carpeta de inicio.",
+      "sensitive": "Este ítem puede contener datos confidenciales, por lo que está protegido.",
+      "noAccess": "No se puede acceder a este ítem: se denegó el permiso o ya no existe.",
+      "rootFolder": "No se puede eliminar una carpeta raíz.",
+      "macos": "macOS informó de un error ({{code}}): {{detail}}",
+      "trashFailed": "No se pudo trasladar este ítem a la Papelera.",
+      "protectedItem": "Los ítems protegidos no se pueden limpiar.",
+      "notApp": "No es una app que se pueda desinstalar.",
+      "notInApplications": "Solo se pueden desinstalar apps que estén directamente en una carpeta Aplicaciones.",
+      "systemApp": "Las apps de Apple forman parte de macOS y están protegidas.",
+      "self": "MacBook Cleaner no puede desinstalarse a sí mismo.",
+      "previewHomeOnly": "La previsualización solo está disponible para archivos dentro de tu carpeta de inicio.",
+      "loginDevBuild": "«Abrir al iniciar sesión» solo está disponible en la app instalada, no en una versión de desarrollo.",
+      "notInstalled": "MacBook Cleaner se está ejecutando desde una imagen de disco o tu carpeta Descargas. Trasládalo a tu carpeta Aplicaciones, ábrelo desde allí e inténtalo de nuevo.",
+      "noHome": "No se encontró tu carpeta de inicio.",
+      "scheduleFailed": "macOS no pudo iniciar el asistente de limpieza programada.",
+      "unknown": "Algo ha ido mal: {{detail}}",
+      "appMoved": "Esta app ya no está en esa ubicación.",
+      "linkBlocked": "Este enlace no se puede abrir.",
+      "browserFailed": "No se pudo abrir tu navegador predeterminado.",
+      "noAppSupport": "MacBook Cleaner no pudo acceder a su carpeta de datos.",
+      "invalidTime": "Esa hora no es válida."
+    },
+    "generic": "Algo ha ido mal."
+  },
+  "apps": {
+    "footprint": {
+      "cache": "Caché",
+      "networkCache": "Caché de red",
+      "logs": "Registros",
+      "savedState": "Estado de ventanas guardado",
+      "websiteData": "Datos de sitios web",
+      "support": "Archivos de soporte",
+      "preferences": "Preferencias",
+      "container": "Contenedor aislado"
+    },
+    "subtitle": "Elimina aplicaciones junto con sus cachés, registros y restos.",
+    "emptyTitle": "No se encontraron aplicaciones",
+    "emptySubtitle": "No se pudo leer tu carpeta Aplicaciones.",
+    "search": "Buscar apps",
+    "sort": {
+      "size": "Tamaño",
+      "name": "Nombre",
+      "leastUsed": "Menos usadas"
+    },
+    "notUsedInMonths": "Sin usar desde hace meses",
+    "opened": "Abierta {{when}}",
+    "usageUnknown": "Uso desconocido",
+    "application": "Aplicación",
+    "partOfMacOS": "Forma parte de macOS",
+    "version": "Versión {{version}}",
+    "lastOpened": "Abierta por última vez {{when}}",
+    "lastOpenedUnknown": "Última apertura desconocida",
+    "noLeftovers": "No se encontraron cachés, registros ni archivos de soporte de esta app.",
+    "explainer": "Las cachés y los registros se pueden borrar sin riesgo. Los archivos de soporte y las preferencias contienen tus ajustes y datos de esta app: borrarlos la restablece. Sal de la app antes de limpiarla o desinstalarla.",
+    "revealFiles": "Mostrar archivos",
+    "cleanData": "Limpiar datos de la app",
+    "uninstall": "Desinstalar app",
+    "cleanedUp": "{{app}} limpiada",
+    "uninstalled": "{{app}} desinstalada"
+  },
+  "systemJunk": {
+    "subtitle": "Cachés, registros y archivos temporales que tu Mac reconstruye solo.",
+    "selectAllSafe": "Seleccionar todo lo seguro",
+    "safeToClean": "Seguro de limpiar",
+    "safeBody": "Se reconstruye automáticamente cuando hace falta. Sin datos personales.",
+    "reviewRecommended": "Se recomienda revisar",
+    "reviewBody": "Se puede eliminar, pero puede provocar nuevas descargas, reconstrucciones o cierres de sesión.",
+    "emptyTitle": "No se encontró basura",
+    "emptySubtitle": "Tus cachés y registros ya son ligeros.",
+    "safeSubtitle": "Cachés de apps, cachés de navegadores y registros",
+    "reviewSubtitle": "Revisa antes de eliminar",
+    "developer": "Limpieza para desarrolladores",
+    "developerSubtitle": "Xcode, simuladores, gestores de paquetes y cachés de compilación",
+    "devHidden": "{{size}} de cachés de desarrollo ocultos. <link>Activar la limpieza para desarrolladores</link>",
+    "clean": "Limpiar"
+  },
+  "settings": {
+    "notifications": "Notificaciones",
+    "subtitle": "Adapta MacBook Cleaner a tu forma de trabajar.",
+    "appearance": "Apariencia",
+    "theme": "Tema",
+    "themeSubtitle": "Seguir a macOS o elegir un tema.",
+    "themeLight": "Claro",
+    "themeDark": "Oscuro",
+    "themeSystem": "Sistema",
+    "general": "General",
+    "language": "Idioma",
+    "languageFollowsMac": "Sigue el idioma de tu Mac.",
+    "languageChosen": "Se mantiene sea cual sea el idioma de tu Mac.",
+    "launchAtLogin": "Abrir al iniciar sesión",
+    "launchAtLoginSubtitle": "Abrir MacBook Cleaner al iniciar sesión.",
+    "notificationsSubtitle": "Recordatorios y resúmenes de la limpieza programada.",
+    "macNotificationSettings": "Ajustes de notificaciones de macOS",
+    "scheduleOn": "Activado · {{frequency}} a las {{time}}",
+    "cleanupBehavior": "Comportamiento de la limpieza",
+    "moveToTrash": "Trasladar archivos a la Papelera",
+    "moveToTrashSubtitle": "Siempre activado. MacBook Cleaner nunca elimina nada de forma permanente: tú decides cuándo vaciar la Papelera.",
+    "always": "Siempre",
+    "confirmBefore": "Confirmar antes de limpiar",
+    "confirmBeforeSubtitle": "Si está desactivado, las limpiezas que solo contienen ítems seguros no piden confirmación. Tus propios archivos y los ítems por revisar siempre la piden.",
+    "developer": "Limpieza para desarrolladores",
+    "developerSubtitle": "Mostrar cachés de compilación de Xcode, el Simulador, npm, Gradle y otros.",
+    "exclusions": "Exclusiones del análisis",
+    "exclusionsSubtitle": "Los archivos y carpetas de esta lista nunca se sugieren para limpiar, ni de forma manual ni programada.",
+    "exclusionsInput": "Ruta de la carpeta o archivo que se excluirá",
+    "add": "Añadir",
+    "noExclusions": "Aún no hay exclusiones. También puedes ocultar cualquier ítem con el botón «No volver a sugerir» de su fila.",
+    "removeExclusion": "Eliminar {{path}}",
+    "privacy": "Privacidad y permisos",
+    "fdaGranted": "Concedido: MacBook Cleaner puede medir todo lo que limpia.",
+    "fdaOptional": "Opcional. Permite a MacBook Cleaner ver cachés, la Papelera y datos de apps que macOS mantiene privados.",
+    "granted": "Concedido",
+    "recheck": "Volver a comprobar",
+    "filesStay": "Tus archivos se quedan en tu Mac",
+    "filesStaySubtitle": "El análisis se ejecuta localmente. No se sube nada y el contenido de los archivos solo se lee para confirmar duplicados.",
+    "about": "Acerca de",
+    "checkUpdates": "Buscar actualizaciones",
+    "privacyPolicy": "Política de privacidad",
+    "terms": "Condiciones de uso",
+    "showWelcome": "Volver a mostrar la bienvenida",
+    "resetAll": "Restablecer todos los datos",
+    "resetTitle": "¿Restablecer MacBook Cleaner?",
+    "resetBody": "Se borrarán tus ajustes, exclusiones, programación e historial de limpieza, y se desactivará la limpieza programada. Tus archivos y la Papelera no se tocan."
+  },
+  "scheduleScreen": {
+    "subtitle": "Mantén el desorden innecesario a raya automáticamente.",
+    "howOften": "Frecuencia",
+    "howOftenSubtitle": "MacBook Cleaner comprueba en segundo plano sin hacer ruido; no se abre ninguna ventana.",
+    "at": "A las",
+    "nextRun": "Próxima ejecución: {{when}}",
+    "whenItRuns": "Cuando se ejecuta",
+    "remind": "Recordarme",
+    "remindBody": "Enviar una notificación cuando haya bastante que limpiar o quede poco almacenamiento.",
+    "auto": "Limpiar automáticamente",
+    "autoBody": "Trasladar a la Papelera las cachés de desarrollo aptas y después avisarte de lo que se limpió.",
+    "eligible": "Categorías aptas",
+    "eligibleSubtitle": "Solo se pueden programar cachés y basura.",
+    "categories": {
+      "developer": "Cachés de desarrollo",
+      "developerDetail": "Xcode DerivedData, npm, Yarn, pnpm, Gradle, CocoaPods",
+      "system": "Cachés del sistema y de apps",
+      "systemDetail": "Cachés y registros de tu Biblioteca",
+      "browser": "Cachés de navegadores",
+      "browserDetail": "Cachés de Safari, Chrome, Edge y Firefox"
+    },
+    "cleanedAutomatically": "Se limpia automáticamente",
+    "inReminders": "Incluido en los recordatorios",
+    "neverRemoved": "Nunca se elimina automáticamente",
+    "never": {
+      "desktop": "Archivos del Escritorio",
+      "personal": "Carpetas personales",
+      "label": "Nunca"
+    },
+    "onlyTrash": "Las ejecuciones programadas solo trasladan ítems a la Papelera.",
+    "status": "Estado",
+    "backgroundJob": "Tarea en segundo plano",
+    "active": "Activa",
+    "notInstalled": "No instalada",
+    "lastRun": "Última ejecución",
+    "recentRuns": "Ejecuciones recientes",
+    "found": "{{size}} encontrados",
+    "needsApplications": "La programación requiere que MacBook Cleaner esté en tu carpeta Aplicaciones.",
+    "unsaved": "Tienes cambios sin guardar",
+    "discard": "Descartar",
+    "saving": "Guardando…",
+    "save": "Guardar programación",
+    "consent": {
+      "title": "¿Activar la limpieza automática?",
+      "intro": "Mientras no estés, MacBook Cleaner trasladará estos ítems a la Papelera, y nada más:",
+      "jsCaches": "Cachés de npm, Yarn y pnpm",
+      "limits": "Solo se ejecuta cuando hay al menos {{min}} que limpiar, nunca más de {{max}} ni {{items}} ítems a la vez, siempre omite tus exclusiones y te envía un resumen. Todo se queda en la Papelera hasta que la vacíes.",
+      "keepReminders": "Seguir con recordatorios",
+      "turnOn": "Activar"
+    }
+  },
+  "toasts": {
+    "scanFailed": "Error en el análisis: {{error}}",
+    "excluded": "Entendido: no volveremos a sugerir ese ítem.",
+    "revealFailed": "No se puede mostrar en el Finder: {{error}}",
+    "quickLookPreview": "Vista Rápida se abre aquí en la app de escritorio.",
+    "previewFailed": "No se puede previsualizar: {{error}}",
+    "scheduleSaved": "Programación guardada: MacBook Cleaner estará atento.",
+    "scheduleOff": "Limpieza programada desactivada."
+  },
+  "language": {
+    "title": "Idioma",
+    "subtitle": "Los cambios se aplican al instante, sin reiniciar.",
+    "search": "Buscar idiomas",
+    "system": "Idioma del sistema",
+    "systemDetail": "Sigue a tu Mac (ahora: {{language}})",
+    "systemDetailPending": "Sigue el idioma de tu Mac"
+  },
+  "permissions": {
+    "fullDiskAccess": {
+      "label": "Acceso total al disco"
+    }
+  },
+  "cleanup": {
+    "failureName": "limpieza",
+    "aboutToRemove": "Vas a eliminar <b>{{size}}</b>",
+    "willMove_one": "{{count}} ítem se trasladará a la Papelera, así que podrás devolverlo a su sitio hasta que la vacíes.",
+    "willMove_many": "{{count}} ítems se trasladarán a la Papelera, así que podrás devolverlos a su sitio hasta que la vacíes.",
+    "willMove_other": "{{count}} ítems se trasladarán a la Papelera, así que podrás devolverlos a su sitio hasta que la vacíes.",
+    "notPermanent": "Trasladado a la Papelera: no se elimina nada de forma permanente.",
+    "personalWarning_one": "{{count}} de ellos es un archivo tuyo: asegúrate de que ya no lo necesitas.",
+    "personalWarning_many": "{{count}} de ellos son archivos tuyos o ajustes de apps: asegúrate de que ya no los necesitas.",
+    "personalWarning_other": "{{count}} de ellos son archivos tuyos o ajustes de apps: asegúrate de que ya no los necesitas.",
+    "reviewWarning_one": "{{count}} ítem puede provocar nuevas descargas, reconstrucciones o cierres de sesión.",
+    "reviewWarning_many": "{{count}} ítems pueden provocar nuevas descargas, reconstrucciones o cierres de sesión.",
+    "reviewWarning_other": "{{count}} ítems pueden provocar nuevas descargas, reconstrucciones o cierres de sesión.",
+    "hideList": "Ocultar lista de archivos",
+    "reviewFilesLink": "Revisar archivos",
+    "ack": "He revisado estos ítems y quiero trasladarlos a la Papelera.",
+    "reviewFiles": "Revisar archivos",
+    "cleanNow": "Limpiar ahora",
+    "cleaning": "Limpiando…",
+    "preparing": "Preparando…",
+    "nothingRemoved": "No se eliminó nada",
+    "complete": "Limpieza completada",
+    "youFreed": "Has liberado",
+    "breathingRoom": "Tu Mac tiene más espacio para respirar.",
+    "recoverable": "Todo está en la Papelera, así que se puede recuperar. El espacio se libera por completo cuando vacías la Papelera.",
+    "openTrash": "Abrir la Papelera",
+    "failedCount_one": "{{count}} ítem no se pudo trasladar",
+    "failedCount_many": "{{count}} ítems no se pudieron trasladar",
+    "failedCount_other": "{{count}} ítems no se pudieron trasladar",
+    "viewStorage": "Ver almacenamiento",
+    "backToDashboard": "Volver al panel"
+  },
+  "performance": {
+    "subtitle": "Mira cómo está tu Mac: CPU, memoria, apps, batería y más.",
+    "live": "En directo",
+    "updatedAt": "Actualizado a las {{time}}",
+    "readError": "No se pudo leer parte de la información: {{error}}",
+    "tabs": {
+      "overview": "Resumen",
+      "apps": "Apps abiertas",
+      "battery": "Batería",
+      "mac": "Info del Mac"
+    },
+    "runningApps": "Apps en ejecución",
+    "runningAppsSubtitle": "Qué apps usan más memoria y CPU ahora mismo.",
+    "cpu": "CPU",
+    "memory": "Memoria",
+    "uptime": "Tiempo de actividad",
+    "sinceRestart": "Desde el último reinicio",
+    "measuring": "Midiendo…",
+    "checking": "Comprobando…",
+    "idlePercent": "{{percent}} inactivo",
+    "available": "{{size}} disponibles",
+    "availableLabel": "Disponible",
+    "ofTotal": "de {{total}}",
+    "aboutX": "Acerca de: {{name}}",
+    "moreInfo": "Más información",
+    "chart60s": "hace 60 s",
+    "chartNow2": "ahora",
+    "chartNow": "{{label}}, ahora {{value}}",
+    "cpuUsage": "Uso de CPU",
+    "cpuUsageTip": "La parte de la potencia de procesamiento total de tu Mac que está en uso, medida en todos los núcleos cada pocos segundos.",
+    "cpuChart": "Uso de CPU en los últimos 60 segundos",
+    "cpuParts": {
+      "user": "Usuario",
+      "userTip": "Tiempo dedicado a las apps y a tus propios procesos.",
+      "system": "Sistema",
+      "systemTip": "Tiempo dentro del propio macOS: controladores, sistema de archivos, red.",
+      "idle": "Inactivo",
+      "idleTip": "Capacidad de procesamiento libre ahora mismo."
+    },
+    "cpuCores": {
+      "label": "Núcleos",
+      "split": "{{performance}} de rendimiento + {{efficiency}} de eficiencia"
+    },
+    "memoryUsed": "Memoria utilizada",
+    "memoryUsedTip": "Memoria de apps + permanente + comprimida: el mismo valor de «Memoria utilizada» que en el Monitor de Actividad. Los archivos en caché no cuentan porque macOS los libera al instante cuando hace falta.",
+    "memoryChart": "Memoria utilizada en los últimos 60 segundos",
+    "pressureIs": "La presión es {{pressure}}",
+    "pressureTip": "El indicador de macOS de si las apps tienen suficiente memoria. Un uso alto con presión normal es saludable: macOS usa la memoria libre a propósito.",
+    "pressure": {
+      "normal": "Normal",
+      "warning": "Elevada",
+      "critical": "Alta"
+    },
+    "memParts": {
+      "app": "Memoria de apps",
+      "appTip": "Memoria que tus apps están usando activamente.",
+      "wired": "Permanente",
+      "wiredTip": "Memoria que necesita el propio macOS y que no se puede comprimir ni trasladar.",
+      "compressed": "Comprimida",
+      "compressedTip": "Memoria que macOS ha comprimido para hacer sitio: una técnica normal y eficiente.",
+      "cached": "Archivos en caché",
+      "cachedTip": "Archivos usados recientemente que macOS mantiene en memoria para abrirlos más rápido. Se libera automáticamente en cuanto una app necesita el espacio.",
+      "swap": "Intercambio usado",
+      "swapTip": "Memoria que macOS ha trasladado temporalmente a tu SSD. Algo de intercambio es normal; mucho con presión alta indica que a tu Mac le vendría bien tener menos apps abiertas."
+    },
+    "duration": {
+      "dh": "{{d}} d {{h}} h",
+      "hm": "{{h}} h {{m}} min",
+      "m": "{{m}} min",
+      "lessThanMinute": "< 1 min"
+    },
+    "device": {
+      "thisMac": "Este Mac",
+      "memory": "{{size}} de memoria",
+      "storage": "{{size}} de almacenamiento",
+      "battery": "Batería: {{condition}}"
+    },
+    "health": {
+      "title": "Estado del Mac",
+      "subtitle": "Un resumen claro. Cada estado procede directamente de macOS.",
+      "memoryDetail": "Presión de memoria",
+      "memoryTip": "La presión de memoria es el indicador de macOS de cuánto le cuesta liberar memoria. «Normal» significa que las apps tienen memoria suficiente, aunque casi toda esté en uso.",
+      "storageFree": "{{size}} libres",
+      "runningLow": "Queda poco",
+      "gettingFull": "Llenándose",
+      "plentyOfRoom": "Mucho espacio",
+      "storageTip": "Muestra «Llenándose» con menos de {{full}} libres y «Queda poco» con menos de {{low}}: macOS necesita espacio libre para actualizaciones, cachés y memoria virtual.",
+      "noBattery": "Sin batería",
+      "batteryDetail": "Estado de la batería",
+      "desktopMac": "Mac de sobremesa",
+      "batteryTip": "El estado de la batería que indica macOS, el mismo que en Ajustes del Sistema → Batería.",
+      "cpuInUse": "{{percent}} en uso",
+      "light": "Actividad baja",
+      "moderate": "Actividad moderada",
+      "busy": "Muy ocupado",
+      "cpuTip": "Cuánta potencia de procesamiento total de tu Mac se usa ahora mismo, en todos los núcleos.",
+      "uptimeTip": "Cuánto tiempo lleva funcionando tu Mac desde el último arranque. Reiniciar de vez en cuando permite a macOS terminar de instalar actualizaciones.",
+      "asOfLastCheck": "Según la última comprobación de macOS",
+      "checkInSettings": "Comprobar en Ajustes del Sistema",
+      "macosTip": "Basado en el resultado de la comprobación automática de Actualización de software de macOS. MacBook Cleaner nunca contacta él mismo con los servidores de Apple."
+    },
+    "os": {
+      "updateAvailable": "Actualización disponible",
+      "upToDate": "Actualizado",
+      "statusUnknown": "Estado desconocido",
+      "version": "Versión",
+      "build": "Compilación",
+      "architecture": "Arquitectura",
+      "appleSilicon": "Chip de Apple (arm64)",
+      "intel": "Intel (x86_64)",
+      "kernel": "Kernel Darwin",
+      "kernelTip": "El núcleo de código abierto sobre el que se construye macOS. Útil sobre todo para resolver problemas.",
+      "availableFromApple": "Disponible de Apple",
+      "noUpdatesFound": "macOS no encontró actualizaciones en su última comprobación.",
+      "openToCheck": "Abre Actualización de software para buscar la versión más reciente de macOS.",
+      "lastChecked": "macOS comprobó por última vez {{when}}. MacBook Cleaner lee ese resultado y nunca contacta con Apple él mismo.",
+      "checkUpdates": "Buscar actualizaciones de macOS",
+      "openSoftwareUpdate": "Abrir Actualización de software"
+    },
+    "battery": {
+      "conditionNormal": "Normal",
+      "conditionService": "Se recomienda reparación",
+      "conditionIs": "Estado: {{condition}}",
+      "charging": "Cargando",
+      "onBattery": "Con batería",
+      "fullyCharged": "Carga completa",
+      "notCharging": "No se está cargando",
+      "untilFull": "{{time}} hasta la carga completa",
+      "remaining": "Quedan {{time}}",
+      "powerAdapter": "Adaptador de corriente",
+      "batteryPower": "Batería",
+      "maxCapacity": "Capacidad máxima",
+      "maxCapacityTip": "Cuánta carga puede almacenar la batería ahora comparada con cuando era nueva. Indicada por macOS: el mismo valor que en Ajustes del Sistema → Batería → Estado de la batería.",
+      "capacityNote": "La capacidad disminuye de forma natural con la edad de la batería. MacBook Cleaner solo la muestra: ninguna app puede restaurar la capacidad de una batería.",
+      "cycleCount": "Número de ciclos",
+      "cyclesOfDesign": "{{cycles}} de los {{design}} ciclos para los que la batería indica que está diseñada",
+      "cycleExplain": "El número de ciclos indica cuántos ciclos de carga completos ha realizado la batería de tu Mac. Usar el 100 % de su capacidad, aunque sea en varias cargas parciales, cuenta como un ciclo.",
+      "details": "Detalles de la batería",
+      "charge": "Carga",
+      "chargingLabel": "Carga",
+      "powerSource": "Fuente de alimentación",
+      "timeRemaining": "Tiempo restante",
+      "notApplicable": "No aplicable",
+      "calculating": "Calculando…",
+      "timeTip": "macOS solo ofrece una estimación después de observar tu uso actual durante un rato.",
+      "condition": "Estado",
+      "conditionTip": "Indicado por macOS. «Normal» significa que la batería funciona como se espera; «Se recomienda reparación» significa que Apple sugiere revisarla.",
+      "designCapacity": "Capacidad de diseño",
+      "designCapacityTip": "Cuánta carga podía almacenar la batería cuando era nueva.",
+      "fullCapacity": "Capacidad a plena carga",
+      "fullCapacityTip": "Cuánta carga almacena hoy la batería cuando está llena.",
+      "currentCharge": "Carga actual",
+      "mah": "{{value}} mAh"
+    },
+    "apps": {
+      "inUse": "En primer plano",
+      "hidden": "Oculta",
+      "thisApp": "Esta app",
+      "kind": {
+        "app": "App",
+        "background": "Segundo plano",
+        "backgroundProcess": "Proceso en segundo plano",
+        "system": "Proceso del sistema"
+      },
+      "processes_one": "{{count}} proceso",
+      "processes_many": "{{count}} procesos",
+      "processes_other": "{{count}} procesos",
+      "filter": {
+        "apps": "Apps",
+        "background": "Segundo plano",
+        "all": "Todo"
+      },
+      "showSystem": "Mostrar procesos del sistema",
+      "search": "Buscar en apps abiertas",
+      "cols": {
+        "app": "App",
+        "name": "Nombre",
+        "running": "En ejecución"
+      },
+      "cpuTip": "Parte de la potencia de procesamiento total de tu Mac. El Monitor de Actividad muestra valores por núcleo, que pueden superar el 100 %.",
+      "memoryTip": "Huella de memoria física: el valor de la columna Memoria del Monitor de Actividad. Las apps incluyen sus procesos auxiliares.",
+      "nothing": "No hay nada que mostrar.",
+      "showMore_one": "Mostrar más ({{count}} oculto)",
+      "showMore_many": "Mostrar más ({{count}} ocultos)",
+      "showMore_other": "Mostrar más ({{count}} ocultos)",
+      "seeAll": "Ver todas las apps abiertas",
+      "footnote_one": "{{count}} proceso en este Mac. Las apps incluyen sus procesos auxiliares. macOS no permite que las apps lean la CPU y la memoria de procesos del sistema de otros usuarios, por eso muestran «—».",
+      "footnote_many": "{{count}} procesos en este Mac. Las apps incluyen sus procesos auxiliares. macOS no permite que las apps lean la CPU y la memoria de procesos del sistema de otros usuarios, por eso muestran «—».",
+      "footnote_other": "{{count}} procesos en este Mac. Las apps incluyen sus procesos auxiliares. macOS no permite que las apps lean la CPU y la memoria de procesos del sistema de otros usuarios, por eso muestran «—»."
+    },
+    "macUptime": "Tiempo de actividad del Mac",
+    "lastStarted": "Último arranque {{when}}",
+    "uptimeUnits": {
+      "days_one": "día",
+      "days_many": "días",
+      "days_other": "días",
+      "hours_one": "hora",
+      "hours_many": "horas",
+      "hours_other": "horas",
+      "minutes_one": "minuto",
+      "minutes_many": "minutos",
+      "minutes_other": "minutos"
+    },
+    "details": {
+      "title": "Detalles de {{name}}",
+      "quit": "Ya no está en ejecución",
+      "cpuTip": "Parte de la potencia de procesamiento total de tu Mac en este momento.",
+      "memoryTip": "Huella de memoria física, incluidos los procesos auxiliares.",
+      "runningFor": "En ejecución desde hace",
+      "threads": "Hilos",
+      "threadsTip": "Tareas independientes que la app ejecuta a la vez. Las apps ocupadas suelen usar decenas.",
+      "launched": "Abierta",
+      "state": "Estado",
+      "status": {
+        "running": "En ejecución",
+        "idle": "Inactiva: esperando una acción",
+        "stopped": "Detenida"
+      },
+      "pid": "ID de proceso",
+      "processes": "Procesos",
+      "withHelpers_one": "{{count}} (app + auxiliares)",
+      "withHelpers_many": "{{count}} (app + auxiliares)",
+      "withHelpers_other": "{{count}} (app + auxiliares)",
+      "owner": "Propietario",
+      "you": "Tú",
+      "systemOwner": "Sistema",
+      "version": "Versión",
+      "executable": "Ejecutable",
+      "quitHint": "Para salir de una app, usa su propio comando Salir (⌘Q) o haz clic con el botón derecho en el Dock, para que pueda guardar tu trabajo antes."
+    },
+    "mac": {
+      "hardware": "Hardware",
+      "model": "Modelo",
+      "modelId": "Identificador del modelo",
+      "modelIdTip": "El nombre interno que Apple da a este modelo concreto de Mac: útil para buscar especificaciones o artículos de soporte.",
+      "chip": "Chip",
+      "cores_one": "{{count}} núcleo",
+      "cores_many": "{{count}} núcleos",
+      "cores_other": "{{count}} núcleos",
+      "coresSplit_one": "{{count}} núcleo ({{performance}} de rendimiento, {{efficiency}} de eficiencia)",
+      "coresSplit_many": "{{count}} núcleos ({{performance}} de rendimiento, {{efficiency}} de eficiencia)",
+      "coresSplit_other": "{{count}} núcleos ({{performance}} de rendimiento, {{efficiency}} de eficiencia)",
+      "coresThreads_one": "{{count}} núcleo, {{threads}} hilos",
+      "coresThreads_many": "{{count}} núcleos, {{threads}} hilos",
+      "coresThreads_other": "{{count}} núcleos, {{threads}} hilos",
+      "graphics": "Gráficos",
+      "gpuCores_one": "{{gpu}}, GPU de {{count}} núcleo",
+      "gpuCores_many": "{{gpu}}, GPU de {{count}} núcleos",
+      "gpuCores_other": "{{gpu}}, GPU de {{count}} núcleos",
+      "storageValue": "{{total}} ({{free}} disponibles)",
+      "hostname": "Nombre del host",
+      "hostnameTip": "El nombre de tu Mac en la red local. Solo se muestra aquí; nunca se envía a ningún sitio.",
+      "note": "Nota",
+      "rosetta": "MacBook Cleaner se está ejecutando con Rosetta",
+      "displays": "Pantallas",
+      "builtIn": "Integrada",
+      "main": "Principal",
+      "looksLike": "Parece {{resolution}}",
+      "pixels": "{{pixels}} píxeles",
+      "localNote": "Toda esta información se lee localmente de macOS y se queda en tu Mac. MacBook Cleaner no lee tu número de serie."
+    },
+    "storage": {
+      "recoverable": "Posiblemente recuperable",
+      "runScan": "Hacer un análisis",
+      "openCleaner": "Abrir el limpiador de almacenamiento",
+      "breakdown": "Desglose del almacenamiento"
+    }
+  },
+  "native": {
+    "number": {
+      "decimal": ",",
+      "gb": "{{value}} GB"
+    },
+    "notifications": {
+      "autoCleanDone": "La limpieza automática trasladó {{size}} de caché segura a la Papelera.",
+      "autoCleanPartial": "La limpieza automática trasladó {{size}} a la Papelera. Algunos ítems no se pudieron trasladar ({{failed}}).",
+      "lowSpace": "A tu Mac solo le quedan {{size}} libres. Revisa las recomendaciones de almacenamiento.",
+      "reviewable": "Hay {{size}} disponibles para revisar y limpiar."
+    },
+    "menu": {
+      "about": "Acerca de {{app}}",
+      "services": "Servicios",
+      "hide": "Ocultar {{app}}",
+      "hideOthers": "Ocultar otros",
+      "showAll": "Mostrar todo",
+      "quit": "Salir de {{app}}",
+      "edit": "Edición",
+      "undo": "Deshacer",
+      "redo": "Rehacer",
+      "cut": "Cortar",
+      "copy": "Copiar",
+      "paste": "Pegar",
+      "selectAll": "Seleccionar todo",
+      "view": "Visualización",
+      "fullScreen": "Usar pantalla completa",
+      "window": "Ventana",
+      "minimize": "Minimizar",
+      "zoom": "Zoom",
+      "closeWindow": "Cerrar ventana"
+    },
+    "appleEventsUsage": "MacBook Cleaner pide al Finder que traslade a la Papelera los ítems que apruebes, para que puedas restaurarlos hasta que la vacíes."
+  }
+}

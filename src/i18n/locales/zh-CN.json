@@ -1,0 +1,979 @@
+{
+  "meta": {
+    "englishName": "Chinese (Simplified)",
+    "nativeName": "简体中文",
+    "dir": "ltr",
+    "order": 12
+  },
+  "common": {
+    "tagline": "清理杂乱，留住重要。",
+    "unknown": "未知",
+    "notAvailable": "不可用",
+    "cancel": "取消",
+    "close": "关闭",
+    "clear": "清除",
+    "continue": "继续",
+    "back": "返回",
+    "dismiss": "关闭",
+    "refresh": "刷新",
+    "rescan": "重新扫描",
+    "scanAgain": "再次扫描",
+    "search": "搜索",
+    "noMatches": "无匹配项。",
+    "reset": "还原",
+    "off": "关",
+    "no": "否",
+    "selectAll": "全选",
+    "selectItem": "选择“{{name}}”",
+    "quickLook": "快速查看",
+    "revealInFinder": "在 Finder 中显示",
+    "showInFinder": "在 Finder 中显示",
+    "neverSuggest": "不再建议",
+    "moveToTrash": "移到废纸篓",
+    "items_other": "{{count}} 个项目",
+    "files_other": "{{count}} 个文件",
+    "openSystemSettings": "打开系统设置",
+    "open": "打开"
+  },
+  "safety": {
+    "green": "安全",
+    "orange": "需检查",
+    "red": "受保护"
+  },
+  "scanGate": {
+    "scanningTitle": "正在扫描你的 Mac…",
+    "gettingStarted": "正在开始…",
+    "promptTitle": {
+      "largeFiles": "扫描以查找大文件",
+      "downloads": "扫描以查找旧的下载项",
+      "duplicates": "扫描以查找重复文件",
+      "apps": "扫描以查找 App 及其残留",
+      "systemJunk": "扫描以查找系统垃圾",
+      "storage": "扫描以查看储存空间的占用情况",
+      "smartClean": "扫描以查看可以移除的内容"
+    },
+    "promptSubtitle": "快速的本地扫描会显示 Mac 上有什么。未经你检查，不会移除任何内容。",
+    "scanButton": "扫描我的 Mac"
+  },
+  "selectionBar": {
+    "selected_other": "已选择 {{count}} 个项目",
+    "willMove": "{{size}} 将移到废纸篓"
+  },
+  "items": {
+    "dev": {
+      "xcodeDerivedData": {
+        "name": "Xcode DerivedData",
+        "why": "Xcode 会在下次构建时自动重新生成的中间构建产物。",
+        "what": "Xcode 重新索引和编译期间，下次构建会花更长时间。"
+      },
+      "xcodeArchives": {
+        "name": "Xcode 归档",
+        "why": "用于提交到 App Store 和通过 TestFlight 分发的归档构建版本。",
+        "what": "你将无法再导出该构建版本的 dSYM，也无法重新提交它。"
+      },
+      "xcodeDeviceSupportIos": {
+        "name": "iOS 设备支持",
+        "why": "你以前连接过的 iOS 设备的缓存调试符号。",
+        "what": "下次连接设备时，Xcode 会重新下载设备支持文件。"
+      },
+      "xcodeDeviceSupportWatchos": {
+        "name": "watchOS 设备支持",
+        "why": "你用于测试的已配对 Apple Watch 的缓存调试符号。",
+        "what": "下次连接设备时，Xcode 会重新下载设备支持文件。"
+      },
+      "xcodeSimulatorCaches": {
+        "name": "模拟器缓存",
+        "why": "iOS/watchOS 模拟器会在需要时自动重建的数据。",
+        "what": "没有影响——模拟器会自动重建缓存。"
+      },
+      "xcodeSimulatorDevices": {
+        "name": "模拟器设备",
+        "why": "每台模拟 iOS/watchOS/tvOS 设备的储存空间，包括已安装的测试 App 数据。",
+        "what": "模拟器设备及其中安装的 App 数据需要重新创建。"
+      },
+      "npmCache": {
+        "name": "npm 缓存",
+        "why": "npm 保留的已下载软件包归档，便于以后安装时无需联网。",
+        "what": "以后的 npm 安装将重新下载软件包，而不是使用本地缓存。"
+      },
+      "yarnCache": {
+        "name": "Yarn 缓存",
+        "why": "Yarn 为你所有项目保留的软件包缓存。",
+        "what": "安装时将使用网络；已安装的项目不受影响。"
+      },
+      "pnpmStore": {
+        "name": "pnpm 存储",
+        "why": "pnpm 为你所有项目保留的共享软件包存储。",
+        "what": "安装时将使用网络；已安装的项目不受影响。"
+      },
+      "metroCache": {
+        "name": "Metro 打包器缓存",
+        "why": "Metro（React Native）写入系统临时文件夹的临时打包器缓存。",
+        "what": "请在项目中运行“npx react-native start --reset-cache”来清除——它位于 MacBook Cleaner 从不触碰的系统文件夹中。"
+      },
+      "gradleCaches": {
+        "name": "Gradle 缓存",
+        "why": "Android/Gradle 项目共享的已下载依赖项和构建元数据。",
+        "what": "下次构建时 Gradle 会重新下载并解析依赖项（首次构建会变慢）。"
+      },
+      "androidAvd": {
+        "name": "Android 模拟器映像",
+        "why": "虚拟设备映像以及 Android 模拟器上安装的所有数据。",
+        "what": "你需要重新创建要再次使用的模拟器；其中的测试 App 数据会丢失。"
+      },
+      "cocoapodsCache": {
+        "name": "CocoaPods 缓存",
+        "why": "为你所有 iOS 项目缓存的 Pod 规格和源代码。",
+        "what": "下次运行“pod install”时会重新下载 Pod。"
+      },
+      "unknown": {
+        "why": "此 Mac 上检测到的开发者工具所使用的储存空间。",
+        "what": "移除前请检查——该工具可能需要重新生成这些数据。"
+      }
+    },
+    "updatedRecently": "最近已更新",
+    "browser": {
+      "name": "{{browser}} 缓存与临时文件",
+      "why": "浏览器会自动重建的网站缓存数据。",
+      "what": "下次访问时网站会重新载入所有内容。密码、Cookie 和书签不受影响。",
+      "notCleanedYet": "尚未用此 App 清理"
+    },
+    "file": {
+      "duplicate": {
+        "why": "根据大小以及开头和结尾的内容样本，此文件似乎与找到的另一个文件相同。",
+        "what": "只会影响这一副本，不会触碰其他内容。这是可能的匹配，并非绝对。"
+      },
+      "installer": {
+        "why": "从互联网下载的安装器。",
+        "what": "如需重新安装该软件，请重新下载安装器。"
+      },
+      "archive": {
+        "why": "压缩归档。",
+        "what": "如果你已将内容解压到其他位置，通常可以放心移除该归档。"
+      },
+      "large": {
+        "why": "你文件中的一个大文件——无法确定更具体的类型。"
+      },
+      "old": {
+        "why": "超过 180 天未修改。"
+      },
+      "download": {
+        "why": "“下载”文件夹中的一个文件。"
+      },
+      "yourFile": "这是你的文件——移除任何内容前请先检查。",
+      "reviewFirst": "移除前请检查。",
+      "found": "扫描时找到的文件。"
+    },
+    "system": {
+      "logsWhy": "App 或 macOS 自动写入的日志文件。",
+      "cacheWhy": "App 或 macOS 为加快启动速度而自动创建的缓存数据。",
+      "what": "没有影响——需要时会自动重新生成。"
+    },
+    "sensitive": {
+      "devWhat": "从名称看，此项目可能包含敏感数据。默认受保护——请在 Finder 中自行检查。",
+      "systemWhat": "从名称看，此项目可能包含敏感数据。默认受保护。",
+      "fileWhy": "从名称看，此项目可能包含敏感或重要数据。",
+      "fileWhat": "默认受保护——在考虑移除之前，请先在 Finder 中自行检查。"
+    }
+  },
+  "nav": {
+    "dashboard": "概览",
+    "smartClean": "Smart Clean",
+    "storage": "储存空间",
+    "largeFiles": "大文件",
+    "downloads": "下载",
+    "duplicates": "重复文件",
+    "apps": "App 清理",
+    "systemJunk": "系统垃圾",
+    "performance": "性能",
+    "schedule": "定时清理",
+    "settings": "设置",
+    "groups": {
+      "explore": "浏览",
+      "cleanUp": "清理",
+      "monitor": "监视",
+      "automate": "自动化"
+    }
+  },
+  "sidebar": {
+    "percentUsed": "已用 {{percent}}",
+    "freeOf": "可用 <b>{{free}}</b>，共 {{total}}"
+  },
+  "progress": {
+    "overview": "正在分析储存空间…",
+    "developer": "正在扫描开发者工具…",
+    "browsers": "正在扫描浏览器缓存…",
+    "applications": "正在扫描已安装的应用程序…",
+    "files": "正在扫描“下载”“桌面”和“文稿”…",
+    "finalizing": "正在计算可回收的空间…",
+    "preparing": "正在准备清理…",
+    "moving": "正在移动第 {{index}} 个，共 {{total}} 个：{{name}}",
+    "verifying": "正在验证结果…",
+    "done": "清理完成。"
+  },
+  "onboarding": {
+    "stepOf": "第 {{step}} 步，共 {{total}} 步",
+    "permissionsEyebrow": "权限",
+    "startCleaning": "开始清理",
+    "meet": {
+      "title": "欢迎使用 MacBook Cleaner",
+      "body": "让你的 Mac 保持干净、快速、井井有条。"
+    },
+    "space": {
+      "title": "看看什么在占用空间",
+      "body": "查找大文件、旧的下载项、垃圾和被遗忘的 App 数据。"
+    },
+    "safe": {
+      "title": "安全地清理",
+      "body": "在移除任何内容之前，你都会检查所有项目。"
+    },
+    "permission": {
+      "title": "一项可选权限",
+      "body": "除非你授予“完全磁盘访问权限”，否则 macOS 会将某些位置（如 App 缓存、废纸篓和邮件数据）设为私密。没有该权限 MacBook Cleaner 也能工作，只是能看到的内容更少。",
+      "local": "扫描完全在这台 Mac 上进行，不会上传任何内容。",
+      "folders": "在 MacBook Cleaner 读取“下载”“文稿”和“桌面”之前，macOS 也可能会询问你。允许后即可查找其中的大文件和重复文件。",
+      "changeLater": "你可以随时在“系统设置”的“隐私与安全性”中更改此设置。"
+    },
+    "chips": {
+      "largeFiles": "大文件",
+      "oldDownloads": "旧的下载项",
+      "systemJunk": "系统垃圾",
+      "appLeftovers": "App 残留",
+      "movedToTrash": "移到废纸篓",
+      "alwaysRecoverable": "随时可恢复",
+      "personalFiles": "个人文件",
+      "neverAutoSelected": "从不自动选择"
+    }
+  },
+  "breakdown": {
+    "applications": {
+      "label": "应用程序",
+      "description": "“应用程序”文件夹中的 App"
+    },
+    "documents": {
+      "label": "文稿",
+      "description": "文稿和桌面"
+    },
+    "photos": {
+      "label": "照片",
+      "description": "“图片”文件夹，包括照片图库"
+    },
+    "videos": {
+      "label": "视频",
+      "description": "“影片”文件夹"
+    },
+    "downloads": {
+      "label": "下载",
+      "description": "“下载”文件夹中的全部内容"
+    },
+    "cache": {
+      "label": "缓存",
+      "description": "资源库中的 App 缓存和日志"
+    },
+    "other": {
+      "label": "其他",
+      "description": "音乐、邮件、信息和其他 App 数据"
+    },
+    "systemData": {
+      "label": "系统数据",
+      "description": "macOS、快照以及无法归入任何文件夹的空间"
+    }
+  },
+  "fileTypes": {
+    "video": "视频",
+    "diskImage": "磁盘映像",
+    "archive": "归档",
+    "installer": "安装器",
+    "document": "文稿",
+    "image": "图像",
+    "audio": "音频",
+    "other": "其他"
+  },
+  "smartClean": {
+    "groups": {
+      "systemJunk": {
+        "title": "系统垃圾",
+        "description": "会自动重建的 App 和系统缓存。"
+      },
+      "browser": {
+        "title": "浏览器缓存",
+        "description": "缓存的网页和图像。密码、Cookie 和书签不受影响。"
+      },
+      "appLeftovers": {
+        "title": "App 残留",
+        "description": "已不再安装的 App 的缓存。"
+      },
+      "logs": {
+        "title": "日志和崩溃报告",
+        "description": "App 随时间写入的诊断日志，可以放心删除。"
+      },
+      "developer": {
+        "title": "开发者垃圾",
+        "description": "你的工具可以重新生成的构建产物和软件包缓存。"
+      },
+      "oldDownloads": {
+        "title": "旧的下载项",
+        "description": "一段时间前下载的安装器、归档和文件。由你决定——没有预先选择任何项目。"
+      }
+    },
+    "stages": {
+      "caches": "正在扫描系统缓存…",
+      "temp": "正在检查临时文件…",
+      "leftovers": "正在检查 App 残留…",
+      "downloads": "正在分析下载项…",
+      "largeFiles": "正在查找大文件…",
+      "reclaimable": "正在计算可回收的空间…"
+    },
+    "selectAllIn": "全选“{{group}}”中的项目",
+    "yourFiles": "你的文件",
+    "toReview_other": "{{count}} 个待检查",
+    "selectedOf_other": "已选择 {{selected}} 个，共 {{count}} 个",
+    "showMore_other": "再显示 {{count}} 个",
+    "intro": "扫描会查找缓存、残留、日志和被遗忘的下载项。在移除任何内容之前，你都会检查所有项目。",
+    "onDevice": "100% 在设备上处理",
+    "toTrash": "所有内容都会移到废纸篓",
+    "personalNeverPreselected": "从不预选个人文件",
+    "scanningEyebrow": "正在扫描",
+    "scanningTitle": "正在扫描你的 Mac",
+    "scanComplete": "扫描完成",
+    "canFreeUp": "你的 Mac 可以释放",
+    "safeRightAway": "<b>{{size}}</b> 可以立即安全清理，其余内容等待你检查。",
+    "tidyTitle": "你的 Mac 已经很整洁",
+    "tidySubtitle": "目前没有找到值得清理的内容。一周后再来看看，或打开定时清理。",
+    "trashNote": "已在废纸篓中。确定后请在 Finder 中倒空——MacBook Cleaner 从不替你倒空废纸篓。",
+    "restoreNote": "已移到废纸篓——你可以恢复任何内容。",
+    "cleanSize": "清理 {{size}}"
+  },
+  "dashboard": {
+    "greeting": {
+      "morning": "早上好",
+      "afternoon": "下午好",
+      "evening": "晚上好"
+    },
+    "subtitle": "你的 Mac 值得来一次小整理。",
+    "scanned": "扫描于{{when}}",
+    "scanning": "正在扫描…",
+    "scan": "扫描",
+    "macStorage": "Mac 储存空间",
+    "explore": "浏览",
+    "used": "已用",
+    "total": "总计",
+    "free": "可用",
+    "percentFull": "已用 {{percent}}",
+    "potentialCleanup": "可清理空间",
+    "scanToFindOut": "扫描后即可知道",
+    "allCaughtUp": "一切就绪 ✨",
+    "waitingForReview": "{{size}} 等待你检查。",
+    "nothingToClean": "目前没有需要清理的内容。",
+    "readyToClean": "可安全清理",
+    "moreWaiting": "还有 {{size}} 等待你检查。",
+    "findSafe": "找出可以安全移除的内容",
+    "findSafeBody": "缓存、残留、旧的下载项等等，均由你检查。",
+    "reviewAndClean": "检查并清理",
+    "tiles": {
+      "largeFiles_other": "{{count}} 个文件超过 {{size}}",
+      "oldDownloadsTitle": "旧的下载项",
+      "oldDownloads_other": "{{count}} 个项目待检查",
+      "duplicatesTitle": "重复文件",
+      "duplicates_other": "{{count}} 组副本",
+      "appLeftoversTitle": "App 残留",
+      "appsInstalled_other": "已安装 {{count}} 个 App",
+      "notScanned": "尚未扫描"
+    },
+    "lastCleanup": "上次清理",
+    "noCleanups": "还没有清理过——点按一下即可开始首次清理。",
+    "trash": "废纸篓",
+    "trashEmpty": "在 Finder 中倒空即可回收这些空间",
+    "trashNeedsAccess": "需要“完全磁盘访问权限”才能测量",
+    "scheduledCleanup": "定时清理",
+    "nextRun": "下次：{{when}}",
+    "scheduleHint": "自动控制杂乱"
+  },
+  "schedule": {
+    "frequency": {
+      "daily": "每天",
+      "weekly": "每周",
+      "biweekly": "每 2 周",
+      "monthly": "每月"
+    }
+  },
+  "storage": {
+    "subtitle": "了解 Mac 储存空间真正被什么占用。",
+    "totalStorage": "总储存空间",
+    "details": "详细信息",
+    "noItems": "没有大到需要在此列出的单个项目。",
+    "showingLargest": "显示找到的最大项目（{{size}} 及以上的文件）。",
+    "explain": {
+      "photos": "照片图库由“照片” App 管理，因此 MacBook Cleaner 从不移除其中的单张照片。要节省空间，请在“照片”→“设置”→“iCloud”中打开“优化 Mac 储存空间”。",
+      "other": "音乐、邮件、信息附件以及 App 存放在资源库中的数据。其中大部分由这些 App 管理——请直接在其中清理。",
+      "systemData": "macOS 本身、本地时间机器快照、虚拟内存以及所有无法归入文件夹的内容。macOS 会管理这部分空间，并在需要空间时自动移除快照。"
+    },
+    "links": {
+      "apps": "打开 App 清理",
+      "largeFiles": "查找大文件",
+      "largeVideos": "查找大视频",
+      "downloads": "打开下载清理",
+      "systemJunk": "打开系统垃圾"
+    }
+  },
+  "largeFiles": {
+    "subtitle": "找出占用数 GB 空间、被遗忘的文件。",
+    "atLeast": "{{size}} 或以上",
+    "sortLargest": "最大",
+    "sortOldest": "最旧",
+    "all": "全部",
+    "emptyTitle": "未找到大文件",
+    "emptySubtitle": "你的 Mac 已经很整洁。",
+    "modified": "修改日期",
+    "size": "大小",
+    "footnote": "已扫描“下载”“桌面”“文稿”和“影片”。从不打开 App 图库（照片、iMovie、Final Cut）。"
+  },
+  "downloads": {
+    "subtitle": "清理安装器、归档和被遗忘的下载项。",
+    "selectOldInstallers": "选择旧的安装器",
+    "emptyTitle": "“下载”文件夹为空",
+    "emptySubtitle": "“下载”中没有超过 {{size}} 的内容。干得好。",
+    "kinds": {
+      "installers": "安装器和磁盘映像",
+      "duplicates": "重复的下载项",
+      "large": "大的下载项"
+    },
+    "showing": "显示：<b>{{label}}</b>",
+    "showAll": "全部显示",
+    "duplicateNote": "重复",
+    "age": {
+      "today": "今天",
+      "week": "本周",
+      "month": "本月",
+      "older30": "超过 30 天",
+      "older90": "超过 90 天"
+    }
+  },
+  "duplicates": {
+    "subtitle": "逐字节确认的相同文件。始终保留一个副本。",
+    "oneKept": "始终至少保留一个副本。",
+    "keepOldest": "保留最旧的",
+    "keepNewest": "保留最新的",
+    "emptyTitle": "未找到重复文件",
+    "emptySubtitle": "这里没有需要清理的内容。",
+    "totalWasted": "浪费的总空间",
+    "matchedBy": "先按大小匹配，再按完整内容的校验和匹配。",
+    "copiesEach_other": "{{count}} 个副本 · 每个 {{size}}",
+    "wasted": "浪费",
+    "newest": "最新",
+    "oldest": "最旧",
+    "kept": "保留",
+    "moveToTrash": "将重复文件移到废纸篓",
+    "sets_other": "<b>{{count}}</b> 组",
+    "copies_other": "<b>{{count}}</b> 个副本"
+  },
+  "errors": {
+    "native": {
+      "invalidPath": "文件路径无效。",
+      "gone": "文件已不存在。",
+      "protectedSystem": "这是受保护的 macOS 位置（{{path}}），无法移除。",
+      "homeFolder": "个人文件夹本身永远无法移除。",
+      "protectedFolder": "“{{path}}”是受保护的文件夹，无法整体移除。",
+      "outsideHome": "只能移除个人文件夹中的文件。",
+      "sensitive": "此项目可能包含敏感数据，因此受到保护。",
+      "noAccess": "无法访问此项目——权限被拒绝或项目已不存在。",
+      "rootFolder": "无法移除根文件夹。",
+      "macos": "macOS 报告了一个错误（{{code}}）：{{detail}}",
+      "trashFailed": "无法将此项目移到废纸篓。",
+      "protectedItem": "受保护的项目无法清理。",
+      "notApp": "这不是可以卸载的 App。",
+      "notInApplications": "只能卸载直接位于“应用程序”文件夹中的 App。",
+      "systemApp": "Apple App 属于 macOS 的一部分，受到保护。",
+      "self": "MacBook Cleaner 无法卸载自身。",
+      "previewHomeOnly": "只能预览个人文件夹中的文件。",
+      "loginDevBuild": "“登录时打开”仅在已安装的 App 中可用，在开发版本中不可用。",
+      "notInstalled": "MacBook Cleaner 正在从磁盘映像或“下载”文件夹运行。请将它移到“应用程序”文件夹，从那里打开后再试一次。",
+      "noHome": "找不到你的个人文件夹。",
+      "scheduleFailed": "macOS 无法启动定时清理助手。",
+      "unknown": "出了点问题：{{detail}}",
+      "appMoved": "此 App 已不在该位置。",
+      "linkBlocked": "无法打开此链接。",
+      "browserFailed": "无法打开你的默认浏览器。",
+      "noAppSupport": "MacBook Cleaner 无法访问其数据文件夹。",
+      "invalidTime": "该时间无效。"
+    },
+    "generic": "出了点问题。"
+  },
+  "apps": {
+    "footprint": {
+      "cache": "缓存",
+      "networkCache": "网络缓存",
+      "logs": "日志",
+      "savedState": "已存储的窗口状态",
+      "websiteData": "网站数据",
+      "support": "支持文件",
+      "preferences": "偏好设置",
+      "container": "沙盒容器"
+    },
+    "subtitle": "连同缓存、日志和残留一起移除应用程序。",
+    "emptyTitle": "未找到应用程序",
+    "emptySubtitle": "无法读取“应用程序”文件夹。",
+    "search": "搜索 App",
+    "sort": {
+      "size": "大小",
+      "name": "名称",
+      "leastUsed": "最少使用"
+    },
+    "notUsedInMonths": "数月未使用",
+    "opened": "打开于{{when}}",
+    "usageUnknown": "使用情况未知",
+    "application": "应用程序",
+    "partOfMacOS": "macOS 的一部分",
+    "version": "版本 {{version}}",
+    "lastOpened": "上次打开：{{when}}",
+    "lastOpenedUnknown": "上次打开时间未知",
+    "noLeftovers": "未找到此 App 的缓存、日志或支持文件。",
+    "explainer": "缓存和日志可以放心删除。支持文件和偏好设置包含你在此 App 中的设置和数据——删除后 App 将被重置。清理或卸载前请先退出 App。",
+    "revealFiles": "显示文件",
+    "cleanData": "清理 App 数据",
+    "uninstall": "卸载 App",
+    "cleanedUp": "已清理“{{app}}”",
+    "uninstalled": "已卸载“{{app}}”"
+  },
+  "systemJunk": {
+    "subtitle": "Mac 会自行重建的缓存、日志和临时文件。",
+    "selectAllSafe": "选择所有安全项目",
+    "safeToClean": "可安全清理",
+    "safeBody": "需要时自动重建，不含个人数据。",
+    "reviewRecommended": "建议检查",
+    "reviewBody": "可以移除，但可能需要重新下载、重建或重新登录。",
+    "emptyTitle": "未找到垃圾",
+    "emptySubtitle": "你的缓存和日志已经很精简。",
+    "safeSubtitle": "App 缓存、浏览器缓存和日志",
+    "reviewSubtitle": "移除前请检查",
+    "developer": "开发者清理",
+    "developerSubtitle": "Xcode、模拟器、软件包管理器和构建缓存",
+    "devHidden": "已隐藏 {{size}} 的开发者缓存。<link>打开开发者清理</link>",
+    "clean": "清理"
+  },
+  "settings": {
+    "notifications": "通知",
+    "subtitle": "按你的工作方式调整 MacBook Cleaner。",
+    "appearance": "外观",
+    "theme": "主题",
+    "themeSubtitle": "跟随 macOS 或选取主题。",
+    "themeLight": "浅色",
+    "themeDark": "深色",
+    "themeSystem": "系统",
+    "general": "通用",
+    "language": "语言",
+    "languageFollowsMac": "跟随 Mac 的语言。",
+    "languageChosen": "无论 Mac 使用什么语言都保持不变。",
+    "launchAtLogin": "登录时打开",
+    "launchAtLoginSubtitle": "登录时打开 MacBook Cleaner。",
+    "notificationsSubtitle": "定时清理的提醒和摘要。",
+    "macNotificationSettings": "macOS 通知设置",
+    "scheduleOn": "开 · {{frequency}} {{time}}",
+    "cleanupBehavior": "清理行为",
+    "moveToTrash": "将文件移到废纸篓",
+    "moveToTrashSubtitle": "始终开启。MacBook Cleaner 从不永久删除任何内容——何时倒空废纸篓由你决定。",
+    "always": "始终",
+    "confirmBefore": "清理前确认",
+    "confirmBeforeSubtitle": "关闭后，仅包含安全项目的清理将不再要求确认。你自己的文件和需检查的项目始终会询问。",
+    "developer": "开发者清理",
+    "developerSubtitle": "显示 Xcode、模拟器、npm、Gradle 及其他构建缓存。",
+    "exclusions": "扫描排除项",
+    "exclusionsSubtitle": "此处列出的文件和文件夹永远不会被建议清理——无论手动还是定时。",
+    "exclusionsInput": "要排除的文件夹或文件路径",
+    "add": "添加",
+    "noExclusions": "尚无排除项。你也可以通过每行的“不再建议”按钮隐藏任何项目。",
+    "removeExclusion": "移除“{{path}}”",
+    "privacy": "隐私与权限",
+    "fdaGranted": "已授予——MacBook Cleaner 可以测量它清理的所有内容。",
+    "fdaOptional": "可选。让 MacBook Cleaner 看到 macOS 设为私密的缓存、废纸篓和 App 数据。",
+    "granted": "已授予",
+    "recheck": "重新检查",
+    "filesStay": "你的文件留在 Mac 上",
+    "filesStaySubtitle": "扫描在本地运行。不会上传任何内容，读取文件内容仅用于确认重复。",
+    "about": "关于",
+    "checkUpdates": "检查更新",
+    "privacyPolicy": "隐私政策",
+    "terms": "使用条款",
+    "showWelcome": "再次显示欢迎界面",
+    "resetAll": "还原所有数据",
+    "resetTitle": "要还原 MacBook Cleaner 吗？",
+    "resetBody": "这会清除你的设置、排除项、计划和清理历史，并关闭定时清理。你的文件和废纸篓不受影响。"
+  },
+  "scheduleScreen": {
+    "subtitle": "自动控制不必要的杂乱。",
+    "howOften": "频率",
+    "howOftenSubtitle": "MacBook Cleaner 会在后台安静地检查——不会打开任何窗口。",
+    "at": "时间",
+    "nextRun": "下次运行：{{when}}",
+    "whenItRuns": "运行时",
+    "remind": "提醒我",
+    "remindBody": "当可清理内容足够多或储存空间不足时发送通知。",
+    "auto": "自动清理",
+    "autoBody": "将符合条件的开发者缓存移到废纸篓，然后告诉你清理了什么。",
+    "eligible": "符合条件的类别",
+    "eligibleSubtitle": "只有缓存和垃圾可以定时清理。",
+    "categories": {
+      "developer": "开发者缓存",
+      "developerDetail": "Xcode DerivedData、npm、Yarn、pnpm、Gradle、CocoaPods",
+      "system": "系统和 App 缓存",
+      "systemDetail": "资源库中的缓存和日志",
+      "browser": "浏览器缓存",
+      "browserDetail": "Safari、Chrome、Edge 和 Firefox 缓存"
+    },
+    "cleanedAutomatically": "自动清理",
+    "inReminders": "包含在提醒中",
+    "neverRemoved": "从不自动移除",
+    "never": {
+      "desktop": "桌面上的文件",
+      "personal": "个人文件夹",
+      "label": "从不"
+    },
+    "onlyTrash": "定时运行只会将项目移到废纸篓。",
+    "status": "状态",
+    "backgroundJob": "后台任务",
+    "active": "活跃",
+    "notInstalled": "未安装",
+    "lastRun": "上次运行",
+    "recentRuns": "最近运行",
+    "found": "找到 {{size}}",
+    "needsApplications": "要使用定时功能，MacBook Cleaner 必须位于“应用程序”文件夹中。",
+    "unsaved": "你有未存储的更改",
+    "discard": "放弃",
+    "saving": "正在存储…",
+    "save": "存储计划",
+    "consent": {
+      "title": "要打开自动清理吗？",
+      "intro": "你离开时，MacBook Cleaner 只会将以下项目移到废纸篓：",
+      "jsCaches": "npm、Yarn 和 pnpm 缓存",
+      "limits": "仅在可清理内容至少达到 {{min}} 时运行，每次不超过 {{max}} 或 {{items}} 个项目，始终跳过你的排除项，并向你发送摘要。所有内容都会留在废纸篓中，直到你将其倒空。",
+      "keepReminders": "保留提醒",
+      "turnOn": "打开"
+    }
+  },
+  "toasts": {
+    "scanFailed": "扫描失败：{{error}}",
+    "excluded": "好的——不会再建议该项目。",
+    "revealFailed": "无法在 Finder 中显示：{{error}}",
+    "quickLookPreview": "快速查看会在桌面 App 中于此处打开。",
+    "previewFailed": "无法预览：{{error}}",
+    "scheduleSaved": "计划已存储——MacBook Cleaner 会持续留意。",
+    "scheduleOff": "定时清理已关闭。"
+  },
+  "language": {
+    "title": "语言",
+    "subtitle": "更改即时生效，无需重新启动。",
+    "search": "搜索语言",
+    "system": "系统默认",
+    "systemDetail": "跟随 Mac（当前为{{language}}）",
+    "systemDetailPending": "跟随 Mac 的语言"
+  },
+  "permissions": {
+    "fullDiskAccess": {
+      "label": "完全磁盘访问权限"
+    }
+  },
+  "cleanup": {
+    "failureName": "清理",
+    "aboutToRemove": "你将移除 <b>{{size}}</b>",
+    "willMove_other": "{{count}} 个项目将移到废纸篓，在倒空废纸篓之前都可以放回原处。",
+    "notPermanent": "移到废纸篓——不会永久删除任何内容。",
+    "personalWarning_other": "其中 {{count}} 个是你自己的文件或 App 设置——请确认不再需要它们。",
+    "reviewWarning_other": "{{count}} 个项目可能需要重新下载、重建或重新登录。",
+    "hideList": "隐藏文件列表",
+    "reviewFilesLink": "检查文件",
+    "ack": "我已检查这些项目，确定要将它们移到废纸篓。",
+    "reviewFiles": "检查文件",
+    "cleanNow": "立即清理",
+    "cleaning": "正在清理…",
+    "preparing": "正在准备…",
+    "nothingRemoved": "未移除任何内容",
+    "complete": "清理完成",
+    "youFreed": "你已释放",
+    "breathingRoom": "你的 Mac 现在更宽裕了。",
+    "recoverable": "所有内容都在废纸篓中，因此可以恢复。倒空废纸篓后才会完全释放空间。",
+    "openTrash": "打开废纸篓",
+    "failedCount_other": "{{count}} 个项目无法移动",
+    "viewStorage": "查看储存空间",
+    "backToDashboard": "返回概览"
+  },
+  "performance": {
+    "subtitle": "查看 Mac 的状况——CPU、内存、App、电池等。",
+    "live": "实时",
+    "updatedAt": "更新于 {{time}}",
+    "readError": "部分信息无法读取：{{error}}",
+    "tabs": {
+      "overview": "概览",
+      "apps": "正在运行的 App",
+      "battery": "电池",
+      "mac": "Mac 信息"
+    },
+    "runningApps": "正在运行的 App",
+    "runningAppsSubtitle": "当前占用内存和 CPU 最多的 App。",
+    "cpu": "CPU",
+    "memory": "内存",
+    "uptime": "运行时间",
+    "sinceRestart": "自上次重新启动以来",
+    "measuring": "正在测量…",
+    "checking": "正在检查…",
+    "idlePercent": "{{percent}} 空闲",
+    "available": "{{size}} 可用",
+    "availableLabel": "可用",
+    "ofTotal": "共 {{total}}",
+    "aboutX": "关于{{name}}",
+    "moreInfo": "更多信息",
+    "chart60s": "60 秒前",
+    "chartNow2": "现在",
+    "chartNow": "{{label}}，当前为 {{value}}",
+    "cpuUsage": "CPU 使用率",
+    "cpuUsageTip": "Mac 总处理能力中正在使用的比例，每隔几秒在所有核心上测量一次。",
+    "cpuChart": "过去 60 秒的 CPU 使用率",
+    "cpuParts": {
+      "user": "用户",
+      "userTip": "用于 App 和你自己的进程的时间。",
+      "system": "系统",
+      "systemTip": "用于 macOS 本身的时间——驱动程序、文件系统、网络。",
+      "idle": "空闲",
+      "idleTip": "当前空闲的处理能力。"
+    },
+    "cpuCores": {
+      "label": "核心",
+      "split": "{{performance}} 个性能核心 + {{efficiency}} 个能效核心"
+    },
+    "memoryUsed": "已使用的内存",
+    "memoryUsedTip": "App 内存 + 联动内存 + 已压缩——与“活动监视器”中的“已使用的内存”相同。缓存的文件不计入，因为 macOS 会在需要时立即释放它们。",
+    "memoryChart": "过去 60 秒已使用的内存",
+    "pressureIs": "内存压力{{pressure}}",
+    "pressureTip": "macOS 自身用于判断 App 内存是否充足的指标。压力正常时使用量高也是健康的——macOS 会有意利用空闲内存。",
+    "pressure": {
+      "normal": "正常",
+      "warning": "偏高",
+      "critical": "高"
+    },
+    "memParts": {
+      "app": "App 内存",
+      "appTip": "App 正在使用的内存。",
+      "wired": "联动内存",
+      "wiredTip": "macOS 自身需要、无法压缩或换出的内存。",
+      "compressed": "已压缩",
+      "compressedTip": "macOS 为腾出空间而压缩的内存——一种常见且高效的技术。",
+      "cached": "缓存的文件",
+      "cachedTip": "macOS 保留在内存中以便更快打开的最近使用的文件。一旦 App 需要空间便会自动释放。",
+      "swap": "已使用的交换",
+      "swapTip": "macOS 暂时移到 SSD 的内存。少量交换是正常的；在压力较高时交换量很大，说明减少打开的 App 会让 Mac 更顺畅。"
+    },
+    "duration": {
+      "dh": "{{d}} 天 {{h}} 小时",
+      "hm": "{{h}} 小时 {{m}} 分钟",
+      "m": "{{m}} 分钟",
+      "lessThanMinute": "不到 1 分钟"
+    },
+    "device": {
+      "thisMac": "这台 Mac",
+      "memory": "{{size}} 内存",
+      "storage": "{{size}} 储存空间",
+      "battery": "电池：{{condition}}"
+    },
+    "health": {
+      "title": "Mac 健康状况",
+      "subtitle": "简明摘要。每项状态都直接来自 macOS。",
+      "memoryDetail": "内存压力",
+      "memoryTip": "内存压力是 macOS 自身用于衡量释放内存难度的指标。“正常”表示即使大部分内存在使用中，App 的内存仍然充足。",
+      "storageFree": "{{size}} 可用",
+      "runningLow": "即将用完",
+      "gettingFull": "快满了",
+      "plentyOfRoom": "空间充足",
+      "storageTip": "可用空间低于 {{full}} 时显示“快满了”，低于 {{low}} 时显示“即将用完”——macOS 需要可用空间来进行更新、缓存和虚拟内存。",
+      "noBattery": "无电池",
+      "batteryDetail": "电池状况",
+      "desktopMac": "台式 Mac",
+      "batteryTip": "macOS 报告的电池状况，与“系统设置”→“电池”中的相同。",
+      "cpuInUse": "已使用 {{percent}}",
+      "light": "活动较少",
+      "moderate": "活动适中",
+      "busy": "非常繁忙",
+      "cpuTip": "当前所有核心上 Mac 总处理能力的使用量。",
+      "uptimeTip": "Mac 自上次启动以来的运行时间。偶尔重新启动可让 macOS 完成更新的安装。",
+      "asOfLastCheck": "基于 macOS 的上次检查",
+      "checkInSettings": "在“系统设置”中检查",
+      "macosTip": "基于 macOS 自动“软件更新”检查的结果。MacBook Cleaner 从不自行联系 Apple 服务器。"
+    },
+    "os": {
+      "updateAvailable": "有可用更新",
+      "upToDate": "已是最新",
+      "statusUnknown": "状态未知",
+      "version": "版本",
+      "build": "版本号",
+      "architecture": "架构",
+      "appleSilicon": "Apple 芯片（arm64）",
+      "intel": "Intel（x86_64）",
+      "kernel": "Darwin 内核",
+      "kernelTip": "macOS 所基于的开源核心，主要用于故障排除。",
+      "availableFromApple": "Apple 提供",
+      "noUpdatesFound": "macOS 上次检查时未发现更新。",
+      "openToCheck": "打开“软件更新”以检查最新的 macOS。",
+      "lastChecked": "macOS 上次检查时间为{{when}}。MacBook Cleaner 只读取该结果，从不自行联系 Apple。",
+      "checkUpdates": "检查 macOS 更新",
+      "openSoftwareUpdate": "打开“软件更新”"
+    },
+    "battery": {
+      "conditionNormal": "正常",
+      "conditionService": "建议维修",
+      "conditionIs": "状况：{{condition}}",
+      "charging": "正在充电",
+      "onBattery": "使用电池",
+      "fullyCharged": "已充满",
+      "notCharging": "未在充电",
+      "untilFull": "{{time}}后充满",
+      "remaining": "剩余 {{time}}",
+      "powerAdapter": "电源适配器",
+      "batteryPower": "电池电源",
+      "maxCapacity": "最大容量",
+      "maxCapacityTip": "与新电池相比，电池现在能储存的电量。由 macOS 报告——与“系统设置”→“电池”→“电池健康”中的数值相同。",
+      "capacityNote": "随着电池老化，容量会自然下降。MacBook Cleaner 只是显示它——没有任何 App 能恢复电池容量。",
+      "cycleCount": "循环计数",
+      "cyclesOfDesign": "电池自身报告的设计循环次数为 {{design}} 次，已使用 {{cycles}} 次",
+      "cycleExplain": "循环计数是 Mac 电池经历的完整充电周期数。用完 100% 的电池容量（即使分多次部分充电）计为一次循环。",
+      "details": "电池详细信息",
+      "charge": "电量",
+      "chargingLabel": "充电",
+      "powerSource": "电源",
+      "timeRemaining": "剩余时间",
+      "notApplicable": "不适用",
+      "calculating": "正在计算…",
+      "timeTip": "macOS 需要观察一段时间你当前的使用情况后才会给出估计。",
+      "condition": "状况",
+      "conditionTip": "由 macOS 报告。“正常”表示电池运行正常；“建议维修”表示 Apple 建议检查电池。",
+      "designCapacity": "设计容量",
+      "designCapacityTip": "电池全新时能储存的电量。",
+      "fullCapacity": "充满时容量",
+      "fullCapacityTip": "电池目前充满时能储存的电量。",
+      "currentCharge": "当前电量",
+      "mah": "{{value}} mAh"
+    },
+    "apps": {
+      "inUse": "最前面",
+      "hidden": "已隐藏",
+      "thisApp": "此 App",
+      "kind": {
+        "app": "App",
+        "background": "后台",
+        "backgroundProcess": "后台进程",
+        "system": "系统进程"
+      },
+      "processes_other": "{{count}} 个进程",
+      "filter": {
+        "apps": "App",
+        "background": "后台",
+        "all": "全部"
+      },
+      "showSystem": "显示系统进程",
+      "search": "搜索正在运行的 App",
+      "cols": {
+        "app": "App",
+        "name": "名称",
+        "running": "运行时间"
+      },
+      "cpuTip": "占 Mac 总处理能力的比例。“活动监视器”显示的是每核心数值，可能超过 100%。",
+      "memoryTip": "物理内存占用——即“活动监视器”中“内存”栏的数值。App 包含其辅助进程。",
+      "nothing": "没有可显示的内容。",
+      "showMore_other": "显示更多（已隐藏 {{count}} 个）",
+      "seeAll": "查看所有正在运行的 App",
+      "footnote_other": "这台 Mac 上有 {{count}} 个进程。App 包含其辅助进程。macOS 不允许 App 读取其他用户系统进程的 CPU 和内存，因此显示为“—”。"
+    },
+    "macUptime": "Mac 运行时间",
+    "lastStarted": "上次启动：{{when}}",
+    "uptimeUnits": {
+      "days_other": "天",
+      "hours_other": "小时",
+      "minutes_other": "分钟"
+    },
+    "details": {
+      "title": "“{{name}}”详细信息",
+      "quit": "已不再运行",
+      "cpuTip": "此刻占 Mac 总处理能力的比例。",
+      "memoryTip": "物理内存占用，包括辅助进程。",
+      "runningFor": "已运行",
+      "threads": "线程",
+      "threadsTip": "App 同时运行的独立任务。繁忙的 App 通常会使用数十个。",
+      "launched": "启动时间",
+      "state": "状态",
+      "status": {
+        "running": "正在运行",
+        "idle": "空闲——等待输入",
+        "stopped": "已停止"
+      },
+      "pid": "进程 ID",
+      "processes": "进程",
+      "withHelpers_other": "{{count}}（App + 辅助进程）",
+      "owner": "所有者",
+      "you": "你",
+      "systemOwner": "系统",
+      "version": "版本",
+      "executable": "可执行文件",
+      "quitHint": "要退出 App，请使用其自身的“退出”命令（⌘Q）或在程序坞中右键点按它，以便先存储你的工作。"
+    },
+    "mac": {
+      "hardware": "硬件",
+      "model": "型号",
+      "modelId": "型号标识符",
+      "modelIdTip": "Apple 对此 Mac 型号的内部名称——查找规格或支持文章时很有用。",
+      "chip": "芯片",
+      "cores_other": "{{count}} 核",
+      "coresSplit_other": "{{count}} 核（{{performance}} 个性能核心，{{efficiency}} 个能效核心）",
+      "coresThreads_other": "{{count}} 核，{{threads}} 线程",
+      "graphics": "图形卡",
+      "gpuCores_other": "{{gpu}}，{{count}} 核图形处理器",
+      "storageValue": "{{total}}（{{free}} 可用）",
+      "hostname": "主机名",
+      "hostnameTip": "Mac 在本地网络上的名称。仅在此处显示——从不发送到任何地方。",
+      "note": "注",
+      "rosetta": "MacBook Cleaner 正在 Rosetta 下运行",
+      "displays": "显示器",
+      "builtIn": "内建",
+      "main": "主显示器",
+      "looksLike": "看起来像 {{resolution}}",
+      "pixels": "{{pixels}} 像素",
+      "localNote": "这些信息均从 macOS 本地读取，并保留在你的 Mac 上。MacBook Cleaner 不会读取你的序列号。"
+    },
+    "storage": {
+      "recoverable": "可能可回收的空间",
+      "runScan": "运行扫描",
+      "openCleaner": "打开储存空间清理",
+      "breakdown": "储存空间明细"
+    }
+  },
+  "native": {
+    "number": {
+      "decimal": ".",
+      "gb": "{{value}} GB"
+    },
+    "notifications": {
+      "autoCleanDone": "自动清理已将 {{size}} 的安全缓存移到废纸篓。",
+      "autoCleanPartial": "自动清理已将 {{size}} 移到废纸篓。部分项目无法移动（{{failed}} 个）。",
+      "lowSpace": "你的 Mac 仅剩 {{size}} 可用空间。请查看储存空间建议。",
+      "reviewable": "有 {{size}} 可供检查清理。"
+    },
+    "menu": {
+      "about": "关于 {{app}}",
+      "services": "服务",
+      "hide": "隐藏 {{app}}",
+      "hideOthers": "隐藏其他",
+      "showAll": "全部显示",
+      "quit": "退出 {{app}}",
+      "edit": "编辑",
+      "undo": "撤销",
+      "redo": "重做",
+      "cut": "剪切",
+      "copy": "拷贝",
+      "paste": "粘贴",
+      "selectAll": "全选",
+      "view": "显示",
+      "fullScreen": "进入全屏幕",
+      "window": "窗口",
+      "minimize": "最小化",
+      "zoom": "缩放",
+      "closeWindow": "关闭窗口"
+    },
+    "appleEventsUsage": "MacBook Cleaner 会请求Finder将你批准的项目移到废纸篓，在倒空废纸篓之前你都可以恢复它们。"
+  }
+}

@@ -1,0 +1,1007 @@
+{
+  "meta": {
+    "englishName": "Dutch",
+    "nativeName": "Nederlands",
+    "dir": "ltr",
+    "order": 7
+  },
+  "common": {
+    "tagline": "Ruim op. Bewaar wat telt.",
+    "unknown": "Onbekend",
+    "notAvailable": "Niet beschikbaar",
+    "cancel": "Annuleer",
+    "close": "Sluit",
+    "clear": "Wis",
+    "continue": "Ga door",
+    "back": "Terug",
+    "dismiss": "Negeer",
+    "refresh": "Vernieuw",
+    "rescan": "Scan opnieuw",
+    "scanAgain": "Scan opnieuw",
+    "search": "Zoek",
+    "noMatches": "Geen resultaten.",
+    "reset": "Herstel",
+    "off": "Uit",
+    "no": "Nee",
+    "selectAll": "Selecteer alles",
+    "selectItem": "Selecteer {{name}}",
+    "quickLook": "Snelle weergave",
+    "revealInFinder": "Toon in Finder",
+    "showInFinder": "Toon in Finder",
+    "neverSuggest": "Nooit meer voorstellen",
+    "moveToTrash": "Verplaats naar prullenmand",
+    "items_one": "{{count}} onderdeel",
+    "items_other": "{{count}} onderdelen",
+    "files_one": "{{count}} bestand",
+    "files_other": "{{count}} bestanden",
+    "openSystemSettings": "Open Systeeminstellingen",
+    "open": "Open"
+  },
+  "safety": {
+    "green": "Veilig",
+    "orange": "Controleer",
+    "red": "Beschermd"
+  },
+  "scanGate": {
+    "scanningTitle": "Je Mac wordt gescand…",
+    "gettingStarted": "Bezig met starten…",
+    "promptTitle": {
+      "largeFiles": "Scan om grote bestanden te vinden",
+      "downloads": "Scan om oude downloads te vinden",
+      "duplicates": "Scan om dubbele bestanden te vinden",
+      "apps": "Scan om apps en hun restanten te vinden",
+      "systemJunk": "Scan om systeemrommel te vinden",
+      "storage": "Scan om te zien wat je opslag gebruikt",
+      "smartClean": "Scan om te zien wat verwijderd kan worden"
+    },
+    "promptSubtitle": "Een snelle, lokale scan laat zien wat er op je Mac staat. Er wordt niets verwijderd zonder dat jij het controleert.",
+    "scanButton": "Scan mijn Mac"
+  },
+  "selectionBar": {
+    "selected_one": "{{count}} onderdeel geselecteerd",
+    "selected_other": "{{count}} onderdelen geselecteerd",
+    "willMove": "{{size}} wordt naar de prullenmand verplaatst"
+  },
+  "items": {
+    "dev": {
+      "xcodeDerivedData": {
+        "name": "Xcode DerivedData",
+        "why": "Tussentijdse buildproducten die Xcode bij de volgende build automatisch opnieuw aanmaakt.",
+        "what": "Je volgende build duurt langer terwijl Xcode opnieuw indexeert en compileert."
+      },
+      "xcodeArchives": {
+        "name": "Xcode-archieven",
+        "why": "Gearchiveerde builds voor App Store-inzendingen en distributie via TestFlight.",
+        "what": "Je kunt geen dSYM's meer exporteren voor die specifieke build en hem niet opnieuw inzenden."
+      },
+      "xcodeDeviceSupportIos": {
+        "name": "Ondersteuning iOS-apparaten",
+        "why": "In cache opgeslagen debugsymbolen voor iOS-apparaten die je eerder hebt aangesloten.",
+        "what": "Xcode downloadt de ondersteuning opnieuw wanneer je het apparaat weer aansluit."
+      },
+      "xcodeDeviceSupportWatchos": {
+        "name": "Ondersteuning watchOS-apparaten",
+        "why": "In cache opgeslagen debugsymbolen voor gekoppelde Apple Watches waarmee je hebt getest.",
+        "what": "Xcode downloadt de ondersteuning opnieuw wanneer je het apparaat weer aansluit."
+      },
+      "xcodeSimulatorCaches": {
+        "name": "Simulator-caches",
+        "why": "Gegevens die de iOS/watchOS-simulator indien nodig automatisch opnieuw opbouwt.",
+        "what": "Geen effect: de simulator bouwt zijn cache automatisch opnieuw op."
+      },
+      "xcodeSimulatorDevices": {
+        "name": "Simulator-apparaten",
+        "why": "Opslag van elk gesimuleerd iOS/watchOS/tvOS-apparaat, inclusief gegevens van geïnstalleerde test-apps.",
+        "what": "Simulator-apparaten en de daarop geïnstalleerde app-gegevens moeten opnieuw worden aangemaakt."
+      },
+      "npmCache": {
+        "name": "npm-cache",
+        "why": "Gedownloade pakketarchieven die npm bewaart zodat toekomstige installaties het netwerk kunnen overslaan.",
+        "what": "Toekomstige npm-installaties downloaden pakketten opnieuw in plaats van de lokale cache te gebruiken."
+      },
+      "yarnCache": {
+        "name": "Yarn-cache",
+        "why": "Pakketcache die Yarn voor al je projecten bewaart.",
+        "what": "Installaties gebruiken het netwerk; al geïnstalleerde projecten worden niet beïnvloed."
+      },
+      "pnpmStore": {
+        "name": "pnpm-store",
+        "why": "Gedeelde pakketopslag die pnpm voor al je projecten bewaart.",
+        "what": "Installaties gebruiken het netwerk; al geïnstalleerde projecten worden niet beïnvloed."
+      },
+      "metroCache": {
+        "name": "Metro-bundlercache",
+        "why": "Tijdelijke bundlercache die Metro (React Native) in de tijdelijke systeemmap schrijft.",
+        "what": "Wis deze vanuit je project met 'npx react-native start --reset-cache': hij staat in een systeemmap die MacBook Cleaner nooit aanraakt."
+      },
+      "gradleCaches": {
+        "name": "Gradle-caches",
+        "why": "Gedownloade afhankelijkheden en buildmetadata die Android/Gradle-projecten delen.",
+        "what": "Gradle downloadt en verwerkt afhankelijkheden opnieuw bij de volgende build (eerste build trager)."
+      },
+      "androidAvd": {
+        "name": "Android-emulatorimages",
+        "why": "Images van virtuele apparaten en alle gegevens die op je Android-emulators zijn geïnstalleerd.",
+        "what": "Je moet elke emulator die je weer gebruikt opnieuw aanmaken; test-app-gegevens erop gaan verloren."
+      },
+      "cocoapodsCache": {
+        "name": "CocoaPods-cache",
+        "why": "In cache opgeslagen pod-specificaties en -bronnen voor al je iOS-projecten.",
+        "what": "'pod install' downloadt pods opnieuw bij de volgende keer."
+      },
+      "unknown": {
+        "why": "Opslag die wordt gebruikt door een ontwikkelaarstool die op deze Mac is gevonden.",
+        "what": "Controleer vóór het verwijderen: de tool moet deze gegevens mogelijk opnieuw aanmaken."
+      }
+    },
+    "updatedRecently": "Onlangs bijgewerkt",
+    "browser": {
+      "name": "{{browser}}-cache en tijdelijke bestanden",
+      "why": "In cache opgeslagen websitegegevens die de browser automatisch opnieuw opbouwt.",
+      "what": "Websites laden bij je volgende bezoek alle inhoud opnieuw. Wachtwoorden, cookies en bladwijzers blijven onaangeroerd.",
+      "notCleanedYet": "Nog niet opgeschoond met deze app"
+    },
+    "file": {
+      "duplicate": {
+        "why": "Dit bestand lijkt overeen te komen met een ander gevonden bestand, op basis van grootte en een steekproef van de inhoud (begin en einde).",
+        "what": "Alleen deze kopie zou worden aangeraakt, verder niets. Het is een waarschijnlijke, geen gegarandeerde overeenkomst."
+      },
+      "installer": {
+        "why": "Een installatieprogramma dat van internet is gedownload.",
+        "what": "Download het installatieprogramma opnieuw als je de software opnieuw moet installeren."
+      },
+      "archive": {
+        "why": "Een gecomprimeerd archief.",
+        "what": "Als je de inhoud al ergens anders hebt uitgepakt, kan het archief meestal veilig worden verwijderd."
+      },
+      "large": {
+        "why": "Een groot bestand tussen je bestanden; we konden geen specifieker type bepalen."
+      },
+      "old": {
+        "why": "Al meer dan 180 dagen niet gewijzigd."
+      },
+      "download": {
+        "why": "Een bestand in je map Downloads."
+      },
+      "yourFile": "Dit is jouw bestand: controleer het voordat je iets verwijdert.",
+      "reviewFirst": "Controleer vóór het verwijderen.",
+      "found": "Een bestand dat tijdens het scannen is gevonden."
+    },
+    "system": {
+      "logsWhy": "Logbestanden die een app of macOS automatisch heeft geschreven.",
+      "cacheWhy": "Cachegegevens die een app of macOS automatisch heeft aangemaakt om sneller te starten.",
+      "what": "Geen effect: wordt indien nodig automatisch opnieuw aangemaakt."
+    },
+    "sensitive": {
+      "devWhat": "De naam van dit onderdeel wijst op gevoelige gegevens. Standaard beschermd: controleer het zelf in de Finder.",
+      "systemWhat": "De naam van dit onderdeel wijst op gevoelige gegevens. Standaard beschermd.",
+      "fileWhy": "De naam van dit onderdeel wijst op gevoelige of belangrijke gegevens.",
+      "fileWhat": "Standaard beschermd: controleer het zelf in de Finder voordat je overweegt het te verwijderen."
+    }
+  },
+  "nav": {
+    "dashboard": "Overzicht",
+    "smartClean": "Smart Clean",
+    "storage": "Opslag",
+    "largeFiles": "Grote bestanden",
+    "downloads": "Downloads",
+    "duplicates": "Duplicaten",
+    "apps": "Apps opschonen",
+    "systemJunk": "Systeemrommel",
+    "performance": "Prestaties",
+    "schedule": "Geplande opschoning",
+    "settings": "Instellingen",
+    "groups": {
+      "explore": "Verken",
+      "cleanUp": "Ruim op",
+      "monitor": "Bewaak",
+      "automate": "Automatiseer"
+    }
+  },
+  "sidebar": {
+    "percentUsed": "{{percent}} gebruikt",
+    "freeOf": "<b>{{free}}</b> vrij van {{total}}"
+  },
+  "progress": {
+    "overview": "Opslag wordt geanalyseerd…",
+    "developer": "Ontwikkelaarstools worden gescand…",
+    "browsers": "Browsercaches worden gescand…",
+    "applications": "Geïnstalleerde apps worden gescand…",
+    "files": "Downloads, Bureaublad en Documenten worden gescand…",
+    "finalizing": "Terug te winnen ruimte wordt berekend…",
+    "preparing": "Opschoning wordt voorbereid…",
+    "moving": "{{index}} van {{total}} wordt verplaatst: {{name}}",
+    "verifying": "Resultaten worden gecontroleerd…",
+    "done": "Opschoning voltooid."
+  },
+  "onboarding": {
+    "stepOf": "Stap {{step}} van {{total}}",
+    "permissionsEyebrow": "Toegangsrechten",
+    "startCleaning": "Begin met opruimen",
+    "meet": {
+      "title": "Maak kennis met MacBook Cleaner",
+      "body": "Houd je Mac schoon, snel en opgeruimd."
+    },
+    "space": {
+      "title": "Zie wat ruimte inneemt",
+      "body": "Vind grote bestanden, oude downloads, rommel en vergeten app-gegevens."
+    },
+    "safe": {
+      "title": "Ruim veilig op",
+      "body": "Jij controleert alles voordat er iets wordt verwijderd."
+    },
+    "permission": {
+      "title": "Eén optioneel toegangsrecht",
+      "body": "macOS houdt sommige locaties privé, zoals app-caches, de prullenmand en Mail-gegevens, tenzij je volledige schijftoegang geeft. MacBook Cleaner werkt ook zonder, maar ziet dan minder.",
+      "local": "Scannen gebeurt volledig op deze Mac. Er wordt niets geüpload.",
+      "folders": "macOS kan ook om toestemming vragen voordat MacBook Cleaner Downloads, Documenten en Bureaublad leest. Sta het toe om daar grote en dubbele bestanden te vinden.",
+      "changeLater": "Je kunt dit altijd wijzigen in Systeeminstellingen, onder 'Privacy en beveiliging'."
+    },
+    "chips": {
+      "largeFiles": "Grote bestanden",
+      "oldDownloads": "Oude downloads",
+      "systemJunk": "Systeemrommel",
+      "appLeftovers": "App-restanten",
+      "movedToTrash": "Naar prullenmand verplaatst",
+      "alwaysRecoverable": "Altijd terug te zetten",
+      "personalFiles": "Persoonlijke bestanden",
+      "neverAutoSelected": "Nooit automatisch geselecteerd"
+    }
+  },
+  "breakdown": {
+    "applications": {
+      "label": "Apps",
+      "description": "Apps in je Apps-mappen"
+    },
+    "documents": {
+      "label": "Documenten",
+      "description": "Documenten en Bureaublad"
+    },
+    "photos": {
+      "label": "Foto's",
+      "description": "Je map Afbeeldingen, inclusief de fotobibliotheek"
+    },
+    "videos": {
+      "label": "Video's",
+      "description": "Je map Films"
+    },
+    "downloads": {
+      "label": "Downloads",
+      "description": "Alles in de map Downloads"
+    },
+    "cache": {
+      "label": "Cache",
+      "description": "App-caches en logbestanden in je Bibliotheek"
+    },
+    "other": {
+      "label": "Overig",
+      "description": "Muziek, Mail, Berichten en andere app-gegevens"
+    },
+    "systemData": {
+      "label": "Systeemgegevens",
+      "description": "macOS, snapshots en ruimte die niet aan een map kan worden toegewezen"
+    }
+  },
+  "fileTypes": {
+    "video": "Video's",
+    "diskImage": "Schijfkopieën",
+    "archive": "Archieven",
+    "installer": "Installatieprogramma's",
+    "document": "Documenten",
+    "image": "Afbeeldingen",
+    "audio": "Audio",
+    "other": "Overig"
+  },
+  "smartClean": {
+    "groups": {
+      "systemJunk": {
+        "title": "Systeemrommel",
+        "description": "App- en systeemcaches die zichzelf automatisch opnieuw opbouwen."
+      },
+      "browser": {
+        "title": "Browsercaches",
+        "description": "In cache opgeslagen webpagina's en afbeeldingen. Wachtwoorden, cookies en bladwijzers blijven onaangeroerd."
+      },
+      "appLeftovers": {
+        "title": "App-restanten",
+        "description": "Caches van apps die niet meer geïnstalleerd zijn."
+      },
+      "logs": {
+        "title": "Logbestanden en crashrapporten",
+        "description": "Diagnostische logbestanden die apps in de loop van de tijd schrijven. Veilig te verwijderen."
+      },
+      "developer": {
+        "title": "Ontwikkelaarsrommel",
+        "description": "Buildproducten en pakketcaches die je tools opnieuw kunnen aanmaken."
+      },
+      "oldDownloads": {
+        "title": "Oude downloads",
+        "description": "Installatieprogramma's, archieven en bestanden die je een tijd geleden hebt gedownload. Jij beslist: er is niets vooraf geselecteerd."
+      }
+    },
+    "stages": {
+      "caches": "Systeemcaches worden gescand…",
+      "temp": "Tijdelijke bestanden worden gecontroleerd…",
+      "leftovers": "App-restanten worden gecontroleerd…",
+      "downloads": "Downloads worden geanalyseerd…",
+      "largeFiles": "Grote bestanden worden gezocht…",
+      "reclaimable": "Terug te winnen ruimte wordt berekend…"
+    },
+    "selectAllIn": "Selecteer alles in {{group}}",
+    "yourFiles": "Jouw bestanden",
+    "toReview_one": "{{count}} te controleren",
+    "toReview_other": "{{count}} te controleren",
+    "selectedOf_one": "{{selected}} van {{count}} geselecteerd",
+    "selectedOf_other": "{{selected}} van {{count}} geselecteerd",
+    "showMore_one": "Toon nog {{count}}",
+    "showMore_other": "Toon nog {{count}}",
+    "intro": "Een scan vindt caches, restanten, logbestanden en vergeten downloads. Jij controleert alles voordat er iets wordt verwijderd.",
+    "onDevice": "100% op het apparaat",
+    "toTrash": "Alles gaat naar de prullenmand",
+    "personalNeverPreselected": "Persoonlijke bestanden nooit vooraf geselecteerd",
+    "scanningEyebrow": "Scannen",
+    "scanningTitle": "Je Mac wordt gescand",
+    "scanComplete": "Scan voltooid",
+    "canFreeUp": "Je Mac kan vrijmaken",
+    "safeRightAway": "<b>{{size}}</b> kan meteen veilig worden opgeschoond. De rest wacht op jouw controle.",
+    "tidyTitle": "Je Mac is al opgeruimd",
+    "tidySubtitle": "We hebben nu niets gevonden dat de moeite van het opschonen waard is. Kom over een week terug of zet geplande opschoning aan.",
+    "trashNote": "Staat al in de prullenmand. Leeg die in de Finder als je het zeker weet: MacBook Cleaner leegt hem nooit voor je.",
+    "restoreNote": "Naar de prullenmand verplaatst: je kunt alles terugzetten.",
+    "cleanSize": "Schoon {{size}} op"
+  },
+  "dashboard": {
+    "greeting": {
+      "morning": "Goedemorgen",
+      "afternoon": "Goedemiddag",
+      "evening": "Goedenavond"
+    },
+    "subtitle": "Je Mac verdient een kleine opruimbeurt.",
+    "scanned": "Gescand: {{when}}",
+    "scanning": "Scannen…",
+    "scan": "Scan",
+    "macStorage": "Mac-opslag",
+    "explore": "Verken",
+    "used": "Gebruikt",
+    "total": "Totaal",
+    "free": "Vrij",
+    "percentFull": "{{percent}} vol",
+    "potentialCleanup": "Mogelijke opschoning",
+    "scanToFindOut": "Scan om het te ontdekken",
+    "allCaughtUp": "Alles bijgewerkt ✨",
+    "waitingForReview": "{{size}} wacht op je controle.",
+    "nothingToClean": "Er valt nu niets op te schonen.",
+    "readyToClean": "Klaar om veilig op te schonen",
+    "moreWaiting": "Nog {{size}} wacht op je controle.",
+    "findSafe": "Vind wat veilig verwijderd kan worden",
+    "findSafeBody": "Caches, restanten, oude downloads en meer, door jou gecontroleerd.",
+    "reviewAndClean": "Controleer en schoon op",
+    "tiles": {
+      "largeFiles_one": "{{count}} bestand groter dan {{size}}",
+      "largeFiles_other": "{{count}} bestanden groter dan {{size}}",
+      "oldDownloadsTitle": "Oude downloads",
+      "oldDownloads_one": "{{count}} onderdeel te controleren",
+      "oldDownloads_other": "{{count}} onderdelen te controleren",
+      "duplicatesTitle": "Duplicaten",
+      "duplicates_one": "{{count}} groep kopieën",
+      "duplicates_other": "{{count}} groepen kopieën",
+      "appLeftoversTitle": "App-restanten",
+      "appsInstalled_one": "{{count}} app geïnstalleerd",
+      "appsInstalled_other": "{{count}} apps geïnstalleerd",
+      "notScanned": "Nog niet gescand"
+    },
+    "lastCleanup": "Laatste opschoning",
+    "noCleanups": "Nog geen opschoningen: de eerste is maar één klik verwijderd.",
+    "trash": "Prullenmand",
+    "trashEmpty": "Leeg in de Finder om deze ruimte terug te winnen",
+    "trashNeedsAccess": "Volledige schijftoegang nodig om te meten",
+    "scheduledCleanup": "Geplande opschoning",
+    "nextRun": "Volgende: {{when}}",
+    "scheduleHint": "Houdt rommel automatisch onder controle"
+  },
+  "schedule": {
+    "frequency": {
+      "daily": "Dagelijks",
+      "weekly": "Wekelijks",
+      "biweekly": "Om de 2 weken",
+      "monthly": "Maandelijks"
+    }
+  },
+  "storage": {
+    "subtitle": "Begrijp wat je Mac-opslag echt inneemt.",
+    "totalStorage": "Totale opslag",
+    "details": "Details",
+    "noItems": "Geen afzonderlijke onderdelen die groot genoeg zijn om hier te tonen.",
+    "showingLargest": "De grootste gevonden onderdelen worden getoond (bestanden van {{size}} of groter).",
+    "explain": {
+      "photos": "Je fotobibliotheek wordt beheerd door de Foto's-app, dus MacBook Cleaner verwijdert er nooit losse foto's uit. Zet 'Optimaliseer Mac-opslag' aan in Foto's → Instellingen → iCloud om ruimte te besparen.",
+      "other": "Muziek, Mail, bijlagen in Berichten en gegevens die apps in je Bibliotheek bewaren. Het meeste daarvan wordt door die apps beheerd: schoon het rechtstreeks in die apps op.",
+      "systemData": "macOS zelf, lokale Time Machine-snapshots, virtueel geheugen en alles wat niet aan een map kan worden toegewezen. macOS beheert deze ruimte en verwijdert snapshots automatisch als er ruimte nodig is."
+    },
+    "links": {
+      "apps": "Open Apps opschonen",
+      "largeFiles": "Vind grote bestanden",
+      "largeVideos": "Vind grote video's",
+      "downloads": "Open Downloads opschonen",
+      "systemJunk": "Open Systeemrommel"
+    }
+  },
+  "largeFiles": {
+    "subtitle": "Vind vergeten bestanden die gigabytes innemen.",
+    "atLeast": "{{size}} of groter",
+    "sortLargest": "Grootste",
+    "sortOldest": "Oudste",
+    "all": "Alle",
+    "emptyTitle": "Geen grote bestanden gevonden",
+    "emptySubtitle": "Je Mac is al opgeruimd.",
+    "modified": "Gewijzigd",
+    "size": "Grootte",
+    "footnote": "Downloads, Bureaublad, Documenten en Films gescand. App-bibliotheken (Foto's, iMovie, Final Cut) worden nooit geopend."
+  },
+  "downloads": {
+    "subtitle": "Ruim installatieprogramma's, archieven en vergeten downloads op.",
+    "selectOldInstallers": "Selecteer oude installatieprogramma's",
+    "emptyTitle": "Je map Downloads is leeg",
+    "emptySubtitle": "Niets groter dan {{size}} in Downloads. Goed bezig.",
+    "kinds": {
+      "installers": "Installatieprogramma's en schijfkopieën",
+      "duplicates": "Dubbele downloads",
+      "large": "Grote downloads"
+    },
+    "showing": "Weergave: <b>{{label}}</b>",
+    "showAll": "Toon alles",
+    "duplicateNote": "Duplicaat",
+    "age": {
+      "today": "Vandaag",
+      "week": "Deze week",
+      "month": "Deze maand",
+      "older30": "Ouder dan 30 dagen",
+      "older90": "Ouder dan 90 dagen"
+    }
+  },
+  "duplicates": {
+    "subtitle": "Identieke bestanden, byte voor byte bevestigd. Er blijft altijd één kopie bewaard.",
+    "oneKept": "Er blijft altijd minstens één kopie bewaard.",
+    "keepOldest": "Bewaar oudste",
+    "keepNewest": "Bewaar nieuwste",
+    "emptyTitle": "Geen dubbele bestanden gevonden",
+    "emptySubtitle": "Hier valt niets op te schonen.",
+    "totalWasted": "Totaal verspilde ruimte",
+    "matchedBy": "Vergeleken op grootte en daarna op een controlesom van de volledige inhoud.",
+    "copiesEach_one": "{{count}} kopie · {{size}} per stuk",
+    "copiesEach_other": "{{count}} kopieën · {{size}} per stuk",
+    "wasted": "Verspild",
+    "newest": "Nieuwste",
+    "oldest": "Oudste",
+    "kept": "Bewaard",
+    "moveToTrash": "Verplaats duplicaten naar prullenmand",
+    "sets_one": "<b>{{count}}</b> groep",
+    "sets_other": "<b>{{count}}</b> groepen",
+    "copies_one": "<b>{{count}}</b> kopie",
+    "copies_other": "<b>{{count}}</b> kopieën"
+  },
+  "errors": {
+    "native": {
+      "invalidPath": "Het bestandspad is ongeldig.",
+      "gone": "Het bestand bestaat niet meer.",
+      "protectedSystem": "Dit is een beschermde macOS-locatie ({{path}}) en kan niet worden verwijderd.",
+      "homeFolder": "Je thuismap zelf kan nooit worden verwijderd.",
+      "protectedFolder": "{{path}} is een beschermde map en kan niet in zijn geheel worden verwijderd.",
+      "outsideHome": "Alleen bestanden in je thuismap kunnen worden verwijderd.",
+      "sensitive": "Dit onderdeel kan gevoelige gegevens bevatten en is daarom beschermd.",
+      "noAccess": "Geen toegang tot dit onderdeel: toestemming geweigerd of het bestaat niet meer.",
+      "rootFolder": "Een hoofdmap kan niet worden verwijderd.",
+      "macos": "macOS meldde een fout ({{code}}): {{detail}}",
+      "trashFailed": "Kan dit onderdeel niet naar de prullenmand verplaatsen.",
+      "protectedItem": "Beschermde onderdelen kunnen niet worden opgeschoond.",
+      "notApp": "Dit is geen app die kan worden verwijderd.",
+      "notInApplications": "Alleen apps die direct in een Apps-map staan, kunnen worden verwijderd.",
+      "systemApp": "Apple-apps maken deel uit van macOS en zijn beschermd.",
+      "self": "MacBook Cleaner kan zichzelf niet verwijderen.",
+      "previewHomeOnly": "Voorvertoning is alleen beschikbaar voor bestanden in je thuismap.",
+      "loginDevBuild": "'Open bij inloggen' is alleen beschikbaar in de geïnstalleerde app, niet in een ontwikkelversie.",
+      "notInstalled": "MacBook Cleaner draait vanaf een schijfkopie of je map Downloads. Verplaats het naar je map Apps, open het van daaruit en probeer het opnieuw.",
+      "noHome": "Je thuismap kan niet worden gevonden.",
+      "scheduleFailed": "macOS kon de hulp voor geplande opschoning niet starten.",
+      "unknown": "Er is iets misgegaan: {{detail}}",
+      "appMoved": "Deze app staat niet meer op die locatie.",
+      "linkBlocked": "Deze link kan niet worden geopend.",
+      "browserFailed": "Je standaardbrowser kan niet worden geopend.",
+      "noAppSupport": "MacBook Cleaner heeft geen toegang tot zijn gegevensmap.",
+      "invalidTime": "Die tijd is ongeldig."
+    },
+    "generic": "Er is iets misgegaan."
+  },
+  "apps": {
+    "footprint": {
+      "cache": "Cache",
+      "networkCache": "Netwerkcache",
+      "logs": "Logbestanden",
+      "savedState": "Bewaarde vensterstatus",
+      "websiteData": "Websitegegevens",
+      "support": "Ondersteunende bestanden",
+      "preferences": "Voorkeuren",
+      "container": "Sandboxcontainer"
+    },
+    "subtitle": "Verwijder apps samen met hun caches, logbestanden en restanten.",
+    "emptyTitle": "Geen apps gevonden",
+    "emptySubtitle": "Kan je map Apps niet lezen.",
+    "search": "Zoek apps",
+    "sort": {
+      "size": "Grootte",
+      "name": "Naam",
+      "leastUsed": "Minst gebruikt"
+    },
+    "notUsedInMonths": "Al maanden niet gebruikt",
+    "opened": "Geopend: {{when}}",
+    "usageUnknown": "Gebruik onbekend",
+    "application": "App",
+    "partOfMacOS": "Onderdeel van macOS",
+    "version": "Versie {{version}}",
+    "lastOpened": "Laatst geopend: {{when}}",
+    "lastOpenedUnknown": "Laatst geopend: onbekend",
+    "noLeftovers": "Geen caches, logbestanden of ondersteunende bestanden gevonden voor deze app.",
+    "explainer": "Caches en logbestanden kunnen veilig worden verwijderd. Ondersteunende bestanden en voorkeuren bevatten je instellingen en gegevens voor deze app: als je ze verwijdert, wordt de app hersteld. Stop de app voordat je opschoont of verwijdert.",
+    "revealFiles": "Toon bestanden",
+    "cleanData": "Schoon app-gegevens op",
+    "uninstall": "Verwijder app",
+    "cleanedUp": "{{app}} opgeschoond",
+    "uninstalled": "{{app}} verwijderd"
+  },
+  "systemJunk": {
+    "subtitle": "Caches, logbestanden en tijdelijke bestanden die je Mac zelf opnieuw opbouwt.",
+    "selectAllSafe": "Selecteer alles wat veilig is",
+    "safeToClean": "Veilig op te schonen",
+    "safeBody": "Wordt indien nodig automatisch opnieuw opgebouwd. Geen persoonlijke gegevens.",
+    "reviewRecommended": "Controle aanbevolen",
+    "reviewBody": "Kan worden verwijderd, maar kan leiden tot opnieuw downloaden, opnieuw opbouwen of uitloggen.",
+    "emptyTitle": "Geen rommel gevonden",
+    "emptySubtitle": "Je caches en logbestanden zijn al klein.",
+    "safeSubtitle": "App-caches, browsercaches en logbestanden",
+    "reviewSubtitle": "Controleer vóór het verwijderen",
+    "developer": "Opschoning voor ontwikkelaars",
+    "developerSubtitle": "Xcode, simulators, pakketbeheerders en buildcaches",
+    "devHidden": "{{size}} aan ontwikkelaarscaches verborgen. <link>Zet opschoning voor ontwikkelaars aan</link>",
+    "clean": "Schoon op"
+  },
+  "settings": {
+    "notifications": "Berichtgeving",
+    "subtitle": "Stem MacBook Cleaner af op jouw manier van werken.",
+    "appearance": "Weergave",
+    "theme": "Thema",
+    "themeSubtitle": "Volg macOS of kies een thema.",
+    "themeLight": "Licht",
+    "themeDark": "Donker",
+    "themeSystem": "Systeem",
+    "general": "Algemeen",
+    "language": "Taal",
+    "languageFollowsMac": "Volgt de taal van je Mac.",
+    "languageChosen": "Blijft hetzelfde, welke taal je Mac ook gebruikt.",
+    "launchAtLogin": "Open bij inloggen",
+    "launchAtLoginSubtitle": "Open MacBook Cleaner wanneer je inlogt.",
+    "notificationsSubtitle": "Herinneringen en samenvattingen van geplande opschoning.",
+    "macNotificationSettings": "Berichtinstellingen van macOS",
+    "scheduleOn": "Aan · {{frequency}} om {{time}}",
+    "cleanupBehavior": "Gedrag bij opschonen",
+    "moveToTrash": "Verplaats bestanden naar prullenmand",
+    "moveToTrashSubtitle": "Altijd aan. MacBook Cleaner verwijdert nooit iets definitief: jij bepaalt wanneer de prullenmand wordt geleegd.",
+    "always": "Altijd",
+    "confirmBefore": "Bevestig vóór opschonen",
+    "confirmBeforeSubtitle": "Als dit uit staat, vragen opschoningen met alleen veilige onderdelen geen bevestiging. Je eigen bestanden en te controleren onderdelen vragen het altijd.",
+    "developer": "Opschoning voor ontwikkelaars",
+    "developerSubtitle": "Toon buildcaches van Xcode, Simulator, npm, Gradle en andere.",
+    "exclusions": "Uitsluitingen bij scannen",
+    "exclusionsSubtitle": "Bestanden en mappen in deze lijst worden nooit voorgesteld voor opschoning, handmatig of gepland.",
+    "exclusionsInput": "Pad van map of bestand om uit te sluiten",
+    "add": "Voeg toe",
+    "noExclusions": "Nog geen uitsluitingen. Je kunt elk onderdeel ook verbergen met de knop 'Nooit meer voorstellen' in de rij.",
+    "removeExclusion": "Verwijder {{path}}",
+    "privacy": "Privacy en toegangsrechten",
+    "fdaGranted": "Verleend: MacBook Cleaner kan alles meten wat het opschoont.",
+    "fdaOptional": "Optioneel. Hiermee ziet MacBook Cleaner caches, de prullenmand en app-gegevens die macOS privé houdt.",
+    "granted": "Verleend",
+    "recheck": "Controleer opnieuw",
+    "filesStay": "Je bestanden blijven op je Mac",
+    "filesStaySubtitle": "Scannen gebeurt lokaal. Er wordt niets geüpload en de inhoud van bestanden wordt alleen gelezen om duplicaten te bevestigen.",
+    "about": "Info",
+    "checkUpdates": "Zoek naar updates",
+    "privacyPolicy": "Privacybeleid",
+    "terms": "Gebruiksvoorwaarden",
+    "showWelcome": "Toon welkom opnieuw",
+    "resetAll": "Herstel alle gegevens",
+    "resetTitle": "MacBook Cleaner herstellen?",
+    "resetBody": "Hiermee worden je instellingen, uitsluitingen, planning en opschoningsgeschiedenis gewist en wordt geplande opschoning uitgezet. Je bestanden en de prullenmand blijven onaangeroerd."
+  },
+  "scheduleScreen": {
+    "subtitle": "Houd onnodige rommel automatisch onder controle.",
+    "howOften": "Hoe vaak",
+    "howOftenSubtitle": "MacBook Cleaner controleert stil op de achtergrond; er gaat geen venster open.",
+    "at": "Om",
+    "nextRun": "Volgende keer: {{when}}",
+    "whenItRuns": "Wanneer het wordt uitgevoerd",
+    "remind": "Herinner me",
+    "remindBody": "Stuur een melding wanneer er genoeg op te schonen is of de opslag bijna vol is.",
+    "auto": "Schoon automatisch op",
+    "autoBody": "Verplaats geschikte ontwikkelaarscaches naar de prullenmand en laat je daarna weten wat er is opgeschoond.",
+    "eligible": "Geschikte categorieën",
+    "eligibleSubtitle": "Alleen caches en rommel kunnen worden gepland.",
+    "categories": {
+      "developer": "Ontwikkelaarscaches",
+      "developerDetail": "Xcode DerivedData, npm, Yarn, pnpm, Gradle, CocoaPods",
+      "system": "Systeem- en app-caches",
+      "systemDetail": "Caches en logbestanden in je Bibliotheek",
+      "browser": "Browsercaches",
+      "browserDetail": "Caches van Safari, Chrome, Edge en Firefox"
+    },
+    "cleanedAutomatically": "Automatisch opgeschoond",
+    "inReminders": "Opgenomen in herinneringen",
+    "neverRemoved": "Nooit automatisch verwijderd",
+    "never": {
+      "desktop": "Bestanden op het bureaublad",
+      "personal": "Persoonlijke mappen",
+      "label": "Nooit"
+    },
+    "onlyTrash": "Geplande uitvoeringen verplaatsen onderdelen alleen naar de prullenmand.",
+    "status": "Status",
+    "backgroundJob": "Achtergrondtaak",
+    "active": "Actief",
+    "notInstalled": "Niet geïnstalleerd",
+    "lastRun": "Laatst uitgevoerd",
+    "recentRuns": "Recente uitvoeringen",
+    "found": "{{size}} gevonden",
+    "needsApplications": "Voor planning moet MacBook Cleaner in je map Apps staan.",
+    "unsaved": "Je hebt niet-bewaarde wijzigingen",
+    "discard": "Verwerp",
+    "saving": "Bewaren…",
+    "save": "Bewaar planning",
+    "consent": {
+      "title": "Automatisch opschonen aanzetten?",
+      "intro": "Terwijl je weg bent, verplaatst MacBook Cleaner deze onderdelen naar de prullenmand, en verder niets:",
+      "jsCaches": "npm-, Yarn- en pnpm-caches",
+      "limits": "Wordt alleen uitgevoerd als er minstens {{min}} op te schonen is, nooit meer dan {{max}} of {{items}} onderdelen tegelijk, slaat altijd je uitsluitingen over en stuurt je een samenvatting. Alles blijft in de prullenmand tot je die leegt.",
+      "keepReminders": "Houd herinneringen",
+      "turnOn": "Zet aan"
+    }
+  },
+  "toasts": {
+    "scanFailed": "Scan mislukt: {{error}}",
+    "excluded": "Begrepen: dat onderdeel wordt niet meer voorgesteld.",
+    "revealFailed": "Kan niet tonen in Finder: {{error}}",
+    "quickLookPreview": "Snelle weergave opent hier in de desktop-app.",
+    "previewFailed": "Kan geen voorvertoning tonen: {{error}}",
+    "scheduleSaved": "Planning bewaard: MacBook Cleaner houdt een oogje in het zeil.",
+    "scheduleOff": "Geplande opschoning uitgezet."
+  },
+  "language": {
+    "title": "Taal",
+    "subtitle": "Wijzigingen gelden meteen, zonder herstart.",
+    "search": "Zoek talen",
+    "system": "Systeemstandaard",
+    "systemDetail": "Volgt je Mac (nu: {{language}})",
+    "systemDetailPending": "Volgt de taal van je Mac"
+  },
+  "permissions": {
+    "fullDiskAccess": {
+      "label": "Volledige schijftoegang"
+    }
+  },
+  "cleanup": {
+    "failureName": "opschoning",
+    "aboutToRemove": "Je staat op het punt <b>{{size}}</b> te verwijderen",
+    "willMove_one": "{{count}} onderdeel wordt naar de prullenmand verplaatst, zodat je het kunt terugzetten tot je die leegt.",
+    "willMove_other": "{{count}} onderdelen worden naar de prullenmand verplaatst, zodat je alles kunt terugzetten tot je die leegt.",
+    "notPermanent": "Naar de prullenmand verplaatst: niets wordt definitief verwijderd.",
+    "personalWarning_one": "{{count}} daarvan is je eigen bestand: zorg dat je het niet meer nodig hebt.",
+    "personalWarning_other": "{{count}} daarvan zijn je eigen bestanden of app-instellingen: zorg dat je ze niet meer nodig hebt.",
+    "reviewWarning_one": "{{count}} onderdeel kan leiden tot opnieuw downloaden, opnieuw opbouwen of uitloggen.",
+    "reviewWarning_other": "{{count}} onderdelen kunnen leiden tot opnieuw downloaden, opnieuw opbouwen of uitloggen.",
+    "hideList": "Verberg bestandenlijst",
+    "reviewFilesLink": "Controleer bestanden",
+    "ack": "Ik heb deze onderdelen gecontroleerd en wil ze naar de prullenmand verplaatsen.",
+    "reviewFiles": "Controleer bestanden",
+    "cleanNow": "Schoon nu op",
+    "cleaning": "Opschonen…",
+    "preparing": "Voorbereiden…",
+    "nothingRemoved": "Er is niets verwijderd",
+    "complete": "Opschoning voltooid",
+    "youFreed": "Je hebt vrijgemaakt",
+    "breathingRoom": "Je Mac heeft weer wat meer ademruimte.",
+    "recoverable": "Alles staat in de prullenmand en is dus terug te zetten. De ruimte komt volledig vrij als je de prullenmand leegt.",
+    "openTrash": "Open prullenmand",
+    "failedCount_one": "{{count}} onderdeel kon niet worden verplaatst",
+    "failedCount_other": "{{count}} onderdelen konden niet worden verplaatst",
+    "viewStorage": "Bekijk opslag",
+    "backToDashboard": "Terug naar overzicht"
+  },
+  "performance": {
+    "subtitle": "Zie hoe het met je Mac gaat: CPU, geheugen, apps, batterij en meer.",
+    "live": "Live",
+    "updatedAt": "Bijgewerkt om {{time}}",
+    "readError": "Sommige informatie kon niet worden gelezen: {{error}}",
+    "tabs": {
+      "overview": "Overzicht",
+      "apps": "Actieve apps",
+      "battery": "Batterij",
+      "mac": "Mac-info"
+    },
+    "runningApps": "Actieve apps",
+    "runningAppsSubtitle": "Welke apps nu het meeste geheugen en de meeste CPU gebruiken.",
+    "cpu": "CPU",
+    "memory": "Geheugen",
+    "uptime": "Actief sinds",
+    "sinceRestart": "Sinds de laatste herstart",
+    "measuring": "Meten…",
+    "checking": "Controleren…",
+    "idlePercent": "{{percent}} inactief",
+    "available": "{{size}} beschikbaar",
+    "availableLabel": "Beschikbaar",
+    "ofTotal": "van {{total}}",
+    "aboutX": "Over {{name}}",
+    "moreInfo": "Meer info",
+    "chart60s": "60 s geleden",
+    "chartNow2": "nu",
+    "chartNow": "{{label}}, nu {{value}}",
+    "cpuUsage": "CPU-gebruik",
+    "cpuUsageTip": "Het deel van de totale rekenkracht van je Mac dat in gebruik is, om de paar seconden over alle cores gemeten.",
+    "cpuChart": "CPU-gebruik in de afgelopen 60 seconden",
+    "cpuParts": {
+      "user": "Gebruiker",
+      "userTip": "Tijd besteed aan apps en je eigen processen.",
+      "system": "Systeem",
+      "systemTip": "Tijd binnen macOS zelf: stuurprogramma's, bestandssysteem, netwerk.",
+      "idle": "Inactief",
+      "idleTip": "Rekencapaciteit die nu vrij is."
+    },
+    "cpuCores": {
+      "label": "Cores",
+      "split": "{{performance}} prestatie- + {{efficiency}} efficiëntiecores"
+    },
+    "memoryUsed": "Gebruikt geheugen",
+    "memoryUsedTip": "App-geheugen + vast + gecomprimeerd: dezelfde waarde 'Gebruikt geheugen' als in Activiteitenweergave. Bestanden in cache tellen niet mee, omdat macOS die direct vrijgeeft als dat nodig is.",
+    "memoryChart": "Gebruikt geheugen in de afgelopen 60 seconden",
+    "pressureIs": "Druk is {{pressure}}",
+    "pressureTip": "De eigen maatstaf van macOS of apps genoeg geheugen hebben. Hoog gebruik bij normale druk is gezond: macOS gebruikt vrij geheugen bewust.",
+    "pressure": {
+      "normal": "normaal",
+      "warning": "verhoogd",
+      "critical": "hoog"
+    },
+    "memParts": {
+      "app": "App-geheugen",
+      "appTip": "Geheugen dat je apps actief gebruiken.",
+      "wired": "Vast geheugen",
+      "wiredTip": "Geheugen dat macOS zelf nodig heeft en niet kan comprimeren of verplaatsen.",
+      "compressed": "Gecomprimeerd",
+      "compressedTip": "Geheugen dat macOS heeft gecomprimeerd om ruimte te maken: een normale, efficiënte techniek.",
+      "cached": "Bestanden in cache",
+      "cachedTip": "Onlangs gebruikte bestanden die macOS in het geheugen houdt om ze sneller te openen. Komt automatisch vrij zodra een app de ruimte nodig heeft.",
+      "swap": "Gebruikte swap",
+      "swapTip": "Geheugen dat macOS tijdelijk naar je SSD heeft verplaatst. Een beetje swap is normaal; veel swap bij hoge druk betekent dat je Mac baat heeft bij minder geopende apps."
+    },
+    "duration": {
+      "dh": "{{d}} d {{h}} u",
+      "hm": "{{h}} u {{m}} min",
+      "m": "{{m}} min",
+      "lessThanMinute": "< 1 min"
+    },
+    "device": {
+      "thisMac": "Deze Mac",
+      "memory": "{{size}} geheugen",
+      "storage": "{{size}} opslag",
+      "battery": "Batterij: {{condition}}"
+    },
+    "health": {
+      "title": "Mac-gezondheid",
+      "subtitle": "Een duidelijke samenvatting. Elke status komt rechtstreeks uit macOS.",
+      "memoryDetail": "Geheugendruk",
+      "memoryTip": "Geheugendruk is de eigen maatstaf van macOS voor hoe hard het moet werken om geheugen vrij te maken. 'Normaal' betekent dat apps genoeg geheugen hebben, ook als het meeste in gebruik is.",
+      "storageFree": "{{size}} vrij",
+      "runningLow": "Bijna vol",
+      "gettingFull": "Raakt vol",
+      "plentyOfRoom": "Ruim voldoende",
+      "storageTip": "Toont 'Raakt vol' onder {{full}} vrij en 'Bijna vol' onder {{low}}: macOS heeft vrije ruimte nodig voor updates, caches en virtueel geheugen.",
+      "noBattery": "Geen batterij",
+      "batteryDetail": "Batterijconditie",
+      "desktopMac": "Desktop-Mac",
+      "batteryTip": "De batterijconditie die macOS meldt, dezelfde als in Systeeminstellingen → Batterij.",
+      "cpuInUse": "{{percent}} in gebruik",
+      "light": "Weinig activiteit",
+      "moderate": "Gemiddelde activiteit",
+      "busy": "Erg druk",
+      "cpuTip": "Hoeveel van de totale rekenkracht van je Mac nu in gebruik is, over alle cores.",
+      "uptimeTip": "Hoe lang je Mac al draait sinds de laatste keer opstarten. Af en toe herstarten laat macOS updates afronden.",
+      "asOfLastCheck": "Volgens de laatste controle van macOS",
+      "checkInSettings": "Controleer in Systeeminstellingen",
+      "macosTip": "Gebaseerd op het resultaat van de automatische controle van Software-update in macOS. MacBook Cleaner neemt zelf nooit contact op met de servers van Apple."
+    },
+    "os": {
+      "updateAvailable": "Update beschikbaar",
+      "upToDate": "Bijgewerkt",
+      "statusUnknown": "Status onbekend",
+      "version": "Versie",
+      "build": "Build",
+      "architecture": "Architectuur",
+      "appleSilicon": "Apple-chip (arm64)",
+      "intel": "Intel (x86_64)",
+      "kernel": "Darwin-kernel",
+      "kernelTip": "De opensourcekern waarop macOS is gebouwd. Vooral nuttig bij probleemoplossing.",
+      "availableFromApple": "Beschikbaar bij Apple",
+      "noUpdatesFound": "macOS heeft bij de laatste controle geen updates gevonden.",
+      "openToCheck": "Open Software-update om te zoeken naar de nieuwste versie van macOS.",
+      "lastChecked": "macOS heeft het laatst gecontroleerd: {{when}}. MacBook Cleaner leest dat resultaat en neemt zelf nooit contact op met Apple.",
+      "checkUpdates": "Zoek naar macOS-updates",
+      "openSoftwareUpdate": "Open Software-update"
+    },
+    "battery": {
+      "conditionNormal": "Normaal",
+      "conditionService": "Onderhoud aanbevolen",
+      "conditionIs": "Conditie: {{condition}}",
+      "charging": "Wordt opgeladen",
+      "onBattery": "Op batterij",
+      "fullyCharged": "Volledig opgeladen",
+      "notCharging": "Wordt niet opgeladen",
+      "untilFull": "{{time}} tot vol",
+      "remaining": "Nog {{time}}",
+      "powerAdapter": "Lichtnetadapter",
+      "batteryPower": "Batterijstroom",
+      "maxCapacity": "Maximale capaciteit",
+      "maxCapacityTip": "Hoeveel lading de batterij nu kan bevatten in vergelijking met toen hij nieuw was. Gemeld door macOS: dezelfde waarde als in Systeeminstellingen → Batterij → Batterijconditie.",
+      "capacityNote": "De capaciteit neemt van nature af naarmate een batterij ouder wordt. MacBook Cleaner toont deze alleen: geen enkele app kan batterijcapaciteit herstellen.",
+      "cycleCount": "Aantal laadcycli",
+      "cyclesOfDesign": "{{cycles}} van de {{design}} cycli waarvoor de batterij volgens eigen opgave is ontworpen",
+      "cycleExplain": "Het aantal laadcycli is het aantal volledige laadcycli dat de batterij van je Mac heeft doorlopen. 100% van de capaciteit gebruiken, ook verspreid over meerdere gedeeltelijke ladingen, telt als één cyclus.",
+      "details": "Batterijdetails",
+      "charge": "Lading",
+      "chargingLabel": "Opladen",
+      "powerSource": "Stroombron",
+      "timeRemaining": "Resterende tijd",
+      "notApplicable": "Niet van toepassing",
+      "calculating": "Berekenen…",
+      "timeTip": "macOS geeft pas een schatting nadat het je huidige gebruik een tijdje heeft gevolgd.",
+      "condition": "Conditie",
+      "conditionTip": "Gemeld door macOS. 'Normaal' betekent dat de batterij naar verwachting werkt; 'Onderhoud aanbevolen' betekent dat Apple voorstelt hem te laten nakijken.",
+      "designCapacity": "Ontwerpcapaciteit",
+      "designCapacityTip": "Hoeveel lading de batterij kon bevatten toen hij nieuw was.",
+      "fullCapacity": "Capaciteit bij volle lading",
+      "fullCapacityTip": "Hoeveel lading de batterij vandaag bevat als hij vol is.",
+      "currentCharge": "Huidige lading",
+      "mah": "{{value}} mAh"
+    },
+    "apps": {
+      "inUse": "Op voorgrond",
+      "hidden": "Verborgen",
+      "thisApp": "Deze app",
+      "kind": {
+        "app": "App",
+        "background": "Achtergrond",
+        "backgroundProcess": "Achtergrondproces",
+        "system": "Systeemproces"
+      },
+      "processes_one": "{{count}} proces",
+      "processes_other": "{{count}} processen",
+      "filter": {
+        "apps": "Apps",
+        "background": "Achtergrond",
+        "all": "Alle"
+      },
+      "showSystem": "Toon systeemprocessen",
+      "search": "Zoek in actieve apps",
+      "cols": {
+        "app": "App",
+        "name": "Naam",
+        "running": "Actief"
+      },
+      "cpuTip": "Deel van de totale rekenkracht van je Mac. Activiteitenweergave toont in plaats daarvan waarden per core, die boven 100% kunnen uitkomen.",
+      "memoryTip": "Fysiek geheugengebruik: de waarde uit de kolom Geheugen van Activiteitenweergave. Apps zijn inclusief hun hulpprocessen.",
+      "nothing": "Niets om te tonen.",
+      "showMore_one": "Toon meer ({{count}} verborgen)",
+      "showMore_other": "Toon meer ({{count}} verborgen)",
+      "seeAll": "Bekijk alle actieve apps",
+      "footnote_one": "{{count}} proces op deze Mac. Apps zijn inclusief hun hulpprocessen. macOS laat apps de CPU en het geheugen van systeemprocessen van andere gebruikers niet lezen, daarom staat daar '—'.",
+      "footnote_other": "{{count}} processen op deze Mac. Apps zijn inclusief hun hulpprocessen. macOS laat apps de CPU en het geheugen van systeemprocessen van andere gebruikers niet lezen, daarom staat daar '—'."
+    },
+    "macUptime": "Mac actief sinds",
+    "lastStarted": "Laatst opgestart: {{when}}",
+    "uptimeUnits": {
+      "days_one": "dag",
+      "days_other": "dagen",
+      "hours_one": "uur",
+      "hours_other": "uur",
+      "minutes_one": "minuut",
+      "minutes_other": "minuten"
+    },
+    "details": {
+      "title": "Details van {{name}}",
+      "quit": "Niet meer actief",
+      "cpuTip": "Deel van de totale rekenkracht van je Mac op dit moment.",
+      "memoryTip": "Fysiek geheugengebruik, inclusief hulpprocessen.",
+      "runningFor": "Actief sinds",
+      "threads": "Threads",
+      "threadsTip": "Onafhankelijke taken die de app tegelijk uitvoert. Drukke apps gebruiken er vaak tientallen.",
+      "launched": "Gestart",
+      "state": "Status",
+      "status": {
+        "running": "Actief",
+        "idle": "Inactief: wacht op invoer",
+        "stopped": "Gestopt"
+      },
+      "pid": "Proces-ID",
+      "processes": "Processen",
+      "withHelpers_one": "{{count}} (app + hulpprocessen)",
+      "withHelpers_other": "{{count}} (app + hulpprocessen)",
+      "owner": "Eigenaar",
+      "you": "Jij",
+      "systemOwner": "Systeem",
+      "version": "Versie",
+      "executable": "Uitvoerbaar bestand",
+      "quitHint": "Gebruik om een app te stoppen het eigen stopcommando (⌘Q) of klik met de rechtermuisknop op de app in het Dock, zodat je werk eerst kan worden bewaard."
+    },
+    "mac": {
+      "hardware": "Hardware",
+      "model": "Model",
+      "modelId": "Model-ID",
+      "modelIdTip": "De interne naam van Apple voor dit specifieke Mac-model: handig bij het opzoeken van specificaties of supportartikelen.",
+      "chip": "Chip",
+      "cores_one": "{{count}} core",
+      "cores_other": "{{count}} cores",
+      "coresSplit_one": "{{count}} core ({{performance}} prestatie, {{efficiency}} efficiëntie)",
+      "coresSplit_other": "{{count}} cores ({{performance}} prestatie, {{efficiency}} efficiëntie)",
+      "coresThreads_one": "{{count}} core, {{threads}} threads",
+      "coresThreads_other": "{{count}} cores, {{threads}} threads",
+      "graphics": "Grafisch",
+      "gpuCores_one": "{{gpu}}, GPU met {{count}} core",
+      "gpuCores_other": "{{gpu}}, GPU met {{count}} cores",
+      "storageValue": "{{total}} ({{free}} beschikbaar)",
+      "hostname": "Hostnaam",
+      "hostnameTip": "De naam van je Mac op het lokale netwerk. Alleen hier getoond, nooit ergens naartoe gestuurd.",
+      "note": "Opmerking",
+      "rosetta": "MacBook Cleaner draait onder Rosetta",
+      "displays": "Beeldschermen",
+      "builtIn": "Ingebouwd",
+      "main": "Hoofdscherm",
+      "looksLike": "Lijkt op {{resolution}}",
+      "pixels": "{{pixels}} pixels",
+      "localNote": "Al deze informatie wordt lokaal uit macOS gelezen en blijft op je Mac. MacBook Cleaner leest je serienummer niet."
+    },
+    "storage": {
+      "recoverable": "Mogelijk terug te winnen",
+      "runScan": "Voer een scan uit",
+      "openCleaner": "Open opslagopschoning",
+      "breakdown": "Opslagverdeling"
+    }
+  },
+  "native": {
+    "number": {
+      "decimal": ",",
+      "gb": "{{value}} GB"
+    },
+    "notifications": {
+      "autoCleanDone": "Automatisch opschonen heeft {{size}} aan veilige cache naar de prullenmand verplaatst.",
+      "autoCleanPartial": "Automatisch opschonen heeft {{size}} naar de prullenmand verplaatst. Sommige onderdelen konden niet worden verplaatst ({{failed}}).",
+      "lowSpace": "Je Mac heeft nog maar {{size}} vrij. Bekijk de opslagaanbevelingen.",
+      "reviewable": "{{size}} kan worden gecontroleerd voor opschoning."
+    },
+    "menu": {
+      "about": "Over {{app}}",
+      "services": "Voorzieningen",
+      "hide": "Verberg {{app}}",
+      "hideOthers": "Verberg andere",
+      "showAll": "Toon alles",
+      "quit": "Stop {{app}}",
+      "edit": "Wijzig",
+      "undo": "Herstel",
+      "redo": "Opnieuw",
+      "cut": "Knip",
+      "copy": "Kopieer",
+      "paste": "Plak",
+      "selectAll": "Selecteer alles",
+      "view": "Weergave",
+      "fullScreen": "Activeer schermvullende weergave",
+      "window": "Venster",
+      "minimize": "Minimaliseer",
+      "zoom": "Zoom",
+      "closeWindow": "Sluit venster"
+    },
+    "appleEventsUsage": "MacBook Cleaner vraagt de Finder om de onderdelen die je goedkeurt naar de prullenmand te verplaatsen, zodat je ze kunt terugzetten tot je die leegt."
+  }
+}

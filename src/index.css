@@ -1,0 +1,268 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * MacBook Cleaner design tokens.
+ * Neutral, airy canvases so the colorful accents (blue → purple brand,
+ * mint, cyan, soft orange) carry the personality without the UI feeling loud.
+ */
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+
+  --color-canvas: #f4f5fb;
+  --color-surface: #ffffff;
+  --color-surface-2: #f3f4fa;
+  --color-surface-3: #eaecf5;
+  --color-line: rgba(30, 36, 80, 0.07);
+  --color-line-strong: rgba(30, 36, 80, 0.13);
+  --color-ink: #141629;
+  --color-ink-2: #555b78;
+  --color-ink-3: #8c91aa;
+  --color-sidebar: rgba(255, 255, 255, 0.62);
+
+  --color-brand: #5b6cff;
+  --color-brand-2: #8b5cf6;
+  --color-brand-soft: #eceeff;
+  --color-mint: #19c39a;
+  --color-mint-soft: #e2f8f1;
+  --color-cyan: #13b5e0;
+  --color-cyan-soft: #e1f5fc;
+  --color-sun: #ff8a4c;
+  --color-sun-soft: #fff0e7;
+  --color-rose: #f0508a;
+  --color-rose-soft: #fde8f0;
+  --color-amber: #f5b400;
+  --color-danger: #e5484d;
+  --color-danger-soft: #fdecec;
+
+  --radius-card: 22px;
+  --shadow-card: 0 1px 2px rgba(20, 22, 60, 0.04), 0 8px 28px -12px rgba(20, 22, 60, 0.12);
+  --shadow-lift: 0 2px 4px rgba(20, 22, 60, 0.05), 0 18px 40px -16px rgba(40, 30, 120, 0.28);
+  --shadow-glow: 0 10px 30px -8px rgba(91, 108, 255, 0.55);
+}
+
+.dark {
+  --color-canvas: #0f1120;
+  --color-surface: #171a2c;
+  --color-surface-2: #1d2135;
+  --color-surface-3: #262a42;
+  --color-line: rgba(200, 205, 255, 0.07);
+  --color-line-strong: rgba(200, 205, 255, 0.14);
+  --color-ink: #eef0fb;
+  --color-ink-2: #a7abc6;
+  --color-ink-3: #6f7493;
+  --color-sidebar: rgba(23, 26, 44, 0.66);
+
+  --color-brand: #7b88ff;
+  --color-brand-2: #a37bff;
+  --color-brand-soft: #22264a;
+  --color-mint: #3ddbb0;
+  --color-mint-soft: #13312c;
+  --color-cyan: #3fc9ee;
+  --color-cyan-soft: #12303d;
+  --color-sun: #ff9e66;
+  --color-sun-soft: #3a2519;
+  --color-rose: #ff6b9e;
+  --color-rose-soft: #3a1d2a;
+  --color-danger: #ff6b6f;
+  --color-danger-soft: #3a1c1f;
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px -14px rgba(0, 0, 0, 0.6);
+  --shadow-lift: 0 2px 6px rgba(0, 0, 0, 0.35), 0 20px 44px -16px rgba(0, 0, 0, 0.7);
+}
+
+html {
+  color-scheme: light dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv11";
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+/* Text the user may want to copy (paths, file names) stays selectable. */
+.selectable {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* Soft ambient color behind the whole app — gives the glass surfaces something to tint. */
+.app-backdrop {
+  background:
+    radial-gradient(1100px 620px at 8% -10%, rgba(91, 108, 255, 0.13), transparent 60%),
+    radial-gradient(900px 560px at 105% 0%, rgba(139, 92, 246, 0.11), transparent 60%),
+    radial-gradient(800px 600px at 70% 115%, rgba(25, 195, 154, 0.09), transparent 60%),
+    var(--color-canvas);
+}
+.dark .app-backdrop {
+  background:
+    radial-gradient(1100px 620px at 8% -10%, rgba(91, 108, 255, 0.16), transparent 60%),
+    radial-gradient(900px 560px at 105% 0%, rgba(139, 92, 246, 0.14), transparent 60%),
+    radial-gradient(800px 600px at 70% 115%, rgba(25, 195, 154, 0.08), transparent 60%),
+    var(--color-canvas);
+}
+
+.glass {
+  background: color-mix(in srgb, var(--color-surface) 82%, transparent);
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #4f8bff 0%, #6e5bff 55%, #a24df5 100%);
+}
+
+.brand-text {
+  background: linear-gradient(120deg, #4f8bff 0%, #7a5cff 50%, #b04ff0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mint-text {
+  background: linear-gradient(120deg, #12c79b 0%, #13b5e0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Thin, unobtrusive macOS-style scrollbars */
+.scroll-area {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line-strong) transparent;
+}
+.scroll-area::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll-area::-webkit-scrollbar-thumb {
+  background: var(--color-line-strong);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Shimmer for loading skeletons */
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--color-surface-2) 0px, var(--color-surface-3) 120px, var(--color-surface-2) 240px);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s linear infinite;
+  border-radius: 8px;
+}
+
+/* Scanning radar sweep */
+@keyframes sweep {
+  to { transform: rotate(360deg); }
+}
+.animate-sweep {
+  animation: sweep 2.4s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 0.55; }
+  100% { transform: scale(1.55); opacity: 0; }
+}
+.animate-pulse-ring {
+  animation: pulse-ring 2.2s cubic-bezier(0.2, 0.7, 0.3, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+input,
+button,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: default;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* ---------- Right-to-left (Arabic) ----------
+ * Layout uses logical utilities (ms-/me-/ps-/pe-/start-/end-/text-start), so
+ * it mirrors automatically under <html dir="rtl">. Directional icons
+ * (arrows, chevrons) carry .rtl-flip so "forward" keeps pointing forward.
+ * Charts, the battery glyph and similar pictures are wrapped in dir="ltr"
+ * so time still runs left-to-right and numbers stay readable. */
+[dir='rtl'] .rtl-flip {
+  transform: scaleX(-1);
+}
+[dir='rtl'] .group:hover .rtl-flip.group-hover\:translate-x-0\.5 {
+  transform: scaleX(-1) translateX(0.125rem);
+}
+/* Numbers, sizes and file paths read left-to-right even inside Arabic text,
+ * but still line up with the right-aligned Arabic layout around them. */
+[dir='rtl'] .tabular,
+[dir='rtl'] .selectable {
+  unicode-bidi: plaintext;
+}
+[dir='rtl'] .selectable:not(.text-end) {
+  text-align: right;
+}
+/* Arabic letters join and Devanagari has a continuous headline: extra
+ * letter-spacing breaks both. Scripts without case don't need uppercase
+ * (it would only shout embedded Latin words such as "Mac"). */
+:lang(ar) *,
+:lang(hi) * {
+  letter-spacing: normal !important;
+}
+:lang(ar) .uppercase,
+:lang(hi) .uppercase,
+:lang(ja) .uppercase,
+:lang(ko) .uppercase,
+:lang(zh) .uppercase {
+  text-transform: none;
+}

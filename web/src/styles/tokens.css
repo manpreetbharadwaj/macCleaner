@@ -1,0 +1,87 @@
+/*
+ * Design tokens. Colors follow the desktop app's palette (src/index.css in
+ * the app): a blue → purple brand gradient with mint, cyan, orange and rose
+ * accents on airy neutral canvases.
+ */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+
+  --bg: #f6f7fc;
+  --bg-tint: #eef0fb;
+  --surface: #ffffff;
+  --surface-2: #f2f3fa;
+  --surface-3: #e8eaf4;
+  --line: rgba(30, 36, 80, 0.08);
+  --line-strong: rgba(30, 36, 80, 0.15);
+  --ink: #12142a;
+  --ink-2: #4b5170;
+  --ink-3: #676c8a;
+
+  --brand: #5b6cff;
+  --brand-2: #8b5cf6;
+  --brand-ink: #4150e0;
+  --brand-soft: #eceeff;
+  --mint: #19c39a;
+  --mint-ink: #0c7d61;
+  --mint-soft: #e2f8f1;
+  --cyan: #13b5e0;
+  --sun: #ff8a4c;
+  --sun-ink: #b4501a;
+  --sun-soft: #fff1e8;
+  --rose: #f0508a;
+  --amber: #f5b400;
+  --danger: #e5484d;
+  --danger-ink: #be2e33;
+  --danger-soft: #fdecec;
+  --ring-free: #e4e6f1;
+
+  --grad: linear-gradient(120deg, #4f8bff 0%, #6e5bff 48%, #a24df5 100%);
+  --grad-text: linear-gradient(100deg, #4f7bff 0%, #6e5bff 45%, #a24df5 100%);
+
+  --radius-sm: 12px;
+  --radius: 22px;
+  --radius-lg: 30px;
+  --shadow-sm: 0 1px 2px rgba(20, 22, 60, 0.05);
+  --shadow: 0 1px 2px rgba(20, 22, 60, 0.04), 0 10px 30px -14px rgba(20, 22, 60, 0.16);
+  --shadow-lift: 0 2px 4px rgba(20, 22, 60, 0.05), 0 24px 50px -20px rgba(40, 30, 120, 0.3);
+  --shadow-glow: 0 12px 32px -10px rgba(91, 108, 255, 0.6);
+
+  --nav-h: 68px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d1a;
+    --bg-tint: #10132a;
+    --surface: #151829;
+    --surface-2: #1c2036;
+    --surface-3: #262a44;
+    --line: rgba(200, 205, 255, 0.08);
+    --line-strong: rgba(200, 205, 255, 0.16);
+    --ink: #eef0fb;
+    --ink-2: #b0b4cf;
+    --ink-3: #8d92b0;
+
+    --brand: #7b88ff;
+    --brand-2: #a37bff;
+    --brand-ink: #9aa4ff;
+    --brand-soft: #22264a;
+    --mint: #3ddbb0;
+    --mint-ink: #4fe0b8;
+    --mint-soft: #13312c;
+    --sun-ink: #ffab7a;
+    --sun-soft: #33231a;
+    --danger-ink: #ff8a8d;
+    --danger-soft: #3a1c1f;
+    --ring-free: #262a44;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -16px rgba(0, 0, 0, 0.7);
+    --shadow-lift: 0 2px 6px rgba(0, 0, 0, 0.35), 0 26px 54px -20px rgba(0, 0, 0, 0.8);
+    color-scheme: dark;
+  }
+}

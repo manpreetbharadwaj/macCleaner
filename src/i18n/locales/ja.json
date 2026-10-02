@@ -1,0 +1,979 @@
+{
+  "meta": {
+    "englishName": "Japanese",
+    "nativeName": "日本語",
+    "dir": "ltr",
+    "order": 10
+  },
+  "common": {
+    "tagline": "すっきり整理。大切なものはそのまま。",
+    "unknown": "不明",
+    "notAvailable": "利用できません",
+    "cancel": "キャンセル",
+    "close": "閉じる",
+    "clear": "消去",
+    "continue": "続ける",
+    "back": "戻る",
+    "dismiss": "閉じる",
+    "refresh": "更新",
+    "rescan": "再スキャン",
+    "scanAgain": "もう一度スキャン",
+    "search": "検索",
+    "noMatches": "一致する項目はありません。",
+    "reset": "リセット",
+    "off": "オフ",
+    "no": "いいえ",
+    "selectAll": "すべてを選択",
+    "selectItem": "{{name}}を選択",
+    "quickLook": "クイックルック",
+    "revealInFinder": "Finderに表示",
+    "showInFinder": "Finderに表示",
+    "neverSuggest": "今後は提案しない",
+    "moveToTrash": "ゴミ箱に入れる",
+    "items_other": "{{count}}項目",
+    "files_other": "{{count}}個のファイル",
+    "openSystemSettings": "システム設定を開く",
+    "open": "開く"
+  },
+  "safety": {
+    "green": "安全",
+    "orange": "要確認",
+    "red": "保護"
+  },
+  "scanGate": {
+    "scanningTitle": "Macをスキャン中…",
+    "gettingStarted": "開始しています…",
+    "promptTitle": {
+      "largeFiles": "スキャンして大きなファイルを見つけましょう",
+      "downloads": "スキャンして古いダウンロードを見つけましょう",
+      "duplicates": "スキャンして重複ファイルを見つけましょう",
+      "apps": "スキャンしてAppとその残りを見つけましょう",
+      "systemJunk": "スキャンしてシステムジャンクを見つけましょう",
+      "storage": "スキャンしてストレージの使用状況を確認しましょう",
+      "smartClean": "スキャンして削除できるものを確認しましょう"
+    },
+    "promptSubtitle": "このMac上で手早くスキャンし、中身を表示します。あなたが確認するまで何も削除されません。",
+    "scanButton": "Macをスキャン"
+  },
+  "selectionBar": {
+    "selected_other": "{{count}}項目を選択中",
+    "willMove": "{{size}}をゴミ箱に入れます"
+  },
+  "items": {
+    "dev": {
+      "xcodeDerivedData": {
+        "name": "Xcode DerivedData",
+        "why": "次回のビルド時にXcodeが自動で再生成する中間ビルド成果物です。",
+        "what": "Xcodeが再インデックスと再コンパイルを行うため、次回のビルドに時間がかかります。"
+      },
+      "xcodeArchives": {
+        "name": "Xcodeアーカイブ",
+        "why": "App Storeへの提出やTestFlight配信用にアーカイブされたビルドです。",
+        "what": "そのビルドのdSYMを書き出したり、再提出したりできなくなります。"
+      },
+      "xcodeDeviceSupportIos": {
+        "name": "iOSデバイスサポート",
+        "why": "以前に接続したiOSデバイス用にキャッシュされたデバッグシンボルです。",
+        "what": "次回デバイスを接続したときに、Xcodeがデバイスサポートを再ダウンロードします。"
+      },
+      "xcodeDeviceSupportWatchos": {
+        "name": "watchOSデバイスサポート",
+        "why": "テストに使ったペアリング済みApple Watch用にキャッシュされたデバッグシンボルです。",
+        "what": "次回デバイスを接続したときに、Xcodeがデバイスサポートを再ダウンロードします。"
+      },
+      "xcodeSimulatorCaches": {
+        "name": "シミュレータのキャッシュ",
+        "why": "iOS/watchOSシミュレータが必要に応じて自動で再構築するデータです。",
+        "what": "影響はありません。シミュレータがキャッシュを自動で再構築します。"
+      },
+      "xcodeSimulatorDevices": {
+        "name": "シミュレータのデバイス",
+        "why": "シミュレートされた各iOS/watchOS/tvOSデバイスのストレージです。インストールしたテスト用Appのデータも含みます。",
+        "what": "シミュレータのデバイスと、そこにインストールしたAppのデータを作り直す必要があります。"
+      },
+      "npmCache": {
+        "name": "npmキャッシュ",
+        "why": "今後のインストールでネットワークを使わずに済むよう、npmが保持しているダウンロード済みパッケージです。",
+        "what": "今後のnpmインストールでは、ローカルキャッシュの代わりにパッケージを再ダウンロードします。"
+      },
+      "yarnCache": {
+        "name": "Yarnキャッシュ",
+        "why": "Yarnがすべてのプロジェクト用に保持しているパッケージキャッシュです。",
+        "what": "インストール時にネットワークを使用します。インストール済みのプロジェクトには影響しません。"
+      },
+      "pnpmStore": {
+        "name": "pnpmストア",
+        "why": "pnpmがすべてのプロジェクト用に保持している共有パッケージストレージです。",
+        "what": "インストール時にネットワークを使用します。インストール済みのプロジェクトには影響しません。"
+      },
+      "metroCache": {
+        "name": "Metroバンドラのキャッシュ",
+        "why": "Metro（React Native）がシステムの一時フォルダに書き込む一時キャッシュです。",
+        "what": "プロジェクトで「npx react-native start --reset-cache」を実行して消去してください。MacBook Cleanerが決して触れないシステムフォルダにあります。"
+      },
+      "gradleCaches": {
+        "name": "Gradleキャッシュ",
+        "why": "Android/Gradleプロジェクトで共有される、ダウンロード済みの依存関係とビルドメタデータです。",
+        "what": "次回のビルドでGradleが依存関係を再ダウンロードして解決します（初回ビルドは遅くなります）。"
+      },
+      "androidAvd": {
+        "name": "Androidエミュレータのイメージ",
+        "why": "仮想デバイスのイメージと、Androidエミュレータにインストールされたすべてのデータです。",
+        "what": "再び使うエミュレータはすべて作り直す必要があり、そこにあるテスト用Appのデータは失われます。"
+      },
+      "cocoapodsCache": {
+        "name": "CocoaPodsキャッシュ",
+        "why": "すべてのiOSプロジェクト用にキャッシュされたPodのスペックとソースです。",
+        "what": "次回「pod install」を実行したときにPodを再ダウンロードします。"
+      },
+      "unknown": {
+        "why": "このMacで検出された開発ツールが使用しているストレージです。",
+        "what": "削除する前に確認してください。ツールがこのデータを再生成する必要があるかもしれません。"
+      }
+    },
+    "updatedRecently": "最近更新",
+    "browser": {
+      "name": "{{browser}}のキャッシュと一時ファイル",
+      "why": "ブラウザが自動で再構築する、キャッシュされたWebサイトのデータです。",
+      "what": "次回アクセス時にWebサイトがすべてのコンテンツを再読み込みします。パスワード、Cookie、ブックマークには影響しません。",
+      "notCleanedYet": "このAppではまだクリーンアップしていません"
+    },
+    "file": {
+      "duplicate": {
+        "why": "サイズと内容のサンプル（先頭と末尾）から、見つかった別のファイルと一致しているようです。",
+        "what": "影響を受けるのはこのコピーだけで、ほかには何も触れません。一致の可能性が高いものの、確実ではありません。"
+      },
+      "installer": {
+        "why": "インターネットからダウンロードしたインストーラです。",
+        "what": "ソフトウェアを再インストールする必要がある場合は、インストーラを再度ダウンロードしてください。"
+      },
+      "archive": {
+        "why": "圧縮アーカイブです。",
+        "what": "すでに中身を別の場所に展開している場合は、通常は安全に削除できます。"
+      },
+      "large": {
+        "why": "あなたのファイルの中にある大きなファイルです。より具体的な種類は判別できませんでした。"
+      },
+      "old": {
+        "why": "180日以上変更されていません。"
+      },
+      "download": {
+        "why": "ダウンロードフォルダ内のファイルです。"
+      },
+      "yourFile": "これはあなたのファイルです。削除する前に確認してください。",
+      "reviewFirst": "削除する前に確認してください。",
+      "found": "スキャン中に見つかったファイルです。"
+    },
+    "system": {
+      "logsWhy": "Appまたは macOS が自動で書き込んだログファイルです。",
+      "cacheWhy": "起動を速くするためにAppまたはmacOSが自動で作成したキャッシュデータです。",
+      "what": "影響はありません。必要に応じて自動で再生成されます。"
+    },
+    "sensitive": {
+      "devWhat": "この項目の名前から機密データの可能性があります。デフォルトで保護されています。Finderでご自身で確認してください。",
+      "systemWhat": "この項目の名前から機密データの可能性があります。デフォルトで保護されています。",
+      "fileWhy": "この項目の名前から機密データまたは重要なデータの可能性があります。",
+      "fileWhat": "デフォルトで保護されています。削除を検討する前に、Finderでご自身で確認してください。"
+    }
+  },
+  "nav": {
+    "dashboard": "ダッシュボード",
+    "smartClean": "Smart Clean",
+    "storage": "ストレージ",
+    "largeFiles": "大きなファイル",
+    "downloads": "ダウンロード",
+    "duplicates": "重複ファイル",
+    "apps": "Appのクリーンアップ",
+    "systemJunk": "システムジャンク",
+    "performance": "パフォーマンス",
+    "schedule": "スケジュールクリーンアップ",
+    "settings": "設定",
+    "groups": {
+      "explore": "探す",
+      "cleanUp": "クリーンアップ",
+      "monitor": "モニタリング",
+      "automate": "自動化"
+    }
+  },
+  "sidebar": {
+    "percentUsed": "{{percent}}使用中",
+    "freeOf": "{{total}}中<b>{{free}}</b>空き"
+  },
+  "progress": {
+    "overview": "ストレージを分析中…",
+    "developer": "開発ツールをスキャン中…",
+    "browsers": "ブラウザのキャッシュをスキャン中…",
+    "applications": "インストール済みのアプリケーションをスキャン中…",
+    "files": "ダウンロード、デスクトップ、書類をスキャン中…",
+    "finalizing": "解放できる容量を計算中…",
+    "preparing": "クリーンアップを準備中…",
+    "moving": "{{total}}件中{{index}}件目を移動中：{{name}}",
+    "verifying": "結果を確認中…",
+    "done": "クリーンアップが完了しました。"
+  },
+  "onboarding": {
+    "stepOf": "ステップ{{step}}/{{total}}",
+    "permissionsEyebrow": "アクセス権",
+    "startCleaning": "クリーンアップを始める",
+    "meet": {
+      "title": "MacBook Cleanerへようこそ",
+      "body": "Macをきれいに、速く、整った状態に保ちましょう。"
+    },
+    "space": {
+      "title": "何が容量を使っているか確認",
+      "body": "大きなファイル、古いダウンロード、ジャンク、忘れていたAppデータを見つけます。"
+    },
+    "safe": {
+      "title": "安全にクリーンアップ",
+      "body": "何かが削除される前に、すべてをあなたが確認します。"
+    },
+    "permission": {
+      "title": "任意のアクセス権がひとつ",
+      "body": "フルディスクアクセスを許可しない限り、macOSはAppのキャッシュ、ゴミ箱、メールのデータなど一部の場所を非公開にします。MacBook Cleanerはこれがなくても動作しますが、見える範囲が狭くなります。",
+      "local": "スキャンはすべてこのMac上で行われます。何もアップロードされません。",
+      "folders": "MacBook Cleanerがダウンロード、書類、デスクトップを読み込む前に、macOSが確認を求める場合もあります。許可すると、そこにある大きなファイルや重複ファイルを見つけられます。",
+      "changeLater": "これはいつでもシステム設定の「プライバシーとセキュリティ」で変更できます。"
+    },
+    "chips": {
+      "largeFiles": "大きなファイル",
+      "oldDownloads": "古いダウンロード",
+      "systemJunk": "システムジャンク",
+      "appLeftovers": "Appの残り",
+      "movedToTrash": "ゴミ箱へ移動",
+      "alwaysRecoverable": "いつでも元に戻せる",
+      "personalFiles": "個人ファイル",
+      "neverAutoSelected": "自動選択されません"
+    }
+  },
+  "breakdown": {
+    "applications": {
+      "label": "アプリケーション",
+      "description": "アプリケーションフォルダ内のApp"
+    },
+    "documents": {
+      "label": "書類",
+      "description": "書類とデスクトップ"
+    },
+    "photos": {
+      "label": "写真",
+      "description": "ピクチャフォルダ（写真ライブラリを含む）"
+    },
+    "videos": {
+      "label": "ビデオ",
+      "description": "ムービーフォルダ"
+    },
+    "downloads": {
+      "label": "ダウンロード",
+      "description": "ダウンロードフォルダ内のすべて"
+    },
+    "cache": {
+      "label": "キャッシュ",
+      "description": "ライブラリ内のAppのキャッシュとログ"
+    },
+    "other": {
+      "label": "その他",
+      "description": "ミュージック、メール、メッセージ、その他のAppデータ"
+    },
+    "systemData": {
+      "label": "システムデータ",
+      "description": "macOS、スナップショット、フォルダに割り当てられない領域"
+    }
+  },
+  "fileTypes": {
+    "video": "ビデオ",
+    "diskImage": "ディスクイメージ",
+    "archive": "アーカイブ",
+    "installer": "インストーラ",
+    "document": "書類",
+    "image": "イメージ",
+    "audio": "オーディオ",
+    "other": "その他"
+  },
+  "smartClean": {
+    "groups": {
+      "systemJunk": {
+        "title": "システムジャンク",
+        "description": "自動で再構築されるAppとシステムのキャッシュ。"
+      },
+      "browser": {
+        "title": "ブラウザのキャッシュ",
+        "description": "キャッシュされたWebページとイメージ。パスワード、Cookie、ブックマークには影響しません。"
+      },
+      "appLeftovers": {
+        "title": "Appの残り",
+        "description": "インストールされていないAppのキャッシュ。"
+      },
+      "logs": {
+        "title": "ログとクラッシュレポート",
+        "description": "Appが時間とともに書き込む診断ログ。安全に削除できます。"
+      },
+      "developer": {
+        "title": "開発者ジャンク",
+        "description": "ツールが再生成できるビルド成果物とパッケージキャッシュ。"
+      },
+      "oldDownloads": {
+        "title": "古いダウンロード",
+        "description": "以前ダウンロードしたインストーラ、アーカイブ、ファイル。判断はあなた次第で、何も事前選択されていません。"
+      }
+    },
+    "stages": {
+      "caches": "システムのキャッシュをスキャン中…",
+      "temp": "一時ファイルを確認中…",
+      "leftovers": "Appの残りを確認中…",
+      "downloads": "ダウンロードを分析中…",
+      "largeFiles": "大きなファイルを検索中…",
+      "reclaimable": "解放できる容量を計算中…"
+    },
+    "selectAllIn": "{{group}}のすべてを選択",
+    "yourFiles": "あなたのファイル",
+    "toReview_other": "{{count}}件を確認",
+    "selectedOf_other": "{{count}}件中{{selected}}件を選択",
+    "showMore_other": "さらに{{count}}件表示",
+    "intro": "スキャンでキャッシュ、残りファイル、ログ、忘れていたダウンロードを見つけます。何かが削除される前に、すべてをあなたが確認します。",
+    "onDevice": "100%デバイス上で処理",
+    "toTrash": "すべてゴミ箱へ",
+    "personalNeverPreselected": "個人ファイルは事前選択されません",
+    "scanningEyebrow": "スキャン中",
+    "scanningTitle": "Macをスキャン中",
+    "scanComplete": "スキャン完了",
+    "canFreeUp": "Macで解放できる容量",
+    "safeRightAway": "<b>{{size}}</b>は今すぐ安全にクリーンアップできます。残りはあなたの確認を待っています。",
+    "tidyTitle": "Macはすでに整っています",
+    "tidySubtitle": "今のところクリーンアップする価値のあるものは見つかりませんでした。1週間後にもう一度確認するか、スケジュールクリーンアップをオンにしてください。",
+    "trashNote": "すでにゴミ箱にあります。確信できたらFinderで空にしてください。MacBook Cleanerが勝手にゴミ箱を空にすることはありません。",
+    "restoreNote": "ゴミ箱に移動しました。いつでも元に戻せます。",
+    "cleanSize": "{{size}}をクリーンアップ"
+  },
+  "dashboard": {
+    "greeting": {
+      "morning": "おはようございます",
+      "afternoon": "こんにちは",
+      "evening": "こんばんは"
+    },
+    "subtitle": "Macを少し整理してあげましょう。",
+    "scanned": "スキャン：{{when}}",
+    "scanning": "スキャン中…",
+    "scan": "スキャン",
+    "macStorage": "Macのストレージ",
+    "explore": "詳しく見る",
+    "used": "使用済み",
+    "total": "合計",
+    "free": "空き",
+    "percentFull": "{{percent}}使用",
+    "potentialCleanup": "クリーンアップ可能な容量",
+    "scanToFindOut": "スキャンして確認",
+    "allCaughtUp": "すべて完了 ✨",
+    "waitingForReview": "{{size}}が確認を待っています。",
+    "nothingToClean": "今はクリーンアップするものはありません。",
+    "readyToClean": "安全にクリーンアップできます",
+    "moreWaiting": "さらに{{size}}が確認を待っています。",
+    "findSafe": "安全に削除できるものを見つける",
+    "findSafeBody": "キャッシュ、残りファイル、古いダウンロードなどを、あなたが確認します。",
+    "reviewAndClean": "確認してクリーンアップ",
+    "tiles": {
+      "largeFiles_other": "{{size}}を超えるファイル{{count}}個",
+      "oldDownloadsTitle": "古いダウンロード",
+      "oldDownloads_other": "確認待ち{{count}}項目",
+      "duplicatesTitle": "重複ファイル",
+      "duplicates_other": "コピーのセット{{count}}組",
+      "appLeftoversTitle": "Appの残り",
+      "appsInstalled_other": "インストール済みApp {{count}}個",
+      "notScanned": "未スキャン"
+    },
+    "lastCleanup": "前回のクリーンアップ",
+    "noCleanups": "まだクリーンアップしていません。最初の1回はクリックひとつです。",
+    "trash": "ゴミ箱",
+    "trashEmpty": "Finderで空にするとこの容量を取り戻せます",
+    "trashNeedsAccess": "測定にはフルディスクアクセスが必要です",
+    "scheduledCleanup": "スケジュールクリーンアップ",
+    "nextRun": "次回：{{when}}",
+    "scheduleHint": "散らかりを自動で抑えます"
+  },
+  "schedule": {
+    "frequency": {
+      "daily": "毎日",
+      "weekly": "毎週",
+      "biweekly": "2週間ごと",
+      "monthly": "毎月"
+    }
+  },
+  "storage": {
+    "subtitle": "Macのストレージを実際に使っているものを把握しましょう。",
+    "totalStorage": "ストレージ合計",
+    "details": "詳細",
+    "noItems": "ここに表示するほど大きな項目はありません。",
+    "showingLargest": "見つかった最大の項目を表示しています（{{size}}以上のファイル）。",
+    "explain": {
+      "photos": "写真ライブラリは写真Appが管理しているため、MacBook Cleanerがそこから個別の写真を削除することはありません。容量を節約するには、写真→設定→iCloudで「Macのストレージを最適化」をオンにしてください。",
+      "other": "ミュージック、メール、メッセージの添付ファイル、Appがライブラリに保存しているデータです。ほとんどは各Appが管理しているので、それぞれのAppで直接クリーンアップしてください。",
+      "systemData": "macOS本体、ローカルのTime Machineスナップショット、仮想メモリ、どのフォルダにも割り当てられないものです。macOSがこの領域を管理し、容量が必要になるとスナップショットを自動で削除します。"
+    },
+    "links": {
+      "apps": "Appのクリーンアップを開く",
+      "largeFiles": "大きなファイルを探す",
+      "largeVideos": "大きなビデオを探す",
+      "downloads": "ダウンロードのクリーンアップを開く",
+      "systemJunk": "システムジャンクを開く"
+    }
+  },
+  "largeFiles": {
+    "subtitle": "ギガバイト単位で容量を使っている、忘れられたファイルを見つけます。",
+    "atLeast": "{{size}}以上",
+    "sortLargest": "大きい順",
+    "sortOldest": "古い順",
+    "all": "すべて",
+    "emptyTitle": "大きなファイルは見つかりませんでした",
+    "emptySubtitle": "Macはすでに整っています。",
+    "modified": "変更日",
+    "size": "サイズ",
+    "footnote": "ダウンロード、デスクトップ、書類、ムービーをスキャンしました。Appのライブラリ（写真、iMovie、Final Cut）は開きません。"
+  },
+  "downloads": {
+    "subtitle": "インストーラ、アーカイブ、忘れていたダウンロードを片付けましょう。",
+    "selectOldInstallers": "古いインストーラを選択",
+    "emptyTitle": "ダウンロードフォルダは空です",
+    "emptySubtitle": "ダウンロードに{{size}}を超えるものはありません。お見事です。",
+    "kinds": {
+      "installers": "インストーラとディスクイメージ",
+      "duplicates": "重複したダウンロード",
+      "large": "大きなダウンロード"
+    },
+    "showing": "表示中：<b>{{label}}</b>",
+    "showAll": "すべて表示",
+    "duplicateNote": "重複",
+    "age": {
+      "today": "今日",
+      "week": "今週",
+      "month": "今月",
+      "older30": "30日以上前",
+      "older90": "90日以上前"
+    }
+  },
+  "duplicates": {
+    "subtitle": "バイト単位で確認した同一ファイル。1つのコピーは必ず残ります。",
+    "oneKept": "少なくとも1つのコピーは必ず残ります。",
+    "keepOldest": "最も古いものを残す",
+    "keepNewest": "最も新しいものを残す",
+    "emptyTitle": "重複ファイルは見つかりませんでした",
+    "emptySubtitle": "ここにはクリーンアップするものはありません。",
+    "totalWasted": "無駄になっている容量の合計",
+    "matchedBy": "サイズで照合したあと、内容全体のチェックサムで照合しています。",
+    "copiesEach_other": "{{count}}個のコピー · 各{{size}}",
+    "wasted": "無駄な容量",
+    "newest": "最新",
+    "oldest": "最古",
+    "kept": "残す",
+    "moveToTrash": "重複ファイルをゴミ箱に入れる",
+    "sets_other": "<b>{{count}}</b>セット",
+    "copies_other": "<b>{{count}}</b>個のコピー"
+  },
+  "errors": {
+    "native": {
+      "invalidPath": "ファイルのパスが無効です。",
+      "gone": "ファイルはもう存在しません。",
+      "protectedSystem": "ここは保護されたmacOSの場所（{{path}}）のため、削除できません。",
+      "homeFolder": "ホームフォルダそのものは削除できません。",
+      "protectedFolder": "{{path}}は保護されたフォルダのため、丸ごと削除することはできません。",
+      "outsideHome": "削除できるのはホームフォルダ内のファイルだけです。",
+      "sensitive": "この項目には機密データが含まれている可能性があるため、保護されています。",
+      "noAccess": "この項目にアクセスできません。アクセス権が拒否されたか、もう存在しません。",
+      "rootFolder": "ルートフォルダは削除できません。",
+      "macos": "macOSがエラーを報告しました（{{code}}）：{{detail}}",
+      "trashFailed": "この項目をゴミ箱に入れられませんでした。",
+      "protectedItem": "保護された項目はクリーンアップできません。",
+      "notApp": "これはアンインストールできるAppではありません。",
+      "notInApplications": "アンインストールできるのは、アプリケーションフォルダ直下にあるAppだけです。",
+      "systemApp": "AppleのAppはmacOSの一部であり、保護されています。",
+      "self": "MacBook Cleanerは自分自身をアンインストールできません。",
+      "previewHomeOnly": "プレビューはホームフォルダ内のファイルでのみ利用できます。",
+      "loginDevBuild": "「ログイン時に開く」はインストール済みのAppでのみ利用でき、開発ビルドでは利用できません。",
+      "notInstalled": "MacBook Cleanerがディスクイメージまたはダウンロードフォルダから実行されています。アプリケーションフォルダに移動し、そこから開いてもう一度お試しください。",
+      "noHome": "ホームフォルダが見つかりません。",
+      "scheduleFailed": "macOSがスケジュールクリーンアップのヘルパーを起動できませんでした。",
+      "unknown": "問題が発生しました：{{detail}}",
+      "appMoved": "このAppはもうその場所にありません。",
+      "linkBlocked": "このリンクは開けません。",
+      "browserFailed": "デフォルトのブラウザを開けませんでした。",
+      "noAppSupport": "MacBook Cleanerが自身のデータフォルダにアクセスできませんでした。",
+      "invalidTime": "その時刻は無効です。"
+    },
+    "generic": "問題が発生しました。"
+  },
+  "apps": {
+    "footprint": {
+      "cache": "キャッシュ",
+      "networkCache": "ネットワークキャッシュ",
+      "logs": "ログ",
+      "savedState": "保存されたウインドウの状態",
+      "websiteData": "Webサイトのデータ",
+      "support": "サポートファイル",
+      "preferences": "環境設定",
+      "container": "サンドボックスコンテナ"
+    },
+    "subtitle": "アプリケーションをキャッシュ、ログ、残りファイルごと削除します。",
+    "emptyTitle": "アプリケーションが見つかりません",
+    "emptySubtitle": "アプリケーションフォルダを読み込めませんでした。",
+    "search": "Appを検索",
+    "sort": {
+      "size": "サイズ",
+      "name": "名前",
+      "leastUsed": "使用頻度が低い順"
+    },
+    "notUsedInMonths": "数か月使用されていません",
+    "opened": "{{when}}に開きました",
+    "usageUnknown": "使用状況は不明",
+    "application": "アプリケーション",
+    "partOfMacOS": "macOSの一部",
+    "version": "バージョン{{version}}",
+    "lastOpened": "最後に開いた日時：{{when}}",
+    "lastOpenedUnknown": "最後に開いた日時：不明",
+    "noLeftovers": "このAppのキャッシュ、ログ、サポートファイルは見つかりませんでした。",
+    "explainer": "キャッシュとログは安全に削除できます。サポートファイルと環境設定にはこのAppの設定とデータが含まれており、削除するとAppがリセットされます。クリーンアップまたはアンインストールの前にAppを終了してください。",
+    "revealFiles": "ファイルを表示",
+    "cleanData": "Appデータをクリーンアップ",
+    "uninstall": "Appをアンインストール",
+    "cleanedUp": "{{app}}をクリーンアップしました",
+    "uninstalled": "{{app}}をアンインストールしました"
+  },
+  "systemJunk": {
+    "subtitle": "Macが自動で再構築するキャッシュ、ログ、一時ファイル。",
+    "selectAllSafe": "安全な項目をすべて選択",
+    "safeToClean": "安全にクリーンアップ可能",
+    "safeBody": "必要に応じて自動で再構築されます。個人データは含まれません。",
+    "reviewRecommended": "確認を推奨",
+    "reviewBody": "削除できますが、再ダウンロード、再構築、再サインインが必要になる場合があります。",
+    "emptyTitle": "ジャンクは見つかりませんでした",
+    "emptySubtitle": "キャッシュとログはすでに少量です。",
+    "safeSubtitle": "Appのキャッシュ、ブラウザのキャッシュ、ログ",
+    "reviewSubtitle": "削除する前に確認",
+    "developer": "開発者向けクリーンアップ",
+    "developerSubtitle": "Xcode、シミュレータ、パッケージマネージャ、ビルドキャッシュ",
+    "devHidden": "{{size}}の開発者キャッシュが非表示になっています。<link>開発者向けクリーンアップをオンにする</link>",
+    "clean": "クリーンアップ"
+  },
+  "settings": {
+    "notifications": "通知",
+    "subtitle": "MacBook Cleanerをあなたの使い方に合わせて調整します。",
+    "appearance": "外観",
+    "theme": "テーマ",
+    "themeSubtitle": "macOSに合わせるか、テーマを選択します。",
+    "themeLight": "ライト",
+    "themeDark": "ダーク",
+    "themeSystem": "システム",
+    "general": "一般",
+    "language": "言語",
+    "languageFollowsMac": "Macの言語に合わせます。",
+    "languageChosen": "Macの言語にかかわらず変わりません。",
+    "launchAtLogin": "ログイン時に開く",
+    "launchAtLoginSubtitle": "ログイン時にMacBook Cleanerを開きます。",
+    "notificationsSubtitle": "スケジュールクリーンアップのリマインダーと概要。",
+    "macNotificationSettings": "macOSの通知設定",
+    "scheduleOn": "オン · {{frequency}} {{time}}",
+    "cleanupBehavior": "クリーンアップの動作",
+    "moveToTrash": "ファイルをゴミ箱に入れる",
+    "moveToTrashSubtitle": "常にオン。MacBook Cleanerが完全に削除することはありません。ゴミ箱を空にするタイミングはあなたが決めます。",
+    "always": "常に",
+    "confirmBefore": "クリーンアップ前に確認",
+    "confirmBeforeSubtitle": "オフにすると、安全な項目だけのクリーンアップでは確認を省略します。あなたのファイルや要確認の項目では常に確認します。",
+    "developer": "開発者向けクリーンアップ",
+    "developerSubtitle": "Xcode、シミュレータ、npm、Gradleなどのビルドキャッシュを表示します。",
+    "exclusions": "スキャンの除外",
+    "exclusionsSubtitle": "ここにあるファイルとフォルダは、手動でもスケジュールでもクリーンアップ候補になりません。",
+    "exclusionsInput": "除外するフォルダまたはファイルのパス",
+    "add": "追加",
+    "noExclusions": "除外項目はまだありません。各行の「今後は提案しない」ボタンで項目を非表示にすることもできます。",
+    "removeExclusion": "{{path}}を削除",
+    "privacy": "プライバシーとアクセス権",
+    "fdaGranted": "許可済み。MacBook Cleanerはクリーンアップするものすべてを測定できます。",
+    "fdaOptional": "任意。macOSが非公開にしているキャッシュ、ゴミ箱、AppデータをMacBook Cleanerが確認できるようになります。",
+    "granted": "許可済み",
+    "recheck": "再確認",
+    "filesStay": "ファイルはMacから出ません",
+    "filesStaySubtitle": "スキャンはローカルで実行されます。何もアップロードされず、ファイルの内容は重複の確認のためだけに読み込まれます。",
+    "about": "情報",
+    "checkUpdates": "アップデートを確認",
+    "privacyPolicy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "showWelcome": "ようこそ画面をもう一度表示",
+    "resetAll": "すべてのデータをリセット",
+    "resetTitle": "MacBook Cleanerをリセットしますか？",
+    "resetBody": "設定、除外項目、スケジュール、クリーンアップ履歴が消去され、スケジュールクリーンアップがオフになります。ファイルとゴミ箱には影響しません。"
+  },
+  "scheduleScreen": {
+    "subtitle": "不要な散らかりを自動で抑えましょう。",
+    "howOften": "頻度",
+    "howOftenSubtitle": "MacBook Cleanerはバックグラウンドで静かに確認します。ウインドウは開きません。",
+    "at": "時刻",
+    "nextRun": "次回の実行：{{when}}",
+    "whenItRuns": "実行時の動作",
+    "remind": "通知する",
+    "remindBody": "クリーンアップするものが十分にたまったときや、ストレージが少なくなったときに通知を送ります。",
+    "auto": "自動でクリーンアップ",
+    "autoBody": "対象の開発者キャッシュをゴミ箱に入れ、クリーンアップした内容をお知らせします。",
+    "eligible": "対象カテゴリ",
+    "eligibleSubtitle": "スケジュールできるのはキャッシュとジャンクだけです。",
+    "categories": {
+      "developer": "開発者キャッシュ",
+      "developerDetail": "Xcode DerivedData、npm、Yarn、pnpm、Gradle、CocoaPods",
+      "system": "システムとAppのキャッシュ",
+      "systemDetail": "ライブラリ内のキャッシュとログ",
+      "browser": "ブラウザのキャッシュ",
+      "browserDetail": "Safari、Chrome、Edge、Firefoxのキャッシュ"
+    },
+    "cleanedAutomatically": "自動でクリーンアップ",
+    "inReminders": "リマインダーに含める",
+    "neverRemoved": "自動で削除されないもの",
+    "never": {
+      "desktop": "デスクトップ上のファイル",
+      "personal": "個人フォルダ",
+      "label": "しない"
+    },
+    "onlyTrash": "スケジュール実行では、項目をゴミ箱に入れるだけです。",
+    "status": "状況",
+    "backgroundJob": "バックグラウンドジョブ",
+    "active": "有効",
+    "notInstalled": "未インストール",
+    "lastRun": "前回の実行",
+    "recentRuns": "最近の実行",
+    "found": "{{size}}を検出",
+    "needsApplications": "スケジュールを使うには、MacBook Cleanerをアプリケーションフォルダに入れる必要があります。",
+    "unsaved": "保存されていない変更があります",
+    "discard": "破棄",
+    "saving": "保存中…",
+    "save": "スケジュールを保存",
+    "consent": {
+      "title": "自動クリーンアップをオンにしますか？",
+      "intro": "あなたが離れている間、MacBook Cleanerは次の項目だけをゴミ箱に入れます：",
+      "jsCaches": "npm、Yarn、pnpmのキャッシュ",
+      "limits": "クリーンアップ対象が{{min}}以上あるときだけ実行し、一度に{{max}}または{{items}}項目を超えることはなく、除外項目は常にスキップして、概要をお知らせします。ゴミ箱を空にするまで、すべてゴミ箱に残ります。",
+      "keepReminders": "リマインダーのままにする",
+      "turnOn": "オンにする"
+    }
+  },
+  "toasts": {
+    "scanFailed": "スキャンに失敗しました：{{error}}",
+    "excluded": "了解しました。この項目は今後提案しません。",
+    "revealFailed": "Finderに表示できません：{{error}}",
+    "quickLookPreview": "クイックルックはデスクトップAppのここで開きます。",
+    "previewFailed": "プレビューできません：{{error}}",
+    "scheduleSaved": "スケジュールを保存しました。MacBook Cleanerが見守ります。",
+    "scheduleOff": "スケジュールクリーンアップをオフにしました。"
+  },
+  "language": {
+    "title": "言語",
+    "subtitle": "変更はすぐに反映され、再起動は不要です。",
+    "search": "言語を検索",
+    "system": "システムのデフォルト",
+    "systemDetail": "Macに合わせる（現在：{{language}}）",
+    "systemDetailPending": "Macの言語に合わせる"
+  },
+  "permissions": {
+    "fullDiskAccess": {
+      "label": "フルディスクアクセス"
+    }
+  },
+  "cleanup": {
+    "failureName": "クリーンアップ",
+    "aboutToRemove": "<b>{{size}}</b>を削除しようとしています",
+    "willMove_other": "{{count}}項目をゴミ箱に入れます。ゴミ箱を空にするまでは元に戻せます。",
+    "notPermanent": "ゴミ箱に移動するだけで、完全には削除されません。",
+    "personalWarning_other": "そのうち{{count}}件はあなたのファイルまたはApp設定です。もう必要ないことを確認してください。",
+    "reviewWarning_other": "{{count}}項目は再ダウンロード、再構築、再サインインが必要になる場合があります。",
+    "hideList": "ファイルリストを隠す",
+    "reviewFilesLink": "ファイルを確認",
+    "ack": "これらの項目を確認し、ゴミ箱に入れることに同意します。",
+    "reviewFiles": "ファイルを確認",
+    "cleanNow": "今すぐクリーンアップ",
+    "cleaning": "クリーンアップ中…",
+    "preparing": "準備中…",
+    "nothingRemoved": "何も削除されませんでした",
+    "complete": "クリーンアップ完了",
+    "youFreed": "解放した容量",
+    "breathingRoom": "Macに余裕ができました。",
+    "recoverable": "すべてゴミ箱にあるので元に戻せます。ゴミ箱を空にすると容量が完全に解放されます。",
+    "openTrash": "ゴミ箱を開く",
+    "failedCount_other": "{{count}}項目を移動できませんでした",
+    "viewStorage": "ストレージを表示",
+    "backToDashboard": "ダッシュボードに戻る"
+  },
+  "performance": {
+    "subtitle": "CPU、メモリ、App、バッテリーなど、Macの状態を確認できます。",
+    "live": "ライブ",
+    "updatedAt": "{{time}}に更新",
+    "readError": "一部の情報を読み込めませんでした：{{error}}",
+    "tabs": {
+      "overview": "概要",
+      "apps": "実行中のApp",
+      "battery": "バッテリー",
+      "mac": "Macの情報"
+    },
+    "runningApps": "実行中のApp",
+    "runningAppsSubtitle": "現在メモリとCPUを最も使っているApp。",
+    "cpu": "CPU",
+    "memory": "メモリ",
+    "uptime": "稼働時間",
+    "sinceRestart": "前回の再起動から",
+    "measuring": "測定中…",
+    "checking": "確認中…",
+    "idlePercent": "{{percent}}アイドル",
+    "available": "{{size}}使用可能",
+    "availableLabel": "使用可能",
+    "ofTotal": "/ {{total}}",
+    "aboutX": "{{name}}について",
+    "moreInfo": "詳細情報",
+    "chart60s": "60秒前",
+    "chartNow2": "現在",
+    "chartNow": "{{label}}、現在{{value}}",
+    "cpuUsage": "CPU使用率",
+    "cpuUsageTip": "Macの処理能力全体のうち使用中の割合です。数秒ごとにすべてのコアで測定しています。",
+    "cpuChart": "過去60秒間のCPU使用率",
+    "cpuParts": {
+      "user": "ユーザ",
+      "userTip": "Appとあなたのプロセスに使われた時間。",
+      "system": "システム",
+      "systemTip": "macOS自体（ドライバ、ファイルシステム、ネットワーク）に使われた時間。",
+      "idle": "アイドル",
+      "idleTip": "現在空いている処理能力。"
+    },
+    "cpuCores": {
+      "label": "コア",
+      "split": "高性能{{performance}}＋高効率{{efficiency}}"
+    },
+    "memoryUsed": "使用済みメモリ",
+    "memoryUsedTip": "Appメモリ＋確保されているメモリ＋圧縮 — アクティビティモニタの「使用済みメモリ」と同じ値です。キャッシュされたファイルは、必要なときにmacOSがすぐ解放するため含みません。",
+    "memoryChart": "過去60秒間の使用済みメモリ",
+    "pressureIs": "メモリプレッシャー：{{pressure}}",
+    "pressureTip": "Appに十分なメモリがあるかを示すmacOS独自の指標です。プレッシャーが正常なら使用量が多くても健全です。macOSは空きメモリを意図的に活用します。",
+    "pressure": {
+      "normal": "正常",
+      "warning": "やや高い",
+      "critical": "高い"
+    },
+    "memParts": {
+      "app": "Appメモリ",
+      "appTip": "Appが実際に使用しているメモリ。",
+      "wired": "確保されているメモリ",
+      "wiredTip": "macOS自体が必要とし、圧縮も退避もできないメモリ。",
+      "compressed": "圧縮",
+      "compressedTip": "空きを作るためにmacOSが圧縮したメモリ。一般的で効率的な手法です。",
+      "cached": "キャッシュされたファイル",
+      "cachedTip": "すばやく開けるようにmacOSがメモリに保持している最近使ったファイル。Appが容量を必要とするとすぐに自動で解放されます。",
+      "swap": "使用済みスワップ",
+      "swapTip": "macOSが一時的にSSDへ退避したメモリ。少量のスワップは正常ですが、プレッシャーが高い状態で多い場合は、開いているAppを減らすとMacが快適になります。"
+    },
+    "duration": {
+      "dh": "{{d}}日{{h}}時間",
+      "hm": "{{h}}時間{{m}}分",
+      "m": "{{m}}分",
+      "lessThanMinute": "1分未満"
+    },
+    "device": {
+      "thisMac": "このMac",
+      "memory": "メモリ{{size}}",
+      "storage": "ストレージ{{size}}",
+      "battery": "バッテリー：{{condition}}"
+    },
+    "health": {
+      "title": "Macの状態",
+      "subtitle": "わかりやすい概要です。各状態はmacOSから直接取得しています。",
+      "memoryDetail": "メモリプレッシャー",
+      "memoryTip": "メモリプレッシャーは、メモリの解放にmacOSがどれだけ負荷をかけているかを示すmacOS独自の指標です。「正常」は、メモリの大半が使用中でもAppに十分なメモリがあることを意味します。",
+      "storageFree": "{{size}}空き",
+      "runningLow": "残りわずか",
+      "gettingFull": "残り少なめ",
+      "plentyOfRoom": "十分な空き",
+      "storageTip": "空きが{{full}}未満で「残り少なめ」、{{low}}未満で「残りわずか」と表示します。macOSはアップデート、キャッシュ、仮想メモリのために空き容量を必要とします。",
+      "noBattery": "バッテリーなし",
+      "batteryDetail": "バッテリーの状態",
+      "desktopMac": "デスクトップMac",
+      "batteryTip": "macOSが報告するバッテリーの状態です。システム設定→バッテリーと同じものです。",
+      "cpuInUse": "{{percent}}使用中",
+      "light": "軽い負荷",
+      "moderate": "中程度の負荷",
+      "busy": "非常に高い負荷",
+      "cpuTip": "現在、すべてのコアでMacの処理能力全体のどれだけが使われているか。",
+      "uptimeTip": "前回の起動からMacが稼働している時間。ときどき再起動すると、macOSがアップデートのインストールを完了できます。",
+      "asOfLastCheck": "macOSの前回の確認時点",
+      "checkInSettings": "システム設定で確認",
+      "macosTip": "macOSのソフトウェアアップデートによる自動確認の結果に基づいています。MacBook Cleaner自身がAppleのサーバに接続することはありません。"
+    },
+    "os": {
+      "updateAvailable": "アップデートあり",
+      "upToDate": "最新",
+      "statusUnknown": "状況不明",
+      "version": "バージョン",
+      "build": "ビルド",
+      "architecture": "アーキテクチャ",
+      "appleSilicon": "Appleチップ（arm64）",
+      "intel": "Intel（x86_64）",
+      "kernel": "Darwinカーネル",
+      "kernelTip": "macOSの基盤となっているオープンソースのコアです。主にトラブルシューティングで役立ちます。",
+      "availableFromApple": "Appleから入手可能",
+      "noUpdatesFound": "macOSの前回の確認ではアップデートは見つかりませんでした。",
+      "openToCheck": "ソフトウェアアップデートを開いて、最新のmacOSを確認してください。",
+      "lastChecked": "macOSが前回確認したのは{{when}}です。MacBook Cleanerはその結果を読み取るだけで、自らAppleに接続することはありません。",
+      "checkUpdates": "macOSのアップデートを確認",
+      "openSoftwareUpdate": "ソフトウェアアップデートを開く"
+    },
+    "battery": {
+      "conditionNormal": "正常",
+      "conditionService": "修理サービス推奨",
+      "conditionIs": "状態：{{condition}}",
+      "charging": "充電中",
+      "onBattery": "バッテリー駆動",
+      "fullyCharged": "フル充電済み",
+      "notCharging": "充電していません",
+      "untilFull": "フル充電まで{{time}}",
+      "remaining": "残り{{time}}",
+      "powerAdapter": "電源アダプタ",
+      "batteryPower": "バッテリー電源",
+      "maxCapacity": "最大容量",
+      "maxCapacityTip": "新品時と比べて、現在バッテリーが蓄えられる充電量です。macOSが報告する値で、システム設定→バッテリー→バッテリーの状態と同じです。",
+      "capacityNote": "容量はバッテリーの経年により自然に低下します。MacBook Cleanerは表示するだけで、バッテリー容量を回復できるAppはありません。",
+      "cycleCount": "充放電回数",
+      "cyclesOfDesign": "バッテリー自身が報告する設計上の{{design}}回のうち{{cycles}}回",
+      "cycleExplain": "充放電回数は、Macのバッテリーが完全な充電サイクルを何回経たかを示します。容量の100%を使うと、複数回の部分的な充電に分かれていても1回と数えます。",
+      "details": "バッテリーの詳細",
+      "charge": "充電残量",
+      "chargingLabel": "充電",
+      "powerSource": "電源",
+      "timeRemaining": "残り時間",
+      "notApplicable": "該当なし",
+      "calculating": "計算中…",
+      "timeTip": "macOSは、現在の使用状況をしばらく観察してから推定値を出します。",
+      "condition": "状態",
+      "conditionTip": "macOSによる報告です。「正常」は想定どおりに動作していること、「修理サービス推奨」はAppleが点検を勧めていることを意味します。",
+      "designCapacity": "設計容量",
+      "designCapacityTip": "新品時にバッテリーが蓄えられた充電量。",
+      "fullCapacity": "フル充電時の容量",
+      "fullCapacityTip": "現在、フル充電時にバッテリーが蓄えている充電量。",
+      "currentCharge": "現在の充電量",
+      "mah": "{{value}} mAh"
+    },
+    "apps": {
+      "inUse": "最前面",
+      "hidden": "非表示",
+      "thisApp": "このApp",
+      "kind": {
+        "app": "App",
+        "background": "バックグラウンド",
+        "backgroundProcess": "バックグラウンドプロセス",
+        "system": "システムプロセス"
+      },
+      "processes_other": "{{count}}個のプロセス",
+      "filter": {
+        "apps": "App",
+        "background": "バックグラウンド",
+        "all": "すべて"
+      },
+      "showSystem": "システムプロセスを表示",
+      "search": "実行中のAppを検索",
+      "cols": {
+        "app": "App",
+        "name": "名前",
+        "running": "実行時間"
+      },
+      "cpuTip": "Macの処理能力全体に占める割合です。アクティビティモニタではコアごとの値を表示するため、100%を超えることがあります。",
+      "memoryTip": "物理メモリの使用量で、アクティビティモニタの「メモリ」列の値です。Appにはヘルパープロセスも含まれます。",
+      "nothing": "表示する項目はありません。",
+      "showMore_other": "さらに表示（{{count}}件非表示）",
+      "seeAll": "実行中のAppをすべて表示",
+      "footnote_other": "このMacで{{count}}個のプロセスが実行中です。Appにはヘルパープロセスも含まれます。macOSでは、ほかのユーザのシステムプロセスのCPUとメモリをAppが読み取れないため、「—」と表示されます。"
+    },
+    "macUptime": "Macの稼働時間",
+    "lastStarted": "前回の起動：{{when}}",
+    "uptimeUnits": {
+      "days_other": "日",
+      "hours_other": "時間",
+      "minutes_other": "分"
+    },
+    "details": {
+      "title": "{{name}}の詳細",
+      "quit": "実行されていません",
+      "cpuTip": "現在のMacの処理能力全体に占める割合。",
+      "memoryTip": "ヘルパープロセスを含む物理メモリの使用量。",
+      "runningFor": "実行時間",
+      "threads": "スレッド",
+      "threadsTip": "Appが同時に実行している独立したタスクです。負荷の高いAppでは数十個使うことがよくあります。",
+      "launched": "起動日時",
+      "state": "状態",
+      "status": {
+        "running": "実行中",
+        "idle": "アイドル（入力待ち）",
+        "stopped": "停止"
+      },
+      "pid": "プロセスID",
+      "processes": "プロセス",
+      "withHelpers_other": "{{count}}（App＋ヘルパー）",
+      "owner": "所有者",
+      "you": "あなた",
+      "systemOwner": "システム",
+      "version": "バージョン",
+      "executable": "実行ファイル",
+      "quitHint": "Appを終了するには、そのAppの「終了」コマンド（⌘Q）を使うか、Dockで右クリックしてください。作業内容を先に保存できます。"
+    },
+    "mac": {
+      "hardware": "ハードウェア",
+      "model": "モデル",
+      "modelId": "機種ID",
+      "modelIdTip": "このMacモデルを表すApple社内の名称です。仕様やサポート記事を調べるときに便利です。",
+      "chip": "チップ",
+      "cores_other": "{{count}}コア",
+      "coresSplit_other": "{{count}}コア（高性能{{performance}}、高効率{{efficiency}}）",
+      "coresThreads_other": "{{count}}コア、{{threads}}スレッド",
+      "graphics": "グラフィックス",
+      "gpuCores_other": "{{gpu}}、{{count}}コアGPU",
+      "storageValue": "{{total}}（{{free}}使用可能）",
+      "hostname": "ホスト名",
+      "hostnameTip": "ローカルネットワーク上のMacの名前です。ここに表示するだけで、どこにも送信しません。",
+      "note": "注記",
+      "rosetta": "MacBook CleanerはRosettaで実行されています",
+      "displays": "ディスプレイ",
+      "builtIn": "内蔵",
+      "main": "メイン",
+      "looksLike": "{{resolution}}相当",
+      "pixels": "{{pixels}}ピクセル",
+      "localNote": "これらの情報はすべてmacOSからローカルに読み取られ、Macから出ることはありません。MacBook Cleanerはシリアル番号を読み取りません。"
+    },
+    "storage": {
+      "recoverable": "解放できる可能性がある容量",
+      "runScan": "スキャンを実行",
+      "openCleaner": "ストレージクリーナーを開く",
+      "breakdown": "ストレージの内訳"
+    }
+  },
+  "native": {
+    "number": {
+      "decimal": ".",
+      "gb": "{{value}} GB"
+    },
+    "notifications": {
+      "autoCleanDone": "自動クリーンアップで安全なキャッシュ{{size}}をゴミ箱に入れました。",
+      "autoCleanPartial": "自動クリーンアップで{{size}}をゴミ箱に入れました。一部の項目（{{failed}}件）は移動できませんでした。",
+      "lowSpace": "Macの空き容量は残り{{size}}です。ストレージのおすすめを確認してください。",
+      "reviewable": "{{size}}をクリーンアップ候補として確認できます。"
+    },
+    "menu": {
+      "about": "{{app}}について",
+      "services": "サービス",
+      "hide": "{{app}}を非表示",
+      "hideOthers": "ほかを非表示",
+      "showAll": "すべてを表示",
+      "quit": "{{app}}を終了",
+      "edit": "編集",
+      "undo": "取り消す",
+      "redo": "やり直す",
+      "cut": "カット",
+      "copy": "コピー",
+      "paste": "ペースト",
+      "selectAll": "すべてを選択",
+      "view": "表示",
+      "fullScreen": "フルスクリーンにする",
+      "window": "ウインドウ",
+      "minimize": "しまう",
+      "zoom": "拡大／縮小",
+      "closeWindow": "ウインドウを閉じる"
+    },
+    "appleEventsUsage": "MacBook Cleanerは、あなたが承認した項目をゴミ箱に入れるようFinderに依頼します。ゴミ箱を空にするまでは元に戻せます。"
+  }
+}

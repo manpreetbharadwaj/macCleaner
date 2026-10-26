@@ -8,6 +8,7 @@ import { buildSmartGroups, sumBytes } from '@/lib/smartClean'
 import { Logo } from '@/components/ui/Logo'
 import { Trans, useTranslation } from 'react-i18next'
 import { formatPercentValue } from '@/i18n/format'
+import { TrialBadge } from '@/features/license/components/TrialBadge'
 import { NAV_GROUPS, SETTINGS_NAV, type NavItem } from './nav'
 
 function NavRow({ item, badge }: { item: NavItem; badge?: string }) {
@@ -80,6 +81,7 @@ export function Sidebar() {
       </nav>
 
       <div className="space-y-3 p-3">
+        <TrialBadge />
         <NavRow item={SETTINGS_NAV} />
         {disk && disk.totalBytes > 0 && (
           <NavLink to="/storage" className="block rounded-2xl border border-line bg-surface/70 p-3.5 transition-colors hover:border-line-strong">

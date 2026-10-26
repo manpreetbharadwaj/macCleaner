@@ -7,6 +7,7 @@ const COLUMNS = [
     title: 'Product',
     links: [
       { to: '/features', label: 'Features' },
+      { to: '/pricing', label: 'Pricing' },
       { to: '/download', label: 'Download' },
       { to: '/changelog', label: 'Release Notes' },
     ],

@@ -508,7 +508,17 @@
       "linkBlocked": "Deze link kan niet worden geopend.",
       "browserFailed": "Je standaardbrowser kan niet worden geopend.",
       "noAppSupport": "MacBook Cleaner heeft geen toegang tot zijn gegevensmap.",
-      "invalidTime": "Die tijd is ongeldig."
+      "invalidTime": "Die tijd is ongeldig.",
+      "selfQuit": "MacBook Cleaner kan zichzelf niet afsluiten.",
+      "protectedProcess": "Dit is een beveiligd systeemproces en kan niet worden afgesloten.",
+      "notOwnProcess": "Alleen je eigen processen kunnen worden afgesloten.",
+      "quitRefused": "macOS heeft geweigerd deze app af te sluiten.",
+      "licenseKeyRequired": "Voer eerst een licentiesleutel in.",
+      "licenseNotActive": "Deze licentiesleutel is nog niet actief. Als je deze net hebt gekocht, controleer dan zo je e-mail en probeer het opnieuw.",
+      "licenseNotFound": "Deze licentiesleutel is niet gevonden. Controleer deze en probeer het opnieuw.",
+      "licenseLimitReached": "Deze licentiesleutel is al geactiveerd op een andere Mac. Deactiveer deze daar eerst en probeer het dan hier opnieuw.",
+      "licenseNetworkError": "Kan de licentieserver niet bereiken. Controleer je internetverbinding en probeer het opnieuw.",
+      "licenseServerError": "De licentieserver gaf een onverwachte reactie. Probeer het zo opnieuw."
     },
     "generic": "Er is iets misgegaan."
   },
@@ -610,7 +620,38 @@
     "showWelcome": "Toon welkom opnieuw",
     "resetAll": "Herstel alle gegevens",
     "resetTitle": "MacBook Cleaner herstellen?",
-    "resetBody": "Hiermee worden je instellingen, uitsluitingen, planning en opschoningsgeschiedenis gewist en wordt geplande opschoning uitgezet. Je bestanden en de prullenmand blijven onaangeroerd."
+    "resetBody": "Hiermee worden je instellingen, uitsluitingen, planning en opschoningsgeschiedenis gewist en wordt geplande opschoning uitgezet. Je bestanden en de prullenmand blijven onaangeroerd.",
+    "performanceAlerts": {
+      "title": "Prestatiewaarschuwingen",
+      "enabled": "Resourcewaarschuwingen",
+      "enabledSubtitle": "Native meldingen wanneer het resourcegebruik van een app hoog blijft. Dit uitschakelen schakelt ook alle waarschuwingen hieronder uit.",
+      "highMemory": "Hoog geheugengebruik",
+      "highMemorySubtitle": "Waarschuwen als één app langdurig meer dan dit geheugen gebruikt.",
+      "highMemoryPercent": "Hoog geheugenaandeel",
+      "highMemoryPercentSubtitle": "Waarschuwen als één app langdurig meer dan dit aandeel van het totale geheugen van je Mac gebruikt.",
+      "backgroundCpu": "CPU-gebruik op de achtergrond",
+      "backgroundCpuSubtitle": "Waarschuwen als een achtergrond-app (zonder Dock-icoon) langdurig meer dan dit CPU-gebruik heeft.",
+      "criticalPressure": "Kritieke geheugendruk",
+      "criticalPressureSubtitle": "Waarschuwen als macOS kritieke geheugendruk meldt."
+    },
+    "license": {
+      "title": "Licentie",
+      "status": {
+        "trial": "Gratis proefperiode",
+        "trial_expired": "Proefperiode verlopen",
+        "licensed": "Gelicentieerd",
+        "licensed_invalid": "Licentie ongeldig",
+        "licensed_grace_expired": "Licentie niet gecontroleerd"
+      },
+      "keySubtitle": "Licentiesleutel {{key}}",
+      "buyButton": "Koop — $14,99",
+      "manage": "Licentie beheren",
+      "lastChecked": "Laatst gecontroleerd: {{time}}",
+      "refreshButton": "Licentiestatus vernieuwen",
+      "deactivateButton": "Deze Mac deactiveren",
+      "deactivateConfirmTitle": "Deze Mac deactiveren?",
+      "deactivateConfirmBody": "Hierdoor komt je licentie vrij, zodat je deze op een andere Mac kunt activeren. Je kunt deze hier later altijd weer activeren."
+    }
   },
   "scheduleScreen": {
     "subtitle": "Houd onnodige rommel automatisch onder controle.",
@@ -934,7 +975,19 @@
       "systemOwner": "Systeem",
       "version": "Versie",
       "executable": "Uitvoerbaar bestand",
-      "quitHint": "Gebruik om een app te stoppen het eigen stopcommando (⌘Q) of klik met de rechtermuisknop op de app in het Dock, zodat je werk eerst kan worden bewaard."
+      "quitHint": "'Stoppen' vraagt de app om normaal af te sluiten — hij kan nog steeds vragen om niet-opgeslagen werk op te slaan. 'Forceer stoppen' slaat dat over en moet alleen worden gebruikt als de app niet meer reageert.",
+      "quitAction": "Stoppen",
+      "forceQuitAction": "Forceer stoppen",
+      "quitting": "Bezig met stoppen…",
+      "quitUnavailableSelf": "MacBook Cleaner kan zichzelf niet afsluiten.",
+      "quitUnavailableSystem": "Systeemprocessen kunnen hier niet worden afgesloten.",
+      "forceQuitConfirmTitle": "{{name}} geforceerd afsluiten?",
+      "forceQuitConfirmBody": "Niet-opgeslagen werk in deze app gaat verloren en dit kan niet ongedaan worden gemaakt.",
+      "quitSucceeded": "{{name}} is afgesloten.",
+      "forceQuitSucceeded": "{{name}} is geforceerd afgesloten.",
+      "quitStillRunning": "{{name}} is mogelijk nog aan het afsluiten — de app wacht misschien op een dialoogvenster over niet-opgeslagen wijzigingen.",
+      "quitAlreadyGone": "{{name}} was al afgesloten.",
+      "quitPermissionDenied": "macOS stond het afsluiten van {{name}} niet toe."
     },
     "mac": {
       "hardware": "Hardware",
@@ -968,6 +1021,70 @@
       "runScan": "Voer een scan uit",
       "openCleaner": "Open opslagopschoning",
       "breakdown": "Opslagverdeling"
+    },
+    "alerts": {
+      "notifications": {
+        "highMemoryTitle": "Hoog geheugengebruik gedetecteerd",
+        "highMemoryBody": "{{app}} gebruikt momenteel {{size}} aan RAM. Open MacBook Cleaner om het resourcegebruik van apps te bekijken.",
+        "backgroundCpuTitle": "Hoog CPU-gebruik op de achtergrond",
+        "backgroundCpuBody": "{{app}} gebruikt {{percent}}% CPU op de achtergrond. Open MacBook Cleaner om het resourcegebruik van apps te bekijken.",
+        "pressureTitle": "Kritieke geheugendruk",
+        "pressureBody": "Het geheugen van je Mac staat onder zware druk. Een paar apps sluiten kan helpen. Open MacBook Cleaner om het resourcegebruik van apps te bekijken."
+      }
+    },
+    "background": {
+      "title": "Resourcegebruik op de achtergrond",
+      "subtitle": "De achtergrond-apps die nu de meeste CPU en geheugen gebruiken.",
+      "none": "Geen achtergrond-app gebruikt noemenswaardige resources.",
+      "highUsage": "Hoog gebruik",
+      "runningFor": "Actief sinds {{duration}}"
+    },
+    "recommendations": {
+      "title": "Aanbevelingen",
+      "subtitle": "Gebaseerd op wat nu wordt gemeten — geen garanties.",
+      "criticalPressure": "De geheugendruk van je Mac is kritiek. Een paar apps sluiten kan helpen om geheugen vrij te maken.",
+      "warningPressure": "De geheugendruk is verhoogd. Minder apps open houden kan helpen.",
+      "highMemory": "{{app}} gebruikt {{size}} aan geheugen.",
+      "backgroundCpu": "{{count}} achtergrond-apps gebruiken veel CPU.",
+      "swap": "Het swapgebruik is verhoogd ({{percent}} van de beschikbare swap)."
+    }
+  },
+  "license": {
+    "trialBadge": "Proefperiode: {{time}}",
+    "remaining": {
+      "lessThanAMinute": "Minder dan een minuut over",
+      "minutes_one": "Nog {{count}} minuut",
+      "minutes_other": "Nog {{count}} minuten",
+      "hours_one": "Nog {{count}} uur",
+      "hours_other": "Nog {{count}} uur",
+      "days_one": "Nog {{count}} dag",
+      "days_other": "Nog {{count}} dagen"
+    },
+    "paywall": {
+      "titles": {
+        "trialExpired": "Je proefperiode is afgelopen",
+        "licensedInvalid": "Je licentie is niet meer geldig",
+        "licensedGraceExpired": "Licentie kon niet worden gecontroleerd"
+      },
+      "bodies": {
+        "trialExpired": "Je gratis proefperiode van 48 uur is afgelopen. Koop een levenslange licentie om MacBook Cleaner te blijven gebruiken, of activeer een licentiesleutel als je er al een hebt.",
+        "licensedInvalid": "Dodo Payments geeft aan dat deze licentiesleutel niet meer actief is — mogelijk is deze terugbetaald of gedeactiveerd. Activeer een andere sleutel of koop een nieuwe levenslange licentie.",
+        "licensedGraceExpired": "MacBook Cleaner kon niet bevestigen dat je licentie nog geldig is. Maak verbinding met internet en vernieuw, of activeer je sleutel opnieuw."
+      },
+      "tamperNotice": "Je proefgegevens konden niet worden gecontroleerd en worden daarom als verlopen beschouwd.",
+      "refreshButton": "Licentiestatus vernieuwen",
+      "refreshing": "Controleren…",
+      "buyButton": "Levenslange licentie kopen — $14,99",
+      "orDivider": "of",
+      "activateLabel": "Al gekocht? Voer je licentiesleutel in",
+      "activatePlaceholder": "PRO-AAAA-BBBB-CCCC-DDDD",
+      "activateButton": "Activeren",
+      "activating": "Activeren…"
+    },
+    "toasts": {
+      "activateSuccess": "Licentie geactiveerd — bedankt voor je steun!",
+      "deactivateSuccess": "Licentie gedeactiveerd. Je kunt deze nu op een andere Mac activeren.",
+      "deactivateFailed": "Deactiveren mislukt: {{error}}"
     }
   },
   "native": {

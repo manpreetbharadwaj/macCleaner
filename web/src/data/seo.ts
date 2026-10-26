@@ -1,4 +1,4 @@
-import { APP, SITE, absoluteUrl, architectureLabel } from '@/config/site'
+import { APP, PURCHASE, SITE, absoluteUrl, architectureLabel } from '@/config/site'
 import { ALL_FAQS } from '@/data/faq'
 
 export interface PageMeta {
@@ -29,6 +29,14 @@ export const PAGES: Record<string, PageMeta> = {
     indexable: true,
     changefreq: 'monthly',
     priority: 0.9,
+  },
+  '/pricing': {
+    path: '/pricing',
+    title: 'Pricing — MacBook Cleaner',
+    description: `MacBook Cleaner ${APP.version}: try it free for ${PURCHASE.trialDays} days, then a single ${PURCHASE.priceDisplay} one-time payment for a lifetime license. No subscription, no account needed to start.`,
+    indexable: true,
+    changefreq: 'monthly',
+    priority: 0.7,
   },
   '/download': {
     path: '/download',

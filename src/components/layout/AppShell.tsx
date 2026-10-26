@@ -8,6 +8,9 @@ import { Onboarding } from '@/components/onboarding/Onboarding'
 import { useAppStore } from '@/store/useAppStore'
 import { useThemeSync } from '@/hooks/useThemeSync'
 import { useNotificationRouteHandoff } from '@/hooks/useNotificationRouteHandoff'
+import { useLicenseStore } from '@/features/license/useLicenseStore'
+import { isLocked } from '@/features/license/types'
+import { Paywall } from '@/features/license/components/Paywall'
 
 function Splash() {
   return (
@@ -26,18 +29,27 @@ function Splash() {
 }
 
 export function AppShell() {
-  const ready = useAppStore((s) => s.ready)
+  const appReady = useAppStore((s) => s.ready)
   const settings = useAppStore((s) => s.settings)
+  const dataSource = useAppStore((s) => s.dataSource)
   const init = useAppStore((s) => s.init)
+  const licenseState = useLicenseStore((s) => s.state)
+  const initLicense = useLicenseStore((s) => s.init)
   const location = useLocation()
   const outlet = useOutlet()
+
+  // Gate on both: showing the main app before the license state has loaded
+  // would let a locked-out window flash open for a frame.
+  const ready = appReady && licenseState !== null
+  const locked = !!licenseState && isLocked(licenseState.status)
 
   useThemeSync(settings?.theme)
   useNotificationRouteHandoff()
 
   useEffect(() => {
     void init()
-  }, [init])
+    void initLicense()
+  }, [init, initLicense])
 
   // When following the Mac's language, pick up a change made in System Settings while the app was open.
   useEffect(() => {
@@ -49,8 +61,18 @@ export function AppShell() {
   return (
     <>
       <AnimatePresence>{!ready && <Splash />}</AnimatePresence>
-      {ready && (
+      {ready && locked && <Paywall />}
+      {ready && !locked && (
         <div className="app-backdrop flex h-screen w-full overflow-hidden text-ink">
+          {dataSource === 'mock' && (
+            <div
+              role="status"
+              className="fixed top-3 left-1/2 z-[100] -translate-x-1/2 rounded-full border border-amber-300/70 bg-amber-100/95 px-4 py-1.5 text-[11px] font-bold tracking-[0.08em] text-amber-950 shadow-lg backdrop-blur dark:border-amber-500/40 dark:bg-amber-950/90 dark:text-amber-100"
+              title="Browser preview only. Scans, cleanup, performance readings, permissions, and scheduling use sample data and do not touch this Mac."
+            >
+              DEMO · SAMPLE DATA · NO FILES ARE CHANGED
+            </div>
+          )}
           <Sidebar />
           <main className="scroll-area relative flex-1 overflow-x-hidden overflow-y-auto">
             <div data-tauri-drag-region className="sticky top-0 z-10 -mb-11 h-11 w-full" />
@@ -71,7 +93,7 @@ export function AppShell() {
           <Toasts />
         </div>
       )}
-      <AnimatePresence>{ready && settings && !settings.onboardingCompleted && <Onboarding key="onboarding" />}</AnimatePresence>
+      <AnimatePresence>{ready && !locked && settings && !settings.onboardingCompleted && <Onboarding key="onboarding" />}</AnimatePresence>
     </>
   )
 }

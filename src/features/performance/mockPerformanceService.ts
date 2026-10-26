@@ -173,4 +173,10 @@ export const mockPerformanceService: PerformanceService = {
   getUpdateStatus: () => delay({ state: 'up-to-date', macosUpdates: [], otherUpdates: [], lastCheckedMs: Date.now() - 5 * HOUR }),
   openSoftwareUpdate: async () => {},
   getAppIcon: async () => null,
+  // The browser preview has no real processes to signal — simulate a
+  // successful quit so the UI flow (confirm, optimistic update, refresh)
+  // can still be exercised with `npm run dev`.
+  quitProcess: () => delay({ status: 'terminated' as const }, 300),
+  forceQuitProcess: () => delay({ status: 'terminated' as const }, 300),
+  sendAlert: () => delay(false, 0),
 }

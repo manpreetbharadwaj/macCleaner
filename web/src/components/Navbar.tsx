@@ -8,6 +8,7 @@ import { Logo } from './Logo'
 
 export const NAV_LINKS = [
   { to: '/features', label: 'Features' },
+  { to: '/pricing', label: 'Pricing' },
   { to: '/download', label: 'Download' },
   { to: '/faq', label: 'FAQ' },
   { to: '/support', label: 'Support' },

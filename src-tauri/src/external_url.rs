@@ -4,8 +4,20 @@
 
 use url::Url;
 
-/// Hosts the app may open. Deliberately tiny: the product website only.
-const ALLOWED_HOSTS: &[&str] = &["macbookcleaner.app", "www.macbookcleaner.app"];
+/// Hosts the app may open. Deliberately tiny: the product website, plus
+/// Dodo Payments' checkout for the "Buy Lifetime License" button — a static,
+/// no-API-key payment link (see license/mod.rs's `license_open_purchase_page`
+/// and license/config.rs's `DODO_CHECKOUT_HOST`).
+///
+/// Mirrors `DODO_CHECKOUT_HOST`'s own test/live split exactly, and for the
+/// same reason: a normal (non-`dodo_test_mode`) build — which is every
+/// release build, since that feature isn't in `default` — must not even be
+/// *capable* of opening the sandbox checkout host, regardless of what URL
+/// anything in the app might ever try to pass here.
+#[cfg(feature = "dodo_test_mode")]
+const ALLOWED_HOSTS: &[&str] = &["macbookcleaner.app", "www.macbookcleaner.app", "test.checkout.dodopayments.com"];
+#[cfg(not(feature = "dodo_test_mode"))]
+const ALLOWED_HOSTS: &[&str] = &["macbookcleaner.app", "www.macbookcleaner.app", "checkout.dodopayments.com"];
 
 pub fn validate(raw: &str) -> Result<Url, String> {
     let url = Url::parse(raw.trim()).map_err(|e| format!("Not a valid URL: {e}"))?;
@@ -55,6 +67,30 @@ mod tests {
     }
 
     #[test]
+    #[cfg(not(feature = "dodo_test_mode"))]
+    fn accepts_the_live_dodo_checkout_link() {
+        assert!(validate("https://checkout.dodopayments.com/buy/pdt_123?quantity=1").is_ok());
+    }
+
+    #[test]
+    #[cfg(not(feature = "dodo_test_mode"))]
+    fn a_live_build_refuses_the_sandbox_checkout_host() {
+        assert!(validate("https://test.checkout.dodopayments.com/buy/pdt_0NqQ5ZKXDNgbggDrQaV2d?quantity=1").is_err(), "a live build must never be able to open the sandbox checkout host");
+    }
+
+    #[test]
+    #[cfg(feature = "dodo_test_mode")]
+    fn accepts_the_sandbox_dodo_checkout_link() {
+        assert!(validate("https://test.checkout.dodopayments.com/buy/pdt_0NqQ5ZKXDNgbggDrQaV2d?quantity=1").is_ok());
+    }
+
+    #[test]
+    #[cfg(feature = "dodo_test_mode")]
+    fn a_sandbox_build_refuses_the_live_checkout_host() {
+        assert!(validate("https://checkout.dodopayments.com/buy/pdt_123?quantity=1").is_err(), "a dodo_test_mode build must never be able to open the live checkout host");
+    }
+
+    #[test]
     fn rejects_unsafe_or_unlisted_urls() {
         for bad in [
             "http://macbookcleaner.app/",
@@ -66,6 +102,12 @@ mod tests {
             "https://macbookcleaner.app@evil.example/",
             "https://user:pw@macbookcleaner.app/",
             "https://macbookcleaner.app:8443/",
+            "https://checkout.dodopayments.com.evil.example/",
+            "https://checkout.dodopayments.com@evil.example/",
+            "https://evil.example/checkout.dodopayments.com",
+            "https://test.checkout.dodopayments.com.evil.example/",
+            "https://test.checkout.dodopayments.com@evil.example/",
+            "https://evil.example/test.checkout.dodopayments.com",
             "-a Calculator",
             "",
             "not a url",

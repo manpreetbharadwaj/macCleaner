@@ -508,7 +508,17 @@
       "linkBlocked": "Dieser Link kann nicht geöffnet werden.",
       "browserFailed": "Dein Standardbrowser konnte nicht geöffnet werden.",
       "noAppSupport": "MacBook Cleaner konnte nicht auf seinen Datenordner zugreifen.",
-      "invalidTime": "Diese Uhrzeit ist ungültig."
+      "invalidTime": "Diese Uhrzeit ist ungültig.",
+      "selfQuit": "MacBook Cleaner kann sich nicht selbst beenden.",
+      "protectedProcess": "Dies ist ein geschützter Systemprozess und kann nicht beendet werden.",
+      "notOwnProcess": "Es können nur eigene Prozesse beendet werden.",
+      "quitRefused": "macOS hat das Beenden dieser App verweigert.",
+      "licenseKeyRequired": "Gib zuerst einen Lizenzschlüssel ein.",
+      "licenseNotActive": "Dieser Lizenzschlüssel ist noch nicht aktiv. Falls du ihn gerade gekauft hast, prüfe in Kürze deine E-Mails und versuche es erneut.",
+      "licenseNotFound": "Dieser Lizenzschlüssel wurde nicht gefunden. Überprüfe ihn und versuche es erneut.",
+      "licenseLimitReached": "Dieser Lizenzschlüssel ist bereits auf einem anderen Mac aktiviert. Deaktiviere ihn dort zuerst und versuche es dann hier erneut.",
+      "licenseNetworkError": "Der Lizenzserver konnte nicht erreicht werden. Überprüfe deine Internetverbindung und versuche es erneut.",
+      "licenseServerError": "Der Lizenzserver hat eine unerwartete Antwort gesendet. Versuche es in Kürze erneut."
     },
     "generic": "Etwas ist schiefgelaufen."
   },
@@ -610,7 +620,38 @@
     "showWelcome": "Willkommen erneut anzeigen",
     "resetAll": "Alle Daten zurücksetzen",
     "resetTitle": "MacBook Cleaner zurücksetzen?",
-    "resetBody": "Dadurch werden deine Einstellungen, Ausnahmen, der Zeitplan und der Bereinigungsverlauf gelöscht und die geplante Bereinigung deaktiviert. Deine Dateien und der Papierkorb bleiben unberührt."
+    "resetBody": "Dadurch werden deine Einstellungen, Ausnahmen, der Zeitplan und der Bereinigungsverlauf gelöscht und die geplante Bereinigung deaktiviert. Deine Dateien und der Papierkorb bleiben unberührt.",
+    "performanceAlerts": {
+      "title": "Leistungswarnungen",
+      "enabled": "Ressourcenwarnungen",
+      "enabledSubtitle": "Native Benachrichtigungen, wenn die Ressourcennutzung einer App dauerhaft hoch bleibt. Wird dies deaktiviert, sind auch alle Warnungen unten deaktiviert.",
+      "highMemory": "Hoher Speicherverbrauch",
+      "highMemorySubtitle": "Warnen, wenn eine einzelne App dauerhaft mehr als diesen Speicher verwendet.",
+      "highMemoryPercent": "Hoher Speicheranteil",
+      "highMemoryPercentSubtitle": "Warnen, wenn eine einzelne App dauerhaft mehr als diesen Anteil des gesamten Arbeitsspeichers verwendet.",
+      "backgroundCpu": "CPU-Auslastung im Hintergrund",
+      "backgroundCpuSubtitle": "Warnen, wenn eine Hintergrund-App (ohne Dock-Symbol) dauerhaft mehr als diese CPU-Auslastung verursacht.",
+      "criticalPressure": "Kritischer Speicherdruck",
+      "criticalPressureSubtitle": "Warnen, wenn macOS den Speicherdruck als kritisch meldet."
+    },
+    "license": {
+      "title": "Lizenz",
+      "status": {
+        "trial": "Kostenlose Testversion",
+        "trial_expired": "Testversion abgelaufen",
+        "licensed": "Lizenziert",
+        "licensed_invalid": "Lizenz ungültig",
+        "licensed_grace_expired": "Lizenz konnte nicht überprüft werden"
+      },
+      "keySubtitle": "Lizenzschlüssel {{key}}",
+      "buyButton": "Kaufen — 14,99 $",
+      "manage": "Lizenz verwalten",
+      "lastChecked": "Zuletzt geprüft: {{time}}",
+      "refreshButton": "Lizenzstatus aktualisieren",
+      "deactivateButton": "Diesen Mac deaktivieren",
+      "deactivateConfirmTitle": "Diesen Mac deaktivieren?",
+      "deactivateConfirmBody": "Dadurch wird deine Lizenz frei, damit du sie auf einem anderen Mac aktivieren kannst. Du kannst sie hier jederzeit wieder aktivieren."
+    }
   },
   "scheduleScreen": {
     "subtitle": "Halte unnötige Unordnung automatisch unter Kontrolle.",
@@ -934,7 +975,19 @@
       "systemOwner": "System",
       "version": "Version",
       "executable": "Ausführbare Datei",
-      "quitHint": "Um eine App zu beenden, nutze ihren eigenen Befehl „Beenden“ (⌘Q) oder klicke im Dock mit der rechten Maustaste darauf, damit sie deine Arbeit vorher sichern kann."
+      "quitHint": "„Beenden“ bittet die App, sich normal zu schließen – sie kann trotzdem fragen, ob nicht gespeicherte Änderungen gesichert werden sollen. „Erzwungen beenden“ überspringt das und sollte nur verwendet werden, wenn die App nicht mehr reagiert.",
+      "quitAction": "Beenden",
+      "forceQuitAction": "Erzwungen beenden",
+      "quitting": "Wird beendet…",
+      "quitUnavailableSelf": "MacBook Cleaner kann sich nicht selbst beenden.",
+      "quitUnavailableSystem": "Systemprozesse können hier nicht beendet werden.",
+      "forceQuitConfirmTitle": "{{name}} erzwungen beenden?",
+      "forceQuitConfirmBody": "Nicht gespeicherte Änderungen in dieser App gehen verloren – das lässt sich nicht widerrufen.",
+      "quitSucceeded": "{{name}} wurde beendet.",
+      "forceQuitSucceeded": "{{name}} wurde erzwungen beendet.",
+      "quitStillRunning": "{{name}} schließt möglicherweise noch – die App wartet eventuell auf eine Sicherheitsabfrage für nicht gespeicherte Änderungen.",
+      "quitAlreadyGone": "{{name}} wurde bereits beendet.",
+      "quitPermissionDenied": "macOS hat das Beenden von {{name}} nicht zugelassen."
     },
     "mac": {
       "hardware": "Hardware",
@@ -968,6 +1021,70 @@
       "runScan": "Scan starten",
       "openCleaner": "Speicherbereinigung öffnen",
       "breakdown": "Speicheraufteilung"
+    },
+    "alerts": {
+      "notifications": {
+        "highMemoryTitle": "Hoher Speicherverbrauch erkannt",
+        "highMemoryBody": "{{app}} verwendet derzeit {{size}} Arbeitsspeicher. Öffne MacBook Cleaner, um die Ressourcennutzung der Apps zu überprüfen.",
+        "backgroundCpuTitle": "Hohe CPU-Auslastung im Hintergrund",
+        "backgroundCpuBody": "{{app}} verwendet im Hintergrund {{percent}} % CPU. Öffne MacBook Cleaner, um die Ressourcennutzung der Apps zu überprüfen.",
+        "pressureTitle": "Kritischer Speicherdruck",
+        "pressureBody": "Der Arbeitsspeicher deines Mac steht unter starkem Druck. Das Schließen einiger Apps kann helfen. Öffne MacBook Cleaner, um die Ressourcennutzung der Apps zu überprüfen."
+      }
+    },
+    "background": {
+      "title": "Hintergrund-Ressourcennutzung",
+      "subtitle": "Die Hintergrund-Apps, die aktuell die meiste CPU und den meisten Speicher verwenden.",
+      "none": "Keine Hintergrund-App verwendet nennenswerte Ressourcen.",
+      "highUsage": "Hohe Auslastung",
+      "runningFor": "Läuft seit {{duration}}"
+    },
+    "recommendations": {
+      "title": "Empfehlungen",
+      "subtitle": "Basierend auf den aktuell gemessenen Werten – keine Garantie.",
+      "criticalPressure": "Der Speicherdruck deines Mac ist kritisch. Das Schließen einiger Apps kann helfen, Speicher freizugeben.",
+      "warningPressure": "Der Speicherdruck ist erhöht. Weniger geöffnete Apps können helfen.",
+      "highMemory": "{{app}} verwendet {{size}} Arbeitsspeicher.",
+      "backgroundCpu": "{{count}} Hintergrund-Apps verwenden deutlich CPU.",
+      "swap": "Die Swap-Nutzung ist erhöht ({{percent}} des verfügbaren Swaps)."
+    }
+  },
+  "license": {
+    "trialBadge": "Testversion: {{time}}",
+    "remaining": {
+      "lessThanAMinute": "Weniger als eine Minute übrig",
+      "minutes_one": "{{count}} Minute übrig",
+      "minutes_other": "{{count}} Minuten übrig",
+      "hours_one": "{{count}} Stunde übrig",
+      "hours_other": "{{count}} Stunden übrig",
+      "days_one": "{{count}} Tag übrig",
+      "days_other": "{{count}} Tage übrig"
+    },
+    "paywall": {
+      "titles": {
+        "trialExpired": "Deine Testversion ist abgelaufen",
+        "licensedInvalid": "Deine Lizenz ist nicht mehr gültig",
+        "licensedGraceExpired": "Lizenz konnte nicht überprüft werden"
+      },
+      "bodies": {
+        "trialExpired": "Deine 48-Stunden-Testversion ist beendet. Kaufe eine lebenslange Lizenz, um MacBook Cleaner weiter zu nutzen, oder aktiviere einen Lizenzschlüssel, falls du schon einen hast.",
+        "licensedInvalid": "Dodo Payments meldet, dass dieser Lizenzschlüssel nicht mehr aktiv ist — er wurde möglicherweise erstattet oder deaktiviert. Aktiviere einen anderen Schlüssel oder kaufe eine neue lebenslange Lizenz.",
+        "licensedGraceExpired": "MacBook Cleaner konnte nicht bestätigen, dass deine Lizenz noch gültig ist. Verbinde dich mit dem Internet und aktualisiere, oder aktiviere deinen Schlüssel erneut."
+      },
+      "tamperNotice": "Deine Testdaten konnten nicht überprüft werden und werden daher als abgelaufen behandelt.",
+      "refreshButton": "Lizenzstatus aktualisieren",
+      "refreshing": "Wird geprüft…",
+      "buyButton": "Lebenslange Lizenz kaufen — 14,99 $",
+      "orDivider": "oder",
+      "activateLabel": "Schon gekauft? Gib deinen Lizenzschlüssel ein",
+      "activatePlaceholder": "PRO-AAAA-BBBB-CCCC-DDDD",
+      "activateButton": "Aktivieren",
+      "activating": "Wird aktiviert…"
+    },
+    "toasts": {
+      "activateSuccess": "Lizenz aktiviert — danke für deine Unterstützung!",
+      "deactivateSuccess": "Lizenz deaktiviert. Du kannst sie jetzt auf einem anderen Mac aktivieren.",
+      "deactivateFailed": "Deaktivierung fehlgeschlagen: {{error}}"
     }
   },
   "native": {

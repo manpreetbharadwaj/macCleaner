@@ -105,7 +105,7 @@ export function DownloadPage() {
               <Cpu size={22} aria-hidden="true" />
               <h3>Processor</h3>
               <p>{architectureLabel()}</p>
-              {!APP.architectures.includes('intel') && <small>Intel Macs aren’t supported by this build.</small>}
+              {APP.installerVerified && !APP.architectures.includes('intel') && <small>Intel Macs aren’t supported by this verified build.</small>}
             </div>
             <div className="req">
               <ShieldCheck size={22} aria-hidden="true" />

@@ -495,7 +495,17 @@
       "linkBlocked": "このリンクは開けません。",
       "browserFailed": "デフォルトのブラウザを開けませんでした。",
       "noAppSupport": "MacBook Cleanerが自身のデータフォルダにアクセスできませんでした。",
-      "invalidTime": "その時刻は無効です。"
+      "invalidTime": "その時刻は無効です。",
+      "selfQuit": "MacBook Cleanerは自分自身を終了できません。",
+      "protectedProcess": "これは保護されたシステムプロセスのため終了できません。",
+      "notOwnProcess": "終了できるのは自分自身のプロセスのみです。",
+      "quitRefused": "macOSがこのアプリの終了を拒否しました。",
+      "licenseKeyRequired": "先にライセンスキーを入力してください。",
+      "licenseNotActive": "このライセンスキーはまだ有効ではありません。購入直後の場合は、少し待ってからメールを確認し、再試行してください。",
+      "licenseNotFound": "このライセンスキーは見つかりませんでした。確認して再試行してください。",
+      "licenseLimitReached": "このライセンスキーは既に別のMacで有効化されています。先にそちらで無効化してから、再試行してください。",
+      "licenseNetworkError": "ライセンスサーバーに接続できませんでした。インターネット接続を確認して再試行してください。",
+      "licenseServerError": "ライセンスサーバーから予期しない応答がありました。少し後に再試行してください。"
     },
     "generic": "問題が発生しました。"
   },
@@ -597,7 +607,38 @@
     "showWelcome": "ようこそ画面をもう一度表示",
     "resetAll": "すべてのデータをリセット",
     "resetTitle": "MacBook Cleanerをリセットしますか？",
-    "resetBody": "設定、除外項目、スケジュール、クリーンアップ履歴が消去され、スケジュールクリーンアップがオフになります。ファイルとゴミ箱には影響しません。"
+    "resetBody": "設定、除外項目、スケジュール、クリーンアップ履歴が消去され、スケジュールクリーンアップがオフになります。ファイルとゴミ箱には影響しません。",
+    "performanceAlerts": {
+      "title": "パフォーマンスアラート",
+      "enabled": "リソースアラート",
+      "enabledSubtitle": "アプリのリソース使用量が高い状態が続いたときにネイティブ通知を表示します。オフにすると以下のアラートもすべて無効になります。",
+      "highMemory": "高いメモリ使用量",
+      "highMemorySubtitle": "1つのアプリがこの量を超えるメモリを使い続けたときに警告します。",
+      "highMemoryPercent": "高いメモリ使用割合",
+      "highMemoryPercentSubtitle": "1つのアプリがMac全体のメモリのこの割合を超えて使い続けたときに警告します。",
+      "backgroundCpu": "バックグラウンドのCPU使用率",
+      "backgroundCpuSubtitle": "DockアイコンのないバックグラウンドアプリがこのCPU使用率を超え続けたときに警告します。",
+      "criticalPressure": "深刻なメモリ不足",
+      "criticalPressureSubtitle": "macOSが深刻なメモリ不足を報告したときに警告します。"
+    },
+    "license": {
+      "title": "ライセンス",
+      "status": {
+        "trial": "無料トライアル",
+        "trial_expired": "トライアル終了",
+        "licensed": "ライセンス取得済み",
+        "licensed_invalid": "ライセンスが無効",
+        "licensed_grace_expired": "ライセンスを確認できません"
+      },
+      "keySubtitle": "ライセンスキー {{key}}",
+      "buyButton": "購入 — $14.99",
+      "manage": "ライセンスを管理",
+      "lastChecked": "最終確認：{{time}}",
+      "refreshButton": "ライセンス状態を更新",
+      "deactivateButton": "このMacを無効化",
+      "deactivateConfirmTitle": "このMacを無効化しますか？",
+      "deactivateConfirmBody": "これによりライセンスが解放され、別のMacで有効化できるようになります。後でここから再度有効化することもできます。"
+    }
   },
   "scheduleScreen": {
     "subtitle": "不要な散らかりを自動で抑えましょう。",
@@ -910,7 +951,19 @@
       "systemOwner": "システム",
       "version": "バージョン",
       "executable": "実行ファイル",
-      "quitHint": "Appを終了するには、そのAppの「終了」コマンド（⌘Q）を使うか、Dockで右クリックしてください。作業内容を先に保存できます。"
+      "quitHint": "「終了」はアプリに通常どおり閉じるよう要求します。未保存の作業の保存を求められる場合があります。「強制終了」はこれをスキップするため、アプリが応答しない場合にのみ使用してください。",
+      "quitAction": "終了",
+      "forceQuitAction": "強制終了",
+      "quitting": "終了中…",
+      "quitUnavailableSelf": "MacBook Cleanerは自分自身を終了できません。",
+      "quitUnavailableSystem": "システムプロセスはここから終了できません。",
+      "forceQuitConfirmTitle": "{{name}}を強制終了しますか？",
+      "forceQuitConfirmBody": "このアプリの未保存の作業は失われ、元に戻すことはできません。",
+      "quitSucceeded": "{{name}}を終了しました。",
+      "forceQuitSucceeded": "{{name}}を強制終了しました。",
+      "quitStillRunning": "{{name}}はまだ終了処理中の可能性があります。未保存の変更についてのダイアログを待っているかもしれません。",
+      "quitAlreadyGone": "{{name}}はすでに終了していました。",
+      "quitPermissionDenied": "macOSが{{name}}の終了を許可しませんでした。"
     },
     "mac": {
       "hardware": "ハードウェア",
@@ -940,6 +993,67 @@
       "runScan": "スキャンを実行",
       "openCleaner": "ストレージクリーナーを開く",
       "breakdown": "ストレージの内訳"
+    },
+    "alerts": {
+      "notifications": {
+        "highMemoryTitle": "高いメモリ使用量を検出",
+        "highMemoryBody": "{{app}}は現在{{size}}のRAMを使用しています。アプリのリソース使用状況を確認するにはMacBook Cleanerを開いてください。",
+        "backgroundCpuTitle": "バックグラウンドでの高いCPU使用率",
+        "backgroundCpuBody": "{{app}}はバックグラウンドでCPUを{{percent}}%使用しています。アプリのリソース使用状況を確認するにはMacBook Cleanerを開いてください。",
+        "pressureTitle": "深刻なメモリ不足",
+        "pressureBody": "お使いのMacのメモリに大きな負荷がかかっています。いくつかのアプリを終了すると改善する場合があります。アプリのリソース使用状況を確認するにはMacBook Cleanerを開いてください。"
+      }
+    },
+    "background": {
+      "title": "バックグラウンドのリソース使用状況",
+      "subtitle": "現在もっともCPUとメモリを使用しているバックグラウンドアプリ。",
+      "none": "目立ったリソースを使用しているバックグラウンドアプリはありません。",
+      "highUsage": "高使用率",
+      "runningFor": "{{duration}}前から実行中"
+    },
+    "recommendations": {
+      "title": "おすすめの対策",
+      "subtitle": "現在測定されている値に基づくもので、保証ではありません。",
+      "criticalPressure": "お使いのMacのメモリ不足は深刻です。いくつかのアプリを終了するとメモリの解放に役立つ場合があります。",
+      "warningPressure": "メモリの負荷が高まっています。開いているアプリを減らすと改善する場合があります。",
+      "highMemory": "{{app}}が{{size}}のメモリを使用しています。",
+      "backgroundCpu": "{{count}}個のバックグラウンドアプリが多くのCPUを使用しています。",
+      "swap": "スワップの使用量が増えています（利用可能なスワップの{{percent}}）。"
+    }
+  },
+  "license": {
+    "trialBadge": "トライアル：{{time}}",
+    "remaining": {
+      "lessThanAMinute": "残り1分未満",
+      "minutes_other": "残り{{count}}分",
+      "hours_other": "残り{{count}}時間",
+      "days_other": "残り{{count}}日"
+    },
+    "paywall": {
+      "titles": {
+        "trialExpired": "トライアルが終了しました",
+        "licensedInvalid": "ライセンスが無効です",
+        "licensedGraceExpired": "ライセンスを確認できませんでした"
+      },
+      "bodies": {
+        "trialExpired": "48時間の無料トライアルが終了しました。MacBook Cleanerを引き続き使用するには、永久ライセンスを購入するか、すでにお持ちのライセンスキーを有効化してください。",
+        "licensedInvalid": "Dodo Paymentsによると、このライセンスキーは現在無効です。返金または無効化された可能性があります。別のキーを有効化するか、新しい永久ライセンスを購入してください。",
+        "licensedGraceExpired": "MacBook Cleanerはライセンスが有効かどうかを確認できませんでした。インターネットに接続して更新するか、キーを再度有効化してください。"
+      },
+      "tamperNotice": "トライアルデータを確認できなかったため、期限切れとして扱われます。",
+      "refreshButton": "ライセンス状態を更新",
+      "refreshing": "確認中…",
+      "buyButton": "永久ライセンスを購入 — $14.99",
+      "orDivider": "または",
+      "activateLabel": "すでに購入済みですか？ライセンスキーを入力してください",
+      "activatePlaceholder": "PRO-AAAA-BBBB-CCCC-DDDD",
+      "activateButton": "有効化",
+      "activating": "有効化中…"
+    },
+    "toasts": {
+      "activateSuccess": "ライセンスが有効化されました — ご支援ありがとうございます！",
+      "deactivateSuccess": "ライセンスを無効化しました。別のMacで有効化できます。",
+      "deactivateFailed": "無効化できませんでした：{{error}}"
     }
   },
   "native": {

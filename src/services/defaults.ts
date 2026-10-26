@@ -1,4 +1,15 @@
-import type { ScheduleRule, Settings } from '@/types'
+import type { PerformanceAlertSettings, ScheduleRule, Settings } from '@/types'
+
+export const DEFAULT_PERFORMANCE_ALERTS: PerformanceAlertSettings = {
+  enabled: true,
+  highMemoryEnabled: true,
+  highMemoryThresholdMb: 1024,
+  highMemoryPercentEnabled: true,
+  highMemoryPercentThreshold: 20,
+  backgroundCpuEnabled: true,
+  backgroundCpuThreshold: 50,
+  criticalPressureEnabled: true,
+}
 
 export const DEFAULT_SETTINGS: Settings = {
   theme: 'system',
@@ -10,6 +21,7 @@ export const DEFAULT_SETTINGS: Settings = {
   developerCleanupEnabled: true,
   confirmBeforeCleanup: true,
   onboardingCompleted: false,
+  performanceAlerts: DEFAULT_PERFORMANCE_ALERTS,
 }
 
 export const DEFAULT_SCHEDULE: ScheduleRule = {

@@ -95,11 +95,22 @@ export function DownloadButton({ size = 'lg', variant = 'primary', label = 'Down
     state === 'checking' ? <Loader2 size={18} className="spin" aria-hidden="true" /> : state === 'started' ? <Check size={18} aria-hidden="true" /> : state === 'error' ? <AlertCircle size={18} aria-hidden="true" /> : <MacGlyph />
   const text = state === 'checking' ? 'Starting…' : state === 'started' ? 'Download started' : label
 
+  if (!isDownloadAvailable) {
+    return (
+      <span className={cx('download-cta', className)}>
+        <span className={cx('btn', `btn--${variant}`, size === 'lg' && 'btn--lg', 'is-disabled')} aria-disabled="true">
+          <AlertCircle size={18} aria-hidden="true" /> Download unavailable
+        </span>
+        <span className="download-cta__unavailable">The verified Mac installer has not been published yet.</span>
+      </span>
+    )
+  }
+
   return (
     <span className={cx('download-cta', className)}>
       <a
-        href={DOWNLOAD.url || '/download'}
-        download={DOWNLOAD.url ? DOWNLOAD.fileName : undefined}
+        href={DOWNLOAD.url}
+        download={DOWNLOAD.fileName}
         className={cx('btn', `btn--${variant}`, size === 'lg' && 'btn--lg', state !== 'idle' && `is-${state}`)}
         onClick={onClick}
         aria-describedby={state === 'error' ? 'download-error' : undefined}

@@ -6,8 +6,8 @@
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:1420",
-    "beforeDevCommand": "npm run dev",
-    "beforeBuildCommand": "npm run build"
+    "beforeDevCommand": "npm run desktop:preview",
+    "beforeBuildCommand": "npm run desktop:build"
   },
   "app": {
     "windows": [
@@ -47,6 +47,7 @@
     },
     "macOS": {
       "signingIdentity": "-",
+      "hardenedRuntime": true,
       "minimumSystemVersion": "11.0",
       "entitlements": "Entitlements.plist",
       "files": {

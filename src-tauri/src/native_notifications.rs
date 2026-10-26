@@ -49,7 +49,7 @@ use tauri::{AppHandle, Emitter, Manager};
 /// Routes a notification click may navigate to. Anything else (unknown,
 /// malformed, or absent) falls back to `FALLBACK_ROUTE` — see
 /// `validate_route`. Keep in sync with the routes declared in `src/App.tsx`.
-const ALLOWED_ROUTES: &[&str] = &["/dashboard", "/smart-clean", "/system-junk", "/schedule", "/settings", "/storage"];
+const ALLOWED_ROUTES: &[&str] = &["/dashboard", "/smart-clean", "/system-junk", "/schedule", "/settings", "/storage", "/performance"];
 const FALLBACK_ROUTE: &str = "/dashboard";
 const USER_INFO_ROUTE_KEY: &str = "route";
 /// Event name the frontend listens for when a click arrives while the app's

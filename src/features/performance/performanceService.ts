@@ -1,7 +1,7 @@
 import { invoke } from '@tauri-apps/api/core'
 import { isTauriRuntime } from '@/services/environment'
 import { getAppIcon } from '@/services/tauri/bridge'
-import type { BatteryInfo, LiveMetrics, ProcessDetails, ProcessList, SystemInfo, UpdateStatus } from './types'
+import type { BatteryInfo, LiveMetrics, ProcessDetails, ProcessList, QuitResult, SystemInfo, UpdateStatus } from './types'
 import { mockPerformanceService } from './mockPerformanceService'
 
 /**
@@ -19,6 +19,12 @@ export interface PerformanceService {
   getUpdateStatus(): Promise<UpdateStatus>
   openSoftwareUpdate(): Promise<void>
   getAppIcon(bundlePath: string): Promise<string | null>
+  /** Graceful quit — lets the app handle unsaved work (or show its own dialog). */
+  quitProcess(pid: number, startedAtMs: number | null): Promise<QuitResult>
+  /** Force quit — only ever called after the user confirms the warning. */
+  forceQuitProcess(pid: number, startedAtMs: number | null): Promise<QuitResult>
+  /** Native notification for the resource-alert engine (see alerts.ts). Returns whether it was submitted. */
+  sendAlert(title: string, body: string, route: string): Promise<boolean>
 }
 
 const tauriPerformanceService: PerformanceService = {
@@ -30,6 +36,9 @@ const tauriPerformanceService: PerformanceService = {
   getUpdateStatus: () => invoke('perf_update_status'),
   openSoftwareUpdate: () => invoke('perf_open_software_update'),
   getAppIcon: (bundlePath) => getAppIcon(bundlePath),
+  quitProcess: (pid, startedAtMs) => invoke('perf_quit_process', { pid, startedAtMs: startedAtMs ?? 0 }),
+  forceQuitProcess: (pid, startedAtMs) => invoke('perf_force_quit_process', { pid, startedAtMs: startedAtMs ?? 0 }),
+  sendAlert: (title, body, route) => invoke('perf_send_alert', { title, body, route }),
 }
 
 export const performanceService: PerformanceService = isTauriRuntime() ? tauriPerformanceService : mockPerformanceService

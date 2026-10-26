@@ -1,23 +1,26 @@
 import { useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowRight, Bell, CalendarClock, ChevronRight, Code2, ExternalLink, FolderX, HardDrive, Languages, Lock, Monitor, Moon, Plus, Power, RefreshCw, RotateCcw, Settings as SettingsIcon, ShieldCheck, Sun, Trash2, X, type LucideIcon } from 'lucide-react'
+import { AlertTriangle, ArrowRight, Bell, CalendarClock, ChevronRight, Code2, Cpu, ExternalLink, FolderX, Gauge, HardDrive, KeyRound, Languages, Lock, MemoryStick, Monitor, Moon, Plus, Power, RefreshCw, RotateCcw, Settings as SettingsIcon, ShieldCheck, Sparkles, Sun, Trash2, WifiOff, X, type LucideIcon } from 'lucide-react'
 import { clsx } from 'clsx'
 import { PageHeader } from '@/components/layout/PageHeader'
 import { Card, Reveal } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Switch } from '@/components/ui/Switch'
+import { Segmented } from '@/components/ui/Segmented'
 import { IconTile } from '@/components/ui/IconTile'
 import { Logo } from '@/components/ui/Logo'
 import { Modal } from '@/components/ui/Modal'
 import { useAppStore } from '@/store/useAppStore'
 import { tildePath } from '@/lib/format'
-import { formatDateLocalized } from '@/i18n/format'
-import type { ThemePreference } from '@/types'
+import { formatDateLocalized, formatPercentValue, formatUnit } from '@/i18n/format'
+import type { PerformanceAlertSettings, ThemePreference } from '@/types'
 import { useTranslation } from 'react-i18next'
-import { languageInfo } from '@/i18n'
+import { languageInfo, tDynamic } from '@/i18n'
 import { LanguagePicker } from '@/components/settings/LanguagePicker'
 import { useSystemLanguage } from '@/i18n/useSystemLanguage'
+import { useLicenseStore } from '@/features/license/useLicenseStore'
+import { formatRemaining } from '@/features/license/format'
 
 const SITE = 'https://macbookcleaner.app'
 
@@ -40,6 +43,42 @@ function Group({ title, children, delay = 0 }: { title: string; children: ReactN
       <p className="mb-2 px-1 text-[11px] font-bold tracking-[0.08em] text-ink-3 uppercase">{title}</p>
       <Card className="divide-y divide-line">{children}</Card>
     </Reveal>
+  )
+}
+
+function memoryLabel(mb: number): string {
+  return mb >= 1024 ? formatUnit(mb / 1024, 'gigabyte', 0) : formatUnit(mb, 'megabyte', 0)
+}
+
+/** A disableable row of preset choices for one numeric alert threshold. */
+function ThresholdPicker({ enabled, value, options, format, onToggle, onPick, icon, color, title, subtitle }: {
+  enabled: boolean
+  value: number
+  options: number[]
+  format: (n: number) => string
+  onToggle: (on: boolean) => void
+  onPick: (n: number) => void
+  icon: LucideIcon
+  color: string
+  title: string
+  subtitle: string
+}) {
+  return (
+    <div>
+      <Row icon={icon} color={color} title={title} subtitle={subtitle}>
+        <Switch checked={enabled} onChange={onToggle} label={title} />
+      </Row>
+      {enabled && (
+        <div className="flex flex-wrap gap-2 px-5 pb-4">
+          <Segmented
+            size="sm"
+            value={String(value)}
+            onChange={(v) => onPick(Number(v))}
+            options={options.map((n) => ({ value: String(n), label: format(n) }))}
+          />
+        </div>
+      )}
+    </div>
   )
 }
 
@@ -88,11 +127,42 @@ export function SettingsPage() {
   const refreshPermissions = useAppStore((s) => s.refreshPermissions)
   const openNotificationSettings = useAppStore((s) => s.openNotificationSettings)
   const resetAllData = useAppStore((s) => s.resetAllData)
+  const pushToast = useAppStore((s) => s.pushToast)
   const [newExclusion, setNewExclusion] = useState('')
   const [resetOpen, setResetOpen] = useState(false)
+  const license = useLicenseStore((s) => s.state)
+  const licenseActivating = useLicenseStore((s) => s.activating)
+  const licenseDeactivating = useLicenseStore((s) => s.deactivating)
+  const licenseRefreshing = useLicenseStore((s) => s.refreshing)
+  const activateLicense = useLicenseStore((s) => s.activate)
+  const deactivateLicense = useLicenseStore((s) => s.deactivate)
+  const refreshLicense = useLicenseStore((s) => s.refresh)
+  const openPurchasePage = useLicenseStore((s) => s.openPurchasePage)
+  const [licenseKeyInput, setLicenseKeyInput] = useState('')
+  const [licenseError, setLicenseError] = useState<string | null>(null)
+  const [deactivateOpen, setDeactivateOpen] = useState(false)
 
   if (!settings) return null
   const fda = permissions.find((p) => p.category === 'full-disk-access')
+  const alerts = settings.performanceAlerts
+  const patchAlerts = (patch: Partial<PerformanceAlertSettings>) => void updateSettings({ performanceAlerts: { ...alerts, ...patch } })
+
+  const onActivateLicense = async () => {
+    setLicenseError(null)
+    const result = await activateLicense(licenseKeyInput)
+    if (result.ok) {
+      setLicenseKeyInput('')
+      pushToast(t('license.toasts.activateSuccess'), 'success')
+    } else {
+      setLicenseError(result.error)
+    }
+  }
+
+  const onDeactivateLicense = async () => {
+    setDeactivateOpen(false)
+    const result = await deactivateLicense()
+    pushToast(result.ok ? t('license.toasts.deactivateSuccess') : t('license.toasts.deactivateFailed', { error: result.error }), result.ok ? 'success' : 'warning')
+  }
 
   const addExclusion = () => {
     const path = newExclusion.trim().replace(/\/+$/, '')
@@ -180,6 +250,131 @@ export function SettingsPage() {
           <Switch checked={settings.developerCleanupEnabled} onChange={(on) => updateSettings({ developerCleanupEnabled: on })} label={t('settings.developer')} />
         </Row>
       </Group>
+
+      <Group title={t('settings.performanceAlerts.title')} delay={0.1}>
+        <Row icon={Gauge} color="#f43f5e" title={t('settings.performanceAlerts.enabled')} subtitle={t('settings.performanceAlerts.enabledSubtitle')}>
+          <Switch
+            checked={settings.performanceAlerts.enabled}
+            onChange={(on) => patchAlerts({ enabled: on })}
+            label={t('settings.performanceAlerts.enabled')}
+          />
+        </Row>
+        {settings.performanceAlerts.enabled && (
+          <>
+            <ThresholdPicker
+              icon={MemoryStick}
+              color="#5b6cff"
+              title={t('settings.performanceAlerts.highMemory')}
+              subtitle={t('settings.performanceAlerts.highMemorySubtitle')}
+              enabled={alerts.highMemoryEnabled}
+              value={alerts.highMemoryThresholdMb}
+              options={[512, 1024, 2048, 4096]}
+              format={memoryLabel}
+              onToggle={(on) => patchAlerts({ highMemoryEnabled: on })}
+              onPick={(highMemoryThresholdMb) => patchAlerts({ highMemoryThresholdMb })}
+            />
+            <ThresholdPicker
+              icon={Gauge}
+              color="#19c39a"
+              title={t('settings.performanceAlerts.highMemoryPercent')}
+              subtitle={t('settings.performanceAlerts.highMemoryPercentSubtitle')}
+              enabled={alerts.highMemoryPercentEnabled}
+              value={alerts.highMemoryPercentThreshold}
+              options={[10, 20, 30, 50]}
+              format={(n) => formatPercentValue(n, 0)}
+              onToggle={(on) => patchAlerts({ highMemoryPercentEnabled: on })}
+              onPick={(highMemoryPercentThreshold) => patchAlerts({ highMemoryPercentThreshold })}
+            />
+            <ThresholdPicker
+              icon={Cpu}
+              color="#f5b400"
+              title={t('settings.performanceAlerts.backgroundCpu')}
+              subtitle={t('settings.performanceAlerts.backgroundCpuSubtitle')}
+              enabled={alerts.backgroundCpuEnabled}
+              value={alerts.backgroundCpuThreshold}
+              options={[30, 50, 70, 90]}
+              format={(n) => formatPercentValue(n, 0)}
+              onToggle={(on) => patchAlerts({ backgroundCpuEnabled: on })}
+              onPick={(backgroundCpuThreshold) => patchAlerts({ backgroundCpuThreshold })}
+            />
+            <Row icon={AlertTriangle} color="#e5484d" title={t('settings.performanceAlerts.criticalPressure')} subtitle={t('settings.performanceAlerts.criticalPressureSubtitle')}>
+              <Switch
+                checked={alerts.criticalPressureEnabled}
+                onChange={(on) => patchAlerts({ criticalPressureEnabled: on })}
+                label={t('settings.performanceAlerts.criticalPressure')}
+              />
+            </Row>
+          </>
+        )}
+      </Group>
+
+      {license && (
+        <Group title={t('settings.license.title')} delay={0.11}>
+          <Row
+            icon={license.status === 'licensed' ? ShieldCheck : license.status === 'trial' ? Sparkles : license.status === 'licensed_grace_expired' ? WifiOff : AlertTriangle}
+            color={license.status === 'licensed' ? '#19c39a' : license.status === 'trial' ? '#5b6cff' : '#e5484d'}
+            title={tDynamic(`settings.license.status.${license.status}`)}
+            subtitle={
+              license.status === 'trial'
+                ? formatRemaining(license.remainingMs)
+                : license.licenseKeyMasked
+                  ? t('settings.license.keySubtitle', { key: license.licenseKeyMasked })
+                  : undefined
+            }
+          />
+          {license.status !== 'licensed' && (
+            <div className="space-y-2 px-5 pb-4">
+              <div className="flex gap-2">
+                <div className="flex h-9.5 flex-1 items-center gap-2 rounded-xl bg-surface-2 px-3">
+                  <KeyRound size={14} className="text-ink-3" />
+                  <input
+                    value={licenseKeyInput}
+                    onChange={(e) => setLicenseKeyInput(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' && !licenseActivating && licenseKeyInput.trim() && void onActivateLicense()}
+                    placeholder={t('license.paywall.activatePlaceholder')}
+                    aria-label={t('license.paywall.activateLabel')}
+                    className="selectable flex-1 bg-transparent text-[13px] text-ink outline-none placeholder:text-ink-3"
+                  />
+                </div>
+                <Button variant="secondary" disabled={licenseActivating || !licenseKeyInput.trim()} onClick={() => void onActivateLicense()}>
+                  {licenseActivating ? t('license.paywall.activating') : t('license.paywall.activateButton')}
+                </Button>
+                <Button variant="primary" onClick={() => void openPurchasePage()}>
+                  <Sparkles size={14} /> {t('settings.license.buyButton')}
+                </Button>
+              </div>
+              {licenseError && <p className="text-[12px] text-danger">{licenseError}</p>}
+            </div>
+          )}
+          {license.licenseKeyMasked && (
+            <Row icon={RefreshCw} color="#5b6cff" title={t('settings.license.manage')} subtitle={t('settings.license.lastChecked', { time: license.lastValidatedAtMs ? formatDateLocalized(new Date(license.lastValidatedAtMs), { dateStyle: 'medium', timeStyle: 'short' } as Intl.DateTimeFormatOptions) : '—' })}>
+              <div className="flex gap-1.5">
+                <Button size="sm" variant="ghost" disabled={licenseRefreshing} onClick={() => void refreshLicense()} aria-label={t('settings.license.refreshButton')}>
+                  <RefreshCw size={13} className={clsx(licenseRefreshing && 'animate-spin')} />
+                </Button>
+                <Button size="sm" variant="secondary" disabled={licenseDeactivating} onClick={() => setDeactivateOpen(true)}>
+                  {t('settings.license.deactivateButton')}
+                </Button>
+              </div>
+            </Row>
+          )}
+        </Group>
+      )}
+
+      <Modal open={deactivateOpen} onClose={() => setDeactivateOpen(false)} width={420}>
+        <div className="p-7">
+          <h2 className="font-display text-[18px] font-bold text-ink">{t('settings.license.deactivateConfirmTitle')}</h2>
+          <p className="mt-2 text-[13px] leading-relaxed text-ink-2">{t('settings.license.deactivateConfirmBody')}</p>
+          <div className="mt-6 flex justify-end gap-2">
+            <Button variant="ghost" onClick={() => setDeactivateOpen(false)}>
+              {t('common.cancel')}
+            </Button>
+            <Button variant="danger" onClick={() => void onDeactivateLicense()}>
+              {t('settings.license.deactivateButton')}
+            </Button>
+          </div>
+        </div>
+      </Modal>
 
       <Group title={t('settings.exclusions')} delay={0.12}>
         <div className="px-5 py-4">

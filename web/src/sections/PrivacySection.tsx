@@ -5,7 +5,7 @@ import { Reveal } from '@/components/Reveal'
 const POINTS = [
   { icon: HardDrive, title: 'Scanned on your Mac', body: 'Every scan and every cleanup runs locally. There’s no cloud service involved.' },
   { icon: CloudOff, title: 'Nothing is uploaded', body: 'No analytics, telemetry or crash reporting. Your files, running apps, battery and Mac details never leave your Mac.' },
-  { icon: UserX, title: 'No account', body: 'No sign-up, no email, no license key. Download it and go.' },
+  { icon: UserX, title: 'No account needed to try it', body: 'No sign-up, no email, no credit card — download it and your free trial starts. Buying a lifetime license later only needs the key from your purchase, never a new account.' },
   { icon: FileLock2, title: 'Contents stay unread', body: 'The app looks at sizes and dates. File contents are only read to confirm two files are exact duplicates.' },
 ]
 

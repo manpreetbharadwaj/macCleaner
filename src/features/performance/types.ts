@@ -138,3 +138,7 @@ export interface HistoryPoint {
   cpu: number | null
   memory: number | null
 }
+
+export interface QuitResult {
+  status: 'terminated' | 'still_running' | 'not_found' | 'permission_denied'
+}

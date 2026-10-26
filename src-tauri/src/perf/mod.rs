@@ -7,11 +7,12 @@ pub mod battery;
 pub mod dto;
 pub mod live;
 pub mod processes;
+pub mod quit;
 pub mod sysctl;
 pub mod system_info;
 pub mod updates;
 
-use dto::{BatteryDto, LiveMetricsDto, ProcessDetailsDto, ProcessListDto, SystemInfoDto, UpdateStatusDto};
+use dto::{BatteryDto, LiveMetricsDto, ProcessDetailsDto, ProcessListDto, QuitResultDto, SystemInfoDto, UpdateStatusDto};
 
 // All commands are async + spawn_blocking: Tauri runs synchronous commands
 // on the main thread, and none of this should ever stall the UI.
@@ -49,6 +50,28 @@ pub async fn perf_battery(refresh_health: bool) -> Result<Option<BatteryDto>, St
 #[tauri::command]
 pub async fn perf_update_status() -> Result<UpdateStatusDto, String> {
     blocking(updates::status).await
+}
+
+/// `started_at_ms` is whatever the frontend's process row last showed (0 if
+/// unknown) — used to refuse acting on a `pid` the kernel has since reused
+/// for a different process. See quit.rs for the full safety model.
+#[tauri::command]
+pub async fn perf_quit_process(pid: i32, started_at_ms: u64) -> Result<QuitResultDto, String> {
+    blocking(move || quit::quit(pid, started_at_ms, false)).await?
+}
+
+#[tauri::command]
+pub async fn perf_force_quit_process(pid: i32, started_at_ms: u64) -> Result<QuitResultDto, String> {
+    blocking(move || quit::quit(pid, started_at_ms, true)).await?
+}
+
+/// Lets the frontend's resource-alert engine (sustained high memory/CPU,
+/// critical memory pressure — see usePerformanceStore's alert evaluation)
+/// post a real native notification without duplicating native_notifications'
+/// UNUserNotificationCenter plumbing on the frontend side.
+#[tauri::command]
+pub fn perf_send_alert(title: String, body: String, route: String) -> bool {
+    crate::native_notifications::send(&title, &body, &route)
 }
 
 /// Opens System Settings → General → Software Update. Never installs anything itself.

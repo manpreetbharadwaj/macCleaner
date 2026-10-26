@@ -508,7 +508,17 @@
       "linkBlocked": "Bu bağlantı açılamıyor.",
       "browserFailed": "Varsayılan tarayıcınız açılamadı.",
       "noAppSupport": "MacBook Cleaner kendi veri klasörüne erişemedi.",
-      "invalidTime": "Bu saat geçerli değil."
+      "invalidTime": "Bu saat geçerli değil.",
+      "selfQuit": "MacBook Cleaner kendini kapatamaz.",
+      "protectedProcess": "Bu, korumalı bir sistem işlemidir ve kapatılamaz.",
+      "notOwnProcess": "Yalnızca kendi işlemleriniz kapatılabilir.",
+      "quitRefused": "macOS bu uygulamayı kapatmayı reddetti.",
+      "licenseKeyRequired": "Önce bir lisans anahtarı girin.",
+      "licenseNotActive": "Bu lisans anahtarı henüz etkin değil. Az önce satın aldıysanız, kısa süre içinde e-postanızı kontrol edip tekrar deneyin.",
+      "licenseNotFound": "Bu lisans anahtarı bulunamadı. Kontrol edip tekrar deneyin.",
+      "licenseLimitReached": "Bu lisans anahtarı zaten başka bir Mac'te etkinleştirilmiş. Önce orada devre dışı bırakın, sonra burada tekrar deneyin.",
+      "licenseNetworkError": "Lisans sunucusuna erişilemedi. İnternet bağlantınızı kontrol edip tekrar deneyin.",
+      "licenseServerError": "Lisans sunucusu beklenmeyen bir yanıt döndürdü. Kısa süre sonra tekrar deneyin."
     },
     "generic": "Bir şeyler ters gitti."
   },
@@ -610,7 +620,38 @@
     "showWelcome": "Hoş Geldiniz ekranını tekrar göster",
     "resetAll": "Tüm verileri sıfırla",
     "resetTitle": "MacBook Cleaner sıfırlansın mı?",
-    "resetBody": "Bu işlem ayarlarınızı, istisnalarınızı, zamanlamayı ve temizlik geçmişini siler ve zamanlanmış temizliği kapatır. Dosyalarınıza ve Çöp Sepeti’ne dokunulmaz."
+    "resetBody": "Bu işlem ayarlarınızı, istisnalarınızı, zamanlamayı ve temizlik geçmişini siler ve zamanlanmış temizliği kapatır. Dosyalarınıza ve Çöp Sepeti’ne dokunulmaz.",
+    "performanceAlerts": {
+      "title": "Performans uyarıları",
+      "enabled": "Kaynak uyarıları",
+      "enabledSubtitle": "Bir uygulamanın kaynak kullanımı yüksek kaldığında yerel bildirimler gösterilir. Bunu kapatmak aşağıdaki tüm uyarıları da devre dışı bırakır.",
+      "highMemory": "Yüksek bellek kullanımı",
+      "highMemorySubtitle": "Tek bir uygulama bu miktardan fazla belleği sürekli kullandığında uyar.",
+      "highMemoryPercent": "Yüksek bellek payı",
+      "highMemoryPercentSubtitle": "Tek bir uygulama, Mac'inizin toplam belleğinin bu payından fazlasını sürekli kullandığında uyar.",
+      "backgroundCpu": "Arka plan CPU kullanımı",
+      "backgroundCpuSubtitle": "Arka plandaki bir uygulama (Dock simgesi olmayan) bu CPU kullanımından fazlasını sürekli kullandığında uyar.",
+      "criticalPressure": "Kritik bellek baskısı",
+      "criticalPressureSubtitle": "macOS kritik bellek baskısı bildirdiğinde uyar."
+    },
+    "license": {
+      "title": "Lisans",
+      "status": {
+        "trial": "Ücretsiz deneme",
+        "trial_expired": "Deneme süresi doldu",
+        "licensed": "Lisanslı",
+        "licensed_invalid": "Lisans geçersiz",
+        "licensed_grace_expired": "Lisans doğrulanamadı"
+      },
+      "keySubtitle": "Lisans anahtarı {{key}}",
+      "buyButton": "Satın Al — 14,99$",
+      "manage": "Lisansı yönet",
+      "lastChecked": "Son kontrol: {{time}}",
+      "refreshButton": "Lisans durumunu yenile",
+      "deactivateButton": "Bu Mac'i devre dışı bırak",
+      "deactivateConfirmTitle": "Bu Mac devre dışı bırakılsın mı?",
+      "deactivateConfirmBody": "Bu, lisansınızı serbest bırakır, böylece başka bir Mac'te etkinleştirebilirsiniz. Daha sonra burada istediğiniz zaman yeniden etkinleştirebilirsiniz."
+    }
   },
   "scheduleScreen": {
     "subtitle": "Gereksiz dağınıklığı otomatik olarak kontrol altında tutun.",
@@ -934,7 +975,19 @@
       "systemOwner": "Sistem",
       "version": "Sürüm",
       "executable": "Yürütülebilir dosya",
-      "quitHint": "Bir uygulamadan çıkmak için uygulamanın kendi Çık komutunu (⌘Q) kullanın veya Dock’ta sağ tıklayın; böylece önce çalışmanızı kaydedebilir."
+      "quitHint": "\"Kapat\", uygulamadan normal şekilde kapanmasını ister — kaydedilmemiş çalışmayı kaydetmeyi hâlâ isteyebilir. \"Zorla kapat\" bunu atlar ve yalnızca uygulama yanıt vermiyorsa kullanılmalıdır.",
+      "quitAction": "Kapat",
+      "forceQuitAction": "Zorla kapat",
+      "quitting": "Kapatılıyor…",
+      "quitUnavailableSelf": "MacBook Cleaner kendini kapatamaz.",
+      "quitUnavailableSystem": "Sistem işlemleri buradan kapatılamaz.",
+      "forceQuitConfirmTitle": "{{name}} zorla kapatılsın mı?",
+      "forceQuitConfirmBody": "Bu uygulamadaki kaydedilmemiş çalışmalar kaybolur ve bu geri alınamaz.",
+      "quitSucceeded": "{{name}} kapatıldı.",
+      "forceQuitSucceeded": "{{name}} zorla kapatıldı.",
+      "quitStillRunning": "{{name}} hâlâ kapanıyor olabilir — uygulama kaydedilmemiş değişiklikler için bir pencereyi bekliyor olabilir.",
+      "quitAlreadyGone": "{{name}} zaten kapanmıştı.",
+      "quitPermissionDenied": "macOS, {{name}}'in kapatılmasına izin vermedi."
     },
     "mac": {
       "hardware": "Donanım",
@@ -968,6 +1021,70 @@
       "runScan": "Tarama yap",
       "openCleaner": "Depolama temizliğini aç",
       "breakdown": "Depolama dağılımı"
+    },
+    "alerts": {
+      "notifications": {
+        "highMemoryTitle": "Yüksek Bellek Kullanımı Algılandı",
+        "highMemoryBody": "{{app}} şu anda {{size}} RAM kullanıyor. Uygulamaların kaynak kullanımını incelemek için MacBook Cleaner'ı açın.",
+        "backgroundCpuTitle": "Arka Planda Yüksek CPU Kullanımı",
+        "backgroundCpuBody": "{{app}} arka planda %{{percent}} CPU kullanıyor. Uygulamaların kaynak kullanımını incelemek için MacBook Cleaner'ı açın.",
+        "pressureTitle": "Kritik Bellek Baskısı",
+        "pressureBody": "Mac'inizin belleği ağır baskı altında. Birkaç uygulamayı kapatmak yardımcı olabilir. Uygulamaların kaynak kullanımını incelemek için MacBook Cleaner'ı açın."
+      }
+    },
+    "background": {
+      "title": "Arka Plan Kaynak Kullanımı",
+      "subtitle": "Şu anda en çok CPU ve bellek kullanan arka plan uygulamaları.",
+      "none": "Hiçbir arka plan uygulaması dikkat çekici kaynak kullanmıyor.",
+      "highUsage": "Yüksek kullanım",
+      "runningFor": "{{duration}} süredir çalışıyor"
+    },
+    "recommendations": {
+      "title": "Öneriler",
+      "subtitle": "Şu anda ölçülenlere dayanır — garanti değildir.",
+      "criticalPressure": "Mac'inizin bellek baskısı kritik. Birkaç uygulamayı kapatmak belleği boşaltmaya yardımcı olabilir.",
+      "warningPressure": "Bellek baskısı yüksek. Daha az uygulama açık tutmak yardımcı olabilir.",
+      "highMemory": "{{app}}, {{size}} bellek kullanıyor.",
+      "backgroundCpu": "{{count}} arka plan uygulaması önemli miktarda CPU kullanıyor.",
+      "swap": "Takas (swap) kullanımı yüksek (kullanılabilir takasın %{{percent}}'i)."
+    }
+  },
+  "license": {
+    "trialBadge": "Deneme: {{time}}",
+    "remaining": {
+      "lessThanAMinute": "Bir dakikadan az kaldı",
+      "minutes_one": "{{count}} dakika kaldı",
+      "minutes_other": "{{count}} dakika kaldı",
+      "hours_one": "{{count}} saat kaldı",
+      "hours_other": "{{count}} saat kaldı",
+      "days_one": "{{count}} gün kaldı",
+      "days_other": "{{count}} gün kaldı"
+    },
+    "paywall": {
+      "titles": {
+        "trialExpired": "Deneme süreniz sona erdi",
+        "licensedInvalid": "Lisansınız artık geçerli değil",
+        "licensedGraceExpired": "Lisans doğrulanamadı"
+      },
+      "bodies": {
+        "trialExpired": "48 saatlik ücretsiz deneme süreniz sona erdi. MacBook Cleaner'ı kullanmaya devam etmek için ömür boyu lisans satın alın veya zaten bir lisans anahtarınız varsa etkinleştirin.",
+        "licensedInvalid": "Dodo Payments bu lisans anahtarının artık etkin olmadığını bildirdi — para iadesi alınmış veya devre dışı bırakılmış olabilir. Başka bir anahtar etkinleştirin veya yeni bir ömür boyu lisans satın alın.",
+        "licensedGraceExpired": "MacBook Cleaner, lisansınızın hâlâ geçerli olduğunu doğrulayamadı. İnternete bağlanıp yenileyin veya anahtarınızı yeniden etkinleştirin."
+      },
+      "tamperNotice": "Deneme verileriniz doğrulanamadığından süresi dolmuş olarak kabul ediliyor.",
+      "refreshButton": "Lisans durumunu yenile",
+      "refreshing": "Kontrol ediliyor…",
+      "buyButton": "Ömür Boyu Lisans Satın Al — 14,99$",
+      "orDivider": "veya",
+      "activateLabel": "Zaten satın aldınız mı? Lisans anahtarınızı girin",
+      "activatePlaceholder": "PRO-AAAA-BBBB-CCCC-DDDD",
+      "activateButton": "Etkinleştir",
+      "activating": "Etkinleştiriliyor…"
+    },
+    "toasts": {
+      "activateSuccess": "Lisans etkinleştirildi — desteğiniz için teşekkürler!",
+      "deactivateSuccess": "Lisans devre dışı bırakıldı. Artık başka bir Mac'te etkinleştirebilirsiniz.",
+      "deactivateFailed": "Devre dışı bırakılamadı: {{error}}"
     }
   },
   "native": {

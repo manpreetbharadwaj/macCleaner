@@ -57,7 +57,7 @@ interface InstallerMeta {
   notarized?: boolean
 }
 const installer = installerJson as InstallerMeta
-const archs = installer.architectures ?? ['arm64']
+const archs = installer.architectures ?? []
 
 export const APP = {
   /** Read from src-tauri/tauri.conf.json at build time. */
@@ -68,6 +68,8 @@ export const APP = {
   minMacOSName: macOSName(__APP_MIN_MACOS__),
   /** Architectures inside the published DMG (from `lipo`). */
   architectures: [...(archs.includes('arm64') ? ['apple-silicon'] : []), ...(archs.includes('x86_64') ? ['intel'] : [])] as Array<'apple-silicon' | 'intel'>,
+  /** True only when architecture metadata came from inspecting a local DMG. */
+  installerVerified: installer.available && archs.length > 0,
   /**
    * Whether the published app carries a stapled Apple notarization ticket
    * (from `stapler validate`). While false, the Download page and FAQ explain
@@ -97,8 +99,36 @@ export const DOWNLOAD = {
 
 export const isDownloadAvailable = DOWNLOAD.url.length > 0
 
+/**
+ * Lifetime license purchase, via Dodo Payments. One-time payment, no
+ * subscription — see src-tauri/src/license/ for the desktop app's matching
+ * trial/activation system.
+ *
+ * SANDBOX LINK BY DEFAULT — `checkoutUrl` falls back to Dodo's **Test Mode**
+ * payment link (`test.checkout.dodopayments.com`), the same sandbox product
+ * the desktop app's own `dodo_test_mode` Cargo feature points at. Override
+ * with VITE_DODO_CHECKOUT_URL (the live `checkout.dodopayments.com/buy/...`
+ * link) before this site is actually launched — do not ship the sandbox
+ * link to real customers.
+ */
+export const PURCHASE = {
+  priceDisplay: '$14.99',
+  /**
+   * Honest qualifier for every place `priceDisplay` is shown: Dodo Payments
+   * (the merchant of record) converts to the customer's local currency via
+   * Adaptive Currency and may add tax/VAT depending on jurisdiction — the
+   * $14.99 USD list price is not necessarily the exact final charge for
+   * every customer.
+   */
+  priceNote: 'USD list price. Shown in your local currency at checkout; tax may apply depending on your location.',
+  trialDays: 2,
+  checkoutUrl: clean(env.VITE_DODO_CHECKOUT_URL) || 'https://test.checkout.dodopayments.com/buy/pdt_0NqQ5ZKXDNgbggDrQaV2d?quantity=1',
+  isSandbox: !clean(env.VITE_DODO_CHECKOUT_URL),
+} as const
+
 export function architectureLabel(): string {
   const a = APP.architectures
+  if (a.length === 0) return 'Architecture pending verified build'
   if (a.includes('apple-silicon') && a.includes('intel')) return 'Apple silicon & Intel'
   return a.includes('intel') ? 'Intel' : 'Apple silicon'
 }

@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { FolderOpen, X } from 'lucide-react'
+import { FolderOpen, LogOut, OctagonX, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { Modal } from '@/components/ui/Modal'
 import { useAppStore } from '@/store/useAppStore'
 import { performanceService } from '../performanceService'
 import { usePerformanceStore } from '../usePerformanceStore'
@@ -11,6 +12,7 @@ import { InfoTip, ProcessIcon, StatusChip } from './primitives'
 import { useTranslation } from 'react-i18next'
 import { tDynamic } from '@/i18n'
 import { formatPercentValue } from '@/i18n/format'
+import { translateNativeMessage } from '@/i18n/nativeText'
 
 function Stat({ label, value, tip }: { label: string; value: ReactNode; tip?: string }) {
   return (
@@ -26,20 +28,42 @@ function Stat({ label, value, tip }: { label: string; value: ReactNode; tip?: st
 
 
 /**
- * Side panel for one app/process. Read-only on purpose: there's no Force
- * Quit here — quitting is left to the app itself or to the Dock, where
- * macOS can warn about unsaved work.
+ * Side panel for one app/process. Quit and Force Quit both go through
+ * usePerformanceStore.quitProcess, which re-verifies the process's identity
+ * in Rust before acting (see src-tauri/src/perf/quit.rs) — this panel never
+ * assumes the `pid` it last saw is still the same process.
  */
 export function ProcessDetails({ id, onClose }: { id: string | null; onClose: () => void }) {
   const { t, i18n } = useTranslation()
   const slide = i18n.dir() === 'rtl' ? -40 : 40
   const entry = usePerformanceStore((s) => (id ? (s.processes?.entries.find((e) => e.id === id) ?? null) : null))
   const sampledAt = usePerformanceStore((s) => s.processes?.sampledAtMs ?? 0)
+  const quitProcess = usePerformanceStore((s) => s.quitProcess)
+  const pending = usePerformanceStore((s) => (entry ? s.pendingQuits[entry.pid] : undefined))
   const revealInFinder = useAppStore((s) => s.revealInFinder)
+  const pushToast = useAppStore((s) => s.pushToast)
   const [details, setDetails] = useState<Details | null>(null)
   const [lastName, setLastName] = useState('')
+  const [confirmForceQuit, setConfirmForceQuit] = useState(false)
   const closeRef = useRef<HTMLButtonElement>(null)
   const pid = entry?.pid
+  const canQuit = !!entry && !entry.isSelf && entry.kind !== 'system'
+
+  const runQuit = async (force: boolean) => {
+    if (!entry) return
+    const name = entry.name
+    setConfirmForceQuit(false)
+    try {
+      const result = await quitProcess(entry.pid, entry.startedAtMs, force)
+      if (result.status === 'terminated') pushToast(t(force ? 'performance.details.forceQuitSucceeded' : 'performance.details.quitSucceeded', { name }), 'success')
+      else if (result.status === 'still_running') pushToast(t('performance.details.quitStillRunning', { name }), 'default')
+      else if (result.status === 'not_found') pushToast(t('performance.details.quitAlreadyGone', { name }), 'default')
+      else pushToast(t('performance.details.quitPermissionDenied', { name }), 'warning')
+    } catch (err) {
+      const message = typeof err === 'string' ? err : err instanceof Error ? err.message : String(err)
+      pushToast(translateNativeMessage(message), 'warning')
+    }
+  }
 
   useEffect(() => {
     if (!id) return
@@ -140,10 +164,43 @@ export function ProcessDetails({ id, onClose }: { id: string | null; onClose: ()
                     <FolderOpen size={14} /> {t('common.showInFinder')}
                   </Button>
                 )}
-                <p className="text-[11.5px] leading-relaxed text-ink-3">{t('performance.details.quitHint')}</p>
+
+                {canQuit ? (
+                  <div className="space-y-2 border-t border-line pt-4">
+                    <div className="flex gap-2">
+                      <Button variant="secondary" size="sm" disabled={!!pending} onClick={() => void runQuit(false)}>
+                        <LogOut size={14} /> {pending === 'quit' ? t('performance.details.quitting') : t('performance.details.quitAction')}
+                      </Button>
+                      <Button variant="danger" size="sm" disabled={!!pending} onClick={() => setConfirmForceQuit(true)}>
+                        <OctagonX size={14} /> {pending === 'force' ? t('performance.details.quitting') : t('performance.details.forceQuitAction')}
+                      </Button>
+                    </div>
+                    <p className="text-[11.5px] leading-relaxed text-ink-3">{t('performance.details.quitHint')}</p>
+                  </div>
+                ) : (
+                  <p className="text-[11.5px] leading-relaxed text-ink-3">{entry.isSelf ? t('performance.details.quitUnavailableSelf') : t('performance.details.quitUnavailableSystem')}</p>
+                )}
               </div>
             )}
           </motion.aside>
+
+          <Modal open={confirmForceQuit} onClose={() => setConfirmForceQuit(false)} width={420}>
+            <div className="p-6">
+              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-danger-soft text-danger">
+                <OctagonX size={20} />
+              </div>
+              <h2 className="font-display text-[18px] font-bold tracking-[-0.02em] text-ink">{t('performance.details.forceQuitConfirmTitle', { name: entry?.name ?? lastName })}</h2>
+              <p className="mt-2 text-[13px] leading-relaxed text-ink-2">{t('performance.details.forceQuitConfirmBody')}</p>
+            </div>
+            <div className="flex items-center justify-end gap-2 border-t border-line bg-surface-2/60 px-6 py-4">
+              <Button variant="ghost" onClick={() => setConfirmForceQuit(false)}>
+                {t('common.cancel')}
+              </Button>
+              <Button variant="danger" onClick={() => void runQuit(true)}>
+                <OctagonX size={15} /> {t('performance.details.forceQuitAction')}
+              </Button>
+            </div>
+          </Modal>
         </motion.div>
       )}
     </AnimatePresence>

@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 import { performanceService } from './performanceService'
-import type { BatteryInfo, HistoryPoint, LiveMetrics, ProcessList, SystemInfo, UpdateStatus } from './types'
+import { evaluatePressureAlert, evaluateProcessAlerts } from './alerts'
+import type { BatteryInfo, HistoryPoint, LiveMetrics, ProcessList, QuitResult, SystemInfo, UpdateStatus } from './types'
 
 /** Session-only history for the live charts — never persisted. */
 export const HISTORY_WINDOW_MS = 60_000
@@ -19,6 +20,8 @@ interface PerformanceState {
   updateStatus: UpdateStatus | null
   icons: Record<string, string | null>
   error: string | null
+  /** pid -> which action is in flight, so a row can show a spinner and disable both buttons. */
+  pendingQuits: Record<number, 'quit' | 'force'>
 
   setTab: (tab: PerformanceTab) => void
   setIncludeSystem: (on: boolean) => void
@@ -28,6 +31,7 @@ interface PerformanceState {
   refreshBattery: (refreshHealth?: boolean) => Promise<void>
   refreshUpdateStatus: () => Promise<void>
   loadIcon: (bundlePath: string) => void
+  quitProcess: (pid: number, startedAtMs: number | null, force: boolean) => Promise<QuitResult>
 }
 
 const inFlight = { live: false, processes: false, battery: false }
@@ -43,6 +47,7 @@ export const usePerformanceStore = create<PerformanceState>((set, get) => ({
   updateStatus: null,
   icons: {},
   error: null,
+  pendingQuits: {},
 
   setTab: (tab) => set({ tab }),
   setIncludeSystem: (includeSystem) => {
@@ -72,6 +77,7 @@ export const usePerformanceStore = create<PerformanceState>((set, get) => ({
       }
       const cutoff = live.sampledAtMs - HISTORY_WINDOW_MS
       set((s) => ({ live, error: null, history: [...s.history.filter((p) => p.t >= cutoff), point] }))
+      evaluatePressureAlert(live)
     } catch (e) {
       set({ error: String(e) })
     } finally {
@@ -83,7 +89,9 @@ export const usePerformanceStore = create<PerformanceState>((set, get) => ({
     if (inFlight.processes) return
     inFlight.processes = true
     try {
-      set({ processes: await performanceService.getProcesses(get().includeSystem) })
+      const processes = await performanceService.getProcesses(get().includeSystem)
+      set({ processes })
+      evaluateProcessAlerts(processes, get().live?.memory?.totalBytes ?? null)
     } catch (e) {
       set({ error: String(e) })
     } finally {
@@ -118,5 +126,22 @@ export const usePerformanceStore = create<PerformanceState>((set, get) => ({
       .getAppIcon(bundlePath)
       .then((url) => set((s) => ({ icons: { ...s.icons, [bundlePath]: url } })))
       .catch(() => {})
+  },
+
+  quitProcess: async (pid, startedAtMs, force) => {
+    set((s) => ({ pendingQuits: { ...s.pendingQuits, [pid]: force ? 'force' : 'quit' } }))
+    try {
+      const result = force ? await performanceService.forceQuitProcess(pid, startedAtMs) : await performanceService.quitProcess(pid, startedAtMs)
+      // Whatever happened, the process list is now stale — refresh it so
+      // the UI reflects reality instead of an optimistic guess.
+      await get().refreshProcesses()
+      return result
+    } finally {
+      set((s) => {
+        const pendingQuits = { ...s.pendingQuits }
+        delete pendingQuits[pid]
+        return { pendingQuits }
+      })
+    }
   },
 }))

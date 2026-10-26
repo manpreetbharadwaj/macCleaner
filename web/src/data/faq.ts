@@ -1,4 +1,4 @@
-import { APP, SITE, architectureLabel } from '@/config/site'
+import { APP, PURCHASE, SITE, architectureLabel } from '@/config/site'
 
 export interface FaqItem {
   id: string
@@ -40,7 +40,8 @@ export const FAQ_GROUPS: FaqGroup[] = [
         id: 'free',
         question: 'Is MacBook Cleaner free?',
         answer: [
-          `Version ${APP.version} has no account, subscription, in-app purchase or license key. Any future pricing would be announced on this website before it applies.`,
+          `Every feature works during a ${PURCHASE.trialDays}-day free trial — no account or credit card to start. After that, a single ${PURCHASE.priceDisplay} one-time payment unlocks it for good: no subscription, no recurring charge. ${PURCHASE.priceNote}`,
+          'The license key is emailed to you right after payment, works on one Mac at a time, and can be deactivated and moved to a different Mac whenever you need to.',
         ],
       },
       {
@@ -105,12 +106,16 @@ export const FAQ_GROUPS: FaqGroup[] = [
       {
         id: 'apple-silicon',
         question: 'Does it work on Apple silicon Macs?',
-        answer: [`Yes. The current build runs natively on Macs with Apple silicon (M-series chips).`],
+        answer: APP.architectures.includes('apple-silicon')
+          ? ['Yes. The current verified build runs natively on Macs with Apple silicon (M-series chips).']
+          : ['A verified installer has not been published yet, so architecture compatibility is not being claimed on this site.'],
       },
       {
         id: 'intel',
         question: 'Does it support Intel Macs?',
-        answer: intel
+        answer: !APP.installerVerified
+          ? ['A verified installer has not been published yet, so Intel compatibility is not being claimed on this site.']
+          : intel
           ? ['Yes. The download is a universal app that runs natively on both Intel and Apple silicon Macs.']
           : [
               'Not yet. The currently published build is for Apple silicon Macs only. An Intel-compatible build hasn’t been released — this page will be updated if that changes.',

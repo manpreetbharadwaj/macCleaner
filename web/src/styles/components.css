@@ -917,6 +917,8 @@
 .download-cta {
   position: relative;
   display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .download-cta .btn {
@@ -955,4 +957,18 @@
   background: var(--danger-soft);
   border: 1px solid color-mix(in srgb, var(--danger) 30%, transparent);
   box-shadow: var(--shadow);
+}
+
+.download-cta__unavailable {
+  display: block;
+  max-width: 280px;
+  margin-top: 8px;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  color: var(--ink-3);
+}
+
+.nav .download-cta__unavailable,
+.cta-card .download-cta__unavailable {
+  display: none;
 }

@@ -11,6 +11,7 @@ mod disk;
 mod dto;
 mod external_url;
 mod i18n;
+mod license;
 mod locale;
 mod menu;
 mod login_item;
@@ -132,6 +133,14 @@ pub fn run() {
             perf::perf_battery,
             perf::perf_update_status,
             perf::perf_open_software_update,
+            perf::perf_quit_process,
+            perf::perf_force_quit_process,
+            perf::perf_send_alert,
+            license::license_get_state,
+            license::license_refresh,
+            license::license_activate,
+            license::license_deactivate,
+            license::license_open_purchase_page,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

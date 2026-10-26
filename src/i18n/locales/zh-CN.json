@@ -495,7 +495,17 @@
       "linkBlocked": "无法打开此链接。",
       "browserFailed": "无法打开你的默认浏览器。",
       "noAppSupport": "MacBook Cleaner 无法访问其数据文件夹。",
-      "invalidTime": "该时间无效。"
+      "invalidTime": "该时间无效。",
+      "selfQuit": "MacBook Cleaner 无法退出自身。",
+      "protectedProcess": "这是受保护的系统进程，无法退出。",
+      "notOwnProcess": "只能退出你自己的进程。",
+      "quitRefused": "macOS 拒绝退出此应用。",
+      "licenseKeyRequired": "请先输入许可证密钥。",
+      "licenseNotActive": "此许可证密钥尚未激活。如果您刚刚购买，请稍后检查邮箱并重试。",
+      "licenseNotFound": "未找到此许可证密钥。请检查后重试。",
+      "licenseLimitReached": "此许可证密钥已在其他 Mac 上激活。请先在那里停用，然后在此处重试。",
+      "licenseNetworkError": "无法连接到许可证服务器。请检查您的网络连接并重试。",
+      "licenseServerError": "许可证服务器返回了意外响应。请稍后重试。"
     },
     "generic": "出了点问题。"
   },
@@ -597,7 +607,38 @@
     "showWelcome": "再次显示欢迎界面",
     "resetAll": "还原所有数据",
     "resetTitle": "要还原 MacBook Cleaner 吗？",
-    "resetBody": "这会清除你的设置、排除项、计划和清理历史，并关闭定时清理。你的文件和废纸篓不受影响。"
+    "resetBody": "这会清除你的设置、排除项、计划和清理历史，并关闭定时清理。你的文件和废纸篓不受影响。",
+    "performanceAlerts": {
+      "title": "性能提醒",
+      "enabled": "资源提醒",
+      "enabledSubtitle": "当某个应用的资源占用持续偏高时发送系统通知。关闭此项也会关闭以下所有提醒。",
+      "highMemory": "内存占用过高",
+      "highMemorySubtitle": "当单个应用持续占用超过此内存量时发出提醒。",
+      "highMemoryPercent": "内存占比过高",
+      "highMemoryPercentSubtitle": "当单个应用持续占用超过你 Mac 总内存的此比例时发出提醒。",
+      "backgroundCpu": "后台 CPU 占用",
+      "backgroundCpuSubtitle": "当后台应用（无 Dock 图标）持续占用超过此 CPU 使用率时发出提醒。",
+      "criticalPressure": "内存压力严重",
+      "criticalPressureSubtitle": "当 macOS 报告内存压力严重时发出提醒。"
+    },
+    "license": {
+      "title": "许可证",
+      "status": {
+        "trial": "免费试用",
+        "trial_expired": "试用已结束",
+        "licensed": "已授权",
+        "licensed_invalid": "许可证无效",
+        "licensed_grace_expired": "无法验证许可证"
+      },
+      "keySubtitle": "许可证密钥 {{key}}",
+      "buyButton": "购买 — $14.99",
+      "manage": "管理许可证",
+      "lastChecked": "上次检查：{{time}}",
+      "refreshButton": "刷新许可证状态",
+      "deactivateButton": "停用此 Mac",
+      "deactivateConfirmTitle": "停用此 Mac？",
+      "deactivateConfirmBody": "这将释放您的许可证，以便您可以在其他 Mac 上激活它。您可以在以后随时在此处重新激活它。"
+    }
   },
   "scheduleScreen": {
     "subtitle": "自动控制不必要的杂乱。",
@@ -910,7 +951,19 @@
       "systemOwner": "系统",
       "version": "版本",
       "executable": "可执行文件",
-      "quitHint": "要退出 App，请使用其自身的“退出”命令（⌘Q）或在程序坞中右键点按它，以便先存储你的工作。"
+      "quitHint": "“退出”会要求该应用正常关闭——它仍可能提示保存未保存的工作。“强制退出”会跳过这一步，只应在应用无响应时使用。",
+      "quitAction": "退出",
+      "forceQuitAction": "强制退出",
+      "quitting": "正在退出…",
+      "quitUnavailableSelf": "MacBook Cleaner 无法退出自身。",
+      "quitUnavailableSystem": "系统进程无法在此处退出。",
+      "forceQuitConfirmTitle": "强制退出{{name}}？",
+      "forceQuitConfirmBody": "此应用中未保存的工作将会丢失，且此操作无法撤销。",
+      "quitSucceeded": "{{name}} 已退出。",
+      "forceQuitSucceeded": "{{name}} 已被强制退出。",
+      "quitStillRunning": "{{name}} 可能仍在关闭——该应用可能在等待一个关于未保存更改的对话框。",
+      "quitAlreadyGone": "{{name}} 已经退出。",
+      "quitPermissionDenied": "macOS 未允许退出 {{name}}。"
     },
     "mac": {
       "hardware": "硬件",
@@ -940,6 +993,67 @@
       "runScan": "运行扫描",
       "openCleaner": "打开储存空间清理",
       "breakdown": "储存空间明细"
+    },
+    "alerts": {
+      "notifications": {
+        "highMemoryTitle": "检测到内存占用过高",
+        "highMemoryBody": "{{app}} 当前正在使用 {{size}} 内存。打开 MacBook Cleaner 以查看应用的资源占用情况。",
+        "backgroundCpuTitle": "后台 CPU 占用过高",
+        "backgroundCpuBody": "{{app}} 在后台使用了 {{percent}}% 的 CPU。打开 MacBook Cleaner 以查看应用的资源占用情况。",
+        "pressureTitle": "内存压力严重",
+        "pressureBody": "你的 Mac 内存压力很大。关闭一些应用可能会有帮助。打开 MacBook Cleaner 以查看应用的资源占用情况。"
+      }
+    },
+    "background": {
+      "title": "后台资源占用",
+      "subtitle": "当前占用 CPU 和内存最多的后台应用。",
+      "none": "没有后台应用占用明显的资源。",
+      "highUsage": "占用过高",
+      "runningFor": "已运行 {{duration}}"
+    },
+    "recommendations": {
+      "title": "建议",
+      "subtitle": "基于当前测量结果——并非保证。",
+      "criticalPressure": "你的 Mac 内存压力严重。关闭一些应用可能有助于释放内存。",
+      "warningPressure": "内存压力偏高。少开一些应用可能会有帮助。",
+      "highMemory": "{{app}} 正在使用 {{size}} 内存。",
+      "backgroundCpu": "{{count}} 个后台应用正在大量占用 CPU。",
+      "swap": "交换空间占用偏高（占可用交换空间的 {{percent}}）。"
+    }
+  },
+  "license": {
+    "trialBadge": "试用：{{time}}",
+    "remaining": {
+      "lessThanAMinute": "剩余不到一1分钟",
+      "minutes_other": "剩余{{count}}分钟",
+      "hours_other": "剩余{{count}}小时",
+      "days_other": "剩余{{count}}天"
+    },
+    "paywall": {
+      "titles": {
+        "trialExpired": "试用已结束",
+        "licensedInvalid": "许可证已失效",
+        "licensedGraceExpired": "无法验证许可证"
+      },
+      "bodies": {
+        "trialExpired": "您的48小时免费试用已结束。购买永久许可证以继续使用 MacBook Cleaner，或者如果您已有许可证密钥，请激活它。",
+        "licensedInvalid": "Dodo Payments 报告此许可证密钥已不再有效——可能已被退款或停用。请激活其他密钥，或购买新的永久许可证。",
+        "licensedGraceExpired": "MacBook Cleaner 无法确认您的许可证是否仍有效。请连接网络并刷新，或重新激活您的密钥。"
+      },
+      "tamperNotice": "无法验证您的试用数据，因此将其视为已过期。",
+      "refreshButton": "刷新许可证状态",
+      "refreshing": "正在检查…",
+      "buyButton": "购买永久许可证 — $14.99",
+      "orDivider": "或",
+      "activateLabel": "已购买？输入您的许可证密钥",
+      "activatePlaceholder": "PRO-AAAA-BBBB-CCCC-DDDD",
+      "activateButton": "激活",
+      "activating": "正在激活…"
+    },
+    "toasts": {
+      "activateSuccess": "许可证已激活——感谢您的支持！",
+      "deactivateSuccess": "许可证已停用。您现在可以在其他 Mac 上激活它。",
+      "deactivateFailed": "无法停用：{{error}}"
     }
   },
   "native": {

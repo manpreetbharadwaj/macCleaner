@@ -59,6 +59,16 @@ const ERRORS: Array<[RegExp, TKey, string[]?]> = [
   [/^(Could not open your default browser|macOS could not open the link)/, 'errors.native.browserFailed'],
   [/^Could not determine (LaunchAgents|Application Support) directory$/, 'errors.native.noAppSupport'],
   [/^Invalid time_of_day/, 'errors.native.invalidTime'],
+  [/^MacBook Cleaner cannot quit itself$/, 'errors.native.selfQuit'],
+  [/^This process is protected by macOS and cannot be quit$/, 'errors.native.protectedProcess'],
+  [/^Only your own processes can be quit$/, 'errors.native.notOwnProcess'],
+  [/^macOS refused to quit this application$/, 'errors.native.quitRefused'],
+  [/^Enter a license key first\.$/, 'errors.native.licenseKeyRequired'],
+  [/^This license key isn't active\./, 'errors.native.licenseNotActive'],
+  [/^This license key wasn't found\./, 'errors.native.licenseNotFound'],
+  [/^This license key is already activated on another Mac\./, 'errors.native.licenseLimitReached'],
+  [/^Couldn't reach Dodo Payments:/, 'errors.native.licenseNetworkError'],
+  [/^Dodo /, 'errors.native.licenseServerError'],
   [/^Unknown error$/, 'errors.generic'],
 ]
 

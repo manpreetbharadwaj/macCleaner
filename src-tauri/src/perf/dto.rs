@@ -174,6 +174,13 @@ pub struct AvailableUpdateDto {
 
 #[derive(Serialize, Clone, Debug)]
 #[serde(rename_all = "camelCase")]
+pub struct QuitResultDto {
+    /// "terminated" | "still_running" | "not_found" | "permission_denied"
+    pub status: String,
+}
+
+#[derive(Serialize, Clone, Debug)]
+#[serde(rename_all = "camelCase")]
 pub struct UpdateStatusDto {
     /// "up-to-date" | "update-available" | "unknown"
     pub state: String,

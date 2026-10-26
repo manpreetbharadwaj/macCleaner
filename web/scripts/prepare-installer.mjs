@@ -10,9 +10,9 @@
 // Runs automatically before `npm run dev` and `npm run build`.
 // - If VITE_MAC_DOWNLOAD_URL is set (e.g. a GitHub Release asset), that URL is
 //   used for the link; upload exactly the DMG this script reports.
-// - A production build fails if there's no installer and no override, so a
-//   broken or "coming soon" download can never ship by accident.
-//   (Set ALLOW_MISSING_INSTALLER=1 to build anyway.)
+// - A normal build is allowed to have no installer; the site then renders an
+//   explicit unavailable state. Release/deploy builds set REQUIRE_INSTALLER=1
+//   and fail closed when no verified local artifact exists.
 
 import { createHash } from 'node:crypto'
 import { execFileSync, spawnSync } from 'node:child_process'
@@ -29,7 +29,13 @@ const downloadsDir = path.join(web, 'public/downloads')
 const tauriConf = JSON.parse(readFileSync(path.join(root, 'src-tauri/tauri.conf.json'), 'utf-8'))
 const version = tauriConf.version
 const product = tauriConf.productName // "MacBook Cleaner"
-const dmgDir = path.join(root, 'src-tauri/target/release/bundle/dmg')
+const dmgDirs = [
+  path.join(root, 'release'),
+  path.join(root, 'src-tauri/target/release/bundle/dmg'),
+  path.join(root, 'src-tauri/target/aarch64-apple-darwin/release/bundle/dmg'),
+  path.join(root, 'src-tauri/target/x86_64-apple-darwin/release/bundle/dmg'),
+  path.join(root, 'src-tauri/target/universal-apple-darwin/release/bundle/dmg'),
+]
 
 function readEnv(name) {
   if (process.env[name]) return process.env[name].trim()
@@ -48,19 +54,39 @@ function sh(cmd, args) {
 }
 
 function fail(message) {
-  console.error(`\n✖ prepare-installer: ${message}\n`)
-  if (mode === 'build' && process.env.ALLOW_MISSING_INSTALLER !== '1') process.exit(1)
+  if (process.env.REQUIRE_INSTALLER === '1') {
+    console.error(`\n✖ prepare-installer: ${message}\n`)
+    process.exit(1)
+  }
+  console.warn(`⚠ prepare-installer: ${message} The website will show downloads as unavailable.`)
 }
 
-/** `MacBook Cleaner_1.0.0_aarch64.dmg` etc. — only for the version in tauri.conf.json. Universal wins. */
+/** Finds current-version Tauri output or the canonical release copy. Universal wins. */
 function findDmg() {
-  if (!existsSync(dmgDir)) return null
-  const prefix = `${product}_${version}_`
-  const candidates = readdirSync(dmgDir)
-    .filter((f) => f.startsWith(prefix) && f.endsWith('.dmg'))
-    .map((f) => ({ f, arch: f.slice(prefix.length, -4), mtime: statSync(path.join(dmgDir, f)).mtimeMs }))
-    .sort((a, b) => (a.arch === 'universal' ? -1 : b.arch === 'universal' ? 1 : b.mtime - a.mtime))
-  return candidates[0] ? path.join(dmgDir, candidates[0].f) : null
+  const tauriPrefix = `${product}_${version}_`
+  const releasePrefix = `MacBook-Cleaner-${version}-`
+  const candidates = dmgDirs.flatMap((dir) => {
+    if (!existsSync(dir)) return []
+    return readdirSync(dir)
+      .filter((f) => f.endsWith('.dmg') && (f.startsWith(tauriPrefix) || f.startsWith(releasePrefix)))
+      .map((f) => ({ path: path.join(dir, f), universal: f.includes('universal'), mtime: statSync(path.join(dir, f)).mtimeMs }))
+  })
+  candidates.sort((a, b) => (a.universal === b.universal ? b.mtime - a.mtime : a.universal ? -1 : 1))
+  return candidates[0]?.path ?? null
+}
+
+function validDownloadOverride(raw) {
+  if (!raw) return ''
+  try {
+    const url = new URL(raw)
+    if (url.protocol !== 'https:') throw new Error('must use https')
+    if (['localhost', '127.0.0.1', '::1'].includes(url.hostname)) throw new Error('must not point to localhost')
+    if (!url.pathname.toLowerCase().endsWith('.dmg')) throw new Error('path must end in .dmg')
+    return url.toString()
+  } catch (error) {
+    fail(`VITE_MAC_DOWNLOAD_URL is invalid: ${error instanceof Error ? error.message : String(error)}`)
+    return ''
+  }
 }
 
 /** Mounts the DMG read-only and inspects the app inside it. */
@@ -101,14 +127,14 @@ function inspect(dmg) {
   }
 }
 
-const override = readEnv('VITE_MAC_DOWNLOAD_URL')
+const override = validDownloadOverride(readEnv('VITE_MAC_DOWNLOAD_URL'))
 const dmg = findDmg()
 mkdirSync(path.dirname(outJson), { recursive: true })
 
 if (!dmg) {
   writeFileSync(outJson, JSON.stringify({ available: Boolean(override), url: override || null, version }, null, 2) + '\n')
   if (!override) {
-    fail(`No installer for version ${version} in ${path.relative(root, dmgDir)}/. Run \`npm run tauri:build\` in the project root first, or set VITE_MAC_DOWNLOAD_URL.`)
+    fail(`No verified installer for version ${version}. Run \`npm run dmg:native\` (or an explicit architecture build) in the project root first.`)
   } else {
     console.warn(`⚠ prepare-installer: no local DMG to verify; using VITE_MAC_DOWNLOAD_URL as-is (${override}).`)
   }

@@ -209,6 +209,28 @@ export interface Settings {
    */
   confirmBeforeCleanup: boolean
   onboardingCompleted: boolean
+  performanceAlerts: PerformanceAlertSettings
+}
+
+/**
+ * Configurable thresholds for the Performance tab's resource warnings (see
+ * src/features/performance/alerts.ts). Every condition must hold for several
+ * consecutive samples before it fires — a brief spike never triggers one —
+ * and each fired alert has its own cooldown, so this never spams.
+ */
+export interface PerformanceAlertSettings {
+  /** Master switch; also still gated by `notificationsEnabled` above. */
+  enabled: boolean
+  highMemoryEnabled: boolean
+  /** Megabytes a single app (or its helpers, summed) must sustain to warn. */
+  highMemoryThresholdMb: number
+  highMemoryPercentEnabled: boolean
+  /** Percent of total physical RAM a single app must sustain to warn. */
+  highMemoryPercentThreshold: number
+  backgroundCpuEnabled: boolean
+  /** Percent of total CPU capacity a background (no Dock icon) app must sustain to warn. */
+  backgroundCpuThreshold: number
+  criticalPressureEnabled: boolean
 }
 
 export type BrowserId = 'safari' | 'chrome' | 'firefox' | 'edge' | 'arc'

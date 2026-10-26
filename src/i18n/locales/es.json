@@ -521,7 +521,17 @@
       "linkBlocked": "Este enlace no se puede abrir.",
       "browserFailed": "No se pudo abrir tu navegador predeterminado.",
       "noAppSupport": "MacBook Cleaner no pudo acceder a su carpeta de datos.",
-      "invalidTime": "Esa hora no es válida."
+      "invalidTime": "Esa hora no es válida.",
+      "selfQuit": "MacBook Cleaner no puede cerrarse a sí mismo.",
+      "protectedProcess": "Este es un proceso del sistema protegido y no se puede cerrar.",
+      "notOwnProcess": "Solo se pueden cerrar tus propios procesos.",
+      "quitRefused": "macOS rechazó cerrar esta app.",
+      "licenseKeyRequired": "Introduce primero una clave de licencia.",
+      "licenseNotActive": "Esta clave de licencia aún no está activa. Si acabas de comprarla, revisa tu correo en un momento e inténtalo de nuevo.",
+      "licenseNotFound": "No se encontró esta clave de licencia. Compruébala e inténtalo de nuevo.",
+      "licenseLimitReached": "Esta clave de licencia ya está activada en otro Mac. Desáctivala allí primero y vuelve a intentarlo aquí.",
+      "licenseNetworkError": "No se pudo conectar con el servidor de licencias. Comprueba tu conexión a internet e inténtalo de nuevo.",
+      "licenseServerError": "El servidor de licencias devolvió algo inesperado. Inténtalo de nuevo en un momento."
     },
     "generic": "Algo ha ido mal."
   },
@@ -623,7 +633,38 @@
     "showWelcome": "Volver a mostrar la bienvenida",
     "resetAll": "Restablecer todos los datos",
     "resetTitle": "¿Restablecer MacBook Cleaner?",
-    "resetBody": "Se borrarán tus ajustes, exclusiones, programación e historial de limpieza, y se desactivará la limpieza programada. Tus archivos y la Papelera no se tocan."
+    "resetBody": "Se borrarán tus ajustes, exclusiones, programación e historial de limpieza, y se desactivará la limpieza programada. Tus archivos y la Papelera no se tocan.",
+    "performanceAlerts": {
+      "title": "Alertas de rendimiento",
+      "enabled": "Alertas de recursos",
+      "enabledSubtitle": "Notificaciones nativas cuando el uso de recursos de una app se mantiene alto. Al desactivarlo también se desactivan todas las alertas de abajo.",
+      "highMemory": "Uso elevado de memoria",
+      "highMemorySubtitle": "Avisar cuando una sola app mantenga más memoria que esta.",
+      "highMemoryPercent": "Porcentaje elevado de memoria",
+      "highMemoryPercentSubtitle": "Avisar cuando una sola app mantenga más de este porcentaje de la memoria total de tu Mac.",
+      "backgroundCpu": "Uso de CPU en segundo plano",
+      "backgroundCpuSubtitle": "Avisar cuando una app en segundo plano (sin icono en el Dock) mantenga más CPU que esta.",
+      "criticalPressure": "Presión de memoria crítica",
+      "criticalPressureSubtitle": "Avisar cuando macOS indique que la presión de memoria es crítica."
+    },
+    "license": {
+      "title": "Licencia",
+      "status": {
+        "trial": "Prueba gratuita",
+        "trial_expired": "Prueba vencida",
+        "licensed": "Con licencia",
+        "licensed_invalid": "Licencia no válida",
+        "licensed_grace_expired": "No se pudo verificar la licencia"
+      },
+      "keySubtitle": "Clave de licencia {{key}}",
+      "buyButton": "Comprar — $14.99",
+      "manage": "Administrar licencia",
+      "lastChecked": "Última comprobación: {{time}}",
+      "refreshButton": "Actualizar estado de la licencia",
+      "deactivateButton": "Desactivar este Mac",
+      "deactivateConfirmTitle": "¿Desactivar este Mac?",
+      "deactivateConfirmBody": "Esto libera tu licencia para que puedas activarla en otro Mac. Siempre puedes volver a activarla aquí más adelante."
+    }
   },
   "scheduleScreen": {
     "subtitle": "Mantén el desorden innecesario a raya automáticamente.",
@@ -958,7 +999,19 @@
       "systemOwner": "Sistema",
       "version": "Versión",
       "executable": "Ejecutable",
-      "quitHint": "Para salir de una app, usa su propio comando Salir (⌘Q) o haz clic con el botón derecho en el Dock, para que pueda guardar tu trabajo antes."
+      "quitHint": "«Salir» le pide a la app que se cierre normalmente: puede que aún te pida guardar cambios sin guardar. «Forzar salida» omite eso y solo debe usarse si la app no responde.",
+      "quitAction": "Salir",
+      "forceQuitAction": "Forzar salida",
+      "quitting": "Cerrando…",
+      "quitUnavailableSelf": "MacBook Cleaner no puede cerrarse a sí mismo.",
+      "quitUnavailableSystem": "Los procesos del sistema no se pueden cerrar desde aquí.",
+      "forceQuitConfirmTitle": "¿Forzar la salida de {{name}}?",
+      "forceQuitConfirmBody": "Se perderá cualquier cambio sin guardar en esta app, y no se puede deshacer.",
+      "quitSucceeded": "{{name}} se cerró.",
+      "forceQuitSucceeded": "Se forzó la salida de {{name}}.",
+      "quitStillRunning": "{{name}} puede seguir cerrándose; quizá esté esperando un cuadro de diálogo de cambios sin guardar.",
+      "quitAlreadyGone": "{{name}} ya se había cerrado.",
+      "quitPermissionDenied": "macOS no permitió cerrar {{name}}."
     },
     "mac": {
       "hardware": "Hardware",
@@ -996,6 +1049,70 @@
       "runScan": "Hacer un análisis",
       "openCleaner": "Abrir el limpiador de almacenamiento",
       "breakdown": "Desglose del almacenamiento"
+    },
+    "alerts": {
+      "notifications": {
+        "highMemoryTitle": "Uso elevado de memoria detectado",
+        "highMemoryBody": "{{app}} está usando actualmente {{size}} de RAM. Abre MacBook Cleaner para revisar el uso de recursos de las apps.",
+        "backgroundCpuTitle": "Uso elevado de CPU en segundo plano",
+        "backgroundCpuBody": "{{app}} está usando {{percent}} % de CPU en segundo plano. Abre MacBook Cleaner para revisar el uso de recursos de las apps.",
+        "pressureTitle": "Presión de memoria crítica",
+        "pressureBody": "La memoria de tu Mac está bajo mucha presión. Cerrar algunas apps puede ayudar. Abre MacBook Cleaner para revisar el uso de recursos de las apps."
+      }
+    },
+    "background": {
+      "title": "Uso de recursos en segundo plano",
+      "subtitle": "Las apps en segundo plano que más CPU y memoria están usando ahora.",
+      "none": "Ninguna app en segundo plano está usando recursos notables.",
+      "highUsage": "Uso alto",
+      "runningFor": "Ejecutándose desde hace {{duration}}"
+    },
+    "recommendations": {
+      "title": "Recomendaciones",
+      "subtitle": "Basado en lo que se mide ahora mismo, no son garantías.",
+      "criticalPressure": "La presión de memoria de tu Mac es crítica. Cerrar algunas apps puede ayudar a liberarla.",
+      "warningPressure": "La presión de memoria está elevada. Tener menos apps abiertas puede ayudar.",
+      "highMemory": "{{app}} está usando {{size}} de memoria.",
+      "backgroundCpu": "{{count}} apps en segundo plano están usando mucha CPU.",
+      "swap": "El uso de swap está elevado ({{percent}} del swap disponible)."
+    }
+  },
+  "license": {
+    "trialBadge": "Prueba: {{time}}",
+    "remaining": {
+      "lessThanAMinute": "Queda menos de un minuto",
+      "minutes_one": "Queda {{count}} minuto",
+      "minutes_other": "Quedan {{count}} minutos",
+      "hours_one": "Queda {{count}} hora",
+      "hours_other": "Quedan {{count}} horas",
+      "days_one": "Queda {{count}} día",
+      "days_other": "Quedan {{count}} días"
+    },
+    "paywall": {
+      "titles": {
+        "trialExpired": "Tu prueba ha terminado",
+        "licensedInvalid": "Tu licencia ya no es válida",
+        "licensedGraceExpired": "No se pudo verificar tu licencia"
+      },
+      "bodies": {
+        "trialExpired": "Tu prueba gratuita de 48 horas ha terminado. Compra una licencia de por vida para seguir usando MacBook Cleaner, o activa una clave de licencia si ya tienes una.",
+        "licensedInvalid": "Dodo Payments indica que esta clave de licencia ya no está activa — puede haber sido reembolsada o desactivada. Activa otra clave o compra una nueva licencia de por vida.",
+        "licensedGraceExpired": "MacBook Cleaner no pudo confirmar que tu licencia siga siendo válida. Conéctate a internet y actualiza, o vuelve a activar tu clave."
+      },
+      "tamperNotice": "No se pudieron verificar los datos de tu prueba, así que se están tratando como vencidos.",
+      "refreshButton": "Actualizar estado de la licencia",
+      "refreshing": "Comprobando…",
+      "buyButton": "Comprar licencia de por vida — $14.99",
+      "orDivider": "o",
+      "activateLabel": "¿Ya la compraste? Introduce tu clave de licencia",
+      "activatePlaceholder": "PRO-AAAA-BBBB-CCCC-DDDD",
+      "activateButton": "Activar",
+      "activating": "Activando…"
+    },
+    "toasts": {
+      "activateSuccess": "Licencia activada — ¡gracias por tu apoyo!",
+      "deactivateSuccess": "Licencia desactivada. Ya puedes activarla en otro Mac.",
+      "deactivateFailed": "No se pudo desactivar: {{error}}"
     }
   },
   "native": {

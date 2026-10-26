@@ -508,7 +508,17 @@
       "linkBlocked": "This link can’t be opened.",
       "browserFailed": "Couldn’t open your default browser.",
       "noAppSupport": "MacBook Cleaner couldn’t access its own data folder.",
-      "invalidTime": "That time isn’t valid."
+      "invalidTime": "That time isn’t valid.",
+      "selfQuit": "MacBook Cleaner can't quit itself.",
+      "protectedProcess": "This is a protected system process and can't be quit.",
+      "notOwnProcess": "Only your own processes can be quit.",
+      "quitRefused": "macOS refused to quit this application.",
+      "licenseKeyRequired": "Enter a license key first.",
+      "licenseNotActive": "This license key isn’t active yet. If you just purchased it, check your email in a moment and try again.",
+      "licenseNotFound": "This license key wasn’t found. Double-check it and try again.",
+      "licenseLimitReached": "This license key is already activated on another Mac. Deactivate it there first, then try again here.",
+      "licenseNetworkError": "Couldn’t reach the licensing server. Check your internet connection and try again.",
+      "licenseServerError": "The licensing server returned something unexpected. Try again in a moment."
     },
     "generic": "Something went wrong."
   },
@@ -610,7 +620,38 @@
     "showWelcome": "Show welcome again",
     "resetAll": "Reset all data",
     "resetTitle": "Reset MacBook Cleaner?",
-    "resetBody": "This clears your settings, exclusions, schedule and cleanup history, and turns off scheduled cleanup. It never touches your files or the Trash."
+    "resetBody": "This clears your settings, exclusions, schedule and cleanup history, and turns off scheduled cleanup. It never touches your files or the Trash.",
+    "performanceAlerts": {
+      "title": "Performance alerts",
+      "enabled": "Resource alerts",
+      "enabledSubtitle": "Native notifications when an app's resource usage stays high. Turning this off disables every alert below.",
+      "highMemory": "High memory usage",
+      "highMemorySubtitle": "Warn when a single app sustains more than this much memory.",
+      "highMemoryPercent": "High memory share",
+      "highMemoryPercentSubtitle": "Warn when a single app sustains more than this share of your Mac's total memory.",
+      "backgroundCpu": "Background CPU usage",
+      "backgroundCpuSubtitle": "Warn when a background app (no Dock icon) sustains more than this much CPU.",
+      "criticalPressure": "Critical memory pressure",
+      "criticalPressureSubtitle": "Warn when macOS reports memory pressure as critical."
+    },
+    "license": {
+      "title": "License",
+      "status": {
+        "trial": "Free trial",
+        "trial_expired": "Trial expired",
+        "licensed": "Licensed",
+        "licensed_invalid": "License invalid",
+        "licensed_grace_expired": "Couldn’t verify license"
+      },
+      "keySubtitle": "License key {{key}}",
+      "buyButton": "Buy — $14.99",
+      "manage": "Manage license",
+      "lastChecked": "Last checked: {{time}}",
+      "refreshButton": "Refresh license status",
+      "deactivateButton": "Deactivate this Mac",
+      "deactivateConfirmTitle": "Deactivate this Mac?",
+      "deactivateConfirmBody": "This frees up your license so you can activate it on another Mac. You can always reactivate it here again later."
+    }
   },
   "scheduleScreen": {
     "subtitle": "Keep unnecessary clutter under control automatically.",
@@ -934,7 +975,19 @@
       "systemOwner": "System",
       "version": "Version",
       "executable": "Executable",
-      "quitHint": "To quit an app, use its own Quit command (⌘Q) or right-click it in the Dock, so it can save your work first."
+      "quitHint": "Quit asks the app to close normally — it may still prompt you to save unsaved work. Force Quit skips that and should only be used if the app is unresponsive.",
+      "quitAction": "Quit",
+      "forceQuitAction": "Force Quit",
+      "quitting": "Quitting…",
+      "quitUnavailableSelf": "MacBook Cleaner can't quit itself.",
+      "quitUnavailableSystem": "System processes can't be quit from here.",
+      "forceQuitConfirmTitle": "Force quit {{name}}?",
+      "forceQuitConfirmBody": "Any unsaved work in this app will be lost, and this can't be undone.",
+      "quitSucceeded": "{{name}} was quit.",
+      "forceQuitSucceeded": "{{name}} was force quit.",
+      "quitStillRunning": "{{name}} may still be closing — it could be waiting on an unsaved-changes dialog.",
+      "quitAlreadyGone": "{{name}} had already quit.",
+      "quitPermissionDenied": "macOS didn't allow quitting {{name}}."
     },
     "mac": {
       "hardware": "Hardware",
@@ -968,6 +1021,70 @@
       "runScan": "Run a scan",
       "openCleaner": "Open Storage Cleaner",
       "breakdown": "Storage breakdown"
+    },
+    "alerts": {
+      "notifications": {
+        "highMemoryTitle": "High Memory Usage Detected",
+        "highMemoryBody": "{{app}} is currently using {{size}} of RAM. Open MacBook Cleaner to review application resource usage.",
+        "backgroundCpuTitle": "High Background CPU Usage",
+        "backgroundCpuBody": "{{app}} is using {{percent}}% CPU in the background. Open MacBook Cleaner to review application resource usage.",
+        "pressureTitle": "Critical Memory Pressure",
+        "pressureBody": "Your Mac's memory is under heavy pressure. Closing a few apps can help. Open MacBook Cleaner to review application resource usage."
+      }
+    },
+    "background": {
+      "title": "Background Resource Usage",
+      "subtitle": "The background apps using the most CPU and memory right now.",
+      "none": "No background apps are using notable resources.",
+      "highUsage": "High usage",
+      "runningFor": "Running for {{duration}}"
+    },
+    "recommendations": {
+      "title": "Recommendations",
+      "subtitle": "Based on what's measured right now — not guarantees.",
+      "criticalPressure": "Your Mac's memory pressure is critical. Closing a few apps can help free it up.",
+      "warningPressure": "Memory pressure is elevated. Keeping fewer apps open can help.",
+      "highMemory": "{{app}} is using {{size}} of memory.",
+      "backgroundCpu": "{{count}} background apps are using significant CPU.",
+      "swap": "Swap usage is elevated ({{percent}} of available swap)."
+    }
+  },
+  "license": {
+    "trialBadge": "Trial: {{time}}",
+    "remaining": {
+      "lessThanAMinute": "Less than a minute left",
+      "minutes_one": "{{count}} minute left",
+      "minutes_other": "{{count}} minutes left",
+      "hours_one": "{{count}} hour left",
+      "hours_other": "{{count}} hours left",
+      "days_one": "{{count}} day left",
+      "days_other": "{{count}} days left"
+    },
+    "paywall": {
+      "titles": {
+        "trialExpired": "Your trial has ended",
+        "licensedInvalid": "Your license is no longer valid",
+        "licensedGraceExpired": "Couldn’t verify your license"
+      },
+      "bodies": {
+        "trialExpired": "Your 48-hour free trial is over. Buy a lifetime license to keep using MacBook Cleaner, or activate a license key if you already have one.",
+        "licensedInvalid": "Dodo Payments reported that this license key is no longer active — it may have been refunded or deactivated. Activate a different key, or buy a new lifetime license.",
+        "licensedGraceExpired": "MacBook Cleaner couldn’t confirm your license is still valid. Connect to the internet and refresh, or activate your key again."
+      },
+      "tamperNotice": "Your trial data couldn’t be verified, so it’s being treated as expired.",
+      "refreshButton": "Refresh license status",
+      "refreshing": "Checking…",
+      "buyButton": "Buy Lifetime License — $14.99",
+      "orDivider": "or",
+      "activateLabel": "Already purchased? Enter your license key",
+      "activatePlaceholder": "PRO-AAAA-BBBB-CCCC-DDDD",
+      "activateButton": "Activate",
+      "activating": "Activating…"
+    },
+    "toasts": {
+      "activateSuccess": "License activated — thank you for your support!",
+      "deactivateSuccess": "License deactivated. You can activate it on another Mac now.",
+      "deactivateFailed": "Couldn’t deactivate: {{error}}"
     }
   },
   "native": {

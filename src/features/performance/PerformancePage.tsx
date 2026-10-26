@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/Button'
 import { Segmented } from '@/components/ui/Segmented'
 import { usePerformancePolling } from './usePerformancePolling'
 import { usePerformanceStore, type PerformanceTab } from './usePerformanceStore'
+import { BackgroundUsage } from './components/BackgroundUsage'
 import { BatteryHealth } from './components/BatteryHealth'
 import { CpuMonitor } from './components/CpuMonitor'
 import { DeviceCard } from './components/DeviceCard'
@@ -11,6 +12,7 @@ import { HealthSummary } from './components/HealthSummary'
 import { MacInfo } from './components/MacInfo'
 import { MemoryMonitor } from './components/MemoryMonitor'
 import { OverviewCards } from './components/OverviewCards'
+import { Recommendations } from './components/Recommendations'
 import { RunningApps } from './components/RunningApps'
 import { StorageHealth } from './components/StorageHealth'
 import { UptimeCard } from './components/UptimeCard'
@@ -82,6 +84,7 @@ export function PerformancePage() {
             <OverviewCards />
           </div>
           <HealthSummary />
+          <Recommendations />
           <div className="grid gap-6 xl:grid-cols-2">
             <CpuMonitor />
             <MemoryMonitor />
@@ -96,6 +99,7 @@ export function PerformancePage() {
               <UptimeCard />
             </div>
           </div>
+          <BackgroundUsage />
         </div>
       )}
       {current === 'apps' && <RunningApps />}

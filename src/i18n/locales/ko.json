@@ -495,7 +495,17 @@
       "linkBlocked": "이 링크를 열 수 없습니다.",
       "browserFailed": "기본 브라우저를 열 수 없습니다.",
       "noAppSupport": "MacBook Cleaner가 자체 데이터 폴더에 접근할 수 없습니다.",
-      "invalidTime": "유효하지 않은 시간입니다."
+      "invalidTime": "유효하지 않은 시간입니다.",
+      "selfQuit": "MacBook Cleaner는 자신을 종료할 수 없습니다.",
+      "protectedProcess": "이것은 보호된 시스템 프로세스이므로 종료할 수 없습니다.",
+      "notOwnProcess": "자신의 프로세스만 종료할 수 있습니다.",
+      "quitRefused": "macOS가 이 앱의 종료를 거부했습니다.",
+      "licenseKeyRequired": "먼저 라이선스 키를 입력하세요.",
+      "licenseNotActive": "이 라이선스 키는 아직 활성화되지 않았습니다. 방금 구입하셨다면 잠시 후 이메일을 확인한 다음 다시 시도하세요.",
+      "licenseNotFound": "이 라이선스 키를 찾을 수 없습니다. 확인 후 다시 시도하세요.",
+      "licenseLimitReached": "이 라이선스 키는 이미 다른 Mac에서 활성화되어 있습니다. 그곳에서 먼저 비활성화한 후 다시 시도하세요.",
+      "licenseNetworkError": "라이선스 서버에 연결할 수 없습니다. 인터넷 연결을 확인한 후 다시 시도하세요.",
+      "licenseServerError": "라이선스 서버가 예상하지 못한 응답을 반환했습니다. 잠시 후 다시 시도하세요."
     },
     "generic": "문제가 발생했습니다."
   },
@@ -597,7 +607,38 @@
     "showWelcome": "환영 화면 다시 보기",
     "resetAll": "모든 데이터 재설정",
     "resetTitle": "MacBook Cleaner를 재설정하겠습니까?",
-    "resetBody": "설정, 제외 항목, 일정, 정리 기록이 지워지고 예약 정리가 꺼집니다. 파일과 휴지통에는 영향을 주지 않습니다."
+    "resetBody": "설정, 제외 항목, 일정, 정리 기록이 지워지고 예약 정리가 꺼집니다. 파일과 휴지통에는 영향을 주지 않습니다.",
+    "performanceAlerts": {
+      "title": "성능 알림",
+      "enabled": "리소스 알림",
+      "enabledSubtitle": "앱의 리소스 사용량이 계속 높을 때 네이티브 알림을 보냅니다. 이를 끄면 아래의 모든 알림도 비활성화됩니다.",
+      "highMemory": "높은 메모리 사용량",
+      "highMemorySubtitle": "하나의 앱이 이 수치를 넘는 메모리를 계속 사용할 때 경고합니다.",
+      "highMemoryPercent": "높은 메모리 비율",
+      "highMemoryPercentSubtitle": "하나의 앱이 Mac 전체 메모리의 이 비율을 넘어 계속 사용할 때 경고합니다.",
+      "backgroundCpu": "백그라운드 CPU 사용량",
+      "backgroundCpuSubtitle": "Dock 아이콘이 없는 백그라운드 앱이 이 CPU 사용량을 넘어 계속 사용할 때 경고합니다.",
+      "criticalPressure": "심각한 메모리 압박",
+      "criticalPressureSubtitle": "macOS가 심각한 메모리 압박을 보고할 때 경고합니다."
+    },
+    "license": {
+      "title": "라이선스",
+      "status": {
+        "trial": "무료 체험판",
+        "trial_expired": "체험판 만료",
+        "licensed": "라이선스됨",
+        "licensed_invalid": "라이선스 무효",
+        "licensed_grace_expired": "확인할 수 없음"
+      },
+      "keySubtitle": "라이선스 키 {{key}}",
+      "buyButton": "구입 — $14.99",
+      "manage": "라이선스 관리",
+      "lastChecked": "마지막 확인: {{time}}",
+      "refreshButton": "라이선스 상태 새로고침",
+      "deactivateButton": "이 Mac 비활성화",
+      "deactivateConfirmTitle": "이 Mac을 비활성화하시겠습니까?",
+      "deactivateConfirmBody": "이 작업으로 라이선스가 해제되어 다른 Mac에서 활성화할 수 있습니다. 나중에 여기서 다시 활성화할 수도 있습니다."
+    }
   },
   "scheduleScreen": {
     "subtitle": "불필요한 어수선함을 자동으로 관리하세요.",
@@ -910,7 +951,19 @@
       "systemOwner": "시스템",
       "version": "버전",
       "executable": "실행 파일",
-      "quitHint": "앱을 종료하려면 앱 자체의 종료 명령(⌘Q)을 사용하거나 Dock에서 마우스 오른쪽 버튼으로 클릭하세요. 그래야 작업을 먼저 저장할 수 있습니다."
+      "quitHint": "\"종료\"는 앱이 정상적으로 닫히도록 요청합니다 — 저장하지 않은 작업을 저장하라는 요청이 여전히 나타날 수 있습니다. \"강제 종료\"는 이를 건너뛰며 앱이 응답하지 않을 때만 사용해야 합니다.",
+      "quitAction": "종료",
+      "forceQuitAction": "강제 종료",
+      "quitting": "종료 중…",
+      "quitUnavailableSelf": "MacBook Cleaner는 자신을 종료할 수 없습니다.",
+      "quitUnavailableSystem": "시스템 프로세스는 여기서 종료할 수 없습니다.",
+      "forceQuitConfirmTitle": "{{name}}을 강제 종료하시겠습니까?",
+      "forceQuitConfirmBody": "이 앱의 저장하지 않은 작업은 손실되며 되돌릴 수 없습니다.",
+      "quitSucceeded": "{{name}}이 종료되었습니다.",
+      "forceQuitSucceeded": "{{name}}이 강제 종료되었습니다.",
+      "quitStillRunning": "{{name}}이 아직 종료 중일 수 있습니다 — 저장하지 않은 변경 사항에 대한 대화상자를 기다리고 있을 수 있습니다.",
+      "quitAlreadyGone": "{{name}}은 이미 종료되어 있었습니다.",
+      "quitPermissionDenied": "macOS가 {{name}} 종료를 허용하지 않았습니다."
     },
     "mac": {
       "hardware": "하드웨어",
@@ -940,6 +993,67 @@
       "runScan": "스캔 실행",
       "openCleaner": "저장 공간 정리 열기",
       "breakdown": "저장 공간 구성"
+    },
+    "alerts": {
+      "notifications": {
+        "highMemoryTitle": "높은 메모리 사용량 감지",
+        "highMemoryBody": "{{app}}이 현재 {{size}}의 RAM을 사용하고 있습니다. 앱의 리소스 사용량을 확인하려면 MacBook Cleaner를 여세요.",
+        "backgroundCpuTitle": "백그라운드에서 높은 CPU 사용량",
+        "backgroundCpuBody": "{{app}}이 백그라운드에서 CPU를 {{percent}}% 사용하고 있습니다. 앱의 리소스 사용량을 확인하려면 MacBook Cleaner를 여세요.",
+        "pressureTitle": "심각한 메모리 압박",
+        "pressureBody": "Mac의 메모리에 심각한 부담이 걸려 있습니다. 일부 앱을 닫으면 도움이 될 수 있습니다. 앱의 리소스 사용량을 확인하려면 MacBook Cleaner를 여세요."
+      }
+    },
+    "background": {
+      "title": "백그라운드 리소스 사용량",
+      "subtitle": "현재 CPU와 메모리를 가장 많이 사용하는 백그라운드 앱.",
+      "none": "눈에 띄는 리소스를 사용하는 백그라운드 앱이 없습니다.",
+      "highUsage": "높은 사용량",
+      "runningFor": "{{duration}} 동안 실행 중"
+    },
+    "recommendations": {
+      "title": "권장 사항",
+      "subtitle": "현재 측정된 값을 기반으로 하며, 보장은 아닙니다.",
+      "criticalPressure": "Mac의 메모리 압박이 심각합니다. 일부 앱을 닫으면 메모리를 확보하는 데 도움이 될 수 있습니다.",
+      "warningPressure": "메모리 압박이 높아졌습니다. 열려 있는 앱 수를 줄이면 도움이 될 수 있습니다.",
+      "highMemory": "{{app}}이 {{size}}의 메모리를 사용하고 있습니다.",
+      "backgroundCpu": "백그라운드 앱 {{count}}개가 CPU를 상당히 사용하고 있습니다.",
+      "swap": "스왑 사용량이 높아졌습니다 (사용 가능한 스왑의 {{percent}})."
+    }
+  },
+  "license": {
+    "trialBadge": "체험판: {{time}}",
+    "remaining": {
+      "lessThanAMinute": "1분 미만 남음",
+      "minutes_other": "{{count}}분 남았음",
+      "hours_other": "{{count}}시간 남았음",
+      "days_other": "{{count}}일 남았음"
+    },
+    "paywall": {
+      "titles": {
+        "trialExpired": "체험판이 종료되었습니다",
+        "licensedInvalid": "라이선스가 더 이상 유효하지 않습니다",
+        "licensedGraceExpired": "라이선스를 확인할 수 없습니다"
+      },
+      "bodies": {
+        "trialExpired": "48시간 무료 체험판이 종료되었습니다. MacBook Cleaner를 계속 사용하려면 평생 라이선스를 구입하거나, 이미 라이선스 키가 있다면 활성화하세요.",
+        "licensedInvalid": "Dodo Payments에 따르면 이 라이선스 키는 더 이상 활성 상태가 아닙니다 — 환불되었거나 비활성화되었을 수 있습니다. 다른 키를 활성화하거나 새 평생 라이선스를 구입하세요.",
+        "licensedGraceExpired": "MacBook Cleaner가 라이선스가 여전히 유효한지 확인하지 못했습니다. 인터넷에 연결한 후 새로고침하거나 키를 다시 활성화하세요."
+      },
+      "tamperNotice": "체험판 데이터를 확인할 수 없어 만료된 것으로 처리됩니다.",
+      "refreshButton": "라이선스 상태 새로고침",
+      "refreshing": "확인 중…",
+      "buyButton": "평생 라이선스 구입 — $14.99",
+      "orDivider": "또는",
+      "activateLabel": "이미 구매하셨나요? 라이선스 키를 입력하세요",
+      "activatePlaceholder": "PRO-AAAA-BBBB-CCCC-DDDD",
+      "activateButton": "활성화",
+      "activating": "활성화 중…"
+    },
+    "toasts": {
+      "activateSuccess": "라이선스가 활성화되었습니다 — 지원해 주셔서 감사합니다!",
+      "deactivateSuccess": "라이선스가 비활성화되었습니다. 이제 다른 Mac에서 활성화할 수 있습니다.",
+      "deactivateFailed": "비활성화할 수 없습니다: {{error}}"
     }
   },
   "native": {

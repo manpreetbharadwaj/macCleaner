@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/prepare-installer.mjs build && tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "build:release": "REQUIRE_INSTALLER=1 npm run build && node scripts/verify-download.mjs",
     "preview": "vite preview --port 4173",
-    "typecheck": "tsc -b",
+    "typecheck": "node scripts/prepare-installer.mjs dev && tsc -b",
+    "verify:download": "node scripts/verify-download.mjs",
     "og": "node scripts/render-og.mjs",
     "predev": "node scripts/prepare-installer.mjs dev"
   },

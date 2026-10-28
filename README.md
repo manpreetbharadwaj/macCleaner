@@ -21,6 +21,40 @@ npm run icons        # re-render the app icon from src-tauri/icons/source/icon.s
 
 The root `npm run dev` and `npm run build` commands belong to the official `web/` marketing site. Tauri is pinned to the separate `desktop:preview` and `desktop:build` scripts in `src-tauri/tauri.conf.json`, so the two applications cannot be confused by their normal commands. The superseded `website/` folder is retained only as source history and is not used by any script or deployment.
 
+### Running a demo or manually testing the trial/license flow
+
+`npm run tauri:dev` on its own uses your **real production** Keychain
+trial/license records, the real `/Users/Shared` anchor, and the real
+**live** Dodo API — exactly what a real user's Mac would do. For a demo,
+screenshot, or any manual click-through of Buy/Activate/Deactivate that
+should never touch your real trial/license state or the live Dodo API,
+pass both of these Cargo features together:
+
+```bash
+npm run tauri:dev -- -f demo_identity -f dodo_test_mode
+```
+
+`demo_identity` **requires** `dodo_test_mode` — enabling it alone is a
+compile error, on purpose. Isolating the Keychain/shared-anchor storage
+without also isolating which Dodo API it talks to would still let a demo
+send real activate/validate/deactivate calls to production.
+
+This builds against an entirely separate Keychain namespace
+(`com.macbookcleaner.app.demo.*` instead of `com.macbookcleaner.app.*`) and
+an isolated shared-anchor path under the OS temp directory instead of the
+real `/Users/Shared` — see `src-tauri/src/license/trial.rs`, `mod.rs`, and
+`shared_anchor.rs`. It is **never** selected by accident: `demo_identity`
+is not in `default`, requires `dodo_test_mode` at compile time, and
+refuses to compile at all if combined with `--release` — so it
+structurally cannot ship and structurally cannot talk to the live Dodo API.
+
+Toggling between a normal dev run and a demo run is a command-line flag,
+never a source-file edit — `tauri dev`'s own file watcher rebuilds on any
+change to `src-tauri/`, so editing a Keychain identifier by hand while it's
+running can cause an in-between rebuild to briefly run with the *wrong*
+identity. Always use the `-f demo_identity` flag instead of hand-editing
+these constants.
+
 Rust tests (safety rules, duplicate detection, uninstall validation, scheduler):
 
 ```bash

@@ -668,6 +668,40 @@ signing/notarization; the real live-mode Dodo product setup.
 3. 16-locale native-speaker review still outstanding (concrete corruption in 4 locales was found and fixed this round, but a full fluency pass hasn't happened).
 4. The packaged app's actual Settings UI has never been clicked through end-to-end (no GUI-automation tool available here).
 
+## Final trial & license release QA (follow-up round)
+
+A dedicated full release-readiness pass over the entire trial + licensing
+system, including the shared-anchor work from
+[`trial-license-abuse-prevention.md`](trial-license-abuse-prevention.md),
+was performed in a follow-up round. **Full scenario-by-scenario
+PASS/FAIL/NOT TESTED results live in that document's "Final release QA"
+section** — this is just the short version, focused on what's specific to
+Dodo/licensing (items 7–11, all unaffected by the shared-anchor work since
+no code in `dodo.rs`/`mod.rs`'s activation path changed this round):
+
+| # | Scenario | Result |
+|---|---|---|
+| 7 | Purchased license unlocks premium features | PASS (carried over from this report's Phase 5/6b real sandbox verification; code path unchanged) |
+| 8 | One key can't activate two Macs simultaneously | PASS (carried over — real `422 LICENSE_KEY_LIMIT_REACHED` against the sandbox API) |
+| 9 | Activation survives app restarts | PASS (carried over — Phase 6b real isolated-Keychain restart test) |
+| 10 | Deactivation releases the device slot | PASS (carried over — real deactivate + reactivate-on-new-device against the sandbox API) |
+| 11 | Offline grace-period rules | PASS (carried over — Phase 6b real 15-day backdate → `LicensedGraceExpired`) |
+
+Also newly verified this round, specific to packaging: built the real
+signed `.app` + DMG via `tauri build` (succeeded, ad-hoc signed, no
+notarization credentials present — unchanged limitation) and inspected its
+**actual embedded entitlements** directly with `codesign -d --entitlements
+:-` — confirmed no `com.apple.security.app-sandbox` key, i.e. the real
+packaged binary has the same unrestricted file-system access the dev build
+already relies on for the shared trial anchor. Full Rust (`cargo test
+--lib`, both feature configs, 126/126), TypeScript (`tsc -b`, clean), and
+lint (`oxlint`, zero new warnings) checks were re-run clean.
+
+Nothing in this round touched `dodo.rs`, Dodo's activation-limit
+enforcement, or any live-mode configuration. No real charges, no Live Mode
+switch, no production Keychain or trial-record alteration, nothing
+committed, pushed, or deployed.
+
 ## Final GO / NO-GO assessment
 
 **NO-GO for a live launch**, unchanged from every prior round's honest
@@ -676,11 +710,13 @@ correctness bugs in the code. The licensing *logic* itself has now been
 verified about as thoroughly as this environment allows: real sandbox API
 calls, real Keychain persistence across real process restarts, real
 offline-grace and revocation handling, a binary-level proof sandbox config
-can't leak into a release build, and (this round) a correctness pass on the
-localized copy that found and fixed real bugs rather than just checking
-boxes. What's left is business/ops setup (a real product, real signing
-credentials) and two kinds of human verification this environment
-structurally cannot perform itself (native-language fluency, a mouse click
-in a real window) — not further coding work.
+can't leak into a release build, a correctness pass on the localized copy
+that found and fixed real bugs rather than just checking boxes, and (this
+round) a full release-QA pass across all 15 trial/license scenarios
+including the new shared-anchor defense, with the real packaged app's
+entitlements verified directly. What's left is business/ops setup (a real
+product, real signing credentials) and two kinds of human verification
+this environment structurally cannot perform itself (native-language
+fluency, a mouse click in a real window) — not further coding work.
 
 No commits, pushes, deploys, or Live Mode changes were made.

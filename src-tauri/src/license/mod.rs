@@ -11,13 +11,45 @@ pub mod config;
 pub mod dodo;
 pub mod dto;
 pub mod keychain;
+mod shared_anchor;
 pub mod trial;
 
 use config::{DODO_CHECKOUT_HOST, DODO_PRODUCT_ID, OFFLINE_GRACE_MS, THANK_YOU_URL, TRIAL_DURATION_MS};
 use dto::{LicenseStateDto, LicenseStatus};
 use serde::{Deserialize, Serialize};
 
+// `demo_identity` is a dev/manual-testing convenience (isolated Keychain
+// namespaces + an isolated shared-anchor path, so a live demo can never
+// touch a real production trial/license record — see trial.rs,
+// shared_anchor.rs). Excluding it from `default` already stops a plain
+// `cargo build`/`tauri build` from shipping it by accident, exactly like
+// `dodo_test_mode` — but unlike `dodo_test_mode` (which is always safe to
+// combine with `--release`, since it only changes which *external* host a
+// built binary talks to), shipping a *release* binary with demo_identity
+// would mean a real customer's trial/license would silently be stored
+// under the demo Keychain namespace, which no real activation or
+// purchase flow would ever see again. That failure mode is bad enough
+// that `default = []` alone wasn't considered sufficient — this refuses
+// to compile at all if demo_identity is ever combined with a release
+// profile, however it was requested.
+#[cfg(all(feature = "demo_identity", not(debug_assertions)))]
+compile_error!("demo_identity must never be enabled in a release build — it would silently store a real customer's trial/license under an isolated namespace no real activation flow ever reads. Build without --release, or without this feature.");
+
+// A demo build's whole point is that it's safe to click through Buy /
+// Activate / Deactivate without consequence — which is only true if it's
+// also talking to Dodo's sandbox, not the real live API. `demo_identity`
+// alone would isolate the Keychain/shared-anchor storage but still send
+// real activate/validate/deactivate calls to production Dodo, which could
+// touch a real customer's real license. Requiring `dodo_test_mode`
+// alongside `demo_identity` closes that gap at compile time rather than
+// relying on a developer remembering to pass both flags.
+#[cfg(all(feature = "demo_identity", not(feature = "dodo_test_mode")))]
+compile_error!("demo_identity requires dodo_test_mode — build with both features together (`-f demo_identity -f dodo_test_mode`), so a demo never sends real activate/validate/deactivate calls to the live Dodo API. demo_identity alone is refused.");
+
+#[cfg(not(feature = "demo_identity"))]
 const LICENSE_SERVICE: &str = "com.macbookcleaner.app.license";
+#[cfg(feature = "demo_identity")]
+const LICENSE_SERVICE: &str = "com.macbookcleaner.app.demo.license";
 const LICENSE_ACCOUNT: &str = "activation";
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
@@ -279,6 +311,29 @@ mod tests {
         let updated = apply_validate_outcome(&lic, &dodo::ValidateOutcome::Invalid, 5_000).expect("Invalid must produce an update");
         assert!(!updated.last_valid);
         assert_eq!(updated.last_validated_at_ms, 5_000, "the check still happened and should be timestamped, even though it came back invalid");
+    }
+
+    #[test]
+    fn license_service_and_account_names_are_regression_guarded() {
+        // Same reasoning as trial.rs's equivalent guard: renaming either
+        // constant would silently strand every existing activation on its
+        // next update (a fresh Keychain item with no prior license data).
+        #[cfg(not(feature = "demo_identity"))]
+        assert_eq!(LICENSE_SERVICE, "com.macbookcleaner.app.license");
+        #[cfg(feature = "demo_identity")]
+        assert_eq!(LICENSE_SERVICE, "com.macbookcleaner.app.demo.license");
+        assert_eq!(LICENSE_ACCOUNT, "activation");
+    }
+
+    #[test]
+    fn demo_identity_and_production_license_identity_never_collide() {
+        const PRODUCTION: &str = "com.macbookcleaner.app.license";
+        const DEMO: &str = "com.macbookcleaner.app.demo.license";
+        assert_ne!(PRODUCTION, DEMO);
+        #[cfg(not(feature = "demo_identity"))]
+        assert_eq!(LICENSE_SERVICE, PRODUCTION, "a non-demo build must use the production license service name");
+        #[cfg(feature = "demo_identity")]
+        assert_eq!(LICENSE_SERVICE, DEMO, "a demo_identity build must use the demo license service name, never the production one");
     }
 
     #[test]

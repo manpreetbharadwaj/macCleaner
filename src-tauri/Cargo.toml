@@ -20,9 +20,26 @@ crate-type = ["staticlib", "cdylib", "rlib"]
 # (and every release build) only ever talks to live Dodo endpoints; sandbox
 # config can't ship by accident. Build the sandbox variant explicitly with
 # `cargo build --features dodo_test_mode` / `cargo test --features dodo_test_mode`.
+#
+# `demo_identity`: use separate, disposable Keychain service names and a
+# disposable shared-anchor filesystem path instead of the real production
+# ones — see src/license/trial.rs, mod.rs, shared_anchor.rs. Exists so a
+# live demo or manual click-through can never read, create, or alter a
+# real production trial/license record. NOT in `default`, for the same
+# reason as `dodo_test_mode`: a plain `cargo build`/`tauri build` can never
+# ship it by accident. MUST be combined with `dodo_test_mode` — enabling
+# `demo_identity` alone is a compile error (`license/mod.rs`), because an
+# isolated Keychain/shared-anchor with the *live* Dodo API behind it would
+# still let a demo send real activate/validate/deactivate calls. The only
+# valid combination is `cargo build --features demo_identity,dodo_test_mode`.
+# A second `compile_error!` in `license/mod.rs` additionally refuses to
+# compile demo_identity at all in a release profile (`--release`), even if
+# explicitly requested — see that file for why a `default = []` exclusion
+# alone wasn't considered sufficient for this one.
 [features]
 default = []
 dodo_test_mode = []
+demo_identity = []
 
 [build-dependencies]
 tauri-build = { version = "2.6.3", features = [] }

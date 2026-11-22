@@ -494,7 +494,7 @@
     "copies_other": "<b>{{count}}</b> cópias"
   },
   "errors": {
-    "native": {
+  "native": {
       "invalidPath": "O caminho do arquivo é inválido.",
       "gone": "O arquivo não existe mais.",
       "protectedSystem": "Este é um local protegido do macOS ({{path}}) e não pode ser removido.",
@@ -1114,6 +1114,21 @@
       "deactivateSuccess": "Licença desativada. Agora você pode ativá-la em outro Mac.",
       "deactivateFailed": "Não foi possível desativar: {{error}}"
     }
+  },
+  "update": {
+    "upToDate": "Você está atualizado.",
+    "checkFailed": "Não foi possível verificar atualizações: {{error}}",
+    "availableTitle": "A versão {{version}} está disponível",
+    "currentVersion": "Você tem a versão {{version}}",
+    "installNow": "Instalar atualização",
+    "downloadManually": "Baixar manualmente",
+    "downloading": "Baixando atualização…",
+    "readyToRestart": "Atualização instalada. Reinicie para concluir.",
+    "restartNow": "Reiniciar agora",
+    "installFailed": "Não foi possível instalar a atualização: {{error}}",
+    "installFailedFallback": "Você pode baixar e instalar a atualização manualmente.",
+    "confirmTitle": "Instalar esta atualização?",
+    "confirmBody": "O MacBook Cleaner irá baixar, verificar e instalar a versão {{version}}. Você precisará reiniciar o aplicativo para concluir."
   },
   "native": {
     "number": {

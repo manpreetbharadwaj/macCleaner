@@ -132,6 +132,13 @@ const dmg = findDmg()
 mkdirSync(path.dirname(outJson), { recursive: true })
 
 if (!dmg) {
+  // A prior run may have copied a now-stale DMG into public/downloads/ —
+  // without this, a build that correctly reports `available: false` could
+  // still serve that old file to anyone who requests its exact URL
+  // directly, bypassing the "unavailable" UI state entirely.
+  if (existsSync(downloadsDir)) {
+    for (const f of readdirSync(downloadsDir)) if (f.endsWith('.dmg')) rmSync(path.join(downloadsDir, f))
+  }
   writeFileSync(outJson, JSON.stringify({ available: Boolean(override), url: override || null, version }, null, 2) + '\n')
   if (!override) {
     fail(`No verified installer for version ${version}. Run \`npm run dmg:native\` (or an explicit architecture build) in the project root first.`)

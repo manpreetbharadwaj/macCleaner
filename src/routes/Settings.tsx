@@ -21,8 +21,9 @@ import { LanguagePicker } from '@/components/settings/LanguagePicker'
 import { useSystemLanguage } from '@/i18n/useSystemLanguage'
 import { useLicenseStore } from '@/features/license/useLicenseStore'
 import { formatRemaining } from '@/features/license/format'
+import { UpdateButton, UpdateStatusArea } from '@/features/update/components/UpdateSection'
 
-const SITE = 'https://macbookcleaner.app'
+const SITE = 'https://macbookcleaner.com'
 
 function Row({ icon, color, title, subtitle, children }: { icon: LucideIcon; color: string; title: string; subtitle?: ReactNode; children?: ReactNode }) {
   return (
@@ -437,17 +438,16 @@ export function SettingsPage() {
       </Group>
 
       <Group title={t('settings.about')} delay={0.2}>
-        <div className="flex items-center gap-4 px-5 py-5">
-          <Logo size={52} />
-          <div className="flex-1">
-            <p className="font-display text-[16px] font-bold text-ink">MacBook Cleaner</p>
-            <p className="text-[12.5px] text-ink-3">{t('apps.version', { version: __APP_VERSION__ })}</p>
+        <div className="px-5 py-5">
+          <div className="flex items-center gap-4">
+            <Logo size={52} />
+            <div className="flex-1">
+              <p className="font-display text-[16px] font-bold text-ink">MacBook Cleaner</p>
+              <p className="text-[12.5px] text-ink-3">{t('apps.version', { version: __APP_VERSION__ })}</p>
+            </div>
+            <UpdateButton />
           </div>
-          <a href={`${SITE}/download`} target="_blank" rel="noreferrer">
-            <Button variant="secondary">
-              <RefreshCw size={14} /> {t('settings.checkUpdates')}
-            </Button>
-          </a>
+          <UpdateStatusArea />
         </div>
         <div className="flex flex-wrap items-center gap-x-5 gap-y-2 px-5 py-3.5 text-[12.5px]">
           <a href={`${SITE}/privacy.html`} target="_blank" rel="noreferrer" className="flex items-center gap-1 font-semibold whitespace-nowrap text-brand hover:underline">

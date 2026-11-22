@@ -1087,6 +1087,21 @@
       "deactivateFailed": "Couldn’t deactivate: {{error}}"
     }
   },
+  "update": {
+    "upToDate": "You’re up to date.",
+    "checkFailed": "Couldn’t check for updates: {{error}}",
+    "availableTitle": "Version {{version}} is available",
+    "currentVersion": "You have version {{version}}",
+    "installNow": "Install Update",
+    "downloadManually": "Download Manually",
+    "downloading": "Downloading update…",
+    "readyToRestart": "Update installed. Restart to finish.",
+    "restartNow": "Restart Now",
+    "installFailed": "Couldn’t install the update: {{error}}",
+    "installFailedFallback": "You can download and install the update manually instead.",
+    "confirmTitle": "Install this update?",
+    "confirmBody": "MacBook Cleaner will download, verify, and install version {{version}}. You’ll need to restart the app to finish."
+  },
   "native": {
     "number": {
       "decimal": ".",

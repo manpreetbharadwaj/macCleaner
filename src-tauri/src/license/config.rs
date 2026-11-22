@@ -42,7 +42,7 @@ pub const DODO_PRODUCT_ID: &str = "pdt_REPLACE_WITH_YOUR_PRODUCT_ID";
 /// Where Dodo sends the customer after a successful payment. Must be a page
 /// that reads `license_key`/`payment_id`/`status`/`email` from its query
 /// string and shows the customer their key — see web/src/pages/ThankYou.tsx.
-pub const THANK_YOU_URL: &str = "https://macbookcleaner.app/thank-you";
+pub const THANK_YOU_URL: &str = "https://macbookcleaner.com/thank-you";
 
 /// 48 hours.
 pub const TRIAL_DURATION_MS: u64 = 172_800_000;

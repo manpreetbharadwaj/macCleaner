@@ -1,0 +1,35 @@
+# Cloudflare Pages reads this file automatically from the build output
+# root. See docs/cloudflare-pages-deployment.md for the full deployment
+# checklist these headers are part of.
+
+# Baseline security headers on every response.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+
+# The installer DMG, if hosted with the site (prepare-installer.mjs's
+# `hostedWithSite` case). Filenames are versioned
+# (MacBook-Cleaner-<version>-<arch>.dmg), so a given file never changes
+# once published — safe to cache for a year, immutably.
+/downloads/*
+  Content-Type: application/x-apple-diskimage
+  Content-Disposition: attachment
+  Cache-Control: public, max-age=31536000, immutable
+
+# The updater manifest endpoint (tauri.conf.json's
+# plugins.updater.endpoints: .../updates/{target}/{arch}/{current_version}).
+# This response legitimately changes over time — a new release becoming
+# available must be seen promptly by installs still on an older version —
+# so it gets a short cache, not an immutable one.
+/updates/*
+  Cache-Control: public, max-age=300, must-revalidate
+
+# The actual updater artifact (.tar.gz) and its .sig, once uploaded —
+# these are versioned by filename exactly like the DMG, so they override
+# the short-cache rule above with a long, immutable one. Must come after
+# the general /updates/* rule so this more specific Cache-Control wins.
+/updates/*.tar.gz
+  Cache-Control: public, max-age=31536000, immutable
+/updates/*.sig
+  Cache-Control: public, max-age=31536000, immutable

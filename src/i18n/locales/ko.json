@@ -468,7 +468,7 @@
     "copies_other": "사본 <b>{{count}}</b>개"
   },
   "errors": {
-    "native": {
+  "native": {
       "invalidPath": "파일 경로가 올바르지 않습니다.",
       "gone": "파일이 더 이상 존재하지 않습니다.",
       "protectedSystem": "보호된 macOS 위치({{path}})이므로 제거할 수 없습니다.",
@@ -1055,6 +1055,21 @@
       "deactivateSuccess": "라이선스가 비활성화되었습니다. 이제 다른 Mac에서 활성화할 수 있습니다.",
       "deactivateFailed": "비활성화할 수 없습니다: {{error}}"
     }
+  },
+  "update": {
+    "upToDate": "최신 버전을 사용 중입니다.",
+    "checkFailed": "업데이트를 확인할 수 없습니다: {{error}}",
+    "availableTitle": "버전 {{version}}을(를) 사용할 수 있습니다",
+    "currentVersion": "현재 버전은 {{version}}입니다",
+    "installNow": "업데이트 설치",
+    "downloadManually": "수동으로 다운로드",
+    "downloading": "업데이트 다운로드 중…",
+    "readyToRestart": "업데이트가 설치되었습니다. 완료하려면 다시 시작하세요.",
+    "restartNow": "지금 다시 시작",
+    "installFailed": "업데이트를 설치할 수 없습니다: {{error}}",
+    "installFailedFallback": "대신 업데이트를 수동으로 다운로드하여 설치할 수 있습니다.",
+    "confirmTitle": "이 업데이트를 설치하시겠습니까?",
+    "confirmBody": "MacBook Cleaner가 버전 {{version}}을(를) 다운로드, 확인 및 설치합니다. 완료하려면 앱을 다시 시작해야 합니다."
   },
   "native": {
     "number": {

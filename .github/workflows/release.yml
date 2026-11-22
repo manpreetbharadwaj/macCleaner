@@ -1,0 +1,67 @@
+name: Signed Release (manual, gated)
+
+# NEVER runs automatically. Only a repository collaborator can trigger
+# this (workflow_dispatch), and the `release` environment below must be
+# configured in repo Settings → Environments with required reviewers —
+# GitHub then pauses the job until someone explicitly approves that exact
+# run, which is what "publishing gated behind explicit approval" means in
+# a CI context, not just a human running a script by hand.
+#
+# Secrets used here (TAURI_SIGNING_PRIVATE_KEY, _PASSWORD, and — once a
+# real Developer ID exists — APPLE_SIGNING_IDENTITY / APPLE_API_* or
+# APPLE_ID+APPLE_PASSWORD+APPLE_TEAM_ID) must be added as encrypted
+# repository secrets (Settings → Secrets and variables → Actions) by a
+# repo admin, never committed, never echoed by any step below. GitHub
+# Actions does not expose secrets to workflows triggered from a fork's
+# pull request, which matters specifically because this repository is
+# public.
+#
+# This workflow builds and uploads artifacts to the Actions run itself
+# (private, visible only to people with repo access) — it does NOT
+# create a public GitHub Release, push a tag, or publish anything further.
+# That remains a separate, explicit, human step — see
+# docs/dodo-live-mode-checklist.md and scripts/release.mjs's own printed
+# "Exact next steps" for what still has to happen by hand after this.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to build, e.g. 1.0.1 (must already have a changelog entry)"
+        required: true
+      variant:
+        description: "arm64 | intel | universal"
+        required: true
+        default: universal
+
+jobs:
+  build-signed:
+    runs-on: macos-latest
+    environment: release # requires manual approval if configured as a protected environment
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - run: rustup target add x86_64-apple-darwin aarch64-apple-darwin
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm --prefix web ci
+      - name: Build + sign (updater artifacts only if signing key secrets are present)
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+          APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY }}
+          APPLE_API_ISSUER: ${{ secrets.APPLE_API_ISSUER }}
+          APPLE_API_KEY: ${{ secrets.APPLE_API_KEY }}
+          APPLE_API_KEY_PATH: ${{ secrets.APPLE_API_KEY_PATH }}
+        run: node scripts/release.mjs "${{ github.event.inputs.version }}" "${{ github.event.inputs.variant }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macbook-cleaner-${{ github.event.inputs.version }}-${{ github.event.inputs.variant }}
+          path: |
+            release/*.dmg
+            release/*.sha256
+            release/update-manifest.json
+          retention-days: 30

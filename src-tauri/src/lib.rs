@@ -3,6 +3,7 @@ mod applications;
 mod auto_clean;
 mod background;
 mod browsers;
+mod busy;
 mod commands;
 mod dedup;
 mod developer;
@@ -21,6 +22,7 @@ mod scanner;
 mod schedule;
 mod state;
 mod trash;
+mod update;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
@@ -98,6 +100,7 @@ pub fn run() {
             Ok(())
         })
         .plugin(tauri_plugin_notification::init())
+        .plugin(tauri_plugin_updater::Builder::new().build())
         .invoke_handler(tauri::generate_handler![
             commands::get_system_overview,
             commands::check_path_access,
@@ -141,6 +144,9 @@ pub fn run() {
             license::license_activate,
             license::license_deactivate,
             license::license_open_purchase_page,
+            update::update_check,
+            update::update_download_and_install,
+            update::update_restart_app,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

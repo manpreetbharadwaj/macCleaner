@@ -481,7 +481,7 @@
     "copies_other": "<b>{{count}}</b> kopya"
   },
   "errors": {
-    "native": {
+  "native": {
       "invalidPath": "Dosya yolu geçersiz.",
       "gone": "Dosya artık mevcut değil.",
       "protectedSystem": "Bu korumalı bir macOS konumudur ({{path}}) ve kaldırılamaz.",
@@ -1086,6 +1086,21 @@
       "deactivateSuccess": "Lisans devre dışı bırakıldı. Artık başka bir Mac'te etkinleştirebilirsiniz.",
       "deactivateFailed": "Devre dışı bırakılamadı: {{error}}"
     }
+  },
+  "update": {
+    "upToDate": "Güncelsiniz.",
+    "checkFailed": "Güncellemeler kontrol edilemedi: {{error}}",
+    "availableTitle": "{{version}} sürümü kullanılabilir",
+    "currentVersion": "{{version}} sürümüne sahipsiniz",
+    "installNow": "Güncellemeyi Yükle",
+    "downloadManually": "Manuel İndir",
+    "downloading": "Güncelleme indiriliyor…",
+    "readyToRestart": "Güncelleme yüklendi. Tamamlamak için yeniden başlatın.",
+    "restartNow": "Şimdi Yeniden Başlat",
+    "installFailed": "Güncelleme yüklenemedi: {{error}}",
+    "installFailedFallback": "Bunun yerine güncellemeyi manuel olarak indirip yükleyebilirsiniz.",
+    "confirmTitle": "Bu güncelleme yüklensin mi?",
+    "confirmBody": "MacBook Cleaner {{version}} sürümünü indirecek, doğrulayacak ve yükleyecek. Tamamlamak için uygulamayı yeniden başlatmanız gerekir."
   },
   "native": {
     "number": {

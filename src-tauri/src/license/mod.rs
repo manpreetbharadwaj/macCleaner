@@ -275,7 +275,7 @@ mod tests {
         url.query_pairs_mut().append_pair("quantity", "1").append_pair("redirect_url", THANK_YOU_URL).append_pair("showDiscounts", "true");
         let s = url.as_str();
         assert!(s.starts_with(&format!("https://{DODO_CHECKOUT_HOST}/buy/")));
-        assert!(s.contains("redirect_url=https%3A%2F%2Fmacbookcleaner.app%2Fthank-you"), "{s}");
+        assert!(s.contains("redirect_url=https%3A%2F%2Fmacbookcleaner.com%2Fthank-you"), "{s}");
         assert!(s.contains("quantity=1"));
         assert!(s.contains("showDiscounts=true"));
     }

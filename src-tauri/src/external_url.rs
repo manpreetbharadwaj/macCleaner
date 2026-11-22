@@ -14,10 +14,16 @@ use url::Url;
 /// release build, since that feature isn't in `default` — must not even be
 /// *capable* of opening the sandbox checkout host, regardless of what URL
 /// anything in the app might ever try to pass here.
+// Both macbookcleaner.com (the real production domain, confirmed and
+// deployed on Cloudflare Pages) and macbookcleaner.app (the domain every
+// in-app link originally pointed at) are allowed — the same owner
+// controls both, there's no security cost to permitting both, and it
+// means this allowlist can never be the reason a legitimate link breaks
+// regardless of which domain a given build's links end up pointing at.
 #[cfg(feature = "dodo_test_mode")]
-const ALLOWED_HOSTS: &[&str] = &["macbookcleaner.app", "www.macbookcleaner.app", "test.checkout.dodopayments.com"];
+const ALLOWED_HOSTS: &[&str] = &["macbookcleaner.com", "www.macbookcleaner.com", "macbookcleaner.app", "www.macbookcleaner.app", "test.checkout.dodopayments.com"];
 #[cfg(not(feature = "dodo_test_mode"))]
-const ALLOWED_HOSTS: &[&str] = &["macbookcleaner.app", "www.macbookcleaner.app", "checkout.dodopayments.com"];
+const ALLOWED_HOSTS: &[&str] = &["macbookcleaner.com", "www.macbookcleaner.com", "macbookcleaner.app", "www.macbookcleaner.app", "checkout.dodopayments.com"];
 
 pub fn validate(raw: &str) -> Result<Url, String> {
     let url = Url::parse(raw.trim()).map_err(|e| format!("Not a valid URL: {e}"))?;
@@ -61,6 +67,10 @@ mod tests {
 
     #[test]
     fn accepts_the_product_site() {
+        assert!(validate("https://macbookcleaner.com").is_ok());
+        assert!(validate("https://macbookcleaner.com/download#how-to-open").is_ok());
+        assert!(validate("  https://macbookcleaner.com/faq  ").is_ok());
+        // .app is still allowed too — see the ALLOWED_HOSTS comment.
         assert!(validate("https://macbookcleaner.app").is_ok());
         assert!(validate("https://macbookcleaner.app/download#how-to-open").is_ok());
         assert!(validate("  https://macbookcleaner.app/faq  ").is_ok());
@@ -93,11 +103,16 @@ mod tests {
     #[test]
     fn rejects_unsafe_or_unlisted_urls() {
         for bad in [
+            "http://macbookcleaner.com/",
             "http://macbookcleaner.app/",
             "file:///etc/passwd",
             "javascript:alert(1)",
             "x-apple.systempreferences:com.apple.preference.security",
             "https://evil.example/phish",
+            "https://macbookcleaner.com.evil.example/",
+            "https://macbookcleaner.com@evil.example/",
+            "https://user:pw@macbookcleaner.com/",
+            "https://macbookcleaner.com:8443/",
             "https://macbookcleaner.app.evil.example/",
             "https://macbookcleaner.app@evil.example/",
             "https://user:pw@macbookcleaner.app/",

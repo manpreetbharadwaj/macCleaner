@@ -60,6 +60,11 @@ whoami = "1"
 chrono = { version = "0.4", default-features = false, features = ["std", "clock"] }
 trash = "5"
 tauri-plugin-notification = "2.4.0"
+# Checks for, downloads, verifies (Ed25519 signature — see
+# docs/updater.md), and installs app updates. Never auto-installs without
+# the user's confirmation — see license-equivalent "ask first" pattern in
+# src/features/update/.
+tauri-plugin-updater = "2"
 url = "2"
 # Mach host statistics (CPU ticks, VM stats), sysctl and libproc for the
 # Performance tab — see src/perf/. Already in the dependency tree.

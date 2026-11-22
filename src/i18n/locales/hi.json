@@ -481,7 +481,7 @@
     "copies_other": "<b>{{count}}</b> कॉपियाँ"
   },
   "errors": {
-    "native": {
+  "native": {
       "invalidPath": "फ़ाइल पाथ अमान्य है।",
       "gone": "फ़ाइल अब मौजूद नहीं है।",
       "protectedSystem": "यह macOS की एक सुरक्षित लोकेशन ({{path}}) है और इसे हटाया नहीं जा सकता।",
@@ -1086,6 +1086,21 @@
       "deactivateSuccess": "लाइसेंस निष्क्रिय कर दिया गया। अब आप इसे किसी दूसरे Mac पर सक्रिय कर सकते हैं।",
       "deactivateFailed": "निष्क्रिय नहीं किया जा सका: {{error}}"
     }
+  },
+  "update": {
+    "upToDate": "आप नवीनतम संस्करण पर हैं।",
+    "checkFailed": "अपडेट जांचे नहीं जा सके: {{error}}",
+    "availableTitle": "संस्करण {{version}} उपलब्ध है",
+    "currentVersion": "आपके पास संस्करण {{version}} है",
+    "installNow": "अपडेट इंस्टॉल करें",
+    "downloadManually": "मैन्युअल रूप से डाउनलोड करें",
+    "downloading": "अपडेट डाउनलोड हो रहा है…",
+    "readyToRestart": "अपडेट इंस्टॉल हो गया। पूरा करने के लिए पुनः आरंभ करें।",
+    "restartNow": "अभी पुनः आरंभ करें",
+    "installFailed": "अपडेट इंस्टॉल नहीं हो सका: {{error}}",
+    "installFailedFallback": "आप इसके बजाय अपडेट को मैन्युअल रूप से डाउनलोड और इंस्टॉल कर सकते हैं।",
+    "confirmTitle": "यह अपडेट इंस्टॉल करें?",
+    "confirmBody": "MacBook Cleaner संस्करण {{version}} डाउनलोड, सत्यापित और इंस्टॉल करेगा। पूरा करने के लिए आपको ऐप को पुनः आरंभ करना होगा।"
   },
   "native": {
     "number": {

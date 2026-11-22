@@ -1,0 +1,29 @@
+name: Build & Test
+
+# Runs on every push/PR — compiles, tests, lints. Never signs, never
+# produces a public release, never touches any secret. See release.yml
+# for the separate, manually-triggered, approval-gated signing workflow.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm --prefix web ci
+      - run: npx tsc -b
+      - run: cd src-tauri && cargo test --lib
+      - run: cd src-tauri && cargo test --lib --features dodo_test_mode
+      - run: cd src-tauri && cargo test --lib --features demo_identity,dodo_test_mode
+      - run: npm run web:build
+      - run: npx oxlint

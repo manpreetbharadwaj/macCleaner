@@ -24,7 +24,8 @@
     "dmg:universal": "node scripts/build-dmg.mjs universal",
     "dmg:production": "node scripts/build-dmg.mjs native --production",
     "icons": "node scripts/render-icon.mjs && tauri icon src-tauri/icons/source/icon-1024.png",
-    "test:native": "node scripts/run-cargo.mjs test"
+    "test:native": "node scripts/run-cargo.mjs test",
+    "release": "node scripts/release.mjs"
   },
   "dependencies": {
     "@tauri-apps/api": "~2.11.1",

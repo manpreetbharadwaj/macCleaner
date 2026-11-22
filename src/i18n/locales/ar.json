@@ -533,7 +533,7 @@
     "copies_other": "<b>{{count}}</b> نسخة"
   },
   "errors": {
-    "native": {
+  "native": {
       "invalidPath": "مسار الملف غير صالح.",
       "gone": "لم يعد الملف موجودًا.",
       "protectedSystem": "هذا موقع محمي في macOS ({{path}}) ولا يمكن إزالته.",
@@ -1210,6 +1210,21 @@
       "deactivateSuccess": "تم إلغاء تفعيل الترخيص. يمكنك الآن تفعيله على ماك آخر.",
       "deactivateFailed": "تعذّر إلغاء التفعيل: {{error}}"
     }
+  },
+  "update": {
+    "upToDate": "التطبيق محدَّث.",
+    "checkFailed": "تعذّر التحقق من التحديثات: {{error}}",
+    "availableTitle": "الإصدار {{version}} متاح",
+    "currentVersion": "لديك الإصدار {{version}}",
+    "installNow": "تثبيت التحديث",
+    "downloadManually": "تنزيل يدويًا",
+    "downloading": "جارٍ تنزيل التحديث…",
+    "readyToRestart": "تم تثبيت التحديث. أعد التشغيل للإنهاء.",
+    "restartNow": "إعادة التشغيل الآن",
+    "installFailed": "تعذّر تثبيت التحديث: {{error}}",
+    "installFailedFallback": "يمكنك بدلاً من ذلك تنزيل التحديث وتثبيته يدويًا.",
+    "confirmTitle": "هل تريد تثبيت هذا التحديث؟",
+    "confirmBody": "سيقوم MacBook Cleaner بتنزيل الإصدار {{version}} والتحقق منه وتثبيته. ستحتاج إلى إعادة تشغيل التطبيق للإنهاء."
   },
   "native": {
     "number": {

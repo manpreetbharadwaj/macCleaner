@@ -468,7 +468,7 @@
     "copies_other": "<b>{{count}}</b>個のコピー"
   },
   "errors": {
-    "native": {
+  "native": {
       "invalidPath": "ファイルのパスが無効です。",
       "gone": "ファイルはもう存在しません。",
       "protectedSystem": "ここは保護されたmacOSの場所（{{path}}）のため、削除できません。",
@@ -1055,6 +1055,21 @@
       "deactivateSuccess": "ライセンスを無効化しました。別のMacで有効化できます。",
       "deactivateFailed": "無効化できませんでした：{{error}}"
     }
+  },
+  "update": {
+    "upToDate": "最新の状態です。",
+    "checkFailed": "アップデートを確認できませんでした: {{error}}",
+    "availableTitle": "バージョン{{version}}が利用可能です",
+    "currentVersion": "現在のバージョンは{{version}}です",
+    "installNow": "アップデートをインストール",
+    "downloadManually": "手動でダウンロード",
+    "downloading": "アップデートをダウンロード中…",
+    "readyToRestart": "アップデートがインストールされました。完了するには再起動してください。",
+    "restartNow": "今すぐ再起動",
+    "installFailed": "アップデートをインストールできませんでした: {{error}}",
+    "installFailedFallback": "代わりにアップデートを手動でダウンロードしてインストールできます。",
+    "confirmTitle": "このアップデートをインストールしますか?",
+    "confirmBody": "MacBook Cleanerがバージョン{{version}}をダウンロード、検証、インストールします。完了するにはアプリを再起動する必要があります。"
   },
   "native": {
     "number": {

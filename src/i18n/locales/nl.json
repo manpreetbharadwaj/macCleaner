@@ -481,7 +481,7 @@
     "copies_other": "<b>{{count}}</b> kopieën"
   },
   "errors": {
-    "native": {
+  "native": {
       "invalidPath": "Het bestandspad is ongeldig.",
       "gone": "Het bestand bestaat niet meer.",
       "protectedSystem": "Dit is een beschermde macOS-locatie ({{path}}) en kan niet worden verwijderd.",
@@ -1086,6 +1086,21 @@
       "deactivateSuccess": "Licentie gedeactiveerd. Je kunt deze nu op een andere Mac activeren.",
       "deactivateFailed": "Deactiveren mislukt: {{error}}"
     }
+  },
+  "update": {
+    "upToDate": "Je bent up-to-date.",
+    "checkFailed": "Kan niet controleren op updates: {{error}}",
+    "availableTitle": "Versie {{version}} is beschikbaar",
+    "currentVersion": "Je hebt versie {{version}}",
+    "installNow": "Update installeren",
+    "downloadManually": "Handmatig downloaden",
+    "downloading": "Update wordt gedownload…",
+    "readyToRestart": "Update geïnstalleerd. Start opnieuw om te voltooien.",
+    "restartNow": "Nu opnieuw starten",
+    "installFailed": "Kan update niet installeren: {{error}}",
+    "installFailedFallback": "Je kunt de update in plaats daarvan handmatig downloaden en installeren.",
+    "confirmTitle": "Deze update installeren?",
+    "confirmBody": "MacBook Cleaner downloadt, verifieert en installeert versie {{version}}. Je moet de app opnieuw starten om te voltooien."
   },
   "native": {
     "number": {

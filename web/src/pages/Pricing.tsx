@@ -31,9 +31,15 @@ export function PricingPage() {
             </ul>
 
             <div className="cta-card__actions" style={{ marginTop: '1.75rem' }}>
-              <a className="btn btn--primary btn--lg" href={PURCHASE.checkoutUrl} target="_blank" rel="noopener noreferrer">
-                <Sparkles size={16} aria-hidden="true" /> Buy Lifetime License — {PURCHASE.priceDisplay}
-              </a>
+              {PURCHASE.isSandbox ? (
+                <button type="button" className="btn btn--primary btn--lg" disabled aria-disabled="true" style={{ opacity: 0.5, cursor: 'not-allowed' }}>
+                  <Sparkles size={16} aria-hidden="true" /> Buy Lifetime License — {PURCHASE.priceDisplay}
+                </button>
+              ) : (
+                <a className="btn btn--primary btn--lg" href={PURCHASE.checkoutUrl} target="_blank" rel="noopener noreferrer">
+                  <Sparkles size={16} aria-hidden="true" /> Buy Lifetime License — {PURCHASE.priceDisplay}
+                </a>
+              )}
             </div>
             <p className="download-hero__note">{PURCHASE.priceNote}</p>
             <p className="download-hero__note">
@@ -44,7 +50,7 @@ export function PricingPage() {
             {PURCHASE.isSandbox && (
               <p className="download-hero__note">
                 <Info size={18} aria-hidden="true" />
-                This Buy button currently opens Dodo Payments' <strong>test/sandbox</strong> checkout for integration testing — no real charge will be made. It will be switched to the live checkout before launch.
+                Purchasing isn't available here yet — we're still finishing setup. Check back soon, or download the free trial in the meantime.
               </p>
             )}
           </Reveal>

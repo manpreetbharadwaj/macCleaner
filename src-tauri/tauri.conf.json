@@ -34,7 +34,7 @@
   "bundle": {
     "active": true,
     "targets": "all",
-    "createUpdaterArtifacts": false,
+    "createUpdaterArtifacts": true,
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
@@ -56,5 +56,14 @@
     },
     "category": "Utility",
     "shortDescription": "Clean your Mac. Keep what matters."
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDZGQTQ0MjJEOUE3MUUyQzkKUldUSjRuR2FMVUtrYjZqbVNOcXlwSC93Y1d3cDBJbnJEK1RiQStaVCs2bkhybFl1MXNzcGJYWTkK",
+      "endpoints": [
+        "https://macbookcleaner.com/updates/{{target}}/{{arch}}/{{current_version}}"
+      ],
+      "requireSignedVersion": true
+    }
   }
 }

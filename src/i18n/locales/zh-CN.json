@@ -468,7 +468,7 @@
     "copies_other": "<b>{{count}}</b> 个副本"
   },
   "errors": {
-    "native": {
+  "native": {
       "invalidPath": "文件路径无效。",
       "gone": "文件已不存在。",
       "protectedSystem": "这是受保护的 macOS 位置（{{path}}），无法移除。",
@@ -1055,6 +1055,21 @@
       "deactivateSuccess": "许可证已停用。您现在可以在其他 Mac 上激活它。",
       "deactivateFailed": "无法停用：{{error}}"
     }
+  },
+  "update": {
+    "upToDate": "已是最新版本。",
+    "checkFailed": "无法检查更新：{{error}}",
+    "availableTitle": "新版本 {{version}} 可用",
+    "currentVersion": "当前版本为 {{version}}",
+    "installNow": "安装更新",
+    "downloadManually": "手动下载",
+    "downloading": "正在下载更新…",
+    "readyToRestart": "更新已安装。重启以完成。",
+    "restartNow": "立即重启",
+    "installFailed": "无法安装更新：{{error}}",
+    "installFailedFallback": "你可以改为手动下载并安装更新。",
+    "confirmTitle": "要安装此更新吗？",
+    "confirmBody": "MacBook Cleaner 将下载、验证并安装版本 {{version}}。完成后需要重启应用。"
   },
   "native": {
     "number": {

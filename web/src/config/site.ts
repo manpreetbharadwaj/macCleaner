@@ -16,23 +16,32 @@ function clean(value: string | undefined): string {
 export const SITE = {
   name: 'MacBook Cleaner',
   tagline: 'Clean your Mac. Keep what matters.',
-  /** Public origin, no trailing slash. The desktop app's links point at https://macbookcleaner.app. */
-  url: (clean(env.VITE_SITE_URL) || 'https://macbookcleaner.app').replace(/\/+$/, ''),
+  /**
+   * Public origin, no trailing slash. Production domain is macbookcleaner.com
+   * (confirmed: registered via Hostinger, deployed on Cloudflare Pages). The
+   * desktop app's own hardcoded references (Settings.tsx, license/config.rs's
+   * THANK_YOU_URL, external_url.rs's ALLOWED_HOSTS, update/UpdateSection.tsx)
+   * were updated to match in the same round — ALLOWED_HOSTS permits both
+   * .com and .app so neither can ever become a broken/blocked link.
+   */
+  url: (clean(env.VITE_SITE_URL) || 'https://macbookcleaner.com').replace(/\/+$/, ''),
   /** PLACEHOLDER — the legal entity that publishes the app. */
   companyName: '[Company Legal Name]',
   /** PLACEHOLDER — postal address used in the legal pages. */
   companyAddress: '[Company Address]',
   /** PLACEHOLDER — governing law / jurisdiction for the Terms. */
   jurisdiction: '[Governing Jurisdiction]',
-  supportEmail: clean(env.VITE_SUPPORT_EMAIL) || 'support@macbookcleaner.app',
-  privacyEmail: clean(env.VITE_PRIVACY_EMAIL) || 'privacy@macbookcleaner.app',
+  supportEmail: clean(env.VITE_SUPPORT_EMAIL) || 'support@macbookcleaner.com',
+  privacyEmail: clean(env.VITE_PRIVACY_EMAIL) || 'privacy@macbookcleaner.com',
   /**
-   * PLACEHOLDER — confirm before launch. firebase.json in this repo is set up
-   * for Firebase Hosting, so that's the default; change it if you host elsewhere.
+   * Confirmed this round: deployed on Cloudflare Pages. If the installer DMG
+   * ends up hosted elsewhere (e.g. GitHub Releases, via VITE_MAC_DOWNLOAD_URL),
+   * update `downloadHost` below to match — this value assumes the default
+   * "hosted with the site" case (prepare-installer.mjs's `hostedWithSite`).
    */
-  hostingProvider: 'Firebase Hosting (Google LLC)',
-  /** PLACEHOLDER — where the DMG file is served from (e.g. GitHub Releases, your CDN). */
-  downloadHost: '[Download Host]',
+  hostingProvider: 'Cloudflare Pages (Cloudflare, Inc.)',
+  /** Matches hostingProvider by default — see the comment above if the DMG is hosted elsewhere. */
+  downloadHost: 'Cloudflare Pages (Cloudflare, Inc.)',
   /** Date the Privacy Policy and Terms were last revised. */
   legalLastUpdated: 'October 1, 2026',
 } as const

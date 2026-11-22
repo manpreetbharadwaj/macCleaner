@@ -127,6 +127,9 @@ pub(crate) fn scan_all_files(home: &PathBuf, include_movies: bool) -> (Vec<Scann
 /// redesigned — only the timing driving it becomes real.
 #[tauri::command]
 pub async fn run_full_scan(app: AppHandle) -> Result<FullScanResultDto, String> {
+    // Held for the whole scan so an update check never starts replacing
+    // the running binary mid-scan — see busy.rs.
+    let _busy = crate::busy::enter();
     let home = dirs::home_dir().ok_or_else(|| "Could not determine home directory".to_string())?;
 
     emit_progress(&app, "overview", "Analyzing storage…", false);
@@ -284,6 +287,9 @@ fn measure_home_folders(home: &Path) -> HomeFolderSizes {
 /// emptied.
 #[tauri::command]
 pub async fn trash_items(app: AppHandle, items: Vec<TrashRequestItem>) -> Result<TrashOperationResult, String> {
+    // Same reasoning as run_full_scan — never let an update start
+    // replacing the binary while a deletion batch is in flight.
+    let _busy = crate::busy::enter();
     let home = dirs::home_dir().ok_or_else(|| "Could not determine home directory".to_string())?;
     let total = items.len();
 
@@ -449,6 +455,7 @@ pub async fn get_app_icon(path: String) -> Option<String> {
 /// normal `trash_items` path, so they get the standard home-scoped checks.
 #[tauri::command]
 pub async fn uninstall_app(path: String) -> Result<u64, String> {
+    let _busy = crate::busy::enter();
     let home = dirs::home_dir().ok_or_else(|| "Could not determine home directory".to_string())?;
     tauri::async_runtime::spawn_blocking(move || app_footprint::uninstall(&path, &home))
         .await

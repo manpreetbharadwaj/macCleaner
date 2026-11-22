@@ -494,7 +494,7 @@
     "copies_other": "<b>{{count}}</b> copie"
   },
   "errors": {
-    "native": {
+  "native": {
       "invalidPath": "Il percorso del file non è valido.",
       "gone": "Il file non esiste più.",
       "protectedSystem": "Questo è un percorso protetto di macOS ({{path}}) e non può essere rimosso.",
@@ -1114,6 +1114,21 @@
       "deactivateSuccess": "Licenza disattivata. Ora puoi attivarla su un altro Mac.",
       "deactivateFailed": "Disattivazione non riuscita: {{error}}"
     }
+  },
+  "update": {
+    "upToDate": "Sei aggiornato.",
+    "checkFailed": "Impossibile controllare gli aggiornamenti: {{error}}",
+    "availableTitle": "La versione {{version}} è disponibile",
+    "currentVersion": "Hai la versione {{version}}",
+    "installNow": "Installa aggiornamento",
+    "downloadManually": "Scarica manualmente",
+    "downloading": "Download dell'aggiornamento in corso…",
+    "readyToRestart": "Aggiornamento installato. Riavvia per completare.",
+    "restartNow": "Riavvia ora",
+    "installFailed": "Impossibile installare l'aggiornamento: {{error}}",
+    "installFailedFallback": "Puoi scaricare e installare l'aggiornamento manualmente.",
+    "confirmTitle": "Installare questo aggiornamento?",
+    "confirmBody": "MacBook Cleaner scaricherà, verificherà e installerà la versione {{version}}. Dovrai riavviare l'app per completare."
   },
   "native": {
     "number": {

@@ -192,7 +192,7 @@ export function DownloadPage() {
               <RefreshCw size={20} aria-hidden="true" />
               <h3>Updates</h3>
               <p>
-                There’s no automatic updater. <b>Settings → Check for Updates</b> opens this page — download the new version and replace the app in Applications. Your settings are kept.
+                <b>Settings → Check for Updates</b> checks, downloads, and verifies new versions for you — nothing installs without your confirmation, and you'll need to restart the app once to finish. Your settings are kept.
               </p>
             </Reveal>
             <Reveal className="extra" delay={120}>

@@ -61,7 +61,7 @@
     "updater": {
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDZGQTQ0MjJEOUE3MUUyQzkKUldUSjRuR2FMVUtrYjZqbVNOcXlwSC93Y1d3cDBJbnJEK1RiQStaVCs2bkhybFl1MXNzcGJYWTkK",
       "endpoints": [
-        "https://github.com/manpreetbharadwaj/macCleaner/releases/latest/download/latest.json"
+        "https://github.com/manpreetbharadwaj/macCleaner/releases/download/beta/latest.json"
       ],
       "requireSignedVersion": true
     }

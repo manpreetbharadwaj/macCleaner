@@ -1,9 +1,46 @@
-# Deploying the website to Cloudflare Pages (macbookcleaner.com)
+# Deploying the website to Cloudflare (macbookcleaner.com)
 
 Preparation only — **nothing was deployed, published, or pointed live by
 this round**. Everything below was verified against a real local build;
 the actual Cloudflare project and DNS records still need to be created by
-you (I have no access to your Cloudflare or Hostinger accounts).
+you (I have no access to your Cloudflare or Hostinger accounts, so I
+cannot independently confirm which Cloudflare product your project is
+actually configured as — this section reflects what you've told me).
+
+## Correction: Cloudflare Workers Static Assets, not Pages
+
+You've confirmed the live site is deployed via **Cloudflare Workers
+(Static Assets)**, not classic Cloudflare Pages — this doc's original
+title and settings below were written for Pages; the underlying
+requirements (root directory, build command, output directory, env vars,
+`_headers`) carry over conceptually, but the dashboard location differs:
+
+- Pages' per-deploy "Settings → Builds & deployments" becomes, for a
+  Workers project, **Workers & Pages → (your worker) → Settings →
+  Build** (Cloudflare's CI system for Workers is called **Workers
+  Builds** — same idea as Pages' Git integration: connect the repo, set a
+  root directory, build command, and output directory).
+- **Root directory**: `web` (same requirement, same reasoning as below —
+  this repo has two separate Vite projects, and the wrong one must never
+  be built).
+- **Build command**: `npm run build`.
+- **Output/assets directory**: `dist` (resolves to `web/dist`, same as
+  the Pages case).
+- **Build variables** (this is the Workers-Builds-specific part you
+  asked about): in that same Build settings screen, there's a build-time
+  **environment variables** section — set `VITE_SITE_URL`,
+  `VITE_MAC_DOWNLOAD_URL`, etc. there. These are read at **build time**
+  by Vite (`import.meta.env`), not at request time, so changing one
+  always requires a new deployment to take effect — the exact same
+  constraint as it would have been under Pages.
+- `web/public/_headers` (cache policy, security headers) is read the
+  same way by Workers Static Assets as it was by Pages — no change
+  needed there.
+
+If anything above doesn't match what you see in your actual dashboard,
+that's a sign Cloudflare's UI has moved since this was written, or that
+your project is configured differently than described to me — I can't
+verify this without access to your account.
 
 ## Fixing "it's serving the desktop app instead of the website"
 

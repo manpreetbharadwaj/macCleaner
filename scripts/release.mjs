@@ -66,12 +66,20 @@ const bundleMacosDir = path.join(root, 'src-tauri/target', target, 'release/bund
 const tarGz = path.join(bundleMacosDir, 'MacBook Cleaner.app.tar.gz')
 const sigFile = `${tarGz}.sig`
 
-// GitHub Releases' own "latest" convenience URL
-// (github.com/<owner>/<repo>/releases/latest/download/<file>) always
-// resolves to whichever release is marked "Latest", which is why
-// tauri.conf.json's updater endpoint points at a fixed `latest.json`
-// there instead of a per-version path — see docs/github-release-setup.md.
+// IMPORTANT: GitHub's own "/releases/latest/" convenience URL explicitly
+// excludes every prerelease — confirmed directly against a real public
+// repo (vercel/next.js: /releases/latest resolved to v16.4.6 even with
+// v16.5.0-canary.60, a newer prerelease, present). While this project is
+// shipping beta/prerelease-flagged builds, the updater endpoint must NOT
+// use that alias — it would 404 forever, since no non-prerelease release
+// exists yet. Instead, both this script and tauri.conf.json's updater
+// endpoint use a fixed, perpetual tag named "beta" (not a GitHub-reserved
+// alias — just an ordinary tag name this project keeps reusing) whose
+// assets get replaced each time a new beta build is ready. See
+// docs/github-release-setup.md. Once a real, non-prerelease release
+// exists, reconsider switching the endpoint back to "/releases/latest/".
 const GITHUB_REPO = 'manpreetbharadwaj/macCleaner'
+const BETA_TAG = 'beta'
 
 if (hasSigningKey && existsSync(tarGz) && existsSync(sigFile)) {
   mkdirSync(releaseDir, { recursive: true })
@@ -103,12 +111,17 @@ if (hasSigningKey && existsSync(tarGz) && existsSync(sigFile)) {
 }
 
 console.log(`
-Exact next steps (none of these happen automatically):
+Exact next steps (none of these happen automatically) — TWO releases while still in beta:
 1. Review ${path.relative(root, releaseDir)}/ — the DMG, its SHA-256, and (if produced) latest.json.
-2. Create a GitHub Release at tag v${version} (draft/prerelease first — gh release create v${version} --draft --prerelease --notes "...").
-3. Upload to that release, with exactly these filenames: the DMG, its .sha256, the .tar.gz, its .sig, and latest.json
-   (gh release upload v${version} release/*.dmg release/*.sha256 <path-to-tar.gz> <path-to-sig> ${path.relative(root, releaseDir)}/latest.json).
-4. Mark the release as the repo's "Latest release" only once you're ready — that's what the updater endpoint resolves to.
+2. Permanent, versioned release (human-facing — website link, changelog, historical record):
+   gh release create v${version} --draft --prerelease --notes "..."
+   gh release upload v${version} release/*.dmg release/*.sha256 <path-to-tar.gz> <path-to-sig>
+3. Rolling "${BETA_TAG}" release (machine-facing — this is ALL the updater ever reads):
+   gh release create ${BETA_TAG} --draft --prerelease --notes "Rolling beta channel pointer" --target main
+     (first time only; a tag named "${BETA_TAG}" that never advances to a real version number is intentional)
+   gh release upload ${BETA_TAG} ${path.relative(root, releaseDir)}/latest.json --clobber
+     (--clobber replaces the previous beta's manifest — this release's assets are meant to be overwritten every time)
+4. Publish BOTH drafts only when you're ready (they're independent "Draft" toggles).
 5. git commit the version bump and changelog entry yourself, after reviewing the diff.
-6. This script never tags, pushes, creates, or publishes a GitHub Release itself — every one of the steps above is a separate, explicit action you take.
+6. This script never tags, pushes, creates, or publishes a GitHub Release itself — every step above is separate and explicit.
 `)

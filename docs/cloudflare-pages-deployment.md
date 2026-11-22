@@ -5,6 +5,44 @@ this round**. Everything below was verified against a real local build;
 the actual Cloudflare project and DNS records still need to be created by
 you (I have no access to your Cloudflare or Hostinger accounts).
 
+## Fixing "it's serving the desktop app instead of the website"
+
+**Root cause, confirmed by direct inspection — this is a Cloudflare
+dashboard setting, not a repository bug.** This repo has two completely
+separate Vite projects: the repo root (`vite.config.ts` + root
+`package.json`) builds the **desktop app's** React frontend into a root
+`dist/`; `web/` is the actual, self-contained marketing site with its own
+`package.json`, builds into `web/dist`. I confirmed there is no Cloudflare
+Worker config (`wrangler.toml`, `_worker.js`) anywhere in the repo that
+could cause this on its own, and that the `web/` build itself is correct
+(rebuilt it fresh and inspected every requested page's actual HTML — real
+titles and real marketing copy, not the desktop app's `<div id="root">` +
+`/src/main.tsx` shell).
+
+The only way to get the desktop dashboard out of a static deploy of this
+repo is for the build to have run **at the repo root** instead of inside
+`web/` — almost always because Cloudflare Pages' "Connect to Git" flow
+auto-detects a framework (it finds the root `vite.config.ts` before you
+ever get to the Root Directory field) and pre-fills a build command/output
+directory for the **root** project, and the **Root Directory** field was
+left at its default (the repo root) rather than set to `web`.
+
+**The fix**, in the Cloudflare dashboard: your Pages project → **Settings
+→ Builds & deployments** → set **Root directory** to `web` (not blank, not
+`/`) → **Build command** to `npm run build` → **Build output directory**
+to `dist` (this resolves relative to the Root directory you just set, so
+it becomes `web/dist`, not the repo-root `dist/`) → **Save** → trigger a
+new deployment (Deployments tab → ⋯ on the latest one → **Retry
+deployment**, or just push a commit).
+
+**After redeploying, verify it worked** by viewing the live page's source
+(not the rendered page — "View Page Source" or `curl` the homepage) and
+confirming it does **not** contain `<div id="root">` immediately followed
+by a `<script type="module" src="/src/main.tsx">` tag — that exact
+combination is the desktop app's shell. The real website's homepage has
+full marketing HTML already in the initial response (it's prerendered),
+not an empty mount point.
+
 ## What changed this round
 
 - `web/src/config/site.ts`: production URL default changed from

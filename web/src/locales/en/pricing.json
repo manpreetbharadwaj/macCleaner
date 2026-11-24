@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Pricing",
+  "title1": "Try it free, then ",
+  "title2": "{{price}}",
+  "titleSuffix": " once",
+  "intro": "Every feature works during a {{trialDays}}-day free trial — no account or credit card to start. After that, a single {{price}} payment unlocks MacBook Cleaner for good: no subscription, no renewal, ever.",
+  "includedTitle": "One license. One Mac. Forever.",
+  "checks": [
+    "{{price}} one-time purchase — not a subscription",
+    "Lifetime license, no expiration, no renewal",
+    "{{trialDays}}-day free trial, full features, no account needed to start",
+    "Licensed for one Mac at a time — deactivate and transfer to a new Mac anytime",
+    "License key delivered by email right after payment"
+  ],
+  "buyButton": "Buy Lifetime License — {{price}}",
+  "priceNote": "USD list price. Shown in your local currency at checkout; tax may apply depending on your location.",
+  "alreadyPurchased": "Already purchased? Activate your license key from inside the app — Settings → License.",
+  "sandboxNote": "Purchasing isn't available here yet — we're still finishing setup. Check back soon, or download the free trial in the meantime.",
+  "ctaTitle": "Download, try it free for {{trialDays}} days, decide later."
+}

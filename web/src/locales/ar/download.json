@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "أيقونة تطبيق MacBook Cleaner",
+    "title": "MacBook Cleaner لنظام macOS",
+    "lead": "تنظيف التخزين ومراقبة الأداء لجهاز Mac الخاص بك — تتم المعالجة محليًا.",
+    "started": "بدأ تنزيلك — <b>{{fileName}}</b>. عند الانتهاء، اتبع الخطوات أدناه.",
+    "fileInfo": "{{fileName}}{{sizePart}} · صورة قرص (.dmg)",
+    "quickSteps": ["نزّل MacBook Cleaner.", "افتح ملف DMG الذي نزّلته.", "اسحب MacBook Cleaner إلى Applications."],
+    "quickStepsNotarizedLast": "شغّل التطبيق.",
+    "quickStepsUnnotarizedLast": "شغّل التطبيق — في المرة الأولى، استخدم <a>Open Anyway</a>.",
+    "specs": { "version": "الإصدار {{version}}", "released": "صدر في {{date}}", "built": "بُني في {{date}}", "macos": "{{macos}} أو أحدث" },
+    "releaseDetailsAria": "تفاصيل الإصدار",
+    "links": { "releaseNotes": "ملاحظات الإصدار", "privacy": "الخصوصية", "terms": "الشروط" },
+    "checksumLabel": "SHA-256"
+  },
+  "requirements": {
+    "eyebrow": "متطلبات النظام",
+    "title": "هل سيعمل على جهاز Mac الخاص بي؟",
+    "macos": "macOS",
+    "macosValue": "{{macosName}} ({{macosVersion}}) أو أحدث",
+    "processor": "المعالج",
+    "intelNote": "هذا الإصدار الموثّق لا يدعم أجهزة Mac المزوّدة بمعالج Intel.",
+    "account": "الحساب",
+    "accountValue": "لا حاجة إلى حساب"
+  },
+  "install": {
+    "eyebrow": "التثبيت",
+    "title": "ثبّته في أقل من دقيقة.",
+    "steps": [
+      { "title": "نزّل ملف DMG", "body": "انقر <b>Download for Mac</b>. تُحفَظ صورة القرص في مجلد Downloads الخاص بك." },
+      { "title": "افتح ملف DMG", "body": "انقر نقرًا مزدوجًا على <code>{{fileName}}</code> في Downloads. تُفتح نافذة تعرض التطبيق ومجلد Applications الخاص بك." },
+      { "title": "اسحب إلى Applications", "body": "اسحب <b>MacBook Cleaner</b> إلى مجلد Applications، ثم أخرج صورة القرص من الشريط الجانبي في Finder." },
+      { "title": "شغّل التطبيق", "body": "افتح MacBook Cleaner من Applications أو Launchpad. شغّله من Applications — فالتنظيف المجدول يعمل فقط من هناك." }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "التشغيل الأول",
+    "title": "تظهر لك رسالة تحذير أمني؟",
+    "intro": "هذا متوقَّع حاليًا — إليك السبب، وكيفية فتح التطبيق بأمان.",
+    "noticeTitle": "MacBook Cleaner غير موثَّق بعد من قِبل Apple",
+    "noticeBody1": "عادةً ما تُوقَّع التطبيقات الموزَّعة خارج Mac App Store بمعرّف مطوّر Apple وتُوثَّق. وُقِّع هذا الإصدار بطريقة مؤقتة — دون معرّف مطوّر — وهو غير موثَّق، لذا في المرة الأولى التي تفتحه فيها يقول Gatekeeper في macOS إنه لا يمكنه التحقق من المطوّر أو فحص التطبيق بحثًا عن برمجيات ضارة. لا تعني هذه الرسالة أنه عُثر على مشكلة — بل تعني أن Apple لم تراجع هذا الإصدار بعد.",
+    "noticeBody2": "<b>نزّل MacBook Cleaner من هذا الموقع فقط.</b> إذا حصلت على الملف من أي مكان آخر، فاحذفه.",
+    "howtoTitle": "افتحه مرة واحدة عبر System Settings",
+    "steps": [
+      "افتح MacBook Cleaner من Applications. عندما يظهر التحذير، انقر <b>Done</b> (أو <b>Cancel</b>) — ولا تنقله إلى المهملات.",
+      "افتح <b>System Settings ← Privacy & Security</b> ومرّر للأسفل إلى قسم <b>Security</b>.",
+      "بجانب الرسالة التي تفيد بحظر MacBook Cleaner، انقر <b>Open Anyway</b>، ثم أكّد بكلمة المرور أو Touch ID.",
+      "انقر <b>Open</b> في مربع الحوار الأخير. يتذكّر macOS اختيارك، لذا تحتاج إلى فعل ذلك مرة واحدة فقط لكل إصدار."
+    ],
+    "tip": "في macOS 14 Sonoma وما قبله، يمكنك أيضًا الضغط مع التحكم (Control) على التطبيق في Applications، واختيار <b>Open</b>، ثم النقر على <b>Open</b> مرة أخرى."
+  },
+  "afterInstall": {
+    "eyebrow": "بعد التثبيت",
+    "title": "جدير بالمعرفة.",
+    "permissions": { "title": "الأذونات", "body": "قد يطلب macOS السماح للتطبيق بالوصول إلى Downloads و Desktop و Documents، والتحكم في Finder عند أول عملية تنظيف. الوصول الكامل للقرص اختياري.", "link": "لماذا يحتاج التطبيق إلى كل إذن ←" },
+    "updates": { "title": "التحديثات", "body": "يتحقق <b>Settings ← Check for Updates</b> من الإصدارات الجديدة وينزّلها ويتحقق منها نيابةً عنك — لا يُثبَّت شيء دون تأكيدك، وستحتاج إلى إعادة تشغيل التطبيق مرة واحدة لإتمام العملية. تُحفَظ إعداداتك." },
+    "uninstalling": { "title": "إزالة التثبيت", "body": "أوقف Scheduled Cleanup و Launch at Login، ثم اسحب التطبيق إلى المهملات.", "link": "الخطوات الكاملة ←" },
+    "stuck": "واجهت مشكلة؟",
+    "contactSupport": "تواصل مع الدعم ←"
+  }
+}

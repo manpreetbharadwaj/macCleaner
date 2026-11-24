@@ -1,0 +1,14 @@
+{
+  "eyebrow": "感谢您",
+  "title": "感谢您的购买",
+  "intro": "请查收邮件中的许可证密钥,然后打开 MacBook Cleaner 并选择“激活许可证”。在应用本身确认您的密钥之前,购买内容不会被解锁——此页面仅作为密钥的便捷备份。",
+  "licenseKeyTitle": "您的许可证密钥",
+  "copy": "复制",
+  "copied": "已复制",
+  "sentCopyTo": "副本也已发送至 {{email}}。",
+  "checkEmailTitle": "请查收您的邮箱",
+  "noKeyFound": "我们未能在此页面的链接中找到许可证密钥。Dodo Payments 会在结账后立即将密钥发送到您的邮箱——请查找来自 Dodo Payments 的邮件,或检查垃圾邮件文件夹。",
+  "howToActivate": "如何激活",
+  "activateSteps": ["打开 MacBook Cleaner(如果尚未下载,请在下方下载)。", "进入“设置”→“许可证”。", "粘贴您的许可证密钥并点击“激活”。"],
+  "oneMacNote": "您的许可证一次仅可在一台 Mac 上使用。您可以随时在“设置”→“许可证”中停用并转移到另一台 Mac。"
+}

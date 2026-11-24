@@ -1,0 +1,61 @@
+{
+  "skipToContent": "Ir al contenido",
+  "tagline": "Limpia tu Mac. Conserva lo que importa.",
+  "nav": {
+    "features": "Funciones",
+    "pricing": "Precios",
+    "download": "Descargar",
+    "faq": "Preguntas frecuentes",
+    "support": "Soporte",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "footer": {
+    "description": "Limpieza de almacenamiento segura y local, y monitorización del rendimiento para macOS.",
+    "version": "Versión {{version}} · {{macos}} o posterior",
+    "columns": {
+      "product": "Producto",
+      "help": "Ayuda",
+      "legal": "Legal"
+    },
+    "links": {
+      "features": "Funciones",
+      "pricing": "Precios",
+      "download": "Descargar",
+      "releaseNotes": "Notas de versión",
+      "faq": "Preguntas frecuentes",
+      "support": "Soporte",
+      "installation": "Instalación",
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    },
+    "copyright": "© {{year}} {{name}}. Todos los derechos reservados.",
+    "trademark": "{{name}} es una aplicación independiente que no está afiliada a Apple Inc., ni cuenta con su respaldo o patrocinio. Apple, Mac, MacBook, macOS, Finder, Safari y Xcode son marcas de Apple Inc., registradas en EE. UU. y otros países."
+  },
+  "download": {
+    "cta": "Descargar para Mac",
+    "navCta": "Descargar",
+    "starting": "Iniciando…",
+    "started": "Descarga iniciada",
+    "unavailable": "Descarga no disponible",
+    "unavailableNote": "El instalador verificado para Mac aún no se ha publicado.",
+    "downloading": "Descargando {{fileName}}",
+    "error": "No se pudo iniciar la descarga. Inténtalo de nuevo en un momento o contacta con soporte."
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "lastUpdated": "Última actualización: {{date}}",
+    "onThisPage": "En esta página"
+  },
+  "aria": {
+    "requirements": "Requisitos",
+    "primaryNav": "Principal",
+    "mobileNav": "Móvil"
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "current": "Idioma: {{language}}",
+    "resetToAutomatic": "Restablecer a automático",
+    "resetDescription": "Detectar mi idioma automáticamente la próxima vez"
+  }
+}

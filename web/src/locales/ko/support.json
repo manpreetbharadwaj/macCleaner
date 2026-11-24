@@ -1,0 +1,23 @@
+{
+  "eyebrow": "지원",
+  "title": "무엇을 도와드릴까요?",
+  "intro": "대부분의 답변은 자주 묻는 질문에서 찾으실 수 있습니다. 그 외의 경우에는 이메일이 가장 빠른 연락 방법입니다.",
+  "cards": {
+    "email": { "title": "이메일 지원", "body": "앱 사용에 관해 궁금한 점이 있으신가요? 메일을 보내주시면 답변드리겠습니다.", "cta": "{{email}}" },
+    "bug": { "title": "버그 신고", "body": "제대로 작동하지 않는 부분이 있나요? 간단한 양식이 포함된 이메일이 열립니다.", "cta": "버그 신고하기" },
+    "feature": { "title": "기능 요청", "body": "MacBook Cleaner를 더 유용하게 만들 아이디어를 알려주세요.", "cta": "기능 제안하기" },
+    "install": { "title": "설치 도움말", "body": "단계별 설치 안내와 첫 실행 시 보안 경고 대처 방법.", "cta": "설치 가이드" },
+    "faq": { "title": "자주 묻는 질문", "body": "안전성, 개인정보 보호, 권한, 호환성, 제거 방법에 대한 답변입니다.", "cta": "FAQ 보기" }
+  },
+  "emailSubject": "MacBook Cleaner 지원 문의",
+  "logsTitle": "진단 로그 보내기",
+  "logsBody": "까다로운 문제의 경우 앱의 로그 파일을 요청드릴 수 있습니다. 로그는 Mac 내 <code>~/Library/Logs/{{bundleId}}</code>에만 저장되며 자동으로 전송되지 않습니다. 로그에는 Mac의 파일 경로가 포함될 수 있으니, 첨부하기 전에 내용을 확인하고 공유하고 싶지 않은 부분은 제거해 주세요.",
+  "bugTemplate": {
+    "subject": "버그 신고 — MacBook Cleaner {{version}}",
+    "body": "발생한 문제:\n\n\n예상했던 동작:\n\n\n재현 단계:\n1.\n2.\n\nMacBook Cleaner 버전: {{version}}\nmacOS 버전:\nMac 모델/칩:\n"
+  },
+  "featureTemplate": {
+    "subject": "기능 요청 — MacBook Cleaner",
+    "body": "MacBook Cleaner가 어떤 기능을 지원했으면 하나요?\n\n\n그 기능이 왜 도움이 될까요?\n"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "eyebrow": "FAQ",
+  "title": "Questions fréquentes",
+  "intro": "Des réponses claires sur la sécurité, la confidentialité, la compatibilité et le fonctionnement de MacBook Cleaner.",
+  "topicsAria": "Thèmes de la FAQ",
+  "stillHaveQuestion": "Encore une question ?",
+  "contactLine": "Écrivez à <email>{{email}}</email> ou visitez l’<support>Assistance</support>.",
+  "groups": {
+    "basics": {
+      "title": "Les bases",
+      "items": {
+        "what-is-it": {
+          "question": "Qu’est-ce que MacBook Cleaner ?",
+          "answer": [
+            "MacBook Cleaner est une application macOS qui vous montre ce qui occupe votre stockage et vous aide à supprimer ce dont vous n’avez pas besoin : caches, journaux, résidus d’applications, caches de build de développement, anciens téléchargements, fichiers volumineux et doublons exacts.",
+            "Elle inclut aussi un tableau de bord Performances : utilisation du CPU et de la mémoire en direct, les applications utilisant le plus de ressources, l’état de la batterie sur les MacBook, et des informations clés sur votre Mac et macOS.",
+            "Vous vérifiez tout avant la suppression, et les éléments supprimés vont dans la Corbeille plutôt que d’être effacés définitivement."
+          ]
+        },
+        "what-files": {
+          "question": "Quels fichiers peut-elle nettoyer ?",
+          "answer": [
+            "Caches et journaux d’applications et du système dans votre Library utilisateur ; caches de Safari, Chrome, Edge et Firefox ; caches laissés par des applications désinstallées ; caches de développement (Xcode DerivedData, Archives, assistance appareils, données Simulator, npm, Yarn, pnpm, Gradle, CocoaPods, images d’émulateur Android) ; et — uniquement si vous les choisissez — fichiers volumineux, anciens téléchargements et fichiers en double dans Téléchargements, Bureau, Documents et Films.",
+            "Elle peut aussi désinstaller des applications de votre dossier Applications avec leurs données résiduelles."
+          ]
+        },
+        "free": {
+          "question": "MacBook Cleaner est-il gratuit ?",
+          "answer": ["Toutes les fonctionnalités sont accessibles pendant un essai gratuit de {{trialDays}} jours — aucun compte ni carte bancaire pour démarrer. Ensuite, un paiement unique de {{price}} la débloque pour de bon : pas d’abonnement, pas de frais récurrents. {{priceNote}}", "La clé de licence vous est envoyée par e-mail juste après le paiement, fonctionne sur un Mac à la fois, et peut être désactivée et transférée vers un autre Mac quand vous le souhaitez."]
+        },
+        "faster": {
+          "question": "Le nettoyage des fichiers rendra-t-il mon Mac plus rapide ?",
+          "answer": [
+            "MacBook Cleaner libère de l’espace disque et vous montre ce que fait votre Mac. Son onglet Performances indique quelles applications utilisent le plus de CPU et de mémoire, afin que vous puissiez décider lesquelles quitter — mais elle ne « booste » pas la RAM, ne modifie pas les éléments de démarrage et ne change pas les réglages système, et nous ne promettons aucune amélioration de vitesse.",
+            "Cela dit, macOS a besoin d’espace libre pour les mises à jour, la mémoire virtuelle et les caches, donc un disque presque plein peut causer des problèmes que libérer de l’espace aide à éviter."
+          ]
+        }
+      }
+    },
+    "safety": {
+      "title": "Sécurité et confidentialité",
+      "items": {
+        "safe": {
+          "question": "MacBook Cleaner est-il sûr ?",
+          "answer": [
+            "Il a été conçu pour éviter toute perte de données. Rien n’est supprimé définitivement — les éléments approuvés sont déplacés vers la Corbeille, que l’application ne vide jamais. Vos propres fichiers (Téléchargements, Bureau, Documents, Films) ne sont jamais présélectionnés et nécessitent toujours une confirmation.",
+            "Une vérification de sécurité native s’exécute à chaque suppression, quelle que soit la demande de l’interface : les emplacements système, votre dossier personnel et ses dossiers principaux sont refusés, et les chemins qui ressemblent à des sauvegardes, trousseaux, mots de passe ou clés sont protégés.",
+            "Comme pour tout outil qui supprime des fichiers, gardez une sauvegarde (par exemple avec Time Machine) et vérifiez avant de nettoyer."
+          ]
+        },
+        "review": {
+          "question": "Puis-je vérifier les fichiers avant de les supprimer ?",
+          "answer": ["Oui — c’est le cœur du fonctionnement de l’application. Chaque élément affiche sa taille, son emplacement, pourquoi il existe et ce qui se passe si vous le supprimez. Vous pouvez décocher n’importe quoi, prévisualiser les fichiers avec l’Aperçu rapide, les afficher dans le Finder, ou les ajouter à une liste d’exclusion « ne plus jamais suggérer »."]
+        },
+        "recover": {
+          "question": "Les fichiers supprimés peuvent-ils être récupérés ?",
+          "answer": ["Oui, tant que vous ne videz pas la Corbeille. MacBook Cleaner déplace les éléments vers la Corbeille au lieu de les supprimer, vous pouvez donc l’ouvrir dans le Finder et choisir Replacer.", "Notez que les éléments dans la Corbeille occupent toujours de l’espace disque — votre espace libre n’augmente qu’une fois que vous videz la Corbeille vous-même."]
+        },
+        "upload": {
+          "question": "Envoie-t-elle mes fichiers ?",
+          "answer": ["Non. L’analyse et le nettoyage se déroulent entièrement sur votre Mac. L’application ne contient aucune analyse, télémétrie, rapport de plantage ou système de compte, et n’envoie nulle part d’informations sur vos fichiers.", "Le seul moment où elle touche à Internet, c’est quand vous cliquez sur un lien (comme « Rechercher des mises à jour » ou « Politique de confidentialité »), qui ouvre ce site dans votre navigateur."],
+          "linkLabel": "Lire la politique de confidentialité"
+        },
+        "permissions": {
+          "question": "De quelles autorisations a-t-elle besoin ?",
+          "answer": [
+            "macOS peut demander d’autoriser l’accès à vos dossiers Téléchargements, Bureau et Documents afin que l’application puisse trouver les fichiers volumineux et les anciens téléchargements. Lors de votre premier nettoyage, macOS demande si MacBook Cleaner peut contrôler le Finder — l’application demande au Finder de déplacer les éléments vers la Corbeille afin qu’ils puissent être restaurés.",
+            "L’accès complet au disque est facultatif. Il permet à l’application de mesurer des emplacements que macOS garde privés, comme certains caches d’applications et la Corbeille. Sans cet accès, l’application fonctionne quand même, mais affiche simplement moins d’informations. Les notifications ne servent qu’aux rappels et résumés du nettoyage planifié."
+          ]
+        }
+      }
+    },
+    "compatibility": {
+      "title": "Compatibilité et installation",
+      "items": {
+        "apple-silicon": {
+          "question": "Fonctionne-t-elle sur les Mac à puce Apple ?",
+          "answerYes": ["Oui. Le build vérifié actuel s’exécute nativement sur les Mac à puce Apple (séries M)."],
+          "answerUnverified": ["Un installeur vérifié n’a pas encore été publié, aucune revendication de compatibilité d’architecture n’est donc faite sur ce site."]
+        },
+        "intel": {
+          "question": "Prend-elle en charge les Mac Intel ?",
+          "answerUnverified": ["Un installeur vérifié n’a pas encore été publié, aucune revendication de compatibilité Intel n’est donc faite sur ce site."],
+          "answerUniversal": ["Oui. Le téléchargement est une application universelle qui s’exécute nativement sur les Mac Intel comme sur les Mac à puce Apple."],
+          "answerNo": ["Pas encore. Le build actuellement publié est uniquement pour les Mac à puce Apple. Un build compatible Intel n’a pas été publié — cette page sera mise à jour si cela change."]
+        },
+        "macos-versions": {
+          "question": "Quelles versions de macOS sont prises en charge ?",
+          "answer": ["{{macosName}} ({{macosVersion}}) ou version ultérieure, sur Mac {{architecture}}."]
+        },
+        "security-warning": {
+          "question": "Pourquoi macOS affiche-t-il un avertissement de sécurité ?",
+          "answer": [
+            "MacBook Cleaner n’est pas encore notarisé par Apple, donc la première fois que vous l’ouvrez, le Gatekeeper de macOS indique qu’il ne peut pas vérifier le développeur. C’est normal pour les applications distribuées en dehors du Mac App Store sans notarisation Apple — cela ne signifie pas que quelque chose de nuisible a été trouvé.",
+            "Téléchargez l’application uniquement depuis ce site. Ouvrez-la ensuite une fois via Réglages Système → Confidentialité et sécurité → Ouvrir quand même. La page Télécharger vous guide étape par étape."
+          ],
+          "linkLabel": "Comment ouvrir l’application"
+        },
+        "uninstall": {
+          "question": "Comment désinstaller MacBook Cleaner ?",
+          "answer": [
+            "Si vous avez activé le Nettoyage planifié ou Lancer à la connexion, désactivez-les d’abord dans l’application afin que leurs assistants en arrière-plan soient supprimés. Quittez ensuite l’application et faites glisser MacBook Cleaner d’Applications vers la Corbeille.",
+            "Pour supprimer aussi ses réglages et journaux, supprimez ~/Library/Application Support/{{bundleId}} et ~/Library/Logs/{{bundleId}}. Si vous avez sauté la première étape, supprimez aussi les fichiers {{bundleId}}.*.plist dans ~/Library/LaunchAgents."
+          ]
+        }
+      }
+    },
+    "performance": {
+      "title": "Suivi des performances",
+      "items": {
+        "cpu": {
+          "question": "MacBook Cleaner surveille-t-il l’utilisation du CPU ?",
+          "answer": ["Oui. L’onglet Performances affiche l’utilisation du CPU en direct avec un graphique sur 60 secondes, divisée en temps utilisateur, système et inactif, ainsi que l’utilisation du CPU de chaque application active. Les valeurs sont affichées en pourcentage de la puissance de traitement totale de votre Mac."]
+        },
+        "ram-apps": {
+          "question": "Puis-je voir quelles applications utilisent le plus de RAM ?",
+          "answer": ["Oui. Applications actives liste vos applications ouvertes avec leur mémoire, CPU et durée d’exécution, et peut être triée selon n’importe lequel de ces critères. La mémoire est l’empreinte physique — la même mesure qu’utilise le Moniteur d’activité — et inclut les processus auxiliaires de chaque application.", "macOS n’autorise pas les applications classiques à lire le CPU ou la mémoire des processus appartenant à d’autres utilisateurs (comme certains services système), ces entrées affichent donc un tiret plutôt qu’un nombre."]
+        },
+        "cycle-count": {
+          "question": "Puis-je vérifier le nombre de cycles de la batterie de mon MacBook ?",
+          "answer": ["Oui. Sur les MacBook, la section Batterie affiche les cycles de charge, la capacité maximale, la charge, la source d’alimentation et l’état de la batterie tels que rapportés par macOS. Quand la batterie indique le nombre de cycles pour lequel elle a été conçue, celui-ci est aussi affiché. Les Mac de bureau n’ont pas de batterie, la section est donc masquée."]
+        },
+        "upload-apps": {
+          "question": "L’application envoie-t-elle mes données d’applications en cours d’exécution ?",
+          "answer": ["Non. Les applications actives, les détails des processus, le CPU, la mémoire, la batterie et les informations du Mac sont lus localement depuis macOS, affichés à l’écran et conservés uniquement en mémoire pendant que l’application est ouverte. Rien de tout cela n’est envoyé, stocké sur le disque ou utilisé à des fins d’analyse."],
+          "linkLabel": "Lire la politique de confidentialité"
+        },
+        "mac-model": {
+          "question": "Puis-je voir le modèle de mon Mac et sa RAM ?",
+          "answer": ["Oui. Infos Mac affiche votre modèle, votre puce, les cœurs CPU et GPU, la mémoire, le stockage, les écrans, la version et le build de macOS, ainsi que la disponibilité. Votre numéro de série n’est jamais lu."]
+        },
+        "macos-update": {
+          "question": "Peut-elle me dire si macOS a besoin d’une mise à jour ?",
+          "answer": ["Elle affiche le résultat de la propre vérification automatique de Mise à jour de logiciels de macOS — par exemple « À jour » ou le nom d’une mise à jour disponible — ainsi que la dernière fois que macOS a vérifié. MacBook Cleaner ne contacte jamais Apple lui-même et n’installe jamais de mises à jour ; le bouton Ouvrir Mise à jour de logiciels vous amène à Réglages Système.", "Si macOS n’a enregistré aucune vérification, le statut est affiché comme inconnu plutôt que deviné."]
+        },
+        "monitoring-overhead": {
+          "question": "Le suivi des performances ralentit-il mon Mac ?",
+          "answer": ["Le suivi ne s’exécute que lorsque l’écran Performances est ouvert, ralentit quand la fenêtre n’a pas le focus, et s’arrête complètement quand la fenêtre est masquée ou que vous passez à un autre écran. Les détails statiques comme le modèle de votre Mac ne sont lus qu’une fois par session.", "Dans nos mesures sur un MacBook Pro Apple M1, le travail de suivi représentait en moyenne environ un demi pour cent d’un seul cœur de CPU pendant que l’écran était ouvert."]
+        }
+      }
+    },
+    "automation": {
+      "title": "Analyse et automatisation",
+      "items": {
+        "how-often": {
+          "question": "À quelle fréquence dois-je analyser mon Mac ?",
+          "answer": ["Il n’y a pas de bonne réponse — cela dépend de l’usage que vous faites de votre Mac. Beaucoup trouvent qu’une vérification hebdomadaire suffit amplement. Les développeurs qui compilent souvent voudront peut-être analyser plus fréquemment, car les caches de build grossissent vite.", "Le Nettoyage planifié peut vous le rappeler automatiquement, uniquement quand il y a assez à nettoyer ou que l’espace libre vient à manquer."]
+        },
+        "automatic": {
+          "question": "L’application s’exécute-t-elle automatiquement ?",
+          "answer": [
+            "Uniquement si vous l’activez. Le Nettoyage planifié est désactivé par défaut. Une fois activé, il effectue une vérification en arrière-plan quotidienne, hebdomadaire ou mensuelle à l’heure que vous choisissez.",
+            "En mode « Me le rappeler », il envoie seulement une notification. En mode « Nettoyer automatiquement » — qui nécessite une confirmation explicite distincte — il déplace une liste fixe de six caches de développement (Xcode DerivedData, npm, Yarn, pnpm, Gradle, CocoaPods) vers la Corbeille, et seulement s’il y a au moins 1 Go, plafonné à 10 Go et 50 éléments par exécution. Vos fichiers personnels ne sont jamais touchés automatiquement.",
+            "Lancer à la connexion est également facultatif et désactivé par défaut."
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "legalReviewNotice": "Diese Übersetzung wurde maschinell erstellt und wurde noch nicht von einem in Ihrer Rechtsordnung zugelassenen Rechtsanwalt geprüft. Maßgeblich ist die englische Fassung dieser Nutzungsbedingungen; bei Widersprüchen gilt die englische Fassung.",
+  "title": "Nutzungsbedingungen",
+  "shortVersion": "<b>Kurz gefasst.</b> Sie können {{siteName}} auf Macs nutzen, die Sie besitzen oder kontrollieren. Sie entscheiden, was entfernt wird, prüfen Sie daher Elemente und halten Sie Backups bereit. Wir können nicht garantieren, wie viel Speicherplatz Sie zurückgewinnen. Die Software wird wie besehen bereitgestellt.",
+  "shortVersionNote": "Diese Zusammenfassung dient nur der Übersicht; die vollständigen Bedingungen unten gelten.",
+  "sections": {
+    "acceptance": {
+      "title": "Annahme dieser Bedingungen",
+      "body": [{ "p": "Diese Nutzungsbedingungen („Bedingungen“) sind eine Vereinbarung zwischen Ihnen und {{companyName}} („wir“, „uns“) für die {{siteName}}-App für macOS (die „Software“) und diese Website (die „Website“). Durch das Herunterladen, Installieren oder Nutzen der Software oder das Nutzen der Website stimmen Sie diesen Bedingungen zu. Wenn Sie nicht zustimmen, nutzen Sie sie nicht. Wenn Sie die Software im Namen einer Organisation nutzen, bestätigen Sie, dass Sie befugt sind, diese Bedingungen für sie zu akzeptieren." }]
+    },
+    "license": {
+      "title": "Lizenz zur Nutzung der Software",
+      "body": [{ "p": "Vorbehaltlich dieser Bedingungen gewähren wir Ihnen eine persönliche, nicht ausschließliche, nicht übertragbare, widerrufliche Lizenz zum Herunterladen, Installieren und Nutzen der Software auf Macs, die Sie besitzen oder kontrollieren, für Ihre persönlichen oder internen geschäftlichen Zwecke. Die Software wird lizenziert, nicht verkauft. Wir behalten uns alle nicht ausdrücklich gewährten Rechte vor." }]
+    },
+    "restrictions": {
+      "title": "Lizenzbeschränkungen",
+      "body": [
+        { "p": "Außer soweit geltendes Recht dies ausdrücklich erlaubt, dürfen Sie nicht:" },
+        { "ul": ["die Software kopieren, verändern, übersetzen oder davon abgeleitete Werke erstellen;", "die Software zurückentwickeln, dekompilieren oder disassemblieren;", "die Software verkaufen, vermieten, verleasen, unterlizenzieren, weiterverbreiten oder veröffentlichen oder sie anderswo als auf dieser Website zum Download anbieten;", "Urheberrechts-, Marken- oder andere Hinweise entfernen oder verändern;", "die Software unter Verstoß gegen geltendes Recht nutzen oder um auf Daten zuzugreifen oder solche zu entfernen, für die Sie keine Berechtigung haben."] }
+      ]
+    },
+    "price": {
+      "title": "Preis",
+      "body": [{ "p": "Version {{version}} der Software wird kostenlos und ohne In-App-Käufe oder Abonnements bereitgestellt. Sollten wir künftig kostenpflichtige Funktionen oder Versionen einführen, werden wir diese vorher klar beschreiben, und Ihnen werden niemals Kosten berechnet, ohne dass Sie zustimmen." }]
+    },
+    "your-responsibility": {
+      "title": "Ihre Verantwortung für das, was Sie entfernen",
+      "body": [
+        { "p": "Die Software hilft Ihnen, Dateien zu identifizieren, und schlägt vor, was gefahrlos entfernt werden könnte, aber <b>Sie entscheiden, was entfernt wird</b>. Kennzeichnungen wie „Sicher“ und „Prüfen“ sind Empfehlungen basierend auf Dateityp und Speicherort, keine Garantien über den Wert einer Datei für Sie. Bitte prüfen Sie Elemente vor dem Bereinigen — insbesondere Ihre eigenen Dateien und alles, was zur Prüfung markiert ist." },
+        { "p": "Die Software verschiebt von Ihnen genehmigte Elemente in den macOS-Papierkorb, von wo aus sie normalerweise bis zur Leerung des Papierkorbs wiederhergestellt werden können. Das Leeren des Papierkorbs entfernt sie endgültig; das ist Ihre Handlung außerhalb der Software. Wenn Sie die automatische Bereinigung in der geplanten Bereinigung aktivieren, ermächtigen Sie die Software, die in der Software beschriebenen berechtigten Entwickler-Caches ohne erneute Nachfrage in den Papierkorb zu verschieben." },
+        { "p": "Das Entfernen von Caches oder App-Daten kann erfordern, dass andere Apps diese Daten neu erstellen oder erneut herunterladen, kann Sie bei manchen Apps abmelden oder deren Verhalten ändern. Die Deinstallation einer App zusammen mit ihren Support-Dateien entfernt die lokal gespeicherten Daten dieser App." }
+      ]
+    },
+    "backups": {
+      "title": "Backups",
+      "body": [{ "p": "Sie sind dafür verantwortlich, regelmäßige, aktuelle Backups Ihrer Daten zu führen (zum Beispiel mit Time Machine), bevor Sie die Software nutzen. Wir empfehlen dringend ein aktuelles Backup vor jeder Bereinigung." }]
+    },
+    "no-guarantee": {
+      "title": "Keine Ergebnisgarantie",
+      "body": [{ "p": "Wie viel Speicherplatz die Software findet oder beim Zurückgewinnen hilft, hängt vollständig von Ihrem Mac und Ihrer Nutzung ab. In der Software angezeigte Zahlen sind Schätzungen, und Zahlen auf dieser Website sind veranschaulichende Beispiele. Von Elementen im Papierkorb belegter Speicherplatz wird erst freigegeben, wenn der Papierkorb geleert wird, und Apps können Caches im Laufe der Zeit neu erstellen. Wir versprechen keine bestimmte Menge an zurückgewonnenem Speicherplatz oder eine Verbesserung der Geschwindigkeit oder Leistung Ihres Macs. In der Software angezeigte Leistungs-, Akku- und Systeminformationen werden von macOS gemeldet und dienen nur zur Information; sie sind keine Diagnose, und die Software repariert keine Hardware oder Akkus." }]
+    },
+    "updates": {
+      "title": "Updates und Änderungen der Software",
+      "body": [{ "p": "Wir können Updates veröffentlichen, die Funktionen hinzufügen, ändern oder entfernen, und wir können das Angebot der Software jederzeit einstellen. Die Software aktualisiert sich nicht selbst; neue Versionen werden auf dieser Website angeboten. Diese Bedingungen gelten für Updates, sofern diese nicht mit anderen Bedingungen einhergehen." }]
+    },
+    "early-release": {
+      "title": "Frühe Veröffentlichung",
+      "body": [{ "p": "{{siteName}} ist ein neues Produkt. Obwohl es mit umfangreichen Schutzmaßnahmen entwickelt wurde, kann es Fehler enthalten oder sich auf manchen Konfigurationen unerwartet verhalten.{{notarizedNote}} Bitte <link-support>melden Sie Probleme</link-support>, damit wir sie beheben können." }],
+      "notarizedNote": " Die aktuelle Version ist nicht von Apple notariell beglaubigt, daher zeigt macOS beim ersten Öffnen eine Warnung; Installationsschritte finden Sie auf der Download-Seite."
+    },
+    "privacy": {
+      "title": "Datenschutz",
+      "body": [{ "p": "Unsere <link-privacy>Datenschutzerklärung</link-privacy> erklärt, wie die Software und die Website mit Informationen umgehen. Kurz gesagt verarbeitet die Software Ihre Dateien lokal auf Ihrem Mac und sendet uns keine Informationen darüber." }]
+    },
+    "ip": {
+      "title": "Geistiges Eigentum",
+      "body": [{ "p": "Die Software und die Website, einschließlich ihres Codes, Designs, Texts, der Grafiken und des Namens und Logos {{siteName}}, gehören {{companyName}} oder dessen Lizenzgebern und sind durch Gesetze zum geistigen Eigentum geschützt. Diese Bedingungen gewähren Ihnen kein Recht, unsere Namen oder Logos zu nutzen." }]
+    },
+    "apple": {
+      "title": "Apple-Marken",
+      "body": [{ "p": "{{siteName}} ist eine unabhängige Anwendung und steht in keiner Verbindung zu Apple Inc., wird nicht von Apple unterstützt oder gesponsert. Apple, Mac, MacBook, macOS, Finder, Safari, Xcode und Time Machine sind Marken von Apple Inc., eingetragen in den USA und anderen Ländern. Andere Produktnamen sind Marken ihrer jeweiligen Inhaber." }]
+    },
+    "feedback": {
+      "title": "Feedback",
+      "body": [{ "p": "Wenn Sie uns Vorschläge oder Feedback senden, erlauben Sie uns, diese ohne Verpflichtung Ihnen gegenüber zur Verbesserung unserer Produkte zu verwenden." }]
+    },
+    "warranty": {
+      "title": "Gewährleistungsausschluss",
+      "body": [{ "p": "Im gesetzlich maximal zulässigen Umfang werden die Software und die Website „wie besehen“ und „wie verfügbar“ bereitgestellt, ohne Gewährleistungen jeglicher Art, ob ausdrücklich, stillschweigend oder gesetzlich, einschließlich stillschweigender Gewährleistungen der Marktgängigkeit, Eignung für einen bestimmten Zweck, des Rechtstitels und der Nichtverletzung von Rechten Dritter. Wir gewährleisten nicht, dass die Software fehlerfrei oder unterbrechungsfrei ist, dass sie jede entfernbare Datei identifiziert oder dass jedes von ihr vorgeschlagene Element für Sie gefahrlos entfernt werden kann.", "caps": true }]
+    },
+    "liability": {
+      "title": "Haftungsbeschränkung",
+      "body": [
+        { "p": "Im gesetzlich maximal zulässigen Umfang haftet {{companyName}} nicht für indirekte, beiläufig entstandene, besondere, Folge- oder Strafschäden oder für den Verlust von Daten, Dateien, Gewinnen, Einnahmen oder Geschäftswert, die sich aus oder im Zusammenhang mit Ihrer Nutzung (oder Nichtnutzungsmöglichkeit) der Software oder Website ergeben — einschließlich der Entfernung von Ihnen ausgewählter oder genehmigter Dateien — selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden.", "caps": true },
+        { "p": "Soweit gesetzlich zulässig, ist unsere Gesamthaftung für Ansprüche im Zusammenhang mit der Software oder Website auf den höheren der Beträge begrenzt, die Sie uns in den zwölf Monaten vor dem Anspruch für die Software gezahlt haben, oder 50 USD [Platzhalter — Betrag und Währung bestätigen].", "caps": true },
+        { "p": "Manche Rechtsordnungen erlauben bestimmte Gewährleistungsausschlüsse oder Haftungsbegrenzungen nicht, sodass einiges davon möglicherweise nicht auf Sie zutrifft. Nichts in diesen Bedingungen beschränkt eine Haftung, die gesetzlich nicht beschränkt werden kann, oder Ihre gesetzlichen Rechte als Verbraucher." }
+      ]
+    },
+    "termination": {
+      "title": "Beendigung",
+      "body": [{ "p": "Sie können die Nutzung der Software jederzeit beenden, indem Sie sie deinstallieren. Ihre Lizenz endet automatisch, wenn Sie diese Bedingungen wesentlich verletzen. Bei Beendigung müssen Sie die Nutzung einstellen und die Software löschen. Abschnitte, die ihrer Natur nach eine Beendigung überdauern sollten, bleiben bestehen." }]
+    },
+    "governing-law": {
+      "title": "Anwendbares Recht",
+      "body": [{ "p": "Diese Bedingungen unterliegen dem Recht von {{jurisdiction}}, ohne Anwendung von Kollisionsnormen. Die Gerichte von {{jurisdiction}} sind für jede Streitigkeit zuständig, außer wenn Ihnen das örtliche Verbraucherschutzrecht das Recht einräumt, Verfahren an Ihrem Wohnort einzuleiten." }]
+    },
+    "changes": {
+      "title": "Änderungen dieser Bedingungen",
+      "body": [{ "p": "Wir können diese Bedingungen von Zeit zu Zeit aktualisieren. Das Datum „Zuletzt aktualisiert“ oben zeigt die neueste Überarbeitung; wesentliche Änderungen werden auch in den Versionshinweisen vermerkt. Die fortgesetzte Nutzung der Software oder Website nach Inkrafttreten von Änderungen bedeutet, dass Sie die aktualisierten Bedingungen akzeptieren." }]
+    },
+    "general": {
+      "title": "Allgemeines",
+      "body": [{ "p": "Diese Bedingungen bilden zusammen mit der Datenschutzerklärung die gesamte Vereinbarung zwischen Ihnen und uns bezüglich der Software und Website. Sollte eine Bestimmung als nicht durchsetzbar erachtet werden, bleiben die übrigen in Kraft. Unser Versäumnis, eine Bestimmung durchzusetzen, stellt keinen Verzicht darauf dar." }]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "body": [{ "p": "Fragen zu diesen Bedingungen? Schreiben Sie an {{supportEmail}} oder an {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

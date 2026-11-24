@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Informacje o wersji",
+  "title": "Co nowego",
+  "intro": "Każda wersja MacBook Cleaner i to, co się w niej zmieniło.",
+  "latestBadge": "Najnowsza",
+  "dateUnannounced": "Data wydania zostanie ogłoszona",
+  "downloadLatest": "Pobierz najnowszą wersję →",
+  "releases": {
+    "firstRelease": {
+      "title": "Pierwsze wydanie",
+      "summary": "Pierwsza publiczna wersja MacBook Cleaner.",
+      "sections": {
+        "cleanupTools": {
+          "heading": "Narzędzia czyszczące",
+          "items": [
+            "Smart Clean: jedno skanowanie pogrupowane w Śmieci systemowe, pamięć podręczną przeglądarek, pozostałości po aplikacjach, logi i raporty awarii, śmieci deweloperskie oraz stare pliki pobrane",
+            "Eksplorator pamięci ze zmierzonym podziałem według kategorii",
+            "Wyszukiwanie dużych plików z progami 500 MB, 1 GB, 5 GB i 10 GB oraz filtrami typów",
+            "Przegląd Pobranych pogrupowany według wieku",
+            "Wyszukiwanie duplikatów z pełną weryfikacją zawartości SHA-256",
+            "Czyszczenie aplikacji: przeglądaj pamięć podręczną, logi i pliki wsparcia aplikacji; czyść je lub odinstaluj aplikację",
+            "Śmieci systemowe i czyszczenie deweloperskie (Xcode, symulatory, npm, Yarn, pnpm, Gradle, CocoaPods, obrazy emulatora Androida)"
+          ]
+        },
+        "performance": {
+          "heading": "Wydajność",
+          "items": [
+            "Nowa zakładka Wydajność z wykresami CPU i pamięci na żywo, presją pamięci i plikiem wymiany",
+            "Uruchomione aplikacje: CPU, pamięć i czas działania dla każdej aplikacji, z pogrupowanymi procesami pomocniczymi i panelem szczegółów",
+            "Stan baterii na MacBookach: naładowanie, liczba cykli, maksymalna pojemność i stan raportowane przez macOS",
+            "Informacje o Macu: model, procesor, rdzenie, GPU, pamięć, wyświetlacze, wersja i kompilacja macOS, czas pracy",
+            "Status aktualizacji macOS z własnej kontroli Uaktualnień oprogramowania, ze skrótem do Ustawień systemowych",
+            "Podsumowanie stanu Maca z opisowymi statusami (bez wymyślonych wskaźników)"
+          ]
+        },
+        "automation": {
+          "heading": "Automatyzacja",
+          "items": ["Zaplanowane czyszczenie — codziennie, co tydzień lub co miesiąc — z trybami „Przypomnij mi” i opcjonalnym „Czyść automatycznie”", "Natywne powiadomienia macOS dla przypomnień i podsumowań", "Opcjonalne uruchamianie przy logowaniu"]
+        },
+        "safety": {
+          "heading": "Bezpieczeństwo",
+          "items": [
+            "Wszystko, co usunięte, trafia do Kosza; nic nie jest trwale usuwane",
+            "Natywna ochrona lokalizacji systemowych, głównych folderów folderu domowego oraz ścieżek wyglądających jak kopie zapasowe, pęki kluczy lub klucze",
+            "Pliki osobiste nigdy nie są zaznaczane wstępnie i zawsze wymagają potwierdzenia",
+            "Wykluczenia skanowania („nigdy więcej nie sugeruj”)"
+          ]
+        },
+        "interface": {
+          "heading": "Interfejs",
+          "items": ["Jasny, ciemny i systemowy wygląd", "Prowadzone powitanie przy pierwszym uruchomieniu z opcjonalnym krokiem Pełnego dostępu do dysku"]
+        }
+      }
+    }
+  }
+}

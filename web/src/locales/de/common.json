@@ -1,0 +1,61 @@
+{
+  "skipToContent": "Zum Inhalt springen",
+  "tagline": "Reinigen Sie Ihren Mac. Behalten Sie, was zählt.",
+  "nav": {
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "download": "Download",
+    "faq": "FAQ",
+    "support": "Support",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "footer": {
+    "description": "Sichere, lokale Speicherbereinigung und Leistungsüberwachung für macOS.",
+    "version": "Version {{version}} · {{macos}} oder neuer",
+    "columns": {
+      "product": "Produkt",
+      "help": "Hilfe",
+      "legal": "Rechtliches"
+    },
+    "links": {
+      "features": "Funktionen",
+      "pricing": "Preise",
+      "download": "Download",
+      "releaseNotes": "Versionshinweise",
+      "faq": "FAQ",
+      "support": "Support",
+      "installation": "Installation",
+      "privacy": "Datenschutz",
+      "terms": "Nutzungsbedingungen"
+    },
+    "copyright": "© {{year}} {{name}}. Alle Rechte vorbehalten.",
+    "trademark": "{{name}} ist eine unabhängige Anwendung und steht in keiner Verbindung zu Apple Inc., wird nicht von Apple unterstützt oder gesponsert. Apple, Mac, MacBook, macOS, Finder, Safari und Xcode sind Marken von Apple Inc., eingetragen in den USA und anderen Ländern."
+  },
+  "download": {
+    "cta": "Für Mac herunterladen",
+    "navCta": "Download",
+    "starting": "Wird gestartet …",
+    "started": "Download gestartet",
+    "unavailable": "Download nicht verfügbar",
+    "unavailableNote": "Der verifizierte Mac-Installer wurde noch nicht veröffentlicht.",
+    "downloading": "{{fileName}} wird heruntergeladen",
+    "error": "Der Download konnte nicht gestartet werden. Bitte versuchen Sie es gleich noch einmal oder wenden Sie sich an den Support."
+  },
+  "legal": {
+    "eyebrow": "Rechtliches",
+    "lastUpdated": "Zuletzt aktualisiert: {{date}}",
+    "onThisPage": "Auf dieser Seite"
+  },
+  "aria": {
+    "requirements": "Anforderungen",
+    "primaryNav": "Primär",
+    "mobileNav": "Mobil"
+  },
+  "languageSwitcher": {
+    "label": "Sprache",
+    "current": "Sprache: {{language}}",
+    "resetToAutomatic": "Automatisch zurücksetzen",
+    "resetDescription": "Meine Sprache beim nächsten Mal automatisch erkennen"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "MacBook Cleaner 应用图标",
+    "title": "适用于 macOS 的 MacBook Cleaner",
+    "lead": "为你的 Mac 提供存储清理与性能监控——全部在本地处理。",
+    "started": "下载已开始——<b>{{fileName}}</b>。下载完成后,请按照以下步骤操作。",
+    "fileInfo": "{{fileName}}{{sizePart}} · 磁盘映像(.dmg)",
+    "quickSteps": ["下载 MacBook Cleaner。", "打开下载的 DMG 文件。", "将 MacBook Cleaner 拖入“应用程序”文件夹。"],
+    "quickStepsNotarizedLast": "启动应用。",
+    "quickStepsUnnotarizedLast": "启动应用——首次打开时,请使用<a>仍要打开</a>。",
+    "specs": { "version": "版本 {{version}}", "released": "发布于 {{date}}", "built": "构建于 {{date}}", "macos": "{{macos}} 或更高版本" },
+    "links": { "releaseNotes": "发行说明", "privacy": "隐私政策", "terms": "使用条款" },
+    "checksumLabel": "SHA-256",
+    "releaseDetailsAria": "发行详情"
+  },
+  "requirements": {
+    "eyebrow": "系统要求",
+    "title": "能在我的 Mac 上运行吗?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}}({{macosVersion}})或更高版本",
+    "processor": "处理器",
+    "intelNote": "此经过验证的版本不支持 Intel Mac。",
+    "account": "账户",
+    "accountValue": "无需账户"
+  },
+  "install": {
+    "eyebrow": "安装",
+    "title": "一分钟内完成安装。",
+    "steps": [
+      { "title": "下载 DMG 文件", "body": "点击<b>下载 Mac 版</b>,磁盘映像文件将保存到你的“下载”文件夹。" },
+      { "title": "打开 DMG 文件", "body": "在“下载”文件夹中双击 <code>{{fileName}}</code>,随即会打开一个显示应用和“应用程序”文件夹的窗口。" },
+      { "title": "拖入应用程序文件夹", "body": "将 <b>MacBook Cleaner</b> 拖入“应用程序”文件夹,然后在访达侧边栏中推出磁盘映像。" },
+      { "title": "启动应用", "body": "从“应用程序”或启动台打开 MacBook Cleaner。请从“应用程序”文件夹运行——定时清理功能仅在此方式下可用。" }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "首次启动",
+    "title": "看到安全警告了吗?",
+    "intro": "目前出现这个提示是正常的——以下说明原因,以及如何安全地打开应用。",
+    "noticeTitle": "MacBook Cleaner 尚未通过 Apple 公证",
+    "noticeBody1": "通常情况下,在 Mac App Store 之外分发的应用会使用 Apple Developer ID 签名并经过公证。此版本采用临时签名方式——没有使用 Developer ID,也未经过公证,因此你首次打开时,macOS 的 Gatekeeper 会提示无法验证开发者身份或检查应用是否存在恶意软件。此提示并不代表发现了问题,只是意味着 Apple 尚未审核此版本。",
+    "noticeBody2": "<b>请务必仅从本网站下载 MacBook Cleaner。</b>如果你是从其他渠道获取的文件,请将其删除。",
+    "howtoTitle": "通过“系统设置”打开一次即可",
+    "steps": [
+      "从“应用程序”打开 MacBook Cleaner。出现警告时,点击<b>完成</b>(或<b>取消</b>)——不要将其移至废纸篓。",
+      "打开<b>系统设置 →“隐私与安全性”</b>,向下滚动到<b>安全性</b>部分。",
+      "在提示 MacBook Cleaner 被阻止的信息旁,点击<b>仍要打开</b>,然后用密码或 Touch ID 确认。",
+      "在最后的对话框中点击<b>打开</b>。macOS 会记住你的选择,因此每个版本只需执行一次此操作。"
+    ],
+    "tip": "在 macOS 14 Sonoma 及更早版本中,你也可以在“应用程序”中按住 Control 点按该应用,选择<b>打开</b>,然后再次点击<b>打开</b>。"
+  },
+  "afterInstall": {
+    "eyebrow": "安装之后",
+    "title": "需要了解的内容。",
+    "permissions": { "title": "权限", "body": "首次清理时,macOS 可能会请求访问“下载”“桌面”和“文稿”文件夹,以及控制“访达”的权限。完全磁盘访问权限为可选项。", "link": "了解每项权限的用途 →" },
+    "updates": { "title": "更新", "body": "<b>“设置”→“检查更新”</b>会为你检查、下载并验证新版本——未经你确认不会安装任何内容,完成后需要重启一次应用。你的设置将会保留。" },
+    "uninstalling": { "title": "卸载", "body": "先关闭定时清理和登录时启动,然后将应用拖入废纸篓。", "link": "查看完整步骤 →" },
+    "stuck": "遇到问题了?",
+    "contactSupport": "联系支持 →"
+  }
+}

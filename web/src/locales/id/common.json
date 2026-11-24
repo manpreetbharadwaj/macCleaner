@@ -1,0 +1,61 @@
+{
+  "skipToContent": "Langsung ke konten",
+  "tagline": "Bersihkan Mac Anda. Jaga yang penting.",
+  "nav": {
+    "features": "Fitur",
+    "pricing": "Harga",
+    "download": "Unduh",
+    "faq": "FAQ",
+    "support": "Dukungan",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu"
+  },
+  "footer": {
+    "description": "Pembersihan penyimpanan dan pemantauan performa yang aman dan sepenuhnya lokal untuk macOS.",
+    "version": "Versi {{version}} · {{macos}} atau yang lebih baru",
+    "columns": {
+      "product": "Produk",
+      "help": "Bantuan",
+      "legal": "Legal"
+    },
+    "links": {
+      "features": "Fitur",
+      "pricing": "Harga",
+      "download": "Unduh",
+      "releaseNotes": "Catatan Rilis",
+      "faq": "FAQ",
+      "support": "Dukungan",
+      "installation": "Instalasi",
+      "privacy": "Privasi",
+      "terms": "Ketentuan"
+    },
+    "copyright": "© {{year}} {{name}}. Seluruh hak cipta dilindungi.",
+    "trademark": "{{name}} adalah aplikasi independen dan tidak berafiliasi dengan, didukung, atau disponsori oleh Apple Inc. Apple, Mac, MacBook, macOS, Finder, Safari, dan Xcode adalah merek dagang Apple Inc., terdaftar di AS dan negara lain."
+  },
+  "download": {
+    "cta": "Unduh untuk Mac",
+    "navCta": "Unduh",
+    "starting": "Memulai…",
+    "started": "Unduhan dimulai",
+    "unavailable": "Unduhan tidak tersedia",
+    "unavailableNote": "Installer Mac yang terverifikasi belum dipublikasikan.",
+    "downloading": "Mengunduh {{fileName}}",
+    "error": "Unduhan tidak dapat dimulai. Coba lagi sesaat lagi, atau hubungi dukungan."
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "lastUpdated": "Terakhir diperbarui: {{date}}",
+    "onThisPage": "Di halaman ini"
+  },
+  "aria": {
+    "requirements": "Persyaratan",
+    "primaryNav": "Utama",
+    "mobileNav": "Seluler"
+  },
+  "languageSwitcher": {
+    "label": "Bahasa",
+    "current": "Bahasa: {{language}}",
+    "resetToAutomatic": "Atur ulang ke otomatis",
+    "resetDescription": "Deteksi bahasa saya secara otomatis di lain waktu"
+  }
+}

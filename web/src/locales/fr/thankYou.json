@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Merci",
+  "title": "Merci pour votre achat",
+  "intro": "Consultez votre e-mail pour trouver votre clé de licence, puis ouvrez MacBook Cleaner et sélectionnez Activer la licence. Votre achat n’est débloqué que lorsque l’application confirme elle-même votre clé — cette page n’en est qu’une copie pratique.",
+  "licenseKeyTitle": "Votre clé de licence",
+  "copy": "Copier",
+  "copied": "Copié",
+  "sentCopyTo": "Une copie a également été envoyée à {{email}}.",
+  "checkEmailTitle": "Consultez votre e-mail",
+  "noKeyFound": "Nous n’avons pas trouvé de clé de licence dans le lien de cette page. Dodo Payments envoie votre clé par e-mail juste après le paiement — recherchez un message de Dodo Payments ou vérifiez votre dossier spam.",
+  "howToActivate": "Comment l’activer",
+  "activateSteps": ["Ouvrez MacBook Cleaner (téléchargez-la ci-dessous si ce n’est pas déjà fait).", "Allez dans Réglages → Licence.", "Collez votre clé de licence et appuyez sur Activer."],
+  "oneMacNote": "Votre licence fonctionne sur un Mac à la fois. Vous pouvez la désactiver et la transférer vers un autre Mac à tout moment depuis Réglages → Licence."
+}

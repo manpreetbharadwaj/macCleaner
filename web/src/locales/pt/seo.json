@@ -1,0 +1,60 @@
+{
+  "/": {
+    "title": "MacBook Cleaner — Limpeza de Armazenamento e Monitor de Desempenho para Mac",
+    "description": "Liberte espaço no seu Mac com segurança e veja como o seu Mac está a funcionar. O MacBook Cleaner encontra caches, ficheiros grandes e duplicados, e mostra o uso de CPU e RAM, aplicações em execução, saúde da bateria e informações do sistema — tudo processado localmente."
+  },
+  "/features": {
+    "title": "Funcionalidades — Limpeza Mac, Monitor de CPU e RAM, Saúde da Bateria | MacBook Cleaner",
+    "description": "Smart Clean, Storage Explorer, procura de ficheiros grandes e duplicados, limpeza de aplicações, além de um monitor de desempenho para Mac: uso de CPU e memória, aplicações em execução, ciclos e saúde da bateria, e informações do sistema."
+  },
+  "/pricing": {
+    "title": "Preços — MacBook Cleaner",
+    "description": "MacBook Cleaner {{version}}: experimente gratuitamente durante {{trialDays}} dias e, depois, com um único pagamento de {{price}}, obtenha uma licença vitalícia. Sem subscrição, sem conta necessária para começar."
+  },
+  "/download": {
+    "title": "Transferir o MacBook Cleaner para Mac",
+    "description": "Transfira o MacBook Cleaner {{version}} para {{macos}} ou posterior em Macs {{architecture}}. Inclui os passos de instalação e ajuda para o primeiro arranque."
+  },
+  "/faq": {
+    "title": "Perguntas frequentes — O MacBook Cleaner é seguro? | MacBook Cleaner",
+    "description": "Respostas sobre segurança, privacidade, permissões, monitorização de desempenho, saúde da bateria, compatibilidade e instalação do MacBook Cleaner, o limpador de Mac e monitor de desempenho que permanece local."
+  },
+  "/support": {
+    "title": "Suporte — MacBook Cleaner",
+    "description": "Obtenha ajuda com o MacBook Cleaner: ajuda de instalação, relatórios de erros, pedidos de funcionalidades e contactos."
+  },
+  "/changelog": {
+    "title": "Notas de versão — MacBook Cleaner",
+    "description": "As novidades de cada versão do MacBook Cleaner para macOS."
+  },
+  "/privacy": {
+    "title": "Política de Privacidade — MacBook Cleaner",
+    "description": "Como o MacBook Cleaner e este site tratam as suas informações. A aplicação analisa, limpa e monitoriza localmente e não envia dados sobre os seus ficheiros ou o seu Mac."
+  },
+  "/terms": {
+    "title": "Termos de Serviço — MacBook Cleaner",
+    "description": "Os termos aplicáveis à transferência e utilização do MacBook Cleaner."
+  },
+  "/thank-you": {
+    "title": "Obrigado — MacBook Cleaner",
+    "description": "Obrigado pela sua compra. Encontre aqui a sua chave de licença e os passos de ativação."
+  },
+  "/404": {
+    "title": "Página não encontrada — MacBook Cleaner",
+    "description": "A página que procurava não existe."
+  },
+  "ogImageAlt": "A aplicação MacBook Cleaner a mostrar uma repartição do armazenamento",
+  "schema": {
+    "featureList": [
+      "Limpeza de armazenamento Mac",
+      "Analisador de armazenamento",
+      "Localizador de ficheiros grandes",
+      "Localizador de ficheiros duplicados",
+      "Desinstalador de aplicações",
+      "Monitor de CPU e memória",
+      "Monitor de aplicações em execução",
+      "Saúde e ciclos da bateria",
+      "Informações do sistema do Mac"
+    ]
+  }
+}

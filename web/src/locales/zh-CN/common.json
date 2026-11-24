@@ -1,0 +1,61 @@
+{
+  "skipToContent": "跳至内容",
+  "tagline": "清理您的 Mac，保留真正重要的内容。",
+  "nav": {
+    "features": "功能",
+    "pricing": "价格",
+    "download": "下载",
+    "faq": "常见问题",
+    "support": "支持",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单"
+  },
+  "footer": {
+    "description": "适用于 macOS 的安全本地化存储清理与性能监控。",
+    "version": "版本 {{version}} · {{macos}} 或更高版本",
+    "columns": {
+      "product": "产品",
+      "help": "帮助",
+      "legal": "法律信息"
+    },
+    "links": {
+      "features": "功能",
+      "pricing": "价格",
+      "download": "下载",
+      "releaseNotes": "发行说明",
+      "faq": "常见问题",
+      "support": "支持",
+      "installation": "安装方法",
+      "privacy": "隐私政策",
+      "terms": "使用条款"
+    },
+    "copyright": "© {{year}} {{name}}。保留所有权利。",
+    "trademark": "{{name}} 是一款独立应用程序，与 Apple Inc. 没有任何关联、认可或赞助关系。Apple、Mac、MacBook、macOS、Finder、Safari 和 Xcode 是 Apple Inc. 在美国及其他国家/地区注册的商标。"
+  },
+  "download": {
+    "cta": "下载 Mac 版",
+    "navCta": "下载",
+    "starting": "正在启动…",
+    "started": "下载已开始",
+    "unavailable": "暂不可下载",
+    "unavailableNote": "经过验证的 Mac 安装程序尚未发布。",
+    "downloading": "正在下载 {{fileName}}",
+    "error": "下载未能启动。请稍后重试，或联系支持团队。"
+  },
+  "legal": {
+    "eyebrow": "法律信息",
+    "lastUpdated": "最后更新：{{date}}",
+    "onThisPage": "本页内容"
+  },
+  "aria": {
+    "requirements": "系统要求",
+    "primaryNav": "主导航",
+    "mobileNav": "移动端导航"
+  },
+  "languageSwitcher": {
+    "label": "语言",
+    "current": "语言：{{language}}",
+    "resetToAutomatic": "恢复为自动检测",
+    "resetDescription": "下次自动检测我的语言"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "hero": {
+    "pill": "Sürüm {{version}} · macOS için üretildi",
+    "title1": "Temizle. İzle.",
+    "title2": "Mac'inizi anlayın.",
+    "lead": "Depolama alanını boşaltın, bellek kullanımını anlayın, çalışan uygulamaları izleyin, pil sağlığını kontrol edin ve Mac'iniz hakkındaki önemli bilgileri tek bir panelden görün. Her şeyi siz gözden geçirirsiniz. Hiçbir şey kalıcı olarak silinmez.",
+    "exploreFeatures": "Özellikleri Keşfet",
+    "requirement": "{{macos}} veya üzeri",
+    "chips": {
+      "trash": { "title": "Çöp Kutusu'na taşındı", "body": "Her zaman geri alınabilir" },
+      "personal": { "title": "Kişisel dosyalar", "body": "Asla önceden seçilmez" },
+      "scan": { "title": "Mac'inizde taranır", "body": "Hiçbir şey yüklenmez" }
+    }
+  },
+  "coreFeatures": {
+    "eyebrow": "Temizleme araçları",
+    "title": "Sekiz temizleme aracı. Tek sakin arayüz.",
+    "intro": "Her araç ne bulduğunu, neden orada olduğunu ve kaldırırsanız ne olacağını gösterir — böylece tahmin yerine güvenle temizlersiniz."
+  },
+  "scanDemo": {
+    "eyebrow": "Nasıl çalıştığını görün",
+    "title1": "Tek tarama. ",
+    "title2": "Her şey sıralandı.",
+    "intro": "Smart Clean, önbellekleri, günlükleri, uygulama artıklarını, geliştirici araçlarını ve İndirilenler klasörünüzü tek seferde tarar, ardından bulduklarını sade bir dille gruplara ayırır — her biri güvenle temizlenebilecekler ve bir kez daha bakılması gerekenler olarak ikiye ayrılır.",
+    "storageAnalyzed": "Analiz edilen depolama",
+    "itemsFound": "Bulunan öğeler",
+    "safeToClean": "Temizlemek güvenli",
+    "readyToScan": "Taramaya hazır",
+    "scanning": "Mac'iniz taranıyor…",
+    "canFreeUp": "Mac'iniz {{total}} GB boşaltabilir",
+    "foundSoFar": "Şimdiye kadar {{amount}} GB bulundu",
+    "safeSummary": "{{amount}} GB hemen güvenle temizlenebilir. Geri kalanı sizin incelemenize kalmış.",
+    "checking": "Kontrol ediliyor…",
+    "items": "öğe",
+    "footNote": "Uygulamanın örnek verileriyle yapılan tarama örneği. Mac'inizdeki sonuçlar farklı olacaktır.",
+    "replay": "Tekrar oynat",
+    "steps": {
+      "systemJunk": "Sistem Çöpü",
+      "browserCaches": "Tarayıcı Önbellekleri",
+      "appLeftovers": "Uygulama Artıkları",
+      "logsCrashReports": "Günlükler ve Çökme Raporları",
+      "developerJunk": "Geliştirici Çöpü",
+      "oldDownloads": "Eski İndirmeler"
+    }
+  },
+  "performanceMonitor": {
+    "eyebrow": "Yeni · Performans",
+    "title1": "Mac Performans İzleyici. ",
+    "title2": "Dahili.",
+    "intro": "MacBook Cleaner bir depolama temizleyiciden çok daha fazlasıdır. Performans sekmesi, Mac'inizin şu anki durumunu — bir geliştirici aracına dönüşmeden, sade bir dille — gösterir.",
+    "shotAlt": "CPU, bellek, depolama ve pil göstergelerini, Mac Sağlığı özetini ve canlı grafikleri gösteren MacBook Cleaner Performans paneli",
+    "shotNote": "Uygulamanın örnek verileriyle gösterilmiştir. Mac'inizde her değer macOS'tan canlı olarak okunur."
+  },
+  "runningApps": {
+    "eyebrow": "Çalışan Uygulamalar",
+    "title1": "En çok bellek ve CPU kullanan uygulamaları ",
+    "title2": "görün.",
+    "intro": "Çalışan Uygulamalar, Mac'inizde açık olanları belleği, CPU'su ve ne kadar süredir çalıştığıyla birlikte listeler. Yardımcı işlemler kendi uygulamalarına sayılır, böylece onlarca sekmeli bir tarayıcı tek bir dürüst toplam gösterir.",
+    "checks": ["Belleğe, CPU'ya, çalışma süresine veya ada göre sıralayın", "Varsayılan olarak uygulamalar — arka plan ve sistem işlemleri yalnızca istediğinizde", "Bellek, Etkinlik İzleyici ile aynı ölçüyü kullanır"],
+    "headers": { "app": "Uygulama", "cpu": "CPU", "memory": "Bellek", "running": "Çalışıyor" },
+    "note": "Örnek değerler yalnızca gösterim amaçlıdır — performans testi değildir."
+  },
+  "battery": {
+    "eyebrow": "Pil Sağlığı",
+    "title": "Pilinizi anlayın.",
+    "intro": "MacBook'larda, macOS'un piliniz hakkında tam olarak ne bildiğini görün — tahmin yok, uydurma puanlar yok.",
+    "checks": ["Pil yüzdesi ve şarj durumu", "Döngü sayısı — tamamlanan tam şarj döngülerinin sayısı", "Yeniyken karşılaştırılan maksimum kapasite", "Sistem Ayarları'nda gösterildiği şekilde pil durumu"],
+    "finePrint": "MacBook Cleaner pil bilgilerini raporlar; pilin fiziksel sağlığını onaramaz veya iyileştiremez. Masaüstü Mac'ler bu bölümü zaten göstermez.",
+    "stats": { "cycleCount": "Döngü sayısı", "maxCapacity": "Maksimum kapasite", "condition": "Durum", "power": "Güç", "conditionValue": "Normal", "powerValue": "Pil" },
+    "note": "Örnek değerler yalnızca gösterim amaçlıdır."
+  },
+  "macInfo": {
+    "eyebrow": "Mac Bilgisi",
+    "title1": "Mac'iniz hakkında önemli olan ",
+    "title2": "her şey.",
+    "intro": "Model, çip, bellek, depolama, ekranlar, macOS sürümü ve çalışma süresi — beş farklı yer yerine tek bir panelde. MacBook Cleaner ayrıca macOS'un kendi güncelleme kontrolünün bir güncelleme bulup bulmadığını, Yazılım Güncelleme'ye kısayolla birlikte gösterir.",
+    "finePrint": "macOS'tan yerel olarak okunur ve asla yüklenmez. Seri numaranız hiç okunmaz.",
+    "card": { "thisMac": "Bu Mac", "model": "MacBook Pro" },
+    "specs": { "model": "Mac modeli", "chip": "Çip", "memory": "Bellek", "storage": "Depolama", "macos": "macOS", "uptime": "Çalışma süresi" },
+    "note": "Örnek değerler yalnızca gösterim amaçlıdır."
+  },
+  "howItWorks": {
+    "eyebrow": "Nasıl çalışır",
+    "title": "Dört adım. Her birinde söz sahibi sizsiniz.",
+    "steps": [
+      { "title": "Mac'inizi tarayın", "body": "Tek tıklama önbellekleri, günlükleri, geliştirici araçlarını, uygulamaları, İndirilenler'i ve en büyük dosyalarınızı kontrol eder — hepsi Mac'inizde." },
+      { "title": "Önerileri gözden geçirin", "body": "Öğeler, her birinin ne olduğuna dair sade bir açıklamayla Güvenli veya İncele olarak etiketlenir. Saklamak istediğiniz her şeyin işaretini kaldırın." },
+      { "title": "Çöp Kutusu'na taşıyın", "body": "Onaylayın, onayladığınız öğeler Çöp Kutusu'na gider. Kendi dosyalarınız her zaman ek bir onay gerektirir." },
+      { "title": "Depolama alanını geri kazanın", "body": "Fikrinizi mi değiştirdiniz? Çöp Kutusu'ndan her şeyi geri koyabilirsiniz. Emin olduğunuzda, alanı geri almak için boşaltın." }
+    ]
+  },
+  "storageSection": {
+    "eyebrow": "Depolama bilgileri",
+    "title1": "Alanınızın gerçekte ",
+    "title2": "nereye gittiğini görün.",
+    "intro": "MacBook Cleaner gerçek klasörlerinizi ölçer ve bunları uygulamada gördüğünüz kategorilerle tek bir renkli depolama halkası olarak gösterir.",
+    "checks": ["macOS'un depolamayı raporladığı şekilde, ondalık gigabayt cinsinden boyutlar", "Hangi klasöre ait olduğu belirlenemeyen alan, dürüstçe Sistem Verisi olarak etiketlenir", "Fotoğraflar gibi kitaplıklar ölçülür, asla açılıp parçalara ayrılmaz"]
+  },
+  "storageViz": {
+    "modes": { "used": "Kullanılan", "recoverable": "Potansiyel olarak geri kazanılabilir", "free": "Boş" },
+    "centerLabels": { "used": "Kullanılan", "recoverable": "Geri kazanılabilir", "free": "Boş" },
+    "ofTotal": "{{total}} GB'nin",
+    "potentiallyRecoverable": "potansiyel olarak geri kazanılabilir",
+    "percentOfDisk": "diskin %{{percent}}'i",
+    "afterReview": "incelemenizden sonra",
+    "diskAriaLabel": "Örnek disk: {{used}} GB kullanılan, {{free}} GB boş, inceleme sonrası {{recoverable}} GB potansiyel olarak geri kazanılabilir",
+    "legendAriaLabel": "{{label}}: {{used}} kullanılan, {{recoverable}} potansiyel olarak geri kazanılabilir. {{note}}",
+    "defaultNote": "Uygulamanın örnek verileriyle gösterim amaçlı örnek — Mac'inizdeki sayılar farklı olacaktır. Ayrıntılar için bir kategoriye gelin veya odaklanın.",
+    "categories": {
+      "applications": { "label": "Uygulamalar", "note": "Uygulamalar ve kaldırdığınız uygulamalardan kalan artıklar" },
+      "documents": { "label": "Belgeler", "note": "Belgeler ve Masaüstü — incelenir, asla önceden seçilmez" },
+      "photos": { "label": "Fotoğraflar", "note": "Fotoğraflar kitaplığınız ölçülür, asla dokunulmaz" },
+      "videos": { "label": "Videolar", "note": "İnceleyebileceğiniz büyük kayıtlar" },
+      "downloads": { "label": "İndirilenler", "note": "Eski yükleyiciler, disk imajları ve arşivler" },
+      "cache": { "label": "Önbellek", "note": "Kendini yeniden oluşturan uygulama ve tarayıcı önbellekleri" },
+      "other": { "label": "Diğer", "note": "Müzik, posta, mesajlar ve diğer uygulama verileri" },
+      "system-data": { "label": "Sistem Verisi", "note": "macOS ve bir klasöre atfedilemeyen alan" }
+    }
+  },
+  "safeCleaning": {
+    "eyebrow": "Tasarımdan gelen güvenlik",
+    "title1": "Kontrol sizde kalır. ",
+    "title2": "Her zaman.",
+    "intro": "Temizleme araçlarının diskinize derin erişimi olması gerekir. MacBook Cleaner, bir hatayı yapmayı zorlaştıracak — ve geri almayı kolaylaştıracak şekilde tasarlandı.",
+    "levels": {
+      "safe": { "label": "Güvenli", "title": "Kendini yeniden oluşturur", "body": "Uygulamalarınızın kendiliğinden yeniden oluşturduğu önbellekler ve günlükler. Sizin için önceden seçilidir.", "example": "Xcode DerivedData", "size": "18,6 GB" },
+      "review": { "label": "İncele", "title": "Önce bir göz atmaya değer", "body": "Önem verebileceğiniz durumları barındırabilecek öğeler. Asla önceden seçilmez.", "example": "Simülatör Cihazları", "size": "6,2 GB" },
+      "protected": { "label": "Korumalı", "title": "Seçilemez", "body": "Yedek, anahtarlık veya anahtar gibi görünen her şey — uygulamanın yerel güvenlik katmanı tarafından reddedilir.", "example": "MobileSync Yedeği", "size": "Kilitli" }
+    },
+    "principles": [
+      { "title": "Hiçbir şey kaldırılmadan önce inceleme", "body": "Her temizleme tam olarak nelerin taşınacağını gösterir ve onayınızı ister." },
+      { "title": "Her zaman önce Çöp Kutusu", "body": "Öğeler Çöp Kutusu'na gider — asla kalıcı olarak silinmez. Uygulama Çöp Kutunuzu asla boşaltmaz." },
+      { "title": "Dosyalarınız sizin kararınız", "body": "İndirilenler, Masaüstü, Belgeler ve Filmler asla önceden seçilmez ve her zaman ek bir onay gerektirir." },
+      { "title": "Aşılamayacak korkuluklar", "body": "Yerel bir kontrol, sistem klasörlerini, ana klasörünüzü, onun ana klasörlerini ve ana klasörünüz dışındaki her şeyi reddeder." },
+      { "title": "“Bunu bir daha önerme”", "body": "Herhangi bir dosya veya klasörü hariç tutun, bir daha önerilmesin — manuel olarak veya zamanlanmış şekilde." },
+      { "title": "Sürpriz otomasyon yok", "body": "Otomatik temizleme varsayılan olarak kapalıdır, açık onay gerektirir ve yalnızca altı geliştirici önbelleğine dokunur." }
+    ]
+  },
+  "beforeAfter": {
+    "eyebrow": "Önce ve sonra",
+    "title": "“Her şey nereye gitti?”den “ah, demek oradaymış”a.",
+    "intro": "Karşılaştırmak için tutamacı sürükleyin. MacBook Cleaner diskinizi büyütmez — onu anlaşılır hale getirir, böylece alan kazanmak bir tahmin değil bir karar olur.",
+    "before": "Önce",
+    "after": "Sonra",
+    "systemDataUnknown": "Sistem Verisi: ???",
+    "withoutClearView": "Net bir görünüm olmadan",
+    "withApp": "MacBook Cleaner ile",
+    "beforeList": ["Depolama çubuğu çoğunlukla “Sistem Verisi” diyor", "Büyük dosyalar klasörlerin derinliklerinde gömülü", "Fark edilmeden birikmiş önbellekler ve günlükler", "İndirilenler'de eski yükleyiciler ve disk imajları", "Neyin silinmesi güvenli olduğuna dair hiçbir fikir yok"],
+    "afterList": ["Her kategori ölçüldü ve etiketlendi", "En büyük dosyalar Quick Look ile en başta listelendi", "Önbellekler gruplandı ve Güvenli veya İncele olarak işaretlendi", "İndirilenler yaşa ve türe göre sıralandı", "Alan sizin koşullarınızda — Çöp Kutusu üzerinden geri kazanıldı"]
+  },
+  "privacyBand": {
+    "eyebrow": "Önce gizlilik",
+    "title": "Dosyalarınız Mac'inizde kalır.",
+    "lead": "Bir temizleyicinin diskinize derin erişimi olması gerekir. MacBook Cleaner'ın size olabildiğince az güvenmesi gereken şekilde tasarlanmasının nedeni tam olarak budur.",
+    "points": [
+      { "title": "Mac'inizde taranır", "body": "Her tarama ve her temizleme yerel olarak çalışır. Hiçbir bulut hizmeti dahil değildir." },
+      { "title": "Hiçbir şey yüklenmez", "body": "Analitik, telemetri veya çökme raporlama yok. Dosyalarınız, çalışan uygulamalarınız, pil ve Mac bilgileriniz asla Mac'inizin dışına çıkmaz." },
+      { "title": "Denemek için hesap gerekmez", "body": "Kayıt yok, e-posta yok, kredi kartı yok — indirin, ücretsiz deneme süreniz başlasın. Daha sonra ömür boyu lisans satın almak için yalnızca satın alımınızdan gelen anahtar gerekir, yeni bir hesap değil." },
+      { "title": "İçerikler okunmadan kalır", "body": "Uygulama boyutlara ve tarihlere bakar. Dosya içerikleri yalnızca iki dosyanın birebir aynı olduğunu doğrulamak için okunur." }
+    ],
+    "permissionsHeading": "macOS neyin izni için sorabilir — ve nedenleri",
+    "permissions": [
+      { "title": "İndirilenler, Masaüstü ve Belgeler", "body": "Uygulama bu klasörlere bakabilmesi için önce macOS'tan izin ister; böylece büyük dosyaları ve eski indirmeleri bulabilir." },
+      { "title": "Finder'ı kontrol etme", "body": "İlk temizlemenizde sorulur. Uygulama, öğeleri Çöp Kutusu'na taşıması için Finder'dan izin ister, böylece “Geri Koy” çalışır." },
+      { "title": "Tam Disk Erişimi — isteğe bağlı", "body": "Uygulamanın, bazı önbellekler ve Çöp Kutusu gibi macOS'un özel tuttuğu konumları ölçmesini sağlar. Uygulama bu izin olmadan da çalışır." },
+      { "title": "Bildirimler — isteğe bağlı", "body": "Yalnızca zamanlanmış temizleme hatırlatmaları ve özetleri için." }
+    ],
+    "footNote": "Bunların her birini Sistem Ayarları → Gizlilik ve Güvenlik bölümünden inceleyebilir veya iptal edebilirsiniz.",
+    "readPolicy": "Gizlilik Politikasını okuyun →"
+  },
+  "gallery": {
+    "eyebrow": "Ekran görüntüleri",
+    "title": "Mac'inizde evinizde gibi hissettirecek şekilde tasarlandı.",
+    "intro": "Uygulamanın yerleşik örnek verileriyle gösterilen gerçek ekranları. Açık ve koyu görünüm sisteminizi takip eder.",
+    "shots": {
+      "dashboard": { "label": "Kontrol Paneli", "alt": "Depolama halkası ve Smart Clean özeti içeren kontrol paneli" },
+      "scanning": { "label": "Tarama", "alt": "Devam eden Smart Clean taraması" },
+      "results": { "label": "Smart Clean", "alt": "Kategoriye göre gruplanmış Smart Clean sonuçları" },
+      "performance": { "label": "Performans", "alt": "Canlı CPU ve bellek içeren performans paneli" },
+      "performance-apps": { "label": "Çalışan Uygulamalar", "alt": "Belleğe göre sıralanmış çalışan uygulamalar" },
+      "performance-battery": { "label": "Pil", "alt": "Döngü sayısı ve maksimum kapasiteyle pil sağlığı" },
+      "complete": { "label": "Temizlik tamamlandı", "alt": "Çöp Kutusu'na taşınan alanı gösteren tamamlanmış temizlik özeti" },
+      "storage": { "label": "Depolama", "alt": "Kategoriye göre depolama dağılımı" },
+      "dashboard-dark": { "label": "Koyu mod", "alt": "Koyu moddaki kontrol paneli" }
+    }
+  },
+  "faqPreview": {
+    "eyebrow": "SSS",
+    "title": "Sorular, yanıtlandı.",
+    "seeAll": "Tüm soruları görün →"
+  },
+  "finalCta": {
+    "defaultTitle": "Mac'inize biraz nefes alma payı tanıyın.",
+    "featuresTitle": "Neyin yer kapladığını görmeye hazır mısınız?",
+    "meta": "Sürüm {{version}} · {{macos}} veya üzeri · {{architecture}}",
+    "installationGuide": "Kurulum kılavuzu"
+  }
+}

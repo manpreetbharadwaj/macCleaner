@@ -1,0 +1,159 @@
+{
+  "legalReviewNotice": "Cette traduction a été produite par traduction automatique et n’a pas encore été vérifiée par un avocat qualifié dans votre juridiction. La version anglaise de cette politique fait foi ; en cas de contradiction, la version anglaise prévaut.",
+  "title": "Politique de confidentialité",
+  "shortVersion": "<b>En résumé.</b> {{siteName}} analyse et nettoie sur votre Mac. L’application ne comporte aucune analyse, télémétrie, rapport de plantage ou compte, et n’envoie nulle part d’informations sur vous, vos fichiers ou les performances de votre Mac. Ce site n’utilise ni cookies ni outils d’analyse ; notre hébergeur web traite des journaux de requêtes standard.",
+  "sections": {
+    "who-we-are": {
+      "title": "Qui nous sommes",
+      "body": [
+        { "p": "Cette politique est publiée par {{companyName}} (« nous »), {{companyAddress}}, le développeur de {{siteName}}. Elle couvre deux éléments distincts, qui traitent les informations très différemment :" },
+        { "ul": ["<b>L’application de bureau {{siteName}}</b> pour macOS (l’« Application ») — voir les sections commençant par « L’Application ».", "<b>Ce site web</b>, {{siteHost}} (le « Site »), y compris les téléchargements de l’Application — voir les sections commençant par « Le Site »."] }
+      ]
+    },
+    "app-local": {
+      "title": "L’Application : informations traitées sur votre Mac",
+      "body": [
+        { "p": "Pour montrer ce qui occupe votre stockage et vous aider à le nettoyer, l’Application lit les éléments suivants sur votre Mac. Tout ce traitement s’effectue localement, sur votre appareil." },
+        { "h3": "Informations sur les fichiers et dossiers" },
+        { "p": "Noms, emplacements (chemins), tailles et dates des fichiers et dossiers de vos dossiers Téléchargements, Bureau, Documents et Films ; dans <code>~/Library/Caches</code> et <code>~/Library/Logs</code> ; aux emplacements connus des outils de développement (par exemple Xcode DerivedData, données de simulateur et caches npm, Yarn, pnpm, Gradle et CocoaPods) ; et la taille globale de dossiers comme Photos et Library pour établir la répartition du stockage. L’Application lit également la capacité totale, utilisée et disponible de votre disque." },
+        { "h3": "Contenu des fichiers — uniquement pour les doublons" },
+        { "p": "L’Application ne lit pas le contenu de vos documents, photos ou autres fichiers, à une exception près : pour confirmer que deux fichiers sont des doublons exacts, elle lit les fichiers qui ont déjà une taille identique et calcule une somme de contrôle SHA-256 de leur contenu. Cette somme de contrôle est calculée en mémoire sur votre Mac et n’est utilisée que pour cette comparaison." },
+        { "h3": "Applications installées" },
+        { "p": "Pour le Nettoyage d’applications, l’Application lit le nom, la version, l’identifiant de paquet et l’icône de chaque application depuis son propre <code>Info.plist</code>, mesure sa taille, demande à Spotlight de macOS la date de dernière ouverture, et mesure les caches, journaux, préférences et fichiers d’assistance associés dans votre Library." },
+        { "h3": "Navigateurs web" },
+        { "p": "Pour Safari, Chrome, Edge et Firefox, l’Application mesure uniquement la taille des dossiers de <b>cache</b> de chaque navigateur. Elle ne lit ni votre historique de navigation, ni vos cookies, mots de passe, favoris, données de remplissage automatique ou extensions." }
+      ]
+    },
+    "app-stored": {
+      "title": "L’Application : informations stockées sur votre Mac",
+      "body": [
+        { "p": "L’Application enregistre une petite quantité d’informations localement afin de se souvenir de vos préférences. Rien de tout cela ne nous est envoyé." },
+        {
+          "ul": [
+            "<b>État de l’application</b> dans <code>{{appSupport}}/state.json</code> : vos réglages, exclusions d’analyse (chemins de fichiers que vous avez choisi d’exclure), réglages du nettoyage planifié, un historique des nettoyages (dates, quantités et éléments concernés) et des résumés des analyses planifiées.",
+            "<b>Journaux de diagnostic</b> dans <code>{{appLogs}}</code>, y compris un fichier <code>startup-crash.log</code> qui enregistre les erreurs si l’Application ne démarre pas. Les journaux consignent des éléments comme la version de l’Application, le type de processeur et la version de macOS de votre Mac, l’emplacement d’installation de l’Application, et ce que les analyses et nettoyages ont fait — ce qui peut inclure des chemins de fichiers.",
+            "<b>Assistants en arrière-plan</b> : si vous activez le Nettoyage planifié ou Lancer à la connexion, l’Application ajoute un petit fichier de configuration à <code>~/Library/LaunchAgents</code> afin que macOS puisse la démarrer au bon moment. Désactiver la fonctionnalité le supprime."
+          ]
+        },
+        { "p": "Vous pouvez effacer les réglages, exclusions, planification et historique de l’Application à tout moment via <b>Réglages → Réinitialiser toutes les données</b>, ou supprimer les dossiers ci-dessus après la désinstallation." }
+      ]
+    },
+    "app-network": {
+      "title": "L’Application : aucune donnée ne quitte votre Mac",
+      "body": [
+        { "p": "L’Application n’envoie aucune information vous concernant, concernant votre Mac ou vos fichiers, à nous ou à qui que ce soit d’autre. Plus précisément, l’Application :" },
+        { "ul": ["ne contient aucune analyse, suivi d’utilisation ou télémétrie ;", "ne contient aucun service de rapport de plantage — les informations de plantage sont écrites uniquement dans le journal local décrit ci-dessus ;", "n’a aucun compte utilisateur, connexion ou activation de licence ;", "ne contient aucune publicité ni SDK tiers collectant des données ;", "ne vérifie pas automatiquement ses propres mises à jour et ne télécharge rien."] },
+        { "p": "Internet n’intervient dans l’Application que lorsque vous cliquez sur un lien à l’intérieur (comme « Rechercher des mises à jour », « Politique de confidentialité » ou « Conditions »). Cela ouvre une page de ce Site dans votre navigateur par défaut, et les sections du Site ci-dessous s’appliquent alors. L’Application n’ouvre que des liens vers le propre domaine de ce Site." },
+        { "p": "Indépendamment de l’Application, macOS lui-même peut collecter des informations de diagnostic si vous avez activé le partage des statistiques avec Apple dans Réglages Système. Cela est régi par la politique de confidentialité d’Apple ; nous ne les recevons pas." }
+      ]
+    },
+    "app-cleaning": {
+      "title": "L’Application : comment vos fichiers sont traités lors du nettoyage",
+      "body": [
+        { "p": "Les éléments que vous approuvez sont déplacés vers la Corbeille macOS — l’Application demande au Finder de le faire afin que « Replacer » continue de fonctionner. L’Application ne supprime jamais définitivement de fichiers et ne vide jamais votre Corbeille. Si vous activez « Nettoyer automatiquement » dans le Nettoyage planifié, l’Application ne déplace vers la Corbeille qu’une liste fixe de caches de développement, dans les limites décrites dans l’Application et sur notre <link-faq-automatic>FAQ</link-faq-automatic>." },
+        { "p": "Les fichiers restent sur votre Mac à chaque étape. Nous n’en recevons jamais de copies." }
+      ]
+    },
+    "app-permissions": {
+      "title": "L’Application : autorisations macOS",
+      "body": [
+        { "p": "macOS peut vous demander d’accorder les éléments suivants à l’Application. Vous pouvez vérifier ou révoquer chacun dans Réglages Système → Confidentialité et sécurité." },
+        {
+          "ul": [
+            "<b>Accès à Téléchargements, Bureau et Documents</b> — pour trouver les fichiers volumineux, anciens téléchargements et doublons.",
+            "<b>Automatisation (contrôler le Finder)</b> — pour déplacer les éléments que vous approuvez vers la Corbeille.",
+            "<b>Accès complet au disque (facultatif)</b> — pour mesurer des emplacements que macOS garde privés, comme certains caches d’applications et la Corbeille. L’Application fonctionne sans.",
+            "<b>Notifications (facultatif)</b> — pour les rappels et résumés du nettoyage planifié. Les notifications sont créées localement par macOS ; aucun service push n’est impliqué."
+          ]
+        }
+      ]
+    },
+    "app-device": {
+      "title": "L’Application : informations sur l’appareil",
+      "body": [{ "p": "L’Application lit des informations de base sur votre Mac — version de macOS, architecture du processeur et capacité de stockage — pour fonctionner correctement et écrire des journaux locaux utiles. Ces informations restent sur votre Mac." }]
+    },
+    "system-monitoring": {
+      "title": "L’Application : données de surveillance système",
+      "body": [
+        { "p": "L’onglet Performances de l’Application montre comment se porte votre Mac. Pour cela, elle lit les éléments suivants depuis macOS sur votre appareil :" },
+        {
+          "ul": [
+            "utilisation du CPU (totale, utilisateur, système et inactive) et utilisation de la mémoire (utilisée, disponible, compressée, en cache, swap et pression mémoire) ;",
+            "les applications et processus actuellement en cours d’exécution — leurs noms, identifiants de processus, utilisation CPU et mémoire, heures de lancement, nombre de threads et emplacements de fichiers ;",
+            "capacité de stockage et espace libre ;",
+            "sur les MacBook, informations sur la batterie : charge, état de charge, source d’alimentation, cycles, capacités et l’état de batterie rapporté par macOS ;",
+            "informations matérielles du Mac : modèle et identifiant de modèle, puce, cœurs CPU et GPU, taille de la mémoire, écrans et le nom d’hôte réseau du Mac ;",
+            "version, build et version du noyau de macOS, disponibilité, et le résultat de la propre vérification de Mise à jour de logiciels de macOS, lu depuis un fichier que macOS conserve sur votre Mac."
+          ]
+        },
+        { "p": "Ces informations ne servent qu’à afficher le tableau de bord Performances. Elles sont traitées localement, conservées en mémoire uniquement pendant que l’Application est ouverte (les graphiques à court terme couvrent les 60 dernières secondes et sont supprimés à la fermeture), et ne sont ni écrites sur le disque, ni envoyées, partagées, vendues ou utilisées à des fins d’analyse. L’Application ne lit pas le numéro de série de votre Mac et ne contacte pas les serveurs d’Apple pour rechercher des mises à jour." },
+        { "p": "La surveillance ne s’exécute que lorsque l’écran Performances est ouvert et se met en pause lorsque la fenêtre de l’Application est masquée." }
+      ]
+    },
+    "app-sharing-logs": {
+      "title": "L’Application : lorsque vous choisissez de partager des informations avec nous",
+      "body": [{ "p": "Si vous contactez l’assistance, vous pouvez choisir de nous envoyer des captures d’écran ou les fichiers journaux de l’Application. Les journaux peuvent contenir des chemins de fichiers de votre Mac, veuillez donc les relire avant de les envoyer. Nous n’utilisons ce que vous nous envoyez que pour vous aider dans votre demande." }]
+    },
+    "website": {
+      "title": "Le Site : ce que nous collectons",
+      "body": [
+        { "p": "Le Site est un site statique. Il n’utilise ni cookies, ni outils d’analyse, ni publicité, ni pixels de suivi, ni widgets de réseaux sociaux, ni scripts ou polices tiers, et n’a ni comptes utilisateur ni formulaires. Votre navigateur peut stocker une copie en cache des pages, comme pour n’importe quel site." },
+        { "p": "<b>Journaux d’hébergement.</b> Le Site est hébergé par {{hostingProvider}}. Comme tout hébergeur web, celui-ci traite automatiquement les informations techniques nécessaires à la livraison des pages et à la protection du service — comme votre adresse IP, l’user agent de votre navigateur, la page demandée, la page de provenance et l’heure de la requête. Cela est régi par les propres conditions et la politique de confidentialité de l’hébergeur, et nous ne les combinons avec aucune autre information." },
+        { "p": "<b>Téléchargements.</b> Le fichier installeur de l’Application est hébergé par {{downloadHost}}, qui traite le même type d’informations techniques de requête lors du téléchargement." },
+        { "p": "<b>E-mail.</b> Si vous nous envoyez un e-mail (par exemple via la page Assistance), nous recevons votre adresse e-mail, votre nom si vous l’indiquez, et tout ce que vous écrivez ou joignez. Nous ne l’utilisons que pour vous répondre et améliorer l’Application à partir de vos retours." }
+      ]
+    },
+    "website-cookies": {
+      "title": "Le Site : cookies",
+      "body": [{ "p": "Le Site ne dépose pas de cookies et n’utilise pas de technologies similaires comme le stockage local à des fins de suivi. Si cela devait changer, nous mettrons d’abord à jour cette politique et, si requis, demanderons votre consentement." }]
+    },
+    "third-parties": {
+      "title": "Services tiers et partage",
+      "body": [
+        { "p": "Nous ne vendons, ne louons ni n’échangeons d’informations personnelles, et ne les partageons pas à des fins publicitaires. Les seuls tiers impliqués sont :" },
+        { "ul": ["notre hébergeur de site et de téléchargement, qui traitent les informations de requête comme décrit ci-dessus ; et", "notre fournisseur de messagerie, qui stocke les e-mails d’assistance que vous nous envoyez."] },
+        { "p": "Nous pouvons également divulguer des informations si la loi l’exige, ou pour protéger nos droits ou la sécurité d’autrui." }
+      ]
+    },
+    "legal-bases": {
+      "title": "Bases légales du traitement",
+      "body": [{ "p": "Lorsque des lois comme le RGPD de l’UE ou du Royaume-Uni s’appliquent, nous nous appuyons sur nos intérêts légitimes pour exploiter et sécuriser le Site et répondre aux messages, ainsi que sur les démarches que vous nous demandez d’effectuer lorsque vous nous contactez. Le traitement local de l’Application sur votre Mac est sous votre contrôle et ne nous amène pas à recevoir de données personnelles." }]
+    },
+    "retention": {
+      "title": "Conservation des données",
+      "body": [
+        {
+          "ul": [
+            "<b>Les données de l’Application</b> restent sur votre Mac jusqu’à ce que vous les supprimiez (Réglages → Réinitialiser toutes les données, ou suppression des dossiers listés sous « L’Application : informations stockées sur votre Mac »). L’Application limite automatiquement la quantité d’historique et de journaux qu’elle conserve.",
+            "<b>Les journaux d’hébergement et de téléchargement</b> sont conservés selon les politiques des hébergeurs.",
+            "<b>Les e-mails d’assistance</b> sont conservés aussi longtemps que nécessaire pour vous aider et pendant une période raisonnable ensuite, puis supprimés, sauf si nous devons les conserver pour des raisons légales."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "title": "Sécurité",
+      "body": [{ "p": "Comme l’Application traite vos fichiers localement et ne les transmet pas, la principale protection de ces données est la sécurité de votre Mac lui-même. L’Application inclut des garde-fous contre la suppression des emplacements système et des fichiers d’apparence sensible, et ne déplace les éléments que vers la Corbeille. Le Site est servi via HTTPS. Aucune méthode de stockage ou de transmission n’est totalement sûre, mais nous travaillons à protéger les informations que nous détenons." }]
+    },
+    "your-rights": {
+      "title": "Vos droits",
+      "body": [{ "p": "Selon l’endroit où vous vivez, vous pouvez disposer de droits d’accès, de rectification, de suppression, de limitation ou d’opposition au traitement de vos informations personnelles, ainsi que de portabilité des données. Comme nous détenons très peu de données — généralement uniquement les e-mails que vous nous avez envoyés — le moyen le plus simple d’exercer ces droits est d’écrire à {{privacyEmail}}. Vous avez également le droit de déposer une plainte auprès de votre autorité locale de protection des données." }]
+    },
+    "children": {
+      "title": "Confidentialité des enfants",
+      "body": [{ "p": "L’Application et le Site ne s’adressent pas aux enfants de moins de 13 ans (ou l’âge minimum équivalent là où vous vivez), et nous ne collectons pas sciemment d’informations personnelles auprès d’enfants. Si vous pensez qu’un enfant nous a envoyé des informations personnelles, contactez-nous et nous les supprimerons." }]
+    },
+    "international": {
+      "title": "Utilisateurs internationaux",
+      "body": [{ "p": "L’Application fonctionne de la même façon partout : vos données restent sur votre Mac. Les informations traitées par nos hébergeurs et fournisseurs de messagerie peuvent être traitées dans des pays autres que le vôtre, selon les garanties offertes par ces fournisseurs." }]
+    },
+    "changes": {
+      "title": "Modifications de cette politique",
+      "body": [{ "p": "Nous mettrons à jour cette politique si l’Application ou le Site change la façon dont les informations sont traitées — par exemple avant de publier une version de l’Application qui ajoute une fonctionnalité réseau. La date « Dernière mise à jour » en haut indique la dernière révision. Les changements importants seront également mentionnés dans les notes de version." }]
+    },
+    "contact": {
+      "title": "Contact",
+      "body": [{ "p": "Des questions sur la confidentialité ? Écrivez à {{privacyEmail}} ou à {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

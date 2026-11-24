@@ -1,0 +1,61 @@
+{
+  "skipToContent": "コンテンツへスキップ",
+  "tagline": "Macをきれいに。大切なものはそのままに。",
+  "nav": {
+    "features": "機能",
+    "pricing": "料金",
+    "download": "ダウンロード",
+    "faq": "よくある質問",
+    "support": "サポート",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる"
+  },
+  "footer": {
+    "description": "macOS向けの安全なローカル処理によるストレージ整理とパフォーマンスモニタリング。",
+    "version": "バージョン {{version}} ・ {{macos}} 以降",
+    "columns": {
+      "product": "製品",
+      "help": "ヘルプ",
+      "legal": "法的情報"
+    },
+    "links": {
+      "features": "機能",
+      "pricing": "料金",
+      "download": "ダウンロード",
+      "releaseNotes": "リリースノート",
+      "faq": "よくある質問",
+      "support": "サポート",
+      "installation": "インストール方法",
+      "privacy": "プライバシー",
+      "terms": "利用規約"
+    },
+    "copyright": "© {{year}} {{name}}. All rights reserved.",
+    "trademark": "{{name}} は独立したアプリケーションであり、Apple Inc. とは提携、承認、提携関係はありません。Apple、Mac、MacBook、macOS、Finder、Safari、Xcode は米国その他の国で登録された Apple Inc. の商標です。"
+  },
+  "download": {
+    "cta": "Mac用をダウンロード",
+    "navCta": "ダウンロード",
+    "starting": "開始しています…",
+    "started": "ダウンロードを開始しました",
+    "unavailable": "ダウンロードは利用できません",
+    "unavailableNote": "検証済みのMacインストーラーはまだ公開されていません。",
+    "downloading": "{{fileName}} をダウンロード中",
+    "error": "ダウンロードを開始できませんでした。しばらくしてからもう一度お試しいただくか、サポートにお問い合わせください。"
+  },
+  "legal": {
+    "eyebrow": "法的情報",
+    "lastUpdated": "最終更新日：{{date}}",
+    "onThisPage": "このページの内容"
+  },
+  "aria": {
+    "requirements": "必要条件",
+    "primaryNav": "メインナビゲーション",
+    "mobileNav": "モバイルナビゲーション"
+  },
+  "languageSwitcher": {
+    "label": "言語",
+    "current": "言語：{{language}}",
+    "resetToAutomatic": "自動検出に戻す",
+    "resetDescription": "次回から言語を自動的に検出します"
+  }
+}

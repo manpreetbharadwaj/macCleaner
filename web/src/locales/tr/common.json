@@ -1,0 +1,61 @@
+{
+  "skipToContent": "İçeriğe geç",
+  "tagline": "Mac'inizi temizleyin. Önemli olanı koruyun.",
+  "aria": {
+    "requirements": "Gereksinimler",
+    "primaryNav": "Birincil",
+    "mobileNav": "Mobil"
+  },
+  "nav": {
+    "features": "Özellikler",
+    "pricing": "Fiyatlandırma",
+    "download": "İndir",
+    "faq": "SSS",
+    "support": "Destek",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat"
+  },
+  "footer": {
+    "description": "macOS için güvenli, yerel tabanlı depolama temizliği ve performans izleme.",
+    "version": "Sürüm {{version}} · {{macos}} veya üzeri",
+    "columns": {
+      "product": "Ürün",
+      "help": "Yardım",
+      "legal": "Yasal"
+    },
+    "links": {
+      "features": "Özellikler",
+      "pricing": "Fiyatlandırma",
+      "download": "İndir",
+      "releaseNotes": "Sürüm Notları",
+      "faq": "SSS",
+      "support": "Destek",
+      "installation": "Kurulum",
+      "privacy": "Gizlilik",
+      "terms": "Koşullar"
+    },
+    "copyright": "© {{year}} {{name}}. Tüm hakları saklıdır.",
+    "trademark": "{{name}} bağımsız bir uygulamadır ve Apple Inc. ile bağlantılı, onaylı veya sponsorlu değildir. Apple, Mac, MacBook, macOS, Finder, Safari ve Xcode, ABD ve diğer ülkelerde tescilli Apple Inc. ticari markalarıdır."
+  },
+  "download": {
+    "cta": "Mac için indir",
+    "navCta": "İndir",
+    "starting": "Başlatılıyor…",
+    "started": "İndirme başladı",
+    "unavailable": "İndirme kullanılamıyor",
+    "unavailableNote": "Doğrulanmış Mac yükleyicisi henüz yayınlanmadı.",
+    "downloading": "{{fileName}} indiriliyor",
+    "error": "İndirme başlatılamadı. Lütfen birazdan tekrar deneyin veya destek ekibiyle iletişime geçin."
+  },
+  "legal": {
+    "eyebrow": "Yasal",
+    "lastUpdated": "Son güncelleme: {{date}}",
+    "onThisPage": "Bu sayfada"
+  },
+  "languageSwitcher": {
+    "label": "Dil",
+    "current": "Dil: {{language}}",
+    "resetToAutomatic": "Otomatiğe sıfırla",
+    "resetDescription": "Bir sonraki sefer dilimi otomatik algıla"
+  }
+}

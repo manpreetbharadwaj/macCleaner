@@ -1,0 +1,23 @@
+{
+  "eyebrow": "支持",
+  "title": "我们能帮你做什么?",
+  "intro": "大多数问题都可以在常见问题中找到答案。其他问题建议通过邮件联系我们,这是最快的方式。",
+  "cards": {
+    "email": { "title": "邮件支持", "body": "对使用这款应用有疑问?写信给我们,我们会尽快回复。", "cta": "{{email}}" },
+    "bug": { "title": "反馈问题", "body": "有哪里运行不正常吗?点击后将打开一封带有简短模板的邮件。", "cta": "反馈问题" },
+    "feature": { "title": "建议新功能", "body": "告诉我们怎样能让 MacBook Cleaner 对你更有用。", "cta": "提交建议" },
+    "install": { "title": "安装帮助", "body": "分步安装说明,以及首次启动时安全警告的处理方法。", "cta": "安装指南" },
+    "faq": { "title": "常见问题", "body": "关于安全性、隐私、权限、兼容性和卸载方法的解答。", "cta": "浏览常见问题" }
+  },
+  "emailSubject": "MacBook Cleaner 支持",
+  "logsTitle": "发送诊断日志",
+  "logsBody": "对于比较棘手的问题,我们可能会请你提供应用的日志文件。日志仅保存在你的 Mac 本地的 <code>~/Library/Logs/{{bundleId}}</code> 中,绝不会自动发送。日志中可能包含你 Mac 上的文件路径——在附加日志前,请先检查并移除你不想分享的内容。",
+  "bugTemplate": {
+    "subject": "问题反馈 — MacBook Cleaner {{version}}",
+    "body": "发生了什么:\n\n\n你期望的结果:\n\n\n复现步骤:\n1.\n2.\n\nMacBook Cleaner 版本:{{version}}\nmacOS 版本:\nMac 型号/芯片:\n"
+  },
+  "featureTemplate": {
+    "subject": "功能建议 — MacBook Cleaner",
+    "body": "你希望 MacBook Cleaner 增加什么功能?\n\n\n这对你有什么帮助?\n"
+  }
+}

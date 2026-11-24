@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "MacBook Cleaner ऐप आइकन",
+    "title": "macOS के लिए MacBook Cleaner",
+    "lead": "आपके Mac के लिए स्टोरेज क्लीनअप और परफ़ॉर्मेंस मॉनिटरिंग — आपके डिवाइस पर ही प्रोसेस होती है।",
+    "started": "आपका डाउनलोड शुरू हो गया है — <b>{{fileName}}</b>। पूरा होने पर, नीचे दिए चरणों का पालन करें।",
+    "fileInfo": "{{fileName}}{{sizePart}} · डिस्क इमेज (.dmg)",
+    "quickSteps": ["MacBook Cleaner डाउनलोड करें।", "डाउनलोड की गई DMG खोलें।", "MacBook Cleaner को Applications में खींचें।"],
+    "quickStepsNotarizedLast": "ऐप लॉन्च करें।",
+    "quickStepsUnnotarizedLast": "ऐप लॉन्च करें — पहली बार, <a>Open Anyway</a> का उपयोग करें।",
+    "specs": { "version": "वर्शन {{version}}", "released": "{{date}} को रिलीज़ हुआ", "built": "{{date}} को बनाया गया", "macos": "{{macos}} या बाद का" },
+    "releaseDetailsAria": "रिलीज़ विवरण",
+    "links": { "releaseNotes": "रिलीज़ नोट्स", "privacy": "गोपनीयता", "terms": "शर्तें" },
+    "checksumLabel": "SHA-256"
+  },
+  "requirements": {
+    "eyebrow": "सिस्टम आवश्यकताएँ",
+    "title": "क्या यह मेरे Mac पर चलेगा?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}} ({{macosVersion}}) या बाद का",
+    "processor": "प्रोसेसर",
+    "intelNote": "यह सत्यापित बिल्ड Intel Mac पर समर्थित नहीं है।",
+    "account": "अकाउंट",
+    "accountValue": "ज़रूरत नहीं"
+  },
+  "install": {
+    "eyebrow": "इंस्टॉलेशन",
+    "title": "एक मिनट से भी कम में इंस्टॉल करें।",
+    "steps": [
+      { "title": "DMG डाउनलोड करें", "body": "<b>Download for Mac</b> पर क्लिक करें। डिस्क इमेज आपके Downloads फ़ोल्डर में सेव हो जाती है।" },
+      { "title": "DMG खोलें", "body": "Downloads में <code>{{fileName}}</code> पर डबल-क्लिक करें। एक विंडो खुलती है जिसमें ऐप और आपका Applications फ़ोल्डर दिखता है।" },
+      { "title": "Applications में खींचें", "body": "<b>MacBook Cleaner</b> को Applications फ़ोल्डर पर खींचें, फिर Finder की साइडबार से डिस्क इमेज को इजेक्ट करें।" },
+      { "title": "ऐप लॉन्च करें", "body": "Applications या Launchpad से MacBook Cleaner खोलें। इसे Applications से ही चलाएँ — शेड्यूल्ड क्लीनअप वहीं से काम करता है।" }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "पहली बार लॉन्च",
+    "title": "सुरक्षा चेतावनी दिख रही है?",
+    "intro": "अभी यह आम बात है — यहाँ वजह है, और ऐप को सुरक्षित तरीके से खोलने का तरीका।",
+    "noticeTitle": "MacBook Cleaner अभी Apple द्वारा नोटराइज़्ड नहीं है",
+    "noticeBody1": "Mac App Store के बाहर बाँटे जाने वाले ऐप्स आमतौर पर Apple Developer ID से साइन और नोटराइज़्ड होते हैं। इस वर्शन को Developer ID के बिना, ad hoc तरीके से साइन किया गया है और यह नोटराइज़्ड नहीं है, इसलिए जब आप इसे पहली बार खोलते हैं तो macOS का Gatekeeper कहता है कि वह डेवलपर की पुष्टि नहीं कर सकता या ऐप को हानिकारक सॉफ़्टवेयर के लिए जाँच नहीं सकता। इस संदेश का मतलब यह नहीं है कि कोई समस्या मिली है — इसका मतलब है कि Apple ने इस बिल्ड की समीक्षा नहीं की है।",
+    "noticeBody2": "<b>MacBook Cleaner सिर्फ़ इसी वेबसाइट से डाउनलोड करें।</b> अगर आपको यह फ़ाइल कहीं और से मिली है, तो उसे हटा दें।",
+    "howtoTitle": "System Settings से एक बार खोलें",
+    "steps": [
+      "Applications से MacBook Cleaner खोलें। जब चेतावनी दिखे, तो <b>Done</b> (या <b>Cancel</b>) पर क्लिक करें — इसे ट्रैश में न भेजें।",
+      "<b>System Settings → Privacy & Security</b> खोलें और नीचे <b>Security</b> सेक्शन तक स्क्रॉल करें।",
+      "MacBook Cleaner के ब्लॉक होने के संदेश के बगल में, <b>Open Anyway</b> पर क्लिक करें, फिर अपने पासवर्ड या Touch ID से पुष्टि करें।",
+      "अंतिम डायलॉग में <b>Open</b> पर क्लिक करें। macOS आपकी पसंद याद रखता है, इसलिए प्रति वर्शन यह सिर्फ़ एक बार करना होता है।"
+    ],
+    "tip": "macOS 14 Sonoma और उससे पहले के वर्शन पर आप Applications में ऐप पर Control-क्लिक करके <b>Open</b> चुन सकते हैं, फिर दोबारा <b>Open</b> पर क्लिक कर सकते हैं।"
+  },
+  "afterInstall": {
+    "eyebrow": "इंस्टॉल करने के बाद",
+    "title": "जानने लायक बातें।",
+    "permissions": { "title": "अनुमतियाँ", "body": "जब आप पहली बार क्लीन करते हैं, तो macOS ऐप को Downloads, Desktop और Documents तक पहुँच, और Finder को नियंत्रित करने की अनुमति माँग सकता है। Full Disk Access वैकल्पिक है।", "link": "हर एक की ज़रूरत क्यों है →" },
+    "updates": { "title": "अपडेट", "body": "<b>Settings → Check for Updates</b> आपके लिए नए वर्शन की जाँच, डाउनलोड और सत्यापन करता है — आपकी पुष्टि के बिना कुछ भी इंस्टॉल नहीं होता, और पूरा करने के लिए आपको ऐप को एक बार रीस्टार्ट करना होगा। आपकी सेटिंग्स सुरक्षित रहती हैं।" },
+    "uninstalling": { "title": "अनइंस्टॉल करना", "body": "Scheduled Cleanup और Launch at Login बंद करें, फिर ऐप को ट्रैश में खींचें।", "link": "पूरे चरण →" },
+    "stuck": "फँस गए?",
+    "contactSupport": "सहायता से संपर्क करें →"
+  }
+}

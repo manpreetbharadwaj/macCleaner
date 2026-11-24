@@ -1,0 +1,60 @@
+{
+  "/": {
+    "title": "MacBook Cleaner — Mac Storage Cleaner & Performance Monitor",
+    "description": "Free up Mac storage safely and see how your Mac is doing. MacBook Cleaner finds caches, large files and duplicates, and shows CPU and RAM usage, running apps, battery health and Mac system information — all processed locally."
+  },
+  "/features": {
+    "title": "Features — Mac Cleaner, CPU & RAM Monitor, Battery Health | MacBook Cleaner",
+    "description": "Smart Clean, Storage Explorer, Large File and Duplicate Finders, App Cleanup, plus a Mac performance monitor: CPU and memory usage, running apps, battery cycle count and health, and Mac system information."
+  },
+  "/pricing": {
+    "title": "Pricing — MacBook Cleaner",
+    "description": "MacBook Cleaner {{version}}: try it free for {{trialDays}} days, then a single {{price}} one-time payment for a lifetime license. No subscription, no account needed to start."
+  },
+  "/download": {
+    "title": "Download MacBook Cleaner for Mac",
+    "description": "Download MacBook Cleaner {{version}} for {{macos}} or later on {{architecture}} Macs. Installation steps and first-launch help included."
+  },
+  "/faq": {
+    "title": "FAQ — Is MacBook Cleaner Safe? | MacBook Cleaner",
+    "description": "Answers about safety, privacy, permissions, performance monitoring, battery health, compatibility and installation in MacBook Cleaner, the local-first Mac cleaner and performance monitor."
+  },
+  "/support": {
+    "title": "Support — MacBook Cleaner",
+    "description": "Get help with MacBook Cleaner: installation help, bug reports, feature requests and contact details."
+  },
+  "/changelog": {
+    "title": "Release Notes — MacBook Cleaner",
+    "description": "What’s new in each version of MacBook Cleaner for macOS."
+  },
+  "/privacy": {
+    "title": "Privacy Policy — MacBook Cleaner",
+    "description": "How MacBook Cleaner and this website handle your information. The app scans, cleans and monitors locally and sends no data about your files or your Mac."
+  },
+  "/terms": {
+    "title": "Terms of Service — MacBook Cleaner",
+    "description": "The terms that apply to downloading and using MacBook Cleaner."
+  },
+  "/thank-you": {
+    "title": "Thank You — MacBook Cleaner",
+    "description": "Thank you for your purchase. Find your license key and activation steps here."
+  },
+  "/404": {
+    "title": "Page not found — MacBook Cleaner",
+    "description": "The page you were looking for doesn’t exist."
+  },
+  "ogImageAlt": "MacBook Cleaner app showing a storage breakdown",
+  "schema": {
+    "featureList": [
+      "Mac storage cleaner",
+      "Storage analyzer",
+      "Large file finder",
+      "Duplicate file finder",
+      "App uninstaller",
+      "CPU and memory monitor",
+      "Running apps monitor",
+      "Battery health and cycle count",
+      "Mac system information"
+    ]
+  }
+}

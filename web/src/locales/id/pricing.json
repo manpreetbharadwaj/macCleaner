@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Harga",
+  "title1": "Coba gratis, lalu cukup ",
+  "title2": "{{price}}",
+  "titleSuffix": " sekali bayar",
+  "intro": "Semua fitur berfungsi penuh selama uji coba gratis {{trialDays}} hari — tidak perlu akun atau kartu kredit untuk memulai. Setelah itu, satu kali pembayaran {{price}} membuka MacBook Cleaner selamanya: tanpa langganan, tanpa perpanjangan, selamanya.",
+  "includedTitle": "Satu lisensi. Satu Mac. Selamanya.",
+  "checks": [
+    "Pembelian sekali bayar {{price}} — bukan langganan",
+    "Lisensi seumur hidup, tanpa kedaluwarsa, tanpa perpanjangan",
+    "Uji coba gratis {{trialDays}} hari, fitur lengkap, tidak perlu akun untuk memulai",
+    "Berlisensi untuk satu Mac dalam satu waktu — nonaktifkan dan pindahkan ke Mac baru kapan saja",
+    "Kunci lisensi dikirim via surel segera setelah pembayaran"
+  ],
+  "buyButton": "Beli Lisensi Seumur Hidup — {{price}}",
+  "priceNote": "Harga tercantum dalam USD. Ditampilkan dalam mata uang lokal Anda saat checkout; pajak mungkin berlaku tergantung lokasi Anda.",
+  "alreadyPurchased": "Sudah membeli? Aktifkan kunci lisensi Anda dari dalam aplikasi — Settings → License.",
+  "sandboxNote": "Pembelian belum tersedia di sini — kami masih menyelesaikan pengaturannya. Periksa kembali nanti, atau unduh uji coba gratis untuk sementara.",
+  "ctaTitle": "Unduh, coba gratis selama {{trialDays}} hari, putuskan nanti."
+}

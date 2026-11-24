@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Notes de version",
+  "title": "Nouveautés",
+  "intro": "Chaque version de MacBook Cleaner et ce qui a changé.",
+  "latestBadge": "Dernière",
+  "dateUnannounced": "Date de publication à venir",
+  "downloadLatest": "Télécharger la dernière version →",
+  "releases": {
+    "firstRelease": {
+      "title": "Première version",
+      "summary": "La toute première version publique de MacBook Cleaner.",
+      "sections": {
+        "cleanupTools": {
+          "heading": "Outils de nettoyage",
+          "items": [
+            "Smart Clean : une analyse regroupée en Fichiers système, Caches du navigateur, Résidus d’applications, Journaux et rapports de plantage, Fichiers de développement et Anciens téléchargements",
+            "Explorateur de stockage avec une répartition mesurée par catégorie",
+            "Recherche de fichiers volumineux avec des seuils de 500 Mo, 1 Go, 5 Go et 10 Go et des filtres par type",
+            "Analyse des téléchargements regroupée par âge",
+            "Recherche de doublons avec vérification du contenu complet par SHA-256",
+            "Nettoyage d’applications : voir les caches, journaux et fichiers d’assistance d’une application ; les nettoyer ou désinstaller l’application",
+            "Fichiers système et nettoyage développeur (Xcode, simulateurs, npm, Yarn, pnpm, Gradle, CocoaPods, images d’émulateur Android)"
+          ]
+        },
+        "performance": {
+          "heading": "Performances",
+          "items": [
+            "Nouvel onglet Performances avec graphiques CPU et mémoire en direct, pression mémoire et swap",
+            "Applications actives : CPU, mémoire et durée d’exécution par application, avec processus auxiliaires regroupés et un panneau de détails",
+            "État de la batterie sur les MacBook : charge, cycles, capacité maximale et état tels que rapportés par macOS",
+            "Infos Mac : modèle, puce, cœurs, GPU, mémoire, écrans, version et build de macOS, disponibilité",
+            "État des mises à jour macOS à partir de la propre vérification de Mise à jour de logiciels de macOS, avec un raccourci vers Réglages Système",
+            "Résumé de l’état du Mac avec des statuts descriptifs (aucun score inventé)"
+          ]
+        },
+        "automation": {
+          "heading": "Automatisation",
+          "items": ["Nettoyage planifié — quotidien, hebdomadaire ou mensuel — avec les modes « Me le rappeler » et « Nettoyer automatiquement » facultatif", "Notifications macOS natives pour les rappels et résumés", "Lancer à la connexion facultatif"]
+        },
+        "safety": {
+          "heading": "Sécurité",
+          "items": [
+            "Tout ce qui est supprimé va dans la Corbeille ; rien n’est effacé définitivement",
+            "Protection native pour les emplacements système, les dossiers principaux de votre dossier personnel, et les chemins qui ressemblent à des sauvegardes, trousseaux ou clés",
+            "Les fichiers personnels ne sont jamais présélectionnés et nécessitent toujours une confirmation",
+            "Exclusions d’analyse (« ne plus jamais suggérer »)"
+          ]
+        },
+        "interface": {
+          "heading": "Interface",
+          "items": ["Apparence claire, sombre et système", "Accueil guidé au premier lancement avec une étape facultative d’accès complet au disque"]
+        }
+      }
+    }
+  }
+}

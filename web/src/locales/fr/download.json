@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "Icône de l’application MacBook Cleaner",
+    "title": "MacBook Cleaner pour macOS",
+    "lead": "Nettoyage du stockage et suivi des performances pour votre Mac — traité localement.",
+    "started": "Votre téléchargement a commencé — <b>{{fileName}}</b>. Une fois terminé, suivez les étapes ci-dessous.",
+    "fileInfo": "{{fileName}}{{sizePart}} · Image disque (.dmg)",
+    "quickSteps": ["Téléchargez MacBook Cleaner.", "Ouvrez le fichier DMG téléchargé.", "Faites glisser MacBook Cleaner dans Applications."],
+    "quickStepsNotarizedLast": "Lancez l’application.",
+    "quickStepsUnnotarizedLast": "Lancez l’application — la première fois, <a>utilisez Ouvrir quand même</a>.",
+    "specs": { "version": "Version {{version}}", "released": "Publiée le {{date}}", "built": "Compilée le {{date}}", "macos": "{{macos}} ou version ultérieure" },
+    "links": { "releaseNotes": "Notes de version", "privacy": "Confidentialité", "terms": "Conditions" },
+    "checksumLabel": "SHA-256",
+    "releaseDetailsAria": "Détails de la version"
+  },
+  "requirements": {
+    "eyebrow": "Configuration requise",
+    "title": "Fonctionnera-t-elle sur mon Mac ?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}} ({{macosVersion}}) ou version ultérieure",
+    "processor": "Processeur",
+    "intelNote": "Les Mac Intel ne sont pas pris en charge par ce build vérifié.",
+    "account": "Compte",
+    "accountValue": "Aucun nécessaire"
+  },
+  "install": {
+    "eyebrow": "Installation",
+    "title": "Installez en moins d’une minute.",
+    "steps": [
+      { "title": "Téléchargez le DMG", "body": "Cliquez sur <b>Télécharger pour Mac</b>. L’image disque est enregistrée dans votre dossier Téléchargements." },
+      { "title": "Ouvrez le DMG", "body": "Double-cliquez sur <code>{{fileName}}</code> dans Téléchargements. Une fenêtre s’ouvre montrant l’application et votre dossier Applications." },
+      { "title": "Glissez vers Applications", "body": "Faites glisser <b>MacBook Cleaner</b> sur le dossier Applications, puis éjectez l’image disque depuis la barre latérale du Finder." },
+      { "title": "Lancez l’application", "body": "Ouvrez MacBook Cleaner depuis Applications ou Launchpad. Exécutez-la depuis Applications — le nettoyage planifié ne fonctionne qu’à partir de là." }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "Premier lancement",
+    "title": "Un avertissement de sécurité s’affiche ?",
+    "intro": "C’est normal pour l’instant — voici pourquoi, et comment ouvrir l’application en toute sécurité.",
+    "noticeTitle": "MacBook Cleaner n’est pas encore notarisé par Apple",
+    "noticeBody1": "Les applications distribuées en dehors du Mac App Store sont normalement signées avec un Apple Developer ID et notarisées. Cette version est signée de façon ad hoc — sans Developer ID — et n’est pas notarisée, donc la première fois que vous l’ouvrez, le Gatekeeper de macOS indique qu’il ne peut pas vérifier le développeur ou contrôler l’absence de logiciel malveillant. Ce message ne signifie pas qu’un problème a été trouvé — il signifie qu’Apple n’a pas examiné ce build.",
+    "noticeBody2": "<b>Ne téléchargez MacBook Cleaner que depuis ce site.</b> Si vous avez obtenu le fichier ailleurs, supprimez-le.",
+    "howtoTitle": "Ouvrez-la une fois via Réglages Système",
+    "steps": [
+      "Ouvrez MacBook Cleaner depuis Applications. Lorsque l’avertissement apparaît, cliquez sur <b>Terminé</b> (ou <b>Annuler</b>) — ne la déplacez pas vers la Corbeille.",
+      "Ouvrez <b>Réglages Système → Confidentialité et sécurité</b> et faites défiler jusqu’à la section <b>Sécurité</b>.",
+      "À côté du message indiquant que MacBook Cleaner est bloquée, cliquez sur <b>Ouvrir quand même</b>, puis confirmez avec votre mot de passe ou Touch ID.",
+      "Cliquez sur <b>Ouvrir</b> dans la boîte de dialogue finale. macOS se souvient de votre choix, vous n’avez donc besoin de le faire qu’une fois par version."
+    ],
+    "tip": "Sous macOS 14 Sonoma et versions antérieures, vous pouvez aussi Ctrl-cliquer sur l’application dans Applications, choisir <b>Ouvrir</b>, puis cliquer à nouveau sur <b>Ouvrir</b>."
+  },
+  "afterInstall": {
+    "eyebrow": "Après l’installation",
+    "title": "Bon à savoir.",
+    "permissions": { "title": "Autorisations", "body": "macOS peut demander à autoriser l’application à accéder à Téléchargements, Bureau et Documents, et à contrôler le Finder lors de votre premier nettoyage. L’accès complet au disque est facultatif.", "link": "Pourquoi chacune est nécessaire →" },
+    "updates": { "title": "Mises à jour", "body": "<b>Réglages → Rechercher des mises à jour</b> vérifie, télécharge et vérifie les nouvelles versions pour vous — rien ne s’installe sans votre confirmation, et vous devrez redémarrer l’application une fois pour terminer. Vos réglages sont conservés." },
+    "uninstalling": { "title": "Désinstallation", "body": "Désactivez le Nettoyage planifié et Lancer à la connexion, puis faites glisser l’application vers la Corbeille.", "link": "Étapes complètes →" },
+    "stuck": "Bloqué ?",
+    "contactSupport": "Contacter l’assistance →"
+  }
+}

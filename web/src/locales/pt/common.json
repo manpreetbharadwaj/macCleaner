@@ -1,0 +1,61 @@
+{
+  "skipToContent": "Avançar para o conteúdo",
+  "tagline": "Limpe o seu Mac. Mantenha o que importa.",
+  "nav": {
+    "features": "Funcionalidades",
+    "pricing": "Preços",
+    "download": "Transferir",
+    "faq": "Perguntas frequentes",
+    "support": "Suporte",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "footer": {
+    "description": "Limpeza de armazenamento e monitorização de desempenho seguras e totalmente locais para macOS.",
+    "version": "Versão {{version}} · {{macos}} ou posterior",
+    "columns": {
+      "product": "Produto",
+      "help": "Ajuda",
+      "legal": "Legal"
+    },
+    "links": {
+      "features": "Funcionalidades",
+      "pricing": "Preços",
+      "download": "Transferir",
+      "releaseNotes": "Notas de versão",
+      "faq": "Perguntas frequentes",
+      "support": "Suporte",
+      "installation": "Instalação",
+      "privacy": "Privacidade",
+      "terms": "Termos"
+    },
+    "copyright": "© {{year}} {{name}}. Todos os direitos reservados.",
+    "trademark": "{{name}} é uma aplicação independente e não é afiliada, aprovada ou patrocinada pela Apple Inc. Apple, Mac, MacBook, macOS, Finder, Safari e Xcode são marcas registadas da Apple Inc., nos EUA e noutros países."
+  },
+  "download": {
+    "cta": "Transferir para Mac",
+    "navCta": "Transferir",
+    "starting": "A iniciar…",
+    "started": "Transferência iniciada",
+    "unavailable": "Transferência indisponível",
+    "unavailableNote": "O instalador verificado para Mac ainda não foi publicado.",
+    "downloading": "A transferir {{fileName}}",
+    "error": "Não foi possível iniciar a transferência. Tente novamente dentro de instantes ou contacte o suporte."
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "lastUpdated": "Última atualização: {{date}}",
+    "onThisPage": "Nesta página"
+  },
+  "aria": {
+    "requirements": "Requisitos",
+    "primaryNav": "Principal",
+    "mobileNav": "Móvel"
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "current": "Idioma: {{language}}",
+    "resetToAutomatic": "Repor automático",
+    "resetDescription": "Detetar automaticamente o meu idioma da próxima vez"
+  }
+}

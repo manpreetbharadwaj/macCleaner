@@ -1,6 +1,7 @@
 import type { CSSProperties } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Ban, Bell, Check, Code2, EyeOff, Gauge, MemoryStick, Monitor, Power, RotateCcw, ShieldCheck, ShieldOff, Trash2, X } from 'lucide-react'
-import { CORE_FEATURES, FEATURE_DEEP_DIVES, MONITOR_DEEP_DIVES, type FeatureDeepDive } from '@/data/features'
+import { useCoreFeatures, useFeatureDeepDives, useMonitorDeepDives, type FeatureDeepDive } from '@/data/features'
 import { AppPreview } from '@/components/AppPreview'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
@@ -8,26 +9,11 @@ import { FinalCta } from '@/sections/FinalCta'
 import { PrivacySection } from '@/sections/PrivacySection'
 import { cx } from '@/utils/format'
 
-const EXTRAS = [
-  { icon: EyeOff, title: 'Scan exclusions', body: 'Add files or folders that should never be suggested — manually or on a schedule.' },
-  { icon: ShieldCheck, title: 'Confirm before cleanup', body: 'On by default. Turn it off to skip the dialog for Safe-only cleanups; Review items and your own files always ask.' },
-  { icon: Code2, title: 'Developer cleanup toggle', body: 'Hide Xcode, simulator and package-manager caches entirely if you don’t need them.' },
-  { icon: Monitor, title: 'Light, dark or system', body: 'Follows your Mac’s appearance, or pick one.' },
-  { icon: Power, title: 'Launch at Login', body: 'Optional and off by default.' },
-  { icon: Bell, title: 'Native notifications', body: 'Scheduled-cleanup reminders and summaries, using macOS notifications.' },
-  { icon: Trash2, title: 'Trash overview', body: 'See how much space the Trash is using and open it in Finder when you’re ready to empty it.' },
-  { icon: RotateCcw, title: 'Reset all data', body: 'Clear settings, exclusions, schedule and history in one step. Never touches your files.' },
-]
-
-const NOT_DOING = [
-  { icon: MemoryStick, text: 'No RAM “boosting” — Performance shows memory use, it doesn’t fiddle with it' },
-  { icon: Gauge, text: 'No speed-up promises or startup-item tweaks' },
-  { icon: ShieldOff, text: 'No antivirus or malware scanning' },
-  { icon: Ban, text: 'No permanent deletion or file shredding' },
-  { icon: X, text: 'No cleaning of system folders outside your home folder' },
-]
+const EXTRA_ICONS = [EyeOff, ShieldCheck, Code2, Monitor, Power, Bell, Trash2, RotateCcw]
+const NOT_DOING_ICONS = [MemoryStick, Gauge, ShieldOff, Ban, X]
 
 function DeepDive({ f, reverse, hasDark = false, note = false }: { f: FeatureDeepDive; reverse: boolean; hasDark?: boolean; note?: boolean }) {
+  const { t } = useTranslation('features')
   const Icon = f.icon
   return (
     <section id={f.id} className="section deep-dive" aria-labelledby={`${f.id}-title`}>
@@ -53,7 +39,7 @@ function DeepDive({ f, reverse, hasDark = false, note = false }: { f: FeatureDee
         </Reveal>
         <Reveal delay={80}>
           <AppPreview screen={f.screen} alt={f.alt} hasDark={hasDark} />
-          {note && <p className="shot-note">Shown with sample data.</p>}
+          {note && <p className="shot-note">{t('page.sampleDataNote')}</p>}
         </Reveal>
       </div>
     </section>
@@ -61,22 +47,34 @@ function DeepDive({ f, reverse, hasDark = false, note = false }: { f: FeatureDee
 }
 
 export function FeaturesPage() {
+  const { t } = useTranslation('features')
+  const coreFeatures = useCoreFeatures()
+  const deepDives = useFeatureDeepDives()
+  const monitorDeepDives = useMonitorDeepDives()
+  const extras = t('page.extras', { returnObjects: true }) as { title: string; body: string }[]
+  const notDoing = t('page.notDoing', { returnObjects: true }) as string[]
+  const jumpTargets = [
+    ...coreFeatures.map((f) => ({ id: f.id, title: f.title, icon: f.icon, color: f.color })),
+    ...monitorDeepDives.map((d) => ({ id: d.id, title: d.eyebrow, icon: d.icon, color: d.color })),
+  ]
+
   return (
     <div className="page">
       <section className="page-hero">
         <div className="container">
           <SectionHeading
             level={1}
-            eyebrow="Features"
+            eyebrow={t('page.eyebrow')}
             title={
               <>
-                Clean your Mac. <span className="grad-text">Understand it, too.</span>
+                {t('page.title1')}
+                <span className="grad-text">{t('page.title2')}</span>
               </>
             }
-            intro="MacBook Cleaner combines a storage analyzer, large-file and duplicate finders, an app uninstaller and a cache cleaner with a Mac performance monitor — CPU, memory, running apps, battery health and Mac information — all processed locally on your Mac."
+            intro={t('page.intro')}
           />
-          <nav className="chip-nav" aria-label="Jump to feature">
-            {[...CORE_FEATURES, ...MONITOR_DEEP_DIVES.map((d) => ({ id: d.id, title: d.eyebrow, icon: d.icon, color: d.color }))].map((f) => {
+          <nav className="chip-nav" aria-label={t('page.jumpToFeature')}>
+            {jumpTargets.map((f) => {
               const Icon = f.icon
               return (
                 <a key={f.id} href={`#${f.id}`} className="chip-nav__item" style={{ '--c': f.color } as CSSProperties}>
@@ -88,34 +86,35 @@ export function FeaturesPage() {
         </div>
       </section>
 
-      {FEATURE_DEEP_DIVES.map((f, i) => (
+      {deepDives.map((f, i) => (
         <DeepDive key={f.id} f={f} reverse={i % 2 === 1} />
       ))}
 
       <section className="page-hero" aria-labelledby="monitor-heading">
         <div className="container">
           <SectionHeading
-            eyebrow="Performance"
+            eyebrow={t('page.monitorEyebrow')}
             id="monitor-heading"
             title={
               <>
-                A Mac performance monitor <span className="grad-text">that speaks plain English.</span>
+                {t('page.monitorTitle1')}
+                <span className="grad-text">{t('page.monitorTitle2')}</span>
               </>
             }
-            intro="Live CPU and memory, the apps using the most resources, battery health and everything important about your Mac — read locally from macOS, refreshed only while you’re looking."
+            intro={t('page.monitorIntro')}
           />
         </div>
       </section>
-      {MONITOR_DEEP_DIVES.map((f, i) => (
+      {monitorDeepDives.map((f, i) => (
         <DeepDive key={f.id} f={f} reverse={i % 2 === 1} hasDark={f.screen === 'performance'} note />
       ))}
 
       <section className="section section--tint" aria-labelledby="extras-title">
         <div className="container">
-          <SectionHeading eyebrow="Also in the app" id="extras-title" title="Thoughtful details." />
+          <SectionHeading eyebrow={t('page.extrasEyebrow')} id="extras-title" title={t('page.extrasTitle')} />
           <div className="extras-grid">
-            {EXTRAS.map((e, i) => {
-              const Icon = e.icon
+            {extras.map((e, i) => {
+              const Icon = EXTRA_ICONS[i]
               return (
                 <Reveal key={e.title} className="extra" delay={(i % 4) * 60}>
                   <Icon size={20} aria-hidden="true" />
@@ -130,13 +129,13 @@ export function FeaturesPage() {
 
       <section className="section" aria-labelledby="not-title">
         <div className="container container--narrow">
-          <SectionHeading eyebrow="Straight talk" id="not-title" title="What MacBook Cleaner doesn’t do." intro="Plenty of “cleaner” apps promise everything. Here’s what this one deliberately leaves out." />
+          <SectionHeading eyebrow={t('page.notDoingEyebrow')} id="not-title" title={t('page.notDoingTitle')} intro={t('page.notDoingIntro')} />
           <Reveal as="ul" className="not-list">
-            {NOT_DOING.map((n) => {
-              const Icon = n.icon
+            {notDoing.map((n, i) => {
+              const Icon = NOT_DOING_ICONS[i]
               return (
-                <li key={n.text}>
-                  <Icon size={18} aria-hidden="true" /> {n.text}
+                <li key={n}>
+                  <Icon size={18} aria-hidden="true" /> {n}
                 </li>
               )
             })}
@@ -145,7 +144,7 @@ export function FeaturesPage() {
       </section>
 
       <PrivacySection />
-      <FinalCta title="Ready to see what’s taking up space?" />
+      <FinalCta title={t('page.ctaTitle')} />
     </div>
   )
 }

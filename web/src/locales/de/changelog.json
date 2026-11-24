@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Versionshinweise",
+  "title": "Was ist neu",
+  "intro": "Jede Version von MacBook Cleaner und was sich geändert hat.",
+  "latestBadge": "Neueste",
+  "dateUnannounced": "Veröffentlichungsdatum wird noch bekannt gegeben",
+  "downloadLatest": "Neueste Version herunterladen →",
+  "releases": {
+    "firstRelease": {
+      "title": "Erste Veröffentlichung",
+      "summary": "Die erste öffentliche Version von MacBook Cleaner.",
+      "sections": {
+        "cleanupTools": {
+          "heading": "Reinigungswerkzeuge",
+          "items": [
+            "Smart Clean: ein Scan, gruppiert in Systemmüll, Browser-Caches, App-Überbleibsel, Protokolle & Absturzberichte, Entwicklermüll und alte Downloads",
+            "Speicher-Explorer mit einer gemessenen Aufschlüsselung nach Kategorie",
+            "Suche nach großen Dateien mit Schwellenwerten von 500 MB, 1 GB, 5 GB und 10 GB sowie Typfiltern",
+            "Downloads-Überprüfung nach Alter gruppiert",
+            "Duplikatsuche mit vollständiger SHA-256-Inhaltsprüfung",
+            "App-Bereinigung: Caches, Protokolle und Support-Dateien einer App anzeigen; bereinigen oder die App deinstallieren",
+            "Systemmüll und Entwicklerbereinigung (Xcode, Simulatoren, npm, Yarn, pnpm, Gradle, CocoaPods, Android-Emulator-Images)"
+          ]
+        },
+        "performance": {
+          "heading": "Leistung",
+          "items": [
+            "Neuer Leistungstab mit Live-CPU- und Speicherdiagrammen, Speicherdruck und Auslagerungsspeicher",
+            "Laufende Apps: CPU, Speicher und Laufzeit pro App, mit gruppierten Hilfsprozessen und einem Detailbereich",
+            "Akkuzustand bei MacBooks: Ladung, Ladezyklen, maximale Kapazität und Zustand, wie von macOS gemeldet",
+            "Mac-Info: Modell, Chip, Kerne, GPU, Arbeitsspeicher, Displays, macOS-Version und -Build, Betriebszeit",
+            "macOS-Aktualisierungsstatus aus der eigenen Softwareaktualisierungsprüfung von macOS, mit direktem Zugang zu den Systemeinstellungen",
+            "Mac-Zustandszusammenfassung mit beschreibenden Status (keine erfundenen Bewertungen)"
+          ]
+        },
+        "automation": {
+          "heading": "Automatisierung",
+          "items": ["Geplante Bereinigung — täglich, wöchentlich oder monatlich — mit den Modi „Erinnern“ und optionalem „Automatisch bereinigen“", "Native macOS-Mitteilungen für Erinnerungen und Zusammenfassungen", "Optionaler Start bei Anmeldung"]
+        },
+        "safety": {
+          "heading": "Sicherheit",
+          "items": [
+            "Alles Entfernte wandert in den Papierkorb; nichts wird endgültig gelöscht",
+            "Nativer Schutz für Systemorte, die Hauptordner Ihres persönlichen Ordners sowie Pfade, die wie Backups, Schlüsselbunde oder Schlüssel aussehen",
+            "Persönliche Dateien werden nie vorausgewählt und benötigen immer eine Bestätigung",
+            "Scan-Ausschlüsse („nie wieder vorschlagen“)"
+          ]
+        },
+        "interface": {
+          "heading": "Oberfläche",
+          "items": ["Helles, dunkles und systemabhängiges Erscheinungsbild", "Geführter Erstkontakt-Willkommensbildschirm mit optionalem Schritt für vollen Festplattenzugriff"]
+        }
+      }
+    }
+  }
+}

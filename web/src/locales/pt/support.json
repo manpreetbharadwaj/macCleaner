@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Suporte",
+  "title": "Como podemos ajudar?",
+  "intro": "A maioria das respostas está nas Perguntas Frequentes. Para tudo o resto, o email é a forma mais rápida de nos contactar.",
+  "cards": {
+    "email": { "title": "Suporte por email", "body": "Dúvidas sobre como usar a aplicação? Escreva-nos e responderemos.", "cta": "{{email}}" },
+    "bug": { "title": "Reportar um erro", "body": "Algo não está a funcionar? Abre um email com um pequeno modelo para preencher.", "cta": "Reportar um erro" },
+    "feature": { "title": "Pedir uma funcionalidade", "body": "Diga-nos o que tornaria o MacBook Cleaner mais útil para si.", "cta": "Sugerir uma funcionalidade" },
+    "install": { "title": "Ajuda de instalação", "body": "Instruções de instalação passo a passo e o que fazer quanto ao aviso de segurança do primeiro arranque.", "cta": "Guia de instalação" },
+    "faq": { "title": "Perguntas frequentes", "body": "Segurança, privacidade, permissões, compatibilidade e desinstalação — respondidas.", "cta": "Ver as perguntas frequentes" }
+  },
+  "emailSubject": "Suporte MacBook Cleaner",
+  "logsTitle": "Envio de registos de diagnóstico",
+  "logsBody": "Para problemas difíceis, podemos pedir os registos da aplicação. São guardados apenas no seu Mac, em <code>~/Library/Logs/{{bundleId}}</code>, e nunca são enviados automaticamente. Os registos podem conter caminhos de ficheiros do seu Mac — reveja-os e remova tudo o que preferir não partilhar antes de os anexar.",
+  "bugTemplate": {
+    "subject": "Relatório de erro — MacBook Cleaner {{version}}",
+    "body": "O que aconteceu:\n\n\nO que esperava:\n\n\nPassos para reproduzir:\n1.\n2.\n\nVersão do MacBook Cleaner: {{version}}\nVersão do macOS:\nModelo / chip do Mac:\n"
+  },
+  "featureTemplate": {
+    "subject": "Pedido de funcionalidade — MacBook Cleaner",
+    "body": "O que gostaria que o MacBook Cleaner fizesse?\n\n\nPorque é que isso o ajudaria?\n"
+  }
+}

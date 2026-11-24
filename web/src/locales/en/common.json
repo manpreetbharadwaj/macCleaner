@@ -1,0 +1,61 @@
+{
+  "skipToContent": "Skip to content",
+  "tagline": "Clean your Mac. Keep what matters.",
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "download": "Download",
+    "faq": "FAQ",
+    "support": "Support",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "description": "Safe, local-first storage cleanup and performance monitoring for macOS.",
+    "version": "Version {{version}} · {{macos}} or later",
+    "columns": {
+      "product": "Product",
+      "help": "Help",
+      "legal": "Legal"
+    },
+    "links": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "download": "Download",
+      "releaseNotes": "Release Notes",
+      "faq": "FAQ",
+      "support": "Support",
+      "installation": "Installation",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "copyright": "© {{year}} {{name}}. All rights reserved.",
+    "trademark": "{{name}} is an independent application and is not affiliated with, endorsed by, or sponsored by Apple Inc. Apple, Mac, MacBook, macOS, Finder, Safari and Xcode are trademarks of Apple Inc., registered in the U.S. and other countries."
+  },
+  "download": {
+    "cta": "Download for Mac",
+    "navCta": "Download",
+    "starting": "Starting…",
+    "started": "Download started",
+    "unavailable": "Download unavailable",
+    "unavailableNote": "The verified Mac installer has not been published yet.",
+    "downloading": "Downloading {{fileName}}",
+    "error": "The download couldn’t start. Please try again in a moment, or contact support."
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "lastUpdated": "Last updated: {{date}}",
+    "onThisPage": "On this page"
+  },
+  "aria": {
+    "requirements": "Requirements",
+    "primaryNav": "Primary",
+    "mobileNav": "Mobile"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "current": "Language: {{language}}",
+    "resetToAutomatic": "Reset to automatic",
+    "resetDescription": "Detect my language automatically next time"
+  }
+}

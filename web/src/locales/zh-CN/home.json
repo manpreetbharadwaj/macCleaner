@@ -1,0 +1,198 @@
+{
+  "hero": {
+    "pill": "版本 {{version}} · 专为 macOS 打造",
+    "title1": "清理。监控。",
+    "title2": "了解你的 Mac。",
+    "lead": "释放存储空间、了解内存使用情况、监控正在运行的应用、检查电池健康状况,并查看有关 Mac 的重要信息——全部集中在一个简洁的面板中。一切由你审核决定,不会有任何内容被永久删除。",
+    "exploreFeatures": "探索功能",
+    "requirement": "{{macos}} 或更高版本",
+    "chips": {
+      "trash": { "title": "移至废纸篓", "body": "始终可恢复" },
+      "personal": { "title": "个人文件", "body": "绝不会被自动选中" },
+      "scan": { "title": "在本机扫描", "body": "不会上传任何内容" }
+    }
+  },
+  "coreFeatures": {
+    "eyebrow": "清理工具",
+    "title": "八大清理工具,一个简洁的界面。",
+    "intro": "每个工具都会显示找到了什么、它为何存在,以及删除后会发生什么——让你放心清理,而不是靠猜测。"
+  },
+  "scanDemo": {
+    "eyebrow": "查看运行效果",
+    "title1": "一次扫描。",
+    "title2": "全部归类整理。",
+    "intro": "智能清理会一次性检查缓存、日志、应用残留文件、开发者工具和下载内容,然后将结果归入通俗易懂的分组——每组都分为可立即安全清理的内容,和值得再看一眼的内容。",
+    "storageAnalyzed": "已分析存储空间",
+    "itemsFound": "发现的项目",
+    "safeToClean": "可安全清理",
+    "readyToScan": "准备就绪,可以扫描",
+    "scanning": "正在扫描你的 Mac…",
+    "canFreeUp": "你的 Mac 可释放 {{total}} GB",
+    "foundSoFar": "目前已发现 {{amount}} GB",
+    "safeSummary": "{{amount}} GB 可以立即安全清理,其余部分请自行查看。",
+    "checking": "检查中…",
+    "items": "项",
+    "footNote": "此为使用应用示例数据的扫描演示,你 Mac 上的实际结果会有所不同。",
+    "replay": "重新播放",
+    "steps": {
+      "systemJunk": "系统垃圾",
+      "browserCaches": "浏览器缓存",
+      "appLeftovers": "应用残留文件",
+      "logsCrashReports": "日志与崩溃报告",
+      "developerJunk": "开发者垃圾文件",
+      "oldDownloads": "旧的下载文件"
+    }
+  },
+  "performanceMonitor": {
+    "eyebrow": "新功能 · 性能",
+    "title1": "Mac 性能监控器。",
+    "title2": "内置功能。",
+    "intro": "MacBook Cleaner 不仅仅是一款存储清理工具。性能标签页会用通俗易懂的方式实时展示你的 Mac 当前运行状况,而不会变成一个面向开发者的复杂工具。",
+    "shotAlt": "MacBook Cleaner 性能仪表盘,显示 CPU、内存、存储和电池仪表、Mac 健康状况摘要以及实时图表",
+    "shotNote": "此处展示的是应用内置示例数据。在你的 Mac 上,所有数值均从 macOS 实时读取。"
+  },
+  "runningApps": {
+    "eyebrow": "运行中的应用",
+    "title1": "查看哪些应用占用了",
+    "title2": "最多的内存和 CPU。",
+    "intro": "“运行中的应用”列出了 Mac 上打开的应用及其内存、CPU 占用和运行时长。辅助进程会计入对应的主应用,因此即使浏览器打开了几十个标签页,也只会显示一个真实的总计数值。",
+    "checks": ["按内存、CPU、运行时长或名称排序", "默认只显示应用——后台和系统进程仅在你需要时才显示", "内存统计口径与“活动监视器”一致"],
+    "headers": { "app": "应用", "cpu": "CPU", "memory": "内存", "running": "运行时长" },
+    "note": "以下为示意数值,并非性能基准测试结果。"
+  },
+  "battery": {
+    "eyebrow": "电池健康",
+    "title": "了解你的电池状况。",
+    "intro": "在 MacBook 上,你可以准确查看 macOS 所掌握的电池信息——没有猜测,也没有凭空捏造的评分。",
+    "checks": ["电池电量百分比与充电状态", "循环次数——已完成的完整充电循环数", "与全新状态相比的最大容量", "“系统设置”中显示的电池状况"],
+    "finePrint": "MacBook Cleaner 仅报告电池信息,无法修复或改善电池的物理健康状况。台式 Mac 不会显示此部分内容。",
+    "stats": { "cycleCount": "循环次数", "maxCapacity": "最大容量", "condition": "状况", "power": "电源", "conditionValue": "正常", "powerValue": "电池" },
+    "note": "以下为示意数值。"
+  },
+  "macInfo": {
+    "eyebrow": "Mac 信息",
+    "title1": "关于你的 Mac",
+    "title2": "的所有重要信息。",
+    "intro": "型号、芯片、内存、存储、显示器、macOS 版本和正常运行时间——集中在一个面板中查看,无需在五个不同的地方来回切换。MacBook Cleaner 还会显示 macOS 自带的更新检查结果,并提供前往“软件更新”的快捷方式。",
+    "finePrint": "信息从 macOS 本地读取,绝不会上传。完全不会读取你的序列号。",
+    "card": { "thisMac": "此 Mac", "model": "MacBook Pro" },
+    "specs": { "model": "Mac 型号", "chip": "芯片", "memory": "内存", "storage": "存储空间", "macos": "macOS", "uptime": "正常运行时间" },
+    "note": "以下为示意数值。"
+  },
+  "howItWorks": {
+    "eyebrow": "工作原理",
+    "title": "四个步骤,每一步都由你掌控。",
+    "steps": [
+      { "title": "扫描你的 Mac", "body": "一键检查缓存、日志、开发者工具、应用、下载内容以及最大的文件——全部在你的 Mac 本地完成。" },
+      { "title": "查看推荐项", "body": "项目会被标记为“安全”或“需查看”,并附有清晰说明。想保留的内容,取消勾选即可。" },
+      { "title": "移至废纸篓", "body": "确认后,你批准的项目会被移至废纸篓。涉及你自己的文件时,始终需要额外确认。" },
+      { "title": "回收存储空间", "body": "改变主意了?随时可以从废纸篓中恢复。确定无误后,清空废纸篓即可真正释放空间。" }
+    ]
+  },
+  "storageSection": {
+    "eyebrow": "存储空间洞察",
+    "title1": "看看你的空间",
+    "title2": "究竟去了哪里。",
+    "intro": "MacBook Cleaner 会测量你电脑中的实际文件夹,并以一个色彩分明的存储环形图呈现——使用与应用内相同的分类。",
+    "checks": ["以十进制吉字节(GB)显示,与 macOS 报告存储空间的方式一致", "无法归类的空间会被诚实地标记为“系统数据”", "照片等由系统管理的资源库仅测量大小,绝不会被打开或拆解查看"]
+  },
+  "storageViz": {
+    "modes": { "used": "已用", "recoverable": "可能可回收", "free": "可用" },
+    "centerLabels": { "used": "已用", "recoverable": "可回收", "free": "可用" },
+    "ofTotal": "共 {{total}} GB",
+    "potentiallyRecoverable": "可能可以回收",
+    "percentOfDisk": "占磁盘的 {{percent}}%",
+    "afterReview": "审核后",
+    "diskAriaLabel": "示例磁盘:已用 {{used}} GB,可用 {{free}} GB,审核后可能可回收 {{recoverable}} GB",
+    "legendAriaLabel": "{{label}}:已用 {{used}},可能可回收 {{recoverable}}。{{note}}",
+    "defaultNote": "此为使用应用示例数据的示意图——你 Mac 上的实际数值会有所不同。将鼠标悬停或聚焦在某个分类上可查看详情。",
+    "categories": {
+      "applications": { "label": "应用程序", "note": "应用程序及已卸载应用留下的残留文件" },
+      "documents": { "label": "文稿", "note": "文稿与桌面——需审核,不会自动选中" },
+      "photos": { "label": "照片", "note": "仅测量“照片”资源库大小,不会被触碰" },
+      "videos": { "label": "影片", "note": "可供你查看的大型录制文件" },
+      "downloads": { "label": "下载", "note": "旧的安装程序、磁盘映像与压缩包" },
+      "cache": { "label": "缓存", "note": "会自动重建的应用与浏览器缓存" },
+      "other": { "label": "其他", "note": "音乐、邮件、信息等其他应用数据" },
+      "system-data": { "label": "系统数据", "note": "macOS 本身及无法归入某个文件夹的空间" }
+    }
+  },
+  "safeCleaning": {
+    "eyebrow": "安全至上的设计理念",
+    "title1": "始终由你掌控。",
+    "title2": "全程如此。",
+    "intro": "清理工具需要深度访问你的磁盘。正因如此,MacBook Cleaner 在设计上力求让误操作难以发生——即使发生了,也能轻松撤销。",
+    "levels": {
+      "safe": { "label": "安全", "title": "可自行重建", "body": "由应用自动重新生成的缓存与日志,已为你预先选中。", "example": "Xcode DerivedData", "size": "18.6 GB" },
+      "review": { "label": "需查看", "title": "建议先看一眼", "body": "可能保存了你在意的状态信息,绝不会被自动选中。", "example": "模拟器设备", "size": "6.2 GB" },
+      "protected": { "label": "受保护", "title": "无法选中", "body": "任何看起来像备份、钥匙串或密钥的内容,都会被应用的原生安全机制拒绝处理。", "example": "MobileSync 备份", "size": "已锁定" }
+    },
+    "principles": [
+      { "title": "删除前务必审核", "body": "每次清理都会准确展示即将移动的内容,并请你确认。" },
+      { "title": "始终先进废纸篓", "body": "项目只会被移至废纸篓,绝不会被永久删除。应用也绝不会清空你的废纸篓。" },
+      { "title": "你的文件由你决定", "body": "下载、桌面、文稿和影片内容绝不会被自动选中,始终需要额外确认。" },
+      { "title": "无法绕过的安全防线", "body": "原生检查机制会拒绝处理系统文件夹、主目录及其主要子文件夹,以及主目录之外的任何内容。" },
+      { "title": "“不再提示”", "body": "将任意文件或文件夹加入排除列表后,无论是手动扫描还是定时扫描,都不会再被提示。" },
+      { "title": "没有意外的自动操作", "body": "自动清理功能默认关闭,需要明确同意才能启用,且仅涉及六类开发者缓存。" }
+    ]
+  },
+  "beforeAfter": {
+    "eyebrow": "前后对比",
+    "title": "从“到底都去哪儿了?”到“哦,原来在这儿。”",
+    "intro": "拖动滑块进行对比。MacBook Cleaner 并不会让你的磁盘变大——而是让它变得一目了然,让释放空间从靠猜变成做决定。",
+    "before": "之前",
+    "after": "之后",
+    "systemDataUnknown": "系统数据:???",
+    "withoutClearView": "缺乏清晰视图时",
+    "withApp": "使用 MacBook Cleaner 后",
+    "beforeList": ["存储空间条只显示“系统数据”,其他一无所知", "大文件深藏在文件夹中无人察觉", "缓存和日志在不知不觉中不断堆积", "下载文件夹中堆满了旧的安装程序和磁盘映像", "完全不知道哪些内容删除是安全的"],
+    "afterList": ["每个分类都经过测量并清晰标注", "最大的文件优先列出,并可通过快速查看预览", "缓存已分组,并标记为“安全”或“需查看”", "下载内容按日期和类型整理", "通过废纸篓,按你自己的节奏回收空间"]
+  },
+  "privacyBand": {
+    "eyebrow": "隐私优先",
+    "title": "你的文件始终留在 Mac 本机。",
+    "lead": "清理工具需要深度访问你的磁盘,正因如此,MacBook Cleaner 的设计理念就是尽可能少地依赖你的信任。",
+    "points": [
+      { "title": "在本机扫描", "body": "每一次扫描和清理都在本地运行,完全不涉及任何云服务。" },
+      { "title": "不会上传任何内容", "body": "没有分析统计、遥测数据或崩溃报告。你的文件、运行中的应用、电池及 Mac 详细信息绝不会离开你的 Mac。" },
+      { "title": "试用无需账户", "body": "无需注册、无需邮箱、无需信用卡——下载即可开始免费试用。日后购买永久许可证,也只需使用购买时获得的密钥,无需创建新账户。" },
+      { "title": "内容不会被读取", "body": "应用只会查看文件大小和日期。只有在确认两个文件是完全相同的重复文件时,才会读取文件内容。" }
+    ],
+    "permissionsHeading": "macOS 可能会请求哪些权限,以及原因",
+    "permissions": [
+      { "title": "下载、桌面与文稿", "body": "为了查找大文件和旧的下载内容,应用在访问这些文件夹前,macOS 会先征求你的同意。" },
+      { "title": "控制“访达”", "body": "首次清理时会请求此权限。应用会请求“访达”将项目移至废纸篓,以便“放回原处”功能正常工作。" },
+      { "title": "完全磁盘访问权限——可选", "body": "让应用能够测量 macOS 默认保密的位置,例如部分应用缓存和废纸篓。即使不授权,应用依然可以正常使用。" },
+      { "title": "通知——可选", "body": "仅用于定时清理提醒和摘要通知。" }
+    ],
+    "footNote": "你可以随时在“系统设置”→“隐私与安全性”中查看或撤销这些权限。",
+    "readPolicy": "阅读隐私政策 →"
+  },
+  "gallery": {
+    "eyebrow": "屏幕截图",
+    "title": "设计风格与你的 Mac 完美契合。",
+    "intro": "以下为应用内置示例数据下的真实界面截图。浅色/深色外观会跟随系统设置。",
+    "shots": {
+      "dashboard": { "label": "仪表盘", "alt": "带有存储环形图和智能清理摘要的仪表盘" },
+      "scanning": { "label": "扫描中", "alt": "智能清理扫描进行中" },
+      "results": { "label": "智能清理", "alt": "按分类整理的智能清理结果" },
+      "performance": { "label": "性能", "alt": "实时显示 CPU 和内存的性能仪表盘" },
+      "performance-apps": { "label": "运行中的应用", "alt": "按内存占用排序的运行中应用" },
+      "performance-battery": { "label": "电池", "alt": "显示循环次数和最大容量的电池状况" },
+      "complete": { "label": "清理完成", "alt": "显示已移至废纸篓空间的清理完成摘要" },
+      "storage": { "label": "存储空间", "alt": "按分类划分的存储空间明细" },
+      "dashboard-dark": { "label": "深色模式", "alt": "深色模式下的仪表盘" }
+    }
+  },
+  "faqPreview": {
+    "eyebrow": "常见问题",
+    "title": "为你解答疑问。",
+    "seeAll": "查看所有问题 →"
+  },
+  "finalCta": {
+    "defaultTitle": "让你的 Mac 喘口气吧。",
+    "featuresTitle": "想看看是什么占用了你的存储空间吗?",
+    "meta": "版本 {{version}} · {{macos}} 或更高版本 · {{architecture}}",
+    "installationGuide": "安装方法"
+  }
+}

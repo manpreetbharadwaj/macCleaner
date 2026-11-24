@@ -1,15 +1,12 @@
 import { useState, type CSSProperties } from 'react'
+import { useTranslation } from 'react-i18next'
 import { DEMO_CATEGORIES, DEMO_FREE_GB, DEMO_RECLAIMABLE_GB, DEMO_TOTAL_GB, DEMO_USED_GB } from '@/data/storage'
 import { useInView } from '@/hooks/useInView'
 import { cx, formatGb } from '@/utils/format'
 
 type Mode = 'used' | 'recoverable' | 'free'
 
-const MODES: { id: Mode; label: string }[] = [
-  { id: 'used', label: 'Used' },
-  { id: 'recoverable', label: 'Potentially recoverable' },
-  { id: 'free', label: 'Free' },
-]
+const MODES: Mode[] = ['used', 'recoverable', 'free']
 
 const R = 88
 const C = 2 * Math.PI * R
@@ -44,42 +41,45 @@ const MAX_GB = Math.max(...DEMO_CATEGORIES.map((c) => c.gb))
  * same categories and colors as the app; numbers are a labeled example.
  */
 export function StorageVisualization() {
+  const { t } = useTranslation('home')
   const { ref, inView } = useInView<HTMLDivElement>({ threshold: 0.3 })
   const [mode, setMode] = useState<Mode>('used')
   const [active, setActive] = useState<string | null>(null)
 
+  const catLabel = (id: string) => t(`storageViz.categories.${id}.label`)
+  const catNote = (id: string) => t(`storageViz.categories.${id}.note`)
   const activeCat = DEMO_CATEGORIES.find((c) => c.id === active) ?? null
 
-  let centerLabel = 'Used'
+  let centerLabel = t('storageViz.centerLabels.used')
   let centerValue = DEMO_USED_GB
-  let centerSub = `of ${DEMO_TOTAL_GB} GB`
+  let centerSub = t('storageViz.ofTotal', { total: DEMO_TOTAL_GB })
   if (activeCat) {
-    centerLabel = activeCat.label
+    centerLabel = catLabel(activeCat.id)
     centerValue = mode === 'recoverable' ? activeCat.reclaimableGb : activeCat.gb
-    centerSub = mode === 'recoverable' ? 'potentially recoverable' : `${Math.round((activeCat.gb / DEMO_TOTAL_GB) * 100)}% of disk`
+    centerSub = mode === 'recoverable' ? t('storageViz.potentiallyRecoverable') : t('storageViz.percentOfDisk', { percent: Math.round((activeCat.gb / DEMO_TOTAL_GB) * 100) })
   } else if (mode === 'recoverable') {
-    centerLabel = 'Recoverable'
+    centerLabel = t('storageViz.centerLabels.recoverable')
     centerValue = DEMO_RECLAIMABLE_GB
-    centerSub = 'after your review'
+    centerSub = t('storageViz.afterReview')
   } else if (mode === 'free') {
-    centerLabel = 'Free'
+    centerLabel = t('storageViz.centerLabels.free')
     centerValue = DEMO_FREE_GB
-    centerSub = `of ${DEMO_TOTAL_GB} GB`
+    centerSub = t('storageViz.ofTotal', { total: DEMO_TOTAL_GB })
   }
 
   return (
     <div ref={ref} className={cx('storage-viz', `mode-${mode}`, inView && 'is-in')} style={{ '--C': C } as CSSProperties}>
-      <div className="storage-viz__modes segmented" role="radiogroup" aria-label="Storage view">
+      <div className="storage-viz__modes segmented" role="radiogroup" aria-label={t('storageViz.modes.used')}>
         {MODES.map((m) => (
-          <button key={m.id} type="button" role="radio" aria-checked={mode === m.id} className={cx('segmented__opt', mode === m.id && 'is-active')} onClick={() => setMode(m.id)}>
-            {m.label}
+          <button key={m} type="button" role="radio" aria-checked={mode === m} className={cx('segmented__opt', mode === m && 'is-active')} onClick={() => setMode(m)}>
+            {t(`storageViz.modes.${m}`)}
           </button>
         ))}
       </div>
 
       <div className="storage-viz__body">
         <div className="storage-viz__ring">
-          <svg viewBox="0 0 220 220" role="img" aria-label={`Example disk: ${DEMO_USED_GB.toFixed(1)} GB used, ${DEMO_FREE_GB.toFixed(1)} GB free, ${DEMO_RECLAIMABLE_GB.toFixed(1)} GB potentially recoverable after review`}>
+          <svg viewBox="0 0 220 220" role="img" aria-label={t('storageViz.diskAriaLabel', { used: DEMO_USED_GB.toFixed(1), free: DEMO_FREE_GB.toFixed(1), recoverable: DEMO_RECLAIMABLE_GB.toFixed(1) })}>
             <circle cx="110" cy="110" r={R} className="ring-track" />
             <g transform="rotate(-90 110 110)">
               {SEGMENTS.map((s, i) => (
@@ -130,11 +130,11 @@ export function StorageVisualization() {
                   onMouseLeave={() => setActive(null)}
                   onFocus={() => setActive(c.id)}
                   onBlur={() => setActive(null)}
-                  aria-label={`${c.label}: ${formatGb(c.gb)} used, ${formatGb(c.reclaimableGb)} potentially recoverable. ${c.note}`}
+                  aria-label={t('storageViz.legendAriaLabel', { label: catLabel(c.id), used: formatGb(c.gb), recoverable: formatGb(c.reclaimableGb), note: catNote(c.id) })}
                   style={{ '--c': c.color } as CSSProperties}
                 >
                   <span className="legend-row__swatch" aria-hidden="true" />
-                  <span className="legend-row__label">{c.label}</span>
+                  <span className="legend-row__label">{catLabel(c.id)}</span>
                   <span className="legend-row__value">{mode === 'recoverable' && c.reclaimableGb === 0 ? '—' : formatGb(value)}</span>
                   <span className="legend-row__bar" aria-hidden="true">
                     <i style={{ '--w': `${width}%` } as CSSProperties} />
@@ -146,9 +146,7 @@ export function StorageVisualization() {
         </ul>
       </div>
 
-      <p className="storage-viz__note">
-        {activeCat ? activeCat.note : 'Illustrative example using the app’s sample data — your Mac’s numbers will be different. Hover or focus a category for details.'}
-      </p>
+      <p className="storage-viz__note">{activeCat ? catNote(activeCat.id) : t('storageViz.defaultNote')}</p>
     </div>
   )
 }

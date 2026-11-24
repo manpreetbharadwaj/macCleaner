@@ -1,0 +1,50 @@
+{
+  "/": {
+    "title": "MacBook Cleaner — Mac 저장공간 정리 및 성능 모니터",
+    "description": "Mac 저장공간을 안전하게 확보하고 Mac 상태를 확인하세요. MacBook Cleaner는 캐시, 대용량 파일, 중복 파일을 찾아주고 CPU 및 RAM 사용량, 실행 중인 앱, 배터리 상태, Mac 시스템 정보를 보여줍니다 — 모든 작업은 로컬에서 처리됩니다."
+  },
+  "/features": {
+    "title": "기능 — Mac 클리너, CPU·RAM 모니터, 배터리 상태 | MacBook Cleaner",
+    "description": "스마트 클린, 저장공간 탐색기, 대용량/중복 파일 찾기, 앱 정리에 더해 CPU·메모리 사용량, 실행 중인 앱, 배터리 충전 주기 및 상태, Mac 시스템 정보를 보여주는 성능 모니터까지."
+  },
+  "/pricing": {
+    "title": "요금제 — MacBook Cleaner",
+    "description": "MacBook Cleaner {{version}}: {{trialDays}}일간 무료로 체험해 보세요. 이후에는 {{price}} 단 한 번의 결제로 평생 사용할 수 있습니다. 구독도, 시작 시 계정도 필요 없습니다."
+  },
+  "/download": {
+    "title": "Mac용 MacBook Cleaner 다운로드",
+    "description": "{{macos}} 이상의 {{architecture}} Mac용 MacBook Cleaner {{version}}을 다운로드하세요. 설치 방법과 첫 실행 시 도움말도 포함되어 있습니다."
+  },
+  "/faq": {
+    "title": "자주 묻는 질문 — MacBook Cleaner는 안전한가요? | MacBook Cleaner",
+    "description": "로컬 우선 방식의 Mac 클리너 겸 성능 모니터인 MacBook Cleaner의 안전성, 개인정보 보호, 권한, 성능 모니터링, 배터리 상태, 호환성, 설치에 관한 답변입니다."
+  },
+  "/support": {
+    "title": "지원 — MacBook Cleaner",
+    "description": "MacBook Cleaner 지원: 설치 도움말, 버그 신고, 기능 요청 및 문의처."
+  },
+  "/changelog": {
+    "title": "릴리스 노트 — MacBook Cleaner",
+    "description": "MacBook Cleaner 버전별 변경 사항."
+  },
+  "/privacy": {
+    "title": "개인정보 보호방침 — MacBook Cleaner",
+    "description": "MacBook Cleaner와 이 웹사이트가 정보를 다루는 방식입니다. 앱은 로컬에서 스캔, 정리, 모니터링을 수행하며 사용자의 파일이나 Mac 성능에 관한 정보를 어디로도 전송하지 않습니다."
+  },
+  "/terms": {
+    "title": "이용약관 — MacBook Cleaner",
+    "description": "MacBook Cleaner의 다운로드 및 사용에 적용되는 약관입니다."
+  },
+  "/thank-you": {
+    "title": "구매해 주셔서 감사합니다 — MacBook Cleaner",
+    "description": "구매해 주셔서 감사합니다. 라이선스 키와 활성화 방법을 여기에서 확인하세요."
+  },
+  "/404": {
+    "title": "페이지를 찾을 수 없습니다 — MacBook Cleaner",
+    "description": "찾으시는 페이지가 존재하지 않습니다."
+  },
+  "ogImageAlt": "저장공간 분석 내역을 보여주는 MacBook Cleaner 앱",
+  "schema": {
+    "featureList": ["Mac 저장공간 클리너", "저장공간 분석기", "대용량 파일 찾기", "중복 파일 찾기", "앱 제거 도구", "CPU·메모리 모니터", "실행 중인 앱 모니터", "배터리 상태 및 충전 주기", "Mac 시스템 정보"]
+  }
+}

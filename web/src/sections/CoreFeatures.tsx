@@ -1,19 +1,17 @@
-import { CORE_FEATURES } from '@/data/features'
+import { useTranslation } from 'react-i18next'
+import { useCoreFeatures } from '@/data/features'
 import { FeatureCard } from '@/components/FeatureCard'
 import { SectionHeading } from '@/components/SectionHeading'
 
 export function CoreFeatures() {
+  const { t } = useTranslation('home')
+  const features = useCoreFeatures()
   return (
     <section className="section" aria-labelledby="features-title">
       <div className="container">
-        <SectionHeading
-          eyebrow="Cleaning tools"
-          id="features-title"
-          title="Eight cleaning tools. One calm interface."
-          intro="Each tool shows what it found, why it’s there and what happens if you remove it — so you can clean with confidence instead of guesswork."
-        />
+        <SectionHeading eyebrow={t('coreFeatures.eyebrow')} id="features-title" title={t('coreFeatures.title')} intro={t('coreFeatures.intro')} />
         <div className="feature-grid">
-          {CORE_FEATURES.map((f, i) => (
+          {features.map((f, i) => (
             <FeatureCard key={f.id} feature={f} delay={(i % 4) * 60} />
           ))}
         </div>

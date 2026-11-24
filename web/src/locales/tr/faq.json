@@ -1,0 +1,160 @@
+{
+  "eyebrow": "SSS",
+  "title": "Sıkça sorulan sorular",
+  "intro": "Güvenlik, gizlilik, uyumluluk ve MacBook Cleaner'ın nasıl çalıştığı hakkında doğrudan yanıtlar.",
+  "topicsAria": "SSS konuları",
+  "stillHaveQuestion": "Hâlâ bir sorunuz mu var?",
+  "contactLine": "<email>{{email}}</email> adresine e-posta gönderin veya <support>Destek</support> sayfasını ziyaret edin.",
+  "groups": {
+    "basics": {
+      "title": "Temel bilgiler",
+      "items": {
+        "what-is-it": {
+          "question": "MacBook Cleaner nedir?",
+          "answer": [
+            "MacBook Cleaner, depolama alanınızı neyin kullandığını gösteren ve ihtiyacınız olmayanları kaldırmanıza yardımcı olan bir macOS uygulamasıdır: önbellekler, günlükler, uygulama artıkları, geliştirici derleme önbellekleri, eski indirmeler, büyük dosyalar ve birebir yinelenenler.",
+            "Ayrıca bir Performans paneli de içerir: canlı CPU ve bellek kullanımı, en çok kaynak kullanan uygulamalar, MacBook'larda pil sağlığı ve Mac'iniz ile macOS hakkında önemli bilgiler.",
+            "Kaldırılmadan önce her şeyi siz gözden geçirirsiniz ve kaldırılan öğeler kalıcı olarak silinmek yerine Çöp Kutusu'na gider."
+          ]
+        },
+        "what-files": {
+          "question": "Hangi dosyaları temizleyebilir?",
+          "answer": [
+            "Kullanıcı Kitaplığınızdaki uygulama ve sistem önbellekleri ile günlükler; Safari, Chrome, Edge ve Firefox önbellekleri; kaldırdığınız uygulamalardan kalan önbellekler; geliştirici önbellekleri (Xcode DerivedData, Arşivler, Cihaz Desteği, Simülatör verileri, npm, Yarn, pnpm, Gradle, CocoaPods, Android emülatör imajları); ve — yalnızca siz seçtiğinizde — İndirilenler, Masaüstü, Belgeler ve Filmler'deki büyük dosyalar, eski indirmeler ve yinelenen dosyalar.",
+            "Ayrıca Uygulamalar klasörünüzdeki uygulamaları, kalan verileriyle birlikte kaldırabilir."
+          ]
+        },
+        "free": {
+          "question": "MacBook Cleaner ücretsiz mi?",
+          "answer": ["Her özellik {{trialDays}} günlük ücretsiz deneme süresince çalışır — başlamak için hesap veya kredi kartı gerekmez. Sonrasında tek seferlik {{price}} ödeme kilidini kalıcı olarak açar: abonelik yok, tekrarlayan ücret yok. {{priceNote}}", "Lisans anahtarı ödemeden hemen sonra e-postanıza gönderilir, her seferinde bir Mac'te çalışır ve ihtiyaç duyduğunuzda devre dışı bırakılıp farklı bir Mac'e taşınabilir."]
+        },
+        "faster": {
+          "question": "Dosyaları temizlemek Mac'imi hızlandırır mı?",
+          "answer": [
+            "MacBook Cleaner disk alanını boşaltır ve Mac'inizin ne yaptığını gösterir. Performans sekmesi hangi uygulamaların en çok CPU ve bellek kullandığını gösterir, böylece neyi kapatacağınıza karar verebilirsiniz — ancak RAM'i “hızlandırmaz”, başlangıç öğelerini ayarlamaz veya sistem ayarlarını değiştirmez ve hız artışı vaat etmeyiz.",
+            "Bununla birlikte, macOS güncellemeler, sanal bellek ve önbellekler için boş alana ihtiyaç duyar, bu yüzden neredeyse dolu bir disk, alan boşaltmanın önlemeye yardımcı olduğu sorunlara neden olabilir."
+          ]
+        }
+      }
+    },
+    "safety": {
+      "title": "Güvenlik ve gizlilik",
+      "items": {
+        "safe": {
+          "question": "MacBook Cleaner güvenli mi?",
+          "answer": [
+            "Verilerinizi kaybetmemek üzerine tasarlandı. Hiçbir şey kalıcı olarak silinmez — onaylanan öğeler Çöp Kutusu'na taşınır ve uygulama onu asla boşaltmaz. Kendi dosyalarınız (İndirilenler, Masaüstü, Belgeler, Filmler) asla önceden seçilmez ve her zaman onay gerektirir.",
+            "Arayüzün ne istediğinden bağımsız olarak, her kaldırma işleminde yerel bir güvenlik kontrolü çalışır: sistem konumları, ana klasörünüz ve onun ana klasörleri reddedilir; yedek, anahtarlık, parola veya anahtar gibi görünen yollar korunur.",
+            "Dosyaları kaldıran her araçta olduğu gibi, bir yedek tutun (örneğin Time Machine ile) ve temizlemeden önce gözden geçirin."
+          ]
+        },
+        "review": {
+          "question": "Dosyaları silmeden önce inceleyebilir miyim?",
+          "answer": ["Evet — uygulamanın çalışma şeklinin özü budur. Her öğe boyutunu, konumunu, neden var olduğunu ve kaldırırsanız ne olacağını gösterir. Herhangi bir şeyin işaretini kaldırabilir, dosyaları Quick Look ile önizleyebilir, Finder'da gösterebilir veya “asla önerme” hariç tutma listesine ekleyebilirsiniz."]
+        },
+        "recover": {
+          "question": "Silinen dosyalar geri alınabilir mi?",
+          "answer": ["Evet, Çöp Kutusu'nu boşaltana kadar. MacBook Cleaner öğeleri silmek yerine Çöp Kutusu'na taşır, bu yüzden Finder'da Çöp Kutusu'nu açıp Geri Koy'u seçebilirsiniz.", "Çöp Kutusu'ndaki öğelerin hâlâ disk alanı kapladığını unutmayın — boş alanınız yalnızca Çöp Kutusu'nu kendiniz boşalttığınızda artar."]
+        },
+        "upload": {
+          "question": "Dosyalarımı yüklüyor mu?",
+          "answer": ["Hayır. Tarama ve temizleme tamamen Mac'inizde gerçekleşir. Uygulama analitik, telemetri, çökme raporlama veya hesap sistemi içermez ve dosyalarınız hakkında hiçbir yere bilgi göndermez.", "İnternete dokunduğu tek an, bu web sitesini tarayıcınızda açan bir bağlantıya (“Güncellemeleri Kontrol Et” veya “Gizlilik Politikası” gibi) tıkladığınızdadır."],
+          "linkLabel": "Gizlilik Politikasını okuyun"
+        },
+        "permissions": {
+          "question": "Hangi izinlere ihtiyaç duyar?",
+          "answer": [
+            "macOS, uygulamanın büyük dosyaları ve eski indirmeleri bulabilmesi için İndirilenler, Masaüstü ve Belgeler klasörlerinize erişime izin vermenizi isteyebilir. İlk temizlediğinizde macOS, MacBook Cleaner'ın Finder'ı kontrol edip edemeyeceğini sorar — uygulama, geri konulabilmeleri için öğeleri Çöp Kutusu'na taşıması için Finder'dan izin ister.",
+            "Tam Disk Erişimi isteğe bağlıdır. Uygulamanın, bazı uygulama önbellekleri ve Çöp Kutusu gibi macOS'un özel tuttuğu konumları ölçmesini sağlar. Bu izin olmadan da uygulama çalışmaya devam eder, yalnızca daha az şey gösterir. Bildirimler yalnızca zamanlanmış temizlik hatırlatmaları ve özetleri için kullanılır."
+          ]
+        }
+      }
+    },
+    "compatibility": {
+      "title": "Uyumluluk ve kurulum",
+      "items": {
+        "apple-silicon": {
+          "question": "Apple silikon Mac'lerde çalışır mı?",
+          "answerYes": ["Evet. Mevcut doğrulanmış sürüm, Apple silikon (M serisi çip) içeren Mac'lerde yerel olarak çalışır."],
+          "answerUnverified": ["Doğrulanmış bir yükleyici henüz yayınlanmadığından, bu sitede mimari uyumluluğu konusunda bir iddiada bulunulmuyor."]
+        },
+        "intel": {
+          "question": "Intel Mac'leri destekliyor mu?",
+          "answerUnverified": ["Doğrulanmış bir yükleyici henüz yayınlanmadığından, bu sitede Intel uyumluluğu konusunda bir iddiada bulunulmuyor."],
+          "answerUniversal": ["Evet. İndirilen sürüm, hem Intel hem de Apple silikon Mac'lerde yerel olarak çalışan evrensel bir uygulamadır."],
+          "answerNo": ["Henüz değil. Şu anda yayınlanan sürüm yalnızca Apple silikon Mac'ler içindir. Intel ile uyumlu bir sürüm henüz yayınlanmadı — bu değişirse bu sayfa güncellenecektir."]
+        },
+        "macos-versions": {
+          "question": "Hangi macOS sürümleri destekleniyor?",
+          "answer": ["{{architecture}} Mac'lerde {{macosName}} ({{macosVersion}}) veya üzeri."]
+        },
+        "security-warning": {
+          "question": "macOS neden bir güvenlik uyarısı gösteriyor?",
+          "answer": [
+            "MacBook Cleaner henüz Apple tarafından onaylanmadığından, ilk açtığınızda macOS'un Gatekeeper'ı geliştiriciyi doğrulayamadığını söyler. Bu, Apple onayı olmadan Mac App Store dışında dağıtılan uygulamalar için beklenen bir durumdur — zararlı bir şey bulunduğu anlamına gelmez.",
+            "Uygulamayı yalnızca bu web sitesinden indirin. Ardından Sistem Ayarları → Gizlilik ve Güvenlik → Yine de Aç üzerinden bir kez açın. İndir sayfası bu süreci adım adım anlatır."
+          ],
+          "linkLabel": "Uygulama nasıl açılır"
+        },
+        "uninstall": {
+          "question": "MacBook Cleaner nasıl kaldırılır?",
+          "answer": [
+            "Zamanlanmış Temizliği veya Girişte Başlat'ı açtıysanız, arka plan yardımcılarının kaldırılması için önce bunları uygulamada kapatın. Ardından uygulamadan çıkın ve MacBook Cleaner'ı Uygulamalar'dan Çöp Kutusu'na sürükleyin.",
+            "Ayarlarını ve günlüklerini de kaldırmak için ~/Library/Application Support/{{bundleId}} ve ~/Library/Logs/{{bundleId}} klasörlerini silin. İlk adımı atladıysanız, ~/Library/LaunchAgents içindeki {{bundleId}}.*.plist dosyalarını da silin."
+          ]
+        }
+      }
+    },
+    "performance": {
+      "title": "Performans izleme",
+      "items": {
+        "cpu": {
+          "question": "MacBook Cleaner CPU kullanımını izliyor mu?",
+          "answer": ["Evet. Performans sekmesi, kullanıcı, sistem ve boşta süreye bölünmüş 60 saniyelik bir grafikle canlı CPU kullanımını ve her çalışan uygulamanın CPU kullanımını gösterir. Değerler, Mac'inizin toplam işlem gücünün bir payı olarak gösterilir."]
+        },
+        "ram-apps": {
+          "question": "En çok RAM kullanan uygulamaları görebilir miyim?",
+          "answer": ["Evet. Çalışan Uygulamalar, açık uygulamalarınızı belleği, CPU'su ve çalışma süresiyle listeler ve bunlardan herhangi birine göre sıralanabilir. Bellek, Etkinlik İzleyici'nin kullandığı aynı ölçü olan fiziksel kaplamadır — ve her uygulamanın yardımcı işlemlerini içerir.", "macOS, normal uygulamaların diğer kullanıcılara ait işlemlerin (bazı sistem hizmetleri gibi) CPU'sunu veya belleğini okumasına izin vermez, bu yüzden bunlar bir sayı yerine tire gösterir."]
+        },
+        "cycle-count": {
+          "question": "MacBook pil döngü sayımı kontrol edebilir miyim?",
+          "answer": ["Evet. MacBook'larda Pil bölümü, macOS tarafından raporlanan döngü sayısını, maksimum kapasiteyi, şarjı, güç kaynağını ve pil durumunu gösterir. Pil, tasarlandığı döngü sayısını raporladığında bu da gösterilir. Masaüstü Mac'lerin pili olmadığından bu bölüm gizlidir."]
+        },
+        "upload-apps": {
+          "question": "Uygulama çalışan uygulama verilerimi yüklüyor mu?",
+          "answer": ["Hayır. Çalışan uygulamalar, işlem ayrıntıları, CPU, bellek, pil ve Mac bilgileri macOS'tan yerel olarak okunur, ekranda gösterilir ve uygulama açık olduğu sürece yalnızca bellekte tutulur. Hiçbiri yüklenmez, diske kaydedilmez veya analitik için kullanılmaz."],
+          "linkLabel": "Gizlilik Politikasını okuyun"
+        },
+        "mac-model": {
+          "question": "Mac modelimi ve RAM'imi görebilir miyim?",
+          "answer": ["Evet. Mac Bilgisi; modelinizi, çipinizi, CPU ve GPU çekirdeklerinizi, belleğinizi, depolamanızı, ekranlarınızı, macOS sürümünüzü ve derlemenizi ile çalışma sürenizi gösterir. Seri numaranız asla okunmaz."]
+        },
+        "macos-update": {
+          "question": "macOS'un güncelleme gerektirip gerektirmediğini söyleyebilir mi?",
+          "answer": ["macOS'un kendi otomatik Yazılım Güncelleme kontrolünün sonucunu — örneğin “Güncel” veya mevcut bir güncellemenin adını — macOS'un en son ne zaman kontrol ettiğiyle birlikte gösterir. MacBook Cleaner asla Apple ile kendisi iletişime geçmez ve asla güncelleme yüklemez; Yazılım Güncellemeyi Aç düğmesi sizi Sistem Ayarları'na götürür.", "macOS bir kontrol kaydetmediyse, durum tahmin edilmek yerine bilinmiyor olarak gösterilir."]
+        },
+        "monitoring-overhead": {
+          "question": "Performans izleme Mac'imi yavaşlatır mı?",
+          "answer": ["İzleme yalnızca Performans ekranı açıkken çalışır, pencere odakta değilken yavaşlar ve pencere gizlendiğinde veya başka bir ekrana geçtiğinizde tamamen durur. Mac'inizin modeli gibi statik ayrıntılar oturum başına bir kez okunur.", "Bir Apple M1 MacBook Pro üzerinde yaptığımız ölçümlerde, izleme işlemi ekran açıkken tek bir CPU çekirdeğinin ortalama yaklaşık yüzde yarısını kullandı."]
+        }
+      }
+    },
+    "automation": {
+      "title": "Tarama ve otomasyon",
+      "items": {
+        "how-often": {
+          "question": "Mac'imi ne sıklıkla taramalıyım?",
+          "answer": ["Tek bir doğru yanıt yok — Mac'inizi nasıl kullandığınıza bağlı. Birçok kişi haftalık bir kontrolün yeterli olduğunu düşünür. Sık derleme yapan geliştiriciler daha sık taramak isteyebilir, çünkü derleme önbellekleri hızla büyür.", "Zamanlanmış Temizlik, yalnızca temizlenecek yeterli şey olduğunda veya boş alan azaldığında otomatik olarak hatırlatabilir."]
+        },
+        "automatic": {
+          "question": "Uygulama otomatik olarak çalışıyor mu?",
+          "answer": [
+            "Yalnızca siz açarsanız. Zamanlanmış Temizlik varsayılan olarak kapalıdır. Etkinleştirildiğinde, seçtiğiniz saatte günlük, haftalık veya aylık bir arka plan kontrolü çalıştırır.",
+            "“Bana hatırlat” modunda yalnızca bir bildirim gönderir. Ayrı, açık bir onay gerektiren “Otomatik temizle” modunda, sabit bir listedeki altı geliştirici önbelleğini (Xcode DerivedData, npm, Yarn, pnpm, Gradle, CocoaPods) Çöp Kutusu'na taşır, ve yalnızca en az 1 GB, çalıştırma başına en fazla 10 GB ve 50 öğe olduğunda. Kişisel dosyalarınıza otomatik olarak asla dokunulmaz.",
+            "Girişte Başlat da isteğe bağlıdır ve varsayılan olarak kapalıdır."
+          ]
+        }
+      }
+    }
+  }
+}

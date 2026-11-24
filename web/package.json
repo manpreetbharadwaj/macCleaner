@@ -14,9 +14,11 @@
     "predev": "node scripts/prepare-installer.mjs dev"
   },
   "dependencies": {
+    "i18next": "^27.2.5",
     "lucide-react": "^1.44.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-i18next": "^18.0.3",
     "react-router": "^7.18.3"
   },
   "devDependencies": {

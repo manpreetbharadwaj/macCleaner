@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "App-pictogram van MacBook Cleaner",
+    "title": "MacBook Cleaner voor macOS",
+    "lead": "Opslagschoonmaak en prestatiebewaking voor je Mac — volledig lokaal verwerkt.",
+    "started": "Je download is gestart — <b>{{fileName}}</b>. Volg hieronder de stappen zodra deze klaar is.",
+    "fileInfo": "{{fileName}}{{sizePart}} · Schijfkopie (.dmg)",
+    "quickSteps": ["Download MacBook Cleaner.", "Open de gedownloade DMG.", "Sleep MacBook Cleaner naar Applicaties."],
+    "quickStepsNotarizedLast": "Start de app.",
+    "quickStepsUnnotarizedLast": "Start de app — gebruik de eerste keer <a>Toch openen</a>.",
+    "specs": { "version": "Versie {{version}}", "released": "Uitgebracht op {{date}}", "built": "Gebouwd op {{date}}", "macos": "{{macos}} of nieuwer" },
+    "links": { "releaseNotes": "Releasenotities", "privacy": "Privacy", "terms": "Voorwaarden" },
+    "checksumLabel": "SHA-256",
+    "releaseDetailsAria": "Releasedetails"
+  },
+  "requirements": {
+    "eyebrow": "Systeemvereisten",
+    "title": "Werkt het op mijn Mac?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}} ({{macosVersion}}) of nieuwer",
+    "processor": "Processor",
+    "intelNote": "Intel-Macs worden niet ondersteund door deze geverifieerde build.",
+    "account": "Account",
+    "accountValue": "Niet nodig"
+  },
+  "install": {
+    "eyebrow": "Installatie",
+    "title": "Installeer in minder dan een minuut.",
+    "steps": [
+      { "title": "Download de DMG", "body": "Klik op <b>Download voor Mac</b>. De schijfkopie wordt opgeslagen in je Downloads-map." },
+      { "title": "Open de DMG", "body": "Dubbelklik op <code>{{fileName}}</code> in Downloads. Er opent een venster met de app en je Applicaties-map." },
+      { "title": "Sleep naar Applicaties", "body": "Sleep <b>MacBook Cleaner</b> naar de map Applicaties en werp daarna de schijfkopie uit via de zijbalk van Finder." },
+      { "title": "Start de app", "body": "Open MacBook Cleaner vanuit Applicaties of Launchpad. Start het vanuit Applicaties — geplande opschoning werkt alleen vandaar." }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "Eerste start",
+    "title": "Zie je een beveiligingswaarschuwing?",
+    "intro": "Dat is nu te verwachten — hier lees je waarom, en hoe je de app veilig opent.",
+    "noticeTitle": "MacBook Cleaner is nog niet genotariseerd door Apple",
+    "noticeBody1": "Apps die buiten de Mac App Store worden verspreid, zijn normaal gesproken ondertekend met een Apple Developer ID en genotariseerd. Deze versie is ad hoc ondertekend — zonder Developer ID — en is niet genotariseerd, waardoor Gatekeeper van macOS bij de eerste keer openen meldt dat het de ontwikkelaar niet kan verifiëren of de app niet kan controleren op schadelijke software. Dit bericht betekent niet dat er een probleem is gevonden — het betekent dat Apple deze build nog niet heeft beoordeeld.",
+    "noticeBody2": "<b>Download MacBook Cleaner alleen van deze website.</b> Als je het bestand ergens anders hebt gekregen, verwijder het dan.",
+    "howtoTitle": "Open hem één keer via Systeeminstellingen",
+    "steps": [
+      "Open MacBook Cleaner vanuit Applicaties. Klik bij de waarschuwing op <b>Klaar</b> (of <b>Annuleer</b>) — verplaats hem niet naar de Prullenmand.",
+      "Open <b>Systeeminstellingen → Privacy en beveiliging</b> en scrol naar het onderdeel <b>Beveiliging</b>.",
+      "Klik naast het bericht over het geblokkeerde MacBook Cleaner op <b>Toch openen</b> en bevestig daarna met je wachtwoord of Touch ID.",
+      "Klik op <b>Open</b> in het laatste dialoogvenster. macOS onthoudt je keuze, dus je hoeft dit maar één keer per versie te doen."
+    ],
+    "tip": "Op macOS 14 Sonoma en ouder kun je ook Control-klikken op de app in Applicaties, <b>Open</b> kiezen en daarna nogmaals op <b>Open</b> klikken."
+  },
+  "afterInstall": {
+    "eyebrow": "Na de installatie",
+    "title": "Goed om te weten.",
+    "permissions": { "title": "Machtigingen", "body": "macOS kan vragen om de app toegang te geven tot Downloads, Bureaublad en Documenten, en om Finder te mogen bedienen bij je eerste opschoning. Volledige toegang tot schijf is optioneel.", "link": "Waarom elke machtiging nodig is →" },
+    "updates": { "title": "Updates", "body": "<b>Instellingen → Controleer op updates</b> controleert, downloadt en verifieert nieuwe versies voor je — niets wordt geïnstalleerd zonder jouw bevestiging, en je moet de app één keer opnieuw starten om het af te ronden. Je instellingen blijven behouden." },
+    "uninstalling": { "title": "Verwijderen", "body": "Schakel Geplande opschoning en Starten bij aanmelden uit en sleep de app daarna naar de Prullenmand.", "link": "Volledige stappen →" },
+    "stuck": "Vastgelopen?",
+    "contactSupport": "Neem contact op met ondersteuning →"
+  }
+}

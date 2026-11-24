@@ -1,71 +1,74 @@
 import { useRef, useState, type KeyboardEvent } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
 import { cx } from '@/utils/format'
 
-const SHOTS = [
-  { id: 'dashboard', label: 'Dashboard', alt: 'Dashboard with storage ring and Smart Clean summary' },
-  { id: 'scanning', label: 'Scanning', alt: 'Smart Clean scan in progress' },
-  { id: 'results', label: 'Smart Clean', alt: 'Smart Clean results grouped by category' },
-  { id: 'performance', label: 'Performance', alt: 'Performance dashboard with live CPU and memory' },
-  { id: 'performance-apps', label: 'Running Apps', alt: 'Running apps sorted by memory' },
-  { id: 'performance-battery', label: 'Battery', alt: 'Battery health with cycle count and maximum capacity' },
-  { id: 'complete', label: 'Cleanup complete', alt: 'Cleanup complete summary showing space moved to the Trash' },
-  { id: 'storage', label: 'Storage', alt: 'Storage breakdown by category' },
-  { id: 'dashboard-dark', label: 'Dark mode', alt: 'Dashboard in dark mode' },
-]
+const SHOT_IDS = ['dashboard', 'scanning', 'results', 'performance', 'performance-apps', 'performance-battery', 'complete', 'storage', 'dashboard-dark']
 
 /** Accessible tabs (WAI-ARIA tabs pattern) over real screenshots of the app. */
 export function ScreenGallery() {
+  const { t } = useTranslation('home')
   const [active, setActive] = useState(0)
   const tabs = useRef<Array<HTMLButtonElement | null>>([])
 
   const onKey = (e: KeyboardEvent<HTMLDivElement>) => {
     let next = active
-    if (e.key === 'ArrowRight') next = (active + 1) % SHOTS.length
-    else if (e.key === 'ArrowLeft') next = (active - 1 + SHOTS.length) % SHOTS.length
+    if (e.key === 'ArrowRight') next = (active + 1) % SHOT_IDS.length
+    else if (e.key === 'ArrowLeft') next = (active - 1 + SHOT_IDS.length) % SHOT_IDS.length
     else if (e.key === 'Home') next = 0
-    else if (e.key === 'End') next = SHOTS.length - 1
+    else if (e.key === 'End') next = SHOT_IDS.length - 1
     else return
     e.preventDefault()
     setActive(next)
     tabs.current[next]?.focus()
   }
 
-  const shot = SHOTS[active]
+  const shotId = SHOT_IDS[active]
   return (
     <section className="section" aria-labelledby="gallery-title">
       <div className="container">
-        <SectionHeading eyebrow="Screenshots" id="gallery-title" title="Designed to feel at home on your Mac." intro="Real screens from the app, shown with its built-in sample data. Light and dark appearance follow your system." />
+        <SectionHeading eyebrow={t('gallery.eyebrow')} id="gallery-title" title={t('gallery.title')} intro={t('gallery.intro')} />
         <Reveal>
-          <div className="tabs" role="tablist" aria-label="App screens" onKeyDown={onKey}>
-            {SHOTS.map((s, i) => (
+          <div className="tabs" role="tablist" aria-label={t('gallery.title')} onKeyDown={onKey}>
+            {SHOT_IDS.map((id, i) => (
               <button
-                key={s.id}
+                key={id}
                 ref={(el) => {
                   tabs.current[i] = el
                 }}
                 type="button"
                 role="tab"
-                id={`tab-${s.id}`}
+                id={`tab-${id}`}
                 aria-selected={i === active}
                 aria-controls="gallery-panel"
                 tabIndex={i === active ? 0 : -1}
                 className={cx('tab', i === active && 'is-active')}
                 onClick={() => setActive(i)}
               >
-                {s.label}
+                {t(`gallery.shots.${id}.label`)}
               </button>
             ))}
           </div>
-          <div id="gallery-panel" role="tabpanel" aria-labelledby={`tab-${shot.id}`} className="gallery-frame">
+          <div id="gallery-panel" role="tabpanel" aria-labelledby={`tab-${shotId}`} className="gallery-frame">
             <div className="window">
               <div className="window__bar" aria-hidden="true">
                 <i />
                 <i />
                 <i />
               </div>
-              <img key={shot.id} className="fade-in" src={`/screens/${shot.id}.jpg`} srcSet={`/screens/${shot.id}-720.jpg 720w, /screens/${shot.id}.jpg 1320w`} sizes="(max-width: 1100px) 94vw, 1040px" alt={shot.alt} width={1320} height={860} loading="lazy" decoding="async" />
+              <img
+                key={shotId}
+                className="fade-in"
+                src={`/screens/${shotId}.jpg`}
+                srcSet={`/screens/${shotId}-720.jpg 720w, /screens/${shotId}.jpg 1320w`}
+                sizes="(max-width: 1100px) 94vw, 1040px"
+                alt={t(`gallery.shots.${shotId}.alt`)}
+                width={1320}
+                height={860}
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
         </Reveal>

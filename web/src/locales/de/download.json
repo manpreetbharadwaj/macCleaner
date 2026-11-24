@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "MacBook Cleaner App-Symbol",
+    "title": "MacBook Cleaner für macOS",
+    "lead": "Speicherbereinigung und Leistungsüberwachung für Ihren Mac – lokal verarbeitet.",
+    "started": "Ihr Download hat begonnen — <b>{{fileName}}</b>. Folgen Sie nach Abschluss den unten stehenden Schritten.",
+    "fileInfo": "{{fileName}}{{sizePart}} · Disk-Image (.dmg)",
+    "quickSteps": ["MacBook Cleaner herunterladen.", "Die heruntergeladene DMG-Datei öffnen.", "MacBook Cleaner in den Programme-Ordner ziehen."],
+    "quickStepsNotarizedLast": "Die App starten.",
+    "quickStepsUnnotarizedLast": "Die App starten — beim ersten Mal <a>Trotzdem öffnen verwenden</a>.",
+    "specs": { "version": "Version {{version}}", "released": "Veröffentlicht am {{date}}", "built": "Erstellt am {{date}}", "macos": "{{macos}} oder neuer" },
+    "links": { "releaseNotes": "Versionshinweise", "privacy": "Datenschutz", "terms": "Nutzungsbedingungen" },
+    "checksumLabel": "SHA-256",
+    "releaseDetailsAria": "Versionsdetails"
+  },
+  "requirements": {
+    "eyebrow": "Systemanforderungen",
+    "title": "Läuft es auf meinem Mac?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}} ({{macosVersion}}) oder neuer",
+    "processor": "Prozessor",
+    "intelNote": "Intel-Macs werden von diesem verifizierten Build nicht unterstützt.",
+    "account": "Konto",
+    "accountValue": "Nicht erforderlich"
+  },
+  "install": {
+    "eyebrow": "Installation",
+    "title": "In unter einer Minute installiert.",
+    "steps": [
+      { "title": "DMG-Datei herunterladen", "body": "Klicken Sie auf <b>Für Mac herunterladen</b>. Das Disk-Image wird in Ihrem Downloads-Ordner gespeichert." },
+      { "title": "DMG-Datei öffnen", "body": "Doppelklicken Sie auf <code>{{fileName}}</code> in Downloads. Ein Fenster mit der App und Ihrem Programme-Ordner öffnet sich." },
+      { "title": "In den Programme-Ordner ziehen", "body": "Ziehen Sie <b>MacBook Cleaner</b> auf den Programme-Ordner und werfen Sie dann das Disk-Image über die Finder-Seitenleiste aus." },
+      { "title": "App starten", "body": "Öffnen Sie MacBook Cleaner über Programme oder Launchpad. Starten Sie es aus dem Programme-Ordner – die geplante Bereinigung funktioniert nur von dort aus." }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "Erster Start",
+    "title": "Sicherheitswarnung gesehen?",
+    "intro": "Das ist im Moment zu erwarten – hier erfahren Sie warum und wie Sie die App sicher öffnen.",
+    "noticeTitle": "MacBook Cleaner ist noch nicht von Apple notariell beglaubigt",
+    "noticeBody1": "Außerhalb des Mac App Store vertriebene Apps werden normalerweise mit einer Apple Developer ID signiert und notariell beglaubigt. Diese Version ist ad hoc signiert – ohne Developer ID – und nicht beglaubigt. Deshalb meldet macOS Gatekeeper beim ersten Öffnen, dass der Entwickler nicht verifiziert oder die App nicht auf Schadsoftware geprüft werden kann. Diese Meldung bedeutet nicht, dass ein Problem gefunden wurde – sie bedeutet, dass Apple diesen Build nicht geprüft hat.",
+    "noticeBody2": "<b>Laden Sie MacBook Cleaner nur von dieser Website herunter.</b> Wenn Sie die Datei woanders erhalten haben, löschen Sie sie.",
+    "howtoTitle": "Einmalig über die Systemeinstellungen öffnen",
+    "steps": [
+      "Öffnen Sie MacBook Cleaner aus dem Programme-Ordner. Wenn die Warnung erscheint, klicken Sie auf <b>Fertig</b> (oder <b>Abbrechen</b>) – verschieben Sie die App nicht in den Papierkorb.",
+      "Öffnen Sie <b>Systemeinstellungen → Datenschutz & Sicherheit</b> und scrollen Sie nach unten zum Bereich <b>Sicherheit</b>.",
+      "Klicken Sie neben der Meldung, dass MacBook Cleaner blockiert wurde, auf <b>Dennoch öffnen</b> und bestätigen Sie mit Ihrem Passwort oder Touch ID.",
+      "Klicken Sie im letzten Dialog auf <b>Öffnen</b>. macOS merkt sich Ihre Wahl, sodass Sie dies pro Version nur einmal tun müssen."
+    ],
+    "tip": "Unter macOS 14 Sonoma und früher können Sie die App im Programme-Ordner auch bei gedrückter Ctrl-Taste anklicken, <b>Öffnen</b> wählen und dann erneut auf <b>Öffnen</b> klicken."
+  },
+  "afterInstall": {
+    "eyebrow": "Nach der Installation",
+    "title": "Gut zu wissen.",
+    "permissions": { "title": "Berechtigungen", "body": "macOS fragt möglicherweise, ob die App auf Downloads, Schreibtisch und Dokumente zugreifen und beim ersten Bereinigen den Finder steuern darf. Voller Festplattenzugriff ist optional.", "link": "Warum jede Berechtigung nötig ist →" },
+    "updates": { "title": "Updates", "body": "<b>Einstellungen → Nach Updates suchen</b> prüft, lädt herunter und verifiziert neue Versionen für Sie – ohne Ihre Bestätigung wird nichts installiert, und Sie müssen die App einmal neu starten, um den Vorgang abzuschließen. Ihre Einstellungen bleiben erhalten." },
+    "uninstalling": { "title": "Deinstallieren", "body": "Schalten Sie die geplante Bereinigung und den Start bei Anmeldung aus und ziehen Sie die App dann in den Papierkorb.", "link": "Vollständige Schritte →" },
+    "stuck": "Nicht weiter?",
+    "contactSupport": "Support kontaktieren →"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "/": {
+    "title": "MacBook Cleaner — Mac स्टोरेज क्लीनर और परफ़ॉर्मेंस मॉनिटर",
+    "description": "Mac की स्टोरेज को सुरक्षित तरीके से खाली करें और देखें कि आपका Mac कैसा चल रहा है। MacBook Cleaner कैश, बड़ी फ़ाइलें और डुप्लिकेट ढूँढता है, और CPU व RAM उपयोग, चल रहे ऐप्स, बैटरी स्वास्थ्य और Mac सिस्टम जानकारी दिखाता है — यह सब आपके डिवाइस पर ही प्रोसेस होता है।"
+  },
+  "/features": {
+    "title": "फ़ीचर्स — Mac क्लीनर, CPU और RAM मॉनिटर, बैटरी स्वास्थ्य | MacBook Cleaner",
+    "description": "Smart Clean, Storage Explorer, Large File और Duplicate Finder, App Cleanup, साथ ही एक Mac परफ़ॉर्मेंस मॉनिटर: CPU और मेमोरी उपयोग, चल रहे ऐप्स, बैटरी साइकल काउंट और स्वास्थ्य, और Mac सिस्टम जानकारी।"
+  },
+  "/pricing": {
+    "title": "मूल्य — MacBook Cleaner",
+    "description": "MacBook Cleaner {{version}}: {{trialDays}} दिनों के लिए मुफ़्त आज़माएँ, फिर एक बार {{price}} का भुगतान करके लाइफ़टाइम लाइसेंस पाएँ। कोई सब्सक्रिप्शन नहीं, शुरू करने के लिए कोई अकाउंट ज़रूरी नहीं।"
+  },
+  "/download": {
+    "title": "Mac के लिए MacBook Cleaner डाउनलोड करें",
+    "description": "{{macos}} या बाद के वर्शन वाले {{architecture}} Mac पर MacBook Cleaner {{version}} डाउनलोड करें। इंस्टॉलेशन के चरण और पहली बार खोलने में मदद भी शामिल है।"
+  },
+  "/faq": {
+    "title": "सामान्य प्रश्न — क्या MacBook Cleaner सुरक्षित है? | MacBook Cleaner",
+    "description": "MacBook Cleaner में सुरक्षा, गोपनीयता, अनुमतियाँ, परफ़ॉर्मेंस मॉनिटरिंग, बैटरी स्वास्थ्य, संगतता और इंस्टॉलेशन के बारे में जवाब — यह एक लोकल-फ़र्स्ट Mac क्लीनर और परफ़ॉर्मेंस मॉनिटर है।"
+  },
+  "/support": {
+    "title": "सहायता — MacBook Cleaner",
+    "description": "MacBook Cleaner के लिए मदद पाएँ: इंस्टॉलेशन सहायता, बग रिपोर्ट, फ़ीचर अनुरोध और संपर्क विवरण।"
+  },
+  "/changelog": {
+    "title": "रिलीज़ नोट्स — MacBook Cleaner",
+    "description": "macOS के लिए MacBook Cleaner के हर वर्शन में क्या नया है।"
+  },
+  "/privacy": {
+    "title": "गोपनीयता नीति — MacBook Cleaner",
+    "description": "MacBook Cleaner और यह वेबसाइट आपकी जानकारी को कैसे संभालते हैं। ऐप स्कैन, क्लीन और मॉनिटर आपके डिवाइस पर ही करता है और आपकी फ़ाइलों या Mac के बारे में कोई डेटा कहीं नहीं भेजता।"
+  },
+  "/terms": {
+    "title": "सेवा की शर्तें — MacBook Cleaner",
+    "description": "MacBook Cleaner को डाउनलोड और उपयोग करने पर लागू होने वाली शर्तें।"
+  },
+  "/thank-you": {
+    "title": "धन्यवाद — MacBook Cleaner",
+    "description": "आपकी खरीद के लिए धन्यवाद। यहाँ अपनी लाइसेंस कुंजी और सक्रियण के चरण पाएँ।"
+  },
+  "/404": {
+    "title": "पेज नहीं मिला — MacBook Cleaner",
+    "description": "आप जिस पेज को खोज रहे थे वह मौजूद नहीं है।"
+  },
+  "ogImageAlt": "MacBook Cleaner ऐप में स्टोरेज का ब्रेकडाउन दिखाते हुए",
+  "schema": {
+    "featureList": [
+      "Mac स्टोरेज क्लीनर",
+      "स्टोरेज एनालाइज़र",
+      "बड़ी फ़ाइल खोजक",
+      "डुप्लिकेट फ़ाइल खोजक",
+      "ऐप अनइंस्टॉलर",
+      "CPU और मेमोरी मॉनिटर",
+      "चल रहे ऐप्स मॉनिटर",
+      "बैटरी स्वास्थ्य और साइकल काउंट",
+      "Mac सिस्टम जानकारी"
+    ]
+  }
+}

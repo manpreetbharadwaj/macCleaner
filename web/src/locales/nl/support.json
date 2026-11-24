@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Ondersteuning",
+  "title": "Hoe kunnen we helpen?",
+  "intro": "De meeste antwoorden staan in de veelgestelde vragen. Voor al het andere is e-mail de snelste manier om ons te bereiken.",
+  "cards": {
+    "email": { "title": "Ondersteuning via e-mail", "body": "Vragen over het gebruik van de app? Schrijf ons en we reageren zo snel mogelijk.", "cta": "{{email}}" },
+    "bug": { "title": "Meld een fout", "body": "Werkt iets niet? Opent een e-mail met een kort in te vullen sjabloon.", "cta": "Meld een fout" },
+    "feature": { "title": "Vraag een functie aan", "body": "Vertel ons wat MacBook Cleaner nuttiger zou maken voor jou.", "cta": "Stel een functie voor" },
+    "install": { "title": "Installatiehulp", "body": "Stapsgewijze installatie-instructies en wat te doen bij de beveiligingswaarschuwing bij de eerste start.", "cta": "Installatiehandleiding" },
+    "faq": { "title": "Veelgestelde vragen", "body": "Veiligheid, privacy, machtigingen, compatibiliteit en verwijderen — beantwoord.", "cta": "Bekijk de veelgestelde vragen" }
+  },
+  "emailSubject": "Ondersteuning MacBook Cleaner",
+  "logsTitle": "Diagnostische logboeken versturen",
+  "logsBody": "Bij lastige problemen kunnen we om de logboeken van de app vragen. Deze worden alleen op je Mac opgeslagen, in <code>~/Library/Logs/{{bundleId}}</code>, en worden nooit automatisch verzonden. Logboeken kunnen bestandspaden van je Mac bevatten — bekijk ze en verwijder alles wat je liever niet deelt voordat je ze bijvoegt.",
+  "bugTemplate": {
+    "subject": "Foutmelding — MacBook Cleaner {{version}}",
+    "body": "Wat gebeurde er:\n\n\nWat verwachtte je:\n\n\nStappen om te reproduceren:\n1.\n2.\n\nMacBook Cleaner-versie: {{version}}\nmacOS-versie:\nMac-model / chip:\n"
+  },
+  "featureTemplate": {
+    "subject": "Functieverzoek — MacBook Cleaner",
+    "body": "Wat zou je willen dat MacBook Cleaner doet?\n\n\nWaarom zou het je helpen?\n"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "learnMore": "Pelajari lebih lanjut",
+  "cards": {
+    "core": {
+      "smart-clean": { "title": "Smart Clean", "summary": "Satu pemindaian mengelompokkan cache, log, sisa aplikasi, sampah developer, dan unduhan lama ke dalam kategori yang jelas — item Safe sudah dipilih, sisanya menunggu Anda." },
+      "storage": { "title": "Storage Explorer", "summary": "Lihat apa yang sebenarnya memenuhi disk Anda — Applications, Documents, Photos, Videos, Downloads, Cache, dan System Data — diukur dari folder nyata Anda." },
+      "large-files": { "title": "Large File Finder", "summary": "Tampilkan file di atas 500 MB, 1 GB, 5 GB, atau 10 GB. Filter berdasarkan jenis, urutkan berdasarkan ukuran atau usia, pratinjau dengan Quick Look." },
+      "downloads": { "title": "Tinjauan Downloads", "summary": "Installer, disk image, dan arsip lama, dikelompokkan berdasarkan usia — dari hari ini hingga lebih dari 90 hari. Tidak ada yang pernah dipilih otomatis." },
+      "duplicates": { "title": "Duplicate Finder", "summary": "Salinan identik dikonfirmasi dengan checksum SHA-256 dari seluruh isinya. Simpan yang terbaru atau terlama — minimal satu salinan selalu tersisa." },
+      "apps": { "title": "App Cleanup", "summary": "Lihat jejak penuh sebuah aplikasi — cache, log, file pendukung, preferensi — lalu bersihkan datanya atau copot pemasangannya. Aplikasi Apple dilindungi." },
+      "system-junk": { "title": "Sampah Sistem & Developer", "summary": "Bersihkan cache dan log yang membangun dirinya sendiri kembali, plus cache Xcode, simulator, npm, Yarn, pnpm, Gradle, dan CocoaPods." },
+      "schedule": { "title": "Pembersihan Terjadwal", "summary": "Pemeriksaan latar belakang harian, mingguan, atau bulanan yang mengingatkan Anda saat ada sesuatu yang layak dibersihkan — atau, dengan persetujuan Anda, membersihkan cache developer." }
+    },
+    "monitor": {
+      "cpu": { "title": "Pemantauan CPU", "summary": "Penggunaan CPU langsung dengan grafik 60 detik, terbagi ke waktu user, system, dan idle." },
+      "memory": { "title": "Penggunaan Memori", "summary": "RAM terpakai dan tersedia, tekanan memori, memori terkompresi, dan swap — dijelaskan dalam bahasa sederhana." },
+      "running-apps": { "title": "Aplikasi Berjalan", "summary": "Lihat aplikasi mana yang menggunakan memori dan CPU terbanyak, dan sudah berapa lama masing-masing berjalan." },
+      "battery": { "title": "Kesehatan Baterai", "summary": "Daya, jumlah siklus, kapasitas maksimum, dan kondisi, seperti yang dilaporkan macOS. Hanya untuk MacBook." },
+      "mac-info": { "title": "Informasi Mac", "summary": "Model, chip, core, GPU, memori, layar, dan uptime di satu tempat." },
+      "storage-status": { "title": "Status Penyimpanan", "summary": "Ruang terpakai, tersedia, dan berpotensi dipulihkan, satu klik dari pembersih." },
+      "macos": { "title": "Informasi macOS", "summary": "Versi, build, dan apakah pemeriksaan pembaruan bawaan macOS menemukan update — dengan pintasan ke Software Update." }
+    }
+  },
+  "deepDives": {
+    "smart-clean": {
+      "eyebrow": "Smart Clean",
+      "title": "Satu pemindaian. Kategori jelas. Keputusan Anda.",
+      "body": "Smart Clean memeriksa cache, log, sisa aplikasi, alat developer, dan Downloads Anda sekaligus, lalu menyortir semuanya ke dalam enam kelompok berbahasa sederhana. Setiap item menjelaskan mengapa ia ada dan apa yang terjadi jika Anda menghapusnya.",
+      "points": ["Sampah Sistem, Cache Browser, Sisa Aplikasi, Log & Laporan Crash, Sampah Developer, dan Unduhan Lama", "Item Safe mulai dipilih; item Review dan file Anda sendiri tidak pernah", "Perluas kelompok mana pun untuk melihat — dan membatalkan centang — setiap item"],
+      "alt": "Hasil Smart Clean dikelompokkan ke dalam Sampah Sistem, Cache Browser, Sisa Aplikasi, Log, Sampah Developer, dan Unduhan Lama"
+    },
+    "storage": {
+      "eyebrow": "Storage Explorer",
+      "title": "Ketahui ke mana ruang Anda pergi.",
+      "body": "MacBook Cleaner mengukur folder Anda yang sebenarnya dan menggambarkannya sebagai satu cincin penyimpanan. Ukuran menggunakan gigabyte desimal, sama seperti cara macOS melaporkan penyimpanan, dan ruang yang tidak dapat diatribusikan ke folder diberi label jujur sebagai System Data.",
+      "points": ["Applications, Documents, Photos, Videos, Downloads, Cache, Other, dan System Data", "Pustaka yang dikelola aplikasi seperti Photos diukur secara keseluruhan, tidak pernah diperiksa satu per satu", "Ruang kosong dibaca dengan cara yang sama seperti pengaturan Storage bawaan macOS membacanya"],
+      "alt": "Layar Storage menampilkan cincin berwarna yang terbagi berdasarkan kategori"
+    },
+    "large-files": {
+      "eyebrow": "Large File Finder",
+      "title": "Temukan gigabyte yang terlupakan.",
+      "body": "Rekaman layar lama, image mesin virtual, installer yang ingin Anda hapus. Large File Finder memeriksa Downloads, Desktop, Documents, dan Movies serta mendaftar file terbesar lebih dulu.",
+      "points": ["Ambang ukuran: 500 MB, 1 GB, 5 GB, dan 10 GB", "Filter berdasarkan video, disk image, arsip, installer, atau dokumen", "Quick Look dan Reveal in Finder sebelum Anda memutuskan"],
+      "alt": "Daftar Large Files difilter untuk file di atas 500 MB"
+    },
+    "downloads": {
+      "eyebrow": "Downloads",
+      "title": "Folder Downloads yang benar-benar bisa Anda pahami.",
+      "body": "Downloads dikelompokkan berdasarkan usia — Hari Ini, Minggu Ini, Bulan Ini, lebih dari 30 hari, dan lebih dari 90 hari — dengan tampilan cepat untuk installer dan disk image, arsip, unduhan duplikat, dan unduhan besar.",
+      "points": ["Installer dan disk image yang sudah Anda gunakan mudah dikenali", "Ini file Anda: tidak ada yang di Downloads pernah dipilih otomatis", "Setiap penghapusan meminta konfirmasi"],
+      "alt": "Layar Downloads dengan file dikelompokkan berdasarkan usia"
+    },
+    "duplicates": {
+      "eyebrow": "Duplicate Finder",
+      "title": "File yang sama, tiga kali? Simpan satu.",
+      "body": "Duplikat di Downloads, Desktop, Documents, dan Movies dicocokkan berdasarkan ukuran yang persis sama, dipersempit dengan sidik jari cepat, lalu dikonfirmasi dengan melakukan hash terhadap seluruh isinya — sehingga “tampak mirip” tidak pernah dianggap duplikat.",
+      "points": ["Simpan yang terbaru atau terlama di seluruh kelompok dengan satu klik", "Anda tidak pernah bisa memilih semua salinan sebuah file — satu selalu tersisa", "Semua pemeriksaan berjalan di Mac Anda"],
+      "alt": "File duplikat dikelompokkan ke dalam set dengan ruang terbuang per set"
+    },
+    "apps": {
+      "eyebrow": "App Cleanup",
+      "title": "Copot pemasangan aplikasi — dan sisa yang ditinggalkannya.",
+      "body": "Pilih aplikasi untuk melihat jejak nyatanya: paket aplikasi plus cache, log, file dukungan aplikasi, preferensi, kontainer, status tersimpan, dan data web-nya. Bersihkan datanya saja, atau pindahkan seluruh aplikasi ke Trash.",
+      "points": ["Urutkan aplikasi berdasarkan ukuran, nama, atau yang paling jarang digunakan", "Aplikasi bawaan Apple — dan MacBook Cleaner sendiri — tidak dapat dicopot pemasangannya", "Hanya aplikasi di /Applications atau ~/Applications yang diterima"],
+      "alt": "App Cleanup menampilkan cache, log, dan preferensi sebuah aplikasi"
+    },
+    "system-junk": {
+      "eyebrow": "Sampah Sistem & Developer",
+      "title": "Cache yang membangun dirinya kembali. Lenyap.",
+      "body": "System Junk mendaftar cache dan log aplikasi dari Library Anda, terbagi menjadi Safe to Clean dan Review Recommended. Aktifkan Developer Cleanup untuk menyertakan cache build dan paket yang besar.",
+      "points": ["Xcode DerivedData, Archives, dukungan perangkat iOS & watchOS, cache dan perangkat Simulator", "Cache npm, Yarn, pnpm, Gradle, CocoaPods, dan image emulator Android", "Setiap item menjelaskan biaya yang akan Anda keluarkan jika membangunnya kembali"],
+      "alt": "Layar System Junk dengan bagian Safe to Clean dan Review Recommended"
+    },
+    "schedule": {
+      "eyebrow": "Pembersihan Terjadwal",
+      "title": "Tetap rapi tanpa perlu memikirkannya.",
+      "body": "Pilih harian, mingguan, atau bulanan dan waktu tertentu dalam sehari. MacBook Cleaner memeriksa dengan tenang di latar belakang — tanpa jendela yang terbuka — dan mengingatkan Anda, atau membersihkan daftar tetap cache developer jika Anda sudah mengizinkannya secara eksplisit.",
+      "points": ["Remind me: notifikasi saat ada cukup banyak yang bisa dibersihkan atau ruang mulai menipis", "Clean automatically: hanya enam cache developer, minimal 1 GB, maksimum 10 GB dan 50 item per sesi", "Documents, Photos, Videos, Desktop, dan folder pribadi tidak pernah dihapus otomatis"],
+      "alt": "Pengaturan Scheduled Cleanup dengan frekuensi, mode, dan kategori yang memenuhi syarat"
+    }
+  },
+  "monitorDeepDives": {
+    "performance": {
+      "eyebrow": "Performa",
+      "title": "Mac Anda sekilas — secara langsung.",
+      "body": "Tab Performance menampilkan CPU, memori, penyimpanan, dan baterai dalam satu dashboard, dengan grafik langsung 60 detik dan ringkasan Mac Health berbahasa sederhana. Setiap status berasal langsung dari macOS; tidak ada “skor kesehatan” yang dikarang-karang.",
+      "points": ["Penggunaan CPU langsung terbagi ke waktu user, system, dan idle", "Memori terpakai, tersedia, terkompresi, dan swap — plus tekanan memori bawaan macOS", "Diperbarui setiap beberapa detik saat Anda melihat, dan berhenti total saat tidak"],
+      "alt": "Dashboard performa dengan indikator CPU, memori, penyimpanan, dan baterai serta ringkasan Mac Health"
+    },
+    "running-apps": {
+      "eyebrow": "Aplikasi Berjalan",
+      "title": "Lihat apa yang menggunakan memori dan CPU Anda.",
+      "body": "Running Apps mendaftar aplikasi di Dock Anda beserta penggunaan CPU, memori, dan lama waktu berjalannya. Proses bantuan dihitung bersama aplikasi induknya, sehingga banyak tab browser bergabung menjadi satu angka yang akurat.",
+      "points": ["Urutkan berdasarkan CPU, memori, waktu berjalan, atau nama", "Beralih antara aplikasi, proses latar belakang, atau semuanya", "Klik aplikasi mana pun untuk detail: waktu peluncuran, thread, ID proses, dan lokasi"],
+      "alt": "Daftar Running Apps diurutkan berdasarkan memori dengan CPU dan waktu berjalan"
+    },
+    "battery": {
+      "eyebrow": "Kesehatan Baterai",
+      "title": "Pahami baterai Anda.",
+      "body": "Di MacBook, lihat daya, jumlah siklus, kapasitas maksimum, sumber daya, dan kondisi — nilai yang sama dengan yang digunakan System Settings. Di Mac desktop, bagian baterai sama sekali tidak muncul.",
+      "points": ["Jumlah siklus, dengan jumlah siklus desain saat baterai melaporkannya", "Kapasitas maksimum dan kondisi persis seperti yang dilaporkan macOS", "Hanya informasi — tidak ada aplikasi yang bisa memperbaiki atau memulihkan baterai"],
+      "alt": "Layar Battery Health menampilkan daya, kapasitas maksimum, dan jumlah siklus"
+    },
+    "mac-info": {
+      "eyebrow": "Info Mac",
+      "title": "Semua hal penting tentang Mac Anda.",
+      "body": "Model, chip, core CPU dan GPU, memori, penyimpanan, layar, versi dan build macOS, serta sudah berapa lama Mac Anda berjalan — dikumpulkan sekali dan ditampilkan rapi di satu tempat.",
+      "points": ["Status pembaruan macOS dari pemeriksaan otomatis bawaannya, dengan pintasan ke Software Update", "Nomor seri Anda tidak pernah dibaca", "Semuanya tetap di Mac Anda"],
+      "alt": "Layar Mac Info mendaftar detail perangkat keras dan versi macOS"
+    }
+  },
+  "page": {
+    "jumpToFeature": "Lompat ke fitur",
+    "eyebrow": "Fitur",
+    "title1": "Bersihkan Mac Anda. ",
+    "title2": "Pahami juga.",
+    "intro": "MacBook Cleaner menggabungkan penganalisis penyimpanan, pencari file besar dan duplikat, pencopot pemasangan aplikasi, dan pembersih cache dengan monitor performa Mac — CPU, memori, aplikasi berjalan, kesehatan baterai, dan informasi Mac — semuanya diproses secara lokal di Mac Anda.",
+    "monitorEyebrow": "Performa",
+    "monitorTitle1": "Monitor performa Mac ",
+    "monitorTitle2": "yang berbicara dengan bahasa sederhana.",
+    "monitorIntro": "CPU dan memori langsung, aplikasi yang menggunakan sumber daya terbanyak, kesehatan baterai, dan semua hal penting tentang Mac Anda — dibaca secara lokal dari macOS, diperbarui hanya saat Anda melihatnya.",
+    "sampleDataNote": "Ditampilkan dengan data sampel.",
+    "extrasEyebrow": "Juga di dalam aplikasi",
+    "extrasTitle": "Detail yang dipikirkan matang-matang.",
+    "notDoingEyebrow": "Bicara terus terang",
+    "notDoingTitle": "Apa yang tidak dilakukan MacBook Cleaner.",
+    "notDoingIntro": "Banyak aplikasi “pembersih” menjanjikan segalanya. Berikut hal-hal yang sengaja tidak dilakukan aplikasi ini.",
+    "ctaTitle": "Siap melihat apa yang memenuhi ruang Anda?",
+    "extras": [
+      { "title": "Pengecualian pemindaian", "body": "Tambahkan file atau folder yang tidak boleh disarankan — secara manual atau terjadwal." },
+      { "title": "Konfirmasi sebelum pembersihan", "body": "Aktif secara default. Matikan untuk melewati dialog pada pembersihan Safe-only; item Review dan file Anda sendiri selalu bertanya." },
+      { "title": "Sakelar pembersihan developer", "body": "Sembunyikan sepenuhnya cache Xcode, simulator, dan package manager jika Anda tidak membutuhkannya." },
+      { "title": "Terang, gelap, atau sistem", "body": "Mengikuti tampilan Mac Anda, atau pilih sendiri." },
+      { "title": "Launch at Login", "body": "Opsional dan nonaktif secara default." },
+      { "title": "Notifikasi native", "body": "Pengingat dan ringkasan pembersihan terjadwal, menggunakan notifikasi macOS." },
+      { "title": "Ringkasan Trash", "body": "Lihat berapa banyak ruang yang digunakan Trash dan buka di Finder saat siap mengosongkannya." },
+      { "title": "Reset semua data", "body": "Hapus pengaturan, pengecualian, jadwal, dan riwayat dalam satu langkah. Tidak pernah menyentuh file Anda." }
+    ],
+    "notDoing": [
+      "Tidak ada “peningkatan” RAM — Performance menampilkan penggunaan memori, bukan mengutak-atiknya",
+      "Tidak ada janji percepatan atau perubahan item startup",
+      "Tidak ada pemindaian antivirus atau malware",
+      "Tidak ada penghapusan permanen atau penghancuran file",
+      "Tidak ada pembersihan folder sistem di luar folder utama Anda"
+    ]
+  }
+}

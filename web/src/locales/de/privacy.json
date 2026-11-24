@@ -1,0 +1,159 @@
+{
+  "legalReviewNotice": "Diese Übersetzung wurde maschinell erstellt und wurde noch nicht von einem in Ihrer Rechtsordnung zugelassenen Rechtsanwalt geprüft. Maßgeblich ist die englische Fassung dieser Richtlinie; bei Widersprüchen gilt die englische Fassung.",
+  "title": "Datenschutzerklärung",
+  "shortVersion": "<b>Kurz gefasst.</b> {{siteName}} scannt und bereinigt auf Ihrem Mac. Die App enthält keine Analyse, Telemetrie, Absturzberichte oder Konten und sendet nirgendwohin Informationen über Sie, Ihre Dateien oder die Leistung Ihres Macs. Diese Website verwendet keine Cookies oder Analysetools; unser Webhost verarbeitet Standard-Zugriffsprotokolle.",
+  "sections": {
+    "who-we-are": {
+      "title": "Wer wir sind",
+      "body": [
+        { "p": "Diese Richtlinie wird von {{companyName}} („wir“, „uns“), {{companyAddress}}, dem Entwickler von {{siteName}}, veröffentlicht. Sie behandelt zwei getrennte Dinge, die Informationen sehr unterschiedlich verarbeiten:" },
+        { "ul": ["<b>Die {{siteName}} Desktop-App</b> für macOS (die „App“) — siehe die Abschnitte, die mit „Die App“ beginnen.", "<b>Diese Website</b>, {{siteHost}} (die „Website“), einschließlich Downloads der App — siehe die Abschnitte, die mit „Die Website“ beginnen."] }
+      ]
+    },
+    "app-local": {
+      "title": "Die App: Auf Ihrem Mac verarbeitete Informationen",
+      "body": [
+        { "p": "Um zu zeigen, was Ihren Speicher belegt, und Ihnen bei der Bereinigung zu helfen, liest die App Folgendes auf Ihrem Mac. Diese gesamte Verarbeitung findet lokal auf Ihrem Gerät statt." },
+        { "h3": "Datei- und Ordnerinformationen" },
+        { "p": "Namen, Speicherorte (Pfade), Größen und Daten von Dateien und Ordnern in Ihren Ordnern Downloads, Schreibtisch, Dokumente und Filme; in <code>~/Library/Caches</code> und <code>~/Library/Logs</code>; an bekannten Entwickler-Tool-Speicherorten (zum Beispiel Xcode DerivedData, Simulatordaten sowie npm-, Yarn-, pnpm-, Gradle- und CocoaPods-Caches); sowie die Gesamtgröße von Ordnern wie Fotos und Library, um die Speicheraufschlüsselung zu erstellen. Die App liest außerdem die gesamte, genutzte und verfügbare Kapazität Ihrer Festplatte." },
+        { "h3": "Dateiinhalte — nur für Duplikate" },
+        { "p": "Die App liest den Inhalt Ihrer Dokumente, Fotos oder anderer Dateien nicht, mit einer Ausnahme: Um zu bestätigen, dass zwei Dateien exakte Duplikate sind, liest sie Dateien, die bereits dieselbe Größe haben, und berechnet eine SHA-256-Prüfsumme ihres Inhalts. Die Prüfsumme wird im Arbeitsspeicher auf Ihrem Mac berechnet und nur für diesen Vergleich verwendet." },
+        { "h3": "Installierte Anwendungen" },
+        { "p": "Für die App-Bereinigung liest die App Name, Version, Bundle-Identifier und Symbol jeder Anwendung aus der eigenen <code>Info.plist</code> der App, misst ihre Größe, fragt macOS Spotlight nach dem Datum der letzten Nutzung und misst zugehörige Caches, Protokolle, Einstellungen und Support-Dateien in Ihrer Library." },
+        { "h3": "Webbrowser" },
+        { "p": "Für Safari, Chrome, Edge und Firefox misst die App nur die Größe der <b>Cache</b>-Ordner jedes Browsers. Sie liest weder Ihren Browserverlauf, Cookies, Passwörter, Lesezeichen, Autofill-Daten noch Erweiterungen." }
+      ]
+    },
+    "app-stored": {
+      "title": "Die App: Auf Ihrem Mac gespeicherte Informationen",
+      "body": [
+        { "p": "Die App speichert eine kleine Menge an Informationen lokal, um sich an Ihre Einstellungen zu erinnern. Nichts davon wird an uns gesendet." },
+        {
+          "ul": [
+            "<b>App-Status</b> in <code>{{appSupport}}/state.json</code>: Ihre Einstellungen, Scan-Ausschlüsse (von Ihnen ausgeschlossene Dateipfade), Einstellungen der geplanten Bereinigung, ein Verlauf der Bereinigungen (Daten, Mengen und beteiligte Elemente) sowie Zusammenfassungen geplanter Scans.",
+            "<b>Diagnoseprotokolle</b> in <code>{{appLogs}}</code>, einschließlich einer <code>startup-crash.log</code>, die Fehler aufzeichnet, falls die App nicht starten kann. Protokolle erfassen Dinge wie die App-Version, den Prozessortyp und die macOS-Version Ihres Macs, wo die App installiert ist und was Scans und Bereinigungen getan haben — was Dateipfade enthalten kann.",
+            "<b>Hintergrundhelfer</b>: Wenn Sie die geplante Bereinigung oder den Start bei Anmeldung aktivieren, fügt die App eine kleine Konfigurationsdatei zu <code>~/Library/LaunchAgents</code> hinzu, damit macOS sie zur richtigen Zeit starten kann. Das Deaktivieren der Funktion entfernt sie wieder."
+          ]
+        },
+        { "p": "Sie können die Einstellungen, Ausschlüsse, den Zeitplan und den Verlauf der App jederzeit über <b>Einstellungen → Alle Daten zurücksetzen</b> löschen oder die oben genannten Ordner nach der Deinstallation entfernen." }
+      ]
+    },
+    "app-network": {
+      "title": "Die App: Keine Daten verlassen Ihren Mac",
+      "body": [
+        { "p": "Die App sendet keine Informationen über Sie, Ihren Mac oder Ihre Dateien an uns oder irgendjemand anderen. Konkret enthält die App:" },
+        { "ul": ["keine Analyse, Nutzungsverfolgung oder Telemetrie;", "keinen Absturzberichtsdienst — Absturzinformationen werden nur in das oben beschriebene lokale Protokoll geschrieben;", "keine Benutzerkonten, Anmeldung oder Lizenzaktivierung;", "keine Werbung und keine Drittanbieter-SDKs, die Daten sammeln;", "keine automatische Prüfung auf eigene Updates und lädt nichts herunter."] },
+        { "p": "Das Internet kommt bei der App nur ins Spiel, wenn Sie in ihr auf einen Link klicken (wie „Nach Updates suchen“, „Datenschutzerklärung“ oder „Nutzungsbedingungen“). Das öffnet eine Seite dieser Website in Ihrem Standardbrowser, und die untenstehenden Website-Abschnitte gelten dann. Die App öffnet nur Links zur eigenen Domain dieser Website." },
+        { "p": "Getrennt von der App kann macOS selbst Diagnoseinformationen sammeln, wenn Sie das Teilen von Analysedaten mit Apple in den Systemeinstellungen aktiviert haben. Das unterliegt der Datenschutzerklärung von Apple; wir erhalten sie nicht." }
+      ]
+    },
+    "app-cleaning": {
+      "title": "Die App: Wie Ihre Dateien beim Bereinigen behandelt werden",
+      "body": [
+        { "p": "Von Ihnen genehmigte Elemente werden in den macOS-Papierkorb verschoben — die App bittet dafür den Finder, damit „Zurücklegen“ weiterhin funktioniert. Die App löscht Dateien nie endgültig und leert Ihren Papierkorb nie. Wenn Sie „Automatisch bereinigen“ in der geplanten Bereinigung aktivieren, verschiebt die App nur eine feste Liste von Entwickler-Caches in den Papierkorb, innerhalb der in der App und in unseren <link-faq-automatic>FAQ</link-faq-automatic> beschriebenen Grenzen." },
+        { "p": "Dateien bleiben bei jedem Schritt auf Ihrem Mac. Wir erhalten nie Kopien davon." }
+      ]
+    },
+    "app-permissions": {
+      "title": "Die App: macOS-Berechtigungen",
+      "body": [
+        { "p": "macOS bittet Sie möglicherweise, der App Folgendes zu gewähren. Sie können jede davon in den Systemeinstellungen → Datenschutz & Sicherheit überprüfen oder widerrufen." },
+        {
+          "ul": [
+            "<b>Zugriff auf Downloads, Schreibtisch und Dokumente</b> — um große Dateien, alte Downloads und Duplikate zu finden.",
+            "<b>Automatisierung (Finder steuern)</b> — um von Ihnen genehmigte Elemente in den Papierkorb zu verschieben.",
+            "<b>Voller Festplattenzugriff (optional)</b> — um von macOS privat gehaltene Orte zu messen, etwa manche App-Caches und den Papierkorb. Die App funktioniert auch ohne.",
+            "<b>Mitteilungen (optional)</b> — für Erinnerungen und Zusammenfassungen der geplanten Bereinigung. Mitteilungen werden lokal von macOS erzeugt; kein Push-Dienst ist beteiligt."
+          ]
+        }
+      ]
+    },
+    "app-device": {
+      "title": "Die App: Geräteinformationen",
+      "body": [{ "p": "Die App liest grundlegende Informationen über Ihren Mac — macOS-Version, Prozessorarchitektur und Speicherkapazität —, um korrekt zu funktionieren und nützliche lokale Protokolle zu schreiben. Diese Informationen bleiben auf Ihrem Mac." }]
+    },
+    "system-monitoring": {
+      "title": "Die App: Systemüberwachungsdaten",
+      "body": [
+        { "p": "Der Leistungstab der App zeigt, wie es Ihrem Mac geht. Dafür liest sie Folgendes aus macOS auf Ihrem Gerät:" },
+        {
+          "ul": [
+            "CPU-Auslastung (gesamt, Benutzer, System und Leerlauf) und Speichernutzung (genutzt, verfügbar, komprimiert, zwischengespeichert, Auslagerungsspeicher und Speicherdruck);",
+            "die aktuell laufenden Apps und Prozesse — ihre Namen, Prozess-IDs, CPU- und Speichernutzung, Startzeiten, Thread-Anzahl und Speicherorte;",
+            "Speicherkapazität und freien Speicherplatz;",
+            "bei MacBooks Akkuinformationen: Ladung, Ladezustand, Stromquelle, Ladezyklen, Kapazitäten und den von macOS gemeldeten Akkuzustand;",
+            "Mac-Hardwareinformationen: Modell und Modellkennung, Chip, CPU- und GPU-Kerne, Speichergröße, Displays und den Netzwerk-Hostnamen des Macs;",
+            "macOS-Version, Build und Kernel-Version, Betriebszeit sowie das Ergebnis der eigenen Softwareaktualisierungsprüfung von macOS, gelesen aus einer von macOS auf Ihrem Mac geführten Datei."
+          ]
+        },
+        { "p": "Diese Informationen werden nur zur Anzeige des Leistungs-Dashboards verwendet. Sie werden lokal verarbeitet, nur im Arbeitsspeicher gehalten, während die App geöffnet ist (kurzfristige Diagramme decken die letzten 60 Sekunden ab und werden beim Beenden verworfen), und weder auf die Festplatte geschrieben noch hochgeladen, geteilt, verkauft oder für Analysen verwendet. Die App liest nicht die Seriennummer Ihres Macs und kontaktiert nicht die Server von Apple, um nach Updates zu suchen." },
+        { "p": "Die Überwachung läuft nur, während der Leistungsbildschirm geöffnet ist, und pausiert, wenn das Fenster der App ausgeblendet ist." }
+      ]
+    },
+    "app-sharing-logs": {
+      "title": "Die App: Wenn Sie sich entscheiden, Informationen mit uns zu teilen",
+      "body": [{ "p": "Wenn Sie den Support kontaktieren, können Sie uns Screenshots oder die Protokolldateien der App senden. Protokolle können Dateipfade von Ihrem Mac enthalten, prüfen Sie diese daher vor dem Senden. Wir verwenden alles, was Sie senden, nur zur Bearbeitung Ihrer Anfrage." }]
+    },
+    "website": {
+      "title": "Die Website: Was wir erfassen",
+      "body": [
+        { "p": "Die Website ist eine statische Seite. Sie verwendet keine Cookies, Analysetools, Werbung, Tracking-Pixel, Social-Media-Widgets oder Drittanbieter-Skripte oder -Schriftarten und hat keine Benutzerkonten oder Formulare. Ihr Browser kann eine zwischengespeicherte Kopie der Seiten speichern, wie bei jeder Website." },
+        { "p": "<b>Hosting-Protokolle.</b> Die Website wird von {{hostingProvider}} bereitgestellt. Wie jeder Webhost verarbeitet dieser automatisch technische Informationen, die zur Auslieferung von Seiten und zum Schutz des Dienstes nötig sind — etwa Ihre IP-Adresse, den Browser-User-Agent, die angeforderte Seite, die verweisende Seite und den Zeitpunkt der Anfrage. Dies unterliegt den eigenen Bedingungen und der Datenschutzerklärung des Hosting-Anbieters, und wir verknüpfen es nicht mit anderen Informationen." },
+        { "p": "<b>Downloads.</b> Die Installer-Datei der App wird von {{downloadHost}} bereitgestellt, der beim Download dieselbe Art technischer Anfrageinformationen verarbeitet." },
+        { "p": "<b>E-Mail.</b> Wenn Sie uns eine E-Mail senden (zum Beispiel über die Support-Seite), erhalten wir Ihre E-Mail-Adresse, Ihren Namen, falls angegeben, und alles, was Sie schreiben oder anhängen. Wir verwenden dies nur, um Ihnen zu antworten und die App basierend auf Ihrem Feedback zu verbessern." }
+      ]
+    },
+    "website-cookies": {
+      "title": "Die Website: Cookies",
+      "body": [{ "p": "Die Website setzt keine Cookies und verwendet keine ähnlichen Technologien wie lokalen Speicher zu Tracking-Zwecken. Sollte sich dies jemals ändern, werden wir diese Richtlinie zuerst aktualisieren und, wo erforderlich, Ihre Zustimmung einholen." }]
+    },
+    "third-parties": {
+      "title": "Drittanbieterdienste und Weitergabe",
+      "body": [
+        { "p": "Wir verkaufen, vermieten oder tauschen keine personenbezogenen Daten und geben sie nicht für Werbezwecke weiter. Die einzigen beteiligten Dritten sind:" },
+        { "ul": ["unser Website-Host und Download-Host, die wie oben beschrieben Anfrageinformationen verarbeiten; und", "unser E-Mail-Anbieter, der von Ihnen gesendete Support-E-Mails speichert."] },
+        { "p": "Wir können Informationen auch offenlegen, falls gesetzlich vorgeschrieben oder zum Schutz unserer Rechte oder der Sicherheit anderer." }
+      ]
+    },
+    "legal-bases": {
+      "title": "Rechtsgrundlagen der Verarbeitung",
+      "body": [{ "p": "Soweit Gesetze wie die EU- oder UK-DSGVO gelten, stützen wir uns auf unsere berechtigten Interessen, um die Website zu betreiben und abzusichern und auf Nachrichten zu antworten, sowie auf Schritte, um die Sie uns bei Kontaktaufnahme bitten. Die lokale Verarbeitung der App auf Ihrem Mac unterliegt Ihrer Kontrolle und bedeutet nicht, dass wir personenbezogene Daten erhalten." }]
+    },
+    "retention": {
+      "title": "Datenspeicherung",
+      "body": [
+        {
+          "ul": [
+            "<b>App-Daten</b> verbleiben auf Ihrem Mac, bis Sie sie entfernen (Einstellungen → Alle Daten zurücksetzen oder Löschen der unter „Die App: Auf Ihrem Mac gespeicherte Informationen“ genannten Ordner). Die App begrenzt automatisch, wie viel Verlaufs- und Protokolldaten sie behält.",
+            "<b>Hosting- und Download-Protokolle</b> werden gemäß den Richtlinien der Hosting-Anbieter aufbewahrt.",
+            "<b>Support-E-Mails</b> werden so lange aufbewahrt, wie nötig, um Ihnen zu helfen, und für einen angemessenen Zeitraum danach, dann gelöscht, sofern wir sie nicht aus rechtlichen Gründen aufbewahren müssen."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "title": "Sicherheit",
+      "body": [{ "p": "Da die App Ihre Dateien lokal verarbeitet und nicht überträgt, ist der wichtigste Schutz für diese Daten die Sicherheit Ihres Macs selbst. Die App enthält Schutzmaßnahmen gegen das Entfernen von Systemorten und sensibel wirkenden Dateien und verschiebt Elemente nur in den Papierkorb. Die Website wird über HTTPS ausgeliefert. Keine Methode der Speicherung oder Übertragung ist völlig sicher, aber wir arbeiten daran, alle von uns gehaltenen Informationen zu schützen." }]
+    },
+    "your-rights": {
+      "title": "Ihre Rechte",
+      "body": [{ "p": "Je nachdem, wo Sie leben, haben Sie möglicherweise das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung oder Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten sowie auf Datenübertragbarkeit. Da wir sehr wenig speichern — typischerweise nur E-Mails, die Sie uns gesendet haben — ist der einfachste Weg, diese Rechte auszuüben, eine E-Mail an {{privacyEmail}}. Sie haben außerdem das Recht, sich bei Ihrer örtlichen Datenschutzbehörde zu beschweren." }]
+    },
+    "children": {
+      "title": "Datenschutz von Kindern",
+      "body": [{ "p": "Die App und die Website richten sich nicht an Kinder unter 13 Jahren (oder dem entsprechenden Mindestalter an Ihrem Wohnort), und wir erfassen nicht wissentlich personenbezogene Daten von Kindern. Wenn Sie glauben, dass ein Kind uns personenbezogene Daten gesendet hat, kontaktieren Sie uns, und wir werden diese löschen." }]
+    },
+    "international": {
+      "title": "Internationale Nutzer",
+      "body": [{ "p": "Die App funktioniert überall gleich: Ihre Daten bleiben auf Ihrem Mac. Von unseren Hosting- und E-Mail-Anbietern verarbeitete Informationen können in anderen Ländern als Ihrem eigenen verarbeitet werden, unter den von diesen Anbietern gebotenen Schutzmaßnahmen." }]
+    },
+    "changes": {
+      "title": "Änderungen dieser Richtlinie",
+      "body": [{ "p": "Wir werden diese Richtlinie aktualisieren, wenn sich die Art ändert, wie die App oder Website Informationen verarbeitet — zum Beispiel vor der Veröffentlichung einer App-Version, die eine Netzwerkfunktion hinzufügt. Das Datum „Zuletzt aktualisiert“ oben zeigt, wann sie zuletzt überarbeitet wurde. Bedeutende Änderungen werden in den Versionshinweisen vermerkt." }]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "body": [{ "p": "Fragen zum Datenschutz? Schreiben Sie an {{privacyEmail}} oder an {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

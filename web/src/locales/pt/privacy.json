@@ -1,0 +1,159 @@
+{
+  "legalReviewNotice": "Esta tradução foi produzida por tradução automática e ainda não foi revista por um advogado qualificado na sua jurisdição. A versão inglesa desta política é o texto autoritativo; em caso de conflito, prevalece a versão inglesa.",
+  "title": "Política de Privacidade",
+  "shortVersion": "<b>A versão resumida.</b> O {{siteName}} analisa e limpa no seu Mac. A Aplicação não tem análises, telemetria, relatórios de falhas ou contas, e não envia para lado nenhum informações sobre si, os seus ficheiros ou o desempenho do seu Mac. Este Site não usa cookies nem análises; o nosso servidor web processa registos de pedidos padrão.",
+  "sections": {
+    "who-we-are": {
+      "title": "Quem somos",
+      "body": [
+        { "p": "Esta política é publicada por {{companyName}} (“nós”), {{companyAddress}}, o criador do {{siteName}}. Abrange duas coisas distintas, que tratam a informação de forma muito diferente:" },
+        { "ul": ["<b>A aplicação de ambiente de trabalho {{siteName}}</b> para macOS (a “Aplicação”) — ver as secções que começam por “A Aplicação”.", "<b>Este site</b>, {{siteHost}} (o “Site”), incluindo transferências da Aplicação — ver as secções que começam por “O Site”."] }
+      ]
+    },
+    "app-local": {
+      "title": "A Aplicação: informações processadas no seu Mac",
+      "body": [
+        { "p": "Para mostrar o que está a usar o seu armazenamento e ajudar a limpá-lo, a Aplicação lê o seguinte no seu Mac. Todo este processamento acontece localmente, no seu dispositivo." },
+        { "h3": "Informações de ficheiros e pastas" },
+        { "p": "Nomes, localizações (caminhos), tamanhos e datas de ficheiros e pastas nas suas pastas Transferências, Ambiente de Trabalho, Documentos e Filmes; em <code>~/Library/Caches</code> e <code>~/Library/Logs</code>; em localizações conhecidas de ferramentas de programação (por exemplo, Xcode DerivedData, dados do simulador e caches de npm, Yarn, pnpm, Gradle e CocoaPods); e o tamanho total de pastas como Fotografias e Biblioteca para construir a repartição do armazenamento. A Aplicação também lê a capacidade total, usada e disponível do seu disco." },
+        { "h3": "Conteúdo de ficheiros — apenas para duplicados" },
+        { "p": "A Aplicação não lê o conteúdo dos seus documentos, fotografias ou outros ficheiros, com uma exceção: para confirmar que dois ficheiros são duplicados exatos, lê ficheiros que já têm um tamanho idêntico e calcula um checksum SHA-256 do seu conteúdo. O checksum é calculado em memória no seu Mac e usado apenas para essa comparação." },
+        { "h3": "Aplicações instaladas" },
+        { "p": "Para a Limpeza de Aplicações, a Aplicação lê o nome, versão, identificador de pacote e ícone de cada aplicação a partir do próprio <code>Info.plist</code> da aplicação, mede o seu tamanho, pergunta ao Spotlight do macOS a data em que a aplicação foi usada pela última vez, e mede as caches, registos, preferências e ficheiros de suporte relacionados na sua Biblioteca." },
+        { "h3": "Navegadores web" },
+        { "p": "Para Safari, Chrome, Edge e Firefox, a Aplicação mede apenas o tamanho das pastas de <b>cache</b> de cada navegador. Não lê o seu histórico de navegação, cookies, palavras-passe, marcadores, dados de preenchimento automático ou extensões." }
+      ]
+    },
+    "app-stored": {
+      "title": "A Aplicação: informações guardadas no seu Mac",
+      "body": [
+        { "p": "A Aplicação guarda uma pequena quantidade de informação localmente para poder recordar as suas preferências. Nada disso nos é enviado." },
+        {
+          "ul": [
+            "<b>Estado da aplicação</b> em <code>{{appSupport}}/state.json</code>: as suas definições, exclusões da análise (caminhos de ficheiros que escolheu excluir), definições de limpeza programada, um histórico de limpezas (datas, quantidades e os itens envolvidos) e resumos de análises programadas.",
+            "<b>Registos de diagnóstico</b> em <code>{{appLogs}}</code>, incluindo um <code>startup-crash.log</code> que regista erros se a Aplicação falhar ao iniciar. Os registos gravam coisas como a versão da Aplicação, o tipo de processador e a versão do macOS do seu Mac, onde a Aplicação está instalada, e o que as análises e limpezas fizeram — o que pode incluir caminhos de ficheiros.",
+            "<b>Auxiliares em segundo plano</b>: se ativar a Limpeza Programada ou o Iniciar com a Sessão, a Aplicação adiciona um pequeno ficheiro de configuração a <code>~/Library/LaunchAgents</code> para que o macOS a possa iniciar na altura certa. Desativar a funcionalidade remove-o."
+          ]
+        },
+        { "p": "Pode apagar as definições, exclusões, programação e histórico da Aplicação a qualquer momento com <b>Definições → Repor todos os dados</b>, ou eliminar as pastas acima após a desinstalação." }
+      ]
+    },
+    "app-network": {
+      "title": "A Aplicação: nenhum dado sai do seu Mac",
+      "body": [
+        { "p": "A Aplicação não envia informações sobre si, o seu Mac ou os seus ficheiros para nós ou para qualquer outra pessoa. Especificamente, a Aplicação:" },
+        { "ul": ["não contém análises, monitorização de uso ou telemetria;", "não contém um serviço de relatório de falhas — a informação de falhas é escrita apenas no registo local descrito acima;", "não tem contas de utilizador, início de sessão ou ativação de licença;", "não contém publicidade nem SDKs de terceiros que recolham dados;", "não verifica automaticamente as suas próprias atualizações nem transfere nada."] },
+        { "p": "A única vez que a Aplicação envolve a internet é quando clica numa ligação dentro dela (como “Verificar Atualizações”, “Política de Privacidade” ou “Termos”). Isso abre uma página deste Site no seu navegador predefinido, e as secções do Site abaixo aplicam-se a partir daí. A Aplicação só abre ligações para o próprio domínio deste Site." },
+        { "p": "Separadamente da Aplicação, o próprio macOS pode recolher informações de diagnóstico se tiver ativado a partilha de análises com a Apple nas Definições do Sistema. Isso é regido pela política de privacidade da Apple; não a recebemos." }
+      ]
+    },
+    "app-cleaning": {
+      "title": "A Aplicação: como os seus ficheiros são tratados quando limpa",
+      "body": [
+        { "p": "Os itens que aprova são movidos para o Lixo do macOS — a Aplicação pede ao Finder para o fazer para que “Repor” continue a funcionar. A Aplicação nunca elimina ficheiros de forma permanente nem esvazia o seu Lixo. Se ativar “Limpar automaticamente” na Limpeza Programada, a Aplicação move apenas uma lista fixa de caches de programação para o Lixo, dentro dos limites descritos na Aplicação e nas nossas <link-faq-automatic>Perguntas Frequentes</link-faq-automatic>." },
+        { "p": "Os ficheiros permanecem no seu Mac em todas as etapas. Nunca recebemos cópias deles." }
+      ]
+    },
+    "app-permissions": {
+      "title": "A Aplicação: permissões do macOS",
+      "body": [
+        { "p": "O macOS pode pedir-lhe para conceder à Aplicação o seguinte. Pode rever ou revogar cada uma delas em Definições do Sistema → Privacidade e Segurança." },
+        {
+          "ul": [
+            "<b>Acesso a Transferências, Ambiente de Trabalho e Documentos</b> — para encontrar ficheiros grandes, transferências antigas e duplicados.",
+            "<b>Automação (controlar o Finder)</b> — para mover os itens que aprova para o Lixo.",
+            "<b>Acesso Total ao Disco (opcional)</b> — para medir localizações que o macOS mantém privadas, como algumas caches de aplicações e o Lixo. A Aplicação funciona sem este acesso.",
+            "<b>Notificações (opcional)</b> — para lembretes e resumos de limpeza programada. As notificações são criadas localmente pelo macOS; nenhum serviço push está envolvido."
+          ]
+        }
+      ]
+    },
+    "app-device": {
+      "title": "A Aplicação: informações do dispositivo",
+      "body": [{ "p": "A Aplicação lê informações básicas sobre o seu Mac — versão do macOS, arquitetura do processador e capacidade do disco — para funcionar corretamente e escrever registos locais úteis. Esta informação permanece no seu Mac." }]
+    },
+    "system-monitoring": {
+      "title": "A Aplicação: dados de monitorização do sistema",
+      "body": [
+        { "p": "O separador Desempenho da Aplicação mostra como o seu Mac está a funcionar. Para isso, lê o seguinte a partir do macOS no seu dispositivo:" },
+        {
+          "ul": [
+            "Uso de CPU (total, utilizador, sistema e inativo) e uso de memória (usada, disponível, comprimida, em cache, swap e pressão de memória);",
+            "as aplicações e processos atualmente em execução — os seus nomes, IDs de processo, uso de CPU e memória, horas de início, número de threads e localizações de ficheiros;",
+            "capacidade de armazenamento e espaço livre;",
+            "nos MacBooks, informações da bateria: carga, estado de carregamento, fonte de energia, número de ciclos, capacidades e o estado da bateria reportado pelo macOS;",
+            "informações de hardware do Mac: modelo e identificador do modelo, chip, núcleos de CPU e GPU, tamanho da memória, ecrãs e o nome de anfitrião de rede do Mac;",
+            "versão, compilação e versão do kernel do macOS, tempo de atividade, e o resultado da própria verificação de Atualização de Software do macOS, lido a partir de um ficheiro que o macOS mantém no seu Mac."
+          ]
+        },
+        { "p": "Esta informação é usada apenas para apresentar o painel Desempenho. É processada localmente, mantida em memória apenas enquanto a Aplicação está aberta (os gráficos de curto prazo cobrem os últimos 60 segundos e são descartados quando sai), e não é escrita em disco, carregada, partilhada, vendida ou usada para análises. A Aplicação não lê o número de série do seu Mac, e não contacta os servidores da Apple para verificar atualizações." },
+        { "p": "A monitorização só é executada enquanto o ecrã Desempenho está aberto e pausa quando a janela da Aplicação está oculta." }
+      ]
+    },
+    "app-sharing-logs": {
+      "title": "A Aplicação: quando escolhe partilhar informações connosco",
+      "body": [{ "p": "Se contactar o suporte, pode optar por nos enviar capturas de ecrã ou os ficheiros de registo da Aplicação. Os registos podem conter caminhos de ficheiros do seu Mac, pelo que pedimos que os reveja antes de os enviar. Usamos tudo o que nos envia apenas para ajudar com o seu pedido." }]
+    },
+    "website": {
+      "title": "O Site: o que recolhemos",
+      "body": [
+        { "p": "O Site é um site estático. Não usa cookies, análises, publicidade, pixels de rastreio, widgets de redes sociais, nem scripts ou tipos de letra de terceiros, e não tem contas de utilizador nem formulários. O seu navegador pode guardar uma cópia em cache das páginas, como faz para qualquer site." },
+        { "p": "<b>Registos de alojamento.</b> O Site é servido por {{hostingProvider}}. Como qualquer servidor web, processa automaticamente informações técnicas necessárias para entregar páginas e proteger o serviço — como o seu endereço IP, agente do utilizador do navegador, a página pedida, a página de origem e a hora do pedido. Isto é gerido pelos próprios termos e política de privacidade do fornecedor de alojamento, e não combinamos isso com nenhuma outra informação." },
+        { "p": "<b>Transferências.</b> O ficheiro instalador da Aplicação é servido a partir de {{downloadHost}}, que processa o mesmo tipo de informação técnica de pedido quando o transfere." },
+        { "p": "<b>Email.</b> Se nos enviar um email (por exemplo, através da página Suporte), recebemos o seu endereço de email, nome, se o incluir, e tudo o que escrever ou anexar. Usamo-lo apenas para lhe responder e para melhorar a Aplicação com base nos seus comentários." }
+      ]
+    },
+    "website-cookies": {
+      "title": "O Site: cookies",
+      "body": [{ "p": "O Site não define cookies nem usa tecnologias semelhantes, como armazenamento local, para rastreio. Se isso alguma vez mudar, atualizaremos primeiro esta política e, quando exigido, pediremos o seu consentimento." }]
+    },
+    "third-parties": {
+      "title": "Serviços de terceiros e partilha",
+      "body": [
+        { "p": "Não vendemos, alugamos nem trocamos informações pessoais, e não as partilhamos para fins publicitários. Os únicos terceiros envolvidos são:" },
+        { "ul": ["o nosso servidor do Site e de transferências, que processam informações de pedido conforme descrito acima; e", "o nosso fornecedor de email, que guarda os emails de suporte que nos envia."] },
+        { "p": "Também podemos divulgar informações se exigido por lei, ou para proteger os nossos direitos ou a segurança de outros." }
+      ]
+    },
+    "legal-bases": {
+      "title": "Fundamentos jurídicos do tratamento",
+      "body": [{ "p": "Nos locais onde se aplicam leis como o RGPD da UE ou do Reino Unido, baseamo-nos nos nossos interesses legítimos para operar e proteger o Site e para responder a mensagens, e nas diligências que nos pede para realizar quando nos contacta. O processamento local da Aplicação no seu Mac está sob o seu controlo e não envolve a receção de dados pessoais por nossa parte." }]
+    },
+    "retention": {
+      "title": "Retenção de dados",
+      "body": [
+        {
+          "ul": [
+            "<b>Os dados da Aplicação</b> permanecem no seu Mac até os remover (Definições → Repor todos os dados, ou eliminando as pastas listadas em “A Aplicação: informações guardadas no seu Mac”). A Aplicação limita automaticamente a quantidade de histórico e registos que mantém.",
+            "<b>Os registos de alojamento e transferências</b> são retidos de acordo com as políticas dos fornecedores de alojamento.",
+            "<b>Os emails de suporte</b> são mantidos pelo tempo necessário para o ajudar e por um período razoável depois, sendo depois eliminados, a menos que tenhamos de os conservar por motivos legais."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "title": "Segurança",
+      "body": [{ "p": "Como a Aplicação processa os seus ficheiros localmente e não os transmite, a principal proteção desses dados é a segurança do seu próprio Mac. A Aplicação inclui salvaguardas contra a remoção de localizações do sistema e ficheiros de aspeto sensível, e só move itens para o Lixo. O Site é servido através de HTTPS. Nenhum método de armazenamento ou transmissão é completamente seguro, mas trabalhamos para proteger qualquer informação que detenhamos." }]
+    },
+    "your-rights": {
+      "title": "Os seus direitos",
+      "body": [{ "p": "Dependendo de onde vive, pode ter direitos de acesso, correção, eliminação, limitação ou oposição ao tratamento das suas informações pessoais, e à portabilidade de dados. Como detemos muito pouco — tipicamente apenas emails que nos enviou — a forma mais simples de exercer estes direitos é enviar um email para {{privacyEmail}}. Também tem o direito de apresentar uma queixa junto da sua autoridade local de proteção de dados." }]
+    },
+    "children": {
+      "title": "Privacidade de menores",
+      "body": [{ "p": "A Aplicação e o Site não se destinam a crianças com menos de 13 anos (ou a idade mínima equivalente no seu local de residência), e não recolhemos conscientemente informações pessoais de crianças. Se acredita que uma criança nos enviou informações pessoais, contacte-nos e iremos eliminá-las." }]
+    },
+    "international": {
+      "title": "Utilizadores internacionais",
+      "body": [{ "p": "A Aplicação funciona da mesma forma em todo o lado: os seus dados permanecem no seu Mac. As informações processadas pelos nossos fornecedores de alojamento e email podem ser tratadas em países diferentes do seu, sob as salvaguardas que esses fornecedores oferecem." }]
+    },
+    "changes": {
+      "title": "Alterações a esta política",
+      "body": [{ "p": "Iremos atualizar esta política se a Aplicação ou o Site mudarem a forma como tratam a informação — por exemplo, antes de lançar qualquer versão da Aplicação que adicione uma funcionalidade de rede. A data “Última atualização” no topo mostra quando foi revista pela última vez. As alterações significativas também serão indicadas nas notas de versão." }]
+    },
+    "contact": {
+      "title": "Contacto",
+      "body": [{ "p": "Dúvidas sobre privacidade? Envie um email para {{privacyEmail}} ou escreva para {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

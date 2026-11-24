@@ -1,20 +1,24 @@
 import { useEffect, useState } from 'react'
-import { NavLink, useLocation } from 'react-router'
+import { useLocation } from 'react-router'
+import { useTranslation } from 'react-i18next'
 import { Menu, X } from 'lucide-react'
 import { useScrolled } from '@/hooks/useScrolled'
 import { cx } from '@/utils/format'
 import { DownloadButton } from './DownloadButton'
+import { LanguageSwitcher } from './LanguageSwitcher'
 import { Logo } from './Logo'
+import { NavLink } from './router'
 
-export const NAV_LINKS = [
-  { to: '/features', label: 'Features' },
-  { to: '/pricing', label: 'Pricing' },
-  { to: '/download', label: 'Download' },
-  { to: '/faq', label: 'FAQ' },
-  { to: '/support', label: 'Support' },
-]
+const NAV_KEYS = [
+  { to: '/features', key: 'features' },
+  { to: '/pricing', key: 'pricing' },
+  { to: '/download', key: 'download' },
+  { to: '/faq', key: 'faq' },
+  { to: '/support', key: 'support' },
+] as const
 
 export function Navbar() {
+  const { t } = useTranslation('common')
   const scrolled = useScrolled()
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
@@ -36,34 +40,29 @@ export function Navbar() {
     <header className={cx('nav', (scrolled || open) && 'is-scrolled', open && 'is-open')}>
       <div className="container nav__inner">
         <Logo />
-        <nav className="nav__links" aria-label="Primary">
-          {NAV_LINKS.map((l) => (
+        <nav className="nav__links" aria-label={t('aria.primaryNav')}>
+          {NAV_KEYS.map((l) => (
             <NavLink key={l.to} to={l.to} className={({ isActive }) => cx('nav__link', isActive && 'is-active')}>
-              {l.label}
+              {t(`nav.${l.key}`)}
             </NavLink>
           ))}
         </nav>
+        <LanguageSwitcher className="nav__lang--desktop" />
         <div className="nav__cta">
-          <DownloadButton size="md" label="Download" />
+          <DownloadButton size="md" label={t('download.navCta')} />
         </div>
-        <button
-          type="button"
-          className="nav__toggle"
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          onClick={() => setOpen((v) => !v)}
-        >
+        <button type="button" className="nav__toggle" aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? t('nav.closeMenu') : t('nav.openMenu')} onClick={() => setOpen((v) => !v)}>
           {open ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
         </button>
       </div>
       <div id="mobile-menu" className="nav__mobile" hidden={!open}>
-        <nav className="container" aria-label="Mobile">
-          {NAV_LINKS.map((l) => (
+        <nav className="container" aria-label={t('aria.mobileNav')}>
+          {NAV_KEYS.map((l) => (
             <NavLink key={l.to} to={l.to} className={({ isActive }) => cx('nav__mobile-link', isActive && 'is-active')}>
-              {l.label}
+              {t(`nav.${l.key}`)}
             </NavLink>
           ))}
+          <LanguageSwitcher />
           <DownloadButton size="lg" className="nav__mobile-cta" />
         </nav>
       </div>

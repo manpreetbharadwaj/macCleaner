@@ -1,0 +1,147 @@
+{
+  "learnMore": "Daha fazla bilgi",
+  "cards": {
+    "core": {
+      "smart-clean": { "title": "Smart Clean", "summary": "Tek tarama önbellekleri, günlükleri, uygulama artıklarını, geliştirici çöpünü ve eski indirmeleri net kategorilere ayırır — Güvenli öğeler önceden seçilir, geri kalanı sizi bekler." },
+      "storage": { "title": "Depolama Gezgini", "summary": "Diskinizi gerçekte neyin doldurduğunu görün — Uygulamalar, Belgeler, Fotoğraflar, Videolar, İndirilenler, Önbellek ve Sistem Verisi — gerçek klasörlerinizden ölçülür." },
+      "large-files": { "title": "Büyük Dosya Bulucu", "summary": "500 MB, 1 GB, 5 GB veya 10 GB üzerindeki dosyaları ortaya çıkarın. Türe göre filtreleyin, boyuta veya yaşa göre sıralayın, Quick Look ile önizleyin." },
+      "downloads": { "title": "İndirilenler İncelemesi", "summary": "Yaşa göre gruplanmış eski yükleyiciler, disk imajları ve arşivler — bugünden 90 günden eskiye kadar. Hiçbir şey asla önceden seçilmez." },
+      "duplicates": { "title": "Yinelenen Bulucu", "summary": "Tam içerik SHA-256 sağlama toplamıyla doğrulanan birebir kopyalar. En yeniyi veya en eskiyi saklayın — en az bir kopya her zaman kalır." },
+      "apps": { "title": "Uygulama Temizliği", "summary": "Bir uygulamanın tam izini görün — önbellekler, günlükler, destek dosyaları, tercihler — ardından verilerini temizleyin veya uygulamayı kaldırın. Apple uygulamaları korunur." },
+      "system-junk": { "title": "Sistem ve Geliştirici Çöpü", "summary": "Kendini yeniden oluşturan önbellekleri ve günlükleri temizleyin, ayrıca Xcode, simülatör, npm, Yarn, pnpm, Gradle ve CocoaPods önbelleklerini de." },
+      "schedule": { "title": "Zamanlanmış Temizlik", "summary": "Temizlenmeye değer bir şey olduğunda sizi hatırlatan — veya onayınızla geliştirici önbelleklerini temizleyen — günlük, haftalık veya aylık arka plan kontrolleri." }
+    },
+    "monitor": {
+      "cpu": { "title": "CPU İzleme", "summary": "Kullanıcı, sistem ve boşta süreye bölünmüş, 60 saniyelik grafikle canlı CPU kullanımı." },
+      "memory": { "title": "Bellek Kullanımı", "summary": "Kullanılan ve kullanılabilir RAM, bellek baskısı, sıkıştırılmış bellek ve takas alanı — sade bir dille açıklanır." },
+      "running-apps": { "title": "Çalışan Uygulamalar", "summary": "Hangi uygulamaların en çok bellek ve CPU kullandığını ve her birinin ne kadar süredir çalıştığını görün." },
+      "battery": { "title": "Pil Sağlığı", "summary": "macOS tarafından raporlanan şarj, döngü sayısı, maksimum kapasite ve durum. Yalnızca MacBook'lar." },
+      "mac-info": { "title": "Mac Bilgisi", "summary": "Model, çip, çekirdekler, GPU, bellek, ekranlar ve çalışma süresi tek bir yerde." },
+      "storage-status": { "title": "Depolama Durumu", "summary": "Kullanılan, kullanılabilir ve potansiyel olarak geri kazanılabilir alan, temizleyiciden tek tıklama uzaklıkta." },
+      "macos": { "title": "macOS Bilgisi", "summary": "Sürüm, derleme ve macOS'un kendi güncelleme kontrolünün bir güncelleme bulup bulmadığı — Yazılım Güncelleme'ye kısayolla birlikte." }
+    }
+  },
+  "deepDives": {
+    "smart-clean": {
+      "eyebrow": "Smart Clean",
+      "title": "Tek tarama. Net kategoriler. Karar sizin.",
+      "body": "Smart Clean, önbelleklerinizi, günlüklerinizi, uygulama artıklarınızı, geliştirici araçlarınızı ve İndirilenler'i tek seferde kontrol eder, ardından her şeyi altı sade dilli gruba ayırır. Her öğe neden var olduğunu ve kaldırırsanız ne olacağını söyler.",
+      "points": ["Sistem Çöpü, Tarayıcı Önbellekleri, Uygulama Artıkları, Günlükler ve Çökme Raporları, Geliştirici Çöpü ve Eski İndirmeler", "Güvenli öğeler seçili başlar; İncele öğeleri ve kendi dosyalarınız asla seçili başlamaz", "Her tek öğeyi görmek — ve işaretini kaldırmak — için herhangi bir grubu genişletin"],
+      "alt": "Sistem Çöpü, Tarayıcı Önbellekleri, Uygulama Artıkları, Günlükler, Geliştirici Çöpü ve Eski İndirmeler olarak gruplanmış Smart Clean sonuçları"
+    },
+    "storage": {
+      "eyebrow": "Depolama Gezgini",
+      "title": "Alanınızın nereye gittiğini bilin.",
+      "body": "MacBook Cleaner gerçek klasörlerinizi ölçer ve tek bir depolama halkası olarak çizer. Boyutlar, macOS'un depolamayı raporladığı gibi ondalık gigabayt kullanır ve bir klasöre atfedilemeyen alan dürüstçe Sistem Verisi olarak etiketlenir.",
+      "points": ["Uygulamalar, Belgeler, Fotoğraflar, Videolar, İndirilenler, Önbellek, Diğer ve Sistem Verisi", "Fotoğraflar gibi uygulama tarafından yönetilen kitaplıklar bir bütün olarak boyutlandırılır, asla parçalara ayrılmaz", "Boş alan, macOS'un kendi Depolama ayarlarının okuduğu şekilde okunur"],
+      "alt": "Kategoriye göre dağılımı gösteren renkli bir halka içeren depolama ekranı"
+    },
+    "large-files": {
+      "eyebrow": "Büyük Dosya Bulucu",
+      "title": "Unutulan gigabaytları bulun.",
+      "body": "Eski ekran kayıtları, sanal makine imajları, silmeyi düşündüğünüz yükleyiciler. Büyük Dosya Bulucu, İndirilenler, Masaüstü, Belgeler ve Filmler'e bakar ve en büyük dosyaları önce listeler.",
+      "points": ["Boyut eşikleri: 500 MB, 1 GB, 5 GB ve 10 GB", "Videolara, disk imajlarına, arşivlere, yükleyicilere veya belgelere göre filtreleyin", "Karar vermeden önce Quick Look ile önizleyin ve Finder'da gösterin"],
+      "alt": "500 MB üzeri dosyalara filtrelenmiş Büyük Dosyalar listesi"
+    },
+    "downloads": {
+      "eyebrow": "İndirilenler",
+      "title": "Gerçekten okunabilen bir İndirilenler klasörü.",
+      "body": "İndirilenler yaşa göre gruplanır — Bugün, Bu Hafta, Bu Ay, 30 günden eski ve 90 günden eski — ve yükleyiciler ile disk imajları, arşivler, yinelenen indirmeler ve büyük indirmeler için hızlı görünümlerle birlikte gelir.",
+      "points": ["Daha önce kullandığınız yükleyiciler ve disk imajları kolayca fark edilir", "Bunlar sizin dosyalarınız: İndirilenler'de hiçbir şey asla önceden seçilmez", "Her kaldırma işlemi onay ister"],
+      "alt": "Dosyaların yaşa göre gruplandığı İndirilenler ekranı"
+    },
+    "duplicates": {
+      "eyebrow": "Yinelenen Bulucu",
+      "title": "Aynı dosya üç kez mi? Birini saklayın.",
+      "body": "İndirilenler, Masaüstü, Belgeler ve Filmler'deki yinelenenler tam boyuta göre eşleştirilir, hızlı bir parmak iziyle daraltılır, ardından tüm içeriğin hash'lenmesiyle doğrulanır — bu yüzden “benzer görünüyor” hiçbir zaman yinelenen sayılmaz.",
+      "points": ["Tek tıklamayla her settekini en yeni veya en eski olarak saklayın", "Bir dosyanın her kopyasını asla seçemezsiniz — biri her zaman kalır", "Tüm kontroller Mac'inizde çalışır"],
+      "alt": "Set başına boşa harcanan alanla setler halinde gruplanmış yinelenen dosyalar"
+    },
+    "apps": {
+      "eyebrow": "Uygulama Temizliği",
+      "title": "Uygulamaları — ve geride bıraktıklarını — kaldırın.",
+      "body": "Gerçek izini görmek için bir uygulama seçin: uygulama paketi artı önbellekleri, günlükleri, uygulama destek dosyaları, tercihleri, konteynerleri, kaydedilmiş durumu ve web verileri. Yalnızca verileri temizleyin veya tüm uygulamayı Çöp Kutusu'na taşıyın.",
+      "points": ["Uygulamaları boyuta, ada veya en az kullanılana göre sıralayın", "Apple'ın kendi uygulamaları — ve MacBook Cleaner'ın kendisi — kaldırılamaz", "Yalnızca /Applications veya ~/Applications içindeki uygulamalar kabul edilir"],
+      "alt": "Bir uygulamanın önbelleklerini, günlüklerini ve tercihlerini gösteren Uygulama Temizliği"
+    },
+    "system-junk": {
+      "eyebrow": "Sistem ve Geliştirici Çöpü",
+      "title": "Kendini yeniden oluşturan önbellekler. Gitti.",
+      "body": "Sistem Çöpü, Kitaplığınızdaki uygulama önbelleklerini ve günlüklerini Temizlemek Güvenli ve İncelenmesi Önerilir olarak ikiye ayrılmış şekilde listeler. Ağır derleme ve paket önbelleklerini dahil etmek için Geliştirici Temizliğini açın.",
+      "points": ["Xcode DerivedData, Arşivler, iOS ve watchOS Cihaz Desteği, Simülatör önbellekleri ve cihazları", "npm, Yarn, pnpm, Gradle, CocoaPods önbellekleri ve Android emülatör imajları", "Her öğe, yeniden oluşturmanın size neye mal olacağını açıklar"],
+      "alt": "Temizlemek Güvenli ve İncelenmesi Önerilir bölümleriyle Sistem Çöpü ekranı"
+    },
+    "schedule": {
+      "eyebrow": "Zamanlanmış Temizlik",
+      "title": "Düşünmeden düzenli kalın.",
+      "body": "Günlük, haftalık veya aylık olanı ve günün bir saatini seçin. MacBook Cleaner arka planda sessizce kontrol eder — hiçbir pencere açılmaz — ve ya size hatırlatır ya da açıkça izin verdiyseniz sabit bir geliştirici önbelleği listesini temizler.",
+      "points": ["Bana hatırlat: temizlenecek yeterli şey olduğunda veya alan azaldığında bir bildirim", "Otomatik temizle: yalnızca altı geliştirici önbelleği, en az 1 GB, çalıştırma başına en fazla 10 GB ve 50 öğe", "Belgeler, Fotoğraflar, Videolar, Masaüstü ve kişisel klasörler asla otomatik olarak kaldırılmaz"],
+      "alt": "Sıklık, mod ve uygun kategorilerle Zamanlanmış Temizlik ayarları"
+    }
+  },
+  "monitorDeepDives": {
+    "performance": {
+      "eyebrow": "Performans",
+      "title": "Mac'iniz tek bakışta — canlı olarak.",
+      "body": "Performans sekmesi CPU, bellek, depolama ve pili tek bir panelde, canlı 60 saniyelik grafiklerle ve sade dilli bir Mac Sağlığı özetiyle gösterir. Her durum doğrudan macOS'tan gelir; uydurma bir “sağlık puanı” yoktur.",
+      "points": ["Kullanıcı, sistem ve boşta süreye bölünmüş canlı CPU kullanımı", "Kullanılan, kullanılabilir, sıkıştırılmış bellek ve takas alanı — artı macOS'un kendi bellek baskısı", "Siz bakarken birkaç saniyede bir güncellenir, bakmadığınızda tamamen durur"],
+      "alt": "CPU, bellek, depolama ve pil göstergeleri ile Mac Sağlığı özeti içeren performans paneli"
+    },
+    "running-apps": {
+      "eyebrow": "Çalışan Uygulamalar",
+      "title": "Belleğinizi ve CPU'nuzu neyin kullandığını görün.",
+      "body": "Çalışan Uygulamalar, Dock'unuzdaki uygulamaları CPU kullanımları, bellekleri ve ne kadar süredir çalıştıklarıyla birlikte listeler. Yardımcı işlemler kendi uygulamalarıyla birlikte sayılır, böylece bir tarayıcının çok sayıda sekmesi tek bir dürüst sayıya dönüşür.",
+      "points": ["CPU, bellek, çalışma süresi veya ada göre sıralayın", "Uygulamalar, arka plan işlemleri veya hepsi arasında geçiş yapın", "Başlatma zamanı, iş parçacıkları, işlem kimliği ve konum gibi ayrıntılar için herhangi bir uygulamaya tıklayın"],
+      "alt": "CPU ve çalışma süresiyle belleğe göre sıralanmış Çalışan Uygulamalar listesi"
+    },
+    "battery": {
+      "eyebrow": "Pil Sağlığı",
+      "title": "Pilinizi anlayın.",
+      "body": "MacBook'larda şarjı, döngü sayısını, maksimum kapasiteyi, güç kaynağını ve durumu görün — Sistem Ayarları'nın kullandığı aynı değerler. Masaüstü Mac'lerde pil bölümü hiç görünmez.",
+      "points": ["Pil tasarım döngü sayısını raporladığında bununla birlikte döngü sayısı", "Maksimum kapasite ve durum tam olarak macOS'un raporladığı şekilde", "Yalnızca bilgi amaçlı — hiçbir uygulama bir pili onaramaz veya eski haline getiremez"],
+      "alt": "Şarjı, maksimum kapasiteyi ve döngü sayısını gösteren Pil Sağlığı ekranı"
+    },
+    "mac-info": {
+      "eyebrow": "Mac Bilgisi",
+      "title": "Mac'iniz hakkında önemli olan her şey.",
+      "body": "Model, çip, CPU ve GPU çekirdekleri, bellek, depolama, ekranlar, macOS sürümü ve derlemesi ile Mac'inizin ne kadar süredir çalıştığı — tek seferde toplanır ve tek bir düzenli yerde gösterilir.",
+      "points": ["macOS'un kendi otomatik kontrolünden macOS güncelleme durumu, Yazılım Güncelleme'ye kısayolla birlikte", "Seri numaranız asla okunmaz", "Her şey Mac'inizde kalır"],
+      "alt": "Donanım ayrıntılarını ve macOS sürümünü listeleyen Mac Bilgisi ekranı"
+    }
+  },
+  "page": {
+    "jumpToFeature": "Özelliğe atla",
+    "eyebrow": "Özellikler",
+    "title1": "Mac'inizi temizleyin. ",
+    "title2": "Onu anlayın da.",
+    "intro": "MacBook Cleaner, bir depolama analiz aracını, büyük dosya ve yinelenen bulucularını, bir uygulama kaldırıcıyı ve bir önbellek temizleyiciyi — CPU, bellek, çalışan uygulamalar, pil sağlığı ve Mac bilgileriyle bir Mac performans izleyiciyle birleştirir — hepsi Mac'inizde yerel olarak işlenir.",
+    "monitorEyebrow": "Performans",
+    "monitorTitle1": "Sade bir dille konuşan ",
+    "monitorTitle2": "bir Mac performans izleyicisi.",
+    "monitorIntro": "Canlı CPU ve bellek, en çok kaynak kullanan uygulamalar, pil sağlığı ve Mac'iniz hakkında önemli olan her şey — macOS'tan yerel olarak okunur, yalnızca siz bakarken yenilenir.",
+    "sampleDataNote": "Örnek verilerle gösterilmiştir.",
+    "extrasEyebrow": "Uygulamada ayrıca",
+    "extrasTitle": "Özenle düşünülmüş ayrıntılar.",
+    "notDoingEyebrow": "Açık konuşalım",
+    "notDoingTitle": "MacBook Cleaner'ın yapmadıkları.",
+    "notDoingIntro": "Birçok “temizleyici” uygulama her şeyi vadeder. İşte bu uygulamanın bilinçli olarak dışarıda bıraktıkları.",
+    "ctaTitle": "Neyin yer kapladığını görmeye hazır mısınız?",
+    "extras": [
+      { "title": "Tarama hariç tutmaları", "body": "Asla önerilmemesi gereken dosya veya klasörleri ekleyin — manuel olarak veya zamanlanmış şekilde." },
+      { "title": "Temizlemeden önce onay", "body": "Varsayılan olarak açık. Yalnızca Güvenli öğeler içeren temizlemelerde iletişim kutusunu atlamak için kapatın; İncele öğeleri ve kendi dosyalarınız her zaman sorar." },
+      { "title": "Geliştirici temizliği anahtarı", "body": "İhtiyacınız yoksa Xcode, simülatör ve paket yöneticisi önbelleklerini tamamen gizleyin." },
+      { "title": "Açık, koyu veya sistem", "body": "Mac'inizin görünümünü takip eder veya birini seçin." },
+      { "title": "Girişte Başlat", "body": "İsteğe bağlı ve varsayılan olarak kapalı." },
+      { "title": "Yerel bildirimler", "body": "macOS bildirimlerini kullanarak zamanlanmış temizlik hatırlatmaları ve özetleri." },
+      { "title": "Çöp Kutusu özeti", "body": "Çöp Kutusu'nun ne kadar alan kapladığını görün ve boşaltmaya hazır olduğunuzda Finder'da açın." },
+      { "title": "Tüm verileri sıfırla", "body": "Ayarları, hariç tutmaları, zamanlamayı ve geçmişi tek adımda temizleyin. Dosyalarınıza asla dokunmaz." }
+    ],
+    "notDoing": [
+      "RAM “hızlandırma” yok — Performans bellek kullanımını gösterir, onunla oynamaz",
+      "Hız artırma vaatleri veya başlangıç öğesi ayarlamaları yok",
+      "Antivirüs veya kötü amaçlı yazılım taraması yok",
+      "Kalıcı silme veya dosya parçalama yok",
+      "Ana klasörünüz dışındaki sistem klasörlerinin temizlenmesi yok"
+    ]
+  }
+}

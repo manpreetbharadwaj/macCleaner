@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "Ikon aplikasi MacBook Cleaner",
+    "title": "MacBook Cleaner untuk macOS",
+    "lead": "Pembersihan penyimpanan dan pemantauan performa untuk Mac Anda — diproses secara lokal.",
+    "started": "Unduhan Anda telah dimulai — <b>{{fileName}}</b>. Setelah selesai, ikuti langkah-langkah di bawah.",
+    "fileInfo": "{{fileName}}{{sizePart}} · Disk image (.dmg)",
+    "quickSteps": ["Unduh MacBook Cleaner.", "Buka DMG yang sudah diunduh.", "Seret MacBook Cleaner ke Applications."],
+    "quickStepsNotarizedLast": "Jalankan aplikasinya.",
+    "quickStepsUnnotarizedLast": "Jalankan aplikasinya — pertama kali, gunakan <a>Open Anyway</a>.",
+    "specs": { "version": "Versi {{version}}", "released": "Dirilis {{date}}", "built": "Dibuat {{date}}", "macos": "{{macos}} atau yang lebih baru" },
+    "releaseDetailsAria": "Detail rilis",
+    "links": { "releaseNotes": "Catatan rilis", "privacy": "Privasi", "terms": "Ketentuan" },
+    "checksumLabel": "SHA-256"
+  },
+  "requirements": {
+    "eyebrow": "Persyaratan sistem",
+    "title": "Apakah ini akan berjalan di Mac saya?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}} ({{macosVersion}}) atau yang lebih baru",
+    "processor": "Prosesor",
+    "intelNote": "Mac Intel tidak didukung oleh build terverifikasi ini.",
+    "account": "Akun",
+    "accountValue": "Tidak diperlukan"
+  },
+  "install": {
+    "eyebrow": "Instalasi",
+    "title": "Instal dalam waktu kurang dari satu menit.",
+    "steps": [
+      { "title": "Unduh DMG-nya", "body": "Klik <b>Download for Mac</b>. Disk image akan disimpan ke folder Downloads Anda." },
+      { "title": "Buka DMG-nya", "body": "Klik dua kali <code>{{fileName}}</code> di Downloads. Sebuah jendela terbuka menampilkan aplikasi dan folder Applications Anda." },
+      { "title": "Seret ke Applications", "body": "Seret <b>MacBook Cleaner</b> ke folder Applications, lalu keluarkan disk image dari sidebar Finder." },
+      { "title": "Jalankan aplikasinya", "body": "Buka MacBook Cleaner dari Applications atau Launchpad. Jalankan dari Applications — pembersihan terjadwal hanya berfungsi dari sana." }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "Pertama kali dibuka",
+    "title": "Muncul peringatan keamanan?",
+    "intro": "Itu wajar untuk saat ini — berikut alasannya, dan cara membuka aplikasi dengan aman.",
+    "noticeTitle": "MacBook Cleaner belum dinotarisasi oleh Apple",
+    "noticeBody1": "Aplikasi yang didistribusikan di luar Mac App Store biasanya ditandatangani dengan Apple Developer ID dan dinotarisasi. Versi ini ditandatangani secara ad hoc — tanpa Developer ID — dan belum dinotarisasi, sehingga saat pertama kali Anda membukanya, Gatekeeper macOS mengatakan tidak dapat memverifikasi developer-nya atau memeriksa aplikasi untuk perangkat lunak berbahaya. Pesan ini bukan berarti ditemukan masalah — artinya Apple belum meninjau build ini.",
+    "noticeBody2": "<b>Unduh MacBook Cleaner hanya dari situs ini.</b> Jika Anda mendapatkan file ini dari tempat lain, hapuslah.",
+    "howtoTitle": "Buka sekali melalui System Settings",
+    "steps": [
+      "Buka MacBook Cleaner dari Applications. Saat peringatan muncul, klik <b>Done</b> (atau <b>Cancel</b>) — jangan pindahkan ke Trash.",
+      "Buka <b>System Settings → Privacy & Security</b> dan gulir ke bawah ke bagian <b>Security</b>.",
+      "Di sebelah pesan tentang MacBook Cleaner yang diblokir, klik <b>Open Anyway</b>, lalu konfirmasi dengan kata sandi atau Touch ID Anda.",
+      "Klik <b>Open</b> pada dialog terakhir. macOS mengingat pilihan Anda, jadi Anda hanya perlu melakukan ini sekali per versi."
+    ],
+    "tip": "Di macOS 14 Sonoma dan sebelumnya, Anda juga bisa menekan Control sambil mengklik aplikasi di Applications, pilih <b>Open</b>, lalu klik <b>Open</b> lagi."
+  },
+  "afterInstall": {
+    "eyebrow": "Setelah instalasi",
+    "title": "Baik untuk diketahui.",
+    "permissions": { "title": "Izin akses", "body": "macOS mungkin meminta izin agar aplikasi dapat mengakses Downloads, Desktop, dan Documents, serta mengontrol Finder saat Anda pertama kali membersihkan. Full Disk Access bersifat opsional.", "link": "Mengapa masing-masing diperlukan →" },
+    "updates": { "title": "Pembaruan", "body": "<b>Settings → Check for Updates</b> memeriksa, mengunduh, dan memverifikasi versi baru untuk Anda — tidak ada yang terpasang tanpa konfirmasi Anda, dan Anda perlu me-restart aplikasi sekali untuk menyelesaikannya. Pengaturan Anda tetap tersimpan." },
+    "uninstalling": { "title": "Mencopot pemasangan", "body": "Matikan Scheduled Cleanup dan Launch at Login, lalu seret aplikasinya ke Trash.", "link": "Langkah lengkap →" },
+    "stuck": "Terhambat?",
+    "contactSupport": "Hubungi dukungan →"
+  }
+}

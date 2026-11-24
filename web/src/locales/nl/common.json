@@ -1,0 +1,61 @@
+{
+  "skipToContent": "Ga naar inhoud",
+  "tagline": "Maak je Mac schoon. Behoud wat ertoe doet.",
+  "nav": {
+    "features": "Functies",
+    "pricing": "Prijzen",
+    "download": "Download",
+    "faq": "Veelgestelde vragen",
+    "support": "Ondersteuning",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten"
+  },
+  "footer": {
+    "description": "Veilige, volledig lokale opslagschoonmaak en prestatiebewaking voor macOS.",
+    "version": "Versie {{version}} · {{macos}} of nieuwer",
+    "columns": {
+      "product": "Product",
+      "help": "Hulp",
+      "legal": "Juridisch"
+    },
+    "links": {
+      "features": "Functies",
+      "pricing": "Prijzen",
+      "download": "Download",
+      "releaseNotes": "Releasenotities",
+      "faq": "Veelgestelde vragen",
+      "support": "Ondersteuning",
+      "installation": "Installatie",
+      "privacy": "Privacy",
+      "terms": "Voorwaarden"
+    },
+    "copyright": "© {{year}} {{name}}. Alle rechten voorbehouden.",
+    "trademark": "{{name}} is een onafhankelijke applicatie en is niet verbonden met, goedgekeurd door of gesponsord door Apple Inc. Apple, Mac, MacBook, macOS, Finder, Safari en Xcode zijn handelsmerken van Apple Inc., gedeponeerd in de VS en andere landen."
+  },
+  "download": {
+    "cta": "Download voor Mac",
+    "navCta": "Download",
+    "starting": "Starten…",
+    "started": "Download gestart",
+    "unavailable": "Download niet beschikbaar",
+    "unavailableNote": "Het geverifieerde installatieprogramma voor Mac is nog niet gepubliceerd.",
+    "downloading": "{{fileName}} wordt gedownload",
+    "error": "De download kon niet worden gestart. Probeer het straks opnieuw of neem contact op met ondersteuning."
+  },
+  "legal": {
+    "eyebrow": "Juridisch",
+    "lastUpdated": "Laatst bijgewerkt: {{date}}",
+    "onThisPage": "Op deze pagina"
+  },
+  "aria": {
+    "requirements": "Vereisten",
+    "primaryNav": "Primair",
+    "mobileNav": "Mobiel"
+  },
+  "languageSwitcher": {
+    "label": "Taal",
+    "current": "Taal: {{language}}",
+    "resetToAutomatic": "Terug naar automatisch",
+    "resetDescription": "Mijn taal de volgende keer automatisch detecteren"
+  }
+}

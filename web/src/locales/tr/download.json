@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "MacBook Cleaner uygulama simgesi",
+    "title": "macOS için MacBook Cleaner",
+    "lead": "Mac'iniz için depolama temizliği ve performans izleme — yerel olarak işlenir.",
+    "started": "İndirmeniz başladı — <b>{{fileName}}</b>. Bittiğinde aşağıdaki adımları izleyin.",
+    "fileInfo": "{{fileName}}{{sizePart}} · Disk imajı (.dmg)",
+    "quickSteps": ["MacBook Cleaner'ı indirin.", "İndirilen DMG'yi açın.", "MacBook Cleaner'ı Uygulamalar'a sürükleyin."],
+    "quickStepsNotarizedLast": "Uygulamayı başlatın.",
+    "quickStepsUnnotarizedLast": "Uygulamayı başlatın — ilk seferinde <a>Yine de Aç</a> seçeneğini kullanın.",
+    "specs": { "version": "Sürüm {{version}}", "released": "{{date}} tarihinde yayınlandı", "built": "{{date}} tarihinde derlendi", "macos": "{{macos}} veya üzeri" },
+    "links": { "releaseNotes": "Sürüm notları", "privacy": "Gizlilik", "terms": "Koşullar" },
+    "checksumLabel": "SHA-256",
+    "releaseDetailsAria": "Sürüm ayrıntıları"
+  },
+  "requirements": {
+    "eyebrow": "Sistem gereksinimleri",
+    "title": "Mac'imde çalışır mı?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}} ({{macosVersion}}) veya üzeri",
+    "processor": "İşlemci",
+    "intelNote": "Intel Mac'ler bu doğrulanmış sürüm tarafından desteklenmiyor.",
+    "account": "Hesap",
+    "accountValue": "Gerekmez"
+  },
+  "install": {
+    "eyebrow": "Kurulum",
+    "title": "Bir dakikadan kısa sürede kurun.",
+    "steps": [
+      { "title": "DMG'yi indirin", "body": "<b>Mac için indir</b> öğesine tıklayın. Disk imajı İndirilenler klasörünüze kaydedilir." },
+      { "title": "DMG'yi açın", "body": "İndirilenler'de <code>{{fileName}}</code> öğesine çift tıklayın. Uygulamayı ve Uygulamalar klasörünüzü gösteren bir pencere açılır." },
+      { "title": "Uygulamalar'a sürükleyin", "body": "<b>MacBook Cleaner</b>'ı Uygulamalar klasörüne sürükleyin, ardından disk imajını Finder'ın kenar çubuğundan çıkarın." },
+      { "title": "Uygulamayı başlatın", "body": "MacBook Cleaner'ı Uygulamalar'dan veya Launchpad'den açın. Zamanlanmış temizlik yalnızca Uygulamalar'dan çalıştırıldığında işler." }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "İlk başlatma",
+    "title": "Bir güvenlik uyarısı mı görüyorsunuz?",
+    "intro": "Bu şu an bekleniyor — işte nedeni ve uygulamayı güvenle nasıl açacağınız.",
+    "noticeTitle": "MacBook Cleaner henüz Apple tarafından onaylanmadı",
+    "noticeBody1": "Mac App Store dışında dağıtılan uygulamalar genellikle bir Apple Developer ID ile imzalanır ve onaylanır (notarize edilir). Bu sürüm geçici olarak — bir Developer ID olmadan — imzalanmıştır ve onaylanmamıştır, bu yüzden ilk açtığınızda macOS Gatekeeper geliştiriciyi doğrulayamadığını veya uygulamayı kötü amaçlı yazılıma karşı kontrol edemediğini söyler. Bu mesaj bir sorun bulunduğu anlamına gelmez — yalnızca Apple'ın bu sürümü henüz incelemediği anlamına gelir.",
+    "noticeBody2": "<b>MacBook Cleaner'ı yalnızca bu web sitesinden indirin.</b> Dosyayı başka bir yerden aldıysanız, silin.",
+    "howtoTitle": "Sistem Ayarları üzerinden bir kez açın",
+    "steps": [
+      "MacBook Cleaner'ı Uygulamalar'dan açın. Uyarı göründüğünde <b>Tamam</b>'a (veya <b>İptal</b>'e) tıklayın — Çöp Kutusu'na taşımayın.",
+      "<b>Sistem Ayarları → Gizlilik ve Güvenlik</b>'i açın ve <b>Güvenlik</b> bölümüne kadar aşağı kaydırın.",
+      "MacBook Cleaner'ın engellendiğine dair mesajın yanında <b>Yine de Aç</b>'a tıklayın, ardından parolanızla veya Touch ID ile onaylayın.",
+      "Son iletişim kutusunda <b>Aç</b>'a tıklayın. macOS seçiminizi hatırlar, bu yüzden bunu her sürüm için yalnızca bir kez yapmanız gerekir."
+    ],
+    "tip": "macOS 14 Sonoma ve öncesinde, Uygulamalar'daki uygulamaya Control tuşuyla tıklayıp <b>Aç</b>'ı seçerek ve ardından tekrar <b>Aç</b>'a tıklayarak da bunu yapabilirsiniz."
+  },
+  "afterInstall": {
+    "eyebrow": "Kurulumdan sonra",
+    "title": "Bilmekte fayda var.",
+    "permissions": { "title": "İzinler", "body": "macOS, uygulamanın İndirilenler, Masaüstü ve Belgeler'e erişmesine ve ilk temizlediğinizde Finder'ı kontrol etmesine izin vermenizi isteyebilir. Tam Disk Erişimi isteğe bağlıdır.", "link": "Her birinin neden gerekli olduğu →" },
+    "updates": { "title": "Güncellemeler", "body": "<b>Ayarlar → Güncellemeleri Kontrol Et</b>, sizin için yeni sürümleri kontrol eder, indirir ve doğrular — onayınız olmadan hiçbir şey yüklenmez ve işlemi tamamlamak için uygulamayı bir kez yeniden başlatmanız gerekir. Ayarlarınız korunur." },
+    "uninstalling": { "title": "Kaldırma", "body": "Zamanlanmış Temizliği ve Girişte Başlat'ı kapatın, ardından uygulamayı Çöp Kutusu'na sürükleyin.", "link": "Tüm adımlar →" },
+    "stuck": "Takıldınız mı?",
+    "contactSupport": "Destek ile iletişime geçin →"
+  }
+}

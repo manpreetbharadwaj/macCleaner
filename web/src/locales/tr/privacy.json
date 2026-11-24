@@ -1,0 +1,159 @@
+{
+  "legalReviewNotice": "Bu çeviri makine çevirisiyle üretilmiştir ve henüz bulunduğunuz yargı bölgesinde yetkili bir avukat tarafından incelenmemiştir. Bu politikanın İngilizce sürümü yetkili metindir; burada bir çelişki varsa İngilizce sürüm geçerlidir.",
+  "title": "Gizlilik Politikası",
+  "shortVersion": "<b>Kısaca.</b> {{siteName}} Mac'inizde tarama ve temizleme yapar. Uygulamanın analitiği, telemetrisi, çökme raporlaması veya hesapları yoktur ve sizin, dosyalarınız veya Mac'inizin performansı hakkında hiçbir yere bilgi göndermez. Bu Web Sitesi hiçbir çerez veya analitik kullanmaz; web barındırıcımız standart istek günlüklerini işler.",
+  "sections": {
+    "who-we-are": {
+      "title": "Biz kimiz",
+      "body": [
+        { "p": "Bu politika, {{siteName}}'ın geliştiricisi olan {{companyName}} (“biz”), {{companyAddress}} tarafından yayınlanmaktadır. Bilgileri çok farklı şekillerde işleyen iki ayrı konuyu kapsar:" },
+        { "ul": ["<b>macOS için {{siteName}} masaüstü uygulaması</b> (“Uygulama”) — “Uygulama” ile başlayan bölümlere bakın.", "<b>Bu web sitesi</b>, {{siteHost}} (“Web Sitesi”), Uygulama indirmeleri dahil — “Web Sitesi” ile başlayan bölümlere bakın."] }
+      ]
+    },
+    "app-local": {
+      "title": "Uygulama: Mac'inizde işlenen bilgiler",
+      "body": [
+        { "p": "Depolama alanınızı neyin kullandığını göstermek ve temizlemenize yardımcı olmak için Uygulama, Mac'inizde aşağıdakileri okur. Bu işlemlerin tamamı yerel olarak, cihazınızda gerçekleşir." },
+        { "h3": "Dosya ve klasör bilgileri" },
+        { "p": "İndirilenler, Masaüstü, Belgeler ve Filmler klasörlerinizdeki dosya ve klasörlerin adları, konumları (yolları), boyutları ve tarihleri; <code>~/Library/Caches</code> ve <code>~/Library/Logs</code> içindekiler; bilinen geliştirici aracı konumlarındakiler (örneğin Xcode DerivedData, simülatör verileri ve npm, Yarn, pnpm, Gradle ve CocoaPods önbellekleri); ve depolama dağılımını oluşturmak için Fotoğraflar ve Kitaplık gibi klasörlerin genel boyutu. Uygulama ayrıca diskinizin toplam, kullanılan ve kullanılabilir kapasitesini okur." },
+        { "h3": "Dosya içerikleri — yalnızca yinelenenler için" },
+        { "p": "Uygulama, belgelerinizin, fotoğraflarınızın veya diğer dosyalarınızın içeriğini okumaz; tek bir istisna vardır: iki dosyanın birebir aynı olduğunu doğrulamak için, zaten aynı boyuta sahip dosyaları okur ve içeriklerinin SHA-256 sağlama toplamını hesaplar. Sağlama toplamı Mac'inizde bellekte hesaplanır ve yalnızca bu karşılaştırma için kullanılır." },
+        { "h3": "Yüklü uygulamalar" },
+        { "p": "Uygulama Temizliği için Uygulama, her uygulamanın adını, sürümünü, paket tanımlayıcısını ve simgesini uygulamanın kendi <code>Info.plist</code> dosyasından okur, boyutunu ölçer, macOS Spotlight'tan uygulamanın en son açıldığı tarihi ister ve Kitaplığınızdaki ilgili önbellekleri, günlükleri, tercihleri ve destek dosyalarını ölçer." },
+        { "h3": "Web tarayıcıları" },
+        { "p": "Safari, Chrome, Edge ve Firefox için Uygulama yalnızca her tarayıcının <b>önbellek</b> klasörlerinin boyutunu ölçer. Tarama geçmişinizi, çerezlerinizi, parolalarınızı, yer imlerinizi, otomatik doldurma verilerinizi veya uzantılarınızı okumaz." }
+      ]
+    },
+    "app-stored": {
+      "title": "Uygulama: Mac'inizde saklanan bilgiler",
+      "body": [
+        { "p": "Uygulama, tercihlerinizi hatırlayabilmek için yerel olarak az miktarda bilgi kaydeder. Bunların hiçbiri bize gönderilmez." },
+        {
+          "ul": [
+            "<b>Uygulama durumu</b>, <code>{{appSupport}}/state.json</code> içinde: ayarlarınız, tarama hariç tutmaları (hariç tutmayı seçtiğiniz dosya yolları), zamanlanmış temizlik ayarları, temizlik geçmişi (tarihler, miktarlar ve dahil olan öğeler) ve zamanlanmış taramaların özetleri.",
+            "<b>Tanılama günlükleri</b>, <code>{{appLogs}}</code> içinde, Uygulama başlatılamazsa hataları kaydeden bir <code>startup-crash.log</code> dahil. Günlükler; Uygulama sürümü, Mac'inizin işlemci türü ve macOS sürümü, Uygulamanın yüklü olduğu yer ve taramaların ile temizliklerin ne yaptığı gibi bilgileri kaydeder — bunlar dosya yollarını içerebilir.",
+            "<b>Arka plan yardımcıları</b>: Zamanlanmış Temizlik veya Girişte Başlat'ı açarsanız, Uygulama macOS'un onu doğru zamanda başlatabilmesi için <code>~/Library/LaunchAgents</code> içine küçük bir yapılandırma dosyası ekler. Özelliği kapatmak onu kaldırır."
+          ]
+        },
+        { "p": "Uygulamanın ayarlarını, hariç tutmalarını, zamanlamasını ve geçmişini istediğiniz zaman <b>Ayarlar → Tüm verileri sıfırla</b> ile temizleyebilir veya kaldırdıktan sonra yukarıdaki klasörleri silebilirsiniz." }
+      ]
+    },
+    "app-network": {
+      "title": "Uygulama: hiçbir veri Mac'inizden çıkmaz",
+      "body": [
+        { "p": "Uygulama, sizin, Mac'iniz veya dosyalarınız hakkında bilgileri bize veya başka hiç kimseye göndermez. Özellikle, Uygulama:" },
+        { "ul": ["hiçbir analitik, kullanım takibi veya telemetri içermez;", "hiçbir çökme raporlama hizmeti içermez — çökme bilgileri yalnızca yukarıda açıklanan yerel günlüğe yazılır;", "hiçbir kullanıcı hesabı, oturum açma veya lisans etkinleştirmesi içermez;", "hiçbir reklam veya veri toplayan üçüncü taraf SDK'sı içermez;", "kendi güncellemelerini otomatik olarak kontrol etmez ve hiçbir şey indirmez."] },
+        { "p": "Uygulamanın internetle ilgilendiği tek an, içindeki bir bağlantıya tıkladığınızda olur (“Güncellemeleri Kontrol Et”, “Gizlilik Politikası” veya “Koşullar” gibi). Bu, varsayılan web tarayıcınızda bu Web Sitesinin bir sayfasını açar ve aşağıdaki Web Sitesi bölümleri o zaman geçerli olur. Uygulama yalnızca bu Web Sitesinin kendi alan adına bağlantılar açar." },
+        { "p": "Uygulamadan ayrı olarak, Sistem Ayarları'nda Apple ile analitik paylaşmayı etkinleştirdiyseniz macOS'un kendisi tanılama bilgisi toplayabilir. Bu, Apple'ın gizlilik politikasına tabidir; biz bunu almayız." }
+      ]
+    },
+    "app-cleaning": {
+      "title": "Uygulama: temizlediğinizde dosyalarınız nasıl işlenir",
+      "body": [
+        { "p": "Onayladığınız öğeler macOS Çöp Kutusu'na taşınır — Uygulama, “Geri Koy” işlevinin çalışmaya devam etmesi için bunu Finder'dan ister. Uygulama dosyaları asla kalıcı olarak silmez ve Çöp Kutunuzu asla boşaltmaz. Zamanlanmış Temizlik'te “Otomatik temizle”yi etkinleştirirseniz, Uygulama yalnızca sabit bir geliştirici önbelleği listesini, Uygulamada ve <link-faq-automatic>SSS</link-faq-automatic>'de açıklanan sınırlar dahilinde Çöp Kutusu'na taşır." },
+        { "p": "Dosyalar her adımda Mac'inizde kalır. Biz asla kopyalarını almayız." }
+      ]
+    },
+    "app-permissions": {
+      "title": "Uygulama: macOS izinleri",
+      "body": [
+        { "p": "macOS, Uygulamaya aşağıdakileri vermenizi isteyebilir. Bunların her birini Sistem Ayarları → Gizlilik ve Güvenlik'te inceleyebilir veya iptal edebilirsiniz." },
+        {
+          "ul": [
+            "<b>İndirilenler, Masaüstü ve Belgelere erişim</b> — büyük dosyaları, eski indirmeleri ve yinelenenleri bulmak için.",
+            "<b>Otomasyon (Finder'ı kontrol etme)</b> — onayladığınız öğeleri Çöp Kutusu'na taşımak için.",
+            "<b>Tam Disk Erişimi (isteğe bağlı)</b> — bazı uygulama önbellekleri ve Çöp Kutusu gibi macOS'un özel tuttuğu konumları ölçmek için. Uygulama bu izin olmadan da çalışır.",
+            "<b>Bildirimler (isteğe bağlı)</b> — zamanlanmış temizlik hatırlatmaları ve özetleri için. Bildirimler macOS tarafından yerel olarak oluşturulur; hiçbir push hizmeti dahil değildir."
+          ]
+        }
+      ]
+    },
+    "app-device": {
+      "title": "Uygulama: cihaz bilgileri",
+      "body": [{ "p": "Uygulama, doğru çalışabilmek ve yararlı yerel günlükler yazabilmek için Mac'iniz hakkında temel bilgileri — macOS sürümü, işlemci mimarisi ve disk kapasitesi — okur. Bu bilgiler Mac'inizde kalır." }]
+    },
+    "system-monitoring": {
+      "title": "Uygulama: sistem izleme verileri",
+      "body": [
+        { "p": "Uygulamanın Performans sekmesi Mac'inizin durumunu gösterir. Bunu yapmak için cihazınızda macOS'tan aşağıdakileri okur:" },
+        {
+          "ul": [
+            "CPU kullanımı (toplam, kullanıcı, sistem ve boşta) ve bellek kullanımı (kullanılan, kullanılabilir, sıkıştırılmış, önbelleğe alınmış, takas alanı ve bellek baskısı);",
+            "şu anda çalışan uygulamalar ve işlemler — adları, işlem kimlikleri, CPU ve bellek kullanımı, başlatma zamanları, iş parçacığı sayıları ve dosya konumları;",
+            "depolama kapasitesi ve boş alan;",
+            "MacBook'larda pil bilgileri: şarj, şarj durumu, güç kaynağı, döngü sayısı, kapasiteler ve macOS'un raporladığı pil durumu;",
+            "Mac donanım bilgileri: model ve model tanımlayıcısı, çip, CPU ve GPU çekirdekleri, bellek boyutu, ekranlar ve Mac'inizin ağ ana bilgisayar adı;",
+            "macOS sürümü, derlemesi ve çekirdek sürümü, çalışma süresi ve macOS'un Mac'inizde tuttuğu bir dosyadan okunan kendi Yazılım Güncelleme kontrolünün sonucu."
+          ]
+        },
+        { "p": "Bu bilgiler yalnızca Performans panelini görüntülemek için kullanılır. Yerel olarak işlenir, yalnızca Uygulama açıkken bellekte tutulur (kısa süreli grafikler son 60 saniyeyi kapsar ve çıktığınızda atılır) ve diske yazılmaz, yüklenmez, paylaşılmaz, satılmaz veya analitik için kullanılmaz. Uygulama, Mac'inizin seri numarasını okumaz ve güncellemeleri kontrol etmek için Apple'ın sunucularıyla iletişime geçmez." },
+        { "p": "İzleme yalnızca Performans ekranı açıkken çalışır ve Uygulamanın penceresi gizlendiğinde duraklar." }
+      ]
+    },
+    "app-sharing-logs": {
+      "title": "Uygulama: bizimle bilgi paylaşmayı seçtiğinizde",
+      "body": [{ "p": "Destek ile iletişime geçerseniz, bize ekran görüntüleri veya Uygulamanın günlük dosyalarını göndermeyi seçebilirsiniz. Günlükler Mac'inizden dosya yolları içerebilir, bu yüzden göndermeden önce lütfen bunları gözden geçirin. Gönderdiğiniz her şeyi yalnızca talebinize yardımcı olmak için kullanırız." }]
+    },
+    "website": {
+      "title": "Web Sitesi: topladıklarımız",
+      "body": [
+        { "p": "Web Sitesi statik bir sitedir. Çerez, analitik, reklam, izleme pikseli, sosyal medya widget'ı veya üçüncü taraf betik ya da yazı tipi kullanmaz ve hiçbir kullanıcı hesabı veya formu yoktur. Tarayıcınız, her site için yaptığı gibi sayfaların önbelleğe alınmış bir kopyasını saklayabilir." },
+        { "p": "<b>Barındırma günlükleri.</b> Web Sitesi {{hostingProvider}} tarafından sunulur. Her web barındırıcısı gibi, sayfaları sunmak ve hizmeti korumak için gereken teknik bilgileri — IP adresiniz, tarayıcı kullanıcı aracınız, istenen sayfa, yönlendiren sayfa ve isteğin zamanı gibi — otomatik olarak işler. Bu, barındırma sağlayıcısının kendi şartları ve gizlilik politikası kapsamında ele alınır ve bunu başka hiçbir bilgiyle birleştirmeyiz." },
+        { "p": "<b>İndirmeler.</b> Uygulamanın yükleyici dosyası {{downloadHost}} üzerinden sunulur; indirdiğinizde aynı türde teknik istek bilgisini işler." },
+        { "p": "<b>E-posta.</b> Bize e-posta gönderirseniz (örneğin Destek sayfası üzerinden), e-posta adresinizi, varsa adınızı ve yazdığınız veya eklediğiniz her şeyi alırız. Bunu yalnızca size yanıt vermek ve geri bildiriminize dayanarak Uygulamayı geliştirmek için kullanırız." }
+      ]
+    },
+    "website-cookies": {
+      "title": "Web Sitesi: çerezler",
+      "body": [{ "p": "Web Sitesi çerez ayarlamaz veya takip için yerel depolama gibi benzer teknolojiler kullanmaz. Bu durum değişirse, önce bu politikayı güncelleyeceğiz ve gerektiğinde onayınızı isteyeceğiz." }]
+    },
+    "third-parties": {
+      "title": "Üçüncü taraf hizmetler ve paylaşım",
+      "body": [
+        { "p": "Kişisel bilgileri satmayız, kiralamayız veya takas etmeyiz ve bunları reklam için paylaşmayız. Dahil olan tek üçüncü taraflar şunlardır:" },
+        { "ul": ["yukarıda açıklandığı şekilde istek bilgisini işleyen Web Sitesi barındırıcımız ve indirme barındırıcımız; ve", "bize gönderdiğiniz destek e-postalarını saklayan e-posta sağlayıcımız."] },
+        { "p": "Yasa gerektirdiğinde veya haklarımızı ya da başkalarının güvenliğini korumak için de bilgi açıklayabiliriz." }
+      ]
+    },
+    "legal-bases": {
+      "title": "İşleme için yasal dayanaklar",
+      "body": [{ "p": "AB veya İngiltere GDPR'si gibi yasaların uygulandığı durumlarda, Web Sitesini işletmek ve güvence altına almak ile mesajlara yanıt vermek için meşru menfaatlerimize ve bizimle iletişime geçtiğinizde atmanızı istediğimiz adımlara dayanırız. Uygulamanın Mac'inizdeki yerel işlemesi sizin kontrolünüzdedir ve bize kişisel veri gelmesini içermez." }]
+    },
+    "retention": {
+      "title": "Veri saklama",
+      "body": [
+        {
+          "ul": [
+            "<b>Uygulama verileri</b>, siz kaldırana kadar Mac'inizde kalır (Ayarlar → Tüm verileri sıfırla veya “Uygulama: Mac'inizde saklanan bilgiler” altında listelenen klasörleri silerek). Uygulama, ne kadar geçmiş ve günlük verisi tuttuğunu otomatik olarak sınırlar.",
+            "<b>Barındırma ve indirme günlükleri</b>, barındırma sağlayıcılarının politikalarına göre saklanır.",
+            "<b>Destek e-postaları</b>, size yardımcı olmak için gerektiği kadar ve sonrasında makul bir süre daha saklanır, ardından yasal nedenlerle saklamamız gerekmedikçe silinir."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "title": "Güvenlik",
+      "body": [{ "p": "Uygulama dosyalarınızı yerel olarak işlediğinden ve iletmediğinden, bu veriler için ana koruma Mac'inizin kendi güvenliğidir. Uygulama, sistem konumlarını ve hassas görünen dosyaları kaldırmaya karşı korumalar içerir ve öğeleri yalnızca Çöp Kutusu'na taşır. Web Sitesi HTTPS üzerinden sunulur. Hiçbir depolama veya iletim yöntemi tamamen güvenli değildir, ancak sahip olduğumuz tüm bilgileri korumak için çalışırız." }]
+    },
+    "your-rights": {
+      "title": "Haklarınız",
+      "body": [{ "p": "Yaşadığınız yere bağlı olarak, kişisel bilgilerinizin işlenmesine erişme, düzeltme, silme, kısıtlama veya itiraz etme ve veri taşınabilirliği haklarına sahip olabilirsiniz. Çok az şey tuttuğumuzdan — genellikle yalnızca bize gönderdiğiniz e-postalar — bu hakları kullanmanın en basit yolu {{privacyEmail}} adresine e-posta göndermektir. Ayrıca yerel veri koruma otoritenize şikayette bulunma hakkınız da vardır." }]
+    },
+    "children": {
+      "title": "Çocukların gizliliği",
+      "body": [{ "p": "Uygulama ve Web Sitesi 13 yaşından küçük çocuklara (veya yaşadığınız yerdeki eşdeğer asgari yaşa) yönelik değildir ve bilerek çocuklardan kişisel bilgi toplamayız. Bir çocuğun bize kişisel bilgi gönderdiğini düşünüyorsanız, bizimle iletişime geçin, bunu sileriz." }]
+    },
+    "international": {
+      "title": "Uluslararası kullanıcılar",
+      "body": [{ "p": "Uygulama her yerde aynı şekilde çalışır: verileriniz Mac'inizde kalır. Barındırma ve e-posta sağlayıcılarımız tarafından işlenen bilgiler, bu sağlayıcıların sunduğu güvenceler altında, kendi ülkeniz dışındaki ülkelerde işlenebilir." }]
+    },
+    "changes": {
+      "title": "Bu politikadaki değişiklikler",
+      "body": [{ "p": "Uygulama veya Web Sitesi bilgileri işleme şeklini değiştirirse bu politikayı güncelleyeceğiz — örneğin bir ağ özelliği ekleyen herhangi bir Uygulama sürümünü yayınlamadan önce. Üstteki “Son güncelleme” tarihi en son ne zaman revize edildiğini gösterir. Önemli değişiklikler sürüm notlarında da belirtilecektir." }]
+    },
+    "contact": {
+      "title": "İletişim",
+      "body": [{ "p": "Gizlilik hakkında sorularınız mı var? {{privacyEmail}} adresine e-posta gönderin veya {{companyName}}, {{companyAddress}} adresine yazın." }]
+    }
+  }
+}

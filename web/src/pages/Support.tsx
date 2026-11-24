@@ -1,75 +1,68 @@
 import type { CSSProperties } from 'react'
-import { Link } from 'react-router'
+import { Trans, useTranslation } from 'react-i18next'
 import { Bug, CircleHelp, Download, Lightbulb, Mail, ScrollText } from 'lucide-react'
 import { APP, SITE } from '@/config/site'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
+import { Link } from '@/components/router'
 
 function mailto(subject: string, body = ''): string {
   const params = new URLSearchParams({ subject, ...(body ? { body } : {}) })
   return `mailto:${SITE.supportEmail}?${params.toString().replace(/\+/g, '%20')}`
 }
 
-const BUG_TEMPLATE = `What happened:
-
-
-What you expected:
-
-
-Steps to reproduce:
-1.
-2.
-
-MacBook Cleaner version: ${APP.version}
-macOS version:
-Mac model / chip:
-`
-
-const FEATURE_TEMPLATE = `What would you like MacBook Cleaner to do?
-
-
-Why would it help you?
-`
-
-const CARDS = [
-  { icon: Mail, color: '#5b6cff', title: 'Email support', body: 'Questions about using the app? Write to us and we’ll get back to you.', href: mailto('MacBook Cleaner support'), cta: SITE.supportEmail, external: true },
-  { icon: Bug, color: '#e5484d', title: 'Report a bug', body: 'Something not working? Opens an email with a short template to fill in.', href: mailto(`Bug report — MacBook Cleaner ${APP.version}`, BUG_TEMPLATE), cta: 'Report a bug', external: true },
-  { icon: Lightbulb, color: '#f5b400', title: 'Request a feature', body: 'Tell us what would make MacBook Cleaner more useful to you.', href: mailto('Feature request — MacBook Cleaner', FEATURE_TEMPLATE), cta: 'Suggest a feature', external: true },
-  { icon: Download, color: '#19c39a', title: 'Installation help', body: 'Step-by-step install instructions and what to do about the first-launch security warning.', href: '/download#install', cta: 'Installation guide', external: false },
-  { icon: CircleHelp, color: '#13b5e0', title: 'FAQ', body: 'Safety, privacy, permissions, compatibility and uninstalling — answered.', href: '/faq', cta: 'Browse the FAQ', external: false },
-]
+const CARD_META = [
+  { key: 'email', icon: Mail, color: '#5b6cff', external: true },
+  { key: 'bug', icon: Bug, color: '#e5484d', external: true },
+  { key: 'feature', icon: Lightbulb, color: '#f5b400', external: true },
+  { key: 'install', icon: Download, color: '#19c39a', href: '/download#install', external: false },
+  { key: 'faq', icon: CircleHelp, color: '#13b5e0', href: '/faq', external: false },
+] as const
 
 export function SupportPage() {
+  const { t } = useTranslation('support')
+
+  const bugTemplate = `${t('bugTemplate.body', { version: APP.version })}`
+  const featureTemplate = t('featureTemplate.body')
+  const hrefFor = (key: (typeof CARD_META)[number]['key']): string => {
+    if (key === 'email') return mailto(t('emailSubject'))
+    if (key === 'bug') return mailto(t('bugTemplate.subject', { version: APP.version }), bugTemplate)
+    if (key === 'feature') return mailto(t('featureTemplate.subject'), featureTemplate)
+    return ''
+  }
+
   return (
     <div className="page">
       <section className="page-hero">
         <div className="container">
-          <SectionHeading level={1} eyebrow="Support" title="How can we help?" intro="Most answers are in the FAQ. For anything else, email is the fastest way to reach us." />
+          <SectionHeading level={1} eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} />
         </div>
       </section>
       <section className="section section--flush">
         <div className="container">
           <div className="support-grid">
-            {CARDS.map((c, i) => {
+            {CARD_META.map((c, i) => {
               const Icon = c.icon
+              const cta = c.key === 'email' ? SITE.supportEmail : t(`cards.${c.key}.cta`)
+              const href = 'href' in c ? c.href : hrefFor(c.key)
               const inner = (
                 <>
                   <span className="icon-tile" aria-hidden="true">
                     <Icon size={22} />
                   </span>
-                  <h2>{c.title}</h2>
-                  <p>{c.body}</p>
-                  <span className="support-card__cta">{c.cta} →</span>
+                  <h2>{t(`cards.${c.key}.title`)}</h2>
+                  <p>{t(`cards.${c.key}.body`)}</p>
+                  <span className="support-card__cta">{cta} →</span>
                 </>
               )
               return (
-                <Reveal key={c.title} className="support-card" delay={(i % 3) * 60} style={{ '--c': c.color } as CSSProperties}>
+                <Reveal key={c.key} className="support-card" delay={(i % 3) * 60} style={{ '--c': c.color } as CSSProperties}>
                   {c.external ? (
-                    <a href={c.href} className="support-card__link">
+                    <a href={href} className="support-card__link">
                       {inner}
                     </a>
                   ) : (
-                    <Link to={c.href} className="support-card__link">
+                    <Link to={href} className="support-card__link">
                       {inner}
                     </Link>
                   )}
@@ -81,10 +74,9 @@ export function SupportPage() {
           <Reveal className="callout callout--info">
             <ScrollText size={22} aria-hidden="true" />
             <div>
-              <h2>Sending diagnostic logs</h2>
+              <h2>{t('logsTitle')}</h2>
               <p>
-                For tricky problems we may ask for the app’s logs. They’re stored only on your Mac, in <code>~/Library/Logs/{APP.bundleId}</code>, and are never sent automatically. Logs can contain file paths from your Mac — look them over and remove
-                anything you’d rather not share before attaching them.
+                <Trans t={t} i18nKey="logsBody" values={{ bundleId: APP.bundleId }} components={{ code: <code /> }} />
               </p>
             </div>
           </Reveal>

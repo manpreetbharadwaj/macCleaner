@@ -1,0 +1,198 @@
+{
+  "hero": {
+    "pill": "Version {{version}} · Conçu pour macOS",
+    "title1": "Nettoyer. Surveiller.",
+    "title2": "Comprendre votre Mac.",
+    "lead": "Libérez du stockage, comprenez l’utilisation de la mémoire, surveillez les applications actives, vérifiez l’état de la batterie et consultez les informations importantes sur votre Mac — depuis un tableau de bord unique et simple. Vous validez tout. Rien n’est supprimé définitivement.",
+    "exploreFeatures": "Découvrir les fonctionnalités",
+    "requirement": "{{macos}} ou version ultérieure",
+    "chips": {
+      "trash": { "title": "Déplacé vers la Corbeille", "body": "Toujours récupérable" },
+      "personal": { "title": "Fichiers personnels", "body": "Jamais présélectionnés" },
+      "scan": { "title": "Analyse sur votre Mac", "body": "Rien n’est envoyé" }
+    }
+  },
+  "coreFeatures": {
+    "eyebrow": "Outils de nettoyage",
+    "title": "Huit outils de nettoyage. Une interface sereine.",
+    "intro": "Chaque outil indique ce qu’il a trouvé, pourquoi c’est présent et ce qui se passe si vous le supprimez — pour nettoyer en toute confiance plutôt qu’à l’aveugle."
+  },
+  "scanDemo": {
+    "eyebrow": "Voir comment ça marche",
+    "title1": "Une analyse. ",
+    "title2": "Tout est trié.",
+    "intro": "Smart Clean parcourt en une seule passe les caches, journaux, résidus d’applications, outils de développement et vos téléchargements, puis trie les résultats en groupes clairs — chacun divisé entre ce qui peut être nettoyé en toute sécurité et ce qui mérite un second regard.",
+    "storageAnalyzed": "Stockage analysé",
+    "itemsFound": "Éléments trouvés",
+    "safeToClean": "Sûr à nettoyer",
+    "readyToScan": "Prêt à analyser",
+    "scanning": "Analyse de votre Mac…",
+    "canFreeUp": "Votre Mac peut libérer {{total}} Go",
+    "foundSoFar": "{{amount}} Go trouvés jusqu’ici",
+    "safeSummary": "{{amount}} Go peuvent être nettoyés sans risque immédiatement. Le reste est à vous de l’examiner.",
+    "checking": "Vérification…",
+    "items": "éléments",
+    "footNote": "Exemple d’analyse utilisant les données d’exemple de l’application. Les résultats sur votre Mac seront différents.",
+    "replay": "Rejouer",
+    "steps": {
+      "systemJunk": "Fichiers système",
+      "browserCaches": "Caches du navigateur",
+      "appLeftovers": "Résidus d’applications",
+      "logsCrashReports": "Journaux et rapports de plantage",
+      "developerJunk": "Fichiers de développement",
+      "oldDownloads": "Anciens téléchargements"
+    }
+  },
+  "performanceMonitor": {
+    "eyebrow": "Nouveau · Performances",
+    "title1": "Moniteur de performances Mac. ",
+    "title2": "Intégré.",
+    "intro": "MacBook Cleaner est bien plus qu’un nettoyeur de stockage. L’onglet Performances montre en langage clair comment se porte votre Mac en ce moment, sans se transformer en outil de développeur.",
+    "shotAlt": "Tableau de bord des performances de MacBook Cleaner affichant des jauges de CPU, mémoire, stockage et batterie, un résumé de l’état du Mac et des graphiques en direct",
+    "shotNote": "Affiché avec les données d’exemple de l’application. Sur votre Mac, chaque valeur est lue en direct depuis macOS."
+  },
+  "runningApps": {
+    "eyebrow": "Applications actives",
+    "title1": "Découvrez quelles applications utilisent ",
+    "title2": "le plus de mémoire et de CPU.",
+    "intro": "Applications actives liste ce qui est ouvert sur votre Mac avec sa mémoire, son CPU et sa durée d’exécution. Les processus auxiliaires sont comptabilisés avec leur application, si bien qu’un navigateur avec des dizaines d’onglets affiche un total honnête.",
+    "checks": ["Trier par mémoire, CPU, durée d’exécution ou nom", "Applications par défaut — processus en arrière-plan et système uniquement sur demande", "La mémoire utilise la même mesure que le Moniteur d’activité"],
+    "headers": { "app": "Application", "cpu": "CPU", "memory": "Mémoire", "running": "Durée" },
+    "note": "Valeurs d’exemple à titre d’illustration — pas des résultats de benchmark."
+  },
+  "battery": {
+    "eyebrow": "État de la batterie",
+    "title": "Comprenez votre batterie.",
+    "intro": "Sur les MacBook, découvrez exactement ce que macOS sait de votre batterie — sans supposition ni note inventée.",
+    "checks": ["Pourcentage de batterie et état de charge", "Cycles de charge — le nombre de cycles de charge complets effectués", "Capacité maximale comparée à l’état neuf", "État de la batterie, tel qu’affiché dans Réglages Système"],
+    "finePrint": "MacBook Cleaner indique des informations sur la batterie ; il ne peut ni réparer ni améliorer sa santé physique. Les Mac de bureau n’affichent tout simplement pas cette section.",
+    "stats": { "cycleCount": "Cycles de charge", "maxCapacity": "Capacité maximale", "condition": "État", "power": "Alimentation", "conditionValue": "Normal", "powerValue": "Batterie" },
+    "note": "Valeurs d’exemple à titre d’illustration."
+  },
+  "macInfo": {
+    "eyebrow": "Infos Mac",
+    "title1": "Tout ce qui compte ",
+    "title2": "sur votre Mac.",
+    "intro": "Modèle, puce, mémoire, stockage, écrans, version de macOS et disponibilité — dans un seul tableau de bord au lieu de cinq endroits différents. MacBook Cleaner indique aussi si la propre vérification des mises à jour de macOS en a trouvé une, avec un raccourci vers Mise à jour de logiciels.",
+    "finePrint": "Lu localement depuis macOS et jamais envoyé. Votre numéro de série n’est jamais lu.",
+    "card": { "thisMac": "Ce Mac", "model": "MacBook Pro" },
+    "specs": { "model": "Modèle du Mac", "chip": "Puce", "memory": "Mémoire", "storage": "Stockage", "macos": "macOS", "uptime": "Disponibilité" },
+    "note": "Valeurs d’exemple à titre d’illustration."
+  },
+  "howItWorks": {
+    "eyebrow": "Comment ça marche",
+    "title": "Quatre étapes. Vous gardez le contrôle à chacune d’elles.",
+    "steps": [
+      { "title": "Analysez votre Mac", "body": "Un clic vérifie les caches, journaux, outils de développement, applications, téléchargements et vos plus gros fichiers — tout sur votre Mac." },
+      { "title": "Examinez les recommandations", "body": "Les éléments sont étiquetés Sûr ou À vérifier, avec une explication simple de ce qu’est chacun. Décochez tout ce que vous souhaitez conserver." },
+      { "title": "Déplacer vers la Corbeille", "body": "Confirmez, et les éléments approuvés sont déplacés vers la Corbeille. Vos propres fichiers nécessitent toujours une confirmation supplémentaire." },
+      { "title": "Récupérer de l’espace", "body": "Vous avez changé d’avis ? Restaurez n’importe quoi depuis la Corbeille. Une fois sûr, videz-la pour récupérer l’espace." }
+    ]
+  },
+  "storageSection": {
+    "eyebrow": "Aperçu du stockage",
+    "title1": "Découvrez où votre espace ",
+    "title2": "est réellement parti.",
+    "intro": "MacBook Cleaner mesure vos dossiers réels et les affiche sous forme d’un anneau de stockage coloré — les mêmes catégories que dans l’application.",
+    "checks": ["Tailles en gigaoctets décimaux, comme macOS indique le stockage", "L’espace non attribuable est honnêtement étiqueté comme Données système", "Les bibliothèques comme Photos sont mesurées, jamais ouvertes ni décortiquées"]
+  },
+  "storageViz": {
+    "modes": { "used": "Utilisé", "recoverable": "Potentiellement récupérable", "free": "Libre" },
+    "centerLabels": { "used": "Utilisé", "recoverable": "Récupérable", "free": "Libre" },
+    "ofTotal": "sur {{total}} Go",
+    "potentiallyRecoverable": "potentiellement récupérable",
+    "percentOfDisk": "{{percent}} % du disque",
+    "afterReview": "après votre vérification",
+    "diskAriaLabel": "Disque d’exemple : {{used}} Go utilisés, {{free}} Go libres, {{recoverable}} Go potentiellement récupérables après vérification",
+    "legendAriaLabel": "{{label}} : {{used}} utilisés, {{recoverable}} potentiellement récupérables. {{note}}",
+    "defaultNote": "Exemple illustratif utilisant les données d’exemple de l’application — les chiffres de votre Mac seront différents. Survolez ou sélectionnez une catégorie pour plus de détails.",
+    "categories": {
+      "applications": { "label": "Applications", "note": "Applications et résidus d’applications supprimées" },
+      "documents": { "label": "Documents", "note": "Documents et Bureau — vérifiés, jamais présélectionnés" },
+      "photos": { "label": "Photos", "note": "Votre photothèque est mesurée, jamais modifiée" },
+      "videos": { "label": "Vidéos", "note": "Enregistrements volumineux que vous pouvez vérifier" },
+      "downloads": { "label": "Téléchargements", "note": "Anciens installeurs, images disque et archives" },
+      "cache": { "label": "Cache", "note": "Caches d’applications et de navigateur qui se reconstituent d’eux-mêmes" },
+      "other": { "label": "Autre", "note": "Musique, mail, messages et autres données d’applications" },
+      "system-data": { "label": "Données système", "note": "macOS et espace non attribuable à un dossier" }
+    }
+  },
+  "safeCleaning": {
+    "eyebrow": "Conçu pour la sécurité",
+    "title1": "Vous gardez le contrôle. ",
+    "title2": "Toujours.",
+    "intro": "Les outils de nettoyage nécessitent un accès profond à votre disque. MacBook Cleaner est conçu pour qu’une erreur soit difficile à commettre — et facile à annuler.",
+    "levels": {
+      "safe": { "label": "Sûr", "title": "Se reconstitue de lui-même", "body": "Caches et journaux que vos applications recréent elles-mêmes. Présélectionnés pour vous.", "example": "Xcode DerivedData", "size": "18,6 Go" },
+      "review": { "label": "À vérifier", "title": "Mérite un premier coup d’œil", "body": "Des éléments qui peuvent contenir des données auxquelles vous tenez. Jamais présélectionnés.", "example": "Appareils simulateur", "size": "6,2 Go" },
+      "protected": { "label": "Protégé", "title": "Ne peut pas être sélectionné", "body": "Tout ce qui ressemble à une sauvegarde, un trousseau ou une clé — refusé par la couche de sécurité native de l’application.", "example": "Sauvegarde MobileSync", "size": "Verrouillé" }
+    },
+    "principles": [
+      { "title": "Vérification avant toute suppression", "body": "Chaque nettoyage montre exactement ce qui sera déplacé et demande votre confirmation." },
+      { "title": "Toujours la Corbeille d’abord", "body": "Les éléments vont dans la Corbeille — jamais supprimés définitivement. L’application ne vide jamais votre Corbeille." },
+      { "title": "Vos fichiers, votre décision", "body": "Téléchargements, Bureau, Documents et Films ne sont jamais présélectionnés et nécessitent toujours une confirmation supplémentaire." },
+      { "title": "Des garde-fous impossibles à contourner", "body": "Une vérification native refuse les dossiers système, votre dossier personnel, ses dossiers principaux et tout ce qui se trouve en dehors de votre dossier personnel." },
+      { "title": "« Ne plus jamais suggérer »", "body": "Excluez n’importe quel fichier ou dossier et il ne sera plus suggéré — manuellement ou selon une planification." },
+      { "title": "Pas d’automatisation surprise", "body": "Le nettoyage automatique est désactivé par défaut, nécessite un consentement explicite et ne touche que six caches de développement." }
+    ]
+  },
+  "beforeAfter": {
+    "eyebrow": "Avant & après",
+    "title": "De « où est donc passé tout ça ? » à « ah, c’était donc là. »",
+    "intro": "Faites glisser le curseur pour comparer. MacBook Cleaner n’agrandit pas votre disque — il le rend compréhensible, pour que récupérer de l’espace devienne une décision plutôt qu’une supposition.",
+    "before": "Avant",
+    "after": "Après",
+    "systemDataUnknown": "Données système : ???",
+    "withoutClearView": "Sans vue claire",
+    "withApp": "Avec MacBook Cleaner",
+    "beforeList": ["La barre de stockage indique « Données système » et pas grand-chose d’autre", "Des fichiers volumineux enfouis au fond des dossiers", "Des caches et journaux s’accumulent sans qu’on le remarque", "D’anciens installeurs et images disque dans Téléchargements", "Aucune idée de ce qu’il est sûr de supprimer"],
+    "afterList": ["Chaque catégorie mesurée et étiquetée", "Les plus gros fichiers listés en premier, avec l’Aperçu rapide", "Caches regroupés et marqués Sûr ou À vérifier", "Téléchargements triés par âge et par type", "Espace récupéré selon vos propres conditions — via la Corbeille"]
+  },
+  "privacyBand": {
+    "eyebrow": "Confidentialité d’abord",
+    "title": "Vos fichiers restent sur votre Mac.",
+    "lead": "Un nettoyeur a besoin d’un accès profond à votre disque. C’est exactement pourquoi MacBook Cleaner est conçu pour nécessiter le moins de confiance possible de votre part.",
+    "points": [
+      { "title": "Analysé sur votre Mac", "body": "Chaque analyse et chaque nettoyage s’exécutent localement. Aucun service cloud n’est impliqué." },
+      { "title": "Rien n’est envoyé", "body": "Aucune analyse, télémétrie ou rapport de plantage. Vos fichiers, applications actives, détails de batterie et de Mac ne quittent jamais votre Mac." },
+      { "title": "Aucun compte requis pour l’essayer", "body": "Pas d’inscription, pas d’e-mail, pas de carte bancaire — téléchargez-la et votre essai gratuit démarre. Acheter une licence à vie plus tard ne nécessite que la clé de votre achat, jamais un nouveau compte." },
+      { "title": "Le contenu reste non lu", "body": "L’application examine les tailles et les dates. Le contenu des fichiers n’est lu que pour confirmer que deux fichiers sont des doublons exacts." }
+    ],
+    "permissionsHeading": "Ce que macOS peut vous demander d’autoriser — et pourquoi",
+    "permissions": [
+      { "title": "Téléchargements, Bureau et Documents", "body": "macOS demande avant que l’application puisse examiner ces dossiers, pour trouver les fichiers volumineux et les anciens téléchargements." },
+      { "title": "Contrôler le Finder", "body": "Demandé la première fois que vous nettoyez. L’application demande au Finder de déplacer les éléments vers la Corbeille, pour que « Replacer » fonctionne." },
+      { "title": "Accès complet au disque — facultatif", "body": "Permet à l’application de mesurer des emplacements que macOS garde privés, comme certains caches et la Corbeille. L’application fonctionne sans." },
+      { "title": "Notifications — facultatif", "body": "Uniquement pour les rappels et résumés du nettoyage planifié." }
+    ],
+    "footNote": "Vous pouvez vérifier ou révoquer chacune de ces autorisations dans Réglages Système → Confidentialité et sécurité.",
+    "readPolicy": "Lire la politique de confidentialité →"
+  },
+  "gallery": {
+    "eyebrow": "Captures d’écran",
+    "title": "Conçu pour se sentir chez lui sur votre Mac.",
+    "intro": "De vrais écrans de l’application, montrés avec ses données d’exemple intégrées. Les apparences claire et sombre suivent votre système.",
+    "shots": {
+      "dashboard": { "label": "Tableau de bord", "alt": "Tableau de bord avec anneau de stockage et résumé Smart Clean" },
+      "scanning": { "label": "Analyse", "alt": "Analyse Smart Clean en cours" },
+      "results": { "label": "Smart Clean", "alt": "Résultats Smart Clean regroupés par catégorie" },
+      "performance": { "label": "Performances", "alt": "Tableau de bord des performances avec CPU et mémoire en direct" },
+      "performance-apps": { "label": "Applications actives", "alt": "Applications actives triées par mémoire" },
+      "performance-battery": { "label": "Batterie", "alt": "État de la batterie avec cycles de charge et capacité maximale" },
+      "complete": { "label": "Nettoyage terminé", "alt": "Résumé du nettoyage terminé montrant l’espace déplacé vers la Corbeille" },
+      "storage": { "label": "Stockage", "alt": "Répartition du stockage par catégorie" },
+      "dashboard-dark": { "label": "Mode sombre", "alt": "Tableau de bord en mode sombre" }
+    }
+  },
+  "faqPreview": {
+    "eyebrow": "FAQ",
+    "title": "Vos questions, nos réponses.",
+    "seeAll": "Voir toutes les questions →"
+  },
+  "finalCta": {
+    "defaultTitle": "Offrez un peu d’air à votre Mac.",
+    "featuresTitle": "Prêt à voir ce qui occupe de l’espace ?",
+    "meta": "Version {{version}} · {{macos}} ou version ultérieure · {{architecture}}",
+    "installationGuide": "Guide d’installation"
+  }
+}

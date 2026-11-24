@@ -137,7 +137,7 @@
   padding: 10px 16px;
   border-radius: 14px;
   font-size: 0.9rem;
-  text-align: left;
+  text-align: start;
   color: var(--ink-2);
   background: var(--surface);
   border: 1px solid var(--line);
@@ -355,7 +355,7 @@
 
 .howto li {
   position: relative;
-  padding-left: 42px;
+  padding-inline-start: 42px;
   color: var(--ink-2);
   counter-increment: howto;
 }
@@ -363,7 +363,7 @@
 .howto li::before {
   content: counter(howto);
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   top: 0;
   display: grid;
   place-items: center;
@@ -486,6 +486,26 @@
   margin-top: 24px;
 }
 
+.legal__notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, #f5b400 14%, transparent);
+  border: 1px solid color-mix(in srgb, #f5b400 35%, transparent);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.legal__notice svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #f5b400;
+}
+
 .summary-box {
   padding: 22px 24px;
   border-radius: var(--radius);
@@ -578,7 +598,7 @@
 .prose ul {
   display: grid;
   gap: 8px;
-  padding-left: 1.25em;
+  padding-inline-start: 1.25em;
   list-style: disc;
 }
 
@@ -677,7 +697,7 @@
   display: grid;
   gap: 8px;
   margin-top: 10px;
-  padding-left: 1.2em;
+  padding-inline-start: 1.2em;
   list-style: disc;
 }
 
@@ -719,7 +739,7 @@
   padding: 10px 16px;
   border-radius: 14px;
   font-size: 0.92rem;
-  text-align: left;
+  text-align: start;
   color: var(--ink-2);
   background: var(--mint-soft);
   border: 1px solid color-mix(in srgb, var(--mint) 35%, transparent);
@@ -742,9 +762,10 @@
   display: grid;
   gap: 6px;
   margin-top: 22px;
-  padding: 16px 20px 16px 40px;
+  padding-block: 16px;
+  padding-inline: 40px 20px;
   max-width: 460px;
-  text-align: left;
+  text-align: start;
   list-style: decimal;
   font-size: 0.92rem;
   color: var(--ink-2);

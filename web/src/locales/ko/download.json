@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "MacBook Cleaner 앱 아이콘",
+    "title": "macOS용 MacBook Cleaner",
+    "lead": "Mac을 위한 저장공간 정리 및 성능 모니터링 — 모든 처리는 로컬에서 이루어집니다.",
+    "started": "다운로드가 시작되었습니다 — <b>{{fileName}}</b>. 완료되면 아래 단계를 따라 진행하세요.",
+    "fileInfo": "{{fileName}}{{sizePart}} · 디스크 이미지(.dmg)",
+    "quickSteps": ["MacBook Cleaner를 다운로드합니다.", "다운로드한 DMG 파일을 엽니다.", "MacBook Cleaner를 응용 프로그램 폴더로 드래그합니다."],
+    "quickStepsNotarizedLast": "앱을 실행합니다.",
+    "quickStepsUnnotarizedLast": "앱을 실행합니다 — 처음에는 <a>그래도 열기</a>를 선택하세요.",
+    "specs": { "version": "버전 {{version}}", "released": "{{date}} 출시", "built": "{{date}} 빌드", "macos": "{{macos}} 이상" },
+    "links": { "releaseNotes": "릴리스 노트", "privacy": "개인정보 보호방침", "terms": "이용약관" },
+    "checksumLabel": "SHA-256",
+    "releaseDetailsAria": "릴리스 세부 정보"
+  },
+  "requirements": {
+    "eyebrow": "시스템 요구 사항",
+    "title": "내 Mac에서 실행될까요?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}}({{macosVersion}}) 이상",
+    "processor": "프로세서",
+    "intelNote": "이 검증된 빌드는 Intel Mac을 지원하지 않습니다.",
+    "account": "계정",
+    "accountValue": "필요 없음"
+  },
+  "install": {
+    "eyebrow": "설치",
+    "title": "1분 이내에 설치 완료.",
+    "steps": [
+      { "title": "DMG 다운로드", "body": "<b>Mac용 다운로드</b>를 클릭하세요. 디스크 이미지가 다운로드 폴더에 저장됩니다." },
+      { "title": "DMG 열기", "body": "다운로드 폴더에서 <code>{{fileName}}</code>을(를) 더블 클릭하세요. 앱과 응용 프로그램 폴더가 표시된 창이 열립니다." },
+      { "title": "응용 프로그램으로 드래그", "body": "<b>MacBook Cleaner</b>를 응용 프로그램 폴더로 드래그한 다음, Finder 사이드바에서 디스크 이미지를 꺼내세요." },
+      { "title": "앱 실행", "body": "응용 프로그램 또는 런치패드에서 MacBook Cleaner를 여세요. 예약 정리 기능은 응용 프로그램 폴더에서 실행했을 때만 작동합니다." }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "첫 실행",
+    "title": "보안 경고가 표시되나요?",
+    "intro": "지금은 정상적인 현상입니다 — 이유와 함께 앱을 안전하게 여는 방법을 안내해 드립니다.",
+    "noticeTitle": "MacBook Cleaner는 아직 Apple 공증을 받지 않았습니다",
+    "noticeBody1": "Mac App Store 외부에서 배포되는 앱은 일반적으로 Apple Developer ID로 서명되고 공증을 받습니다. 이 버전은 Developer ID 없이 임시 서명되었으며 공증을 받지 않았기 때문에, 처음 열 때 macOS Gatekeeper가 개발자를 확인할 수 없거나 악성 소프트웨어 검사를 할 수 없다고 표시합니다. 이 메시지는 문제가 발견되었다는 뜻이 아니라, Apple이 이 빌드를 검토하지 않았다는 의미입니다.",
+    "noticeBody2": "<b>MacBook Cleaner는 반드시 이 웹사이트에서만 다운로드하세요.</b> 다른 경로로 파일을 받으셨다면 삭제해 주세요.",
+    "howtoTitle": "시스템 설정에서 한 번만 열기",
+    "steps": [
+      "응용 프로그램에서 MacBook Cleaner를 여세요. 경고가 나타나면 <b>완료</b>(또는 <b>취소</b>)를 클릭하세요 — 휴지통으로 옮기지 마세요.",
+      "<b>시스템 설정 → 개인정보 보호 및 보안</b>을 열고 아래로 스크롤하여 <b>보안</b> 섹션을 확인하세요.",
+      "MacBook Cleaner가 차단되었다는 메시지 옆의 <b>그래도 열기</b>를 클릭한 후, 비밀번호나 Touch ID로 확인하세요.",
+      "마지막 대화상자에서 <b>열기</b>를 클릭하세요. macOS가 이 선택을 기억하므로 버전당 한 번만 하면 됩니다."
+    ],
+    "tip": "macOS 14 Sonoma 이하에서는 응용 프로그램에서 앱을 Control 키를 누른 채 클릭하여 <b>열기</b>를 선택한 다음, 다시 <b>열기</b>를 클릭하는 방법도 있습니다."
+  },
+  "afterInstall": {
+    "eyebrow": "설치 후",
+    "title": "알아두면 좋은 사항.",
+    "permissions": { "title": "권한", "body": "처음 정리할 때 macOS는 다운로드, 바탕화면, 서류 접근 권한과 Finder 제어 권한을 요청할 수 있습니다. 전체 디스크 접근 권한은 선택 사항입니다.", "link": "각 권한이 필요한 이유 →" },
+    "updates": { "title": "업데이트", "body": "<b>설정 → 업데이트 확인</b>에서 새 버전을 확인, 다운로드, 검증합니다 — 사용자의 확인 없이는 아무것도 설치되지 않으며, 완료하려면 앱을 한 번 재시작해야 합니다. 설정값은 그대로 유지됩니다." },
+    "uninstalling": { "title": "제거하기", "body": "예약 정리와 로그인 시 실행을 끈 다음, 앱을 휴지통으로 드래그하세요.", "link": "전체 단계 보기 →" },
+    "stuck": "문제가 있으신가요?",
+    "contactSupport": "지원팀에 문의하기 →"
+  }
+}

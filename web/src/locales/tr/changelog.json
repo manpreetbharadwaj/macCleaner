@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Sürüm notları",
+  "title": "Yenilikler",
+  "intro": "MacBook Cleaner'ın her sürümü ve neler değişti.",
+  "latestBadge": "En yeni",
+  "dateUnannounced": "Yayın tarihi duyurulacak",
+  "downloadLatest": "En son sürümü indirin →",
+  "releases": {
+    "firstRelease": {
+      "title": "İlk sürüm",
+      "summary": "MacBook Cleaner'ın ilk kamuya açık sürümü.",
+      "sections": {
+        "cleanupTools": {
+          "heading": "Temizleme araçları",
+          "items": [
+            "Smart Clean: Sistem Çöpü, Tarayıcı Önbellekleri, Uygulama Artıkları, Günlükler ve Çökme Raporları, Geliştirici Çöpü ve Eski İndirmeler olarak gruplanan tek tarama",
+            "Kategoriye göre ölçülmüş dağılım içeren Depolama Gezgini",
+            "500 MB, 1 GB, 5 GB ve 10 GB eşikleri ile tür filtreleri içeren Büyük Dosya Bulucu",
+            "Yaşa göre gruplanmış İndirilenler incelemesi",
+            "Tam içerik SHA-256 doğrulamalı Yinelenen Bulucu",
+            "Uygulama Temizliği: bir uygulamanın önbelleklerini, günlüklerini ve destek dosyalarını görüntüleyin; temizleyin veya uygulamayı kaldırın",
+            "Sistem Çöpü ve Geliştirici Temizliği (Xcode, simülatörler, npm, Yarn, pnpm, Gradle, CocoaPods, Android emülatör imajları)"
+          ]
+        },
+        "performance": {
+          "heading": "Performans",
+          "items": [
+            "Canlı CPU ve bellek grafikleri, bellek baskısı ve takas alanı içeren yeni Performans sekmesi",
+            "Çalışan Uygulamalar: uygulama başına CPU, bellek ve çalışma süresi, gruplanmış yardımcı işlemler ve bir ayrıntı paneliyle",
+            "MacBook'larda Pil Sağlığı: macOS tarafından raporlanan şarj, döngü sayısı, maksimum kapasite ve durum",
+            "Mac Bilgisi: model, çip, çekirdekler, GPU, bellek, ekranlar, macOS sürümü ve derlemesi, çalışma süresi",
+            "macOS'un kendi Yazılım Güncelleme kontrolünden macOS güncelleme durumu, Sistem Ayarları'na kısayolla",
+            "Uydurma puanlar olmadan açıklayıcı durumlarla Mac Sağlığı özeti"
+          ]
+        },
+        "automation": {
+          "heading": "Otomasyon",
+          "items": ["“Bana hatırlat” ve isteğe bağlı “Otomatik temizle” modlarıyla günlük, haftalık veya aylık Zamanlanmış Temizlik", "Hatırlatmalar ve özetler için yerel macOS bildirimleri", "İsteğe bağlı Girişte Başlat"]
+        },
+        "safety": {
+          "heading": "Güvenlik",
+          "items": [
+            "Kaldırılan her şey Çöp Kutusu'na gider; hiçbir şey kalıcı olarak silinmez",
+            "Sistem konumları, ana klasörünüzün ana klasörleri ve yedek, anahtarlık veya anahtar gibi görünen yollar için yerel koruma",
+            "Kişisel dosyalar asla önceden seçilmez ve her zaman onay gerektirir",
+            "Tarama hariç tutmaları (“bunu bir daha önerme”)"
+          ]
+        },
+        "interface": {
+          "heading": "Arayüz",
+          "items": ["Açık, koyu ve sistem görünümü", "İsteğe bağlı Tam Disk Erişimi adımı içeren rehberli ilk çalıştırma karşılaması"]
+        }
+      }
+    }
+  }
+}

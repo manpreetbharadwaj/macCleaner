@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Bedankt",
+  "title": "Bedankt voor je aankoop",
+  "intro": "Controleer je e-mail voor je licentiesleutel, open daarna MacBook Cleaner en kies Licentie activeren. Je aankoop is pas ontgrendeld zodra de app zelf je sleutel bevestigt — deze pagina is slechts een handige kopie ervan.",
+  "licenseKeyTitle": "Je licentiesleutel",
+  "copy": "Kopiëren",
+  "copied": "Gekopieerd",
+  "sentCopyTo": "Er is ook een kopie verstuurd naar {{email}}.",
+  "checkEmailTitle": "Controleer je e-mail",
+  "noKeyFound": "We konden geen licentiesleutel vinden in de link van deze pagina. Dodo Payments mailt je sleutel direct na het afrekenen — zoek naar een bericht van Dodo Payments, of controleer je spammap.",
+  "howToActivate": "Zo activeer je hem",
+  "activateSteps": ["Open MacBook Cleaner (download het hieronder als je dat nog niet hebt gedaan).", "Ga naar Instellingen → Licentie.", "Plak je licentiesleutel en tik op Activeren."],
+  "oneMacNote": "Je licentie werkt op één Mac tegelijk. Je kunt hem op elk moment deactiveren en overzetten naar een andere Mac via Instellingen → Licentie."
+}

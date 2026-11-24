@@ -1,7 +1,8 @@
 import { useEffect, useId, useState } from 'react'
-import { Link, useLocation } from 'react-router'
+import { useLocation } from 'react-router'
 import { ChevronDown } from 'lucide-react'
 import type { FaqItem } from '@/data/faq'
+import { Link } from '@/components/router'
 import { cx } from '@/utils/format'
 
 /**

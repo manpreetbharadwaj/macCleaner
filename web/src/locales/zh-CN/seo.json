@@ -1,0 +1,50 @@
+{
+  "/": {
+    "title": "MacBook Cleaner — Mac 存储清理与性能监控工具",
+    "description": "安全释放 Mac 存储空间，了解您的 Mac 运行状况。MacBook Cleaner 可查找缓存、大文件和重复文件，并显示 CPU 和内存使用率、正在运行的应用、电池健康状况以及 Mac 系统信息——全部在本地处理。"
+  },
+  "/features": {
+    "title": "功能 — Mac 清理工具、CPU 和内存监控、电池健康 | MacBook Cleaner",
+    "description": "智能清理、存储空间浏览器、大文件和重复文件查找器、应用清理，以及 Mac 性能监控：CPU 和内存使用率、运行中的应用、电池循环次数与健康状况，以及 Mac 系统信息。"
+  },
+  "/pricing": {
+    "title": "价格 — MacBook Cleaner",
+    "description": "MacBook Cleaner {{version}}：免费试用 {{trialDays}} 天，之后只需一次性支付 {{price}} 即可获得永久许可证。无需订阅，开始试用也无需账户。"
+  },
+  "/download": {
+    "title": "下载适用于 Mac 的 MacBook Cleaner",
+    "description": "下载适用于 {{macos}} 或更高版本、{{architecture}} Mac 的 MacBook Cleaner {{version}}。包含安装步骤和首次启动帮助。"
+  },
+  "/faq": {
+    "title": "常见问题 — MacBook Cleaner 安全吗？| MacBook Cleaner",
+    "description": "关于本地优先的 Mac 清理与性能监控工具 MacBook Cleaner 的安全性、隐私、权限、性能监控、电池健康、兼容性和安装问题的解答。"
+  },
+  "/support": {
+    "title": "支持 — MacBook Cleaner",
+    "description": "获取 MacBook Cleaner 支持：安装帮助、问题反馈、功能建议和联系方式。"
+  },
+  "/changelog": {
+    "title": "发行说明 — MacBook Cleaner",
+    "description": "MacBook Cleaner 每个版本的更新内容。"
+  },
+  "/privacy": {
+    "title": "隐私政策 — MacBook Cleaner",
+    "description": "MacBook Cleaner 及本网站如何处理您的信息。该应用在本地进行扫描、清理和监控，不会发送任何有关您的文件或 Mac 性能的信息。"
+  },
+  "/terms": {
+    "title": "使用条款 — MacBook Cleaner",
+    "description": "适用于下载和使用 MacBook Cleaner 的条款。"
+  },
+  "/thank-you": {
+    "title": "感谢您的购买 — MacBook Cleaner",
+    "description": "感谢您的购买。请在此查看您的许可证密钥和激活步骤。"
+  },
+  "/404": {
+    "title": "未找到页面 — MacBook Cleaner",
+    "description": "您要查找的页面不存在。"
+  },
+  "ogImageAlt": "显示存储空间明细的 MacBook Cleaner 应用",
+  "schema": {
+    "featureList": ["Mac 存储清理工具", "存储空间分析器", "大文件查找器", "重复文件查找器", "应用卸载工具", "CPU 和内存监控", "运行中应用监控", "电池健康与循环次数", "Mac 系统信息"]
+  }
+}

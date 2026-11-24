@@ -1,0 +1,147 @@
+{
+  "learnMore": "Dowiedz się więcej",
+  "cards": {
+    "core": {
+      "smart-clean": { "title": "Smart Clean", "summary": "Jedno skanowanie grupuje pamięć podręczną, logi, pozostałości po aplikacjach, śmieci deweloperskie i stare pliki pobrane w jasne kategorie — elementy Bezpieczne są zaznaczone wstępnie, reszta czeka na Twoją decyzję." },
+      "storage": { "title": "Eksplorator pamięci", "summary": "Zobacz, co naprawdę zajmuje Twój dysk — Aplikacje, Dokumenty, Zdjęcia, Filmy, Pobrane, Pamięć podręczna i Dane systemowe — zmierzone na podstawie Twoich rzeczywistych folderów." },
+      "large-files": { "title": "Wyszukiwanie dużych plików", "summary": "Wyszukaj pliki powyżej 500 MB, 1 GB, 5 GB lub 10 GB. Filtruj według typu, sortuj według rozmiaru lub wieku, podglądaj dzięki Quick Look." },
+      "downloads": { "title": "Przegląd Pobranych", "summary": "Stare instalatory, obrazy dysków i archiwa, pogrupowane według wieku — od dzisiaj po starsze niż 90 dni. Nic nie jest nigdy zaznaczane wstępnie." },
+      "duplicates": { "title": "Wyszukiwanie duplikatów", "summary": "Identyczne kopie potwierdzone pełną sumą kontrolną SHA-256. Zachowaj najnowszą lub najstarszą — co najmniej jedna kopia zawsze zostaje." },
+      "apps": { "title": "Czyszczenie aplikacji", "summary": "Zobacz pełny ślad aplikacji — pamięć podręczną, logi, pliki wsparcia, preferencje — a następnie wyczyść jej dane lub odinstaluj ją. Aplikacje Apple są chronione." },
+      "system-junk": { "title": "Śmieci systemowe i deweloperskie", "summary": "Wyczyść pamięć podręczną i logi, które odbudowują się same, a także pamięć podręczną Xcode, symulatorów, npm, Yarn, pnpm, Gradle i CocoaPods." },
+      "schedule": { "title": "Zaplanowane czyszczenie", "summary": "Codzienne, cotygodniowe lub comiesięczne kontrole w tle, które przypominają o tym, co warto wyczyścić — lub, za Twoją zgodą, czyszczą pamięć podręczną deweloperską." }
+    },
+    "monitor": {
+      "cpu": { "title": "Monitorowanie CPU", "summary": "Zużycie CPU na żywo z 60-sekundowym wykresem, podzielone na czas użytkownika, systemu i bezczynności." },
+      "memory": { "title": "Zużycie pamięci", "summary": "Użyta i dostępna pamięć RAM, presja pamięci, pamięć skompresowana i plik wymiany — wyjaśnione prostym językiem." },
+      "running-apps": { "title": "Uruchomione aplikacje", "summary": "Zobacz, które aplikacje zużywają najwięcej pamięci i CPU oraz jak długo każda z nich działa." },
+      "battery": { "title": "Stan baterii", "summary": "Naładowanie, liczba cykli, maksymalna pojemność i stan, raportowane przez macOS. Tylko MacBooki." },
+      "mac-info": { "title": "Informacje o Macu", "summary": "Model, procesor, rdzenie, GPU, pamięć, wyświetlacze i czas pracy w jednym miejscu." },
+      "storage-status": { "title": "Stan pamięci", "summary": "Zajęta, dostępna i potencjalnie możliwa do odzyskania przestrzeń, jedno kliknięcie od narzędzia czyszczącego." },
+      "macos": { "title": "Informacje o macOS", "summary": "Wersja, kompilacja i to, czy własne sprawdzenie aktualizacji macOS znalazło nową wersję — wraz ze skrótem do Uaktualnień oprogramowania." }
+    }
+  },
+  "deepDives": {
+    "smart-clean": {
+      "eyebrow": "Smart Clean",
+      "title": "Jedno skanowanie. Jasne kategorie. Twoja decyzja.",
+      "body": "Smart Clean sprawdza pamięć podręczną, logi, pozostałości po aplikacjach, narzędzia deweloperskie i Pobrane w jednym przebiegu, a następnie sortuje wszystko na sześć prostych w zrozumieniu grup. Każdy element wyjaśnia, dlaczego istnieje i co się stanie po jego usunięciu.",
+      "points": ["Śmieci systemowe, pamięć podręczna przeglądarek, pozostałości po aplikacjach, logi i raporty awarii, śmieci deweloperskie oraz stare pliki pobrane", "Elementy Bezpieczne są domyślnie zaznaczone; elementy Do przejrzenia i Twoje własne pliki — nigdy", "Rozwiń dowolną grupę, aby zobaczyć — i odznaczyć — każdy pojedynczy element"],
+      "alt": "Wyniki Smart Clean pogrupowane w Śmieci systemowe, pamięć podręczną przeglądarek, pozostałości po aplikacjach, logi, śmieci deweloperskie i stare pliki pobrane"
+    },
+    "storage": {
+      "eyebrow": "Eksplorator pamięci",
+      "title": "Dowiedz się, gdzie podziało się Twoje miejsce.",
+      "body": "MacBook Cleaner mierzy Twoje rzeczywiste foldery i rysuje je jako jeden pierścień pamięci. Rozmiary podane są w dziesiętnych gigabajtach, tak samo jak raportuje je macOS, a przestrzeń, której nie można przypisać do folderu, jest uczciwie oznaczona jako Dane systemowe.",
+      "points": ["Aplikacje, Dokumenty, Zdjęcia, Filmy, Pobrane, Pamięć podręczna, Inne i Dane systemowe", "Biblioteki zarządzane przez aplikacje, takie jak Zdjęcia, są mierzone jako całość, nigdy nie rozkładane na części", "Wolna przestrzeń jest odczytywana tak samo, jak robią to własne ustawienia pamięci macOS"],
+      "alt": "Ekran pamięci pokazujący kolorowy pierścień podzielony na kategorie"
+    },
+    "large-files": {
+      "eyebrow": "Wyszukiwanie dużych plików",
+      "title": "Znajdź zapomniane gigabajty.",
+      "body": "Stare nagrania ekranu, obrazy maszyn wirtualnych, instalatory, które miałeś zamiar usunąć. Wyszukiwanie dużych plików przegląda Pobrane, Pulpit, Dokumenty i Filmy i wyświetla najpierw największe pliki.",
+      "points": ["Progi rozmiaru: 500 MB, 1 GB, 5 GB i 10 GB", "Filtruj według filmów, obrazów dysków, archiwów, instalatorów lub dokumentów", "Quick Look i Pokaż w Finderze, zanim zdecydujesz"],
+      "alt": "Lista dużych plików przefiltrowana do plików powyżej 500 MB"
+    },
+    "downloads": {
+      "eyebrow": "Pobrane",
+      "title": "Folder Pobrane, który da się naprawdę przeczytać.",
+      "body": "Pobrane są pogrupowane według wieku — Dzisiaj, W tym tygodniu, W tym miesiącu, starsze niż 30 dni i starsze niż 90 dni — z szybkimi widokami instalatorów i obrazów dysków, archiwów, zduplikowanych pobrań i dużych plików pobranych.",
+      "points": ["Instalatory i obrazy dysków, których już użyłeś, łatwo zauważyć", "To Twoje pliki: nic w Pobranych nie jest nigdy zaznaczane wstępnie", "Każde usunięcie wymaga potwierdzenia"],
+      "alt": "Ekran Pobranych z plikami pogrupowanymi według wieku"
+    },
+    "duplicates": {
+      "eyebrow": "Wyszukiwanie duplikatów",
+      "title": "Ten sam plik trzy razy? Zachowaj jeden.",
+      "body": "Duplikaty w Pobranych, na Pulpicie, w Dokumentach i Filmach są dopasowywane według dokładnego rozmiaru, zawężane szybkim odciskiem, a następnie potwierdzane przez zahaszowanie pełnej zawartości — więc „wygląda podobnie” nigdy nie liczy się jako duplikat.",
+      "points": ["Zachowaj najnowsze lub najstarsze we wszystkich zestawach jednym kliknięciem", "Nigdy nie da się zaznaczyć każdej kopii pliku — jedna zawsze zostaje", "Wszystkie sprawdzenia odbywają się na Twoim Macu"],
+      "alt": "Zduplikowane pliki pogrupowane w zestawy z ilością zmarnowanego miejsca na zestaw"
+    },
+    "apps": {
+      "eyebrow": "Czyszczenie aplikacji",
+      "title": "Odinstaluj aplikacje — i to, co po sobie zostawiają.",
+      "body": "Wybierz aplikację, aby zobaczyć jej rzeczywisty ślad: pakiet aplikacji wraz z pamięcią podręczną, logami, plikami wsparcia, preferencjami, kontenerami, zapisanym stanem i danymi internetowymi. Wyczyść tylko dane lub przenieś całą aplikację do Kosza.",
+      "points": ["Sortuj aplikacje według rozmiaru, nazwy lub najdawniej używanych", "Własnych aplikacji Apple — oraz samego MacBook Cleaner — nie można odinstalować", "Akceptowane są tylko aplikacje w /Applications lub ~/Applications"],
+      "alt": "Czyszczenie aplikacji pokazujące pamięć podręczną, logi i preferencje aplikacji"
+    },
+    "system-junk": {
+      "eyebrow": "Śmieci systemowe i deweloperskie",
+      "title": "Pamięć podręczna, która się odbudowuje. Zniknęła.",
+      "body": "Śmieci systemowe wyświetlają pamięć podręczną i logi aplikacji z Twojej Biblioteki, podzielone na Bezpieczne do wyczyszczenia i Zalecane do przejrzenia. Włącz Czyszczenie deweloperskie, aby uwzględnić ciężką pamięć podręczną kompilacji i pakietów.",
+      "points": ["Xcode DerivedData, Archiwa, Wsparcie urządzeń iOS i watchOS, pamięć podręczna i urządzenia symulatora", "Pamięć podręczna npm, Yarn, pnpm, Gradle, CocoaPods oraz obrazy emulatora Androida", "Każdy element wyjaśnia, ile będzie Cię kosztować jego odbudowanie"],
+      "alt": "Ekran śmieci systemowych z sekcjami Bezpieczne do wyczyszczenia i Zalecane do przejrzenia"
+    },
+    "schedule": {
+      "eyebrow": "Zaplanowane czyszczenie",
+      "title": "Zachowaj porządek, nie myśląc o tym.",
+      "body": "Wybierz opcję codziennie, co tydzień lub co miesiąc oraz porę dnia. MacBook Cleaner po cichu sprawdza w tle — bez otwierania okna — i albo przypomina Ci, albo czyści stałą listę pamięci podręcznej deweloperskiej, jeśli wyraźnie na to pozwoliłeś.",
+      "points": ["Przypomnij mi: powiadomienie, gdy jest wystarczająco dużo do wyczyszczenia lub kończy się miejsce", "Czyść automatycznie: tylko sześć rodzajów pamięci podręcznej deweloperskiej, co najmniej 1 GB, maksymalnie 10 GB i 50 elementów na uruchomienie", "Dokumenty, Zdjęcia, Filmy, Pulpit i foldery osobiste nigdy nie są usuwane automatycznie"],
+      "alt": "Ustawienia zaplanowanego czyszczenia z częstotliwością, trybem i kwalifikującymi się kategoriami"
+    }
+  },
+  "monitorDeepDives": {
+    "performance": {
+      "eyebrow": "Wydajność",
+      "title": "Twój Mac w skrócie — na żywo.",
+      "body": "Zakładka Wydajność pokazuje CPU, pamięć, przestrzeń dyskową i baterię w jednym panelu, z wykresami na żywo co 60 sekund i podsumowaniem stanu Maca w prostym języku. Każdy status pochodzi bezpośrednio z macOS; nie ma żadnego wymyślonego „wskaźnika kondycji”.",
+      "points": ["Zużycie CPU na żywo podzielone na czas użytkownika, systemu i bezczynności", "Pamięć użyta, dostępna, skompresowana i plik wymiany — plus własna presja pamięci macOS", "Aktualizacja co kilka sekund, gdy patrzysz, i całkowite wstrzymanie, gdy nie patrzysz"],
+      "alt": "Panel wydajności ze wskaźnikami CPU, pamięci, przestrzeni dyskowej i baterii oraz podsumowaniem stanu Maca"
+    },
+    "running-apps": {
+      "eyebrow": "Uruchomione aplikacje",
+      "title": "Zobacz, co zużywa Twoją pamięć i CPU.",
+      "body": "Uruchomione aplikacje wyświetlają aplikacje w Twoim Docku wraz z użyciem CPU, pamięcią i czasem działania. Procesy pomocnicze liczone są razem z macierzystą aplikacją, więc wiele kart przeglądarki sumuje się do jednej rzetelnej liczby.",
+      "points": ["Sortuj według CPU, pamięci, czasu działania lub nazwy", "Przełączaj się między aplikacjami, procesami w tle lub wszystkim", "Kliknij dowolną aplikację, aby zobaczyć szczegóły: czas uruchomienia, wątki, identyfikator procesu i lokalizację"],
+      "alt": "Lista uruchomionych aplikacji posortowana według pamięci z CPU i czasem działania"
+    },
+    "battery": {
+      "eyebrow": "Stan baterii",
+      "title": "Zrozum swoją baterię.",
+      "body": "Na MacBookach zobacz naładowanie, liczbę cykli, maksymalną pojemność, źródło zasilania i stan — te same wartości, których używają Ustawienia systemowe. Na komputerach stacjonarnych sekcja baterii po prostu się nie pojawia.",
+      "points": ["Liczba cykli, wraz z projektowaną liczbą cykli, gdy bateria ją raportuje", "Maksymalna pojemność i stan dokładnie tak, jak raportuje je macOS", "Tylko informacje — żadna aplikacja nie może naprawić ani przywrócić baterii"],
+      "alt": "Ekran stanu baterii pokazujący naładowanie, maksymalną pojemność i liczbę cykli"
+    },
+    "mac-info": {
+      "eyebrow": "Informacje o Macu",
+      "title": "Wszystko, co ważne, o Twoim Macu.",
+      "body": "Model, procesor, rdzenie CPU i GPU, pamięć, przestrzeń dyskowa, wyświetlacze, wersja i kompilacja macOS oraz czas pracy Twojego Maca — zebrane raz i pokazane w jednym uporządkowanym miejscu.",
+      "points": ["Status aktualizacji macOS z własnej automatycznej kontroli systemu, wraz ze skrótem do Uaktualnień oprogramowania", "Numer seryjny nigdy nie jest odczytywany", "Wszystko pozostaje na Twoim Macu"],
+      "alt": "Ekran informacji o Macu z listą szczegółów sprzętowych i wersją macOS"
+    }
+  },
+  "page": {
+    "jumpToFeature": "Przejdź do funkcji",
+    "eyebrow": "Funkcje",
+    "title1": "Oczyść swojego Maca. ",
+    "title2": "Zrozum go też.",
+    "intro": "MacBook Cleaner łączy analizator pamięci, wyszukiwanie dużych plików i duplikatów, dezinstalator aplikacji i narzędzie do czyszczenia pamięci podręcznej z monitorem wydajności Maca — CPU, pamięć, uruchomione aplikacje, stan baterii i informacje o Macu — wszystko przetwarzane lokalnie na Twoim Macu.",
+    "monitorEyebrow": "Wydajność",
+    "monitorTitle1": "Monitor wydajności Maca ",
+    "monitorTitle2": "mówiący prostym językiem.",
+    "monitorIntro": "CPU i pamięć na żywo, aplikacje zużywające najwięcej zasobów, stan baterii i wszystko, co ważne o Twoim Macu — odczytywane lokalnie z macOS, odświeżane tylko wtedy, gdy patrzysz.",
+    "sampleDataNote": "Pokazano z danymi przykładowymi.",
+    "extrasEyebrow": "Także w aplikacji",
+    "extrasTitle": "Przemyślane szczegóły.",
+    "notDoingEyebrow": "Szczerze mówiąc",
+    "notDoingTitle": "Czego MacBook Cleaner nie robi.",
+    "notDoingIntro": "Wiele aplikacji „czyszczących” obiecuje wszystko. Oto, co ta aplikacja celowo pomija.",
+    "ctaTitle": "Gotów zobaczyć, co zajmuje miejsce?",
+    "extras": [
+      { "title": "Wykluczenia skanowania", "body": "Dodaj pliki lub foldery, które nigdy nie powinny być sugerowane — ręcznie lub zgodnie z harmonogramem." },
+      { "title": "Potwierdzenie przed czyszczeniem", "body": "Domyślnie włączone. Wyłącz, aby pominąć okno dialogowe dla czyszczeń zawierających tylko elementy Bezpieczne; elementy Do przejrzenia i Twoje własne pliki zawsze pytają." },
+      { "title": "Przełącznik czyszczenia deweloperskiego", "body": "Całkowicie ukryj pamięć podręczną Xcode, symulatorów i menedżerów pakietów, jeśli ich nie potrzebujesz." },
+      { "title": "Jasny, ciemny lub systemowy", "body": "Podąża za wyglądem Twojego Maca lub wybierz jeden na stałe." },
+      { "title": "Uruchamianie przy logowaniu", "body": "Opcjonalne i domyślnie wyłączone." },
+      { "title": "Natywne powiadomienia", "body": "Przypomnienia i podsumowania zaplanowanego czyszczenia, przy użyciu powiadomień macOS." },
+      { "title": "Przegląd Kosza", "body": "Zobacz, ile miejsca zajmuje Kosz, i otwórz go w Finderze, gdy będziesz gotowy go opróżnić." },
+      { "title": "Resetowanie wszystkich danych", "body": "Wyczyść ustawienia, wykluczenia, harmonogram i historię w jednym kroku. Nigdy nie dotyka Twoich plików." }
+    ],
+    "notDoing": [
+      "Brak „zwiększania” RAM — Wydajność pokazuje zużycie pamięci, ale go nie modyfikuje",
+      "Brak obietnic przyspieszenia czy modyfikacji elementów startowych",
+      "Brak skanowania antywirusowego czy wykrywania złośliwego oprogramowania",
+      "Brak trwałego usuwania czy niszczenia plików",
+      "Brak czyszczenia folderów systemowych poza Twoim folderem domowym"
+    ]
+  }
+}

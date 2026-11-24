@@ -1,0 +1,61 @@
+{
+  "skipToContent": "Przejdź do treści",
+  "tagline": "Oczyść swojego Maca. Zachowaj to, co ważne.",
+  "aria": {
+    "requirements": "Wymagania",
+    "primaryNav": "Główna",
+    "mobileNav": "Mobilna"
+  },
+  "nav": {
+    "features": "Funkcje",
+    "pricing": "Cennik",
+    "download": "Pobierz",
+    "faq": "FAQ",
+    "support": "Wsparcie",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu"
+  },
+  "footer": {
+    "description": "Bezpieczne, lokalne czyszczenie pamięci i monitorowanie wydajności dla macOS.",
+    "version": "Wersja {{version}} · {{macos}} lub nowszy",
+    "columns": {
+      "product": "Produkt",
+      "help": "Pomoc",
+      "legal": "Informacje prawne"
+    },
+    "links": {
+      "features": "Funkcje",
+      "pricing": "Cennik",
+      "download": "Pobierz",
+      "releaseNotes": "Informacje o wersji",
+      "faq": "FAQ",
+      "support": "Wsparcie",
+      "installation": "Instalacja",
+      "privacy": "Prywatność",
+      "terms": "Regulamin"
+    },
+    "copyright": "© {{year}} {{name}}. Wszelkie prawa zastrzeżone.",
+    "trademark": "{{name}} jest niezależną aplikacją i nie jest powiązana, popierana ani sponsorowana przez Apple Inc. Apple, Mac, MacBook, macOS, Finder, Safari i Xcode są znakami towarowymi Apple Inc., zarejestrowanymi w USA i innych krajach."
+  },
+  "download": {
+    "cta": "Pobierz na Maca",
+    "navCta": "Pobierz",
+    "starting": "Rozpoczynanie…",
+    "started": "Pobieranie rozpoczęte",
+    "unavailable": "Pobieranie niedostępne",
+    "unavailableNote": "Zweryfikowany instalator dla Maca nie został jeszcze opublikowany.",
+    "downloading": "Pobieranie {{fileName}}",
+    "error": "Nie udało się rozpocząć pobierania. Spróbuj ponownie za chwilę lub skontaktuj się z pomocą techniczną."
+  },
+  "legal": {
+    "eyebrow": "Informacje prawne",
+    "lastUpdated": "Ostatnia aktualizacja: {{date}}",
+    "onThisPage": "Na tej stronie"
+  },
+  "languageSwitcher": {
+    "label": "Język",
+    "current": "Język: {{language}}",
+    "resetToAutomatic": "Przywróć automatyczny",
+    "resetDescription": "Wykryj mój język automatycznie następnym razem"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Fiyatlandırma",
+  "title1": "Ücretsiz deneyin, ardından ",
+  "title2": "{{price}}",
+  "titleSuffix": " tek seferlik",
+  "intro": "Her özellik {{trialDays}} günlük ücretsiz deneme süresince çalışır — başlamak için hesap veya kredi kartı gerekmez. Sonrasında tek bir {{price}} ödeme MacBook Cleaner'ın kilidini kalıcı olarak açar: abonelik yok, yenileme yok, asla.",
+  "includedTitle": "Tek lisans. Tek Mac. Sonsuza kadar.",
+  "checks": [
+    "{{price}} tek seferlik satın alma — abonelik değil",
+    "Ömür boyu lisans, son kullanma tarihi yok, yenileme yok",
+    "{{trialDays}} günlük ücretsiz deneme, tam özellikler, başlamak için hesap gerekmez",
+    "Her seferinde bir Mac için lisanslı — istediğiniz zaman devre dışı bırakıp yeni bir Mac'e aktarın",
+    "Lisans anahtarı ödemeden hemen sonra e-posta ile gönderilir"
+  ],
+  "buyButton": "Ömür Boyu Lisans Satın Al — {{price}}",
+  "priceNote": "ABD doları cinsinden liste fiyatıdır. Ödeme sırasında yerel para biriminizde gösterilir; konumunuza bağlı olarak vergi uygulanabilir.",
+  "alreadyPurchased": "Zaten satın mı aldınız? Lisans anahtarınızı uygulama içinden etkinleştirin — Ayarlar → Lisans.",
+  "sandboxNote": "Satın alma henüz burada kullanılamıyor — kurulumu tamamlıyoruz. Yakında tekrar kontrol edin veya bu arada ücretsiz deneme sürümünü indirin.",
+  "ctaTitle": "İndirin, {{trialDays}} gün ücretsiz deneyin, sonra karar verin."
+}

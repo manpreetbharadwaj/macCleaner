@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Check, Loader2, RotateCcw, ScanSearch, Sparkles } from 'lucide-react'
 import { DEMO_SCAN_STEPS, DEMO_USED_GB } from '@/data/storage'
 import { Reveal } from '@/components/Reveal'
@@ -13,12 +14,22 @@ const TOTAL_FOUND = DEMO_SCAN_STEPS.reduce((s, x) => s + x.gb, 0)
 const TOTAL_SAFE = DEMO_SCAN_STEPS.reduce((s, x) => s + x.safeGb, 0)
 const TOTAL_ITEMS = DEMO_SCAN_STEPS.reduce((s, x) => s + x.items, 0)
 
+const STEP_LABEL_KEYS: Record<string, string> = {
+  'system-junk': 'systemJunk',
+  browser: 'browserCaches',
+  leftovers: 'appLeftovers',
+  logs: 'logsCrashReports',
+  developer: 'developerJunk',
+  downloads: 'oldDownloads',
+}
+
 /**
  * A lightweight, illustrative replay of a Smart Clean scan. The categories
  * and figures come from the app's built-in sample data — the same data
  * shown in the screenshots — not from a real Mac.
  */
 export function ScanDemo() {
+  const { t } = useTranslation('home')
   const { ref, inView } = useInView<HTMLDivElement>({ threshold: 0.35 })
   const reduced = useReducedMotion()
   // -1: not started; 0..n-1: scanning step i; n: done
@@ -55,28 +66,29 @@ export function ScanDemo() {
         <div className="demo__copy">
           <SectionHeading
             align="left"
-            eyebrow="See it work"
+            eyebrow={t('scanDemo.eyebrow')}
             id="demo-title"
             title={
               <>
-                One scan. <span className="grad-text">Everything sorted.</span>
+                {t('scanDemo.title1')}
+                <span className="grad-text">{t('scanDemo.title2')}</span>
               </>
             }
-            intro="Smart Clean looks through caches, logs, app leftovers, developer tools and your Downloads in one pass, then sorts what it finds into plain-language groups — each one split into what’s safe to clean and what deserves a second look."
+            intro={t('scanDemo.intro')}
           />
           <Reveal className="demo__flow" delay={80}>
             <div className={cx('flow-stat', step >= 0 && 'is-on')}>
-              <small>Storage analyzed</small>
+              <small>{t('scanDemo.storageAnalyzed')}</small>
               <b>{scanned.toFixed(0)} GB</b>
             </div>
             <span className="flow-arrow" aria-hidden="true" />
             <div className={cx('flow-stat', done && 'is-on')}>
-              <small>Items found</small>
+              <small>{t('scanDemo.itemsFound')}</small>
               <b>{done ? TOTAL_ITEMS : '—'}</b>
             </div>
             <span className="flow-arrow" aria-hidden="true" />
             <div className={cx('flow-stat flow-stat--accent', done && 'is-on')}>
-              <small>Safe to clean</small>
+              <small>{t('scanDemo.safeToClean')}</small>
               <b>{done ? `${safe.toFixed(1)} GB` : '—'}</b>
             </div>
           </Reveal>
@@ -90,11 +102,9 @@ export function ScanDemo() {
               </span>
               <div>
                 <p className="scan-card__title" aria-live="polite">
-                  {done ? `Your Mac can free up ${TOTAL_FOUND.toFixed(1)} GB` : step >= 0 ? 'Scanning your Mac…' : 'Ready to scan'}
+                  {done ? t('scanDemo.canFreeUp', { total: TOTAL_FOUND.toFixed(1) }) : step >= 0 ? t('scanDemo.scanning') : t('scanDemo.readyToScan')}
                 </p>
-                <p className="scan-card__sub">
-                  {done ? `${TOTAL_SAFE.toFixed(1)} GB is safe to clean right away. The rest is yours to review.` : `${foundSoFar.toFixed(1)} GB found so far`}
-                </p>
+                <p className="scan-card__sub">{done ? t('scanDemo.safeSummary', { amount: TOTAL_SAFE.toFixed(1) }) : t('scanDemo.foundSoFar', { amount: foundSoFar.toFixed(1) })}</p>
               </div>
             </div>
             <div className="scan-card__progress" aria-hidden="true">
@@ -108,14 +118,17 @@ export function ScanDemo() {
                     <span className="scan-row__dot" aria-hidden="true">
                       {state === 'done' ? <Check size={13} strokeWidth={3} /> : state === 'active' ? <Loader2 size={13} className="spin" /> : null}
                     </span>
-                    <span className="scan-row__label">{s.label}</span>
+                    <span className="scan-row__label">{t(`scanDemo.steps.${STEP_LABEL_KEYS[s.id]}`, { defaultValue: s.label })}</span>
                     <span className="scan-row__meta">
                       {state === 'done' ? (
                         <>
-                          <em>{s.items} items</em> {s.gb.toFixed(1)} GB
+                          <em>
+                            {s.items} {t('scanDemo.items')}
+                          </em>{' '}
+                          {s.gb.toFixed(1)} GB
                         </>
                       ) : state === 'active' ? (
-                        'Checking…'
+                        t('scanDemo.checking')
                       ) : (
                         ''
                       )}
@@ -125,9 +138,9 @@ export function ScanDemo() {
               })}
             </ul>
             <div className="scan-card__foot">
-              <small>Example scan using the app’s sample data. Results on your Mac will differ.</small>
+              <small>{t('scanDemo.footNote')}</small>
               <button type="button" className="btn btn--soft btn--sm" onClick={() => setRun((r) => r + 1)} disabled={!done}>
-                <RotateCcw size={14} aria-hidden="true" /> Replay
+                <RotateCcw size={14} aria-hidden="true" /> {t('scanDemo.replay')}
               </button>
             </div>
           </div>

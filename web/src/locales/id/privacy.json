@@ -1,0 +1,159 @@
+{
+  "legalReviewNotice": "Terjemahan ini dihasilkan oleh mesin penerjemah dan belum ditinjau oleh pengacara yang berkualifikasi di wilayah hukum Anda. Versi bahasa Inggris dari kebijakan ini adalah teks yang sah; jika ada sesuatu di sini yang bertentangan dengannya, versi bahasa Inggris yang berlaku.",
+  "title": "Kebijakan Privasi",
+  "shortVersion": "<b>Versi singkatnya.</b> {{siteName}} memindai dan membersihkan di Mac Anda. Aplikasi ini tidak memiliki analitik, telemetri, pelaporan crash, atau akun, dan tidak mengirim informasi tentang Anda, file Anda, atau performa Mac Anda ke mana pun. Situs ini tidak menggunakan cookie atau analitik; host web kami memproses log permintaan standar.",
+  "sections": {
+    "who-we-are": {
+      "title": "Siapa kami",
+      "body": [
+        { "p": "Kebijakan ini dipublikasikan oleh {{companyName}} (“kami”), {{companyAddress}}, pengembang {{siteName}}. Kebijakan ini mencakup dua hal yang berbeda, yang menangani informasi dengan sangat berbeda:" },
+        { "ul": ["<b>Aplikasi desktop {{siteName}}</b> untuk macOS (“Aplikasi”) — lihat bagian yang diawali “Aplikasi”.", "<b>Situs web ini</b>, {{siteHost}} (“Situs”), termasuk unduhan Aplikasi — lihat bagian yang diawali “Situs”."] }
+      ]
+    },
+    "app-local": {
+      "title": "Aplikasi: informasi yang diproses di Mac Anda",
+      "body": [
+        { "p": "Untuk menunjukkan apa yang memenuhi penyimpanan Anda dan membantu Anda membersihkannya, Aplikasi membaca hal-hal berikut di Mac Anda. Semua pemrosesan ini terjadi secara lokal, di perangkat Anda." },
+        { "h3": "Informasi file dan folder" },
+        { "p": "Nama, lokasi (jalur), ukuran, dan tanggal file serta folder di folder Downloads, Desktop, Documents, dan Movies Anda; di <code>~/Library/Caches</code> dan <code>~/Library/Logs</code>; di lokasi alat developer yang diketahui (misalnya Xcode DerivedData, data simulator, dan cache npm, Yarn, pnpm, Gradle, serta CocoaPods); dan ukuran total folder seperti Pictures dan Library untuk membuat rincian penyimpanan. Aplikasi juga membaca kapasitas total, terpakai, dan tersedia pada disk Anda." },
+        { "h3": "Isi file — hanya untuk duplikat" },
+        { "p": "Aplikasi tidak membaca isi dokumen, foto, atau file lain Anda, dengan satu pengecualian: untuk memastikan dua file benar-benar identik, Aplikasi membaca file yang sudah memiliki ukuran identik dan menghitung checksum SHA-256 dari isinya. Checksum ini dihitung dalam memori di Mac Anda dan hanya digunakan untuk perbandingan tersebut." },
+        { "h3": "Aplikasi yang terinstal" },
+        { "p": "Untuk App Cleanup, Aplikasi membaca nama, versi, bundle identifier, dan ikon setiap aplikasi dari <code>Info.plist</code> milik aplikasi itu sendiri, mengukur ukurannya, menanyakan Spotlight macOS tanggal terakhir aplikasi dibuka, dan mengukur cache, log, preferensi, dan file dukungan terkait di Library Anda." },
+        { "h3": "Browser web" },
+        { "p": "Untuk Safari, Chrome, Edge, dan Firefox, Aplikasi hanya mengukur ukuran folder <b>cache</b> masing-masing browser. Aplikasi tidak membaca riwayat penjelajahan, cookie, kata sandi, bookmark, data isi otomatis, atau ekstensi Anda." }
+      ]
+    },
+    "app-stored": {
+      "title": "Aplikasi: informasi yang disimpan di Mac Anda",
+      "body": [
+        { "p": "Aplikasi menyimpan sejumlah kecil informasi secara lokal agar dapat mengingat preferensi Anda. Tidak satu pun dari informasi ini dikirim kepada kami." },
+        {
+          "ul": [
+            "<b>Status Aplikasi</b> di <code>{{appSupport}}/state.json</code>: pengaturan Anda, pengecualian pemindaian (jalur file yang Anda pilih untuk dikecualikan), pengaturan pembersihan terjadwal, riwayat pembersihan (tanggal, jumlah, dan item yang terlibat), serta ringkasan pemindaian terjadwal.",
+            "<b>Log diagnostik</b> di <code>{{appLogs}}</code>, termasuk <code>startup-crash.log</code> yang mencatat error jika Aplikasi gagal dimulai. Log mencatat hal seperti versi Aplikasi, jenis prosesor Mac Anda dan versi macOS, lokasi instalasi Aplikasi, serta apa yang dilakukan oleh pemindaian dan pembersihan — yang dapat mencakup jalur file.",
+            "<b>Helper latar belakang</b>: jika Anda mengaktifkan Scheduled Cleanup atau Launch at Login, Aplikasi menambahkan file konfigurasi kecil ke <code>~/Library/LaunchAgents</code> agar macOS dapat memulainya pada waktu yang tepat. Menonaktifkan fitur ini akan menghapusnya."
+          ]
+        },
+        { "p": "Anda dapat menghapus pengaturan, pengecualian, jadwal, dan riwayat Aplikasi kapan saja dengan <b>Settings → Reset all data</b>, atau menghapus folder di atas setelah mencopot pemasangan." }
+      ]
+    },
+    "app-network": {
+      "title": "Aplikasi: tidak ada data yang meninggalkan Mac Anda",
+      "body": [
+        { "p": "Aplikasi tidak mengirim informasi tentang Anda, Mac Anda, atau file Anda kepada kami atau siapa pun. Secara khusus, Aplikasi:" },
+        { "ul": ["tidak mengandung analitik, pelacakan penggunaan, atau telemetri;", "tidak mengandung layanan pelaporan crash — informasi crash hanya ditulis ke log lokal yang dijelaskan di atas;", "tidak memiliki akun pengguna, login, atau aktivasi lisensi;", "tidak mengandung iklan dan SDK pihak ketiga mana pun yang mengumpulkan data;", "tidak memeriksa pembaruannya sendiri secara otomatis dan tidak mengunduh apa pun."] },
+        { "p": "Satu-satunya saat Aplikasi melibatkan internet adalah ketika Anda mengklik tautan di dalamnya (seperti “Check for Updates”, “Privacy Policy”, atau “Terms”). Itu membuka halaman Situs ini di browser web default Anda, dan bagian Situs di bawah ini kemudian berlaku. Aplikasi hanya membuka tautan ke domain Situs ini sendiri." },
+        { "p": "Terlepas dari Aplikasi, macOS sendiri mungkin mengumpulkan informasi diagnostik jika Anda telah mengaktifkan pembagian analitik dengan Apple di System Settings. Itu diatur oleh kebijakan privasi Apple; kami tidak menerimanya." }
+      ]
+    },
+    "app-cleaning": {
+      "title": "Aplikasi: cara file Anda ditangani saat Anda membersihkan",
+      "body": [
+        { "p": "Item yang Anda setujui dipindahkan ke Trash macOS — Aplikasi meminta Finder melakukannya agar “Put Back” tetap berfungsi. Aplikasi tidak pernah menghapus file secara permanen dan tidak pernah mengosongkan Trash Anda. Jika Anda mengaktifkan “Clean automatically” di Scheduled Cleanup, Aplikasi hanya memindahkan daftar tetap cache developer ke Trash, sesuai batasan yang dijelaskan di Aplikasi dan di <link-faq-automatic>FAQ</link-faq-automatic> kami." },
+        { "p": "File tetap ada di Mac Anda di setiap langkah. Kami tidak pernah menerima salinannya." }
+      ]
+    },
+    "app-permissions": {
+      "title": "Aplikasi: izin akses macOS",
+      "body": [
+        { "p": "macOS mungkin meminta Anda memberikan izin berikut kepada Aplikasi. Anda dapat meninjau atau mencabut masing-masing di System Settings → Privacy & Security." },
+        {
+          "ul": [
+            "<b>Akses ke Downloads, Desktop, dan Documents</b> — untuk menemukan file besar, unduhan lama, dan duplikat.",
+            "<b>Automation (mengontrol Finder)</b> — untuk memindahkan item yang Anda setujui ke Trash.",
+            "<b>Full Disk Access (opsional)</b> — untuk mengukur lokasi yang dijaga privat oleh macOS, seperti beberapa cache aplikasi dan Trash. Aplikasi tetap berfungsi tanpanya.",
+            "<b>Notifikasi (opsional)</b> — untuk pengingat dan ringkasan pembersihan terjadwal. Notifikasi dibuat secara lokal oleh macOS; tidak ada layanan push yang terlibat."
+          ]
+        }
+      ]
+    },
+    "app-device": {
+      "title": "Aplikasi: informasi perangkat",
+      "body": [{ "p": "Aplikasi membaca informasi dasar tentang Mac Anda — versi macOS, arsitektur prosesor, dan kapasitas disk — agar berfungsi dengan benar dan menulis log lokal yang bermanfaat. Informasi ini tetap ada di Mac Anda." }]
+    },
+    "system-monitoring": {
+      "title": "Aplikasi: data pemantauan sistem",
+      "body": [
+        { "p": "Tab Performance Aplikasi menampilkan kondisi Mac Anda. Untuk melakukannya, Aplikasi membaca hal berikut dari macOS di perangkat Anda:" },
+        {
+          "ul": [
+            "Penggunaan CPU (total, user, system, dan idle) serta penggunaan memori (terpakai, tersedia, terkompresi, cache, swap, dan tekanan memori);",
+            "aplikasi dan proses yang sedang berjalan — nama, ID proses, penggunaan CPU dan memori, waktu peluncuran, jumlah thread, dan lokasi filenya;",
+            "kapasitas penyimpanan dan ruang kosong;",
+            "di MacBook, informasi baterai: daya, status pengisian, sumber daya, jumlah siklus, kapasitas, dan kondisi baterai yang dilaporkan macOS;",
+            "informasi perangkat keras Mac: model dan identifier model, chip, core CPU dan GPU, ukuran memori, layar, dan hostname jaringan Mac;",
+            "versi macOS, build, dan versi kernel, uptime, serta hasil pemeriksaan Software Update bawaan macOS, dibaca dari file yang disimpan macOS di Mac Anda."
+          ]
+        },
+        { "p": "Informasi ini hanya digunakan untuk menampilkan dashboard Performance. Informasi ini diproses secara lokal, hanya disimpan dalam memori selama Aplikasi terbuka (grafik jangka pendek mencakup 60 detik terakhir dan dibuang saat Anda keluar), dan tidak ditulis ke disk, diunggah, dibagikan, dijual, atau digunakan untuk analitik. Aplikasi tidak membaca nomor seri Mac Anda, dan tidak menghubungi server Apple untuk memeriksa pembaruan." },
+        { "p": "Pemantauan hanya berjalan saat layar Performance terbuka dan berhenti saat jendela Aplikasi disembunyikan." }
+      ]
+    },
+    "app-sharing-logs": {
+      "title": "Aplikasi: ketika Anda memilih untuk membagikan informasi kepada kami",
+      "body": [{ "p": "Jika Anda menghubungi dukungan, Anda mungkin memilih untuk mengirimkan tangkapan layar atau file log Aplikasi kepada kami. Log dapat berisi jalur file dari Mac Anda, jadi tinjaulah sebelum mengirimnya. Kami menggunakan apa pun yang Anda kirim hanya untuk membantu permintaan Anda." }]
+    },
+    "website": {
+      "title": "Situs: apa yang kami kumpulkan",
+      "body": [
+        { "p": "Situs ini adalah situs statis. Situs ini tidak menggunakan cookie, analitik, iklan, pixel pelacak, widget media sosial, atau skrip serta font pihak ketiga, dan tidak memiliki akun pengguna atau formulir. Browser Anda mungkin menyimpan salinan cache halaman, seperti yang dilakukannya untuk situs mana pun." },
+        { "p": "<b>Log hosting.</b> Situs ini dilayani oleh {{hostingProvider}}. Seperti host web mana pun, host ini secara otomatis memproses informasi teknis yang diperlukan untuk menyajikan halaman dan melindungi layanan — seperti alamat IP Anda, user agent browser, halaman yang diminta, halaman rujukan, dan waktu permintaan. Ini ditangani berdasarkan ketentuan dan kebijakan privasi penyedia hosting itu sendiri, dan kami tidak menggabungkannya dengan informasi lain." },
+        { "p": "<b>Unduhan.</b> File installer Aplikasi dilayani dari {{downloadHost}}, yang memproses jenis informasi permintaan teknis yang sama saat Anda mengunduhnya." },
+        { "p": "<b>Surel.</b> Jika Anda mengirim surel kepada kami (misalnya melalui halaman Support), kami menerima alamat surel Anda, nama Anda jika Anda menyertakannya, dan apa pun yang Anda tulis atau lampirkan. Kami hanya menggunakannya untuk merespons Anda dan meningkatkan Aplikasi berdasarkan masukan Anda." }
+      ]
+    },
+    "website-cookies": {
+      "title": "Situs: cookie",
+      "body": [{ "p": "Situs ini tidak mengatur cookie atau menggunakan teknologi serupa seperti local storage untuk pelacakan. Jika itu berubah suatu saat, kami akan memperbarui kebijakan ini terlebih dahulu dan, jika diperlukan, meminta persetujuan Anda." }]
+    },
+    "third-parties": {
+      "title": "Layanan pihak ketiga dan berbagi data",
+      "body": [
+        { "p": "Kami tidak menjual, menyewakan, atau memperdagangkan informasi pribadi, dan kami tidak membagikannya untuk periklanan. Pihak ketiga yang terlibat hanyalah:" },
+        { "ul": ["host Situs dan host unduhan kami, yang memproses informasi permintaan seperti dijelaskan di atas; dan", "penyedia surel kami, yang menyimpan surel dukungan yang Anda kirim kepada kami."] },
+        { "p": "Kami juga dapat mengungkapkan informasi jika diwajibkan oleh hukum, atau untuk melindungi hak kami atau keselamatan orang lain." }
+      ]
+    },
+    "legal-bases": {
+      "title": "Dasar hukum pemrosesan",
+      "body": [{ "p": "Jika hukum seperti GDPR Uni Eropa atau Inggris berlaku, kami mengandalkan kepentingan sah kami untuk mengoperasikan dan mengamankan Situs serta merespons pesan, dan pada langkah-langkah yang Anda minta kami lakukan saat Anda menghubungi kami. Pemrosesan lokal Aplikasi di Mac Anda tetap dalam kendali Anda dan tidak melibatkan kami menerima data pribadi." }]
+    },
+    "retention": {
+      "title": "Retensi data",
+      "body": [
+        {
+          "ul": [
+            "<b>Data Aplikasi</b> tetap di Mac Anda hingga Anda menghapusnya (Settings → Reset all data, atau menghapus folder yang tercantum di bawah “Aplikasi: informasi yang disimpan di Mac Anda”). Aplikasi secara otomatis membatasi jumlah riwayat dan data log yang disimpannya.",
+            "<b>Log hosting dan unduhan</b> disimpan sesuai kebijakan penyedia hosting.",
+            "<b>Surel dukungan</b> disimpan selama diperlukan untuk membantu Anda dan untuk jangka waktu yang wajar setelahnya, lalu dihapus, kecuali kami harus menyimpannya karena alasan hukum."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "title": "Keamanan",
+      "body": [{ "p": "Karena Aplikasi memproses file Anda secara lokal dan tidak mengirimkannya, perlindungan utama untuk data tersebut adalah keamanan Mac Anda sendiri. Aplikasi menyertakan pengaman terhadap penghapusan lokasi sistem dan file yang terlihat sensitif, dan hanya memindahkan item ke Trash. Situs ini dilayani melalui HTTPS. Tidak ada metode penyimpanan atau transmisi yang benar-benar aman, tetapi kami berupaya melindungi informasi apa pun yang kami miliki." }]
+    },
+    "your-rights": {
+      "title": "Hak Anda",
+      "body": [{ "p": "Tergantung di mana Anda tinggal, Anda mungkin memiliki hak untuk mengakses, memperbaiki, menghapus, membatasi, atau menolak pemrosesan informasi pribadi Anda, serta hak portabilitas data. Karena kami menyimpan sangat sedikit informasi — biasanya hanya surel yang Anda kirimkan kepada kami — cara paling sederhana untuk menggunakan hak ini adalah mengirim surel ke {{privacyEmail}}. Anda juga memiliki hak untuk mengajukan keluhan ke otoritas pelindungan data lokal Anda." }]
+    },
+    "children": {
+      "title": "Privasi anak-anak",
+      "body": [{ "p": "Aplikasi dan Situs tidak ditujukan untuk anak-anak di bawah 13 tahun (atau usia minimum setara di tempat Anda tinggal), dan kami tidak dengan sengaja mengumpulkan informasi pribadi dari anak-anak. Jika Anda yakin seorang anak telah mengirimkan informasi pribadi kepada kami, hubungi kami dan kami akan menghapusnya." }]
+    },
+    "international": {
+      "title": "Pengguna internasional",
+      "body": [{ "p": "Aplikasi bekerja dengan cara yang sama di mana saja: data Anda tetap di Mac Anda. Informasi yang diproses oleh penyedia hosting dan surel kami mungkin ditangani di negara selain negara Anda, dengan perlindungan yang ditawarkan oleh penyedia tersebut." }]
+    },
+    "changes": {
+      "title": "Perubahan pada kebijakan ini",
+      "body": [{ "p": "Kami akan memperbarui kebijakan ini jika cara Aplikasi atau Situs menangani informasi berubah — misalnya, sebelum merilis versi Aplikasi mana pun yang menambahkan fitur berbasis jaringan. Tanggal “Last updated” di atas menunjukkan kapan kebijakan ini terakhir direvisi. Perubahan signifikan juga akan dicatat dalam catatan rilis." }]
+    },
+    "contact": {
+      "title": "Kontak",
+      "body": [{ "p": "Ada pertanyaan tentang privasi? Kirim surel ke {{privacyEmail}} atau tulis surat kepada {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

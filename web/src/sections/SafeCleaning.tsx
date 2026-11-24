@@ -1,58 +1,51 @@
 import type { CSSProperties } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Ban, EyeOff, FolderLock, Hand, ListChecks, ShieldCheck, Undo2 } from 'lucide-react'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
 
-const LEVELS = [
-  { tone: 'safe', label: 'Safe', title: 'Rebuilds itself', body: 'Caches and logs your apps re-create on their own. Preselected for you.', example: 'Xcode DerivedData', size: '18.6 GB' },
-  { tone: 'review', label: 'Review', title: 'Worth a look first', body: 'Things that may hold state you care about. Never preselected.', example: 'Simulator Devices', size: '6.2 GB' },
-  { tone: 'protected', label: 'Protected', title: 'Can’t be selected', body: 'Anything that looks like a backup, keychain or key — refused by the app’s native safety layer.', example: 'MobileSync Backup', size: 'Locked' },
-] as const
-
-const PRINCIPLES = [
-  { icon: ListChecks, title: 'Review before anything is removed', body: 'Every cleanup shows exactly what will be moved and asks you to confirm.' },
-  { icon: Undo2, title: 'Trash first, always', body: 'Items go to the Trash — never permanently deleted. The app never empties your Trash.' },
-  { icon: Hand, title: 'Your files are your call', body: 'Downloads, Desktop, Documents and Movies are never preselected and always need an extra confirmation.' },
-  { icon: FolderLock, title: 'Guardrails that can’t be bypassed', body: 'A native check refuses system folders, your home folder, its main folders and anything outside your home folder.' },
-  { icon: EyeOff, title: '“Never suggest this again”', body: 'Exclude any file or folder and it won’t be suggested again — manually or on a schedule.' },
-  { icon: Ban, title: 'No surprise automation', body: 'Automatic cleaning is off by default, needs explicit consent, and only touches six developer caches.' },
-]
+const LEVEL_TONES = ['safe', 'review', 'protected'] as const
+const PRINCIPLE_ICONS = [ListChecks, Undo2, Hand, FolderLock, EyeOff, Ban]
 
 export function SafeCleaning() {
+  const { t } = useTranslation('home')
+  const principles = t('safeCleaning.principles', { returnObjects: true }) as { title: string; body: string }[]
+
   return (
     <section className="section" aria-labelledby="safe-title">
       <div className="container">
         <SectionHeading
-          eyebrow="Safe by design"
+          eyebrow={t('safeCleaning.eyebrow')}
           id="safe-title"
           title={
             <>
-              You stay in control. <span className="grad-text">Always.</span>
+              {t('safeCleaning.title1')}
+              <span className="grad-text">{t('safeCleaning.title2')}</span>
             </>
           }
-          intro="Cleaning tools need deep access to your disk. MacBook Cleaner is built so that a mistake is hard to make — and easy to undo."
+          intro={t('safeCleaning.intro')}
         />
 
         <div className="levels">
-          {LEVELS.map((l, i) => (
-            <Reveal key={l.tone} className={`level level--${l.tone}`} delay={i * 80}>
-              <span className={`safety-pill safety-pill--${l.tone}`}>
-                <ShieldCheck size={13} aria-hidden="true" /> {l.label}
+          {LEVEL_TONES.map((tone, i) => (
+            <Reveal key={tone} className={`level level--${tone}`} delay={i * 80}>
+              <span className={`safety-pill safety-pill--${tone}`}>
+                <ShieldCheck size={13} aria-hidden="true" /> {t(`safeCleaning.levels.${tone}.label`)}
               </span>
-              <h3>{l.title}</h3>
-              <p>{l.body}</p>
+              <h3>{t(`safeCleaning.levels.${tone}.title`)}</h3>
+              <p>{t(`safeCleaning.levels.${tone}.body`)}</p>
               <div className="level__row" aria-hidden="true">
                 <span className="level__check" />
-                <span className="level__name">{l.example}</span>
-                <span className="level__size">{l.size}</span>
+                <span className="level__name">{t(`safeCleaning.levels.${tone}.example`)}</span>
+                <span className="level__size">{t(`safeCleaning.levels.${tone}.size`)}</span>
               </div>
             </Reveal>
           ))}
         </div>
 
         <div className="principles">
-          {PRINCIPLES.map((p, i) => {
-            const Icon = p.icon
+          {principles.map((p, i) => {
+            const Icon = PRINCIPLE_ICONS[i]
             return (
               <Reveal key={p.title} className="principle" delay={(i % 3) * 70} style={{ '--c': '#5b6cff' } as CSSProperties}>
                 <span className="principle__icon" aria-hidden="true">

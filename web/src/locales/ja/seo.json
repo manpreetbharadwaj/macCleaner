@@ -1,0 +1,50 @@
+{
+  "/": {
+    "title": "MacBook Cleaner — Mac ストレージクリーナー＆パフォーマンスモニター",
+    "description": "Macのストレージを安全に整理し、Macの状態を確認できます。MacBook Cleanerはキャッシュ、大容量ファイル、重複ファイルを検出し、CPUとRAMの使用率、実行中のアプリ、バッテリーの状態、Macのシステム情報を表示します — すべてローカルで処理されます。"
+  },
+  "/features": {
+    "title": "機能 — Macクリーナー、CPU・RAMモニター、バッテリー状態 | MacBook Cleaner",
+    "description": "スマートクリーン、ストレージエクスプローラー、大容量ファイル・重複ファイルファインダー、アプリクリーンアップに加え、CPUとメモリの使用率、実行中のアプリ、バッテリーの充放電回数と状態、Macのシステム情報を表示するパフォーマンスモニター。"
+  },
+  "/pricing": {
+    "title": "料金 — MacBook Cleaner",
+    "description": "MacBook Cleaner {{version}}：{{trialDays}}日間無料でお試しいただけます。その後は {{price}} の一回払いで永久にご利用いただけます。サブスクリプションも、開始時のアカウント登録も不要です。"
+  },
+  "/download": {
+    "title": "MacBook CleanerをMac用にダウンロード",
+    "description": "{{macos}} 以降の {{architecture}} Mac向けにMacBook Cleaner {{version}}をダウンロード。インストール手順と初回起動時のヘルプも掲載しています。"
+  },
+  "/faq": {
+    "title": "よくある質問 — MacBook Cleanerは安全？ | MacBook Cleaner",
+    "description": "ローカル処理を重視するMacクリーナー＆パフォーマンスモニター、MacBook Cleanerの安全性、プライバシー、権限、パフォーマンスモニタリング、バッテリーの状態、互換性、インストールに関する質問にお答えします。"
+  },
+  "/support": {
+    "title": "サポート — MacBook Cleaner",
+    "description": "MacBook Cleanerのサポート：インストールのヘルプ、不具合の報告、機能のリクエスト、お問い合わせ先。"
+  },
+  "/changelog": {
+    "title": "リリースノート — MacBook Cleaner",
+    "description": "MacBook Cleanerの各バージョンでの変更点。"
+  },
+  "/privacy": {
+    "title": "プライバシーポリシー — MacBook Cleaner",
+    "description": "MacBook Cleanerとこのウェブサイトが情報をどのように扱うか。アプリはローカルでスキャン・クリーンアップ・モニタリングを行い、お使いのファイルやMacのパフォーマンスに関する情報を一切送信しません。"
+  },
+  "/terms": {
+    "title": "利用規約 — MacBook Cleaner",
+    "description": "MacBook Cleanerのダウンロードおよび使用に適用される規約。"
+  },
+  "/thank-you": {
+    "title": "ご購入ありがとうございます — MacBook Cleaner",
+    "description": "ご購入ありがとうございます。ライセンスキーと有効化の手順はこちらでご確認いただけます。"
+  },
+  "/404": {
+    "title": "ページが見つかりません — MacBook Cleaner",
+    "description": "お探しのページは存在しません。"
+  },
+  "ogImageAlt": "ストレージの内訳を表示するMacBook Cleanerアプリ",
+  "schema": {
+    "featureList": ["Macストレージクリーナー", "ストレージアナライザー", "大容量ファイルファインダー", "重複ファイルファインダー", "アプリアンインストーラー", "CPU・メモリモニター", "実行中アプリモニター", "バッテリーの状態と充放電回数", "Macシステム情報"]
+  }
+}

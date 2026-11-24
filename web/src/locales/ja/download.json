@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "MacBook Cleanerアプリアイコン",
+    "title": "MacBook Cleaner for macOS",
+    "lead": "Mac向けのストレージ整理とパフォーマンスモニタリング — すべてローカルで処理されます。",
+    "started": "ダウンロードを開始しました — <b>{{fileName}}</b>。完了したら、以下の手順に従ってください。",
+    "fileInfo": "{{fileName}}{{sizePart}} ・ ディスクイメージ（.dmg）",
+    "quickSteps": ["MacBook Cleanerをダウンロードします。", "ダウンロードしたDMGを開きます。", "MacBook Cleanerをアプリケーションフォルダにドラッグします。"],
+    "quickStepsNotarizedLast": "アプリを起動します。",
+    "quickStepsUnnotarizedLast": "アプリを起動します — 初回は<a>このまま開く</a>を選択してください。",
+    "specs": { "version": "バージョン {{version}}", "released": "{{date}} にリリース", "built": "{{date}} にビルド", "macos": "{{macos}} 以降" },
+    "links": { "releaseNotes": "リリースノート", "privacy": "プライバシー", "terms": "利用規約" },
+    "checksumLabel": "SHA-256",
+    "releaseDetailsAria": "リリースの詳細"
+  },
+  "requirements": {
+    "eyebrow": "システム要件",
+    "title": "お使いのMacで動作しますか？",
+    "macos": "macOS",
+    "macosValue": "{{macosName}}（{{macosVersion}}）以降",
+    "processor": "プロセッサ",
+    "intelNote": "この検証済みビルドはIntel Macをサポートしていません。",
+    "account": "アカウント",
+    "accountValue": "不要"
+  },
+  "install": {
+    "eyebrow": "インストール",
+    "title": "1分以内にインストール完了。",
+    "steps": [
+      { "title": "DMGをダウンロード", "body": "<b>Mac用をダウンロード</b>をクリックします。ディスクイメージがダウンロードフォルダに保存されます。" },
+      { "title": "DMGを開く", "body": "ダウンロードフォルダ内の<code>{{fileName}}</code>をダブルクリックします。アプリとアプリケーションフォルダが表示されたウィンドウが開きます。" },
+      { "title": "アプリケーションフォルダへドラッグ", "body": "<b>MacBook Cleaner</b>をアプリケーションフォルダへドラッグし、Finderのサイドバーからディスクイメージを取り出します。" },
+      { "title": "アプリを起動", "body": "アプリケーションまたはLaunchpadからMacBook Cleanerを開きます。スケジュールクリーンアップはアプリケーションフォルダから起動した場合のみ機能します。" }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "初回起動時",
+    "title": "セキュリティ警告が表示されますか？",
+    "intro": "現時点では想定内です — 理由と、安全にアプリを開く方法をご説明します。",
+    "noticeTitle": "MacBook CleanerはまだAppleの公証を受けていません",
+    "noticeBody1": "Mac App Store以外で配布されるアプリは通常、Apple Developer IDで署名され、公証を受けています。このバージョンはDeveloper IDなしのアドホック署名であり、公証も受けていないため、初めて開く際にmacOS Gatekeeperは開発元を確認できないと表示します。このメッセージは問題が見つかったという意味ではなく、Appleがこのビルドをレビューしていないことを意味します。",
+    "noticeBody2": "<b>MacBook Cleanerは必ずこのウェブサイトからのみダウンロードしてください。</b>他の場所から入手したファイルがある場合は削除してください。",
+    "howtoTitle": "システム設定から一度だけ開く",
+    "steps": [
+      "アプリケーションからMacBook Cleanerを開きます。警告が表示されたら<b>完了</b>（または<b>キャンセル</b>）をクリックします — ゴミ箱には移動しないでください。",
+      "<b>システム設定 → プライバシーとセキュリティ</b>を開き、下にスクロールして<b>セキュリティ</b>セクションを表示します。",
+      "MacBook Cleanerがブロックされたというメッセージの横にある<b>このまま開く</b>をクリックし、パスワードまたはTouch IDで確認します。",
+      "最後のダイアログで<b>開く</b>をクリックします。macOSはこの選択を記憶するため、バージョンごとに1回だけ行えば済みます。"
+    ],
+    "tip": "macOS 14 Sonoma以前では、アプリケーション内のアプリをControlキーを押しながらクリックし、<b>開く</b>を選択後、再度<b>開く</b>をクリックする方法も利用できます。"
+  },
+  "afterInstall": {
+    "eyebrow": "インストール後",
+    "title": "知っておくと良いこと。",
+    "permissions": { "title": "権限", "body": "初めてクリーンアップを行う際、macOSはダウンロード、デスクトップ、書類へのアクセスとFinderの制御を許可するよう求める場合があります。フルディスクアクセスは任意です。", "link": "それぞれが必要な理由 →" },
+    "updates": { "title": "アップデート", "body": "<b>設定 → アップデートを確認</b>では、新しいバージョンの確認、ダウンロード、検証を行います — お客様の確認なしに何かがインストールされることはなく、完了するにはアプリを一度再起動する必要があります。設定内容は保持されます。" },
+    "uninstalling": { "title": "アンインストール", "body": "スケジュールクリーンアップとログイン時に起動をオフにしてから、アプリをゴミ箱へドラッグしてください。", "link": "詳しい手順 →" },
+    "stuck": "うまくいかない場合は？",
+    "contactSupport": "サポートに問い合わせる →"
+  }
+}

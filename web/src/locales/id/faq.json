@@ -1,0 +1,160 @@
+{
+  "eyebrow": "FAQ",
+  "title": "Pertanyaan yang sering diajukan",
+  "intro": "Jawaban langsung tentang keamanan, privasi, kompatibilitas, dan cara kerja MacBook Cleaner.",
+  "topicsAria": "Topik FAQ",
+  "stillHaveQuestion": "Masih punya pertanyaan?",
+  "contactLine": "Kirim surel ke <email>{{email}}</email> atau kunjungi <support>Dukungan</support>.",
+  "groups": {
+    "basics": {
+      "title": "Dasar-dasar",
+      "items": {
+        "what-is-it": {
+          "question": "Apa itu MacBook Cleaner?",
+          "answer": [
+            "MacBook Cleaner adalah aplikasi macOS yang menunjukkan apa yang memenuhi penyimpanan Anda dan membantu Anda menghapus yang tidak diperlukan: cache, log, sisa aplikasi, cache build developer, unduhan lama, file besar, dan duplikat persis.",
+            "Aplikasi ini juga menyertakan dashboard Performance: penggunaan CPU dan memori langsung, aplikasi yang menggunakan sumber daya terbanyak, kesehatan baterai di MacBook, dan informasi penting tentang Mac serta macOS Anda.",
+            "Anda meninjau semuanya sebelum dihapus, dan item yang dihapus masuk ke Trash, bukan dihapus permanen."
+          ]
+        },
+        "what-files": {
+          "question": "File apa saja yang bisa dibersihkan?",
+          "answer": [
+            "Cache dan log aplikasi serta sistem di Library pengguna Anda; cache Safari, Chrome, Edge, dan Firefox; cache sisa dari aplikasi yang sudah Anda copot pemasangannya; cache developer (Xcode DerivedData, Archives, Device Support, data Simulator, cache npm, Yarn, pnpm, Gradle, CocoaPods, image emulator Android); dan — hanya saat Anda memilihnya — file besar, unduhan lama, dan file duplikat di Downloads, Desktop, Documents, dan Movies.",
+            "Aplikasi ini juga dapat mencopot pemasangan aplikasi dari folder Applications Anda beserta data sisanya."
+          ]
+        },
+        "free": {
+          "question": "Apakah MacBook Cleaner gratis?",
+          "answer": ["Semua fitur berfungsi penuh selama uji coba gratis {{trialDays}} hari — tidak perlu akun atau kartu kredit untuk memulai. Setelah itu, satu kali pembayaran {{price}} membukanya selamanya: tanpa langganan, tanpa biaya berulang. {{priceNote}}", "Kunci lisensi dikirim via surel segera setelah pembayaran, berfungsi untuk satu Mac dalam satu waktu, dan dapat dinonaktifkan serta dipindahkan ke Mac lain kapan pun Anda butuhkan."]
+        },
+        "faster": {
+          "question": "Apakah membersihkan file akan membuat Mac saya lebih cepat?",
+          "answer": [
+            "MacBook Cleaner membebaskan ruang disk dan menunjukkan apa yang sedang dilakukan Mac Anda. Tab Performance-nya menunjukkan aplikasi mana yang menggunakan CPU dan memori terbanyak, sehingga Anda bisa memutuskan apa yang perlu ditutup — tetapi aplikasi ini tidak “meningkatkan” RAM, mengubah item startup, atau mengubah pengaturan sistem, dan kami tidak menjanjikan peningkatan kecepatan.",
+            "Meski begitu, macOS memerlukan ruang kosong untuk pembaruan, memori virtual, dan cache, sehingga disk yang hampir penuh dapat menyebabkan masalah yang bisa dihindari dengan membebaskan ruang."
+          ]
+        }
+      }
+    },
+    "safety": {
+      "title": "Keamanan & privasi",
+      "items": {
+        "safe": {
+          "question": "Apakah MacBook Cleaner aman?",
+          "answer": [
+            "Dirancang dengan prinsip agar data Anda tidak hilang. Tidak ada yang dihapus permanen — item yang disetujui dipindahkan ke Trash, dan aplikasi tidak pernah mengosongkannya. File Anda sendiri (Downloads, Desktop, Documents, Movies) tidak pernah dipilih otomatis dan selalu memerlukan konfirmasi.",
+            "Pemeriksaan keamanan bawaan berjalan pada setiap penghapusan, apa pun yang diminta antarmukanya: lokasi sistem, folder utama Anda beserta folder-folder utamanya ditolak, dan jalur yang terlihat seperti backup, keychain, kata sandi, atau kunci dilindungi.",
+            "Seperti alat penghapus file apa pun, simpan backup (misalnya dengan Time Machine) dan tinjau sebelum membersihkan."
+          ]
+        },
+        "review": {
+          "question": "Bisakah saya meninjau file sebelum menghapusnya?",
+          "answer": ["Ya — itulah inti cara kerja aplikasi ini. Setiap item menampilkan ukuran, lokasi, alasan keberadaannya, dan apa yang terjadi jika Anda menghapusnya. Anda bisa membatalkan centang apa pun, mempratinjau file dengan Quick Look, menampilkannya di Finder, atau menambahkannya ke daftar pengecualian “jangan sarankan lagi”."]
+        },
+        "recover": {
+          "question": "Bisakah file yang dihapus dipulihkan?",
+          "answer": ["Ya, selama Anda belum mengosongkan Trash. MacBook Cleaner memindahkan item ke Trash alih-alih menghapusnya, sehingga Anda bisa membuka Trash di Finder dan memilih Put Back.", "Perhatikan bahwa item di Trash tetap menggunakan ruang disk — ruang kosong Anda baru bertambah setelah Anda mengosongkan Trash sendiri."]
+        },
+        "upload": {
+          "question": "Apakah file saya diunggah?",
+          "answer": ["Tidak. Pemindaian dan pembersihan terjadi sepenuhnya di Mac Anda. Aplikasi ini tidak memiliki analitik, telemetri, pelaporan crash, atau sistem akun, dan tidak mengirim informasi tentang file Anda ke mana pun.", "Satu-satunya saat aplikasi menyentuh internet adalah ketika Anda mengklik tautan (seperti “Check for Updates” atau “Privacy Policy”), yang membuka situs ini di browser Anda."],
+          "linkLabel": "Baca Kebijakan Privasi"
+        },
+        "permissions": {
+          "question": "Izin apa saja yang dibutuhkannya?",
+          "answer": [
+            "macOS mungkin meminta Anda mengizinkan akses ke folder Downloads, Desktop, dan Documents agar aplikasi bisa menemukan file besar dan unduhan lama. Saat Anda pertama kali membersihkan, macOS bertanya apakah MacBook Cleaner boleh mengontrol Finder — aplikasi meminta Finder memindahkan item ke Trash agar bisa dikembalikan.",
+            "Full Disk Access bersifat opsional. Ini memungkinkan aplikasi mengukur lokasi yang dijaga privat oleh macOS, seperti beberapa cache aplikasi dan Trash. Tanpanya pun aplikasi tetap berfungsi dan hanya menampilkan lebih sedikit. Notifikasi hanya digunakan untuk pengingat dan ringkasan pembersihan terjadwal."
+          ]
+        }
+      }
+    },
+    "compatibility": {
+      "title": "Kompatibilitas & instalasi",
+      "items": {
+        "apple-silicon": {
+          "question": "Apakah ini berfungsi di Mac dengan Apple silicon?",
+          "answerYes": ["Ya. Build terverifikasi saat ini berjalan secara native di Mac dengan Apple silicon (chip seri M)."],
+          "answerUnverified": ["Installer terverifikasi belum dipublikasikan, sehingga kompatibilitas arsitektur tidak diklaim di situs ini."]
+        },
+        "intel": {
+          "question": "Apakah ini mendukung Mac Intel?",
+          "answerUnverified": ["Installer terverifikasi belum dipublikasikan, sehingga kompatibilitas Intel tidak diklaim di situs ini."],
+          "answerUniversal": ["Ya. Unduhan ini adalah aplikasi universal yang berjalan secara native baik di Mac Intel maupun Apple silicon."],
+          "answerNo": ["Belum. Build yang dipublikasikan saat ini hanya untuk Mac Apple silicon. Build yang kompatibel dengan Intel belum dirilis — halaman ini akan diperbarui jika itu berubah."]
+        },
+        "macos-versions": {
+          "question": "Versi macOS apa saja yang didukung?",
+          "answer": ["{{macosName}} ({{macosVersion}}) atau yang lebih baru, pada Mac {{architecture}}."]
+        },
+        "security-warning": {
+          "question": "Mengapa macOS menampilkan peringatan keamanan?",
+          "answer": [
+            "MacBook Cleaner belum dinotarisasi oleh Apple, sehingga saat pertama kali Anda membukanya, Gatekeeper macOS mengatakan tidak dapat memverifikasi developer-nya. Ini wajar untuk aplikasi yang didistribusikan di luar Mac App Store tanpa notarisasi Apple — bukan berarti ditemukan sesuatu yang berbahaya.",
+            "Hanya unduh aplikasi ini dari situs ini. Lalu buka sekali melalui System Settings → Privacy & Security → Open Anyway. Halaman Download menjelaskannya langkah demi langkah."
+          ],
+          "linkLabel": "Cara membuka aplikasi ini"
+        },
+        "uninstall": {
+          "question": "Bagaimana cara mencopot pemasangan MacBook Cleaner?",
+          "answer": [
+            "Jika Anda mengaktifkan Scheduled Cleanup atau Launch at Login, matikan dulu di aplikasi agar helper latar belakangnya dihapus. Lalu tutup aplikasi dan seret MacBook Cleaner dari Applications ke Trash.",
+            "Untuk menghapus pengaturan dan log-nya juga, hapus ~/Library/Application Support/{{bundleId}} dan ~/Library/Logs/{{bundleId}}. Jika Anda melewati langkah pertama, hapus juga file {{bundleId}}.*.plist mana pun di ~/Library/LaunchAgents."
+          ]
+        }
+      }
+    },
+    "performance": {
+      "title": "Pemantauan performa",
+      "items": {
+        "cpu": {
+          "question": "Apakah MacBook Cleaner memantau penggunaan CPU?",
+          "answer": ["Ya. Tab Performance menampilkan penggunaan CPU langsung dengan grafik 60 detik, terbagi ke waktu user, system, dan idle, serta penggunaan CPU setiap aplikasi yang berjalan. Nilai ditampilkan sebagai persentase dari total daya pemrosesan Mac Anda."]
+        },
+        "ram-apps": {
+          "question": "Bisakah saya melihat aplikasi mana yang menggunakan RAM terbanyak?",
+          "answer": ["Ya. Running Apps mendaftar aplikasi yang terbuka beserta memori, CPU, dan waktu berjalannya, dan dapat diurutkan berdasarkan salah satunya. Memori adalah jejak fisik — ukuran yang sama dengan yang digunakan Activity Monitor — dan mencakup proses bantuan setiap aplikasi.", "macOS tidak mengizinkan aplikasi biasa membaca CPU atau memori proses milik pengguna lain (seperti beberapa layanan sistem), sehingga itu ditampilkan dengan tanda hubung, bukan angka."]
+        },
+        "cycle-count": {
+          "question": "Bisakah saya memeriksa jumlah siklus baterai MacBook saya?",
+          "answer": ["Ya. Di MacBook, bagian Battery menampilkan jumlah siklus, kapasitas maksimum, daya, sumber daya, dan kondisi baterai seperti yang dilaporkan macOS. Saat baterai melaporkan jumlah siklus yang dirancang untuknya, itu juga ditampilkan. Mac desktop tidak memiliki baterai, sehingga bagian ini disembunyikan."]
+        },
+        "upload-apps": {
+          "question": "Apakah aplikasi ini mengunggah data aplikasi yang berjalan di perangkat saya?",
+          "answer": ["Tidak. Aplikasi yang berjalan, detail proses, CPU, memori, baterai, dan informasi Mac dibaca secara lokal dari macOS, ditampilkan di layar, dan hanya disimpan dalam memori selama aplikasi terbuka. Tidak ada yang diunggah, disimpan di disk, atau digunakan untuk analitik."],
+          "linkLabel": "Baca Kebijakan Privasi"
+        },
+        "mac-model": {
+          "question": "Bisakah saya melihat model Mac dan RAM saya?",
+          "answer": ["Ya. Mac Info menampilkan model, chip, core CPU dan GPU, memori, penyimpanan, layar, versi dan build macOS, serta uptime Anda. Nomor seri Anda tidak pernah dibaca."]
+        },
+        "macos-update": {
+          "question": "Bisakah ini memberi tahu saya jika macOS perlu diperbarui?",
+          "answer": ["Aplikasi ini menampilkan hasil pemeriksaan Software Update otomatis bawaan macOS — misalnya “Up to date” atau nama pembaruan yang tersedia — beserta waktu terakhir macOS memeriksa. MacBook Cleaner tidak pernah menghubungi Apple sendiri dan tidak pernah memasang pembaruan; tombol Open Software Update membawa Anda ke System Settings.", "Jika macOS belum mencatat pemeriksaan apa pun, statusnya ditampilkan sebagai tidak diketahui, bukan ditebak."]
+        },
+        "monitoring-overhead": {
+          "question": "Apakah pemantauan performa memperlambat Mac saya?",
+          "answer": ["Pemantauan hanya berjalan saat layar Performance terbuka, melambat saat jendelanya tidak fokus, dan berhenti total saat jendelanya disembunyikan atau Anda berpindah ke layar lain. Detail statis seperti model Mac Anda hanya dibaca sekali per sesi.", "Dalam pengukuran kami pada Apple M1 MacBook Pro, pekerjaan pemantauan rata-rata sekitar setengah persen dari satu core CPU saat layar terbuka."]
+        }
+      }
+    },
+    "automation": {
+      "title": "Pemindaian & otomatisasi",
+      "items": {
+        "how-often": {
+          "question": "Seberapa sering saya harus memindai Mac saya?",
+          "answer": ["Tidak ada jawaban yang pasti benar — tergantung bagaimana Anda menggunakan Mac Anda. Banyak orang merasa pemeriksaan mingguan sudah cukup. Developer yang sering melakukan build mungkin ingin memindai lebih sering, karena cache build cepat membesar.", "Scheduled Cleanup dapat mengingatkan Anda secara otomatis, hanya saat ada cukup banyak yang bisa dibersihkan atau ruang kosong mulai menipis."]
+        },
+        "automatic": {
+          "question": "Apakah aplikasi ini berjalan secara otomatis?",
+          "answer": [
+            "Hanya jika Anda mengaktifkannya. Scheduled Cleanup nonaktif secara default. Saat diaktifkan, aplikasi menjalankan pemeriksaan latar belakang harian, mingguan, atau bulanan pada waktu yang Anda pilih.",
+            "Dalam mode “Remind me” aplikasi hanya mengirim notifikasi. Dalam mode “Clean automatically” — yang memerlukan konfirmasi eksplisit terpisah — aplikasi memindahkan daftar tetap enam cache developer (Xcode DerivedData, npm, Yarn, pnpm, Gradle, CocoaPods) ke Trash, dan hanya saat ukurannya minimal 1 GB, hingga 10 GB dan 50 item per sesi. File pribadi Anda tidak pernah disentuh secara otomatis.",
+            "Launch at Login juga opsional dan nonaktif secara default."
+          ]
+        }
+      }
+    }
+  }
+}

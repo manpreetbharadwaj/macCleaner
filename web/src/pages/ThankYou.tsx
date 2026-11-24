@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Check, Copy, KeyRound, Mail } from 'lucide-react'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
@@ -16,6 +17,7 @@ function usePurchaseDetails() {
 }
 
 function CopyButton({ value }: { value: string }) {
+  const { t } = useTranslation('thankYou')
   const [copied, setCopied] = useState(false)
   const onCopy = async () => {
     try {
@@ -29,24 +31,21 @@ function CopyButton({ value }: { value: string }) {
   return (
     <button type="button" className="btn btn--primary btn--sm" onClick={onCopy}>
       {copied ? <Check size={15} aria-hidden="true" /> : <Copy size={15} aria-hidden="true" />}
-      {copied ? 'Copied' : 'Copy'}
+      {copied ? t('copied') : t('copy')}
     </button>
   )
 }
 
 export function ThankYouPage() {
+  const { t } = useTranslation('thankYou')
   const { licenseKey, email } = usePurchaseDetails()
+  const steps = t('activateSteps', { returnObjects: true }) as string[]
 
   return (
     <div className="page">
       <section className="page-hero">
         <div className="container container--narrow">
-          <SectionHeading
-            level={1}
-            eyebrow="Thank you"
-            title="Thank you for your purchase"
-            intro="Check your email for your license key, then open MacBook Cleaner and select Activate License. Your purchase isn't unlocked until the app itself confirms your key — this page is just a convenience copy of it."
-          />
+          <SectionHeading level={1} eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} />
         </div>
       </section>
 
@@ -56,7 +55,7 @@ export function ThankYouPage() {
             {licenseKey ? (
               <>
                 <h2 id="license-key-title" className="display-3" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                  <KeyRound size={22} aria-hidden="true" /> Your license key
+                  <KeyRound size={22} aria-hidden="true" /> {t('licenseKeyTitle')}
                 </h2>
                 <div
                   className="selectable"
@@ -65,29 +64,27 @@ export function ThankYouPage() {
                   <span>{licenseKey}</span>
                   <CopyButton value={licenseKey} />
                 </div>
-                {email && <p className="download-hero__note">A copy was also sent to {email}.</p>}
+                {email && <p className="download-hero__note">{t('sentCopyTo', { email })}</p>}
               </>
             ) : (
               <>
                 <h2 id="license-key-title" className="display-3" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                  <Mail size={22} aria-hidden="true" /> Check your email
+                  <Mail size={22} aria-hidden="true" /> {t('checkEmailTitle')}
                 </h2>
                 <p className="lead" style={{ marginTop: '0.75rem' }}>
-                  We couldn't find a license key in this page's link. Dodo Payments emails your key right after checkout — look for a message from Dodo Payments, or check your spam folder.
+                  {t('noKeyFound')}
                 </p>
               </>
             )}
 
-            <h3 style={{ marginTop: '2rem', fontSize: '1.05rem' }}>How to activate it</h3>
-            <ol className="quick-steps" aria-label="How to activate your license">
-              <li>Open MacBook Cleaner (download it below if you haven't yet).</li>
-              <li>Go to Settings → License.</li>
-              <li>Paste your license key and tap Activate.</li>
+            <h3 style={{ marginTop: '2rem', fontSize: '1.05rem' }}>{t('howToActivate')}</h3>
+            <ol className="quick-steps" aria-label={t('howToActivate')}>
+              {steps.map((s) => (
+                <li key={s}>{s}</li>
+              ))}
             </ol>
 
-            <p className="download-hero__note">
-              Your license works on one Mac at a time. You can deactivate and transfer it to another Mac anytime from Settings → License.
-            </p>
+            <p className="download-hero__note">{t('oneMacNote')}</p>
           </Reveal>
         </div>
       </section>

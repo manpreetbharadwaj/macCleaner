@@ -1,5 +1,5 @@
-import { Link } from 'react-router'
 import { SITE } from '@/config/site'
+import { Link } from './router'
 
 // `/logo.png` is a full-bleed square with no built-in padding or rounding
 // (the native macOS app icon is a separately composited asset — see

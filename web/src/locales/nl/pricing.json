@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Prijzen",
+  "title1": "Probeer het gratis, en betaal dan eenmalig ",
+  "title2": "{{price}}",
+  "titleSuffix": "",
+  "intro": "Alle functies werken tijdens een gratis proefperiode van {{trialDays}} dagen — geen account of creditcard nodig om te beginnen. Daarna ontgrendelt een eenmalige betaling van {{price}} MacBook Cleaner voorgoed: geen abonnement, nooit verlenging.",
+  "includedTitle": "Eén licentie. Eén Mac. Voor altijd.",
+  "checks": [
+    "Eenmalige aankoop van {{price}} — geen abonnement",
+    "Levenslange licentie, geen vervaldatum, geen verlenging",
+    "{{trialDays}}-daagse gratis proefperiode, alle functies, geen account nodig om te beginnen",
+    "Gelicentieerd voor één Mac tegelijk — deactiveer en breng op elk moment over naar een nieuwe Mac",
+    "Licentiesleutel direct na betaling per e-mail bezorgd"
+  ],
+  "buyButton": "Koop levenslange licentie — {{price}}",
+  "priceNote": "Catalogusprijs in USD. Wordt bij het afrekenen getoond in je lokale valuta; afhankelijk van je locatie kan belasting van toepassing zijn.",
+  "alreadyPurchased": "Al gekocht? Activeer je licentiesleutel vanuit de app — Instellingen → Licentie.",
+  "sandboxNote": "Aankopen is hier nog niet mogelijk — we ronden de configuratie nog af. Kom binnenkort terug, of download ondertussen de gratis proefversie.",
+  "ctaTitle": "Download het, probeer het {{trialDays}} dagen gratis, beslis later."
+}

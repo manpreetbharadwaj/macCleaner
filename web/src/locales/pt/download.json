@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "Ícone da aplicação MacBook Cleaner",
+    "title": "MacBook Cleaner para macOS",
+    "lead": "Limpeza de armazenamento e monitorização de desempenho para o seu Mac — processado localmente.",
+    "started": "A sua transferência começou — <b>{{fileName}}</b>. Quando terminar, siga os passos abaixo.",
+    "fileInfo": "{{fileName}}{{sizePart}} · Imagem de disco (.dmg)",
+    "quickSteps": ["Transfira o MacBook Cleaner.", "Abra o DMG transferido.", "Arraste o MacBook Cleaner para Aplicações."],
+    "quickStepsNotarizedLast": "Inicie a aplicação.",
+    "quickStepsUnnotarizedLast": "Inicie a aplicação — na primeira vez, <a>use Abrir Mesmo Assim</a>.",
+    "specs": { "version": "Versão {{version}}", "released": "Lançado em {{date}}", "built": "Compilado em {{date}}", "macos": "{{macos}} ou posterior" },
+    "links": { "releaseNotes": "Notas de versão", "privacy": "Privacidade", "terms": "Termos" },
+    "checksumLabel": "SHA-256",
+    "releaseDetailsAria": "Detalhes da versão"
+  },
+  "requirements": {
+    "eyebrow": "Requisitos do sistema",
+    "title": "Vai funcionar no meu Mac?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}} ({{macosVersion}}) ou posterior",
+    "processor": "Processador",
+    "intelNote": "Os Macs Intel não são suportados por esta compilação verificada.",
+    "account": "Conta",
+    "accountValue": "Nenhuma necessária"
+  },
+  "install": {
+    "eyebrow": "Instalação",
+    "title": "Instale em menos de um minuto.",
+    "steps": [
+      { "title": "Transfira o DMG", "body": "Clique em <b>Transferir para Mac</b>. A imagem de disco é guardada na sua pasta Transferências." },
+      { "title": "Abra o DMG", "body": "Faça duplo clique em <code>{{fileName}}</code> em Transferências. Abre-se uma janela a mostrar a aplicação e a sua pasta Aplicações." },
+      { "title": "Arraste para Aplicações", "body": "Arraste o <b>MacBook Cleaner</b> para a pasta Aplicações e, depois, ejete a imagem de disco a partir da barra lateral do Finder." },
+      { "title": "Inicie a aplicação", "body": "Abra o MacBook Cleaner a partir de Aplicações ou do Launchpad. Execute-o a partir de Aplicações — a limpeza programada só funciona a partir daí." }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "Primeiro arranque",
+    "title": "A ver um aviso de segurança?",
+    "intro": "Isso é esperado neste momento — eis porquê, e como abrir a aplicação com segurança.",
+    "noticeTitle": "O MacBook Cleaner ainda não está notarizado pela Apple",
+    "noticeBody1": "As aplicações distribuídas fora da Mac App Store são normalmente assinadas com um Apple Developer ID e notarizadas. Esta versão está assinada de forma ad hoc — sem um Developer ID — e não está notarizada, pelo que, na primeira vez que a abrir, o Gatekeeper do macOS diz que não consegue verificar o programador ou verificar a aplicação quanto a software malicioso. Esta mensagem não significa que foi encontrado um problema — significa que a Apple ainda não reviu esta compilação.",
+    "noticeBody2": "<b>Transfira o MacBook Cleaner apenas a partir deste site.</b> Se obteve o ficheiro noutro local, elimine-o.",
+    "howtoTitle": "Abra-o uma vez através das Definições do Sistema",
+    "steps": [
+      "Abra o MacBook Cleaner a partir de Aplicações. Quando o aviso aparecer, clique em <b>Concluído</b> (ou <b>Cancelar</b>) — não o mova para o Lixo.",
+      "Abra <b>Definições do Sistema → Privacidade e Segurança</b> e desça até à secção <b>Segurança</b>.",
+      "Junto à mensagem sobre o bloqueio do MacBook Cleaner, clique em <b>Abrir Mesmo Assim</b> e depois confirme com a sua palavra-passe ou Touch ID.",
+      "Clique em <b>Abrir</b> na caixa de diálogo final. O macOS recorda a sua escolha, pelo que só precisa de fazer isto uma vez por versão."
+    ],
+    "tip": "No macOS 14 Sonoma e versões anteriores, também pode fazer Control-clique na aplicação em Aplicações, escolher <b>Abrir</b> e depois clicar novamente em <b>Abrir</b>."
+  },
+  "afterInstall": {
+    "eyebrow": "Após a instalação",
+    "title": "Bom saber.",
+    "permissions": { "title": "Permissões", "body": "O macOS pode pedir para permitir que a aplicação aceda a Transferências, Ambiente de Trabalho e Documentos, e para controlar o Finder na primeira limpeza. O Acesso Total ao Disco é opcional.", "link": "Porque é que cada uma é necessária →" },
+    "updates": { "title": "Atualizações", "body": "<b>Definições → Verificar Atualizações</b> verifica, transfere e valida novas versões por si — nada se instala sem a sua confirmação, e terá de reiniciar a aplicação uma vez para concluir. As suas definições são mantidas." },
+    "uninstalling": { "title": "Desinstalação", "body": "Desative a Limpeza Programada e o Iniciar com a Sessão e, depois, arraste a aplicação para o Lixo.", "link": "Passos completos →" },
+    "stuck": "Precisa de ajuda?",
+    "contactSupport": "Contactar o suporte →"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "legalReviewNotice": "Deze vertaling is gemaakt met machinevertaling en is nog niet beoordeeld door een advocaat die bevoegd is in jouw rechtsgebied. De Engelse versie van deze voorwaarden is de gezaghebbende tekst; bij tegenstrijdigheid geldt de Engelse versie.",
+  "title": "Gebruiksvoorwaarden",
+  "shortVersion": "<b>De korte versie.</b> Je kunt {{siteName}} gebruiken op Macs die je bezit of beheert. Jij beslist wat wordt verwijderd, dus controleer items en bewaar back-ups. We kunnen niet garanderen hoeveel ruimte je terugwint. De Software wordt geleverd zoals ze is.",
+  "shortVersionNote": "Deze samenvatting is alleen voor het gemak; de volledige voorwaarden hieronder zijn van toepassing.",
+  "sections": {
+    "acceptance": {
+      "title": "Aanvaarding van deze voorwaarden",
+      "body": [{ "p": "Deze Gebruiksvoorwaarden (“Voorwaarden”) vormen een overeenkomst tussen jou en {{companyName}} (“wij”) met betrekking tot de app {{siteName}} voor macOS (de “Software”) en deze website (de “Website”). Door de Software te downloaden, installeren of gebruiken, of door de Website te gebruiken, ga je akkoord met deze Voorwaarden. Als je het er niet mee eens bent, gebruik ze dan niet. Als je de Software namens een organisatie gebruikt, bevestig je dat je bevoegd bent deze Voorwaarden namens die organisatie te aanvaarden." }]
+    },
+    "license": {
+      "title": "Licentie voor gebruik van de Software",
+      "body": [{ "p": "Onder voorbehoud van deze Voorwaarden verlenen wij je een persoonlijke, niet-exclusieve, niet-overdraagbare, herroepbare licentie om de Software te downloaden, installeren en gebruiken op Macs die je bezit of beheert, voor je persoonlijke of interne zakelijke doeleinden. De Software wordt in licentie gegeven, niet verkocht. We behouden ons alle rechten voor die niet uitdrukkelijk zijn verleend." }]
+    },
+    "restrictions": {
+      "title": "Licentiebeperkingen",
+      "body": [
+        { "p": "Tenzij toepasselijk recht dit uitdrukkelijk toestaat, mag je niet:" },
+        { "ul": ["de Software kopiëren, wijzigen, vertalen of er afgeleide werken van maken;", "de Software reverse-engineeren, decompileren of demonteren;", "de Software verkopen, verhuren, leasen, sublicentiëren, herdistribueren of publiceren, of deze beschikbaar stellen voor download vanaf een andere plek dan deze Website;", "auteursrecht-, handelsmerk- of andere vermeldingen verwijderen of wijzigen;", "de Software gebruiken in strijd met enige wet, of om gegevens te benaderen of te verwijderen die je niet bevoegd bent te beheren."] }
+      ]
+    },
+    "price": {
+      "title": "Prijs",
+      "body": [{ "p": "Versie {{version}} van de Software wordt gratis aangeboden en zonder aankopen in de app of abonnementen. Als we in de toekomst betaalde functies of versies introduceren, beschrijven we deze vooraf duidelijk, en wordt je nooit iets in rekening gebracht zonder dat je ermee instemt." }]
+    },
+    "your-responsibility": {
+      "title": "Jouw verantwoordelijkheid voor wat je verwijdert",
+      "body": [
+        { "p": "De Software helpt je bestanden te identificeren en stelt voor wat mogelijk veilig is om te verwijderen, maar <b>jij beslist wat wordt verwijderd</b>. Labels zoals “Veilig” en “Controleren” zijn aanbevelingen op basis van bestandstype en locatie, geen garanties over de waarde die een bestand voor jou heeft. Controleer items voordat je opschoont — vooral je eigen bestanden en alles dat is gemarkeerd ter controle." },
+        { "p": "De Software verplaatst items die je goedkeurt naar de Prullenmand van macOS, van waaruit ze normaal gesproken kunnen worden hersteld totdat de Prullenmand wordt leeggemaakt. Het leegmaken van de Prullenmand verwijdert ze permanent; dat is jouw actie, buiten de Software om. Als je automatisch opschonen inschakelt bij Geplande opschoning, machtig je de Software om de in de Software beschreven in aanmerking komende ontwikkelaarscaches naar de Prullenmand te verplaatsen zonder elke keer te vragen." },
+        { "p": "Het verwijderen van caches of app-gegevens kan ertoe leiden dat andere apps die gegevens opnieuw moeten opbouwen of downloaden, kan je afmelden bij sommige apps, of kan hun gedrag veranderen. Het deïnstalleren van een app samen met de ondersteuningsbestanden verwijdert de lokaal opgeslagen gegevens van die app." }
+      ]
+    },
+    "backups": {
+      "title": "Back-ups",
+      "body": [{ "p": "Je bent verantwoordelijk voor het bijhouden van regelmatige, actuele back-ups van je gegevens (bijvoorbeeld met Time Machine) voordat je de Software gebruikt. We raden ten zeerste aan om een actuele back-up te hebben voordat je iets opschoont." }]
+    },
+    "no-guarantee": {
+      "title": "Geen garantie op resultaten",
+      "body": [{ "p": "De hoeveelheid opslagruimte die de Software vindt of je helpt terug te winnen, hangt volledig af van je Mac en hoe je deze gebruikt. Cijfers in de Software zijn schattingen, en cijfers op deze Website zijn illustratieve voorbeelden. Ruimte die wordt gebruikt door items in de Prullenmand komt pas vrij wanneer de Prullenmand wordt leeggemaakt, en apps kunnen na verloop van tijd caches opnieuw aanmaken. We beloven geen specifieke hoeveelheid teruggewonnen opslagruimte of enige verbetering van de snelheid of prestaties van je Mac. Informatie over prestaties, batterij en systeem die in de Software wordt getoond, wordt gerapporteerd door macOS en uitsluitend ter informatie verstrekt; het is geen diagnose, en de Software repareert geen hardware of batterijen." }]
+    },
+    "updates": {
+      "title": "Updates en wijzigingen aan de Software",
+      "body": [{ "p": "We kunnen updates uitbrengen die functies toevoegen, wijzigen of verwijderen, en we kunnen op elk moment stoppen met het aanbieden van de Software. De Software werkt zichzelf niet bij; nieuwe versies worden op deze Website aangeboden. Deze Voorwaarden zijn van toepassing op updates, tenzij deze vergezeld gaan van andere voorwaarden." }]
+    },
+    "early-release": {
+      "title": "Vroege release",
+      "body": [{ "p": "{{siteName}} is een nieuw product. Hoewel het met uitgebreide waarborgen is gebouwd, kan het fouten bevatten of zich onverwacht gedragen op sommige configuraties.{{notarizedNote}} <link-support>Meld problemen</link-support> zodat we ze kunnen oplossen." }],
+      "notarizedNote": " De huidige versie is niet genotariseerd door Apple, dus macOS toont de eerste keer dat je hem opent een waarschuwing; de installatiestappen staan op de downloadpagina."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "body": [{ "p": "Ons <link-privacy>Privacybeleid</link-privacy> legt uit hoe de Software en de Website met informatie omgaan. Kort gezegd verwerkt de Software je bestanden lokaal op je Mac en stuurt het geen informatie daarover naar ons." }]
+    },
+    "ip": {
+      "title": "Intellectueel eigendom",
+      "body": [{ "p": "De Software en de Website, inclusief hun code, ontwerp, tekst, afbeeldingen en de naam en het logo van {{siteName}}, zijn eigendom van {{companyName}} of haar licentiegevers en worden beschermd door wetten op intellectueel eigendom. Deze Voorwaarden geven je geen enkel recht om onze namen of logo's te gebruiken." }]
+    },
+    "apple": {
+      "title": "Handelsmerken van Apple",
+      "body": [{ "p": "{{siteName}} is een onafhankelijke applicatie en is niet verbonden met, goedgekeurd door of gesponsord door Apple Inc. Apple, Mac, MacBook, macOS, Finder, Safari, Xcode en Time Machine zijn handelsmerken van Apple Inc., gedeponeerd in de VS en andere landen. Andere productnamen zijn handelsmerken van hun respectieve eigenaren." }]
+    },
+    "feedback": {
+      "title": "Feedback",
+      "body": [{ "p": "Als je ons suggesties of feedback stuurt, geef je ons toestemming deze te gebruiken om onze producten te verbeteren, zonder enige verplichting jegens jou." }]
+    },
+    "warranty": {
+      "title": "Uitsluiting van garanties",
+      "body": [{ "p": "Voor zover maximaal toegestaan door de wet, worden de Software en de Website geleverd “zoals ze zijn” en “zoals beschikbaar”, zonder enige garantie, expliciet, impliciet of wettelijk, inclusief impliciete garanties van verkoopbaarheid, geschiktheid voor een bepaald doel, eigendomsrecht en niet-inbreuk. We garanderen niet dat de Software foutloos of ononderbroken zal zijn, dat deze elk verwijderbaar bestand zal identificeren, of dat elk voorgesteld item veilig is om te verwijderen.", "caps": true }]
+    },
+    "liability": {
+      "title": "Beperking van aansprakelijkheid",
+      "body": [
+        { "p": "Voor zover maximaal toegestaan door de wet, is {{companyName}} niet aansprakelijk voor enige indirecte, incidentele, speciale, gevolg- of punitieve schade, of voor verlies van gegevens, bestanden, winst, inkomsten of goodwill, voortvloeiend uit of verband houdend met je gebruik (of onvermogen tot gebruik) van de Software of de Website — met inbegrip van het verwijderen van bestanden die je hebt geselecteerd of goedgekeurd — zelfs als we op de mogelijkheid van dergelijke schade zijn gewezen.", "caps": true },
+        { "p": "Voor zover wettelijk toegestaan, is onze totale aansprakelijkheid voor elke claim met betrekking tot de Software of de Website beperkt tot het hoogste bedrag van het bedrag dat je ons in de twaalf maanden voorafgaand aan de claim voor de Software hebt betaald, of 50 USD [tijdelijke aanduiding — bedrag en valuta nog te bevestigen].", "caps": true },
+        { "p": "Sommige rechtsgebieden staan bepaalde garantie-uitsluitingen of aansprakelijkheidsbeperkingen niet toe, dus sommige van de bovenstaande bepalingen zijn mogelijk niet op jou van toepassing. Niets in deze Voorwaarden beperkt aansprakelijkheid die wettelijk niet kan worden beperkt, of je wettelijke rechten als consument." }
+      ]
+    },
+    "termination": {
+      "title": "Beëindiging",
+      "body": [{ "p": "Je kunt op elk moment stoppen met het gebruik van de Software door deze te deïnstalleren. Je licentie eindigt automatisch als je deze Voorwaarden wezenlijk schendt. Bij beëindiging moet je stoppen met het gebruik en de Software verwijderen. Onderdelen die naar hun aard na beëindiging van kracht moeten blijven, blijven van kracht." }]
+    },
+    "governing-law": {
+      "title": "Toepasselijk recht",
+      "body": [{ "p": "Deze Voorwaarden worden beheerst door de wetten van {{jurisdiction}}, zonder rekening te houden met conflictregels. De rechtbanken van {{jurisdiction}} zijn bevoegd voor elk geschil, behalve waar je lokale consumentenbeschermingswetgeving je het recht geeft een procedure te starten in je eigen woonplaats." }]
+    },
+    "changes": {
+      "title": "Wijzigingen in deze voorwaarden",
+      "body": [{ "p": "We kunnen deze Voorwaarden van tijd tot tijd bijwerken. De datum “Laatst bijgewerkt” bovenaan toont de meest recente herziening; belangrijke wijzigingen worden ook vermeld in de releasenotities. Als je de Software of de Website blijft gebruiken nadat wijzigingen van kracht worden, betekent dit dat je de bijgewerkte Voorwaarden aanvaardt." }]
+    },
+    "general": {
+      "title": "Algemeen",
+      "body": [{ "p": "Deze Voorwaarden vormen, samen met het Privacybeleid, de volledige overeenkomst tussen jou en ons met betrekking tot de Software en de Website. Als een bepaling niet-afdwingbaar blijkt, blijven de overige bepalingen van kracht. Het niet afdwingen van een bepaling door ons is geen afstand van die bepaling." }]
+    },
+    "contact": {
+      "title": "Contact",
+      "body": [{ "p": "Vragen over deze Voorwaarden? Mail naar {{supportEmail}} of schrijf naar {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

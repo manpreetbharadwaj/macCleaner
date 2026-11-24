@@ -1,0 +1,60 @@
+{
+  "/": {
+    "title": "MacBook Cleaner — Pembersih Penyimpanan & Pemantau Performa Mac",
+    "description": "Bebaskan ruang penyimpanan Mac dengan aman dan lihat kondisi Mac Anda. MacBook Cleaner menemukan cache, file besar, dan duplikat, serta menampilkan penggunaan CPU dan RAM, aplikasi yang berjalan, kesehatan baterai, dan informasi sistem Mac — semuanya diproses secara lokal."
+  },
+  "/features": {
+    "title": "Fitur — Pembersih Mac, Monitor CPU & RAM, Kesehatan Baterai | MacBook Cleaner",
+    "description": "Smart Clean, Storage Explorer, pencari File Besar dan Duplikat, App Cleanup, plus monitor performa Mac: penggunaan CPU dan memori, aplikasi yang berjalan, jumlah siklus dan kesehatan baterai, serta informasi sistem Mac."
+  },
+  "/pricing": {
+    "title": "Harga — MacBook Cleaner",
+    "description": "MacBook Cleaner {{version}}: coba gratis selama {{trialDays}} hari, lalu cukup satu kali pembayaran {{price}} untuk lisensi seumur hidup. Tanpa langganan, tidak perlu akun untuk memulai."
+  },
+  "/download": {
+    "title": "Unduh MacBook Cleaner untuk Mac",
+    "description": "Unduh MacBook Cleaner {{version}} untuk {{macos}} atau yang lebih baru pada Mac {{architecture}}. Termasuk langkah instalasi dan bantuan saat pertama kali dibuka."
+  },
+  "/faq": {
+    "title": "FAQ — Apakah MacBook Cleaner Aman? | MacBook Cleaner",
+    "description": "Jawaban seputar keamanan, privasi, izin akses, pemantauan performa, kesehatan baterai, kompatibilitas, dan instalasi MacBook Cleaner, pembersih dan pemantau performa Mac yang sepenuhnya lokal."
+  },
+  "/support": {
+    "title": "Dukungan — MacBook Cleaner",
+    "description": "Dapatkan bantuan untuk MacBook Cleaner: bantuan instalasi, laporan bug, permintaan fitur, dan detail kontak."
+  },
+  "/changelog": {
+    "title": "Catatan Rilis — MacBook Cleaner",
+    "description": "Hal baru di setiap versi MacBook Cleaner untuk macOS."
+  },
+  "/privacy": {
+    "title": "Kebijakan Privasi — MacBook Cleaner",
+    "description": "Cara MacBook Cleaner dan situs ini menangani informasi Anda. Aplikasi ini memindai, membersihkan, dan memantau secara lokal, serta tidak mengirim data apa pun tentang file atau Mac Anda."
+  },
+  "/terms": {
+    "title": "Ketentuan Layanan — MacBook Cleaner",
+    "description": "Ketentuan yang berlaku untuk mengunduh dan menggunakan MacBook Cleaner."
+  },
+  "/thank-you": {
+    "title": "Terima Kasih — MacBook Cleaner",
+    "description": "Terima kasih atas pembelian Anda. Temukan kunci lisensi dan langkah aktivasi di sini."
+  },
+  "/404": {
+    "title": "Halaman tidak ditemukan — MacBook Cleaner",
+    "description": "Halaman yang Anda cari tidak ada."
+  },
+  "ogImageAlt": "Aplikasi MacBook Cleaner menampilkan rincian penyimpanan",
+  "schema": {
+    "featureList": [
+      "Pembersih penyimpanan Mac",
+      "Penganalisis penyimpanan",
+      "Pencari file besar",
+      "Pencari file duplikat",
+      "Pencopot pemasangan aplikasi",
+      "Monitor CPU dan memori",
+      "Monitor aplikasi yang berjalan",
+      "Kesehatan dan jumlah siklus baterai",
+      "Informasi sistem Mac"
+    ]
+  }
+}

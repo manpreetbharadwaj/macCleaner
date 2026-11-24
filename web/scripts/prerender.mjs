@@ -1,7 +1,8 @@
-// Renders every route to static HTML after `vite build`, so each page ships
-// with its real content and its own <title>, description, canonical URL,
-// Open Graph/Twitter tags and JSON-LD — no JavaScript needed for crawlers or
-// link previews. Also writes sitemap.xml, robots.txt and 404.html.
+// Renders every route, in every active language, to static HTML after
+// `vite build` — so each page ships with its real, already-translated
+// content and its own <title>, description, canonical URL, hreflang
+// alternates, Open Graph/Twitter tags and JSON-LD — no JavaScript needed for
+// crawlers or link previews. Also writes sitemap.xml, robots.txt and 404.html.
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -11,26 +12,36 @@ const dist = path.join(root, 'dist')
 const ssrDir = path.join(root, 'dist-ssr')
 
 const template = readFileSync(path.join(dist, 'index.html'), 'utf-8')
-const { render, renderHead, routes, siteUrl, sitemapPages } = await import(pathToFileURL(path.join(ssrDir, 'entry-server.js')).href)
+const { renderPage, routes, siteUrl, sitemapPages, activeLocales, localizedPath } = await import(pathToFileURL(path.join(ssrDir, 'entry-server.js')).href)
 
-function page(url) {
-  return template
-    .replace('<!--app-head-->', renderHead(url))
-    .replace('<div id="root"><!--app-html--></div>', `<div id="root" data-route="${url}">${render(url)}</div>`)
+async function page(url) {
+  const { html, head, locale, dir } = await renderPage(url)
+  const htmlTag = dir === 'rtl' ? `<html lang="${locale}" dir="rtl">` : `<html lang="${locale}">`
+  return template.replace('<html lang="en">', htmlTag).replace('<!--app-head-->', head).replace('<div id="root"><!--app-html--></div>', `<div id="root" data-route="${url}">${html}</div>`)
 }
 
-// Flat files (features.html, privacy.html, …): every common static host
-// serves /features from features.html (Firebase/Vercel `cleanUrls`, Netlify,
-// Cloudflare Pages, GitHub Pages), and the desktop app's Settings screen
-// links to /privacy.html and /terms.html directly.
+function fileForUrl(url) {
+  return url === '/' ? path.join(dist, 'index.html') : path.join(dist, `${url.slice(1)}.html`)
+}
+
+// Flat files (features.html, privacy.html, de/features.html, …): every
+// common static host serves /features from features.html and /de/features
+// from de/features.html (Firebase/Vercel `cleanUrls`, Netlify, Cloudflare
+// Pages, GitHub Pages / Cloudflare Workers Static Assets), and the desktop
+// app's Settings screen links to /privacy.html and /terms.html directly.
+let count = 0
 for (const route of routes) {
-  const file = route === '/' ? path.join(dist, 'index.html') : path.join(dist, `${route.slice(1)}.html`)
-  mkdirSync(path.dirname(file), { recursive: true })
-  writeFileSync(file, page(route))
-  console.log(`  prerendered ${route}`)
+  for (const locale of activeLocales) {
+    const url = localizedPath(locale, route)
+    const file = fileForUrl(url)
+    mkdirSync(path.dirname(file), { recursive: true })
+    writeFileSync(file, await page(url))
+    count += 1
+  }
 }
+console.log(`  prerendered ${count} pages across ${activeLocales.length} languages`)
 
-writeFileSync(path.join(dist, '404.html'), page('/404'))
+writeFileSync(path.join(dist, '404.html'), await page('/404'))
 console.log('  prerendered 404.html')
 
 const today = new Date().toISOString().slice(0, 10)
@@ -53,6 +64,6 @@ ${urls}
 `,
 )
 writeFileSync(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`)
-console.log('  wrote sitemap.xml and robots.txt')
+console.log(`  wrote sitemap.xml (${sitemapPages.length} URLs) and robots.txt`)
 
 rmSync(ssrDir, { recursive: true, force: true })

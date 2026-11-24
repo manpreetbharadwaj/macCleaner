@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Vielen Dank",
+  "title": "Vielen Dank für Ihren Kauf",
+  "intro": "Sehen Sie in Ihrem E-Mail-Postfach nach Ihrem Lizenzschlüssel und öffnen Sie dann MacBook Cleaner, um Lizenz aktivieren auszuwählen. Ihr Kauf ist erst freigeschaltet, wenn die App selbst Ihren Schlüssel bestätigt hat — diese Seite ist nur eine praktische Kopie davon.",
+  "licenseKeyTitle": "Ihr Lizenzschlüssel",
+  "copy": "Kopieren",
+  "copied": "Kopiert",
+  "sentCopyTo": "Eine Kopie wurde auch an {{email}} gesendet.",
+  "checkEmailTitle": "Sehen Sie in Ihrem Postfach nach",
+  "noKeyFound": "Wir konnten in dieser Seite keinen Lizenzschlüssel finden. Dodo Payments sendet Ihren Schlüssel direkt nach dem Bezahlvorgang per E-Mail — achten Sie auf eine Nachricht von Dodo Payments oder prüfen Sie Ihren Spam-Ordner.",
+  "howToActivate": "So aktivieren Sie ihn",
+  "activateSteps": ["Öffnen Sie MacBook Cleaner (laden Sie es unten herunter, falls noch nicht geschehen).", "Gehen Sie zu Einstellungen → Lizenz.", "Fügen Sie Ihren Lizenzschlüssel ein und tippen Sie auf Aktivieren."],
+  "oneMacNote": "Ihre Lizenz gilt für jeweils einen Mac. Sie können sie jederzeit über Einstellungen → Lizenz deaktivieren und auf einen anderen Mac übertragen."
+}

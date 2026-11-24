@@ -1,0 +1,147 @@
+{
+  "learnMore": "En savoir plus",
+  "cards": {
+    "core": {
+      "smart-clean": { "title": "Smart Clean", "summary": "Une analyse regroupe caches, journaux, résidus d’applications, fichiers de développement et anciens téléchargements en catégories claires — les éléments sûrs sont présélectionnés, tout le reste attend votre décision." },
+      "storage": { "title": "Explorateur de stockage", "summary": "Découvrez ce qui occupe vraiment votre disque — Applications, Documents, Photos, Vidéos, Téléchargements, Cache et Données système — mesuré à partir de vos dossiers réels." },
+      "large-files": { "title": "Recherche de fichiers volumineux", "summary": "Repérez les fichiers de plus de 500 Mo, 1 Go, 5 Go ou 10 Go. Filtrez par type, triez par taille ou âge, prévisualisez avec l’Aperçu rapide." },
+      "downloads": { "title": "Analyse des téléchargements", "summary": "Anciens installeurs, images disque et archives, regroupés par âge — d’aujourd’hui à plus de 90 jours. Rien n’est jamais présélectionné." },
+      "duplicates": { "title": "Recherche de doublons", "summary": "Copies exactes confirmées par une somme de contrôle SHA-256 du contenu complet. Conservez la plus récente ou la plus ancienne — au moins une copie reste toujours." },
+      "apps": { "title": "Nettoyage d’applications", "summary": "Découvrez l’empreinte complète d’une application — caches, journaux, fichiers d’assistance, préférences — puis nettoyez ses données ou désinstallez-la. Les applications Apple sont protégées." },
+      "system-junk": { "title": "Fichiers système et de développement", "summary": "Supprimez les caches et journaux qui se reconstituent d’eux-mêmes, ainsi que les caches Xcode, simulateur, npm, Yarn, pnpm, Gradle et CocoaPods." },
+      "schedule": { "title": "Nettoyage planifié", "summary": "Des vérifications en arrière-plan quotidiennes, hebdomadaires ou mensuelles qui vous rappellent quand il y a quelque chose à nettoyer — ou, avec votre accord, qui vident les caches de développement." }
+    },
+    "monitor": {
+      "cpu": { "title": "Suivi du CPU", "summary": "Utilisation du CPU en direct avec un graphique sur 60 secondes, divisée en temps utilisateur, système et inactif." },
+      "memory": { "title": "Utilisation de la mémoire", "summary": "RAM utilisée et disponible, pression mémoire, mémoire compressée et swap — expliqués en langage clair." },
+      "running-apps": { "title": "Applications actives", "summary": "Découvrez quelles applications utilisent le plus de mémoire et de CPU, et depuis combien de temps chacune s’exécute." },
+      "battery": { "title": "État de la batterie", "summary": "Charge, cycles, capacité maximale et état, tels que rapportés par macOS. MacBook uniquement." },
+      "mac-info": { "title": "Informations Mac", "summary": "Modèle, puce, cœurs, GPU, mémoire, écrans et disponibilité, au même endroit." },
+      "storage-status": { "title": "État du stockage", "summary": "Espace utilisé, disponible et potentiellement récupérable, à un clic du nettoyeur." },
+      "macos": { "title": "Informations macOS", "summary": "Version, build et si la propre vérification des mises à jour de macOS en a trouvé une — avec un raccourci vers Mise à jour de logiciels." }
+    }
+  },
+  "deepDives": {
+    "smart-clean": {
+      "eyebrow": "Smart Clean",
+      "title": "Une analyse. Des catégories claires. Votre décision.",
+      "body": "Smart Clean vérifie en une seule passe vos caches, journaux, résidus d’applications, outils de développement et Téléchargements, puis trie tout en six groupes en langage clair. Chaque élément indique pourquoi il existe et ce qui se passe si vous le supprimez.",
+      "points": ["Fichiers système, caches du navigateur, résidus d’applications, journaux et rapports de plantage, fichiers de développement et anciens téléchargements", "Les éléments sûrs commencent sélectionnés ; les éléments à vérifier et vos propres fichiers jamais", "Développez n’importe quel groupe pour voir — et décocher — chaque élément"],
+      "alt": "Résultats Smart Clean regroupés en Fichiers système, Caches du navigateur, Résidus d’applications, Journaux, Fichiers de développement et Anciens téléchargements"
+    },
+    "storage": {
+      "eyebrow": "Explorateur de stockage",
+      "title": "Sachez où votre espace est parti.",
+      "body": "MacBook Cleaner mesure vos dossiers réels et les dessine sous forme d’un anneau de stockage unique. Les tailles utilisent des gigaoctets décimaux, de la même façon que macOS indique le stockage, et l’espace non attribuable à un dossier est honnêtement étiqueté comme Données système.",
+      "points": ["Applications, Documents, Photos, Vidéos, Téléchargements, Cache, Autre et Données système", "Les bibliothèques gérées par les applications comme Photos sont mesurées dans leur ensemble, jamais décortiquées", "L’espace libre est lu de la même façon que les propres réglages de Stockage de macOS le lisent"],
+      "alt": "Écran Stockage affichant un anneau coloré réparti par catégorie"
+    },
+    "large-files": {
+      "eyebrow": "Recherche de fichiers volumineux",
+      "title": "Retrouvez les gigaoctets oubliés.",
+      "body": "D’anciens enregistrements d’écran, des images de machines virtuelles, des installeurs que vous vouliez supprimer. La recherche de fichiers volumineux parcourt Téléchargements, Bureau, Documents et Films et liste d’abord les fichiers les plus volumineux.",
+      "points": ["Seuils de taille : 500 Mo, 1 Go, 5 Go et 10 Go", "Filtrez par vidéos, images disque, archives, installeurs ou documents", "Aperçu rapide et Afficher dans le Finder avant de décider"],
+      "alt": "Liste de fichiers volumineux filtrée sur les fichiers de plus de 500 Mo"
+    },
+    "downloads": {
+      "eyebrow": "Téléchargements",
+      "title": "Un dossier Téléchargements enfin lisible.",
+      "body": "Les téléchargements sont regroupés par âge — Aujourd’hui, Cette semaine, Ce mois-ci, plus de 30 jours et plus de 90 jours — avec des vues rapides pour les installeurs et images disque, les archives, les téléchargements en double et les téléchargements volumineux.",
+      "points": ["Les installeurs et images disque déjà utilisés sont faciles à repérer", "Ce sont vos fichiers : rien dans Téléchargements n’est jamais présélectionné", "Chaque suppression demande une confirmation"],
+      "alt": "Écran Téléchargements avec des fichiers regroupés par âge"
+    },
+    "duplicates": {
+      "eyebrow": "Recherche de doublons",
+      "title": "Le même fichier, trois fois ? Gardez-en un.",
+      "body": "Les doublons dans Téléchargements, Bureau, Documents et Films sont associés par taille exacte, affinés par une empreinte rapide, puis confirmés en hachant le contenu complet — « semble similaire » ne compte donc jamais comme doublon.",
+      "points": ["Conservez le plus récent ou le plus ancien sur tous les ensembles en un clic", "Vous ne pouvez jamais sélectionner toutes les copies d’un fichier — une reste toujours", "Toutes les vérifications s’exécutent sur votre Mac"],
+      "alt": "Fichiers en double regroupés en ensembles avec l’espace gaspillé par ensemble"
+    },
+    "apps": {
+      "eyebrow": "Nettoyage d’applications",
+      "title": "Désinstallez des applications — et ce qu’elles laissent derrière.",
+      "body": "Choisissez une application pour voir son empreinte réelle : le paquet d’application ainsi que ses caches, journaux, fichiers d’assistance, préférences, conteneurs, état enregistré et données web. Nettoyez uniquement les données, ou déplacez toute l’application vers la Corbeille.",
+      "points": ["Trier les applications par taille, nom ou dernière utilisation", "Les applications d’Apple — et MacBook Cleaner lui-même — ne peuvent pas être désinstallées", "Seules les applications dans /Applications ou ~/Applications sont acceptées"],
+      "alt": "Nettoyage d’applications affichant les caches, journaux et préférences d’une application"
+    },
+    "system-junk": {
+      "eyebrow": "Fichiers système et de développement",
+      "title": "Des caches qui se reconstituent d’eux-mêmes. Disparus.",
+      "body": "Fichiers système liste les caches et journaux d’applications de votre Library, répartis en Sûr à nettoyer et Vérification recommandée. Activez le Nettoyage développeur pour inclure les caches de build et de paquets volumineux.",
+      "points": ["Xcode DerivedData, Archives, assistance appareils iOS et watchOS, caches et appareils Simulator", "Caches npm, Yarn, pnpm, Gradle, CocoaPods et images d’émulateur Android", "Chaque élément explique ce que sa reconstruction vous coûtera"],
+      "alt": "Écran Fichiers système avec les sections Sûr à nettoyer et Vérification recommandée"
+    },
+    "schedule": {
+      "eyebrow": "Nettoyage planifié",
+      "title": "Restez organisé sans y penser.",
+      "body": "Choisissez quotidien, hebdomadaire ou mensuel et une heure. MacBook Cleaner vérifie discrètement en arrière-plan — aucune fenêtre ne s’ouvre — et vous rappelle, ou nettoie une liste fixe de caches de développement si vous l’avez explicitement autorisé.",
+      "points": ["Me le rappeler : une notification quand il y a assez à nettoyer ou que l’espace vient à manquer", "Nettoyer automatiquement : seulement six caches de développement, au moins 1 Go, plafonné à 10 Go et 50 éléments par exécution", "Documents, Photos, Vidéos, Bureau et dossiers personnels ne sont jamais supprimés automatiquement"],
+      "alt": "Réglages du nettoyage planifié avec fréquence, mode et catégories éligibles"
+    }
+  },
+  "monitorDeepDives": {
+    "performance": {
+      "eyebrow": "Performances",
+      "title": "Votre Mac en un coup d’œil — en direct.",
+      "body": "L’onglet Performances affiche le CPU, la mémoire, le stockage et la batterie dans un seul tableau de bord, avec des graphiques en direct sur 60 secondes et un résumé de l’état du Mac en langage clair. Chaque statut provient directement de macOS ; il n’y a pas de « score de santé » inventé.",
+      "points": ["Utilisation du CPU en direct, divisée en temps utilisateur, système et inactif", "Mémoire utilisée, disponible, compressée et swap — plus la propre pression mémoire de macOS", "Se met à jour toutes les quelques secondes pendant que vous regardez, et s’arrête complètement sinon"],
+      "alt": "Tableau de bord des performances avec jauges CPU, mémoire, stockage et batterie, et un résumé de l’état du Mac"
+    },
+    "running-apps": {
+      "eyebrow": "Applications actives",
+      "title": "Découvrez ce qui utilise votre mémoire et votre CPU.",
+      "body": "Applications actives liste les applications de votre Dock avec leur utilisation du CPU, leur mémoire et leur durée d’exécution. Les processus auxiliaires sont comptabilisés avec leur application, si bien que les nombreux onglets d’un navigateur donnent un seul chiffre honnête.",
+      "points": ["Trier par CPU, mémoire, durée d’exécution ou nom", "Basculer entre applications, processus en arrière-plan ou tout afficher", "Cliquez sur une application pour voir les détails : heure de lancement, threads, identifiant de processus et emplacement"],
+      "alt": "Liste des applications actives triée par mémoire avec CPU et durée d’exécution"
+    },
+    "battery": {
+      "eyebrow": "État de la batterie",
+      "title": "Comprenez votre batterie.",
+      "body": "Sur les MacBook, consultez la charge, les cycles, la capacité maximale, la source d’alimentation et l’état — les mêmes valeurs qu’utilise Réglages Système. Sur les Mac de bureau, la section batterie n’apparaît tout simplement pas.",
+      "points": ["Cycles de charge, avec le nombre de cycles de conception quand la batterie en indique un", "Capacité maximale et état exactement comme macOS les rapporte", "À titre informatif uniquement — aucune application ne peut réparer ou restaurer une batterie"],
+      "alt": "Écran État de la batterie affichant la charge, la capacité maximale et les cycles de charge"
+    },
+    "mac-info": {
+      "eyebrow": "Infos Mac",
+      "title": "Tout ce qui compte sur votre Mac.",
+      "body": "Modèle, puce, cœurs CPU et GPU, mémoire, stockage, écrans, version et build de macOS, et depuis combien de temps votre Mac fonctionne — collectés une fois et affichés dans un seul endroit bien rangé.",
+      "points": ["État des mises à jour macOS à partir de la propre vérification automatique de macOS, avec un raccourci vers Mise à jour de logiciels", "Votre numéro de série n’est jamais lu", "Tout reste sur votre Mac"],
+      "alt": "Écran Infos Mac listant les détails matériels et la version de macOS"
+    }
+  },
+  "page": {
+    "eyebrow": "Fonctionnalités",
+    "jumpToFeature": "Aller à une fonctionnalité",
+    "title1": "Nettoyez votre Mac. ",
+    "title2": "Comprenez-le aussi.",
+    "intro": "MacBook Cleaner combine un analyseur de stockage, des recherches de fichiers volumineux et de doublons, un désinstallateur d’applications et un nettoyeur de cache avec un moniteur de performances Mac — CPU, mémoire, applications actives, état de la batterie et informations sur le Mac — le tout traité localement sur votre Mac.",
+    "monitorEyebrow": "Performances",
+    "monitorTitle1": "Un moniteur de performances Mac ",
+    "monitorTitle2": "qui parle un langage clair.",
+    "monitorIntro": "CPU et mémoire en direct, les applications utilisant le plus de ressources, l’état de la batterie et tout ce qui compte sur votre Mac — lu localement depuis macOS, actualisé uniquement pendant que vous regardez.",
+    "sampleDataNote": "Affiché avec des données d’exemple.",
+    "extrasEyebrow": "Également dans l’application",
+    "extrasTitle": "Des détails soignés.",
+    "notDoingEyebrow": "Franchement",
+    "notDoingTitle": "Ce que MacBook Cleaner ne fait pas.",
+    "notDoingIntro": "De nombreuses applications « nettoyeuses » promettent tout. Voici ce que celle-ci laisse délibérément de côté.",
+    "ctaTitle": "Prêt à voir ce qui occupe de l’espace ?",
+    "extras": [
+      { "title": "Exclusions d’analyse", "body": "Ajoutez des fichiers ou dossiers qui ne doivent jamais être suggérés — manuellement ou selon une planification." },
+      { "title": "Confirmer avant nettoyage", "body": "Activé par défaut. Désactivez-le pour ignorer la boîte de dialogue des nettoyages uniquement sûrs ; les éléments à vérifier et vos propres fichiers demandent toujours confirmation." },
+      { "title": "Bascule de nettoyage développeur", "body": "Masquez entièrement les caches Xcode, simulateur et gestionnaires de paquets si vous n’en avez pas besoin." },
+      { "title": "Clair, sombre ou système", "body": "Suit l’apparence de votre Mac, ou choisissez-en une." },
+      { "title": "Lancer à la connexion", "body": "Facultatif et désactivé par défaut." },
+      { "title": "Notifications natives", "body": "Rappels et résumés du nettoyage planifié, via les notifications macOS." },
+      { "title": "Aperçu de la Corbeille", "body": "Voyez combien d’espace occupe la Corbeille et ouvrez-la dans le Finder quand vous êtes prêt à la vider." },
+      { "title": "Réinitialiser toutes les données", "body": "Effacez réglages, exclusions, planification et historique en une étape. Ne touche jamais à vos fichiers." }
+    ],
+    "notDoing": [
+      "Pas de « boost » de RAM — Performances affiche l’utilisation mémoire, elle n’y touche pas",
+      "Pas de promesses d’accélération ni de modifications des éléments de démarrage",
+      "Pas d’antivirus ni d’analyse de malwares",
+      "Pas de suppression définitive ni de broyage de fichiers",
+      "Pas de nettoyage des dossiers système en dehors de votre dossier personnel"
+    ]
+  }
+}

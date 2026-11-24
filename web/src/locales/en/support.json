@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Support",
+  "title": "How can we help?",
+  "intro": "Most answers are in the FAQ. For anything else, email is the fastest way to reach us.",
+  "cards": {
+    "email": { "title": "Email support", "body": "Questions about using the app? Write to us and we’ll get back to you.", "cta": "{{email}}" },
+    "bug": { "title": "Report a bug", "body": "Something not working? Opens an email with a short template to fill in.", "cta": "Report a bug" },
+    "feature": { "title": "Request a feature", "body": "Tell us what would make MacBook Cleaner more useful to you.", "cta": "Suggest a feature" },
+    "install": { "title": "Installation help", "body": "Step-by-step install instructions and what to do about the first-launch security warning.", "cta": "Installation guide" },
+    "faq": { "title": "FAQ", "body": "Safety, privacy, permissions, compatibility and uninstalling — answered.", "cta": "Browse the FAQ" }
+  },
+  "emailSubject": "MacBook Cleaner support",
+  "logsTitle": "Sending diagnostic logs",
+  "logsBody": "For tricky problems we may ask for the app’s logs. They’re stored only on your Mac, in <code>~/Library/Logs/{{bundleId}}</code>, and are never sent automatically. Logs can contain file paths from your Mac — look them over and remove anything you’d rather not share before attaching them.",
+  "bugTemplate": {
+    "subject": "Bug report — MacBook Cleaner {{version}}",
+    "body": "What happened:\n\n\nWhat you expected:\n\n\nSteps to reproduce:\n1.\n2.\n\nMacBook Cleaner version: {{version}}\nmacOS version:\nMac model / chip:\n"
+  },
+  "featureTemplate": {
+    "subject": "Feature request — MacBook Cleaner",
+    "body": "What would you like MacBook Cleaner to do?\n\n\nWhy would it help you?\n"
+  }
+}

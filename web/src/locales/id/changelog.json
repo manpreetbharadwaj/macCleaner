@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Catatan rilis",
+  "title": "Yang baru",
+  "intro": "Setiap versi MacBook Cleaner dan perubahannya.",
+  "latestBadge": "Terbaru",
+  "dateUnannounced": "Tanggal rilis akan diumumkan",
+  "downloadLatest": "Unduh versi terbaru →",
+  "releases": {
+    "firstRelease": {
+      "title": "Rilis pertama",
+      "summary": "Versi publik pertama MacBook Cleaner.",
+      "sections": {
+        "cleanupTools": {
+          "heading": "Alat pembersih",
+          "items": [
+            "Smart Clean: satu pemindaian yang dikelompokkan ke dalam Sampah Sistem, Cache Browser, Sisa Aplikasi, Log & Laporan Crash, Sampah Developer, dan Unduhan Lama",
+            "Storage Explorer dengan rincian terukur berdasarkan kategori",
+            "Large File Finder dengan ambang 500 MB, 1 GB, 5 GB, dan 10 GB serta filter jenis",
+            "Tinjauan Downloads dikelompokkan berdasarkan usia",
+            "Duplicate Finder dengan verifikasi SHA-256 dari seluruh isi file",
+            "App Cleanup: lihat cache, log, dan file dukungan sebuah aplikasi; bersihkan atau copot pemasangannya",
+            "Sampah Sistem dan Developer Cleanup (Xcode, simulator, npm, Yarn, pnpm, Gradle, CocoaPods, image emulator Android)"
+          ]
+        },
+        "performance": {
+          "heading": "Performa",
+          "items": [
+            "Tab Performance baru dengan grafik CPU dan memori langsung, tekanan memori, dan swap",
+            "Running Apps: CPU, memori, dan waktu berjalan per aplikasi, dengan proses bantuan dikelompokkan dan panel detail",
+            "Battery Health di MacBook: daya, jumlah siklus, kapasitas maksimum, dan kondisi seperti yang dilaporkan macOS",
+            "Mac Info: model, chip, core, GPU, memori, layar, versi dan build macOS, uptime",
+            "Status pembaruan macOS dari pemeriksaan Software Update bawaannya, dengan pintasan ke System Settings",
+            "Ringkasan Mac Health dengan status deskriptif (tanpa skor rekaan)"
+          ]
+        },
+        "automation": {
+          "heading": "Otomatisasi",
+          "items": ["Scheduled Cleanup — harian, mingguan, atau bulanan — dengan mode “Remind me” dan “Clean automatically” yang opt-in", "Notifikasi macOS native untuk pengingat dan ringkasan", "Launch at Login opsional"]
+        },
+        "safety": {
+          "heading": "Keamanan",
+          "items": [
+            "Semua yang dihapus masuk ke Trash; tidak ada yang dihapus permanen",
+            "Perlindungan bawaan untuk lokasi sistem, folder utama dari folder utama Anda, dan jalur yang terlihat seperti backup, keychain, atau kunci",
+            "File pribadi tidak pernah dipilih otomatis dan selalu memerlukan konfirmasi",
+            "Pengecualian pemindaian (“jangan sarankan ini lagi”)"
+          ]
+        },
+        "interface": {
+          "heading": "Antarmuka",
+          "items": ["Tampilan terang, gelap, dan mengikuti sistem", "Sambutan terpandu saat pertama kali dijalankan dengan langkah Full Disk Access opsional"]
+        }
+      }
+    }
+  }
+}

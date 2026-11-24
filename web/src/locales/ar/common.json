@@ -1,0 +1,61 @@
+{
+  "skipToContent": "الانتقال إلى المحتوى",
+  "tagline": "نظّف جهاز Mac. حافظ على ما يهم.",
+  "nav": {
+    "features": "المزايا",
+    "pricing": "السعر",
+    "download": "تنزيل",
+    "faq": "الأسئلة الشائعة",
+    "support": "الدعم",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة"
+  },
+  "footer": {
+    "description": "تنظيف آمن للتخزين ومراقبة للأداء، يعملان محليًا بالكامل على نظام macOS.",
+    "version": "الإصدار {{version}} · {{macos}} أو أحدث",
+    "columns": {
+      "product": "المنتج",
+      "help": "المساعدة",
+      "legal": "قانوني"
+    },
+    "links": {
+      "features": "المزايا",
+      "pricing": "السعر",
+      "download": "تنزيل",
+      "releaseNotes": "ملاحظات الإصدار",
+      "faq": "الأسئلة الشائعة",
+      "support": "الدعم",
+      "installation": "التثبيت",
+      "privacy": "الخصوصية",
+      "terms": "الشروط"
+    },
+    "copyright": "© {{year}} {{name}}. جميع الحقوق محفوظة.",
+    "trademark": "{{name}} تطبيق مستقل وغير تابع لشركة Apple Inc.‏ ولا تعتمده أو ترعاه. إن Apple و Mac و MacBook و macOS و Finder و Safari و Xcode علامات تجارية لشركة Apple Inc.‏، مسجّلة في الولايات المتحدة ودول أخرى."
+  },
+  "download": {
+    "cta": "تنزيل لنظام Mac",
+    "navCta": "تنزيل",
+    "starting": "جارٍ البدء…",
+    "started": "بدأ التنزيل",
+    "unavailable": "التنزيل غير متاح",
+    "unavailableNote": "لم يُنشر بعد مثبّت Mac الموثّق.",
+    "downloading": "جارٍ تنزيل {{fileName}}",
+    "error": "تعذّر بدء التنزيل. يُرجى المحاولة مجددًا بعد قليل، أو التواصل مع الدعم."
+  },
+  "legal": {
+    "eyebrow": "قانوني",
+    "lastUpdated": "آخر تحديث: {{date}}",
+    "onThisPage": "في هذه الصفحة"
+  },
+  "aria": {
+    "requirements": "المتطلبات",
+    "primaryNav": "الأساسية",
+    "mobileNav": "الجوال"
+  },
+  "languageSwitcher": {
+    "label": "اللغة",
+    "current": "اللغة: {{language}}",
+    "resetToAutomatic": "إعادة الضبط إلى تلقائي",
+    "resetDescription": "اكتشاف لغتي تلقائيًا في المرة القادمة"
+  }
+}

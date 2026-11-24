@@ -1,43 +1,53 @@
-import { Link } from 'react-router'
-import { RELEASES } from '@/data/changelog'
+import { useTranslation } from 'react-i18next'
+import { APP, DOWNLOAD } from '@/config/site'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
+import { Link } from '@/components/router'
+
+const RELEASE_KEYS = ['firstRelease']
+const SECTION_KEYS = ['cleanupTools', 'performance', 'automation', 'safety', 'interface']
 
 export function ChangelogPage() {
+  const { t } = useTranslation('changelog')
+  const date = DOWNLOAD.releaseDate || DOWNLOAD.buildDate
+
   return (
     <div className="page">
       <section className="page-hero">
         <div className="container">
-          <SectionHeading level={1} eyebrow="Release notes" title="What’s new" intro="Every version of MacBook Cleaner and what changed." />
+          <SectionHeading level={1} eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} />
         </div>
       </section>
       <div className="container container--narrow releases">
-        {RELEASES.map((r, i) => (
-          <Reveal as="article" key={r.version} className="release" aria-labelledby={`v${r.version}`}>
+        {RELEASE_KEYS.map((key, i) => (
+          <Reveal as="article" key={key} className="release" aria-labelledby={`v${APP.version}`}>
             <header className="release__head">
-              <h2 id={`v${r.version}`}>
-                Version {r.version}
-                {i === 0 && <span className="badge">Latest</span>}
+              <h2 id={`v${APP.version}`}>
+                {APP.version}
+                {i === 0 && <span className="badge">{t('latestBadge')}</span>}
               </h2>
-              <p className="release__date">{r.date ? r.date : 'Release date to be announced'}</p>
+              <p className="release__date">{date || t('dateUnannounced')}</p>
             </header>
-            <p className="release__title">{r.title}</p>
-            <p>{r.summary}</p>
-            {r.sections.map((s) => (
-              <div key={s.heading} className="release__section">
-                <h3>{s.heading}</h3>
-                <ul>
-                  {s.items.map((it) => (
-                    <li key={it}>{it}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <p className="release__title">{t(`releases.${key}.title`)}</p>
+            <p>{t(`releases.${key}.summary`)}</p>
+            {SECTION_KEYS.map((sectionKey) => {
+              const items = t(`releases.${key}.sections.${sectionKey}.items`, { returnObjects: true }) as string[]
+              return (
+                <div key={sectionKey} className="release__section">
+                  <h3>{t(`releases.${key}.sections.${sectionKey}.heading`)}</h3>
+                  <ul>
+                    {items.map((it) => (
+                      <li key={it}>{it}</li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            })}
           </Reveal>
         ))}
         <p className="center-link">
           <Link to="/download" className="text-link">
-            Download the latest version →
+            {t('downloadLatest')}
           </Link>
         </p>
       </div>

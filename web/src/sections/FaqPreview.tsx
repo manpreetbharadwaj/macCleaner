@@ -1,21 +1,23 @@
-import { Link } from 'react-router'
-import { ALL_FAQS, HOME_FAQ_IDS } from '@/data/faq'
+import { useTranslation } from 'react-i18next'
+import { useHomeFaqs } from '@/data/faq'
 import { FAQAccordion } from '@/components/FAQAccordion'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
+import { Link } from '@/components/router'
 
 export function FaqPreview() {
-  const items = HOME_FAQ_IDS.map((id) => ALL_FAQS.find((f) => f.id === id)).filter((f): f is (typeof ALL_FAQS)[number] => !!f)
+  const { t } = useTranslation('home')
+  const items = useHomeFaqs()
   return (
     <section className="section" aria-labelledby="faq-preview-title">
       <div className="container container--narrow">
-        <SectionHeading eyebrow="FAQ" id="faq-preview-title" title="Questions, answered." />
+        <SectionHeading eyebrow={t('faqPreview.eyebrow')} id="faq-preview-title" title={t('faqPreview.title')} />
         <Reveal>
           <FAQAccordion items={items} />
         </Reveal>
         <p className="center-link">
           <Link to="/faq" className="text-link">
-            See all questions →
+            {t('faqPreview.seeAll')}
           </Link>
         </p>
       </div>

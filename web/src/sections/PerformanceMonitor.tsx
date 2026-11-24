@@ -1,29 +1,33 @@
-import { MONITOR_FEATURES } from '@/data/features'
+import { useTranslation } from 'react-i18next'
+import { useMonitorFeatures } from '@/data/features'
 import { AppPreview } from '@/components/AppPreview'
 import { FeatureCard } from '@/components/FeatureCard'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
 
 export function PerformanceMonitor() {
+  const { t } = useTranslation('home')
+  const features = useMonitorFeatures()
   return (
     <section className="section" aria-labelledby="monitor-title">
       <div className="container">
         <SectionHeading
-          eyebrow="New · Performance"
+          eyebrow={t('performanceMonitor.eyebrow')}
           id="monitor-title"
           title={
             <>
-              Mac Performance Monitor. <span className="grad-text">Built in.</span>
+              {t('performanceMonitor.title1')}
+              <span className="grad-text">{t('performanceMonitor.title2')}</span>
             </>
           }
-          intro="MacBook Cleaner is more than a storage cleaner. The Performance tab shows how your Mac is doing right now — in plain language, without turning into a developer tool."
+          intro={t('performanceMonitor.intro')}
         />
         <Reveal className="monitor-shot">
-          <AppPreview screen="performance" hasDark alt="MacBook Cleaner Performance dashboard showing CPU, memory, storage and battery gauges, a Mac Health summary and live charts" />
-          <p className="shot-note">Shown with the app’s sample data. On your Mac, every value is read live from macOS.</p>
+          <AppPreview screen="performance" hasDark alt={t('performanceMonitor.shotAlt')} />
+          <p className="shot-note">{t('performanceMonitor.shotNote')}</p>
         </Reveal>
         <div className="feature-grid monitor-grid">
-          {MONITOR_FEATURES.map((f, i) => (
+          {features.map((f, i) => (
             <FeatureCard key={f.id} feature={f} delay={(i % 4) * 60} linked={false} />
           ))}
         </div>

@@ -1,17 +1,13 @@
-import { useEffect, useState, type ReactNode } from 'react'
-import { Link } from 'react-router'
+import { useEffect, useState } from 'react'
+import { Trans, useTranslation } from 'react-i18next'
 import { AlertTriangle, Calendar, CheckCircle2, Cpu, Download as DownloadIcon, FolderInput, HardDrive, Info, MousePointerClick, RefreshCw, Rocket, ShieldCheck, Tag } from 'lucide-react'
 import { APP, DOWNLOAD, architectureLabel } from '@/config/site'
 import { DownloadButton } from '@/components/DownloadButton'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
+import { Link } from '@/components/router'
 
-const INSTALL_STEPS: { icon: typeof DownloadIcon; title: string; body: ReactNode }[] = [
-  { icon: DownloadIcon, title: 'Download the DMG', body: <>Click <b>Download for Mac</b>. The disk image is saved to your Downloads folder.</> },
-  { icon: MousePointerClick, title: 'Open the DMG', body: <>Double-click <code>{DOWNLOAD.fileName}</code> in Downloads. A window opens showing the app and your Applications folder.</> },
-  { icon: FolderInput, title: 'Drag to Applications', body: <>Drag <b>MacBook Cleaner</b> onto the Applications folder, then eject the disk image from Finder’s sidebar.</> },
-  { icon: Rocket, title: 'Launch the app', body: <>Open MacBook Cleaner from Applications or Launchpad. Run it from Applications — scheduled cleanup only works from there.</> },
-]
+const INSTALL_ICONS = [DownloadIcon, MousePointerClick, FolderInput, Rocket]
 
 function useDownloadStarted(): boolean {
   // Read after mount: the page is prerendered without a query string.
@@ -23,47 +19,48 @@ function useDownloadStarted(): boolean {
 }
 
 export function DownloadPage() {
+  const { t } = useTranslation('download')
   const started = useDownloadStarted()
+  const installSteps = t('install.steps', { returnObjects: true }) as { title: string; body: string }[]
+  const gatekeeperSteps = t('gatekeeper.steps', { returnObjects: true }) as string[]
+
   return (
     <div className="page">
       <section className="page-hero page-hero--download">
         <div className="container">
           <Reveal className="download-hero">
-            <img src="/app-icon-256.png" alt="MacBook Cleaner app icon" width={128} height={128} className="download-hero__icon" />
-            <h1 className="display-1">MacBook Cleaner for macOS</h1>
-            <p className="lead">Storage cleanup and performance monitoring for your Mac — processed locally.</p>
+            <img src="/app-icon-256.png" alt={t('hero.iconAlt')} width={128} height={128} className="download-hero__icon" />
+            <h1 className="display-1">{t('hero.title')}</h1>
+            <p className="lead">{t('hero.lead')}</p>
             {started && (
               <p className="download-started" role="status">
                 <CheckCircle2 size={18} aria-hidden="true" />
                 <span>
-                  Your download has started — <b>{DOWNLOAD.fileName}</b>. When it finishes, follow the steps below.
+                  <Trans t={t} i18nKey="hero.started" values={{ fileName: DOWNLOAD.fileName }} components={{ b: <b /> }} />
                 </span>
               </p>
             )}
             <div className="download-hero__cta">
               <DownloadButton />
             </div>
-            <p className="download-hero__file">
-              {DOWNLOAD.fileName}
-              {DOWNLOAD.size && ` · ${DOWNLOAD.size}`} · Disk image (.dmg)
-            </p>
-            <ol className="quick-steps" aria-label="How to install">
-              <li>Download MacBook Cleaner.</li>
-              <li>Open the downloaded DMG.</li>
-              <li>Drag MacBook Cleaner into Applications.</li>
-              <li>Launch the app{APP.notarized ? '.' : <> — the first time, <a href="#open-anyway">use Open Anyway</a>.</>}</li>
+            <p className="download-hero__file">{t('hero.fileInfo', { fileName: DOWNLOAD.fileName, sizePart: DOWNLOAD.size ? ` · ${DOWNLOAD.size}` : '' })}</p>
+            <ol className="quick-steps" aria-label={t('install.title')}>
+              <li>{t('hero.quickSteps.0')}</li>
+              <li>{t('hero.quickSteps.1')}</li>
+              <li>{t('hero.quickSteps.2')}</li>
+              <li>{APP.notarized ? t('hero.quickStepsNotarizedLast') : <Trans t={t} i18nKey="hero.quickStepsUnnotarizedLast" components={{ a: <a href="#open-anyway" /> }} />}</li>
             </ol>
-            <ul className="spec-row" aria-label="Release details">
+            <ul className="spec-row" aria-label={t('hero.releaseDetailsAria')}>
               <li>
-                <Tag size={15} aria-hidden="true" /> Version {APP.version}
+                <Tag size={15} aria-hidden="true" /> {t('hero.specs.version', { version: APP.version })}
               </li>
               {(DOWNLOAD.releaseDate || DOWNLOAD.buildDate) && (
                 <li>
-                  <Calendar size={15} aria-hidden="true" /> {DOWNLOAD.releaseDate ? `Released ${DOWNLOAD.releaseDate}` : `Built ${DOWNLOAD.buildDate}`}
+                  <Calendar size={15} aria-hidden="true" /> {DOWNLOAD.releaseDate ? t('hero.specs.released', { date: DOWNLOAD.releaseDate }) : t('hero.specs.built', { date: DOWNLOAD.buildDate })}
                 </li>
               )}
               <li>
-                <HardDrive size={15} aria-hidden="true" /> {APP.minMacOSName} or later
+                <HardDrive size={15} aria-hidden="true" /> {t('hero.specs.macos', { macos: APP.minMacOSName })}
               </li>
               <li>
                 <Cpu size={15} aria-hidden="true" /> {architectureLabel()}
@@ -75,15 +72,15 @@ export function DownloadPage() {
               )}
             </ul>
             <p className="download-hero__links">
-              <Link to="/changelog">Release notes</Link>
+              <Link to="/changelog">{t('hero.links.releaseNotes')}</Link>
               <span aria-hidden="true">·</span>
-              <Link to="/privacy">Privacy</Link>
+              <Link to="/privacy">{t('hero.links.privacy')}</Link>
               <span aria-hidden="true">·</span>
-              <Link to="/terms">Terms</Link>
+              <Link to="/terms">{t('hero.links.terms')}</Link>
             </p>
             {DOWNLOAD.sha256 && (
               <p className="checksum">
-                SHA-256: <code>{DOWNLOAD.sha256}</code>
+                {t('hero.checksumLabel')}: <code>{DOWNLOAD.sha256}</code>
               </p>
             )}
           </Reveal>
@@ -92,25 +89,23 @@ export function DownloadPage() {
 
       <section className="section" aria-labelledby="req-title">
         <div className="container container--narrow">
-          <SectionHeading eyebrow="System requirements" id="req-title" title="Will it run on my Mac?" />
+          <SectionHeading eyebrow={t('requirements.eyebrow')} id="req-title" title={t('requirements.title')} />
           <Reveal className="req-grid">
             <div className="req">
               <HardDrive size={22} aria-hidden="true" />
-              <h3>macOS</h3>
-              <p>
-                {APP.minMacOSName} ({APP.minMacOS}) or later
-              </p>
+              <h3>{t('requirements.macos')}</h3>
+              <p>{t('requirements.macosValue', { macosName: APP.minMacOSName, macosVersion: APP.minMacOS })}</p>
             </div>
             <div className="req">
               <Cpu size={22} aria-hidden="true" />
-              <h3>Processor</h3>
+              <h3>{t('requirements.processor')}</h3>
               <p>{architectureLabel()}</p>
-              {APP.installerVerified && !APP.architectures.includes('intel') && <small>Intel Macs aren’t supported by this verified build.</small>}
+              {APP.installerVerified && !APP.architectures.includes('intel') && <small>{t('requirements.intelNote')}</small>}
             </div>
             <div className="req">
               <ShieldCheck size={22} aria-hidden="true" />
-              <h3>Account</h3>
-              <p>None needed</p>
+              <h3>{t('requirements.account')}</h3>
+              <p>{t('requirements.accountValue')}</p>
             </div>
           </Reveal>
         </div>
@@ -118,10 +113,10 @@ export function DownloadPage() {
 
       <section id="install" className="section section--tint" aria-labelledby="install-title">
         <div className="container">
-          <SectionHeading eyebrow="Installation" id="install-title" title="Install in under a minute." />
+          <SectionHeading eyebrow={t('install.eyebrow')} id="install-title" title={t('install.title')} />
           <ol className="install-steps">
-            {INSTALL_STEPS.map((s, i) => {
-              const Icon = s.icon
+            {installSteps.map((s, i) => {
+              const Icon = INSTALL_ICONS[i]
               return (
                 <Reveal as="li" key={s.title} className="install-step" delay={i * 80}>
                   <span className="install-step__num" aria-hidden="true">
@@ -129,7 +124,9 @@ export function DownloadPage() {
                   </span>
                   <Icon size={24} aria-hidden="true" className="install-step__icon" />
                   <h3>{s.title}</h3>
-                  <p>{s.body}</p>
+                  <p>
+                    <Trans t={t} i18nKey={`install.steps.${i}.body`} values={{ fileName: DOWNLOAD.fileName }} components={{ b: <b />, code: <code /> }} />
+                  </p>
                 </Reveal>
               )
             })}
@@ -140,37 +137,29 @@ export function DownloadPage() {
       {!APP.notarized && (
         <section id="open-anyway" className="section" aria-labelledby="gatekeeper-title">
           <div className="container container--narrow">
-            <SectionHeading eyebrow="First launch" id="gatekeeper-title" title="Seeing a security warning?" intro="That’s expected right now — here’s why, and how to open the app safely." />
+            <SectionHeading eyebrow={t('gatekeeper.eyebrow')} id="gatekeeper-title" title={t('gatekeeper.title')} intro={t('gatekeeper.intro')} />
             <Reveal className="notice">
               <AlertTriangle size={22} aria-hidden="true" />
               <div>
-                <h3>MacBook Cleaner isn’t notarized by Apple yet</h3>
+                <h3>{t('gatekeeper.noticeTitle')}</h3>
+                <p>{t('gatekeeper.noticeBody1')}</p>
                 <p>
-                  Apps distributed outside the Mac App Store are normally signed with an Apple Developer ID and notarized. This version is signed ad hoc — without a Developer ID — and isn’t notarized, so the first time you open it, macOS Gatekeeper says it can’t verify
-                  the developer or check the app for malicious software. This message doesn’t mean a problem was found — it means Apple hasn’t reviewed this build.
-                </p>
-                <p>
-                  <b>Only download MacBook Cleaner from this website.</b> If you got the file anywhere else, delete it.
+                  <Trans t={t} i18nKey="gatekeeper.noticeBody2" components={{ b: <b /> }} />
                 </p>
               </div>
             </Reveal>
 
             <Reveal className="howto" delay={60}>
-              <h3>Open it once via System Settings</h3>
+              <h3>{t('gatekeeper.howtoTitle')}</h3>
               <ol>
-                <li>Open MacBook Cleaner from Applications. When the warning appears, click <b>Done</b> (or <b>Cancel</b>) — don’t move it to the Trash.</li>
-                <li>
-                  Open <b>System Settings → Privacy &amp; Security</b> and scroll down to the <b>Security</b> section.
-                </li>
-                <li>
-                  Next to the message about MacBook Cleaner being blocked, click <b>Open Anyway</b>, then confirm with your password or Touch ID.
-                </li>
-                <li>
-                  Click <b>Open</b> in the final dialog. macOS remembers your choice, so you only need to do this once per version.
-                </li>
+                {gatekeeperSteps.map((_, i) => (
+                  <li key={i}>
+                    <Trans t={t} i18nKey={`gatekeeper.steps.${i}`} components={{ b: <b /> }} />
+                  </li>
+                ))}
               </ol>
               <p className="howto__tip">
-                On macOS 14 Sonoma and earlier you can also Control-click the app in Applications, choose <b>Open</b>, then click <b>Open</b> again.
+                <Trans t={t} i18nKey="gatekeeper.tip" components={{ b: <b /> }} />
               </p>
             </Reveal>
           </div>
@@ -179,32 +168,32 @@ export function DownloadPage() {
 
       <section className="section section--tint" aria-labelledby="after-title">
         <div className="container">
-          <SectionHeading eyebrow="After installing" id="after-title" title="Good to know." />
+          <SectionHeading eyebrow={t('afterInstall.eyebrow')} id="after-title" title={t('afterInstall.title')} />
           <div className="extras-grid extras-grid--3">
             <Reveal className="extra">
               <ShieldCheck size={20} aria-hidden="true" />
-              <h3>Permissions</h3>
+              <h3>{t('afterInstall.permissions.title')}</h3>
               <p>
-                macOS may ask to let the app access Downloads, Desktop and Documents, and to control Finder when you first clean. Full Disk Access is optional. <Link to="/faq#permissions">Why each one is needed →</Link>
+                {t('afterInstall.permissions.body')} <Link to="/faq#permissions">{t('afterInstall.permissions.link')}</Link>
               </p>
             </Reveal>
             <Reveal className="extra" delay={60}>
               <RefreshCw size={20} aria-hidden="true" />
-              <h3>Updates</h3>
+              <h3>{t('afterInstall.updates.title')}</h3>
               <p>
-                <b>Settings → Check for Updates</b> checks, downloads, and verifies new versions for you — nothing installs without your confirmation, and you'll need to restart the app once to finish. Your settings are kept.
+                <Trans t={t} i18nKey="afterInstall.updates.body" components={{ b: <b /> }} />
               </p>
             </Reveal>
             <Reveal className="extra" delay={120}>
               <Info size={20} aria-hidden="true" />
-              <h3>Uninstalling</h3>
+              <h3>{t('afterInstall.uninstalling.title')}</h3>
               <p>
-                Turn off Scheduled Cleanup and Launch at Login, then drag the app to the Trash. <Link to="/faq#uninstall">Full steps →</Link>
+                {t('afterInstall.uninstalling.body')} <Link to="/faq#uninstall">{t('afterInstall.uninstalling.link')}</Link>
               </p>
             </Reveal>
           </div>
           <p className="center-link">
-            Stuck? <Link to="/support" className="text-link">Contact support →</Link>
+            {t('afterInstall.stuck')} <Link to="/support" className="text-link">{t('afterInstall.contactSupport')}</Link>
           </p>
         </div>
       </section>

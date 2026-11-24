@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Terima kasih",
+  "title": "Terima kasih atas pembelian Anda",
+  "intro": "Periksa surel Anda untuk kunci lisensi, lalu buka MacBook Cleaner dan pilih Activate License. Pembelian Anda belum terbuka sampai aplikasi sendiri mengonfirmasi kunci Anda — halaman ini hanyalah salinan praktis dari kunci tersebut.",
+  "licenseKeyTitle": "Kunci lisensi Anda",
+  "copy": "Salin",
+  "copied": "Tersalin",
+  "sentCopyTo": "Salinan juga dikirim ke {{email}}.",
+  "checkEmailTitle": "Periksa surel Anda",
+  "noKeyFound": "Kami tidak menemukan kunci lisensi di tautan halaman ini. Dodo Payments mengirim kunci Anda via surel segera setelah checkout — cari pesan dari Dodo Payments, atau periksa folder spam Anda.",
+  "howToActivate": "Cara mengaktifkannya",
+  "activateSteps": ["Buka MacBook Cleaner (unduh di bawah jika belum).", "Buka Settings → License.", "Tempel kunci lisensi Anda dan ketuk Activate."],
+  "oneMacNote": "Lisensi Anda berfungsi untuk satu Mac dalam satu waktu. Anda dapat menonaktifkan dan memindahkannya ke Mac lain kapan saja dari Settings → License."
+}

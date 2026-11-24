@@ -1,0 +1,100 @@
+{
+  "legalReviewNotice": "Cette traduction a été produite par traduction automatique et n’a pas encore été vérifiée par un avocat qualifié dans votre juridiction. La version anglaise de ces conditions fait foi ; en cas de contradiction, la version anglaise prévaut.",
+  "title": "Conditions d’utilisation",
+  "shortVersion": "<b>En résumé.</b> Vous pouvez utiliser {{siteName}} sur des Mac que vous possédez ou contrôlez. Vous décidez de ce qui est supprimé, alors vérifiez les éléments et conservez des sauvegardes. Nous ne pouvons pas garantir la quantité d’espace que vous récupérerez. Le Logiciel est fourni tel quel.",
+  "shortVersionNote": "Ce résumé est fourni à titre indicatif uniquement ; les conditions complètes ci-dessous s’appliquent.",
+  "sections": {
+    "acceptance": {
+      "title": "Acceptation de ces conditions",
+      "body": [{ "p": "Ces Conditions d’utilisation (les « Conditions ») constituent un accord entre vous et {{companyName}} (« nous ») concernant l’application {{siteName}} pour macOS (le « Logiciel ») et ce site web (le « Site »). En téléchargeant, installant ou utilisant le Logiciel, ou en utilisant le Site, vous acceptez ces Conditions. Si vous n’êtes pas d’accord, ne les utilisez pas. Si vous utilisez le Logiciel pour le compte d’une organisation, vous confirmez être autorisé à accepter ces Conditions en son nom." }]
+    },
+    "license": {
+      "title": "Licence d’utilisation du Logiciel",
+      "body": [{ "p": "Sous réserve de ces Conditions, nous vous accordons une licence personnelle, non exclusive, non transférable et révocable pour télécharger, installer et utiliser le Logiciel sur des Mac que vous possédez ou contrôlez, à des fins personnelles ou professionnelles internes. Le Logiciel est concédé sous licence, pas vendu. Nous nous réservons tous les droits non expressément accordés." }]
+    },
+    "restrictions": {
+      "title": "Restrictions de licence",
+      "body": [
+        { "p": "Sauf lorsque la loi applicable l’autorise expressément, vous ne pouvez pas :" },
+        { "ul": ["copier, modifier, traduire ou créer des œuvres dérivées du Logiciel ;", "procéder à l’ingénierie inverse, décompiler ou désassembler le Logiciel ;", "vendre, louer, céder sous licence, redistribuer ou publier le Logiciel, ou le proposer au téléchargement ailleurs que sur ce Site ;", "supprimer ou modifier les mentions de droits d’auteur, de marque ou autres ;", "utiliser le Logiciel en violation d’une loi, ou pour accéder à des données que vous n’êtes pas autorisé à gérer ou les supprimer."] }
+      ]
+    },
+    "price": {
+      "title": "Prix",
+      "body": [{ "p": "La version {{version}} du Logiciel est fournie gratuitement, sans achats intégrés ni abonnements. Si nous introduisons à l’avenir des fonctionnalités ou versions payantes, nous les décrirons clairement au préalable, et vous ne serez jamais facturé sans y avoir consenti." }]
+    },
+    "your-responsibility": {
+      "title": "Votre responsabilité concernant ce que vous supprimez",
+      "body": [
+        { "p": "Le Logiciel vous aide à identifier des fichiers et suggère ce qui peut être supprimé sans risque, mais <b>c’est vous qui décidez de ce qui est supprimé</b>. Des étiquettes comme « Sûr » et « À vérifier » sont des recommandations basées sur le type et l’emplacement du fichier, pas des garanties quant à la valeur d’un fichier pour vous. Veuillez vérifier les éléments avant de nettoyer — en particulier vos propres fichiers et tout ce qui est marqué à vérifier." },
+        { "p": "Le Logiciel déplace les éléments que vous approuvez vers la Corbeille macOS, d’où ils peuvent normalement être restaurés jusqu’à ce que la Corbeille soit vidée. Vider la Corbeille les supprime définitivement ; c’est votre action, en dehors du Logiciel. Si vous activez le nettoyage automatique dans le Nettoyage planifié, vous autorisez le Logiciel à déplacer vers la Corbeille les caches de développement éligibles décrits dans le Logiciel sans demander à chaque fois." },
+        { "p": "La suppression de caches ou de données d’applications peut obliger d’autres applications à reconstruire ou retélécharger ces données, peut vous déconnecter de certaines applications, ou peut modifier leur comportement. Désinstaller une application avec ses fichiers d’assistance supprime les données stockées localement de cette application." }
+      ]
+    },
+    "backups": {
+      "title": "Sauvegardes",
+      "body": [{ "p": "Vous êtes responsable de conserver des sauvegardes régulières et à jour de vos données (par exemple avec Time Machine) avant d’utiliser le Logiciel. Nous recommandons vivement de disposer d’une sauvegarde actuelle avant tout nettoyage." }]
+    },
+    "no-guarantee": {
+      "title": "Aucune garantie de résultats",
+      "body": [{ "p": "La quantité de stockage que le Logiciel trouve ou vous aide à récupérer dépend entièrement de votre Mac et de votre usage. Les chiffres affichés dans le Logiciel sont des estimations, et les chiffres sur ce Site sont des exemples illustratifs. L’espace utilisé par les éléments dans la Corbeille n’est libéré que lorsque la Corbeille est vidée, et les applications peuvent recréer des caches au fil du temps. Nous ne promettons aucune quantité particulière d’espace récupéré ni aucune amélioration de la vitesse ou des performances de votre Mac. Les informations de performances, de batterie et système affichées dans le Logiciel sont rapportées par macOS et fournies à titre d’information uniquement ; ce n’est pas un diagnostic, et le Logiciel ne répare ni le matériel ni les batteries." }]
+    },
+    "updates": {
+      "title": "Mises à jour et modifications du Logiciel",
+      "body": [{ "p": "Nous pouvons publier des mises à jour qui ajoutent, modifient ou suppriment des fonctionnalités, et nous pouvons cesser de proposer le Logiciel à tout moment. Le Logiciel ne se met pas à jour lui-même ; les nouvelles versions sont proposées sur ce Site. Ces Conditions s’appliquent aux mises à jour, sauf si elles sont accompagnées de conditions différentes." }]
+    },
+    "early-release": {
+      "title": "Version précoce",
+      "body": [{ "p": "{{siteName}} est un nouveau produit. Bien qu’il ait été conçu avec de nombreuses protections, il peut contenir des bugs ou se comporter de façon inattendue sur certaines configurations.{{notarizedNote}} Veuillez <link-support>signaler les problèmes</link-support> afin que nous puissions les corriger." }],
+      "notarizedNote": " La version actuelle n’est pas notarisée par Apple, donc macOS affichera un avertissement la première fois que vous l’ouvrirez ; les étapes d’installation se trouvent sur la page Télécharger."
+    },
+    "privacy": {
+      "title": "Confidentialité",
+      "body": [{ "p": "Notre <link-privacy>Politique de confidentialité</link-privacy> explique comment le Logiciel et le Site traitent les informations. En résumé, le Logiciel traite vos fichiers localement sur votre Mac et ne nous envoie pas d’informations à leur sujet." }]
+    },
+    "ip": {
+      "title": "Propriété intellectuelle",
+      "body": [{ "p": "Le Logiciel et le Site, y compris leur code, leur design, leurs textes, leurs graphismes et le nom et le logo {{siteName}}, appartiennent à {{companyName}} ou à ses concédants et sont protégés par les lois sur la propriété intellectuelle. Ces Conditions ne vous accordent aucun droit d’utiliser nos noms ou logos." }]
+    },
+    "apple": {
+      "title": "Marques Apple",
+      "body": [{ "p": "{{siteName}} est une application indépendante qui n’est affiliée à Apple Inc., ni approuvée ou parrainée par elle. Apple, Mac, MacBook, macOS, Finder, Safari, Xcode et Time Machine sont des marques d’Apple Inc., déposées aux États-Unis et dans d’autres pays. Les autres noms de produits sont des marques de leurs propriétaires respectifs." }]
+    },
+    "feedback": {
+      "title": "Retours",
+      "body": [{ "p": "Si vous nous envoyez des suggestions ou des retours, vous nous autorisez à les utiliser pour améliorer nos produits sans obligation envers vous." }]
+    },
+    "warranty": {
+      "title": "Exclusion de garanties",
+      "body": [{ "p": "Dans toute la mesure permise par la loi, le Logiciel et le Site sont fournis « tels quels » et « selon disponibilité », sans garantie d’aucune sorte, expresse, implicite ou légale, y compris les garanties implicites de qualité marchande, d’adéquation à un usage particulier, de titre de propriété et de non-contrefaçon. Nous ne garantissons pas que le Logiciel sera exempt d’erreurs ou ininterrompu, qu’il identifiera chaque fichier supprimable, ou que chaque élément qu’il suggère peut être supprimé sans risque pour vous.", "caps": true }]
+    },
+    "liability": {
+      "title": "Limitation de responsabilité",
+      "body": [
+        { "p": "Dans toute la mesure permise par la loi, {{companyName}} ne pourra être tenu responsable de dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, ni de pertes de données, de fichiers, de profits, de revenus ou de clientèle, découlant de ou liés à votre utilisation (ou impossibilité d’utiliser) le Logiciel ou le Site — y compris la suppression de fichiers que vous avez sélectionnés ou autorisés — même si nous avons été informés de la possibilité de tels dommages.", "caps": true },
+        { "p": "Dans la mesure permise par la loi, notre responsabilité totale pour toute réclamation liée au Logiciel ou au Site est limitée au montant le plus élevé entre ce que vous nous avez payé pour le Logiciel au cours des douze mois précédant la réclamation, ou 50 USD [espace réservé — montant et devise à confirmer].", "caps": true },
+        { "p": "Certaines juridictions n’autorisent pas certaines exclusions de garantie ou limitations de responsabilité, de sorte que certains des éléments ci-dessus peuvent ne pas s’appliquer à vous. Rien dans ces Conditions ne limite une responsabilité qui ne peut être limitée par la loi, ni vos droits légaux en tant que consommateur." }
+      ]
+    },
+    "termination": {
+      "title": "Résiliation",
+      "body": [{ "p": "Vous pouvez cesser d’utiliser le Logiciel à tout moment en le désinstallant. Votre licence prend automatiquement fin en cas de violation substantielle de ces Conditions. En cas de résiliation, vous devez cesser d’utiliser et supprimer le Logiciel. Les sections qui, de par leur nature, doivent survivre à la résiliation y survivront." }]
+    },
+    "governing-law": {
+      "title": "Droit applicable",
+      "body": [{ "p": "Ces Conditions sont régies par les lois de {{jurisdiction}}, sans égard aux règles de conflit de lois. Les tribunaux de {{jurisdiction}} sont compétents pour tout litige, sauf lorsque le droit de la consommation local vous donne le droit d’engager une procédure là où vous vivez." }]
+    },
+    "changes": {
+      "title": "Modifications de ces conditions",
+      "body": [{ "p": "Nous pouvons mettre à jour ces Conditions de temps à autre. La date « Dernière mise à jour » en haut indique la révision la plus récente ; les changements importants seront également mentionnés dans les notes de version. Continuer à utiliser le Logiciel ou le Site après l’entrée en vigueur des changements signifie que vous acceptez les Conditions mises à jour." }]
+    },
+    "general": {
+      "title": "Dispositions générales",
+      "body": [{ "p": "Ces Conditions, avec la Politique de confidentialité, constituent l’intégralité de l’accord entre vous et nous concernant le Logiciel et le Site. Si une disposition est jugée inapplicable, les autres restent en vigueur. Notre manquement à faire respecter une disposition ne constitue pas une renonciation à celle-ci." }]
+    },
+    "contact": {
+      "title": "Contact",
+      "body": [{ "p": "Des questions sur ces Conditions ? Écrivez à {{supportEmail}} ou à {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

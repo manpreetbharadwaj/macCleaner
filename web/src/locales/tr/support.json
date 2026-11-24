@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Destek",
+  "title": "Nasıl yardımcı olabiliriz?",
+  "intro": "Çoğu yanıt SSS içinde. Başka bir şey için en hızlı ulaşma yolu e-postadır.",
+  "cards": {
+    "email": { "title": "E-posta desteği", "body": "Uygulamayı kullanmayla ilgili sorularınız mı var? Bize yazın, size geri dönelim.", "cta": "{{email}}" },
+    "bug": { "title": "Hata bildir", "body": "Bir şey çalışmıyor mu? Doldurmanız için kısa bir şablon içeren bir e-posta açar.", "cta": "Hata bildir" },
+    "feature": { "title": "Özellik iste", "body": "MacBook Cleaner'ı sizin için daha kullanışlı hale getirecek şeyi bize söyleyin.", "cta": "Özellik öner" },
+    "install": { "title": "Kurulum yardımı", "body": "Adım adım kurulum talimatları ve ilk başlatmadaki güvenlik uyarısı için yapılması gerekenler.", "cta": "Kurulum kılavuzu" },
+    "faq": { "title": "SSS", "body": "Güvenlik, gizlilik, izinler, uyumluluk ve kaldırma — yanıtlandı.", "cta": "SSS'ye göz atın" }
+  },
+  "emailSubject": "MacBook Cleaner desteği",
+  "logsTitle": "Tanılama günlükleri gönderme",
+  "logsBody": "Zorlu sorunlar için uygulamanın günlüklerini isteyebiliriz. Bunlar yalnızca Mac'inizde, <code>~/Library/Logs/{{bundleId}}</code> içinde saklanır ve asla otomatik olarak gönderilmez. Günlükler Mac'inizden dosya yolları içerebilir — eklemeden önce bunları gözden geçirin ve paylaşmak istemediğiniz her şeyi kaldırın.",
+  "bugTemplate": {
+    "subject": "Hata bildirimi — MacBook Cleaner {{version}}",
+    "body": "Ne oldu:\n\n\nNe bekliyordunuz:\n\n\nYeniden oluşturma adımları:\n1.\n2.\n\nMacBook Cleaner sürümü: {{version}}\nmacOS sürümü:\nMac modeli / çip:\n"
+  },
+  "featureTemplate": {
+    "subject": "Özellik isteği — MacBook Cleaner",
+    "body": "MacBook Cleaner'ın ne yapmasını isterdiniz?\n\n\nBu size neden yardımcı olurdu?\n"
+  }
+}

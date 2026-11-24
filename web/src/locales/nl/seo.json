@@ -1,0 +1,60 @@
+{
+  "/": {
+    "title": "MacBook Cleaner — Mac-opslagschoonmaker & Prestatiemonitor",
+    "description": "Maak veilig opslagruimte vrij op je Mac en zie hoe je Mac ervoor staat. MacBook Cleaner vindt caches, grote bestanden en duplicaten, en toont CPU- en RAM-gebruik, actieve apps, batterijstatus en systeeminformatie — allemaal lokaal verwerkt."
+  },
+  "/features": {
+    "title": "Functies — Mac-schoonmaker, CPU- & RAM-monitor, Batterijstatus | MacBook Cleaner",
+    "description": "Smart Clean, Storage Explorer, zoeken naar grote bestanden en duplicaten, app-opschoning, plus een Mac-prestatiemonitor: CPU- en geheugengebruik, actieve apps, batterijcycli en -status, en systeeminformatie."
+  },
+  "/pricing": {
+    "title": "Prijzen — MacBook Cleaner",
+    "description": "MacBook Cleaner {{version}}: probeer het {{trialDays}} dagen gratis en koop daarna eenmalig voor {{price}} een levenslange licentie. Geen abonnement, geen account nodig om te beginnen."
+  },
+  "/download": {
+    "title": "MacBook Cleaner downloaden voor Mac",
+    "description": "Download MacBook Cleaner {{version}} voor {{macos}} of nieuwer op {{architecture}} Macs. Installatiestappen en hulp bij de eerste start inbegrepen."
+  },
+  "/faq": {
+    "title": "Veelgestelde vragen — Is MacBook Cleaner veilig? | MacBook Cleaner",
+    "description": "Antwoorden over veiligheid, privacy, machtigingen, prestatiebewaking, batterijstatus, compatibiliteit en installatie van MacBook Cleaner, de volledig lokale Mac-schoonmaker en prestatiemonitor."
+  },
+  "/support": {
+    "title": "Ondersteuning — MacBook Cleaner",
+    "description": "Krijg hulp met MacBook Cleaner: installatiehulp, foutmeldingen, functieverzoeken en contactgegevens."
+  },
+  "/changelog": {
+    "title": "Releasenotities — MacBook Cleaner",
+    "description": "Wat er nieuw is in elke versie van MacBook Cleaner voor macOS."
+  },
+  "/privacy": {
+    "title": "Privacybeleid — MacBook Cleaner",
+    "description": "Hoe MacBook Cleaner en deze website omgaan met je gegevens. De app scant, maakt schoon en bewaakt lokaal en verstuurt geen gegevens over je bestanden of je Mac."
+  },
+  "/terms": {
+    "title": "Gebruiksvoorwaarden — MacBook Cleaner",
+    "description": "De voorwaarden die van toepassing zijn op het downloaden en gebruiken van MacBook Cleaner."
+  },
+  "/thank-you": {
+    "title": "Bedankt — MacBook Cleaner",
+    "description": "Bedankt voor je aankoop. Vind hier je licentiesleutel en de activeringsstappen."
+  },
+  "/404": {
+    "title": "Pagina niet gevonden — MacBook Cleaner",
+    "description": "De pagina die je zocht, bestaat niet."
+  },
+  "ogImageAlt": "De MacBook Cleaner-app met een overzicht van het opslaggebruik",
+  "schema": {
+    "featureList": [
+      "Mac-opslagschoonmaker",
+      "Opslaganalysator",
+      "Zoeken naar grote bestanden",
+      "Zoeken naar dubbele bestanden",
+      "App-deïnstallatie",
+      "CPU- en geheugenmonitor",
+      "Monitor voor actieve apps",
+      "Batterijstatus en -cycli",
+      "Mac-systeeminformatie"
+    ]
+  }
+}

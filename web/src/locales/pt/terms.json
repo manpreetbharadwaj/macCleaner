@@ -1,0 +1,100 @@
+{
+  "legalReviewNotice": "Esta tradução foi produzida por tradução automática e ainda não foi revista por um advogado qualificado na sua jurisdição. A versão inglesa destes termos é o texto autoritativo; em caso de conflito, prevalece a versão inglesa.",
+  "title": "Termos de Serviço",
+  "shortVersion": "<b>A versão resumida.</b> Pode usar o {{siteName}} em Macs que possui ou controla. Você decide o que é removido, por isso reveja os itens e mantenha cópias de segurança. Não podemos garantir quanto espaço irá recuperar. O Software é fornecido tal como está.",
+  "shortVersionNote": "Este resumo é apenas para conveniência; aplicam-se os termos completos abaixo.",
+  "sections": {
+    "acceptance": {
+      "title": "Aceitação destes termos",
+      "body": [{ "p": "Estes Termos de Serviço (“Termos”) são um acordo entre si e {{companyName}} (“nós”) relativo à aplicação {{siteName}} para macOS (o “Software”) e a este site (o “Site”). Ao transferir, instalar ou usar o Software, ou ao usar o Site, aceita estes Termos. Se não concordar, não os use. Se usar o Software em nome de uma organização, confirma que está autorizado a aceitar estes Termos em seu nome." }]
+    },
+    "license": {
+      "title": "Licença para usar o Software",
+      "body": [{ "p": "Sujeito a estes Termos, concedemos-lhe uma licença pessoal, não exclusiva, intransferível e revogável para transferir, instalar e usar o Software em Macs que possui ou controla, para os seus fins pessoais ou empresariais internos. O Software é licenciado, não vendido. Reservamo-nos todos os direitos não expressamente concedidos." }]
+    },
+    "restrictions": {
+      "title": "Restrições da licença",
+      "body": [
+        { "p": "Exceto nos casos expressamente permitidos pela lei aplicável, não pode:" },
+        { "ul": ["copiar, modificar, traduzir ou criar obras derivadas do Software;", "fazer engenharia inversa, descompilar ou desmontar o Software;", "vender, alugar, arrendar, sublicenciar, redistribuir ou publicar o Software, ou disponibilizá-lo para transferência a partir de qualquer local que não este Site;", "remover ou alterar quaisquer avisos de direitos de autor, marcas registadas ou outros avisos;", "usar o Software em violação de qualquer lei, ou para aceder ou remover dados que não está autorizado a gerir."] }
+      ]
+    },
+    "price": {
+      "title": "Preço",
+      "body": [{ "p": "A versão {{version}} do Software é fornecida sem custos e sem compras dentro da aplicação ou subscrições. Se introduzirmos funcionalidades ou versões pagas no futuro, iremos descrevê-las claramente com antecedência, e nunca lhe será cobrado nada sem o seu consentimento." }]
+    },
+    "your-responsibility": {
+      "title": "A sua responsabilidade pelo que remove",
+      "body": [
+        { "p": "O Software ajuda-o a identificar ficheiros e sugere o que pode ser seguro remover, mas <b>é você quem decide o que é removido</b>. Etiquetas como “Seguro” e “Rever” são recomendações baseadas no tipo e localização do ficheiro, não garantias sobre o valor que um ficheiro tem para si. Reveja os itens antes de limpar — particularmente os seus próprios ficheiros e tudo o que estiver marcado para revisão." },
+        { "p": "O Software move os itens que aprova para o Lixo do macOS, de onde normalmente podem ser restaurados até o Lixo ser esvaziado. Esvaziar o Lixo remove-os permanentemente; essa é uma ação sua, fora do Software. Se ativar a limpeza automática na Limpeza Programada, autoriza o Software a mover para o Lixo as caches de programação elegíveis descritas no Software sem pedir confirmação de cada vez." },
+        { "p": "Remover caches ou dados de aplicações pode exigir que outras aplicações recriem ou voltem a transferir esses dados, pode terminar a sua sessão em algumas aplicações, ou pode alterar o seu comportamento. Desinstalar uma aplicação juntamente com os seus ficheiros de suporte remove os dados guardados localmente dessa aplicação." }
+      ]
+    },
+    "backups": {
+      "title": "Cópias de segurança",
+      "body": [{ "p": "É responsável por manter cópias de segurança regulares e atualizadas dos seus dados (por exemplo, com o Time Machine) antes de usar o Software. Recomendamos vivamente ter uma cópia de segurança atual antes de qualquer limpeza." }]
+    },
+    "no-guarantee": {
+      "title": "Sem garantia de resultados",
+      "body": [{ "p": "A quantidade de armazenamento que o Software encontra ou o ajuda a recuperar depende inteiramente do seu Mac e de como o utiliza. Os valores mostrados no Software são estimativas, e os valores neste Site são exemplos ilustrativos. O espaço usado por itens no Lixo só é libertado quando o Lixo é esvaziado, e as aplicações podem recriar caches ao longo do tempo. Não prometemos qualquer quantidade específica de armazenamento recuperado nem qualquer melhoria na velocidade ou desempenho do seu Mac. As informações de desempenho, bateria e sistema mostradas no Software são reportadas pelo macOS e fornecidas apenas para fins informativos; não constituem um diagnóstico, e o Software não repara hardware nem baterias." }]
+    },
+    "updates": {
+      "title": "Atualizações e alterações ao Software",
+      "body": [{ "p": "Podemos lançar atualizações que adicionam, alteram ou removem funcionalidades, e podemos deixar de disponibilizar o Software a qualquer momento. O Software não se atualiza sozinho; as novas versões são disponibilizadas neste Site. Estes Termos aplicam-se às atualizações, salvo se forem acompanhadas de termos diferentes." }]
+    },
+    "early-release": {
+      "title": "Lançamento antecipado",
+      "body": [{ "p": "O {{siteName}} é um produto novo. Embora tenha sido construído com extensas salvaguardas, pode conter erros ou comportar-se de forma inesperada em algumas configurações.{{notarizedNote}} Por favor, <link-support>reporte problemas</link-support> para que os possamos corrigir." }],
+      "notarizedNote": " A versão atual não está notarizada pela Apple, pelo que o macOS mostrará um aviso na primeira vez que a abrir; os passos de instalação estão na página de Transferência."
+    },
+    "privacy": {
+      "title": "Privacidade",
+      "body": [{ "p": "A nossa <link-privacy>Política de Privacidade</link-privacy> explica como o Software e o Site tratam a informação. Em resumo, o Software processa os seus ficheiros localmente no seu Mac e não nos envia informações sobre eles." }]
+    },
+    "ip": {
+      "title": "Propriedade intelectual",
+      "body": [{ "p": "O Software e o Site, incluindo o seu código, design, texto, gráficos e o nome e logótipo {{siteName}}, são propriedade de {{companyName}} ou dos seus licenciadores e estão protegidos por leis de propriedade intelectual. Estes Termos não lhe concedem qualquer direito de usar os nossos nomes ou logótipos." }]
+    },
+    "apple": {
+      "title": "Marcas registadas da Apple",
+      "body": [{ "p": "O {{siteName}} é uma aplicação independente e não é afiliada, aprovada ou patrocinada pela Apple Inc. Apple, Mac, MacBook, macOS, Finder, Safari, Xcode e Time Machine são marcas registadas da Apple Inc., nos EUA e noutros países. Outros nomes de produtos são marcas registadas dos respetivos proprietários." }]
+    },
+    "feedback": {
+      "title": "Comentários",
+      "body": [{ "p": "Se nos enviar sugestões ou comentários, autoriza-nos a usá-los para melhorar os nossos produtos sem qualquer obrigação para consigo." }]
+    },
+    "warranty": {
+      "title": "Exclusão de garantias",
+      "body": [{ "p": "Na medida máxima permitida por lei, o Software e o Site são fornecidos “tal como estão” e “conforme disponíveis”, sem garantias de qualquer tipo, expressas, implícitas ou legais, incluindo garantias implícitas de comercialização, adequação a um fim específico, titularidade e não violação. Não garantimos que o Software estará livre de erros ou ininterrupto, que identificará todos os ficheiros removíveis, ou que todos os itens sugeridos são seguros para remover.", "caps": true }]
+    },
+    "liability": {
+      "title": "Limitação de responsabilidade",
+      "body": [
+        { "p": "Na medida máxima permitida por lei, {{companyName}} não será responsável por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, nem por qualquer perda de dados, ficheiros, lucros, receitas ou reputação, decorrentes ou relacionados com o seu uso (ou incapacidade de uso) do Software ou do Site — incluindo a remoção de ficheiros selecionados ou autorizados por si — mesmo que tenhamos sido avisados da possibilidade de tais danos.", "caps": true },
+        { "p": "Na medida permitida por lei, a nossa responsabilidade total por qualquer reclamação relacionada com o Software ou o Site está limitada ao valor mais elevado entre o montante que nos pagou pelo Software nos doze meses anteriores à reclamação, ou 50 USD [indicador — confirmar montante e moeda].", "caps": true },
+        { "p": "Algumas jurisdições não permitem certas exclusões de garantia ou limitações de responsabilidade, pelo que algumas das disposições acima podem não se aplicar a si. Nada nestes Termos limita a responsabilidade que não pode ser limitada por lei, nem os seus direitos legais como consumidor." }
+      ]
+    },
+    "termination": {
+      "title": "Rescisão",
+      "body": [{ "p": "Pode deixar de usar o Software a qualquer momento, desinstalando-o. A sua licença termina automaticamente se violar materialmente estes Termos. Após a rescisão, deve deixar de usar e eliminar o Software. As secções que, pela sua natureza, devam subsistir à rescisão, continuarão em vigor." }]
+    },
+    "governing-law": {
+      "title": "Lei aplicável",
+      "body": [{ "p": "Estes Termos são regidos pelas leis de {{jurisdiction}}, sem consideração pelas regras de conflito de leis. Os tribunais de {{jurisdiction}} têm jurisdição sobre qualquer litígio, exceto nos casos em que a sua lei local de proteção do consumidor lhe conceda o direito de intentar ações onde reside." }]
+    },
+    "changes": {
+      "title": "Alterações a estes termos",
+      "body": [{ "p": "Podemos atualizar estes Termos periodicamente. A data “Última atualização” no topo mostra a revisão mais recente; as alterações materiais também serão indicadas nas notas de versão. Continuar a usar o Software ou o Site após a entrada em vigor das alterações significa que aceita os Termos atualizados." }]
+    },
+    "general": {
+      "title": "Disposições gerais",
+      "body": [{ "p": "Estes Termos, juntamente com a Política de Privacidade, constituem o acordo integral entre si e nós relativamente ao Software e ao Site. Se alguma disposição for considerada inexequível, as restantes permanecem em vigor. A nossa falha em fazer cumprir uma disposição não constitui uma renúncia à mesma." }]
+    },
+    "contact": {
+      "title": "Contacto",
+      "body": [{ "p": "Dúvidas sobre estes Termos? Envie um email para {{supportEmail}} ou escreva para {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "skipToContent": "Vai al contenuto",
+  "tagline": "Pulisci il tuo Mac. Conserva ciò che conta.",
+  "nav": {
+    "features": "Funzionalità",
+    "pricing": "Prezzi",
+    "download": "Download",
+    "faq": "FAQ",
+    "support": "Assistenza",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu"
+  },
+  "footer": {
+    "description": "Pulizia dell'archiviazione e monitoraggio delle prestazioni per macOS, sicuri e sempre in locale.",
+    "version": "Versione {{version}} · {{macos}} o successivo",
+    "columns": {
+      "product": "Prodotto",
+      "help": "Assistenza",
+      "legal": "Legale"
+    },
+    "links": {
+      "features": "Funzionalità",
+      "pricing": "Prezzi",
+      "download": "Download",
+      "releaseNotes": "Note di rilascio",
+      "faq": "FAQ",
+      "support": "Assistenza",
+      "installation": "Installazione",
+      "privacy": "Privacy",
+      "terms": "Termini"
+    },
+    "copyright": "© {{year}} {{name}}. Tutti i diritti riservati.",
+    "trademark": "{{name}} è un'applicazione indipendente e non è affiliata, approvata o sponsorizzata da Apple Inc. Apple, Mac, MacBook, macOS, Finder, Safari e Xcode sono marchi di Apple Inc., registrati negli Stati Uniti e in altri paesi."
+  },
+  "download": {
+    "cta": "Scarica per Mac",
+    "navCta": "Download",
+    "starting": "Avvio…",
+    "started": "Download avviato",
+    "unavailable": "Download non disponibile",
+    "unavailableNote": "L'installer verificato per Mac non è ancora stato pubblicato.",
+    "downloading": "Download di {{fileName}} in corso",
+    "error": "Non è stato possibile avviare il download. Riprova tra poco oppure contatta l'assistenza."
+  },
+  "legal": {
+    "eyebrow": "Legale",
+    "lastUpdated": "Ultimo aggiornamento: {{date}}",
+    "onThisPage": "In questa pagina"
+  },
+  "aria": {
+    "requirements": "Requisiti",
+    "primaryNav": "Principale",
+    "mobileNav": "Mobile"
+  },
+  "languageSwitcher": {
+    "label": "Lingua",
+    "current": "Lingua: {{language}}",
+    "resetToAutomatic": "Ripristina automatico",
+    "resetDescription": "Rileva automaticamente la mia lingua la prossima volta"
+  }
+}

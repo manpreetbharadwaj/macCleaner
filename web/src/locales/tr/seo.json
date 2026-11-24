@@ -1,0 +1,60 @@
+{
+  "/": {
+    "title": "MacBook Cleaner — Mac Depolama Temizleyici ve Performans İzleyici",
+    "description": "Mac depolama alanınızı güvenle boşaltın ve Mac'inizin durumunu görün. MacBook Cleaner önbellekleri, büyük dosyaları ve yinelenenleri bulur; CPU ve RAM kullanımını, çalışan uygulamaları, pil sağlığını ve Mac sistem bilgilerini gösterir — hepsi yerel olarak işlenir."
+  },
+  "/features": {
+    "title": "Özellikler — Mac Temizleyici, CPU ve RAM İzleyici, Pil Sağlığı | MacBook Cleaner",
+    "description": "Smart Clean, Depolama Gezgini, Büyük Dosya ve Yinelenen Bulucuları, Uygulama Temizliği, ayrıca bir Mac performans izleyici: CPU ve bellek kullanımı, çalışan uygulamalar, pil döngü sayısı ve sağlığı, Mac sistem bilgileri."
+  },
+  "/pricing": {
+    "title": "Fiyatlandırma — MacBook Cleaner",
+    "description": "MacBook Cleaner {{version}}: {{trialDays}} gün ücretsiz deneyin, ardından tek seferlik {{price}} ödemeyle ömür boyu lisans. Abonelik yok, başlamak için hesap gerekmiyor."
+  },
+  "/download": {
+    "title": "MacBook Cleaner'ı Mac için indirin",
+    "description": "{{architecture}} Mac'lerde {{macos}} veya üzeri için MacBook Cleaner {{version}} sürümünü indirin. Kurulum adımları ve ilk açılış yardımı dahildir."
+  },
+  "/faq": {
+    "title": "SSS — MacBook Cleaner Güvenli mi? | MacBook Cleaner",
+    "description": "Yerel öncelikli Mac temizleyici ve performans izleyici MacBook Cleaner hakkında güvenlik, gizlilik, izinler, performans izleme, pil sağlığı, uyumluluk ve kurulumla ilgili yanıtlar."
+  },
+  "/support": {
+    "title": "Destek — MacBook Cleaner",
+    "description": "MacBook Cleaner ile ilgili yardım alın: kurulum yardımı, hata bildirimleri, özellik istekleri ve iletişim bilgileri."
+  },
+  "/changelog": {
+    "title": "Sürüm Notları — MacBook Cleaner",
+    "description": "MacBook Cleaner'ın macOS için her sürümünde neler değişti."
+  },
+  "/privacy": {
+    "title": "Gizlilik Politikası — MacBook Cleaner",
+    "description": "MacBook Cleaner ve bu web sitesi bilgilerinizi nasıl işler. Uygulama yerel olarak tarar, temizler ve izler; dosyalarınız veya Mac'iniz hakkında hiçbir veri göndermez."
+  },
+  "/terms": {
+    "title": "Kullanım Koşulları — MacBook Cleaner",
+    "description": "MacBook Cleaner'ı indirme ve kullanmaya ilişkin koşullar."
+  },
+  "/thank-you": {
+    "title": "Teşekkürler — MacBook Cleaner",
+    "description": "Satın alımınız için teşekkürler. Lisans anahtarınızı ve etkinleştirme adımlarını burada bulun."
+  },
+  "/404": {
+    "title": "Sayfa bulunamadı — MacBook Cleaner",
+    "description": "Aradığınız sayfa mevcut değil."
+  },
+  "ogImageAlt": "Depolama dağılımını gösteren MacBook Cleaner uygulaması",
+  "schema": {
+    "featureList": [
+      "Mac depolama temizleyici",
+      "Depolama analiz aracı",
+      "Büyük dosya bulucu",
+      "Yinelenen dosya bulucu",
+      "Uygulama kaldırıcı",
+      "CPU ve bellek izleyici",
+      "Çalışan uygulama izleyici",
+      "Pil sağlığı ve döngü sayısı",
+      "Mac sistem bilgileri"
+    ]
+  }
+}

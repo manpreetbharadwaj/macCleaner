@@ -1,0 +1,198 @@
+{
+  "hero": {
+    "pill": "Versie {{version}} · Gemaakt voor macOS",
+    "title1": "Maak schoon. Bewaak.",
+    "title2": "Begrijp je Mac.",
+    "lead": "Maak opslagruimte vrij, begrijp het geheugengebruik, bewaak actieve apps, controleer de batterijstatus en bekijk belangrijke informatie over je Mac — vanuit één eenvoudig dashboard. Jij controleert alles. Niets wordt permanent verwijderd.",
+    "exploreFeatures": "Ontdek functies",
+    "requirement": "{{macos}} of nieuwer",
+    "chips": {
+      "trash": { "title": "Naar Prullenmand verplaatst", "body": "Altijd herstelbaar" },
+      "personal": { "title": "Persoonlijke bestanden", "body": "Nooit vooraf geselecteerd" },
+      "scan": { "title": "Scant op je Mac", "body": "Niets wordt geüpload" }
+    }
+  },
+  "coreFeatures": {
+    "eyebrow": "Schoonmaaktools",
+    "title": "Acht schoonmaaktools. Eén rustige interface.",
+    "intro": "Elke tool laat zien wat er is gevonden, waarom het er is en wat er gebeurt als je het verwijdert — zodat je met vertrouwen kunt opschonen in plaats van te gokken."
+  },
+  "scanDemo": {
+    "eyebrow": "Zie het in actie",
+    "title1": "Eén scan. ",
+    "title2": "Alles gesorteerd.",
+    "intro": "Smart Clean doorzoekt in één keer caches, logboeken, app-restanten, ontwikkelaarstools en je Downloads, en sorteert de resultaten vervolgens in duidelijke groepen — elk onderverdeeld in wat veilig is om op te schonen en wat een tweede blik verdient.",
+    "storageAnalyzed": "Opslag geanalyseerd",
+    "itemsFound": "Items gevonden",
+    "safeToClean": "Veilig om op te schonen",
+    "readyToScan": "Klaar om te scannen",
+    "scanning": "Je Mac wordt gescand…",
+    "canFreeUp": "Je Mac kan {{total}} GB vrijmaken",
+    "foundSoFar": "{{amount}} GB tot nu toe gevonden",
+    "safeSummary": "{{amount}} GB is direct veilig om op te schonen. De rest beoordeel je zelf.",
+    "checking": "Controleren…",
+    "items": "items",
+    "footNote": "Voorbeeldscan met de voorbeeldgegevens van de app. De resultaten op jouw Mac zullen anders zijn.",
+    "replay": "Opnieuw afspelen",
+    "steps": {
+      "systemJunk": "Systeemrommel",
+      "browserCaches": "Browsercaches",
+      "appLeftovers": "App-restanten",
+      "logsCrashReports": "Logboeken en crashrapporten",
+      "developerJunk": "Ontwikkelaarsrommel",
+      "oldDownloads": "Oude downloads"
+    }
+  },
+  "performanceMonitor": {
+    "eyebrow": "Nieuw · Prestaties",
+    "title1": "Mac-prestatiemonitor. ",
+    "title2": "Ingebouwd.",
+    "intro": "MacBook Cleaner is veel meer dan een opslagschoonmaker. Het tabblad Prestaties laat in gewone taal zien hoe je Mac er op dit moment voor staat, zonder een ontwikkelaarstool te worden.",
+    "shotAlt": "Prestatiedashboard van MacBook Cleaner met meters voor CPU, geheugen, opslag en batterij, een Mac-statussamenvatting en live grafieken",
+    "shotNote": "Getoond met de voorbeeldgegevens van de app. Op jouw Mac wordt elke waarde live uitgelezen van macOS."
+  },
+  "runningApps": {
+    "eyebrow": "Actieve apps",
+    "title1": "Zie welke apps ",
+    "title2": "het meeste geheugen en CPU gebruiken.",
+    "intro": "Actieve apps toont wat er open staat op je Mac, met geheugen, CPU en hoe lang het al actief is. Helperprocessen tellen mee bij hun eigen app, zodat een browser met tientallen tabbladen één eerlijk totaal laat zien.",
+    "checks": ["Sorteer op geheugen, CPU, actieve tijd of naam", "Standaard alleen apps — achtergrond- en systeemprocessen alleen op verzoek", "Geheugen gebruikt dezelfde meting als Activiteitenweergave"],
+    "headers": { "app": "App", "cpu": "CPU", "memory": "Geheugen", "running": "Actief" },
+    "note": "Voorbeeldwaarden ter illustratie — geen benchmarks."
+  },
+  "battery": {
+    "eyebrow": "Batterijstatus",
+    "title": "Begrijp je batterij.",
+    "intro": "Bekijk op MacBooks precies wat macOS weet over je batterij — geen giswerk, geen verzonnen scores.",
+    "checks": ["Batterijpercentage en oplaadstatus", "Cyclusaantal — het aantal voltooide volledige laadcycli", "Maximale capaciteit vergeleken met toen de batterij nieuw was", "Batterijstatus, zoals getoond in Systeeminstellingen"],
+    "finePrint": "MacBook Cleaner rapporteert batterij-informatie; het kan de fysieke gezondheid van een batterij niet repareren of verbeteren. Desktop-Macs tonen dit onderdeel simpelweg niet.",
+    "stats": { "cycleCount": "Cyclusaantal", "maxCapacity": "Maximale capaciteit", "condition": "Status", "power": "Stroom", "conditionValue": "Normaal", "powerValue": "Batterij" },
+    "note": "Voorbeeldwaarden ter illustratie."
+  },
+  "macInfo": {
+    "eyebrow": "Mac-informatie",
+    "title1": "Alles wat ertoe doet ",
+    "title2": "over je Mac.",
+    "intro": "Model, chip, geheugen, opslag, schermen, macOS-versie en bedrijfstijd — in één dashboard in plaats van vijf verschillende plekken. MacBook Cleaner laat ook zien of de eigen controle van macOS een update heeft gevonden, met een snelkoppeling naar Software-update.",
+    "finePrint": "Lokaal uitgelezen van macOS en nooit geüpload. Je serienummer wordt nooit gelezen.",
+    "card": { "thisMac": "Deze Mac", "model": "MacBook Pro" },
+    "specs": { "model": "Mac-model", "chip": "Chip", "memory": "Geheugen", "storage": "Opslag", "macos": "macOS", "uptime": "Bedrijfstijd" },
+    "note": "Voorbeeldwaarden ter illustratie."
+  },
+  "howItWorks": {
+    "eyebrow": "Hoe het werkt",
+    "title": "Vier stappen. Jij hebt steeds de controle.",
+    "steps": [
+      { "title": "Scan je Mac", "body": "Eén klik controleert caches, logboeken, ontwikkelaarstools, apps, Downloads en je grootste bestanden — allemaal op je Mac." },
+      { "title": "Bekijk de aanbevelingen", "body": "Items worden gelabeld als Veilig of Controleren, met een duidelijke uitleg van wat elk item is. Vink uit wat je wilt bewaren." },
+      { "title": "Verplaats naar Prullenmand", "body": "Bevestig, en de goedgekeurde items worden naar de Prullenmand verplaatst. Je eigen bestanden vereisen altijd een extra bevestiging." },
+      { "title": "Herwin opslagruimte", "body": "Van gedachten veranderd? Zet alles terug vanuit de Prullenmand. Maak hem leeg zodra je zeker bent, om de ruimte terug te krijgen." }
+    ]
+  },
+  "storageSection": {
+    "eyebrow": "Opslaginzichten",
+    "title1": "Zie waar je ruimte ",
+    "title2": "echt naartoe is gegaan.",
+    "intro": "MacBook Cleaner meet je echte mappen en toont ze als één kleurrijke opslagring — dezelfde categorieën die je in de app ziet.",
+    "checks": ["Groottes in decimale gigabytes, zoals macOS de opslag rapporteert", "Ruimte die niet kan worden toegewezen, wordt eerlijk gelabeld als Systeemgegevens", "Bibliotheken zoals Foto's worden gemeten, nooit geopend of uitgeplozen"]
+  },
+  "storageViz": {
+    "modes": { "used": "Gebruikt", "recoverable": "Mogelijk herwinbaar", "free": "Vrij" },
+    "centerLabels": { "used": "Gebruikt", "recoverable": "Herwinbaar", "free": "Vrij" },
+    "ofTotal": "van {{total}} GB",
+    "potentiallyRecoverable": "mogelijk herwinbaar",
+    "percentOfDisk": "{{percent}}% van de schijf",
+    "afterReview": "na jouw controle",
+    "diskAriaLabel": "Voorbeeldschijf: {{used}} GB gebruikt, {{free}} GB vrij, {{recoverable}} GB mogelijk herwinbaar na controle",
+    "legendAriaLabel": "{{label}}: {{used}} gebruikt, {{recoverable}} mogelijk herwinbaar. {{note}}",
+    "defaultNote": "Illustratief voorbeeld met de voorbeeldgegevens van de app — de cijfers op jouw Mac zullen anders zijn. Beweeg over of selecteer een categorie voor details.",
+    "categories": {
+      "applications": { "label": "Applicaties", "note": "Apps plus restanten van apps die je hebt verwijderd" },
+      "documents": { "label": "Documenten", "note": "Documenten en Bureaublad — altijd gecontroleerd, nooit vooraf geselecteerd" },
+      "photos": { "label": "Foto's", "note": "Je Foto's-bibliotheek wordt gemeten, nooit aangeraakt" },
+      "videos": { "label": "Video's", "note": "Grote opnames die je kunt controleren" },
+      "downloads": { "label": "Downloads", "note": "Oude installatieprogramma's, schijfkopieën en archieven" },
+      "cache": { "label": "Cache", "note": "App- en browsercaches die zichzelf opnieuw opbouwen" },
+      "other": { "label": "Overig", "note": "Muziek, mail, berichten en andere app-gegevens" },
+      "system-data": { "label": "Systeemgegevens", "note": "macOS en ruimte die niet aan een map kan worden toegewezen" }
+    }
+  },
+  "safeCleaning": {
+    "eyebrow": "Veilig door ontwerp",
+    "title1": "Jij houdt de controle. ",
+    "title2": "Altijd.",
+    "intro": "Schoonmaaktools hebben diepgaande toegang tot je schijf nodig. MacBook Cleaner is zo gebouwd dat een fout moeilijk te maken is — en gemakkelijk ongedaan te maken.",
+    "levels": {
+      "safe": { "label": "Veilig", "title": "Bouwt zichzelf opnieuw op", "body": "Caches en logboeken die je apps vanzelf opnieuw aanmaken. Voor jou vooraf geselecteerd.", "example": "Xcode DerivedData", "size": "18,6 GB" },
+      "review": { "label": "Controleren", "title": "Eerst een blik waard", "body": "Dingen die gegevens kunnen bevatten waar je om geeft. Nooit vooraf geselecteerd.", "example": "Simulatorapparaten", "size": "6,2 GB" },
+      "protected": { "label": "Beschermd", "title": "Kan niet worden geselecteerd", "body": "Alles wat lijkt op een back-up, sleutelhanger of sleutel — geweigerd door de ingebouwde veiligheidslaag van de app.", "example": "MobileSync-back-up", "size": "Vergrendeld" }
+    },
+    "principles": [
+      { "title": "Controle voordat iets wordt verwijderd", "body": "Elke schoonmaak laat precies zien wat er wordt verplaatst en vraagt om je bevestiging." },
+      { "title": "Altijd eerst de Prullenmand", "body": "Items gaan naar de Prullenmand — nooit permanent verwijderd. De app maakt je Prullenmand nooit leeg." },
+      { "title": "Jouw bestanden, jouw keuze", "body": "Downloads, Bureaublad, Documenten en Films worden nooit vooraf geselecteerd en vereisen altijd een extra bevestiging." },
+      { "title": "Veiligheidsgrenzen die niet te omzeilen zijn", "body": "Een ingebouwde controle weigert systeemmappen, je persoonlijke map, de hoofdmappen daarvan en alles buiten je persoonlijke map." },
+      { "title": "“Dit niet meer voorstellen”", "body": "Sluit elk bestand of elke map uit en het wordt niet meer voorgesteld — handmatig of volgens schema." },
+      { "title": "Geen verrassende automatisering", "body": "Automatisch opschonen staat standaard uit, vereist expliciete toestemming en raakt slechts zes ontwikkelaarscaches aan." }
+    ]
+  },
+  "beforeAfter": {
+    "eyebrow": "Voor en na",
+    "title": "Van “waar is het allemaal gebleven?” naar “o, daar is het dus.”",
+    "intro": "Sleep de greep om te vergelijken. MacBook Cleaner maakt je schijf niet groter — het maakt hem begrijpelijk, zodat ruimte terugwinnen een beslissing wordt in plaats van een gok.",
+    "before": "Voor",
+    "after": "Na",
+    "systemDataUnknown": "Systeemgegevens: ???",
+    "withoutClearView": "Zonder duidelijk overzicht",
+    "withApp": "Met MacBook Cleaner",
+    "beforeList": ["De opslagbalk zegt alleen “Systeemgegevens” en verder weinig", "Grote bestanden diep weggestopt in mappen", "Caches en logboeken die ongemerkt opstapelen", "Oude installatieprogramma's en schijfkopieën in Downloads", "Geen idee wat veilig is om te verwijderen"],
+    "afterList": ["Elke categorie gemeten en gelabeld", "Grootste bestanden eerst vermeld, met Quick Look", "Caches gegroepeerd en gemarkeerd als Veilig of Controleren", "Downloads gesorteerd op ouderdom en type", "Ruimte teruggewonnen op jouw voorwaarden — via de Prullenmand"]
+  },
+  "privacyBand": {
+    "eyebrow": "Privacy voorop",
+    "title": "Je bestanden blijven op je Mac.",
+    "lead": "Een schoonmaaktool heeft diepgaande toegang tot je schijf nodig. Daarom is MacBook Cleaner juist zo gebouwd dat het zo min mogelijk vertrouwen van je vraagt.",
+    "points": [
+      { "title": "Gescand op je Mac", "body": "Elke scan en elke schoonmaak wordt lokaal uitgevoerd. Er is geen clouddienst bij betrokken." },
+      { "title": "Niets wordt geüpload", "body": "Geen analyses, telemetrie of crashrapportage. Je bestanden, actieve apps, batterij en Mac-gegevens verlaten je Mac nooit." },
+      { "title": "Geen account nodig om het te proberen", "body": "Geen aanmelding, geen e-mailadres, geen creditcard — download het en je gratis proefperiode begint. Een levenslange licentie kopen vereist later alleen de sleutel van je aankoop, nooit een nieuw account." },
+      { "title": "Inhoud blijft ongelezen", "body": "De app kijkt naar groottes en datums. Bestandsinhoud wordt alleen gelezen om te bevestigen dat twee bestanden exact identiek zijn." }
+    ],
+    "permissionsHeading": "Wat macOS je mogelijk vraagt toe te staan — en waarom",
+    "permissions": [
+      { "title": "Downloads, Bureaublad & Documenten", "body": "macOS vraagt toestemming voordat de app in deze mappen mag kijken, zodat die grote bestanden en oude downloads kan vinden." },
+      { "title": "Finder bedienen", "body": "Wordt de eerste keer gevraagd dat je opschoont. De app vraagt Finder om items naar de Prullenmand te verplaatsen, zodat “Terugzetten” werkt." },
+      { "title": "Volledige toegang tot schijf — optioneel", "body": "Hiermee kan de app locaties meten die macOS privé houdt, zoals sommige caches en de Prullenmand. Het werkt ook zonder." },
+      { "title": "Meldingen — optioneel", "body": "Alleen voor herinneringen en samenvattingen van geplande schoonmaak." }
+    ],
+    "footNote": "Je kunt al deze machtigingen bekijken of intrekken via Systeeminstellingen → Privacy en beveiliging.",
+    "readPolicy": "Lees het privacybeleid →"
+  },
+  "gallery": {
+    "eyebrow": "Schermafbeeldingen",
+    "title": "Ontworpen om vertrouwd aan te voelen op je Mac.",
+    "intro": "Echte schermen uit de app, getoond met de ingebouwde voorbeeldgegevens. Licht en donker volgen je systeeminstelling.",
+    "shots": {
+      "dashboard": { "label": "Dashboard", "alt": "Dashboard met opslagring en Smart Clean-samenvatting" },
+      "scanning": { "label": "Scannen", "alt": "Smart Clean-scan in uitvoering" },
+      "results": { "label": "Smart Clean", "alt": "Smart Clean-resultaten gegroepeerd per categorie" },
+      "performance": { "label": "Prestaties", "alt": "Prestatiedashboard met live CPU en geheugen" },
+      "performance-apps": { "label": "Actieve apps", "alt": "Actieve apps gesorteerd op geheugen" },
+      "performance-battery": { "label": "Batterij", "alt": "Batterijstatus met cyclusaantal en maximale capaciteit" },
+      "complete": { "label": "Opschoning voltooid", "alt": "Samenvatting van voltooide opschoning met naar de Prullenmand verplaatste ruimte" },
+      "storage": { "label": "Opslag", "alt": "Opslagoverzicht per categorie" },
+      "dashboard-dark": { "label": "Donkere modus", "alt": "Dashboard in donkere modus" }
+    }
+  },
+  "faqPreview": {
+    "eyebrow": "Veelgestelde vragen",
+    "title": "Vragen, beantwoord.",
+    "seeAll": "Bekijk alle vragen →"
+  },
+  "finalCta": {
+    "defaultTitle": "Geef je Mac wat ademruimte.",
+    "featuresTitle": "Klaar om te zien wat er ruimte inneemt?",
+    "meta": "Versie {{version}} · {{macos}} of nieuwer · {{architecture}}",
+    "installationGuide": "Installatiehandleiding"
+  }
+}

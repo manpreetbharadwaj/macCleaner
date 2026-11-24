@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Note di rilascio",
+  "title": "Novità",
+  "intro": "Ogni versione di MacBook Cleaner e cosa è cambiato.",
+  "latestBadge": "Più recente",
+  "dateUnannounced": "Data di rilascio da annunciare",
+  "downloadLatest": "Scarica l'ultima versione →",
+  "releases": {
+    "firstRelease": {
+      "title": "Primo rilascio",
+      "summary": "La prima versione pubblica di MacBook Cleaner.",
+      "sections": {
+        "cleanupTools": {
+          "heading": "Strumenti di pulizia",
+          "items": [
+            "Smart Clean: una scansione raggruppata in file di sistema superflui, cache del browser, residui di app, log e rapporti di arresto anomalo, file superflui per sviluppatori e vecchi download",
+            "Storage Explorer con una ripartizione misurata per categoria",
+            "Ricerca file di grandi dimensioni con soglie di 500 MB, 1 GB, 5 GB e 10 GB e filtri per tipo",
+            "Revisione dei download raggruppata per data",
+            "Ricerca duplicati con verifica SHA-256 sul contenuto completo",
+            "Pulizia app: visualizza le cache, i log e i file di supporto di un'app; puliscili o disinstalla l'app",
+            "File di sistema superflui e Pulizia sviluppatore (Xcode, simulatori, npm, Yarn, pnpm, Gradle, CocoaPods, immagini dell'emulatore Android)"
+          ]
+        },
+        "performance": {
+          "heading": "Prestazioni",
+          "items": [
+            "Nuova scheda Prestazioni con grafici in tempo reale di CPU e memoria, pressione della memoria e swap",
+            "App in esecuzione: CPU, memoria e tempo di esecuzione per app, con processi helper raggruppati e un pannello dettagli",
+            "Salute della batteria sui MacBook: carica, numero di cicli, capacità massima e stato come riportato da macOS",
+            "Info Mac: modello, chip, core, GPU, memoria, display, versione e build di macOS, tempo di attività",
+            "Stato aggiornamento macOS dal controllo di Aggiornamento Software di macOS, con un collegamento rapido a Impostazioni di Sistema",
+            "Riepilogo sulla salute del Mac con stati descrittivi (nessun punteggio inventato)"
+          ]
+        },
+        "automation": {
+          "heading": "Automazione",
+          "items": ["Pulizia pianificata — giornaliera, settimanale o mensile — con modalità “Ricordamelo” e “Pulisci automaticamente” opzionale", "Notifiche native di macOS per promemoria e riepiloghi", "Avvio all'accesso opzionale"]
+        },
+        "safety": {
+          "heading": "Sicurezza",
+          "items": [
+            "Tutto ciò che viene rimosso va nel Cestino; niente viene eliminato in modo permanente",
+            "Protezione nativa per le posizioni di sistema, le cartelle principali della tua cartella Home, e i percorsi che sembrano backup, portachiavi o chiavi",
+            "I file personali non sono mai preselezionati e richiedono sempre conferma",
+            "Esclusioni dalla scansione (“non suggerire più questo”)"
+          ]
+        },
+        "interface": {
+          "heading": "Interfaccia",
+          "items": ["Aspetto chiaro, scuro e di sistema", "Benvenuto guidato al primo avvio con un passaggio opzionale per l'accesso completo al disco"]
+        }
+      }
+    }
+  }
+}

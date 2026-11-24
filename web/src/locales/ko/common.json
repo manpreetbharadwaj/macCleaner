@@ -1,0 +1,61 @@
+{
+  "skipToContent": "본문으로 건너뛰기",
+  "tagline": "Mac을 깨끗하게. 중요한 것은 그대로.",
+  "nav": {
+    "features": "기능",
+    "pricing": "요금제",
+    "download": "다운로드",
+    "faq": "자주 묻는 질문",
+    "support": "지원",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기"
+  },
+  "footer": {
+    "description": "macOS를 위한 안전한 로컬 기반 저장공간 정리 및 성능 모니터링.",
+    "version": "버전 {{version}} · {{macos}} 이상",
+    "columns": {
+      "product": "제품",
+      "help": "도움말",
+      "legal": "법적 고지"
+    },
+    "links": {
+      "features": "기능",
+      "pricing": "요금제",
+      "download": "다운로드",
+      "releaseNotes": "릴리스 노트",
+      "faq": "자주 묻는 질문",
+      "support": "지원",
+      "installation": "설치 방법",
+      "privacy": "개인정보 보호방침",
+      "terms": "이용약관"
+    },
+    "copyright": "© {{year}} {{name}}. All rights reserved.",
+    "trademark": "{{name}}은(는) 독립적인 애플리케이션이며 Apple Inc.와 제휴, 보증 또는 후원 관계가 없습니다. Apple, Mac, MacBook, macOS, Finder, Safari, Xcode는 미국 및 기타 국가에 등록된 Apple Inc.의 상표입니다."
+  },
+  "download": {
+    "cta": "Mac용 다운로드",
+    "navCta": "다운로드",
+    "starting": "시작하는 중…",
+    "started": "다운로드가 시작되었습니다",
+    "unavailable": "다운로드할 수 없음",
+    "unavailableNote": "검증된 Mac 설치 파일이 아직 공개되지 않았습니다.",
+    "downloading": "{{fileName}} 다운로드 중",
+    "error": "다운로드를 시작할 수 없습니다. 잠시 후 다시 시도하시거나 지원팀에 문의해 주세요."
+  },
+  "legal": {
+    "eyebrow": "법적 고지",
+    "lastUpdated": "최종 업데이트: {{date}}",
+    "onThisPage": "이 페이지의 내용"
+  },
+  "aria": {
+    "requirements": "요구 사항",
+    "primaryNav": "기본 메뉴",
+    "mobileNav": "모바일 메뉴"
+  },
+  "languageSwitcher": {
+    "label": "언어",
+    "current": "언어: {{language}}",
+    "resetToAutomatic": "자동 감지로 되돌리기",
+    "resetDescription": "다음에는 언어를 자동으로 감지합니다"
+  }
+}

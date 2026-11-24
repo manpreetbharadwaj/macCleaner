@@ -1,0 +1,159 @@
+{
+  "legalReviewNotice": "Niniejsze tłumaczenie zostało wykonane maszynowo i nie zostało jeszcze zweryfikowane przez prawnika uprawnionego w Twojej jurysdykcji. Wersja angielska tej polityki jest tekstem obowiązującym; w razie jakiejkolwiek rozbieżności decyduje wersja angielska.",
+  "title": "Polityka prywatności",
+  "shortVersion": "<b>Wersja skrócona.</b> {{siteName}} skanuje i czyści na Twoim Macu. Aplikacja nie ma analityki, telemetrii, raportowania awarii ani kont i nigdzie nie wysyła informacji o Tobie, Twoich plikach ani wydajności Twojego Maca. Ta strona nie używa plików cookie ani analityki; nasz host przetwarza standardowe logi żądań.",
+  "sections": {
+    "who-we-are": {
+      "title": "Kim jesteśmy",
+      "body": [
+        { "p": "Niniejsza polityka jest publikowana przez {{companyName}} („my”), {{companyAddress}}, dewelopera {{siteName}}. Obejmuje dwie oddzielne kwestie, które są traktowane bardzo różnie:" },
+        { "ul": ["<b>Aplikację desktopową {{siteName}}</b> na macOS („Aplikacja”) — patrz sekcje zaczynające się od „Aplikacja”.", "<b>Tę stronę internetową</b>, {{siteHost}} („Strona”), w tym pobieranie Aplikacji — patrz sekcje zaczynające się od „Strona”."] }
+      ]
+    },
+    "app-local": {
+      "title": "Aplikacja: informacje przetwarzane na Twoim Macu",
+      "body": [
+        { "p": "Aby pokazać, co zajmuje Twoją pamięć, i pomóc w jej czyszczeniu, Aplikacja odczytuje poniższe informacje na Twoim Macu. Całe to przetwarzanie odbywa się lokalnie, na Twoim urządzeniu." },
+        { "h3": "Informacje o plikach i folderach" },
+        { "p": "Nazwy, lokalizacje (ścieżki), rozmiary i daty plików oraz folderów w Twoich folderach Pobrane, Pulpit, Dokumenty i Filmy; w <code>~/Library/Caches</code> i <code>~/Library/Logs</code>; w znanych lokalizacjach narzędzi deweloperskich (na przykład Xcode DerivedData, dane symulatora oraz pamięć podręczna npm, Yarn, pnpm, Gradle i CocoaPods); a także ogólny rozmiar folderów takich jak Zdjęcia i Biblioteka w celu zbudowania podziału pamięci. Aplikacja odczytuje też całkowitą, zajętą i dostępną pojemność dysku." },
+        { "h3": "Zawartość plików — tylko w przypadku duplikatów" },
+        { "p": "Aplikacja nie odczytuje zawartości Twoich dokumentów, zdjęć ani innych plików, z jednym wyjątkiem: aby potwierdzić, że dwa pliki są dokładnymi duplikatami, odczytuje pliki, które mają już identyczny rozmiar, i oblicza sumę kontrolną SHA-256 ich zawartości. Suma kontrolna jest obliczana w pamięci na Twoim Macu i używana wyłącznie do tego porównania." },
+        { "h3": "Zainstalowane aplikacje" },
+        { "p": "W celu czyszczenia aplikacji Aplikacja odczytuje nazwę, wersję, identyfikator pakietu i ikonę każdej aplikacji z jej własnego pliku <code>Info.plist</code>, mierzy jej rozmiar, pyta macOS Spotlight o datę ostatniego otwarcia aplikacji oraz mierzy powiązaną pamięć podręczną, logi, preferencje i pliki wsparcia w Twojej Bibliotece." },
+        { "h3": "Przeglądarki internetowe" },
+        { "p": "Dla Safari, Chrome, Edge i Firefox Aplikacja mierzy wyłącznie rozmiar folderów <b>pamięci podręcznej</b> każdej przeglądarki. Nie odczytuje Twojej historii przeglądania, plików cookie, haseł, zakładek, danych autouzupełniania ani rozszerzeń." }
+      ]
+    },
+    "app-stored": {
+      "title": "Aplikacja: informacje przechowywane na Twoim Macu",
+      "body": [
+        { "p": "Aplikacja zapisuje niewielką ilość informacji lokalnie, aby zapamiętać Twoje preferencje. Żadna z nich nie jest wysyłana do nas." },
+        {
+          "ul": [
+            "<b>Stan aplikacji</b> w <code>{{appSupport}}/state.json</code>: Twoje ustawienia, wykluczenia skanowania (ścieżki plików, które wybrałeś do wykluczenia), ustawienia zaplanowanego czyszczenia, historię czyszczeń (daty, ilości i uwzględnione elementy) oraz podsumowania zaplanowanych skanów.",
+            "<b>Logi diagnostyczne</b> w <code>{{appLogs}}</code>, w tym <code>startup-crash.log</code>, który rejestruje błędy, jeśli Aplikacja nie uruchomi się poprawnie. Logi rejestrują takie informacje jak wersja Aplikacji, typ procesora i wersja macOS Twojego Maca, lokalizacja instalacji Aplikacji oraz przebieg skanowań i czyszczeń — co może obejmować ścieżki plików.",
+            "<b>Pomocników w tle</b>: jeśli włączysz Zaplanowane czyszczenie lub Uruchamianie przy logowaniu, Aplikacja dodaje mały plik konfiguracyjny do <code>~/Library/LaunchAgents</code>, aby macOS mógł uruchomić ją we właściwym momencie. Wyłączenie tej funkcji go usuwa."
+          ]
+        },
+        { "p": "Możesz wyczyścić ustawienia, wykluczenia, harmonogram i historię Aplikacji w dowolnym momencie za pomocą <b>Ustawienia → Resetuj wszystkie dane</b> lub usunąć powyższe foldery po odinstalowaniu." }
+      ]
+    },
+    "app-network": {
+      "title": "Aplikacja: żadne dane nie opuszczają Twojego Maca",
+      "body": [
+        { "p": "Aplikacja nie wysyła informacji o Tobie, Twoim Macu ani Twoich plikach do nas ani do nikogo innego. Konkretnie, Aplikacja:" },
+        { "ul": ["nie zawiera analityki, śledzenia użytkowania ani telemetrii;", "nie zawiera usługi raportowania awarii — informacje o awariach są zapisywane wyłącznie w lokalnym logu opisanym powyżej;", "nie ma kont użytkowników, logowania ani aktywacji licencji;", "nie zawiera reklam ani zewnętrznych pakietów SDK gromadzących dane;", "nie sprawdza automatycznie dostępności własnych aktualizacji i niczego nie pobiera."] },
+        { "p": "Jedyny moment, w którym Aplikacja korzysta z internetu, to kliknięcie linku w jej wnętrzu (takiego jak „Sprawdź aktualizacje”, „Polityka prywatności” lub „Regulamin”). Otwiera to stronę tej Strony w Twojej domyślnej przeglądarce, a wtedy zastosowanie mają poniższe sekcje dotyczące Strony. Aplikacja otwiera wyłącznie linki do własnej domeny tej Strony." },
+        { "p": "Niezależnie od Aplikacji, sam macOS może gromadzić informacje diagnostyczne, jeśli włączyłeś udostępnianie analityki firmie Apple w Ustawieniach systemowych. Podlega to polityce prywatności Apple; my ich nie otrzymujemy." }
+      ]
+    },
+    "app-cleaning": {
+      "title": "Aplikacja: jak obsługiwane są Twoje pliki podczas czyszczenia",
+      "body": [
+        { "p": "Zatwierdzone przez Ciebie elementy są przenoszone do Kosza macOS — Aplikacja prosi o to Finder, aby „Przywróć” nadal działało. Aplikacja nigdy nie usuwa plików trwale ani nie opróżnia Twojego Kosza. Jeśli włączysz „Czyść automatycznie” w Zaplanowanym czyszczeniu, Aplikacja przenosi do Kosza tylko stałą listę pamięci podręcznej deweloperskiej, w granicach opisanych w Aplikacji i w naszym <link-faq-automatic>FAQ</link-faq-automatic>." },
+        { "p": "Pliki pozostają na Twoim Macu na każdym etapie. Nigdy nie otrzymujemy ich kopii." }
+      ]
+    },
+    "app-permissions": {
+      "title": "Aplikacja: uprawnienia macOS",
+      "body": [
+        { "p": "macOS może poprosić Cię o przyznanie Aplikacji poniższych uprawnień. Możesz przejrzeć lub cofnąć każde z nich w Ustawieniach systemowych → Prywatność i bezpieczeństwo." },
+        {
+          "ul": [
+            "<b>Dostęp do Pobranych, Pulpitu i Dokumentów</b> — aby znaleźć duże pliki, stare pliki pobrane i duplikaty.",
+            "<b>Automatyzacja (kontrola Findera)</b> — aby przenieść zatwierdzone elementy do Kosza.",
+            "<b>Pełny dostęp do dysku (opcjonalnie)</b> — aby zmierzyć lokalizacje, które macOS utrzymuje jako prywatne, takie jak niektóre pamięci podręczne aplikacji i Kosz. Aplikacja działa też bez tego uprawnienia.",
+            "<b>Powiadomienia (opcjonalnie)</b> — do przypomnień i podsumowań zaplanowanego czyszczenia. Powiadomienia są tworzone lokalnie przez macOS; nie jest w to zaangażowana żadna usługa push."
+          ]
+        }
+      ]
+    },
+    "app-device": {
+      "title": "Aplikacja: informacje o urządzeniu",
+      "body": [{ "p": "Aplikacja odczytuje podstawowe informacje o Twoim Macu — wersję macOS, architekturę procesora i pojemność dysku — aby działać poprawnie i zapisywać przydatne lokalne logi. Te informacje pozostają na Twoim Macu." }]
+    },
+    "system-monitoring": {
+      "title": "Aplikacja: dane monitorowania systemu",
+      "body": [
+        { "p": "Zakładka Wydajność w Aplikacji pokazuje, jak radzi sobie Twój Mac. Aby to zrobić, odczytuje z macOS na Twoim urządzeniu następujące informacje:" },
+        {
+          "ul": [
+            "zużycie CPU (całkowite, użytkownika, systemu i bezczynności) oraz zużycie pamięci (użyta, dostępna, skompresowana, w pamięci podręcznej, plik wymiany i presja pamięci);",
+            "aktualnie uruchomione aplikacje i procesy — ich nazwy, identyfikatory procesów, zużycie CPU i pamięci, czasy uruchomienia, liczbę wątków i lokalizacje plików;",
+            "pojemność i wolną przestrzeń dyskową;",
+            "na MacBookach informacje o baterii: naładowanie, stan ładowania, źródło zasilania, liczbę cykli, pojemności oraz stan baterii raportowany przez macOS;",
+            "informacje o sprzęcie Maca: model i identyfikator modelu, chip, rdzenie CPU i GPU, rozmiar pamięci, wyświetlacze oraz nazwę sieciową hosta Twojego Maca;",
+            "wersję, kompilację i wersję jądra macOS, czas pracy oraz wynik własnego sprawdzenia Uaktualnień oprogramowania przez macOS, odczytany z pliku przechowywanego przez macOS na Twoim Macu."
+          ]
+        },
+        { "p": "Te informacje są wykorzystywane wyłącznie do wyświetlania panelu Wydajność. Są przetwarzane lokalnie, przechowywane w pamięci tylko wtedy, gdy Aplikacja jest otwarta (krótkoterminowe wykresy obejmują ostatnie 60 sekund i są usuwane po zamknięciu aplikacji), i nie są zapisywane na dysku, przesyłane, udostępniane, sprzedawane ani wykorzystywane do analityki. Aplikacja nie odczytuje numeru seryjnego Twojego Maca i nie kontaktuje się z serwerami Apple w celu sprawdzenia aktualizacji." },
+        { "p": "Monitorowanie działa tylko wtedy, gdy ekran Wydajność jest otwarty, i wstrzymuje się, gdy okno Aplikacji jest ukryte." }
+      ]
+    },
+    "app-sharing-logs": {
+      "title": "Aplikacja: gdy decydujesz się udostępnić nam informacje",
+      "body": [{ "p": "Jeśli skontaktujesz się z pomocą techniczną, możesz zdecydować się przesłać nam zrzuty ekranu lub pliki logów Aplikacji. Logi mogą zawierać ścieżki plików z Twojego Maca, dlatego przejrzyj je przed wysłaniem. Wykorzystujemy wszystko, co przesyłasz, wyłącznie w celu pomocy w Twojej sprawie." }]
+    },
+    "website": {
+      "title": "Strona: co zbieramy",
+      "body": [
+        { "p": "Strona jest statyczna. Nie korzysta z plików cookie, analityki, reklam, pikseli śledzących, widżetów mediów społecznościowych ani zewnętrznych skryptów czy czcionek i nie ma kont użytkowników ani formularzy. Twoja przeglądarka może przechowywać zapisaną kopię stron, tak jak robi to dla każdej strony internetowej." },
+        { "p": "<b>Logi hostingu.</b> Strona jest obsługiwana przez {{hostingProvider}}. Jak każdy host internetowy, automatycznie przetwarza on informacje techniczne potrzebne do dostarczania stron i ochrony usługi — takie jak Twój adres IP, user agent przeglądarki, żądaną stronę, stronę odsyłającą i czas żądania. Jest to obsługiwane na podstawie własnych warunków i polityki prywatności dostawcy hostingu, i nie łączymy tego z żadnymi innymi informacjami." },
+        { "p": "<b>Pobrania.</b> Plik instalacyjny Aplikacji jest udostępniany z {{downloadHost}}, który przetwarza ten sam rodzaj technicznych informacji o żądaniu podczas pobierania." },
+        { "p": "<b>E-mail.</b> Jeśli napiszesz do nas e-mail (na przykład przez stronę Wsparcie), otrzymujemy Twój adres e-mail, imię i nazwisko, jeśli je podasz, oraz wszystko, co napiszesz lub załączysz. Wykorzystujemy to wyłącznie do odpowiedzi na Twoją wiadomość i do ulepszania Aplikacji na podstawie Twojej opinii." }
+      ]
+    },
+    "website-cookies": {
+      "title": "Strona: pliki cookie",
+      "body": [{ "p": "Strona nie ustawia plików cookie ani nie korzysta z podobnych technologii, takich jak lokalne przechowywanie danych do celów śledzenia. Jeśli kiedykolwiek się to zmieni, najpierw zaktualizujemy niniejszą politykę i, w razie potrzeby, poprosimy o Twoją zgodę." }]
+    },
+    "third-parties": {
+      "title": "Usługi stron trzecich i udostępnianie danych",
+      "body": [
+        { "p": "Nie sprzedajemy, nie wynajmujemy ani nie wymieniamy informacji osobowych, i nie udostępniamy ich do celów reklamowych. Jedynymi zaangażowanymi stronami trzecimi są:" },
+        { "ul": ["nasz host Strony i host pobierania, które przetwarzają informacje o żądaniach jak opisano powyżej; oraz", "nasz dostawca poczty e-mail, który przechowuje wysyłane do nas wiadomości wsparcia."] },
+        { "p": "Możemy też ujawnić informacje, jeśli wymaga tego prawo lub w celu ochrony naszych praw albo bezpieczeństwa innych osób." }
+      ]
+    },
+    "legal-bases": {
+      "title": "Podstawy prawne przetwarzania",
+      "body": [{ "p": "W przypadku gdy obowiązują przepisy takie jak RODO UE lub Wielkiej Brytanii, opieramy się na naszych prawnie uzasadnionych interesach w zakresie prowadzenia i zabezpieczania Strony oraz odpowiadania na wiadomości, a także na krokach, o które nas poprosisz w kontakcie z nami. Lokalne przetwarzanie przez Aplikację na Twoim Macu podlega Twojej kontroli i nie wiąże się z otrzymywaniem przez nas danych osobowych." }]
+    },
+    "retention": {
+      "title": "Przechowywanie danych",
+      "body": [
+        {
+          "ul": [
+            "<b>Dane Aplikacji</b> pozostają na Twoim Macu, dopóki ich nie usuniesz (Ustawienia → Resetuj wszystkie dane lub usunięcie folderów wymienionych w sekcji „Aplikacja: informacje przechowywane na Twoim Macu”). Aplikacja automatycznie ogranicza ilość przechowywanej historii i danych logów.",
+            "<b>Logi hostingu i pobierania</b> są przechowywane zgodnie z politykami dostawców hostingu.",
+            "<b>Wiadomości wsparcia</b> są przechowywane tak długo, jak to potrzebne do pomocy Tobie, oraz przez rozsądny okres później, a następnie usuwane, chyba że musimy je zachować z przyczyn prawnych."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "title": "Bezpieczeństwo",
+      "body": [{ "p": "Ponieważ Aplikacja przetwarza Twoje pliki lokalnie i ich nie przesyła, głównym zabezpieczeniem tych danych jest bezpieczeństwo samego Twojego Maca. Aplikacja zawiera zabezpieczenia przed usunięciem lokalizacji systemowych i plików wyglądających na wrażliwe oraz przenosi elementy wyłącznie do Kosza. Strona jest obsługiwana przez HTTPS. Żadna metoda przechowywania ani przesyłania danych nie jest całkowicie bezpieczna, ale staramy się chronić wszelkie posiadane przez nas informacje." }]
+    },
+    "your-rights": {
+      "title": "Twoje prawa",
+      "body": [{ "p": "W zależności od miejsca zamieszkania możesz mieć prawo do dostępu, poprawiania, usunięcia, ograniczenia lub sprzeciwu wobec przetwarzania Twoich danych osobowych, a także do przenoszenia danych. Ponieważ przechowujemy bardzo niewiele — zazwyczaj tylko e-maile, które do nas wysłałeś — najprostszym sposobem skorzystania z tych praw jest wysłanie wiadomości na {{privacyEmail}}. Masz też prawo złożyć skargę do lokalnego organu ochrony danych." }]
+    },
+    "children": {
+      "title": "Prywatność dzieci",
+      "body": [{ "p": "Aplikacja i Strona nie są skierowane do dzieci poniżej 13 roku życia (lub równoważnego minimalnego wieku w Twoim miejscu zamieszkania) i świadomie nie zbieramy danych osobowych od dzieci. Jeśli uważasz, że dziecko przesłało nam dane osobowe, skontaktuj się z nami, a je usuniemy." }]
+    },
+    "international": {
+      "title": "Użytkownicy międzynarodowi",
+      "body": [{ "p": "Aplikacja działa tak samo wszędzie: Twoje dane pozostają na Twoim Macu. Informacje przetwarzane przez naszych dostawców hostingu i poczty e-mail mogą być obsługiwane w krajach innych niż Twój, zgodnie z zabezpieczeniami oferowanymi przez tych dostawców." }]
+    },
+    "changes": {
+      "title": "Zmiany w niniejszej polityce",
+      "body": [{ "p": "Zaktualizujemy niniejszą politykę, jeśli Aplikacja lub Strona zmienią sposób przetwarzania informacji — na przykład przed wydaniem wersji Aplikacji dodającej funkcję sieciową. Data „Ostatnia aktualizacja” na górze pokazuje, kiedy ostatnio ją zmieniono. Istotne zmiany zostaną również odnotowane w informacjach o wersji." }]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "body": [{ "p": "Pytania dotyczące prywatności? Napisz na {{privacyEmail}} lub napisz do {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

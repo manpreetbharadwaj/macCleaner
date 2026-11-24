@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Prezzi",
+  "title1": "Provalo gratis, poi ",
+  "title2": "{{price}}",
+  "titleSuffix": " una sola volta",
+  "intro": "Ogni funzionalità è disponibile durante una prova gratuita di {{trialDays}} giorni — nessun account o carta di credito per iniziare. Dopodiché, un unico pagamento di {{price}} sblocca MacBook Cleaner per sempre: nessun abbonamento, nessun rinnovo, mai.",
+  "includedTitle": "Una licenza. Un Mac. Per sempre.",
+  "checks": [
+    "{{price}} con pagamento unico — non è un abbonamento",
+    "Licenza a vita, senza scadenza, senza rinnovo",
+    "Prova gratuita di {{trialDays}} giorni, funzionalità complete, nessun account richiesto per iniziare",
+    "Licenza valida per un Mac alla volta — disattivala e trasferiscila su un nuovo Mac in qualsiasi momento",
+    "Chiave di licenza inviata via email subito dopo il pagamento"
+  ],
+  "buyButton": "Acquista licenza a vita — {{price}}",
+  "priceNote": "Prezzo di listino in USD. Mostrato nella tua valuta locale al pagamento; potrebbero applicarsi tasse a seconda della tua posizione.",
+  "alreadyPurchased": "Hai già acquistato? Attiva la tua chiave di licenza dall'interno dell'app — Impostazioni → Licenza.",
+  "sandboxNote": "L'acquisto non è ancora disponibile qui — stiamo ancora completando la configurazione. Torna presto, oppure scarica nel frattempo la prova gratuita.",
+  "ctaTitle": "Scaricalo, provalo gratis per {{trialDays}} giorni, decidi dopo."
+}

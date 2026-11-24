@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Preise",
+  "title1": "Kostenlos testen, dann ",
+  "title2": "{{price}}",
+  "titleSuffix": " einmalig",
+  "intro": "Jede Funktion steht während eines {{trialDays}}-tägigen kostenlosen Testzeitraums zur Verfügung – kein Konto oder Kreditkarte zum Starten nötig. Danach schaltet eine einmalige Zahlung von {{price}} MacBook Cleaner dauerhaft frei: kein Abo, keine Verlängerung, nie.",
+  "includedTitle": "Eine Lizenz. Ein Mac. Für immer.",
+  "checks": [
+    "{{price}} einmaliger Kauf – kein Abo",
+    "Lebenslange Lizenz, kein Ablauf, keine Verlängerung",
+    "{{trialDays}} Tage kostenloser Test mit vollem Funktionsumfang, kein Konto zum Starten nötig",
+    "Für jeweils einen Mac lizenziert – jederzeit deaktivieren und auf einen neuen Mac übertragen",
+    "Lizenzschlüssel wird direkt nach dem Kauf per E-Mail zugestellt"
+  ],
+  "buyButton": "Lebenslange Lizenz kaufen — {{price}}",
+  "priceNote": "Listenpreis in USD. Wird an der Kasse in Ihrer Landeswährung angezeigt; je nach Standort können Steuern anfallen.",
+  "alreadyPurchased": "Bereits gekauft? Aktivieren Sie Ihren Lizenzschlüssel in der App – Einstellungen → Lizenz.",
+  "sandboxNote": "Der Kauf ist hier noch nicht möglich – wir schließen die Einrichtung gerade ab. Schauen Sie bald wieder vorbei oder laden Sie in der Zwischenzeit den kostenlosen Test herunter.",
+  "ctaTitle": "Herunterladen, {{trialDays}} Tage kostenlos testen, später entscheiden."
+}

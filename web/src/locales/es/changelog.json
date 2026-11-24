@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Notas de versión",
+  "title": "Novedades",
+  "intro": "Cada versión de MacBook Cleaner y lo que cambió.",
+  "latestBadge": "Última",
+  "dateUnannounced": "Fecha de publicación por anunciar",
+  "downloadLatest": "Descargar la última versión →",
+  "releases": {
+    "firstRelease": {
+      "title": "Primera versión",
+      "summary": "La primera versión pública de MacBook Cleaner.",
+      "sections": {
+        "cleanupTools": {
+          "heading": "Herramientas de limpieza",
+          "items": [
+            "Smart Clean: un análisis agrupado en Basura del sistema, Cachés del navegador, Restos de apps, Registros e informes de fallos, Archivos de desarrollo y Descargas antiguas",
+            "Explorador de almacenamiento con un desglose medido por categoría",
+            "Buscador de archivos grandes con umbrales de 500 MB, 1 GB, 5 GB y 10 GB y filtros por tipo",
+            "Revisión de descargas agrupada por antigüedad",
+            "Buscador de duplicados con verificación del contenido completo mediante SHA-256",
+            "Limpieza de aplicaciones: consulta las cachés, registros y archivos de soporte de una app; límpialos o desinstala la app",
+            "Basura del sistema y Limpieza de desarrollo (Xcode, simuladores, npm, Yarn, pnpm, Gradle, CocoaPods, imágenes de emulador de Android)"
+          ]
+        },
+        "performance": {
+          "heading": "Rendimiento",
+          "items": [
+            "Nueva pestaña Rendimiento con gráficos de CPU y memoria en vivo, presión de memoria y swap",
+            "Apps en ejecución: CPU, memoria y tiempo de ejecución por app, con procesos auxiliares agrupados y un panel de detalles",
+            "Estado de la batería en MacBook: carga, ciclos, capacidad máxima y estado tal como los informa macOS",
+            "Info del Mac: modelo, chip, núcleos, GPU, memoria, pantallas, versión y build de macOS, tiempo de actividad",
+            "Estado de actualizaciones de macOS a partir de la propia comprobación de Actualización de software de macOS, con un acceso directo a Ajustes del Sistema",
+            "Resumen del estado del Mac con estados descriptivos (sin puntuaciones inventadas)"
+          ]
+        },
+        "automation": {
+          "heading": "Automatización",
+          "items": ["Limpieza programada — diaria, semanal o mensual — con los modos «Avisarme» y «Limpiar automáticamente» opcional", "Notificaciones nativas de macOS para recordatorios y resúmenes", "Abrir al iniciar sesión opcional"]
+        },
+        "safety": {
+          "heading": "Seguridad",
+          "items": [
+            "Todo lo eliminado va a la Papelera; nada se elimina de forma permanente",
+            "Protección nativa para ubicaciones del sistema, las carpetas principales de tu carpeta personal y rutas que parecen copias de seguridad, llaveros o claves",
+            "Los archivos personales nunca se preseleccionan y siempre requieren confirmación",
+            "Exclusiones de análisis («no volver a sugerir»)"
+          ]
+        },
+        "interface": {
+          "heading": "Interfaz",
+          "items": ["Apariencia clara, oscura y según el sistema", "Bienvenida guiada en el primer uso con un paso opcional de acceso total al disco"]
+        }
+      }
+    }
+  }
+}

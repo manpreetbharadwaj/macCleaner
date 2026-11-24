@@ -1,0 +1,100 @@
+{
+  "legalReviewNotice": "Niniejsze tłumaczenie zostało wykonane maszynowo i nie zostało jeszcze zweryfikowane przez prawnika uprawnionego w Twojej jurysdykcji. Wersja angielska niniejszego regulaminu jest tekstem obowiązującym; w razie jakiejkolwiek rozbieżności decyduje wersja angielska.",
+  "title": "Regulamin",
+  "shortVersion": "<b>Wersja skrócona.</b> Możesz korzystać z {{siteName}} na Macach, które posiadasz lub kontrolujesz. Ty decydujesz, co zostanie usunięte, dlatego przeglądaj elementy i zachowuj kopie zapasowe. Nie możemy zagwarantować, ile miejsca odzyskasz. Oprogramowanie jest dostarczane w stanie, w jakim jest.",
+  "shortVersionNote": "Niniejsze podsumowanie służy wyłącznie wygodzie; poniżej obowiązuje pełny regulamin.",
+  "sections": {
+    "acceptance": {
+      "title": "Akceptacja niniejszego regulaminu",
+      "body": [{ "p": "Niniejszy Regulamin („Regulamin”) stanowi umowę między Tobą a {{companyName}} („my”) dotyczącą aplikacji {{siteName}} na macOS („Oprogramowanie”) oraz tej strony internetowej („Strona”). Pobierając, instalując lub korzystając z Oprogramowania bądź korzystając ze Strony, akceptujesz niniejszy Regulamin. Jeśli się nie zgadzasz, nie korzystaj z nich. Jeśli korzystasz z Oprogramowania w imieniu organizacji, potwierdzasz, że jesteś upoważniony do zaakceptowania dla niej niniejszego Regulaminu." }]
+    },
+    "license": {
+      "title": "Licencja na korzystanie z Oprogramowania",
+      "body": [{ "p": "Z zastrzeżeniem niniejszego Regulaminu, udzielamy Ci osobistej, niewyłącznej, nieprzenoszalnej i odwołalnej licencji na pobieranie, instalowanie i korzystanie z Oprogramowania na Macach, które posiadasz lub kontrolujesz, do celów osobistych lub wewnętrznej działalności gospodarczej. Oprogramowanie jest licencjonowane, a nie sprzedawane. Zastrzegamy sobie wszelkie prawa, które nie zostały wyraźnie przyznane." }]
+    },
+    "restrictions": {
+      "title": "Ograniczenia licencji",
+      "body": [
+        { "p": "Z wyjątkiem sytuacji wyraźnie dozwolonych przez obowiązujące prawo, nie wolno Ci:" },
+        { "ul": ["kopiować, modyfikować, tłumaczyć ani tworzyć utworów zależnych od Oprogramowania;", "poddawać Oprogramowania inżynierii wstecznej, dekompilacji ani deasemblacji;", "sprzedawać, wynajmować, wydzierżawiać, sublicencjonować, redystrybuować ani publikować Oprogramowania, ani oferować go do pobrania z innego miejsca niż ta Strona;", "usuwać ani zmieniać jakichkolwiek informacji o prawach autorskich, znakach towarowych lub innych;", "korzystać z Oprogramowania z naruszeniem jakiegokolwiek prawa ani w celu uzyskania dostępu lub usunięcia danych, do zarządzania którymi nie jesteś upoważniony."] }
+      ]
+    },
+    "price": {
+      "title": "Cena",
+      "body": [{ "p": "Wersja {{version}} Oprogramowania jest udostępniana bezpłatnie, bez zakupów w aplikacji ani subskrypcji. Jeśli w przyszłości wprowadzimy płatne funkcje lub wersje, opiszemy je wyraźnie z wyprzedzeniem, a opłata nigdy nie zostanie pobrana bez Twojej zgody." }]
+    },
+    "your-responsibility": {
+      "title": "Twoja odpowiedzialność za to, co usuwasz",
+      "body": [
+        { "p": "Oprogramowanie pomaga zidentyfikować pliki i sugeruje, co może być bezpieczne do usunięcia, ale <b>to Ty decydujesz, co zostanie usunięte</b>. Etykiety takie jak „Bezpieczne” i „Do przejrzenia” są rekomendacjami opartymi na typie i lokalizacji pliku, a nie gwarancjami co do wartości pliku dla Ciebie. Przejrzyj elementy przed czyszczeniem — szczególnie własne pliki i wszystko oznaczone do przejrzenia." },
+        { "p": "Oprogramowanie przenosi zatwierdzone przez Ciebie elementy do Kosza macOS, skąd zwykle można je przywrócić, dopóki Kosz nie zostanie opróżniony. Opróżnienie Kosza trwale je usuwa; jest to Twoje działanie, poza Oprogramowaniem. Jeśli włączysz automatyczne czyszczenie w Zaplanowanym czyszczeniu, upoważniasz Oprogramowanie do przenoszenia do Kosza kwalifikujących się pamięci podręcznych deweloperskich opisanych w Oprogramowaniu bez pytania za każdym razem." },
+        { "p": "Usunięcie pamięci podręcznej lub danych aplikacji może wymagać od innych aplikacji odbudowania lub ponownego pobrania tych danych, może wylogować Cię z niektórych aplikacji lub zmienić ich działanie. Odinstalowanie aplikacji wraz z jej plikami wsparcia usuwa lokalnie przechowywane dane tej aplikacji." }
+      ]
+    },
+    "backups": {
+      "title": "Kopie zapasowe",
+      "body": [{ "p": "Jesteś odpowiedzialny za regularne tworzenie aktualnych kopii zapasowych swoich danych (na przykład za pomocą Time Machine) przed skorzystaniem z Oprogramowania. Zdecydowanie zalecamy posiadanie aktualnej kopii zapasowej przed każdym czyszczeniem." }]
+    },
+    "no-guarantee": {
+      "title": "Brak gwarancji wyników",
+      "body": [{ "p": "Ilość pamięci, którą Oprogramowanie znajduje lub pomaga odzyskać, zależy wyłącznie od Twojego Maca i sposobu korzystania z niego. Wartości pokazane w Oprogramowaniu są szacunkami, a wartości na tej Stronie to przykłady poglądowe. Miejsce zajęte przez elementy w Koszu zwalnia się dopiero po opróżnieniu Kosza, a aplikacje mogą z czasem odbudowywać pamięć podręczną. Nie obiecujemy żadnej konkretnej ilości odzyskanej pamięci ani poprawy szybkości czy wydajności Twojego Maca. Informacje o wydajności, baterii i systemie pokazywane w Oprogramowaniu są raportowane przez macOS i podawane wyłącznie informacyjnie; nie stanowią diagnozy, a Oprogramowanie nie naprawia sprzętu ani baterii." }]
+    },
+    "updates": {
+      "title": "Aktualizacje i zmiany w Oprogramowaniu",
+      "body": [{ "p": "Możemy wydawać aktualizacje, które dodają, zmieniają lub usuwają funkcje, i możemy w dowolnym momencie zaprzestać udostępniania Oprogramowania. Oprogramowanie nie aktualizuje się samo; nowe wersje są udostępniane na tej Stronie. Niniejszy Regulamin ma zastosowanie do aktualizacji, chyba że towarzyszą im inne warunki." }]
+    },
+    "early-release": {
+      "title": "Wczesna wersja",
+      "body": [{ "p": "{{siteName}} to nowy produkt. Mimo że został zbudowany z rozbudowanymi zabezpieczeniami, może zawierać błędy lub nieoczekiwanie zachowywać się w niektórych konfiguracjach.{{notarizedNote}} Prosimy o <link-support>zgłaszanie problemów</link-support>, abyśmy mogli je naprawić." }],
+      "notarizedNote": " Obecna wersja nie jest notaryzowana przez Apple, więc macOS pokaże ostrzeżenie przy pierwszym otwarciu; kroki instalacji znajdują się na stronie Pobierz."
+    },
+    "privacy": {
+      "title": "Prywatność",
+      "body": [{ "p": "Nasza <link-privacy>Polityka prywatności</link-privacy> wyjaśnia, jak Oprogramowanie i Strona przetwarzają informacje. W skrócie, Oprogramowanie przetwarza Twoje pliki lokalnie na Twoim Macu i nie wysyła nam informacji o nich." }]
+    },
+    "ip": {
+      "title": "Własność intelektualna",
+      "body": [{ "p": "Oprogramowanie i Strona, w tym ich kod, projekt, tekst, grafika oraz nazwa i logo {{siteName}}, są własnością {{companyName}} lub jej licencjodawców i są chronione prawami własności intelektualnej. Niniejszy Regulamin nie przyznaje Ci żadnego prawa do korzystania z naszych nazw ani logo." }]
+    },
+    "apple": {
+      "title": "Znaki towarowe Apple",
+      "body": [{ "p": "{{siteName}} jest niezależną aplikacją i nie jest powiązana, popierana ani sponsorowana przez Apple Inc. Apple, Mac, MacBook, macOS, Finder, Safari, Xcode i Time Machine są znakami towarowymi Apple Inc., zarejestrowanymi w USA i innych krajach. Inne nazwy produktów są znakami towarowymi ich odpowiednich właścicieli." }]
+    },
+    "feedback": {
+      "title": "Opinie",
+      "body": [{ "p": "Jeśli przesyłasz nam sugestie lub opinie, pozwalasz nam wykorzystywać je do ulepszania naszych produktów bez żadnych zobowiązań wobec Ciebie." }]
+    },
+    "warranty": {
+      "title": "Wyłączenie gwarancji",
+      "body": [{ "p": "W maksymalnym zakresie dozwolonym przez prawo, Oprogramowanie i Strona są dostarczane „tak jak są” i „w miarę dostępności”, bez jakichkolwiek gwarancji, wyraźnych, dorozumianych czy ustawowych, w tym dorozumianych gwarancji przydatności handlowej, przydatności do określonego celu, tytułu prawnego i nienaruszania praw. Nie gwarantujemy, że Oprogramowanie będzie wolne od błędów lub nieprzerwane, że zidentyfikuje każdy plik możliwy do usunięcia, ani że każdy sugerowany przez nie element jest bezpieczny do usunięcia.", "caps": true }]
+    },
+    "liability": {
+      "title": "Ograniczenie odpowiedzialności",
+      "body": [
+        { "p": "W maksymalnym zakresie dozwolonym przez prawo, {{companyName}} nie ponosi odpowiedzialności za jakiekolwiek szkody pośrednie, przypadkowe, szczególne, wynikowe lub karne, ani za utratę danych, plików, zysków, przychodów lub renomy, wynikające z korzystania (lub niemożności korzystania) z Oprogramowania lub Strony — w tym z usunięcia plików przez Ciebie wybranych lub autoryzowanych — nawet jeśli zostaliśmy poinformowani o możliwości wystąpienia takich szkód.", "caps": true },
+        { "p": "W zakresie dozwolonym przez prawo, nasza całkowita odpowiedzialność za jakiekolwiek roszczenie związane z Oprogramowaniem lub Stroną jest ograniczona do wyższej z kwot: kwoty zapłaconej nam za Oprogramowanie w ciągu dwunastu miesięcy przed roszczeniem lub 50 USD [wartość tymczasowa — do potwierdzenia kwoty i waluty].", "caps": true },
+        { "p": "Niektóre jurysdykcje nie zezwalają na pewne wyłączenia gwarancji lub ograniczenia odpowiedzialności, więc część powyższych postanowień może Cię nie dotyczyć. Żadne postanowienie niniejszego Regulaminu nie ogranicza odpowiedzialności, której nie można ograniczyć z mocy prawa, ani Twoich ustawowych praw konsumenckich." }
+      ]
+    },
+    "termination": {
+      "title": "Rozwiązanie",
+      "body": [{ "p": "Możesz przestać korzystać z Oprogramowania w dowolnym momencie, odinstalowując je. Twoja licencja wygasa automatycznie w przypadku istotnego naruszenia niniejszego Regulaminu. Po rozwiązaniu musisz zaprzestać korzystania z Oprogramowania i je usunąć. Postanowienia, które ze swojej natury powinny obowiązywać po rozwiązaniu, pozostają w mocy." }]
+    },
+    "governing-law": {
+      "title": "Prawo właściwe",
+      "body": [{ "p": "Niniejszy Regulamin podlega prawu {{jurisdiction}}, bez względu na normy kolizyjne. Sądy {{jurisdiction}} są właściwe dla wszelkich sporów, z wyjątkiem sytuacji, gdy lokalne prawo ochrony konsumentów daje Ci prawo do wszczęcia postępowania w miejscu Twojego zamieszkania." }]
+    },
+    "changes": {
+      "title": "Zmiany w niniejszym regulaminie",
+      "body": [{ "p": "Możemy od czasu do czasu aktualizować niniejszy Regulamin. Data „Ostatnia aktualizacja” na górze pokazuje najnowszą zmianę; istotne zmiany zostaną również odnotowane w informacjach o wersji. Dalsze korzystanie z Oprogramowania lub Strony po wejściu zmian w życie oznacza akceptację zaktualizowanego Regulaminu." }]
+    },
+    "general": {
+      "title": "Postanowienia ogólne",
+      "body": [{ "p": "Niniejszy Regulamin wraz z Polityką prywatności stanowią całość umowy między Tobą a nami dotyczącej Oprogramowania i Strony. Jeśli jakiekolwiek postanowienie zostanie uznane za niewykonalne, pozostałe pozostają w mocy. Niewyegzekwowanie przez nas jakiegokolwiek postanowienia nie stanowi zrzeczenia się go." }]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "body": [{ "p": "Pytania dotyczące niniejszego Regulaminu? Napisz na {{supportEmail}} lub napisz do {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

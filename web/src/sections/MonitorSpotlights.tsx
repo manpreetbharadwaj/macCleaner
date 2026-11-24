@@ -1,9 +1,10 @@
 import type { CSSProperties } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Check, Zap } from 'lucide-react'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
 
-/** Illustrative values only — labeled as such on the page. */
+/** Illustrative values only — labeled as such on the page. App names and example figures are not translated. */
 const APPS = [
   { name: 'Chrome', ram: '1.8 GB', cpu: 14, color: '#ff8a4c', time: '3h 24m' },
   { name: 'VS Code', ram: '860 MB', cpu: 7, color: '#13b5e0', time: '1h 18m' },
@@ -12,40 +13,39 @@ const APPS = [
 ]
 
 export function RunningAppsSpotlight() {
+  const { t } = useTranslation('home')
+  const checks = t('runningApps.checks', { returnObjects: true }) as string[]
   return (
     <section className="section" aria-labelledby="apps-spot-title">
       <div className="container split">
         <div>
           <SectionHeading
             align="left"
-            eyebrow="Running Apps"
+            eyebrow={t('runningApps.eyebrow')}
             id="apps-spot-title"
             title={
               <>
-                See which apps are using <span className="grad-text">the most memory and CPU.</span>
+                {t('runningApps.title1')}
+                <span className="grad-text">{t('runningApps.title2')}</span>
               </>
             }
-            intro="Running Apps lists what’s open on your Mac with its memory, CPU and how long it’s been running. Helper processes count toward their app, so a browser with dozens of tabs shows one honest total."
+            intro={t('runningApps.intro')}
           />
           <Reveal as="ul" className="checks" delay={80}>
-            <li>
-              <Check size={18} aria-hidden="true" /> Sort by memory, CPU, running time or name
-            </li>
-            <li>
-              <Check size={18} aria-hidden="true" /> Apps by default — background and system processes only if you ask
-            </li>
-            <li>
-              <Check size={18} aria-hidden="true" /> Memory uses the same measure as Activity Monitor
-            </li>
+            {checks.map((c) => (
+              <li key={c}>
+                <Check size={18} aria-hidden="true" /> {c}
+              </li>
+            ))}
           </Reveal>
         </div>
         <Reveal delay={100}>
-          <div className="mock-card" role="img" aria-label="Illustration of a running apps list: Chrome 1.8 GB and 14% CPU, VS Code 860 MB and 7%, Slack 610 MB and 2.4%, Spotify 420 MB and 1%. Example values.">
+          <div className="mock-card" role="img" aria-label={t('runningApps.title2')}>
             <div className="mock-card__head" aria-hidden="true">
-              <span>App</span>
-              <span>CPU</span>
-              <span>Memory</span>
-              <span>Running</span>
+              <span>{t('runningApps.headers.app')}</span>
+              <span>{t('runningApps.headers.cpu')}</span>
+              <span>{t('runningApps.headers.memory')}</span>
+              <span>{t('runningApps.headers.running')}</span>
             </div>
             {APPS.map((a, i) => (
               <div key={a.name} className="app-row" style={{ '--c': a.color, '--i': i } as CSSProperties} aria-hidden="true">
@@ -61,7 +61,7 @@ export function RunningAppsSpotlight() {
                 <span className="app-row__time">{a.time}</span>
               </div>
             ))}
-            <p className="mock-card__note">Example values for illustration — not benchmarks.</p>
+            <p className="mock-card__note">{t('runningApps.note')}</p>
           </div>
         </Reveal>
       </div>
@@ -70,37 +70,26 @@ export function RunningAppsSpotlight() {
 }
 
 export function BatterySpotlight() {
+  const { t } = useTranslation('home')
+  const checks = t('battery.checks', { returnObjects: true }) as string[]
   return (
     <section className="section section--tint" aria-labelledby="battery-title">
       <div className="container split split--reverse">
         <div>
-          <SectionHeading
-            align="left"
-            eyebrow="Battery Health"
-            id="battery-title"
-            title="Understand your battery."
-            intro="On MacBooks, see exactly what macOS knows about your battery — no guesswork, no invented scores."
-          />
+          <SectionHeading align="left" eyebrow={t('battery.eyebrow')} id="battery-title" title={t('battery.title')} intro={t('battery.intro')} />
           <Reveal as="ul" className="checks" delay={80}>
-            <li>
-              <Check size={18} aria-hidden="true" /> Battery percentage and charging state
-            </li>
-            <li>
-              <Check size={18} aria-hidden="true" /> Cycle count — the number of full charge cycles completed
-            </li>
-            <li>
-              <Check size={18} aria-hidden="true" /> Maximum capacity compared with when it was new
-            </li>
-            <li>
-              <Check size={18} aria-hidden="true" /> Battery condition, as shown in System Settings
-            </li>
+            {checks.map((c) => (
+              <li key={c}>
+                <Check size={18} aria-hidden="true" /> {c}
+              </li>
+            ))}
           </Reveal>
           <Reveal as="p" className="fine-print" delay={120}>
-            MacBook Cleaner reports battery information; it can’t repair or improve a battery’s physical health. Desktop Macs simply don’t show this section.
+            {t('battery.finePrint')}
           </Reveal>
         </div>
         <Reveal delay={100}>
-          <div className="battery-card" role="img" aria-label="Illustration of a MacBook battery at 87% with 264 cycles, 91% maximum capacity and condition Normal. Example values.">
+          <div className="battery-card" role="img" aria-label={t('battery.title')}>
             <div className="battery-visual" aria-hidden="true">
               <div className="battery-visual__body">
                 <div className="battery-visual__fill" />
@@ -108,26 +97,28 @@ export function BatterySpotlight() {
               </div>
               <div className="battery-visual__cap" />
             </div>
-            <p className="battery-card__pct" aria-hidden="true">87%</p>
+            <p className="battery-card__pct" aria-hidden="true">
+              87%
+            </p>
             <dl className="battery-card__stats" aria-hidden="true">
               <div>
-                <dt>Cycle count</dt>
+                <dt>{t('battery.stats.cycleCount')}</dt>
                 <dd>264</dd>
               </div>
               <div>
-                <dt>Maximum capacity</dt>
+                <dt>{t('battery.stats.maxCapacity')}</dt>
                 <dd>91%</dd>
               </div>
               <div>
-                <dt>Condition</dt>
-                <dd className="is-good">Normal</dd>
+                <dt>{t('battery.stats.condition')}</dt>
+                <dd className="is-good">{t('battery.stats.conditionValue')}</dd>
               </div>
               <div>
-                <dt>Power</dt>
-                <dd>Battery</dd>
+                <dt>{t('battery.stats.power')}</dt>
+                <dd>{t('battery.stats.powerValue')}</dd>
               </div>
             </dl>
-            <p className="mock-card__note">Example values for illustration.</p>
+            <p className="mock-card__note">{t('battery.note')}</p>
           </div>
         </Reveal>
       </div>
@@ -135,50 +126,46 @@ export function BatterySpotlight() {
   )
 }
 
-const SPECS = [
-  ['Mac model', 'MacBook Pro (14-inch)'],
-  ['Chip', 'Apple M2 Pro'],
-  ['Memory', '16 GB'],
-  ['Storage', '512 GB'],
-  ['macOS', 'Tahoe 26.5 · Up to date'],
-  ['Uptime', '2 days 7 hours'],
-]
+const SPEC_VALUES = ['MacBook Pro (14-inch)', 'Apple M2 Pro', '16 GB', '512 GB', 'Tahoe 26.5 · Up to date', '2 days 7 hours']
 
 export function MacInfoSpotlight() {
+  const { t } = useTranslation('home')
+  const specKeys = ['model', 'chip', 'memory', 'storage', 'macos', 'uptime']
   return (
     <section className="section" aria-labelledby="macinfo-title">
       <div className="container split">
         <div>
           <SectionHeading
             align="left"
-            eyebrow="Mac Info"
+            eyebrow={t('macInfo.eyebrow')}
             id="macinfo-title"
             title={
               <>
-                Everything important <span className="grad-text">about your Mac.</span>
+                {t('macInfo.title1')}
+                <span className="grad-text">{t('macInfo.title2')}</span>
               </>
             }
-            intro="Model, chip, memory, storage, displays, macOS version and uptime — in one dashboard instead of five different places. MacBook Cleaner also shows whether macOS’s own update check found an update, with a shortcut to Software Update."
+            intro={t('macInfo.intro')}
           />
           <Reveal as="p" className="fine-print" delay={80}>
-            Read locally from macOS and never uploaded. Your serial number isn’t read at all.
+            {t('macInfo.finePrint')}
           </Reveal>
         </div>
         <Reveal delay={100}>
-          <div className="spec-card" role="img" aria-label="Illustration of a Mac information card: MacBook Pro 14-inch, Apple M2 Pro, 16 GB memory, 512 GB storage, macOS Tahoe 26.5 up to date, uptime 2 days 7 hours. Example values.">
+          <div className="spec-card" role="img" aria-label={t('macInfo.title2')}>
             <div className="spec-card__hero" aria-hidden="true">
-              <p>This Mac</p>
-              <h3>MacBook Pro</h3>
+              <p>{t('macInfo.card.thisMac')}</p>
+              <h3>{t('macInfo.card.model')}</h3>
             </div>
             <dl aria-hidden="true">
-              {SPECS.map(([k, v]) => (
+              {specKeys.map((k, i) => (
                 <div key={k}>
-                  <dt>{k}</dt>
-                  <dd>{v}</dd>
+                  <dt>{t(`macInfo.specs.${k}`)}</dt>
+                  <dd>{SPEC_VALUES[i]}</dd>
                 </div>
               ))}
             </dl>
-            <p className="mock-card__note">Example values for illustration.</p>
+            <p className="mock-card__note">{t('macInfo.note')}</p>
           </div>
         </Reveal>
       </div>

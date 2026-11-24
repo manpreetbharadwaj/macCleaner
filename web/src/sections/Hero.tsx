@@ -1,35 +1,37 @@
 import type { CSSProperties } from 'react'
-import { Link } from 'react-router'
+import { useTranslation } from 'react-i18next'
 import { ArrowRight, Cpu, HardDrive, Lock, ShieldCheck, Tag, Undo2 } from 'lucide-react'
 import { APP, DOWNLOAD, architectureLabel } from '@/config/site'
 import { AppPreview } from '@/components/AppPreview'
 import { DownloadButton } from '@/components/DownloadButton'
+import { Link } from '@/components/router'
 
 export function Hero() {
+  const { t } = useTranslation('home')
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="container hero__grid">
         <div className="hero__copy">
           <p className="pill hero__pill rise" style={{ '--d': '0ms' } as CSSProperties}>
-            <span className="pill__dot" aria-hidden="true" /> Version {APP.version} · Made for macOS
+            <span className="pill__dot" aria-hidden="true" /> {t('hero.pill', { version: APP.version })}
           </p>
           <h1 id="hero-title" className="hero__title rise" style={{ '--d': '60ms' } as CSSProperties}>
-            Clean. Monitor.
+            {t('hero.title1')}
             <br />
-            <span className="grad-text">Understand your Mac.</span>
+            <span className="grad-text">{t('hero.title2')}</span>
           </h1>
           <p className="hero__lead rise" style={{ '--d': '120ms' } as CSSProperties}>
-            Free up storage, understand memory usage, monitor running apps, check battery health and see important information about your Mac — from one simple dashboard. You review everything. Nothing is permanently deleted.
+            {t('hero.lead')}
           </p>
           <div className="hero__ctas rise" style={{ '--d': '180ms' } as CSSProperties}>
             <DownloadButton />
             <Link to="/features" className="btn btn--ghost btn--lg">
-              Explore Features <ArrowRight size={18} aria-hidden="true" />
+              {t('hero.exploreFeatures')} <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>
-          <ul className="hero__meta rise" style={{ '--d': '240ms' } as CSSProperties} aria-label="Requirements">
+          <ul className="hero__meta rise" style={{ '--d': '240ms' } as CSSProperties} aria-label={t('aria.requirements', { ns: 'common' })}>
             <li>
-              <HardDrive size={15} aria-hidden="true" /> {APP.minMacOSName} or later
+              <HardDrive size={15} aria-hidden="true" /> {t('hero.requirement', { macos: APP.minMacOSName })}
             </li>
             <li>
               <Cpu size={15} aria-hidden="true" /> {architectureLabel()}
@@ -48,8 +50,8 @@ export function Hero() {
               <Undo2 size={16} />
             </span>
             <span>
-              <b>Moved to Trash</b>
-              <small>Always recoverable</small>
+              <b>{t('hero.chips.trash.title')}</b>
+              <small>{t('hero.chips.trash.body')}</small>
             </span>
           </div>
           <div className="float-chip float-chip--b" aria-hidden="true">
@@ -57,8 +59,8 @@ export function Hero() {
               <Lock size={16} />
             </span>
             <span>
-              <b>Personal files</b>
-              <small>Never preselected</small>
+              <b>{t('hero.chips.personal.title')}</b>
+              <small>{t('hero.chips.personal.body')}</small>
             </span>
           </div>
           <div className="float-chip float-chip--c" aria-hidden="true">
@@ -66,8 +68,8 @@ export function Hero() {
               <ShieldCheck size={16} />
             </span>
             <span>
-              <b>Scans on your Mac</b>
-              <small>Nothing uploaded</small>
+              <b>{t('hero.chips.scan.title')}</b>
+              <small>{t('hero.chips.scan.body')}</small>
             </span>
           </div>
         </div>

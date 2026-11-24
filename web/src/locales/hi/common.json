@@ -1,0 +1,61 @@
+{
+  "skipToContent": "सामग्री पर जाएँ",
+  "tagline": "अपने Mac को साफ़ करें। जो ज़रूरी है उसे सुरक्षित रखें।",
+  "nav": {
+    "features": "फ़ीचर्स",
+    "pricing": "मूल्य",
+    "download": "डाउनलोड",
+    "faq": "सामान्य प्रश्न",
+    "support": "सहायता",
+    "openMenu": "मेनू खोलें",
+    "closeMenu": "मेनू बंद करें"
+  },
+  "footer": {
+    "description": "macOS के लिए सुरक्षित, लोकल-फ़र्स्ट स्टोरेज क्लीनअप और परफ़ॉर्मेंस मॉनिटरिंग।",
+    "version": "वर्शन {{version}} · {{macos}} या बाद का",
+    "columns": {
+      "product": "प्रोडक्ट",
+      "help": "सहायता",
+      "legal": "कानूनी"
+    },
+    "links": {
+      "features": "फ़ीचर्स",
+      "pricing": "मूल्य",
+      "download": "डाउनलोड",
+      "releaseNotes": "रिलीज़ नोट्स",
+      "faq": "सामान्य प्रश्न",
+      "support": "सहायता",
+      "installation": "इंस्टॉलेशन",
+      "privacy": "गोपनीयता",
+      "terms": "शर्तें"
+    },
+    "copyright": "© {{year}} {{name}}. सर्वाधिकार सुरक्षित।",
+    "trademark": "{{name}} एक स्वतंत्र एप्लिकेशन है और Apple Inc. से संबद्ध, समर्थित या प्रायोजित नहीं है। Apple, Mac, MacBook, macOS, Finder, Safari और Xcode, Apple Inc. के ट्रेडमार्क हैं, जो अमेरिका और अन्य देशों में पंजीकृत हैं।"
+  },
+  "download": {
+    "cta": "Mac के लिए डाउनलोड करें",
+    "navCta": "डाउनलोड",
+    "starting": "शुरू हो रहा है…",
+    "started": "डाउनलोड शुरू हो गया",
+    "unavailable": "डाउनलोड उपलब्ध नहीं है",
+    "unavailableNote": "सत्यापित Mac इंस्टॉलर अभी प्रकाशित नहीं हुआ है।",
+    "downloading": "{{fileName}} डाउनलोड हो रहा है",
+    "error": "डाउनलोड शुरू नहीं हो सका। कृपया थोड़ी देर में फिर से कोशिश करें, या सहायता से संपर्क करें।"
+  },
+  "legal": {
+    "eyebrow": "कानूनी",
+    "lastUpdated": "अंतिम अपडेट: {{date}}",
+    "onThisPage": "इस पेज पर"
+  },
+  "aria": {
+    "requirements": "आवश्यकताएँ",
+    "primaryNav": "मुख्य",
+    "mobileNav": "मोबाइल"
+  },
+  "languageSwitcher": {
+    "label": "भाषा",
+    "current": "भाषा: {{language}}",
+    "resetToAutomatic": "स्वचालित पर रीसेट करें",
+    "resetDescription": "अगली बार मेरी भाषा अपने आप पहचानें"
+  }
+}

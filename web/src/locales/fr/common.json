@@ -1,0 +1,61 @@
+{
+  "skipToContent": "Aller au contenu",
+  "tagline": "Nettoyez votre Mac. Gardez l’essentiel.",
+  "nav": {
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "download": "Télécharger",
+    "faq": "FAQ",
+    "support": "Assistance",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "footer": {
+    "description": "Nettoyage de stockage sûr et local, et suivi des performances pour macOS.",
+    "version": "Version {{version}} · {{macos}} ou version ultérieure",
+    "columns": {
+      "product": "Produit",
+      "help": "Aide",
+      "legal": "Mentions légales"
+    },
+    "links": {
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "download": "Télécharger",
+      "releaseNotes": "Notes de version",
+      "faq": "FAQ",
+      "support": "Assistance",
+      "installation": "Installation",
+      "privacy": "Confidentialité",
+      "terms": "Conditions"
+    },
+    "copyright": "© {{year}} {{name}}. Tous droits réservés.",
+    "trademark": "{{name}} est une application indépendante qui n’est affiliée à Apple Inc., ni approuvée ou parrainée par elle. Apple, Mac, MacBook, macOS, Finder, Safari et Xcode sont des marques d’Apple Inc., déposées aux États-Unis et dans d’autres pays."
+  },
+  "download": {
+    "cta": "Télécharger pour Mac",
+    "navCta": "Télécharger",
+    "starting": "Démarrage…",
+    "started": "Téléchargement démarré",
+    "unavailable": "Téléchargement indisponible",
+    "unavailableNote": "L’installeur Mac vérifié n’a pas encore été publié.",
+    "downloading": "Téléchargement de {{fileName}}",
+    "error": "Le téléchargement n’a pas pu démarrer. Veuillez réessayer dans un instant ou contacter l’assistance."
+  },
+  "legal": {
+    "eyebrow": "Mentions légales",
+    "lastUpdated": "Dernière mise à jour : {{date}}",
+    "onThisPage": "Sur cette page"
+  },
+  "aria": {
+    "requirements": "Configuration requise",
+    "primaryNav": "Principal",
+    "mobileNav": "Mobile"
+  },
+  "languageSwitcher": {
+    "label": "Langue",
+    "current": "Langue : {{language}}",
+    "resetToAutomatic": "Revenir à la détection automatique",
+    "resetDescription": "Détecter ma langue automatiquement la prochaine fois"
+  }
+}

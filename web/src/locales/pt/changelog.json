@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Notas de versão",
+  "title": "Novidades",
+  "intro": "Todas as versões do MacBook Cleaner e o que mudou.",
+  "latestBadge": "Mais recente",
+  "dateUnannounced": "Data de lançamento a anunciar",
+  "downloadLatest": "Transferir a versão mais recente →",
+  "releases": {
+    "firstRelease": {
+      "title": "Primeiro lançamento",
+      "summary": "A primeira versão pública do MacBook Cleaner.",
+      "sections": {
+        "cleanupTools": {
+          "heading": "Ferramentas de limpeza",
+          "items": [
+            "Smart Clean: uma análise agrupada em Ficheiros do Sistema, Caches do Navegador, Resíduos de Aplicações, Registos e Relatórios de Falhas, Ficheiros de Programação e Transferências Antigas",
+            "Storage Explorer com uma repartição medida por categoria",
+            "Localizador de Ficheiros Grandes com limites de 500 MB, 1 GB, 5 GB e 10 GB e filtros por tipo",
+            "Revisão de transferências agrupada por idade",
+            "Localizador de Duplicados com verificação SHA-256 do conteúdo completo",
+            "Limpeza de Aplicações: veja as caches, registos e ficheiros de suporte de uma aplicação; limpe-os ou desinstale a aplicação",
+            "Ficheiros do Sistema e Limpeza para Programadores (Xcode, simuladores, npm, Yarn, pnpm, Gradle, CocoaPods, imagens do emulador Android)"
+          ]
+        },
+        "performance": {
+          "heading": "Desempenho",
+          "items": [
+            "Novo separador Desempenho com gráficos em tempo real de CPU e memória, pressão de memória e swap",
+            "Aplicações em Execução: CPU, memória e tempo de execução por aplicação, com processos auxiliares agrupados e um painel de detalhes",
+            "Saúde da Bateria nos MacBooks: carga, número de ciclos, capacidade máxima e estado tal como reportado pelo macOS",
+            "Informações do Mac: modelo, chip, núcleos, GPU, memória, ecrãs, versão e compilação do macOS, tempo de atividade",
+            "Estado de atualização do macOS a partir da própria verificação de Atualização de Software do macOS, com um atalho para Definições do Sistema",
+            "Resumo de Saúde do Mac com estados descritivos (sem pontuações inventadas)"
+          ]
+        },
+        "automation": {
+          "heading": "Automação",
+          "items": ["Limpeza Programada — diária, semanal ou mensal — com modos “Lembrar-me” e “Limpar automaticamente” opcional", "Notificações nativas do macOS para lembretes e resumos", "Iniciar com a Sessão opcional"]
+        },
+        "safety": {
+          "heading": "Segurança",
+          "items": [
+            "Tudo o que é removido vai para o Lixo; nada é eliminado de forma permanente",
+            "Proteção nativa para localizações do sistema, as pastas principais da sua pasta pessoal, e caminhos que parecem cópias de segurança, chaveiros ou chaves",
+            "Os ficheiros pessoais nunca são pré-selecionados e requerem sempre confirmação",
+            "Exclusões da análise (“não sugerir novamente”)"
+          ]
+        },
+        "interface": {
+          "heading": "Interface",
+          "items": ["Aspeto claro, escuro e do sistema", "Boas-vindas guiadas na primeira execução com um passo opcional de Acesso Total ao Disco"]
+        }
+      }
+    }
+  }
+}

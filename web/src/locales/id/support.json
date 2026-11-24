@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Dukungan",
+  "title": "Bagaimana kami bisa membantu?",
+  "intro": "Sebagian besar jawaban ada di FAQ. Untuk hal lainnya, surel adalah cara tercepat untuk menghubungi kami.",
+  "cards": {
+    "email": { "title": "Dukungan via surel", "body": "Ada pertanyaan tentang penggunaan aplikasi? Tulis surel kepada kami dan kami akan membalas.", "cta": "{{email}}" },
+    "bug": { "title": "Laporkan bug", "body": "Ada yang tidak berfungsi? Ini membuka surel dengan templat singkat untuk Anda isi.", "cta": "Laporkan bug" },
+    "feature": { "title": "Minta fitur", "body": "Beri tahu kami apa yang akan membuat MacBook Cleaner lebih berguna bagi Anda.", "cta": "Sarankan fitur" },
+    "install": { "title": "Bantuan instalasi", "body": "Instruksi instalasi langkah demi langkah dan cara mengatasi peringatan keamanan saat pertama kali dibuka.", "cta": "Panduan instalasi" },
+    "faq": { "title": "FAQ", "body": "Keamanan, privasi, izin akses, kompatibilitas, dan cara mencopot pemasangan — semua terjawab.", "cta": "Lihat FAQ" }
+  },
+  "emailSubject": "Dukungan MacBook Cleaner",
+  "logsTitle": "Mengirim log diagnostik",
+  "logsBody": "Untuk masalah yang rumit, kami mungkin meminta log aplikasi. Log hanya tersimpan di Mac Anda, di <code>~/Library/Logs/{{bundleId}}</code>, dan tidak pernah dikirim secara otomatis. Log dapat berisi jalur file dari Mac Anda — periksa dan hapus hal yang tidak ingin Anda bagikan sebelum melampirkannya.",
+  "bugTemplate": {
+    "subject": "Laporan bug — MacBook Cleaner {{version}}",
+    "body": "Apa yang terjadi:\n\n\nApa yang Anda harapkan:\n\n\nLangkah untuk mereproduksi:\n1.\n2.\n\nVersi MacBook Cleaner: {{version}}\nVersi macOS:\nModel/chip Mac:\n"
+  },
+  "featureTemplate": {
+    "subject": "Permintaan fitur — MacBook Cleaner",
+    "body": "Apa yang Anda ingin MacBook Cleaner lakukan?\n\n\nMengapa itu akan membantu Anda?\n"
+  }
+}

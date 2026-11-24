@@ -1,0 +1,160 @@
+{
+  "eyebrow": "Veelgestelde vragen",
+  "title": "Veelgestelde vragen",
+  "intro": "Directe antwoorden over veiligheid, privacy, compatibiliteit en hoe MacBook Cleaner werkt.",
+  "topicsAria": "Onderwerpen veelgestelde vragen",
+  "stillHaveQuestion": "Heb je nog een vraag?",
+  "contactLine": "Mail naar <email>{{email}}</email> of bezoek <support>Ondersteuning</support>.",
+  "groups": {
+    "basics": {
+      "title": "De basis",
+      "items": {
+        "what-is-it": {
+          "question": "Wat is MacBook Cleaner?",
+          "answer": [
+            "MacBook Cleaner is een macOS-app die laat zien wat je opslagruimte gebruikt en je helpt te verwijderen wat je niet nodig hebt: caches, logboeken, app-restanten, ontwikkelaars-buildcaches, oude downloads, grote bestanden en exacte duplicaten.",
+            "Het bevat ook een Prestaties-dashboard: live CPU- en geheugengebruik, de apps die de meeste bronnen gebruiken, batterijstatus op MacBooks, en belangrijke informatie over je Mac en macOS.",
+            "Je controleert alles voordat het wordt verwijderd, en verwijderde items gaan naar de Prullenmand in plaats van permanent te worden gewist."
+          ]
+        },
+        "what-files": {
+          "question": "Welke bestanden kan het opschonen?",
+          "answer": [
+            "App- en systeemcaches en logboeken in je gebruikersbibliotheek; caches van Safari, Chrome, Edge en Firefox; caches die zijn achtergebleven van apps die je hebt verwijderd; ontwikkelaarscaches (Xcode DerivedData, Archieven, apparaatondersteuning, simulatorgegevens, npm, Yarn, pnpm, Gradle, CocoaPods, Android-emulatorimages); en — alleen wanneer jij ze kiest — grote bestanden, oude downloads en dubbele bestanden in Downloads, Bureaublad, Documenten en Films.",
+            "Het kan ook apps uit je Applicaties-map verwijderen, samen met hun achtergebleven gegevens."
+          ]
+        },
+        "free": {
+          "question": "Is MacBook Cleaner gratis?",
+          "answer": ["Alle functies werken tijdens een gratis proefperiode van {{trialDays}} dagen — geen account of creditcard nodig om te beginnen. Daarna ontgrendelt een eenmalige betaling van {{price}} het voorgoed: geen abonnement, geen terugkerende kosten. {{priceNote}}", "De licentiesleutel wordt je direct na betaling per e-mail toegestuurd, werkt op één Mac tegelijk, en kan worden gedeactiveerd en overgezet naar een andere Mac wanneer je maar wilt."]
+        },
+        "faster": {
+          "question": "Maakt het opschonen van bestanden mijn Mac sneller?",
+          "answer": [
+            "MacBook Cleaner maakt schijfruimte vrij en laat zien wat je Mac aan het doen is. Het tabblad Prestaties toont welke apps de meeste CPU en het meeste geheugen gebruiken, zodat je kunt beslissen wat je afsluit — maar het “boost” geen RAM, past geen opstartitems aan en wijzigt geen systeeminstellingen, en we beloven geen snelheidsverbeteringen.",
+            "macOS heeft echter wel vrije ruimte nodig voor updates, virtueel geheugen en caches, dus een bijna volle schijf kan problemen veroorzaken die het vrijmaken van ruimte helpt voorkomen."
+          ]
+        }
+      }
+    },
+    "safety": {
+      "title": "Veiligheid en privacy",
+      "items": {
+        "safe": {
+          "question": "Is MacBook Cleaner veilig?",
+          "answer": [
+            "Het is ontworpen om geen gegevens te verliezen. Niets wordt permanent verwijderd — goedgekeurde items worden naar de Prullenmand verplaatst, en de app maakt deze nooit leeg. Je eigen bestanden (Downloads, Bureaublad, Documenten, Films) worden nooit vooraf geselecteerd en vereisen altijd bevestiging.",
+            "Bij elke verwijdering wordt een ingebouwde veiligheidscontrole uitgevoerd, ongeacht wat de interface vroeg: systeemlocaties, je persoonlijke map en de hoofdmappen daarvan worden geweigerd, en paden die lijken op back-ups, sleutelhangers, wachtwoorden of sleutels worden beschermd.",
+            "Zoals bij elke tool die bestanden verwijdert: houd een back-up bij (bijvoorbeeld met Time Machine) en controleer voordat je opschoont."
+          ]
+        },
+        "review": {
+          "question": "Kan ik bestanden controleren voordat ze worden verwijderd?",
+          "answer": ["Ja — dat is de kern van hoe de app werkt. Elk item toont de grootte, locatie, waarom het bestaat en wat er gebeurt als je het verwijdert. Je kunt alles uitvinken, bestanden bekijken met Quick Look, ze tonen in Finder, of ze toevoegen aan een uitsluitingslijst “nooit meer voorstellen”."]
+        },
+        "recover": {
+          "question": "Kunnen verwijderde bestanden worden hersteld?",
+          "answer": ["Ja, totdat je de Prullenmand leegmaakt. MacBook Cleaner verplaatst items naar de Prullenmand in plaats van ze te verwijderen, zodat je de Prullenmand in Finder kunt openen en Terugzetten kunt kiezen.", "Items in de Prullenmand gebruiken nog steeds schijfruimte — je vrije ruimte neemt pas toe zodra je zelf de Prullenmand leegmaakt."]
+        },
+        "upload": {
+          "question": "Uploadt het mijn bestanden?",
+          "answer": ["Nee. Scannen en opschonen gebeuren volledig op je Mac. De app bevat geen analyses, telemetrie, crashrapportage of accountsysteem, en verstuurt nergens informatie over je bestanden naartoe.", "De enige keer dat het internet wordt gebruikt, is wanneer je op een link klikt (zoals “Controleer op updates” of “Privacybeleid”), waardoor deze website in je browser wordt geopend."],
+          "linkLabel": "Lees het privacybeleid"
+        },
+        "permissions": {
+          "question": "Welke machtigingen zijn nodig?",
+          "answer": [
+            "macOS kan je vragen om toegang tot je mappen Downloads, Bureaublad en Documenten toe te staan, zodat de app grote bestanden en oude downloads kan vinden. Bij je eerste opschoning vraagt macOS of MacBook Cleaner Finder mag bedienen — de app vraagt Finder om items naar de Prullenmand te verplaatsen, zodat ze kunnen worden teruggezet.",
+            "Volledige toegang tot schijf is optioneel. Hiermee kan de app locaties meten die macOS privé houdt, zoals sommige app-caches en de Prullenmand. Zonder deze toegang werkt de app nog steeds en toont hij eenvoudigweg minder. Meldingen worden alleen gebruikt voor herinneringen en samenvattingen van geplande opschoning."
+          ]
+        }
+      }
+    },
+    "compatibility": {
+      "title": "Compatibiliteit en installatie",
+      "items": {
+        "apple-silicon": {
+          "question": "Werkt het op Macs met Apple silicon?",
+          "answerYes": ["Ja. De huidige geverifieerde build werkt native op Macs met Apple silicon (M-serie chips)."],
+          "answerUnverified": ["Er is nog geen geverifieerd installatieprogramma gepubliceerd, dus architectuurcompatibiliteit wordt op deze site niet beweerd."]
+        },
+        "intel": {
+          "question": "Ondersteunt het Intel-Macs?",
+          "answerUnverified": ["Er is nog geen geverifieerd installatieprogramma gepubliceerd, dus Intel-compatibiliteit wordt op deze site niet beweerd."],
+          "answerUniversal": ["Ja. De download is een universele app die native werkt op zowel Intel- als Apple silicon-Macs."],
+          "answerNo": ["Nog niet. De momenteel gepubliceerde build is alleen voor Macs met Apple silicon. Er is geen Intel-compatibele build uitgebracht — deze pagina wordt bijgewerkt als dat verandert."]
+        },
+        "macos-versions": {
+          "question": "Welke macOS-versies worden ondersteund?",
+          "answer": ["{{macosName}} ({{macosVersion}}) of nieuwer, op {{architecture}} Macs."]
+        },
+        "security-warning": {
+          "question": "Waarom toont macOS een beveiligingswaarschuwing?",
+          "answer": [
+            "MacBook Cleaner is nog niet genotariseerd door Apple, waardoor Gatekeeper van macOS bij de eerste keer openen meldt dat het de ontwikkelaar niet kan verifiëren. Dit is te verwachten voor apps die buiten de Mac App Store worden verspreid zonder Apple-notarisatie — het betekent niet dat er iets schadelijks is gevonden.",
+            "Download de app alleen van deze website. Open hem daarna één keer via Systeeminstellingen → Privacy en beveiliging → Toch openen. De downloadpagina leidt je stap voor stap."
+          ],
+          "linkLabel": "Hoe je de app opent"
+        },
+        "uninstall": {
+          "question": "Hoe verwijder ik MacBook Cleaner?",
+          "answer": [
+            "Als je Geplande opschoning of Starten bij aanmelden hebt ingeschakeld, schakel deze dan eerst uit in de app, zodat de achtergrondhelpers worden verwijderd. Sluit daarna de app af en sleep MacBook Cleaner van Applicaties naar de Prullenmand.",
+            "Verwijder ook ~/Library/Application Support/{{bundleId}} en ~/Library/Logs/{{bundleId}} om de instellingen en logboeken te verwijderen. Als je de eerste stap hebt overgeslagen, verwijder dan ook eventuele {{bundleId}}.*.plist-bestanden in ~/Library/LaunchAgents."
+          ]
+        }
+      }
+    },
+    "performance": {
+      "title": "Prestatiebewaking",
+      "items": {
+        "cpu": {
+          "question": "Bewaakt MacBook Cleaner het CPU-gebruik?",
+          "answer": ["Ja. Het tabblad Prestaties toont live CPU-gebruik met een grafiek van 60 seconden, onderverdeeld in gebruikers-, systeem- en inactieve tijd, en het CPU-gebruik van elke actieve app. Waarden worden getoond als percentage van het totale verwerkingsvermogen van je Mac."]
+        },
+        "ram-apps": {
+          "question": "Kan ik zien welke apps het meeste RAM gebruiken?",
+          "answer": ["Ja. Actieve apps toont je geopende apps met hun geheugen, CPU en actieve tijd, en kan op elk daarvan worden gesorteerd. Geheugen is de fysieke voetafdruk — dezelfde meting die Activiteitenweergave gebruikt — en omvat de helperprocessen van elke app.", "macOS staat gewone apps niet toe de CPU of het geheugen te lezen van processen van andere gebruikers (zoals sommige systeemdiensten), dus die tonen een streepje in plaats van een getal."]
+        },
+        "cycle-count": {
+          "question": "Kan ik het aantal batterijcycli van mijn MacBook controleren?",
+          "answer": ["Ja. Op MacBooks toont het onderdeel Batterij het cyclusaantal, de maximale capaciteit, de lading, de stroombron en de batterijstatus zoals gerapporteerd door macOS. Wanneer de batterij het ontworpen cyclusaantal rapporteert, wordt dat ook getoond. Desktop-Macs hebben geen batterij, dus dat onderdeel is verborgen."]
+        },
+        "upload-apps": {
+          "question": "Uploadt de app gegevens over mijn actieve applicaties?",
+          "answer": ["Nee. Actieve apps, procesdetails, CPU, geheugen, batterij en Mac-informatie worden lokaal uitgelezen van macOS, op het scherm getoond en alleen in het geheugen bewaard zolang de app open is. Niets daarvan wordt geüpload, op schijf opgeslagen of gebruikt voor analyses."],
+          "linkLabel": "Lees het privacybeleid"
+        },
+        "mac-model": {
+          "question": "Kan ik mijn Mac-model en RAM zien?",
+          "answer": ["Ja. Mac-informatie toont je model, chip, CPU- en GPU-kernen, geheugen, opslag, schermen, macOS-versie en build, en bedrijfstijd. Je serienummer wordt nooit gelezen."]
+        },
+        "macos-update": {
+          "question": "Kan het me vertellen of macOS een update nodig heeft?",
+          "answer": ["Het toont het resultaat van de eigen automatische Software-updatecontrole van macOS — bijvoorbeeld “Up-to-date” of de naam van een beschikbare update — samen met wanneer macOS voor het laatst heeft gecontroleerd. MacBook Cleaner neemt zelf nooit contact op met Apple en installeert nooit updates; de knop Software-update openen brengt je naar Systeeminstellingen.", "Als macOS geen controle heeft geregistreerd, wordt de status getoond als onbekend in plaats van geraden."]
+        },
+        "monitoring-overhead": {
+          "question": "Vertraagt prestatiebewaking mijn Mac?",
+          "answer": ["Bewaking werkt alleen zolang het scherm Prestaties open is, vertraagt wanneer het venster niet actief is, en stopt volledig wanneer het venster verborgen is of je naar een ander scherm overschakelt. Statische details zoals het model van je Mac worden eenmaal per sessie gelezen.", "In onze metingen op een MacBook Pro met Apple M1 gebruikte het bewakingswerk gemiddeld ongeveer een half procent van één CPU-kern terwijl het scherm open was."]
+        }
+      }
+    },
+    "automation": {
+      "title": "Scannen en automatisering",
+      "items": {
+        "how-often": {
+          "question": "Hoe vaak moet ik mijn Mac scannen?",
+          "answer": ["Er is geen juist antwoord — het hangt af van hoe je je Mac gebruikt. Veel mensen vinden een wekelijkse controle voldoende. Ontwikkelaars die vaak builden, willen misschien vaker scannen, omdat buildcaches snel groeien.", "Geplande opschoning kan je automatisch herinneren, alleen wanneer er genoeg is om op te schonen of de vrije ruimte bijna op is."]
+        },
+        "automatic": {
+          "question": "Draait de app automatisch?",
+          "answer": [
+            "Alleen als je dat inschakelt. Geplande opschoning staat standaard uit. Eenmaal ingeschakeld, voert het dagelijks, wekelijks of maandelijks een achtergrondcontrole uit op het tijdstip dat je kiest.",
+            "In de modus “Herinner me” wordt alleen een melding verstuurd. In de modus “Automatisch opschonen” — die een afzonderlijke, expliciete bevestiging vereist — verplaatst het een vaste lijst van zes ontwikkelaarscaches (Xcode DerivedData, npm, Yarn, pnpm, Gradle, CocoaPods) naar de Prullenmand, en alleen wanneer er minstens 1 GB is, tot maximaal 10 GB en 50 items per keer. Je persoonlijke bestanden worden nooit automatisch aangeraakt.",
+            "Starten bij aanmelden is ook optioneel en staat standaard uit."
+          ]
+        }
+      }
+    }
+  }
+}

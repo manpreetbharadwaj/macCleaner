@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "Icona dell'app MacBook Cleaner",
+    "title": "MacBook Cleaner per macOS",
+    "lead": "Pulizia dell'archiviazione e monitoraggio delle prestazioni per il tuo Mac — elaborati in locale.",
+    "started": "Il download è iniziato — <b>{{fileName}}</b>. Al termine, segui i passaggi qui sotto.",
+    "fileInfo": "{{fileName}}{{sizePart}} · Immagine disco (.dmg)",
+    "quickSteps": ["Scarica MacBook Cleaner.", "Apri il DMG scaricato.", "Trascina MacBook Cleaner in Applicazioni."],
+    "quickStepsNotarizedLast": "Avvia l'app.",
+    "quickStepsUnnotarizedLast": "Avvia l'app — la prima volta, <a>usa Apri comunque</a>.",
+    "specs": { "version": "Versione {{version}}", "released": "Rilasciato il {{date}}", "built": "Compilato il {{date}}", "macos": "{{macos}} o successivo" },
+    "links": { "releaseNotes": "Note di rilascio", "privacy": "Privacy", "terms": "Termini" },
+    "checksumLabel": "SHA-256",
+    "releaseDetailsAria": "Dettagli della versione"
+  },
+  "requirements": {
+    "eyebrow": "Requisiti di sistema",
+    "title": "Funzionerà sul mio Mac?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}} ({{macosVersion}}) o successivo",
+    "processor": "Processore",
+    "intelNote": "I Mac Intel non sono supportati da questa build verificata.",
+    "account": "Account",
+    "accountValue": "Nessuno richiesto"
+  },
+  "install": {
+    "eyebrow": "Installazione",
+    "title": "Installa in meno di un minuto.",
+    "steps": [
+      { "title": "Scarica il DMG", "body": "Fai clic su <b>Scarica per Mac</b>. L'immagine disco viene salvata nella cartella Download." },
+      { "title": "Apri il DMG", "body": "Fai doppio clic su <code>{{fileName}}</code> in Download. Si apre una finestra che mostra l'app e la cartella Applicazioni." },
+      { "title": "Trascina in Applicazioni", "body": "Trascina <b>MacBook Cleaner</b> sulla cartella Applicazioni, poi espelli l'immagine disco dalla barra laterale di Finder." },
+      { "title": "Avvia l'app", "body": "Apri MacBook Cleaner da Applicazioni o Launchpad. Eseguilo da Applicazioni — la pulizia pianificata funziona solo da lì." }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "Primo avvio",
+    "title": "Vedi un avviso di sicurezza?",
+    "intro": "È previsto in questo momento — ecco perché, e come aprire l'app in sicurezza.",
+    "noticeTitle": "MacBook Cleaner non è ancora notarizzato da Apple",
+    "noticeBody1": "Le app distribuite al di fuori del Mac App Store sono normalmente firmate con un Apple Developer ID e notarizzate. Questa versione è firmata ad hoc — senza un Developer ID — e non è notarizzata, quindi la prima volta che la apri, Gatekeeper di macOS dice di non poter verificare lo sviluppatore o controllare l'app per software dannoso. Questo messaggio non significa che sia stato trovato un problema — significa che Apple non ha ancora revisionato questa build.",
+    "noticeBody2": "<b>Scarica MacBook Cleaner solo da questo sito.</b> Se hai ottenuto il file altrove, eliminalo.",
+    "howtoTitle": "Aprilo una volta tramite Impostazioni di Sistema",
+    "steps": [
+      "Apri MacBook Cleaner da Applicazioni. Quando compare l'avviso, fai clic su <b>Fatto</b> (o <b>Annulla</b>) — non spostarlo nel Cestino.",
+      "Apri <b>Impostazioni di Sistema → Privacy e Sicurezza</b> e scorri fino alla sezione <b>Sicurezza</b>.",
+      "Accanto al messaggio relativo al blocco di MacBook Cleaner, fai clic su <b>Apri comunque</b>, poi conferma con la password o Touch ID.",
+      "Fai clic su <b>Apri</b> nella finestra finale. macOS ricorda la tua scelta, quindi devi farlo solo una volta per versione."
+    ],
+    "tip": "Su macOS 14 Sonoma e versioni precedenti puoi anche fare Control-clic sull'app in Applicazioni, scegliere <b>Apri</b>, poi fare di nuovo clic su <b>Apri</b>."
+  },
+  "afterInstall": {
+    "eyebrow": "Dopo l'installazione",
+    "title": "Da sapere.",
+    "permissions": { "title": "Permessi", "body": "macOS potrebbe chiedere di consentire all'app l'accesso a Download, Scrivania e Documenti, e di controllare Finder al primo utilizzo. L'accesso completo al disco è opzionale.", "link": "Perché è necessario ciascuno →" },
+    "updates": { "title": "Aggiornamenti", "body": "<b>Impostazioni → Controlla aggiornamenti</b> controlla, scarica e verifica le nuove versioni per te — niente si installa senza la tua conferma, e dovrai riavviare l'app una volta per completare. Le tue impostazioni vengono conservate." },
+    "uninstalling": { "title": "Disinstallazione", "body": "Disattiva Pulizia pianificata e Avvio all'accesso, poi trascina l'app nel Cestino.", "link": "Passaggi completi →" },
+    "stuck": "Hai bisogno di aiuto?",
+    "contactSupport": "Contatta l'assistenza →"
+  }
+}

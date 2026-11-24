@@ -1,35 +1,29 @@
-import { Link } from 'react-router'
+import { useTranslation } from 'react-i18next'
 import { Bell, CloudOff, FileLock2, FolderOpen, HardDrive, MousePointerClick, UserX, Wand2 } from 'lucide-react'
+import { Link } from '@/components/router'
 import { Reveal } from '@/components/Reveal'
 
-const POINTS = [
-  { icon: HardDrive, title: 'Scanned on your Mac', body: 'Every scan and every cleanup runs locally. There’s no cloud service involved.' },
-  { icon: CloudOff, title: 'Nothing is uploaded', body: 'No analytics, telemetry or crash reporting. Your files, running apps, battery and Mac details never leave your Mac.' },
-  { icon: UserX, title: 'No account needed to try it', body: 'No sign-up, no email, no credit card — download it and your free trial starts. Buying a lifetime license later only needs the key from your purchase, never a new account.' },
-  { icon: FileLock2, title: 'Contents stay unread', body: 'The app looks at sizes and dates. File contents are only read to confirm two files are exact duplicates.' },
-]
-
-const PERMISSIONS = [
-  { icon: FolderOpen, title: 'Downloads, Desktop & Documents', body: 'macOS asks before the app can look in these folders, so it can find large files and old downloads.' },
-  { icon: Wand2, title: 'Control Finder', body: 'Asked the first time you clean. The app asks Finder to move items to the Trash, so “Put Back” works.' },
-  { icon: HardDrive, title: 'Full Disk Access — optional', body: 'Lets the app measure locations macOS keeps private, like some caches and the Trash. It works without it.' },
-  { icon: Bell, title: 'Notifications — optional', body: 'Only for scheduled-cleanup reminders and summaries.' },
-]
+const POINT_ICONS = [HardDrive, CloudOff, UserX, FileLock2]
+const PERMISSION_ICONS = [FolderOpen, Wand2, HardDrive, Bell]
 
 export function PrivacySection({ showPermissions = true }: { showPermissions?: boolean }) {
+  const { t } = useTranslation('home')
+  const points = t('privacyBand.points', { returnObjects: true }) as { title: string; body: string }[]
+  const permissions = t('privacyBand.permissions', { returnObjects: true }) as { title: string; body: string }[]
+
   return (
     <section className="privacy-band" aria-labelledby="privacy-title">
       <div className="container">
         <Reveal className="section-heading is-light">
-          <p className="eyebrow">Privacy first</p>
+          <p className="eyebrow">{t('privacyBand.eyebrow')}</p>
           <h2 id="privacy-title" className="display-2">
-            Your files stay on your Mac.
+            {t('privacyBand.title')}
           </h2>
-          <p className="lead">A cleaner needs deep access to your disk. That’s exactly why MacBook Cleaner is built to need your trust as little as possible.</p>
+          <p className="lead">{t('privacyBand.lead')}</p>
         </Reveal>
         <div className="privacy-grid">
-          {POINTS.map((p, i) => {
-            const Icon = p.icon
+          {points.map((p, i) => {
+            const Icon = POINT_ICONS[i]
             return (
               <Reveal key={p.title} className="glass-card" delay={i * 70}>
                 <span className="glass-card__icon" aria-hidden="true">
@@ -46,11 +40,11 @@ export function PrivacySection({ showPermissions = true }: { showPermissions?: b
           <Reveal className="perm-panel" delay={60}>
             <div className="perm-panel__head">
               <MousePointerClick size={18} aria-hidden="true" />
-              <h3>What macOS may ask you to allow — and why</h3>
+              <h3>{t('privacyBand.permissionsHeading')}</h3>
             </div>
             <ul>
-              {PERMISSIONS.map((p) => {
-                const Icon = p.icon
+              {permissions.map((p, i) => {
+                const Icon = PERMISSION_ICONS[i]
                 return (
                   <li key={p.title}>
                     <Icon size={18} aria-hidden="true" />
@@ -63,7 +57,7 @@ export function PrivacySection({ showPermissions = true }: { showPermissions?: b
               })}
             </ul>
             <p className="perm-panel__foot">
-              You can review or revoke any of these in System Settings → Privacy &amp; Security. <Link to="/privacy">Read the Privacy Policy →</Link>
+              {t('privacyBand.footNote')} <Link to="/privacy">{t('privacyBand.readPolicy')}</Link>
             </p>
           </Reveal>
         )}

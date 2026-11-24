@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState, type MouseEvent } from 'react'
-import { useLocation, useNavigate } from 'react-router'
+import { useLocation } from 'react-router'
+import { useTranslation } from 'react-i18next'
 import { AlertCircle, Check, Loader2 } from 'lucide-react'
 import { DOWNLOAD, isDownloadAvailable } from '@/config/site'
+import { unprefixedPath } from '@/i18n/paths'
 import { cx } from '@/utils/format'
+import { useLocalizedNavigate } from './router'
 import { MacGlyph } from './AppleGlyph'
 
 interface DownloadButtonProps {
@@ -50,9 +53,10 @@ function startDownload(url: string, fileName: string) {
  * (so it works without JavaScript too); with JavaScript it verifies the file,
  * starts the download, then shows the installation steps.
  */
-export function DownloadButton({ size = 'lg', variant = 'primary', label = 'Download for Mac', className }: DownloadButtonProps) {
+export function DownloadButton({ size = 'lg', variant = 'primary', label, className }: DownloadButtonProps) {
+  const { t } = useTranslation('common')
   const [state, setState] = useState<State>('idle')
-  const navigate = useNavigate()
+  const navigate = useLocalizedNavigate()
   const { pathname } = useLocation()
   const reset = useRef<number | undefined>(undefined)
 
@@ -88,20 +92,20 @@ export function DownloadButton({ size = 'lg', variant = 'primary', label = 'Down
     }
     startDownload(DOWNLOAD.url, DOWNLOAD.fileName)
     settle('started', 5000)
-    if (pathname !== '/download') navigate('/download?started=1')
+    if (unprefixedPath(pathname) !== '/download') navigate('/download?started=1')
   }
 
   const icon =
     state === 'checking' ? <Loader2 size={18} className="spin" aria-hidden="true" /> : state === 'started' ? <Check size={18} aria-hidden="true" /> : state === 'error' ? <AlertCircle size={18} aria-hidden="true" /> : <MacGlyph />
-  const text = state === 'checking' ? 'Starting…' : state === 'started' ? 'Download started' : label
+  const text = state === 'checking' ? t('download.starting') : state === 'started' ? t('download.started') : (label ?? t('download.cta'))
 
   if (!isDownloadAvailable) {
     return (
       <span className={cx('download-cta', className)}>
         <span className={cx('btn', `btn--${variant}`, size === 'lg' && 'btn--lg', 'is-disabled')} aria-disabled="true">
-          <AlertCircle size={18} aria-hidden="true" /> Download unavailable
+          <AlertCircle size={18} aria-hidden="true" /> {t('download.unavailable')}
         </span>
-        <span className="download-cta__unavailable">The verified Mac installer has not been published yet.</span>
+        <span className="download-cta__unavailable">{t('download.unavailableNote')}</span>
       </span>
     )
   }
@@ -118,11 +122,11 @@ export function DownloadButton({ size = 'lg', variant = 'primary', label = 'Down
         {icon} {text}
       </a>
       <span role="status" aria-live="polite" className="sr-only">
-        {state === 'started' ? `Downloading ${DOWNLOAD.fileName}` : ''}
+        {state === 'started' ? t('download.downloading', { fileName: DOWNLOAD.fileName }) : ''}
       </span>
       {state === 'error' && (
         <span id="download-error" role="alert" className="download-cta__error">
-          The download couldn’t start. Please try again in a moment, or contact support.
+          {t('download.error')}
         </span>
       )}
     </span>

@@ -1,10 +1,12 @@
 import type { CSSProperties } from 'react'
-import { Link } from 'react-router'
+import { useTranslation } from 'react-i18next'
 import { ArrowRight } from 'lucide-react'
 import type { Feature } from '@/data/features'
 import { Reveal } from './Reveal'
+import { Link } from './router'
 
 export function FeatureCard({ feature, delay = 0, linked = true }: { feature: Feature; delay?: number; linked?: boolean }) {
+  const { t } = useTranslation('features')
   const Icon = feature.icon
   const body = (
     <>
@@ -15,7 +17,7 @@ export function FeatureCard({ feature, delay = 0, linked = true }: { feature: Fe
       <p>{feature.summary}</p>
       {linked && (
         <span className="feature-card__more">
-          Learn more <ArrowRight size={15} aria-hidden="true" />
+          {t('learnMore')} <ArrowRight size={15} aria-hidden="true" />
         </span>
       )}
     </>

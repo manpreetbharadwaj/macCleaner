@@ -1,0 +1,198 @@
+{
+  "hero": {
+    "pill": "Versi {{version}} · Dibuat untuk macOS",
+    "title1": "Bersihkan. Pantau.",
+    "title2": "Pahami Mac Anda.",
+    "lead": "Bebaskan ruang penyimpanan, pahami penggunaan memori, pantau aplikasi yang berjalan, periksa kesehatan baterai, dan lihat informasi penting tentang Mac Anda — dari satu dashboard sederhana. Anda meninjau semuanya. Tidak ada yang dihapus permanen.",
+    "exploreFeatures": "Jelajahi Fitur",
+    "requirement": "{{macos}} atau yang lebih baru",
+    "chips": {
+      "trash": { "title": "Dipindahkan ke Trash", "body": "Selalu bisa dipulihkan" },
+      "personal": { "title": "File pribadi", "body": "Tidak pernah dipilih otomatis" },
+      "scan": { "title": "Pindai di Mac Anda", "body": "Tidak ada yang diunggah" }
+    }
+  },
+  "coreFeatures": {
+    "eyebrow": "Alat pembersih",
+    "title": "Delapan alat pembersih. Satu antarmuka yang tenang.",
+    "intro": "Setiap alat menunjukkan apa yang ditemukannya, mengapa itu ada, dan apa yang terjadi jika Anda menghapusnya — agar Anda bisa membersihkan dengan percaya diri, bukan menebak-nebak."
+  },
+  "scanDemo": {
+    "eyebrow": "Lihat cara kerjanya",
+    "title1": "Satu pemindaian. ",
+    "title2": "Semua tersortir.",
+    "intro": "Smart Clean memeriksa cache, log, sisa aplikasi, alat developer, dan Downloads Anda sekaligus, lalu menyortir temuannya ke dalam kelompok berbahasa sederhana — masing-masing terbagi antara yang aman dibersihkan dan yang layak diperiksa ulang.",
+    "storageAnalyzed": "Penyimpanan dianalisis",
+    "itemsFound": "Item ditemukan",
+    "safeToClean": "Aman dibersihkan",
+    "readyToScan": "Siap memindai",
+    "scanning": "Memindai Mac Anda…",
+    "canFreeUp": "Mac Anda bisa membebaskan {{total}} GB",
+    "foundSoFar": "{{amount}} GB ditemukan sejauh ini",
+    "safeSummary": "{{amount}} GB aman dibersihkan sekarang juga. Sisanya untuk Anda tinjau.",
+    "checking": "Memeriksa…",
+    "items": "item",
+    "footNote": "Contoh pemindaian menggunakan data sampel aplikasi. Hasil pada Mac Anda akan berbeda.",
+    "replay": "Putar ulang",
+    "steps": {
+      "systemJunk": "Sampah Sistem",
+      "browserCaches": "Cache Browser",
+      "appLeftovers": "Sisa Aplikasi",
+      "logsCrashReports": "Log & Laporan Crash",
+      "developerJunk": "Sampah Developer",
+      "oldDownloads": "Unduhan Lama"
+    }
+  },
+  "performanceMonitor": {
+    "eyebrow": "Baru · Performa",
+    "title1": "Monitor Performa Mac. ",
+    "title2": "Sudah terpasang.",
+    "intro": "MacBook Cleaner lebih dari sekadar pembersih penyimpanan. Tab Performance menunjukkan kondisi Mac Anda saat ini — dalam bahasa sederhana, tanpa berubah menjadi alat developer.",
+    "shotAlt": "Dashboard Performance MacBook Cleaner menampilkan indikator CPU, memori, penyimpanan, dan baterai, ringkasan Mac Health, serta grafik langsung",
+    "shotNote": "Ditampilkan dengan data sampel aplikasi. Di Mac Anda, setiap nilai dibaca langsung dari macOS."
+  },
+  "runningApps": {
+    "eyebrow": "Aplikasi Berjalan",
+    "title1": "Lihat aplikasi mana yang menggunakan ",
+    "title2": "memori dan CPU terbanyak.",
+    "intro": "Running Apps mencantumkan apa yang terbuka di Mac Anda beserta memori, CPU, dan lama waktu berjalannya. Proses bantuan dihitung ke aplikasi induknya, sehingga browser dengan puluhan tab menampilkan satu total yang akurat.",
+    "checks": ["Urutkan berdasarkan memori, CPU, waktu berjalan, atau nama", "Aplikasi secara default — proses latar belakang dan sistem hanya jika diminta", "Memori menggunakan ukuran yang sama dengan Activity Monitor"],
+    "headers": { "app": "Aplikasi", "cpu": "CPU", "memory": "Memori", "running": "Berjalan" },
+    "note": "Nilai contoh untuk ilustrasi — bukan benchmark."
+  },
+  "battery": {
+    "eyebrow": "Kesehatan Baterai",
+    "title": "Pahami baterai Anda.",
+    "intro": "Di MacBook, lihat persis apa yang diketahui macOS tentang baterai Anda — tanpa tebak-tebakan, tanpa skor rekaan.",
+    "checks": ["Persentase baterai dan status pengisian daya", "Jumlah siklus — jumlah siklus pengisian penuh yang telah selesai", "Kapasitas maksimum dibandingkan saat baru", "Kondisi baterai, seperti yang ditampilkan di System Settings"],
+    "finePrint": "MacBook Cleaner melaporkan informasi baterai; tidak dapat memperbaiki atau meningkatkan kondisi fisik baterai. Mac desktop sama sekali tidak menampilkan bagian ini.",
+    "stats": { "cycleCount": "Jumlah siklus", "maxCapacity": "Kapasitas maksimum", "condition": "Kondisi", "power": "Sumber daya", "conditionValue": "Normal", "powerValue": "Baterai" },
+    "note": "Nilai contoh untuk ilustrasi."
+  },
+  "macInfo": {
+    "eyebrow": "Info Mac",
+    "title1": "Semua hal penting ",
+    "title2": "tentang Mac Anda.",
+    "intro": "Model, chip, memori, penyimpanan, layar, versi macOS, dan uptime — dalam satu dashboard, bukan lima tempat berbeda. MacBook Cleaner juga menunjukkan apakah pemeriksaan pembaruan bawaan macOS menemukan update, dengan pintasan ke Software Update.",
+    "finePrint": "Dibaca secara lokal dari macOS dan tidak pernah diunggah. Nomor seri Anda sama sekali tidak dibaca.",
+    "card": { "thisMac": "Mac Ini", "model": "MacBook Pro" },
+    "specs": { "model": "Model Mac", "chip": "Chip", "memory": "Memori", "storage": "Penyimpanan", "macos": "macOS", "uptime": "Uptime" },
+    "note": "Nilai contoh untuk ilustrasi."
+  },
+  "howItWorks": {
+    "eyebrow": "Cara kerjanya",
+    "title": "Empat langkah. Anda memegang kendali penuh di setiap langkah.",
+    "steps": [
+      { "title": "Pindai Mac Anda", "body": "Satu klik memeriksa cache, log, alat developer, aplikasi, Downloads, dan file terbesar Anda — semuanya di Mac Anda." },
+      { "title": "Tinjau rekomendasi", "body": "Item diberi label Safe atau Review, dengan penjelasan sederhana untuk masing-masing. Batalkan centang apa pun yang ingin Anda simpan." },
+      { "title": "Pindahkan ke Trash", "body": "Konfirmasi, dan item yang Anda setujui akan masuk ke Trash. File Anda sendiri selalu memerlukan konfirmasi tambahan." },
+      { "title": "Dapatkan kembali penyimpanan", "body": "Berubah pikiran? Kembalikan apa pun dari Trash. Setelah yakin, kosongkan untuk mendapatkan kembali ruangnya." }
+    ]
+  },
+  "storageSection": {
+    "eyebrow": "Wawasan penyimpanan",
+    "title1": "Lihat ke mana ruang Anda ",
+    "title2": "sebenarnya pergi.",
+    "intro": "MacBook Cleaner mengukur folder Anda yang sebenarnya dan menampilkannya sebagai satu cincin penyimpanan berwarna — kategori yang sama dengan yang Anda lihat di aplikasi.",
+    "checks": ["Ukuran dalam gigabyte desimal, sama seperti cara macOS melaporkan penyimpanan", "Ruang yang tidak dapat diatribusikan diberi label jujur sebagai System Data", "Pustaka seperti Photos hanya diukur, tidak pernah dibuka atau diperiksa satu per satu"]
+  },
+  "storageViz": {
+    "modes": { "used": "Terpakai", "recoverable": "Berpotensi dipulihkan", "free": "Kosong" },
+    "centerLabels": { "used": "Terpakai", "recoverable": "Dapat dipulihkan", "free": "Kosong" },
+    "ofTotal": "dari {{total}} GB",
+    "potentiallyRecoverable": "berpotensi dipulihkan",
+    "percentOfDisk": "{{percent}}% dari disk",
+    "afterReview": "setelah Anda meninjau",
+    "diskAriaLabel": "Contoh disk: {{used}} GB terpakai, {{free}} GB kosong, {{recoverable}} GB berpotensi dipulihkan setelah ditinjau",
+    "legendAriaLabel": "{{label}}: {{used}} terpakai, {{recoverable}} berpotensi dipulihkan. {{note}}",
+    "defaultNote": "Contoh ilustratif menggunakan data sampel aplikasi — angka di Mac Anda akan berbeda. Arahkan kursor atau fokuskan pada kategori untuk detail.",
+    "categories": {
+      "applications": { "label": "Applications", "note": "Aplikasi plus sisa dari aplikasi yang sudah Anda hapus" },
+      "documents": { "label": "Documents", "note": "Documents dan Desktop — ditinjau, tidak pernah dipilih otomatis" },
+      "photos": { "label": "Photos", "note": "Pustaka Photos Anda hanya diukur ukurannya, tidak pernah disentuh" },
+      "videos": { "label": "Videos", "note": "Rekaman besar yang bisa Anda tinjau" },
+      "downloads": { "label": "Downloads", "note": "Installer, disk image, dan arsip lama" },
+      "cache": { "label": "Cache", "note": "Cache aplikasi dan browser yang membangun dirinya sendiri kembali" },
+      "other": { "label": "Other", "note": "Musik, surel, pesan, dan data aplikasi lainnya" },
+      "system-data": { "label": "System Data", "note": "macOS dan ruang yang tidak dapat diatribusikan ke folder mana pun" }
+    }
+  },
+  "safeCleaning": {
+    "eyebrow": "Aman sejak dirancang",
+    "title1": "Kendali tetap di tangan Anda. ",
+    "title2": "Selalu.",
+    "intro": "Alat pembersih memerlukan akses mendalam ke disk Anda. MacBook Cleaner dibuat agar kesalahan sulit terjadi — dan mudah dibatalkan.",
+    "levels": {
+      "safe": { "label": "Aman", "title": "Membangun diri kembali", "body": "Cache dan log yang dibuat ulang sendiri oleh aplikasi Anda. Sudah dipilih otomatis untuk Anda.", "example": "Xcode DerivedData", "size": "18.6 GB" },
+      "review": { "label": "Tinjau", "title": "Layak dilihat dulu", "body": "Hal-hal yang mungkin menyimpan status yang Anda pedulikan. Tidak pernah dipilih otomatis.", "example": "Simulator Devices", "size": "6.2 GB" },
+      "protected": { "label": "Dilindungi", "title": "Tidak dapat dipilih", "body": "Apa pun yang terlihat seperti backup, keychain, atau kunci — ditolak oleh lapisan keamanan bawaan aplikasi.", "example": "MobileSync Backup", "size": "Terkunci" }
+    },
+    "principles": [
+      { "title": "Ditinjau sebelum apa pun dihapus", "body": "Setiap pembersihan menunjukkan persis apa yang akan dipindahkan dan meminta konfirmasi Anda." },
+      { "title": "Trash dulu, selalu", "body": "Item masuk ke Trash — tidak pernah dihapus permanen. Aplikasi tidak pernah mengosongkan Trash Anda." },
+      { "title": "File Anda, keputusan Anda", "body": "Downloads, Desktop, Documents, dan Movies tidak pernah dipilih otomatis dan selalu memerlukan konfirmasi tambahan." },
+      { "title": "Pengaman yang tidak bisa dilewati", "body": "Pemeriksaan bawaan menolak folder sistem, folder utama Anda, dan apa pun di luar folder utama Anda." },
+      { "title": "“Jangan sarankan ini lagi”", "body": "Kecualikan file atau folder mana pun dan ia tidak akan disarankan lagi — baik manual maupun terjadwal." },
+      { "title": "Tanpa otomatisasi yang mengejutkan", "body": "Pembersihan otomatis nonaktif secara default, memerlukan persetujuan eksplisit, dan hanya menyentuh enam jenis cache developer." }
+    ]
+  },
+  "beforeAfter": {
+    "eyebrow": "Sebelum & sesudah",
+    "title": "Dari “ke mana perginya semua ini?” menjadi “oh, ternyata di sini.”",
+    "intro": "Geser gagangnya untuk membandingkan. MacBook Cleaner tidak memperbesar disk Anda — ia membuatnya mudah dipahami, sehingga memulihkan ruang menjadi keputusan, bukan tebakan.",
+    "before": "Sebelum",
+    "after": "Sesudah",
+    "systemDataUnknown": "System Data: ???",
+    "withoutClearView": "Tanpa pandangan yang jelas",
+    "withApp": "Dengan MacBook Cleaner",
+    "beforeList": ["Bilah penyimpanan hanya bertuliskan “System Data” dan sedikit lainnya", "File besar terkubur dalam folder", "Cache dan log menumpuk tanpa disadari", "Installer dan disk image lama di Downloads", "Tidak tahu apa yang aman dihapus"],
+    "afterList": ["Setiap kategori diukur dan diberi label", "File terbesar terdaftar lebih dulu, dengan Quick Look", "Cache dikelompokkan dan ditandai Safe atau Review", "Downloads diurutkan berdasarkan usia dan jenis", "Ruang dipulihkan sesuai keinginan Anda — lewat Trash"]
+  },
+  "privacyBand": {
+    "eyebrow": "Privasi diutamakan",
+    "title": "File Anda tetap di Mac Anda.",
+    "lead": "Pembersih memerlukan akses mendalam ke disk Anda. Itulah sebabnya MacBook Cleaner dirancang agar membutuhkan kepercayaan Anda sesedikit mungkin.",
+    "points": [
+      { "title": "Dipindai di Mac Anda", "body": "Setiap pemindaian dan pembersihan berjalan secara lokal. Tidak ada layanan cloud yang terlibat." },
+      { "title": "Tidak ada yang diunggah", "body": "Tanpa analitik, telemetri, atau pelaporan crash. File, aplikasi berjalan, baterai, dan detail Mac Anda tidak pernah meninggalkan Mac Anda." },
+      { "title": "Tidak perlu akun untuk mencobanya", "body": "Tanpa pendaftaran, tanpa surel, tanpa kartu kredit — unduh saja dan uji coba gratis Anda dimulai. Membeli lisensi seumur hidup nanti hanya memerlukan kunci dari pembelian Anda, tidak pernah akun baru." },
+      { "title": "Isi file tetap tidak terbaca", "body": "Aplikasi hanya melihat ukuran dan tanggal. Isi file hanya dibaca untuk memastikan dua file benar-benar identik." }
+    ],
+    "permissionsHeading": "Apa yang mungkin diminta macOS untuk diizinkan — dan mengapa",
+    "permissions": [
+      { "title": "Downloads, Desktop & Documents", "body": "macOS meminta izin sebelum aplikasi dapat melihat folder ini, agar bisa menemukan file besar dan unduhan lama." },
+      { "title": "Mengontrol Finder", "body": "Diminta saat Anda pertama kali membersihkan. Aplikasi meminta Finder memindahkan item ke Trash, agar “Put Back” tetap berfungsi." },
+      { "title": "Full Disk Access — opsional", "body": "Memungkinkan aplikasi mengukur lokasi yang dijaga privat oleh macOS, seperti beberapa cache dan Trash. Aplikasi tetap berfungsi tanpanya." },
+      { "title": "Notifikasi — opsional", "body": "Hanya untuk pengingat dan ringkasan pembersihan terjadwal." }
+    ],
+    "footNote": "Anda dapat meninjau atau mencabut izin ini kapan saja di System Settings → Privacy & Security.",
+    "readPolicy": "Baca Kebijakan Privasi →"
+  },
+  "gallery": {
+    "eyebrow": "Tangkapan layar",
+    "title": "Dirancang agar terasa menyatu dengan Mac Anda.",
+    "intro": "Tampilan layar nyata dari aplikasi, ditunjukkan dengan data sampel bawaannya. Tampilan terang dan gelap mengikuti sistem Anda.",
+    "shots": {
+      "dashboard": { "label": "Dashboard", "alt": "Dashboard dengan cincin penyimpanan dan ringkasan Smart Clean" },
+      "scanning": { "label": "Memindai", "alt": "Pemindaian Smart Clean sedang berlangsung" },
+      "results": { "label": "Smart Clean", "alt": "Hasil Smart Clean dikelompokkan berdasarkan kategori" },
+      "performance": { "label": "Performa", "alt": "Dashboard performa dengan CPU dan memori langsung" },
+      "performance-apps": { "label": "Aplikasi Berjalan", "alt": "Aplikasi berjalan diurutkan berdasarkan memori" },
+      "performance-battery": { "label": "Baterai", "alt": "Kesehatan baterai dengan jumlah siklus dan kapasitas maksimum" },
+      "complete": { "label": "Pembersihan selesai", "alt": "Ringkasan pembersihan selesai menunjukkan ruang yang dipindahkan ke Trash" },
+      "storage": { "label": "Penyimpanan", "alt": "Rincian penyimpanan berdasarkan kategori" },
+      "dashboard-dark": { "label": "Mode gelap", "alt": "Dashboard dalam mode gelap" }
+    }
+  },
+  "faqPreview": {
+    "eyebrow": "FAQ",
+    "title": "Pertanyaan, terjawab.",
+    "seeAll": "Lihat semua pertanyaan →"
+  },
+  "finalCta": {
+    "defaultTitle": "Beri Mac Anda sedikit ruang untuk bernapas.",
+    "featuresTitle": "Siap melihat apa yang memenuhi ruang Anda?",
+    "meta": "Versi {{version}} · {{macos}} atau yang lebih baru · {{architecture}}",
+    "installationGuide": "Panduan instalasi"
+  }
+}

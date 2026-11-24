@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Assistance",
+  "title": "Comment pouvons-nous vous aider ?",
+  "intro": "La plupart des réponses se trouvent dans la FAQ. Pour le reste, l’e-mail est le moyen le plus rapide de nous joindre.",
+  "cards": {
+    "email": { "title": "Assistance par e-mail", "body": "Des questions sur l’utilisation de l’application ? Écrivez-nous, nous vous répondrons.", "cta": "{{email}}" },
+    "bug": { "title": "Signaler un bug", "body": "Quelque chose ne fonctionne pas ? Ouvre un e-mail avec un court modèle à remplir.", "cta": "Signaler un bug" },
+    "feature": { "title": "Demander une fonctionnalité", "body": "Dites-nous ce qui rendrait MacBook Cleaner plus utile pour vous.", "cta": "Suggérer une fonctionnalité" },
+    "install": { "title": "Aide à l’installation", "body": "Instructions d’installation étape par étape et que faire face à l’avertissement de sécurité du premier lancement.", "cta": "Guide d’installation" },
+    "faq": { "title": "FAQ", "body": "Sécurité, confidentialité, autorisations, compatibilité et désinstallation — toutes les réponses.", "cta": "Parcourir la FAQ" }
+  },
+  "emailSubject": "Assistance MacBook Cleaner",
+  "logsTitle": "Envoyer des journaux de diagnostic",
+  "logsBody": "Pour les problèmes délicats, nous pouvons demander les journaux de l’application. Ils sont stockés uniquement sur votre Mac, dans <code>~/Library/Logs/{{bundleId}}</code>, et ne sont jamais envoyés automatiquement. Les journaux peuvent contenir des chemins de fichiers de votre Mac — relisez-les et retirez tout ce que vous préférez ne pas partager avant de les joindre.",
+  "bugTemplate": {
+    "subject": "Rapport de bug — MacBook Cleaner {{version}}",
+    "body": "Ce qui s’est passé :\n\n\nCe à quoi vous vous attendiez :\n\n\nÉtapes pour reproduire :\n1.\n2.\n\nVersion de MacBook Cleaner : {{version}}\nVersion de macOS :\nModèle / puce du Mac :\n"
+  },
+  "featureTemplate": {
+    "subject": "Demande de fonctionnalité — MacBook Cleaner",
+    "body": "Que souhaiteriez-vous que MacBook Cleaner fasse ?\n\n\nEn quoi cela vous aiderait-il ?\n"
+  }
+}

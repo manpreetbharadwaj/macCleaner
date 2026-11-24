@@ -1,19 +1,22 @@
-import { Link } from 'react-router'
+import { useTranslation, Trans } from 'react-i18next'
 import { Mail } from 'lucide-react'
 import { SITE } from '@/config/site'
-import { FAQ_GROUPS } from '@/data/faq'
+import { useFaqGroups } from '@/data/faq'
 import { FAQAccordion } from '@/components/FAQAccordion'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
+import { Link } from '@/components/router'
 
 export function FAQPage() {
+  const { t } = useTranslation('faq')
+  const groups = useFaqGroups()
   return (
     <div className="page">
       <section className="page-hero">
         <div className="container">
-          <SectionHeading level={1} eyebrow="FAQ" title="Frequently asked questions" intro="Straight answers about safety, privacy, compatibility and how MacBook Cleaner works." />
-          <nav className="chip-nav" aria-label="FAQ topics">
-            {FAQ_GROUPS.map((g) => (
+          <SectionHeading level={1} eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} />
+          <nav className="chip-nav" aria-label={t('topicsAria')}>
+            {groups.map((g) => (
               <a key={g.title} href={`#${slug(g.title)}`} className="chip-nav__item">
                 {g.title}
               </a>
@@ -22,7 +25,7 @@ export function FAQPage() {
         </div>
       </section>
       <div className="container container--narrow faq-page">
-        {FAQ_GROUPS.map((g) => (
+        {groups.map((g) => (
           <section key={g.title} id={slug(g.title)} className="faq-group" aria-labelledby={`${slug(g.title)}-h`}>
             <Reveal>
               <h2 id={`${slug(g.title)}-h`} className="faq-group__title">
@@ -35,9 +38,14 @@ export function FAQPage() {
         <Reveal className="callout">
           <Mail size={22} aria-hidden="true" />
           <div>
-            <h2>Still have a question?</h2>
+            <h2>{t('stillHaveQuestion')}</h2>
             <p>
-              Email <a href={`mailto:${SITE.supportEmail}`}>{SITE.supportEmail}</a> or visit <Link to="/support">Support</Link>.
+              <Trans
+                t={t}
+                i18nKey="contactLine"
+                values={{ email: SITE.supportEmail }}
+                components={{ email: <a href={`mailto:${SITE.supportEmail}`} />, support: <Link to="/support" /> }}
+              />
             </p>
           </div>
         </Reveal>

@@ -1,0 +1,100 @@
+{
+  "legalReviewNotice": "Terjemahan ini dihasilkan oleh mesin penerjemah dan belum ditinjau oleh pengacara yang berkualifikasi di wilayah hukum Anda. Versi bahasa Inggris dari ketentuan ini adalah teks yang sah; jika ada sesuatu di sini yang bertentangan dengannya, versi bahasa Inggris yang berlaku.",
+  "title": "Ketentuan Layanan",
+  "shortVersion": "<b>Versi singkatnya.</b> Anda dapat menggunakan {{siteName}} di Mac yang Anda miliki atau kendalikan. Anda yang memutuskan apa yang dihapus, jadi tinjaulah item dan simpan backup. Kami tidak dapat menjamin berapa banyak ruang yang akan Anda pulihkan. Software disediakan sebagaimana adanya.",
+  "shortVersionNote": "Ringkasan ini hanya untuk kemudahan; ketentuan lengkap di bawah ini yang berlaku.",
+  "sections": {
+    "acceptance": {
+      "title": "Penerimaan ketentuan ini",
+      "body": [{ "p": "Ketentuan Layanan ini (“Ketentuan”) adalah perjanjian antara Anda dan {{companyName}} (“kami”) yang mencakup aplikasi {{siteName}} untuk macOS (“Software”) dan situs web ini (“Situs”). Dengan mengunduh, menginstal, atau menggunakan Software, atau menggunakan Situs, Anda menyetujui Ketentuan ini. Jika Anda tidak setuju, jangan gunakan keduanya. Jika Anda menggunakan Software atas nama sebuah organisasi, Anda memastikan bahwa Anda berwenang untuk menyetujui Ketentuan ini untuknya." }]
+    },
+    "license": {
+      "title": "Lisensi untuk menggunakan Software",
+      "body": [{ "p": "Sesuai dengan Ketentuan ini, kami memberi Anda lisensi pribadi, non-eksklusif, tidak dapat dipindahtangankan, dan dapat dicabut untuk mengunduh, menginstal, dan menggunakan Software pada Mac yang Anda miliki atau kendalikan, untuk tujuan pribadi atau bisnis internal Anda. Software ini dilisensikan, bukan dijual. Kami menyimpan semua hak yang tidak diberikan secara tegas." }]
+    },
+    "restrictions": {
+      "title": "Batasan lisensi",
+      "body": [
+        { "p": "Kecuali jika hukum yang berlaku secara tegas mengizinkannya, Anda tidak boleh:" },
+        { "ul": ["menyalin, memodifikasi, menerjemahkan, atau membuat karya turunan dari Software;", "melakukan reverse engineering, dekompilasi, atau pembongkaran terhadap Software;", "menjual, menyewakan, melisensikan ulang, mendistribusikan ulang, atau mempublikasikan Software, atau menawarkannya untuk diunduh dari tempat lain selain Situs ini;", "menghapus atau mengubah pemberitahuan hak cipta, merek dagang, atau pemberitahuan lain mana pun;", "menggunakan Software untuk melanggar hukum mana pun, atau untuk mengakses atau menghapus data yang tidak berwenang Anda kelola."] }
+      ]
+    },
+    "price": {
+      "title": "Harga",
+      "body": [{ "p": "Versi {{version}} dari Software disediakan tanpa biaya dan tanpa pembelian dalam aplikasi atau langganan. Jika kami memperkenalkan fitur atau versi berbayar di masa depan, kami akan menjelaskannya dengan jelas terlebih dahulu, dan Anda tidak akan pernah dikenakan biaya tanpa persetujuan Anda." }]
+    },
+    "your-responsibility": {
+      "title": "Tanggung jawab Anda atas apa yang Anda hapus",
+      "body": [
+        { "p": "Software membantu Anda mengidentifikasi file dan menyarankan apa yang mungkin aman dihapus, tetapi <b>Anda yang memutuskan apa yang dihapus</b>. Label seperti “Safe” dan “Review” adalah rekomendasi berdasarkan jenis dan lokasi file, bukan jaminan atas nilai sebuah file bagi Anda. Mohon tinjau item sebelum membersihkan — khususnya file Anda sendiri dan apa pun yang ditandai untuk ditinjau." },
+        { "p": "Software memindahkan item yang Anda setujui ke Trash macOS, dari mana item tersebut biasanya dapat dipulihkan hingga Trash dikosongkan. Mengosongkan Trash menghapusnya secara permanen; itu adalah tindakan Anda, di luar Software. Jika Anda mengaktifkan pembersihan otomatis di Scheduled Cleanup, Anda mengizinkan Software memindahkan cache developer yang memenuhi syarat yang dijelaskan dalam Software ke Trash tanpa bertanya setiap kali." },
+        { "p": "Menghapus cache atau data aplikasi mungkin mengharuskan aplikasi lain membangun ulang atau mengunduh ulang data tersebut, dapat membuat Anda keluar dari beberapa aplikasi, atau dapat mengubah perilakunya. Mencopot pemasangan sebuah aplikasi beserta file dukungannya menghapus data aplikasi tersebut yang tersimpan secara lokal." }
+      ]
+    },
+    "backups": {
+      "title": "Backup",
+      "body": [{ "p": "Anda bertanggung jawab untuk menyimpan backup data Anda secara rutin dan terbaru (misalnya dengan Time Machine) sebelum menggunakan Software. Kami sangat menyarankan memiliki backup terbaru sebelum melakukan pembersihan apa pun." }]
+    },
+    "no-guarantee": {
+      "title": "Tidak ada garansi hasil",
+      "body": [{ "p": "Jumlah penyimpanan yang ditemukan atau dibantu dipulihkan oleh Software sepenuhnya bergantung pada Mac Anda dan cara Anda menggunakannya. Angka yang ditampilkan dalam Software adalah estimasi, dan angka di Situs ini adalah contoh ilustratif. Ruang yang digunakan oleh item di Trash hanya dibebaskan saat Trash dikosongkan, dan aplikasi dapat membuat ulang cache dari waktu ke waktu. Kami tidak menjanjikan jumlah penyimpanan yang dipulihkan secara tertentu atau peningkatan apa pun dalam kecepatan atau performa Mac Anda. Informasi performa, baterai, dan sistem yang ditampilkan dalam Software dilaporkan oleh macOS dan disediakan hanya untuk informasi; itu bukan diagnosis, dan Software tidak memperbaiki perangkat keras atau baterai." }]
+    },
+    "updates": {
+      "title": "Pembaruan dan perubahan pada Software",
+      "body": [{ "p": "Kami dapat merilis pembaruan yang menambah, mengubah, atau menghapus fitur, dan kami dapat berhenti menawarkan Software kapan saja. Software tidak memperbarui dirinya sendiri; versi baru ditawarkan di Situs ini. Ketentuan ini berlaku untuk pembaruan kecuali disertai ketentuan yang berbeda." }]
+    },
+    "early-release": {
+      "title": "Rilis awal",
+      "body": [{ "p": "{{siteName}} adalah produk baru. Meskipun telah dibangun dengan pengaman yang ekstensif, produk ini mungkin mengandung bug atau berperilaku tak terduga pada beberapa konfigurasi.{{notarizedNote}} Mohon <link-support>laporkan masalah</link-support> agar kami dapat memperbaikinya." }],
+      "notarizedNote": " Versi saat ini belum dinotarisasi oleh Apple, sehingga macOS akan menampilkan peringatan saat pertama kali Anda membukanya; langkah instalasi ada di halaman Download."
+    },
+    "privacy": {
+      "title": "Privasi",
+      "body": [{ "p": "<link-privacy>Kebijakan Privasi</link-privacy> kami menjelaskan bagaimana Software dan Situs menangani informasi. Singkatnya, Software memproses file Anda secara lokal di Mac Anda dan tidak mengirim informasi tentangnya kepada kami." }]
+    },
+    "ip": {
+      "title": "Kekayaan intelektual",
+      "body": [{ "p": "Software dan Situs, termasuk kode, desain, teks, grafik, serta nama dan logo {{siteName}}, dimiliki oleh {{companyName}} atau pemberi lisensinya dan dilindungi oleh hukum kekayaan intelektual. Ketentuan ini tidak memberi Anda hak apa pun untuk menggunakan nama atau logo kami." }]
+    },
+    "apple": {
+      "title": "Merek dagang Apple",
+      "body": [{ "p": "{{siteName}} adalah aplikasi independen dan tidak berafiliasi dengan, didukung, atau disponsori oleh Apple Inc. Apple, Mac, MacBook, macOS, Finder, Safari, Xcode, dan Time Machine adalah merek dagang Apple Inc., terdaftar di AS dan negara lain. Nama produk lain adalah merek dagang masing-masing pemiliknya." }]
+    },
+    "feedback": {
+      "title": "Masukan",
+      "body": [{ "p": "Jika Anda mengirimkan saran atau masukan kepada kami, Anda mengizinkan kami menggunakannya untuk meningkatkan produk kami tanpa kewajiban apa pun kepada Anda." }]
+    },
+    "warranty": {
+      "title": "Penyangkalan garansi",
+      "body": [{ "p": "Sejauh yang diizinkan oleh hukum, Software dan Situs disediakan “sebagaimana adanya” dan “sebagaimana tersedia”, tanpa garansi dalam bentuk apa pun, baik tersurat, tersirat, maupun berdasarkan undang-undang, termasuk garansi tersirat atas kelayakan jual, kesesuaian untuk tujuan tertentu, kepemilikan, dan non-pelanggaran. Kami tidak menjamin bahwa Software akan bebas dari kesalahan atau tidak terputus, bahwa Software akan mengidentifikasi setiap file yang dapat dihapus, atau bahwa setiap item yang disarankannya aman untuk Anda hapus.", "caps": true }]
+    },
+    "liability": {
+      "title": "Batasan tanggung jawab",
+      "body": [
+        { "p": "Sejauh yang diizinkan oleh hukum, {{companyName}} tidak akan bertanggung jawab atas kerugian tidak langsung, insidental, khusus, konsekuensial, atau punitif apa pun, atau atas kehilangan data, file, keuntungan, pendapatan, atau goodwill apa pun, yang timbul dari atau terkait dengan penggunaan Anda (atau ketidakmampuan untuk menggunakan) Software atau Situs — termasuk penghapusan file yang Anda pilih atau izinkan — bahkan jika kami telah diberitahu tentang kemungkinan kerugian tersebut.", "caps": true },
+        { "p": "Sejauh yang diizinkan oleh hukum, total tanggung jawab kami untuk setiap klaim terkait Software atau Situs dibatasi pada jumlah yang lebih besar antara jumlah yang Anda bayarkan kepada kami untuk Software dalam dua belas bulan sebelum klaim, atau USD 50 [placeholder — konfirmasi jumlah dan mata uang].", "caps": true },
+        { "p": "Beberapa wilayah hukum tidak mengizinkan pengecualian garansi atau batasan tanggung jawab tertentu, sehingga beberapa hal di atas mungkin tidak berlaku bagi Anda. Tidak ada dalam Ketentuan ini yang membatasi tanggung jawab yang tidak dapat dibatasi oleh hukum, atau hak Anda sebagai konsumen berdasarkan undang-undang." }
+      ]
+    },
+    "termination": {
+      "title": "Pengakhiran",
+      "body": [{ "p": "Anda dapat berhenti menggunakan Software kapan saja dengan mencopot pemasangannya. Lisensi Anda berakhir secara otomatis jika Anda secara material melanggar Ketentuan ini. Setelah pengakhiran, Anda harus berhenti menggunakan dan menghapus Software. Bagian-bagian yang menurut sifatnya harus tetap berlaku setelah pengakhiran akan tetap berlaku." }]
+    },
+    "governing-law": {
+      "title": "Hukum yang mengatur",
+      "body": [{ "p": "Ketentuan ini diatur oleh hukum {{jurisdiction}}, tanpa memperhatikan aturan konflik hukum. Pengadilan {{jurisdiction}} memiliki jurisdiksi atas setiap perselisihan, kecuali jika hukum perlindungan konsumen lokal Anda memberi Anda hak untuk mengajukan proses hukum di tempat Anda tinggal." }]
+    },
+    "changes": {
+      "title": "Perubahan pada ketentuan ini",
+      "body": [{ "p": "Kami dapat memperbarui Ketentuan ini dari waktu ke waktu. Tanggal “Last updated” di atas menunjukkan revisi terbaru; perubahan material juga akan dicatat dalam catatan rilis. Melanjutkan penggunaan Software atau Situs setelah perubahan berlaku berarti Anda menerima Ketentuan yang diperbarui." }]
+    },
+    "general": {
+      "title": "Umum",
+      "body": [{ "p": "Ketentuan ini, bersama dengan Kebijakan Privasi, merupakan keseluruhan perjanjian antara Anda dan kami tentang Software dan Situs. Jika ada ketentuan yang dianggap tidak dapat diberlakukan, ketentuan lainnya tetap berlaku. Kegagalan kami untuk menegakkan suatu ketentuan bukan merupakan pengabaian atasnya." }]
+    },
+    "contact": {
+      "title": "Kontak",
+      "body": [{ "p": "Ada pertanyaan tentang Ketentuan ini? Kirim surel ke {{supportEmail}} atau tulis surat kepada {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

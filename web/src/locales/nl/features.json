@@ -1,0 +1,147 @@
+{
+  "learnMore": "Meer informatie",
+  "cards": {
+    "core": {
+      "smart-clean": { "title": "Smart Clean", "summary": "Eén scan groepeert caches, logboeken, app-restanten, ontwikkelaarsrommel en oude downloads in duidelijke categorieën — Veilige items staan vooraf geselecteerd, de rest wacht op jou." },
+      "storage": { "title": "Storage Explorer", "summary": "Zie wat er echt ruimte inneemt op je schijf — Applicaties, Documenten, Foto's, Video's, Downloads, Cache en Systeemgegevens — gemeten vanuit je echte mappen." },
+      "large-files": { "title": "Zoeken naar grote bestanden", "summary": "Toon bestanden groter dan 500 MB, 1 GB, 5 GB of 10 GB. Filter op type, sorteer op grootte of ouderdom, bekijk een voorbeeld met Quick Look." },
+      "downloads": { "title": "Downloads controleren", "summary": "Oude installatieprogramma's, schijfkopieën en archieven, gegroepeerd op ouderdom — van vandaag tot ouder dan 90 dagen. Niets wordt ooit vooraf geselecteerd." },
+      "duplicates": { "title": "Zoeken naar duplicaten", "summary": "Exacte kopieën bevestigd met een SHA-256-controlesom van de volledige inhoud. Bewaar de nieuwste of oudste — er blijft altijd minstens één kopie over." },
+      "apps": { "title": "App-opschoning", "summary": "Bekijk de volledige voetafdruk van een app — caches, logboeken, ondersteuningsbestanden, voorkeuren — en maak vervolgens de gegevens leeg of verwijder de app. Apple-apps zijn beschermd." },
+      "system-junk": { "title": "Systeem- en ontwikkelaarsrommel", "summary": "Wis caches en logboeken die zichzelf opnieuw opbouwen, plus caches van Xcode, simulator, npm, Yarn, pnpm, Gradle en CocoaPods." },
+      "schedule": { "title": "Geplande opschoning", "summary": "Dagelijkse, wekelijkse of maandelijkse achtergrondcontroles die je waarschuwen als er iets de moeite van het opschonen waard is — of, met jouw toestemming, ontwikkelaarscaches wissen." }
+    },
+    "monitor": {
+      "cpu": { "title": "CPU-bewaking", "summary": "Live CPU-gebruik met een grafiek van 60 seconden, onderverdeeld in gebruikers-, systeem- en inactieve tijd." },
+      "memory": { "title": "Geheugengebruik", "summary": "Gebruikt en beschikbaar RAM, geheugendruk, gecomprimeerd geheugen en swap — in gewone taal uitgelegd." },
+      "running-apps": { "title": "Actieve apps", "summary": "Zie welke apps het meeste geheugen en CPU gebruiken, en hoe lang elke app al actief is." },
+      "battery": { "title": "Batterijstatus", "summary": "Lading, cyclusaantal, maximale capaciteit en status, zoals gerapporteerd door macOS. Alleen MacBooks." },
+      "mac-info": { "title": "Mac-informatie", "summary": "Model, chip, kernen, GPU, geheugen, schermen en bedrijfstijd op één plek." },
+      "storage-status": { "title": "Opslagstatus", "summary": "Gebruikte, beschikbare en mogelijk herwinbare ruimte, met één klik vanuit de schoonmaaktool." },
+      "macos": { "title": "macOS-informatie", "summary": "Versie, build en of de eigen updatecontrole van macOS een update heeft gevonden — met een snelkoppeling naar Software-update." }
+    }
+  },
+  "deepDives": {
+    "smart-clean": {
+      "eyebrow": "Smart Clean",
+      "title": "Eén scan. Duidelijke categorieën. Jij beslist.",
+      "body": "Smart Clean controleert in één keer je caches, logboeken, app-restanten, ontwikkelaarstools en Downloads, en sorteert alles in zes duidelijke groepen. Elk item geeft aan waarom het bestaat en wat er gebeurt als je het verwijdert.",
+      "points": ["Systeemrommel, browsercaches, app-restanten, logboeken en crashrapporten, ontwikkelaarsrommel en oude downloads", "Veilige items beginnen geselecteerd; items om te controleren en je eigen bestanden nooit", "Open elke groep om elk afzonderlijk item te bekijken — en uit te vinken"],
+      "alt": "Smart Clean-resultaten gegroepeerd in systeemrommel, browsercaches, app-restanten, logboeken, ontwikkelaarsrommel en oude downloads"
+    },
+    "storage": {
+      "eyebrow": "Storage Explorer",
+      "title": "Zie waar je ruimte naartoe is gegaan.",
+      "body": "MacBook Cleaner meet je echte mappen en tekent ze als één opslagring. Groottes gebruiken decimale gigabytes, op dezelfde manier waarop macOS opslag rapporteert, en ruimte die niet aan een map kan worden toegewezen, wordt eerlijk gelabeld als Systeemgegevens.",
+      "points": ["Applicaties, Documenten, Foto's, Video's, Downloads, Cache, Overig en Systeemgegevens", "Door apps beheerde bibliotheken zoals Foto's worden als geheel gemeten, nooit uitgeplozen", "Vrije ruimte wordt op dezelfde manier uitgelezen als de eigen Opslaginstellingen van macOS dat doen"],
+      "alt": "Opslagscherm met een gekleurde ring onderverdeeld per categorie"
+    },
+    "large-files": {
+      "eyebrow": "Zoeken naar grote bestanden",
+      "title": "Vind de vergeten gigabytes.",
+      "body": "Oude schermopnames, virtuele-machine-images, installatieprogramma's die je wilde verwijderen. Zoeken naar grote bestanden doorzoekt Downloads, Bureaublad, Documenten en Films en toont eerst de grootste bestanden.",
+      "points": ["Groottedrempels: 500 MB, 1 GB, 5 GB en 10 GB", "Filter op video's, schijfkopieën, archieven, installatieprogramma's of documenten", "Quick Look en Toon in Finder voordat je beslist"],
+      "alt": "Lijst met grote bestanden gefilterd op bestanden groter dan 500 MB"
+    },
+    "downloads": {
+      "eyebrow": "Downloads",
+      "title": "Een Downloads-map die je echt kunt overzien.",
+      "body": "Downloads worden gegroepeerd op ouderdom — Vandaag, Deze week, Deze maand, ouder dan 30 dagen en ouder dan 90 dagen — met snelle weergaven voor installatieprogramma's en schijfkopieën, archieven, dubbele downloads en grote downloads.",
+      "points": ["Al gebruikte installatieprogramma's en schijfkopieën zijn gemakkelijk te herkennen", "Dit zijn jouw bestanden: niets in Downloads wordt ooit vooraf geselecteerd", "Elke verwijdering vraagt om bevestiging"],
+      "alt": "Downloads-scherm met bestanden gegroepeerd op ouderdom"
+    },
+    "duplicates": {
+      "eyebrow": "Zoeken naar duplicaten",
+      "title": "Hetzelfde bestand, drie keer? Bewaar er één.",
+      "body": "Duplicaten in Downloads, Bureaublad, Documenten en Films worden vergeleken op exacte grootte, verder beperkt met een snelle vingerafdruk, en vervolgens bevestigd door de volledige inhoud te hashen — zodat “lijkt op elkaar” nooit meetelt als duplicaat.",
+      "points": ["Bewaar met één klik de nieuwste of oudste in elke reeks", "Je kunt nooit alle kopieën van een bestand selecteren — er blijft er altijd één over", "Alle controles worden op je Mac uitgevoerd"],
+      "alt": "Dubbele bestanden gegroepeerd in sets met verspilde ruimte per set"
+    },
+    "apps": {
+      "eyebrow": "App-opschoning",
+      "title": "Verwijder apps — en wat ze achterlaten.",
+      "body": "Kies een app om de werkelijke voetafdruk te zien: het app-pakket plus de caches, logboeken, ondersteuningsbestanden, voorkeuren, containers, opgeslagen status en webgegevens. Maak alleen de gegevens leeg, of verplaats de hele app naar de Prullenmand.",
+      "points": ["Sorteer apps op grootte, naam of minst recent gebruikt", "Apple's eigen apps — en MacBook Cleaner zelf — kunnen niet worden verwijderd", "Alleen apps in /Applications of ~/Applications worden geaccepteerd"],
+      "alt": "App-opschoning met de caches, logboeken en voorkeuren van een app"
+    },
+    "system-junk": {
+      "eyebrow": "Systeem- en ontwikkelaarsrommel",
+      "title": "Caches die zichzelf opnieuw opbouwen. Weg ermee.",
+      "body": "Systeemrommel toont app-caches en logboeken uit je bibliotheek, onderverdeeld in Veilig om op te schonen en Controle aanbevolen. Zet Ontwikkelaarsopschoning aan om zware build- en pakketcaches mee te nemen.",
+      "points": ["Xcode DerivedData, Archieven, iOS- & watchOS-apparaatondersteuning, simulatorcaches en -apparaten", "Caches van npm, Yarn, pnpm, Gradle, CocoaPods en Android-emulatorimages", "Elk item geeft aan wat het je kost om het opnieuw op te bouwen"],
+      "alt": "Scherm met systeemrommel met secties Veilig om op te schonen en Controle aanbevolen"
+    },
+    "schedule": {
+      "eyebrow": "Geplande opschoning",
+      "title": "Blijf opgeruimd zonder erover na te denken.",
+      "body": "Kies dagelijks, wekelijks of maandelijks en een tijdstip. MacBook Cleaner controleert stilletjes op de achtergrond — er opent geen venster — en herinnert je eraan, of maakt een vaste lijst ontwikkelaarscaches leeg als je dat expliciet hebt toegestaan.",
+      "points": ["Herinner me: een melding wanneer er genoeg is om op te schonen of de ruimte bijna op is", "Automatisch opschonen: slechts zes ontwikkelaarscaches, minstens 1 GB, met een maximum van 10 GB en 50 items per keer", "Documenten, Foto's, Video's, Bureaublad en persoonlijke mappen worden nooit automatisch verwijderd"],
+      "alt": "Instellingen voor geplande opschoning met frequentie, modus en in aanmerking komende categorieën"
+    }
+  },
+  "monitorDeepDives": {
+    "performance": {
+      "eyebrow": "Prestaties",
+      "title": "Je Mac in één oogopslag — live.",
+      "body": "Het tabblad Prestaties toont CPU, geheugen, opslag en batterij in één dashboard, met live grafieken van 60 seconden en een Mac-statussamenvatting in gewone taal. Elke status komt rechtstreeks van macOS; er is geen verzonnen “gezondheidsscore”.",
+      "points": ["Live CPU-gebruik onderverdeeld in gebruikers-, systeem- en inactieve tijd", "Gebruikt, beschikbaar, gecomprimeerd geheugen en swap — plus de eigen geheugendruk van macOS", "Wordt elke paar seconden bijgewerkt terwijl je kijkt, en stopt volledig wanneer je dat niet doet"],
+      "alt": "Prestatiedashboard met meters voor CPU, geheugen, opslag en batterij en een Mac-statussamenvatting"
+    },
+    "running-apps": {
+      "eyebrow": "Actieve apps",
+      "title": "Zie wat je geheugen en CPU gebruikt.",
+      "body": "Actieve apps toont de apps in je Dock met hun CPU-gebruik, geheugen en hoe lang ze al actief zijn. Helperprocessen worden bij hun eigen app geteld, zodat de vele tabbladen van een browser samen één eerlijk getal vormen.",
+      "points": ["Sorteer op CPU, geheugen, actieve tijd of naam", "Schakel tussen apps, achtergrondprocessen of alles", "Klik op een app voor details: starttijd, threads, proces-ID en locatie"],
+      "alt": "Lijst met actieve apps gesorteerd op geheugen met CPU en actieve tijd"
+    },
+    "battery": {
+      "eyebrow": "Batterijstatus",
+      "title": "Begrijp je batterij.",
+      "body": "Bekijk op MacBooks de lading, het cyclusaantal, de maximale capaciteit, de stroombron en de status — dezelfde waarden die Systeeminstellingen gebruikt. Op desktop-Macs verschijnt het batterijonderdeel eenvoudigweg niet.",
+      "points": ["Cyclusaantal, met het ontworpen cyclusaantal wanneer de batterij dat rapporteert", "Maximale capaciteit en status precies zoals macOS ze rapporteert", "Alleen informatief — geen enkele app kan een batterij repareren of herstellen"],
+      "alt": "Batterijstatusscherm met lading, maximale capaciteit en cyclusaantal"
+    },
+    "mac-info": {
+      "eyebrow": "Mac-informatie",
+      "title": "Alles wat ertoe doet over je Mac.",
+      "body": "Model, chip, CPU- en GPU-kernen, geheugen, opslag, schermen, macOS-versie en build, en hoe lang je Mac al actief is — eenmaal verzameld en op één overzichtelijke plek getoond.",
+      "points": ["macOS-updatestatus van de eigen automatische controle van macOS, met een snelkoppeling naar Software-update", "Je serienummer wordt nooit gelezen", "Alles blijft op je Mac"],
+      "alt": "Mac-informatiescherm met hardwaredetails en de macOS-versie"
+    }
+  },
+  "page": {
+    "eyebrow": "Functies",
+    "title1": "Maak je Mac schoon. ",
+    "title2": "Begrijp hem ook.",
+    "intro": "MacBook Cleaner combineert een opslaganalysator, zoekfuncties voor grote bestanden en duplicaten, een app-deïnstallatieprogramma en een cacheschoonmaker met een Mac-prestatiemonitor — CPU, geheugen, actieve apps, batterijstatus en Mac-informatie — allemaal lokaal verwerkt op je Mac.",
+    "monitorEyebrow": "Prestaties",
+    "monitorTitle1": "Een Mac-prestatiemonitor ",
+    "monitorTitle2": "die gewone taal spreekt.",
+    "monitorIntro": "Live CPU en geheugen, de apps die de meeste bronnen gebruiken, batterijstatus en alles wat ertoe doet over je Mac — lokaal uitgelezen van macOS, alleen bijgewerkt terwijl je kijkt.",
+    "sampleDataNote": "Getoond met voorbeeldgegevens.",
+    "extrasEyebrow": "Ook in de app",
+    "extrasTitle": "Doordachte details.",
+    "notDoingEyebrow": "Eerlijk verhaal",
+    "notDoingTitle": "Wat MacBook Cleaner niet doet.",
+    "notDoingIntro": "Veel “schoonmaak”-apps beloven alles. Dit is wat deze app bewust weglaat.",
+    "ctaTitle": "Klaar om te zien wat er ruimte inneemt?",
+    "jumpToFeature": "Ga naar functie",
+    "extras": [
+      { "title": "Scanuitsluitingen", "body": "Voeg bestanden of mappen toe die nooit mogen worden voorgesteld — handmatig of volgens schema." },
+      { "title": "Bevestigen voor opschoning", "body": "Standaard ingeschakeld. Zet uit om het dialoogvenster over te slaan voor opschoningen met alleen Veilige items; items om te controleren en je eigen bestanden vragen altijd om bevestiging." },
+      { "title": "Schakelaar voor ontwikkelaarsopschoning", "body": "Verberg caches van Xcode, simulator en pakketbeheerders volledig als je ze niet nodig hebt." },
+      { "title": "Licht, donker of systeem", "body": "Volgt het uiterlijk van je Mac, of kies er zelf een." },
+      { "title": "Starten bij aanmelden", "body": "Optioneel en standaard uitgeschakeld." },
+      { "title": "Systeemeigen meldingen", "body": "Herinneringen en samenvattingen van geplande opschoning, via de meldingen van macOS." },
+      { "title": "Prullenmandoverzicht", "body": "Zie hoeveel ruimte de Prullenmand gebruikt en open hem in Finder wanneer je klaar bent om hem leeg te maken." },
+      { "title": "Alle gegevens resetten", "body": "Wis instellingen, uitsluitingen, planning en geschiedenis in één stap. Raakt nooit je bestanden aan." }
+    ],
+    "notDoing": [
+      "Geen RAM-“boost” — Prestaties toont het geheugengebruik, maar verandert er niets aan",
+      "Geen snelheidsbeloftes of aanpassingen van opstartitems",
+      "Geen antivirus- of malwarescan",
+      "Geen permanente verwijdering of veilig wissen van bestanden",
+      "Geen opschoning van systeemmappen buiten je persoonlijke map"
+    ]
+  }
+}

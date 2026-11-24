@@ -1,0 +1,100 @@
+{
+  "legalReviewNotice": "Bu çeviri makine çevirisiyle üretilmiştir ve henüz bulunduğunuz yargı bölgesinde yetkili bir avukat tarafından incelenmemiştir. Bu koşulların İngilizce sürümü yetkili metindir; burada bir çelişki varsa İngilizce sürüm geçerlidir.",
+  "title": "Kullanım Koşulları",
+  "shortVersion": "<b>Kısaca.</b> {{siteName}}'ı sahip olduğunuz veya kontrol ettiğiniz Mac'lerde kullanabilirsiniz. Neyin kaldırılacağına siz karar verirsiniz, bu yüzden öğeleri inceleyin ve yedek tutun. Ne kadar alan kazanacağınızı garanti edemeyiz. Yazılım olduğu gibi sağlanır.",
+  "shortVersionNote": "Bu özet yalnızca kolaylık amaçlıdır; aşağıdaki tam koşullar geçerlidir.",
+  "sections": {
+    "acceptance": {
+      "title": "Bu koşulların kabulü",
+      "body": [{ "p": "Bu Kullanım Koşulları (“Koşullar”), macOS için {{siteName}} uygulamasını (“Yazılım”) ve bu web sitesini (“Web Sitesi”) kapsayan, sizinle {{companyName}} (“biz”) arasında bir anlaşmadır. Yazılımı indirerek, yükleyerek veya kullanarak ya da Web Sitesini kullanarak bu Koşulları kabul etmiş olursunuz. Kabul etmiyorsanız, bunları kullanmayın. Yazılımı bir kuruluş adına kullanıyorsanız, bu Koşulları o kuruluş için kabul etmeye yetkili olduğunuzu onaylarsınız." }]
+    },
+    "license": {
+      "title": "Yazılımı kullanma lisansı",
+      "body": [{ "p": "Bu Koşullara tabi olarak, size kişisel, münhasır olmayan, devredilemez, iptal edilebilir bir lisans vererek Yazılımı sahip olduğunuz veya kontrol ettiğiniz Mac'lere indirme, yükleme ve kullanma hakkı tanıyoruz; bu, kişisel veya kurumsal iç amaçlarınız içindir. Yazılım lisanslanmıştır, satılmamıştır. Açıkça verilmeyen tüm hakları saklı tutarız." }]
+    },
+    "restrictions": {
+      "title": "Lisans kısıtlamaları",
+      "body": [
+        { "p": "Geçerli yasanın açıkça izin verdiği durumlar dışında, şunları yapamazsınız:" },
+        { "ul": ["Yazılımı kopyalamak, değiştirmek, çevirmek veya türev çalışmalar oluşturmak;", "Yazılımı tersine mühendislik yapmak, kaynak koduna dönüştürmek veya parçalarına ayırmak;", "Yazılımı satmak, kiralamak, kiraya vermek, alt lisanslamak, yeniden dağıtmak veya yayınlamak ya da bu Web Sitesi dışında herhangi bir yerden indirilmeye sunmak;", "Herhangi bir telif hakkı, ticari marka veya diğer bildirimleri kaldırmak veya değiştirmek;", "Yazılımı herhangi bir yasayı ihlal edecek şekilde veya yönetmeye yetkili olmadığınız verilere erişmek ya da bunları kaldırmak için kullanmak."] }
+      ]
+    },
+    "price": {
+      "title": "Fiyat",
+      "body": [{ "p": "Yazılımın {{version}} sürümü, uygulama içi satın alma veya abonelik olmaksızın ücretsiz olarak sunulmaktadır. Gelecekte ücretli özellikler veya sürümler sunarsak, bunları önceden açıkça açıklayacağız ve kabul etmeden asla ücretlendirilmeyeceksiniz." }]
+    },
+    "your-responsibility": {
+      "title": "Kaldırdığınız şeylere ilişkin sorumluluğunuz",
+      "body": [
+        { "p": "Yazılım dosyaları belirlemenize yardımcı olur ve neyin kaldırılması güvenli olabileceğini önerir, ancak <b>neyin kaldırılacağına siz karar verirsiniz</b>. “Güvenli” ve “İncele” gibi etiketler, dosya türüne ve konumuna dayalı önerilerdir; bir dosyanın sizin için değerine dair garantiler değildir. Temizlemeden önce öğeleri — özellikle kendi dosyalarınızı ve incelenmek üzere işaretlenen her şeyi — gözden geçirin." },
+        { "p": "Yazılım, onayladığınız öğeleri, Çöp Kutusu boşaltılana kadar normalde geri yüklenebildikleri macOS Çöp Kutusu'na taşır. Çöp Kutusu'nu boşaltmak onları kalıcı olarak kaldırır; bu, Yazılımın dışında sizin eyleminizdir. Zamanlanmış Temizlik'te otomatik temizlemeyi etkinleştirirseniz, Yazılımın her seferinde sormadan Yazılımda açıklanan uygun geliştirici önbelleklerini Çöp Kutusu'na taşımasına izin vermiş olursunuz." },
+        { "p": "Önbellekleri veya uygulama verilerini kaldırmak, diğer uygulamaların o verileri yeniden oluşturmasını veya yeniden indirmesini gerektirebilir, sizi bazı uygulamalardan çıkış yaptırabilir veya davranışlarını değiştirebilir. Bir uygulamayı destek dosyalarıyla birlikte kaldırmak, o uygulamanın yerel olarak saklanan verilerini kaldırır." }
+      ]
+    },
+    "backups": {
+      "title": "Yedekler",
+      "body": [{ "p": "Yazılımı kullanmadan önce verilerinizin düzenli, güncel yedeklerini (örneğin Time Machine ile) tutmaktan siz sorumlusunuz. Herhangi bir temizlikten önce güncel bir yedeğe sahip olmanızı kesinlikle tavsiye ederiz." }]
+    },
+    "no-guarantee": {
+      "title": "Sonuç garantisi yok",
+      "body": [{ "p": "Yazılımın bulduğu veya geri kazanmanıza yardımcı olduğu depolama miktarı tamamen Mac'inize ve onu nasıl kullandığınıza bağlıdır. Yazılımda gösterilen rakamlar tahminidir ve bu Web Sitesindeki rakamlar örnekleyici örneklerdir. Çöp Kutusu'ndaki öğelerin kullandığı alan yalnızca Çöp Kutusu boşaltıldığında serbest kalır ve uygulamalar zamanla önbellekleri yeniden oluşturabilir. Belirli bir miktarda geri kazanılan depolama alanı veya Mac'inizin hızında ya da performansında bir iyileşme vaat etmiyoruz. Yazılımda gösterilen performans, pil ve sistem bilgileri macOS tarafından raporlanır ve yalnızca bilgi amaçlıdır; bir teşhis değildir ve Yazılım donanımı veya pilleri onarmaz." }]
+    },
+    "updates": {
+      "title": "Yazılımdaki güncellemeler ve değişiklikler",
+      "body": [{ "p": "Özellik ekleyen, değiştiren veya kaldıran güncellemeler yayınlayabiliriz ve Yazılımı sunmayı istediğimiz zaman durdurabiliriz. Yazılım kendini güncellemez; yeni sürümler bu Web Sitesinde sunulur. Farklı koşullarla gelmedikleri sürece, bu Koşullar güncellemeler için de geçerlidir." }]
+    },
+    "early-release": {
+      "title": "Erken sürüm",
+      "body": [{ "p": "{{siteName}} yeni bir üründür. Kapsamlı güvenlik önlemleriyle oluşturulmuş olsa da, bazı yapılandırmalarda hatalar içerebilir veya beklenmedik şekilde davranabilir.{{notarizedNote}} Düzeltebilmemiz için lütfen <link-support>sorunları bildirin</link-support>." }],
+      "notarizedNote": " Mevcut sürüm Apple tarafından onaylanmamıştır, bu yüzden ilk açtığınızda macOS bir uyarı gösterecektir; kurulum adımları İndir sayfasındadır."
+    },
+    "privacy": {
+      "title": "Gizlilik",
+      "body": [{ "p": "<link-privacy>Gizlilik Politikamız</link-privacy>, Yazılım ve Web Sitesinin bilgileri nasıl işlediğini açıklar. Kısaca, Yazılım dosyalarınızı Mac'inizde yerel olarak işler ve bunlar hakkında bize bilgi göndermez." }]
+    },
+    "ip": {
+      "title": "Fikri mülkiyet",
+      "body": [{ "p": "Kodu, tasarımı, metni, grafikleri ve {{siteName}} adı ile logosu dahil olmak üzere Yazılım ve Web Sitesi, {{companyName}}'a veya lisans verenlerine aittir ve fikri mülkiyet yasalarıyla korunur. Bu Koşullar, adlarımızı veya logolarımızı kullanma hakkı vermez." }]
+    },
+    "apple": {
+      "title": "Apple ticari markaları",
+      "body": [{ "p": "{{siteName}}, bağımsız bir uygulamadır ve Apple Inc. ile bağlantılı, onaylı veya sponsorlu değildir. Apple, Mac, MacBook, macOS, Finder, Safari, Xcode ve Time Machine, ABD ve diğer ülkelerde tescilli Apple Inc. ticari markalarıdır. Diğer ürün adları, ilgili sahiplerinin ticari markalarıdır." }]
+    },
+    "feedback": {
+      "title": "Geri bildirim",
+      "body": [{ "p": "Bize öneriler veya geri bildirim gönderirseniz, bunları size karşı herhangi bir yükümlülük olmaksızın ürünlerimizi geliştirmek için kullanmamıza izin vermiş olursunuz." }]
+    },
+    "warranty": {
+      "title": "Garanti reddi",
+      "body": [{ "p": "Yasanın izin verdiği azami ölçüde, Yazılım ve Web Sitesi, satılabilirlik, belirli bir amaca uygunluk, mülkiyet ve ihlal etmeme gibi zımni garantiler dahil olmak üzere açık, zımni veya yasal hiçbir türde garanti olmaksızın “olduğu gibi” ve “mevcut olduğu şekilde” sağlanır. Yazılımın hatasız veya kesintisiz olacağını, kaldırılabilir her dosyayı tanımlayacağını veya önerdiği her öğenin kaldırılmasının sizin için güvenli olacağını garanti etmiyoruz.", "caps": true }]
+    },
+    "liability": {
+      "title": "Sorumluluk sınırlaması",
+      "body": [
+        { "p": "Yasanın izin verdiği azami ölçüde, {{companyName}}, seçtiğiniz veya izin verdiğiniz dosyaların kaldırılması dahil olmak üzere Yazılımı veya Web Sitesini kullanmanızdan (veya kullanamamanızdan) kaynaklanan veya bunlarla ilgili hiçbir dolaylı, arızi, özel, sonuçsal veya cezai zarardan ya da veri, dosya, kâr, gelir veya itibar kaybından, bu tür zararların olasılığı konusunda bilgilendirilmiş olsak bile sorumlu olmayacaktır.", "caps": true },
+        { "p": "Yasanın izin verdiği ölçüde, Yazılım veya Web Sitesiyle ilgili herhangi bir talebe ilişkin toplam sorumluluğumuz, talepten önceki on iki ay içinde Yazılım için bize ödediğiniz tutar veya 50 ABD doları [geçici değer — tutar ve para birimi onaylanacak] değerlerinden büyük olanıyla sınırlıdır.", "caps": true },
+        { "p": "Bazı yargı bölgeleri belirli garanti istisnalarına veya sorumluluk sınırlamalarına izin vermez, bu nedenle yukarıdakilerin bir kısmı sizin için geçerli olmayabilir. Bu Koşullardaki hiçbir şey, yasayla sınırlandırılamayan sorumluluğu veya tüketici olarak yasal haklarınızı sınırlamaz." }
+      ]
+    },
+    "termination": {
+      "title": "Fesih",
+      "body": [{ "p": "Yazılımı kaldırarak istediğiniz zaman kullanmayı bırakabilirsiniz. Bu Koşulları önemli ölçüde ihlal ederseniz lisansınız otomatik olarak sona erer. Fesih üzerine Yazılımı kullanmayı durdurmalı ve silmelisiniz. Doğası gereği fesihten sonra da geçerli olması gereken bölümler geçerliliğini sürdürür." }]
+    },
+    "governing-law": {
+      "title": "Uygulanacak hukuk",
+      "body": [{ "p": "Bu Koşullar, çatışan hukuk kurallarına bakılmaksızın {{jurisdiction}} yasalarına tabidir. {{jurisdiction}} mahkemeleri, yerel tüketici koruma yasanızın yaşadığınız yerde dava açma hakkı verdiği durumlar dışında, her türlü anlaşmazlık üzerinde yetkilidir." }]
+    },
+    "changes": {
+      "title": "Bu koşullardaki değişiklikler",
+      "body": [{ "p": "Bu Koşulları zaman zaman güncelleyebiliriz. Üstteki “Son güncelleme” tarihi en son revizyonu gösterir; önemli değişiklikler sürüm notlarında da belirtilecektir. Değişiklikler yürürlüğe girdikten sonra Yazılımı veya Web Sitesini kullanmaya devam etmeniz, güncellenmiş Koşulları kabul ettiğiniz anlamına gelir." }]
+    },
+    "general": {
+      "title": "Genel",
+      "body": [{ "p": "Bu Koşullar, Gizlilik Politikası ile birlikte, Yazılım ve Web Sitesi hakkında sizinle bizim aramızdaki anlaşmanın tamamını oluşturur. Herhangi bir hüküm uygulanamaz bulunursa, geri kalanı yürürlükte kalır. Herhangi bir hükmü uygulamamamız, ondan feragat ettiğimiz anlamına gelmez." }]
+    },
+    "contact": {
+      "title": "İletişim",
+      "body": [{ "p": "Bu Koşullar hakkında sorularınız mı var? {{supportEmail}} adresine e-posta gönderin veya {{companyName}}, {{companyAddress}} adresine yazın." }]
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "eyebrow": "Preguntas frecuentes",
+  "title": "Preguntas frecuentes",
+  "intro": "Respuestas claras sobre seguridad, privacidad, compatibilidad y el funcionamiento de MacBook Cleaner.",
+  "topicsAria": "Temas de las preguntas frecuentes",
+  "stillHaveQuestion": "¿Todavía tienes una pregunta?",
+  "contactLine": "Escribe a <email>{{email}}</email> o visita <support>Soporte</support>.",
+  "groups": {
+    "basics": {
+      "title": "Lo básico",
+      "items": {
+        "what-is-it": {
+          "question": "¿Qué es MacBook Cleaner?",
+          "answer": [
+            "MacBook Cleaner es una app de macOS que te muestra qué está usando tu almacenamiento y te ayuda a eliminar lo que no necesitas: cachés, registros, restos de apps, cachés de compilación de desarrollo, descargas antiguas, archivos grandes y duplicados exactos.",
+            "También incluye un panel de Rendimiento: uso de CPU y memoria en vivo, las apps que más recursos consumen, estado de la batería en MacBook e información clave sobre tu Mac y macOS.",
+            "Revisas todo antes de que se elimine, y los elementos eliminados van a la Papelera en lugar de borrarse de forma permanente."
+          ]
+        },
+        "what-files": {
+          "question": "¿Qué archivos puede limpiar?",
+          "answer": [
+            "Cachés y registros de apps y del sistema en tu Library de usuario; cachés de Safari, Chrome, Edge y Firefox; cachés dejadas por apps que has desinstalado; cachés de desarrollo (Xcode DerivedData, Archives, soporte de dispositivos, datos de Simulator, npm, Yarn, pnpm, Gradle, CocoaPods, imágenes de emulador de Android); y — solo cuando tú los eliges — archivos grandes, descargas antiguas y archivos duplicados en Descargas, Escritorio, Documentos y Películas.",
+            "También puede desinstalar apps de tu carpeta Aplicaciones junto con sus datos residuales."
+          ]
+        },
+        "free": {
+          "question": "¿Es gratis MacBook Cleaner?",
+          "answer": ["Todas las funciones están disponibles durante una prueba gratuita de {{trialDays}} días — sin necesidad de cuenta ni tarjeta de crédito para empezar. Después, un único pago de {{price}} la desbloquea para siempre: sin suscripción, sin cargo recurrente. {{priceNote}}", "La clave de licencia se envía por correo electrónico justo después del pago, funciona en un Mac a la vez, y se puede desactivar y mover a un Mac distinto cuando lo necesites."]
+        },
+        "faster": {
+          "question": "¿Limpiar archivos hará que mi Mac vaya más rápido?",
+          "answer": [
+            "MacBook Cleaner libera espacio en disco y te muestra lo que está haciendo tu Mac. Su pestaña Rendimiento muestra qué apps usan más CPU y memoria, para que puedas decidir qué cerrar — pero no «potencia» la RAM, no modifica los elementos de inicio ni cambia los ajustes del sistema, y no prometemos mejoras de velocidad.",
+            "Dicho esto, macOS necesita espacio libre para actualizaciones, memoria virtual y cachés, así que un disco casi lleno puede causar problemas que liberar espacio ayuda a evitar."
+          ]
+        }
+      }
+    },
+    "safety": {
+      "title": "Seguridad y privacidad",
+      "items": {
+        "safe": {
+          "question": "¿Es seguro MacBook Cleaner?",
+          "answer": [
+            "Se diseñó para no perder tus datos. Nada se elimina de forma permanente — los elementos aprobados se mueven a la Papelera, que la app nunca vacía. Tus propios archivos (Descargas, Escritorio, Documentos, Películas) nunca se preseleccionan y siempre necesitan confirmación.",
+            "Una comprobación de seguridad nativa se ejecuta en cada eliminación, sea lo que sea que haya solicitado la interfaz: las ubicaciones del sistema, tu carpeta personal y sus carpetas principales se rechazan, y las rutas que parecen copias de seguridad, llaveros, contraseñas o claves están protegidas.",
+            "Como con cualquier herramienta que elimina archivos, conserva una copia de seguridad (por ejemplo con Time Machine) y revisa antes de limpiar."
+          ]
+        },
+        "review": {
+          "question": "¿Puedo revisar los archivos antes de eliminarlos?",
+          "answer": ["Sí — ese es el núcleo del funcionamiento de la app. Cada elemento muestra su tamaño, ubicación, por qué existe y qué ocurre si lo eliminas. Puedes desmarcar cualquier cosa, previsualizar archivos con Vista rápida, mostrarlos en Finder o añadirlos a una lista de exclusión «no volver a sugerir»."]
+        },
+        "recover": {
+          "question": "¿Se pueden recuperar los archivos eliminados?",
+          "answer": ["Sí, mientras no vacíes la Papelera. MacBook Cleaner mueve los elementos a la Papelera en lugar de eliminarlos, así que puedes abrir la Papelera en Finder y elegir Devolver.", "Ten en cuenta que los elementos en la Papelera siguen ocupando espacio en disco — tu espacio libre aumenta solo cuando tú vacías la Papelera."]
+        },
+        "upload": {
+          "question": "¿Sube mis archivos a internet?",
+          "answer": ["No. El análisis y la limpieza ocurren completamente en tu Mac. La app no contiene analíticas, telemetría, informes de fallos ni sistema de cuentas, y no envía información sobre tus archivos a ningún sitio.", "La única vez que toca internet es cuando haces clic en un enlace (como «Buscar actualizaciones» o «Política de privacidad»), que abre este sitio web en tu navegador."],
+          "linkLabel": "Leer la Política de privacidad"
+        },
+        "permissions": {
+          "question": "¿Qué permisos necesita?",
+          "answer": [
+            "macOS puede pedirte permitir el acceso a tus carpetas Descargas, Escritorio y Documentos para que la app pueda encontrar archivos grandes y descargas antiguas. La primera vez que limpies, macOS pregunta si MacBook Cleaner puede controlar Finder — la app le pide a Finder que mueva los elementos a la Papelera para que se puedan devolver.",
+            "El acceso total al disco es opcional. Permite que la app mida ubicaciones que macOS mantiene privadas, como algunas cachés de apps y la Papelera. Sin él, la app sigue funcionando, simplemente muestra menos información. Las notificaciones solo se usan para recordatorios y resúmenes de la limpieza programada."
+          ]
+        }
+      }
+    },
+    "compatibility": {
+      "title": "Compatibilidad e instalación",
+      "items": {
+        "apple-silicon": {
+          "question": "¿Funciona en Mac con Apple Silicon?",
+          "answerYes": ["Sí. El build verificado actual se ejecuta de forma nativa en Mac con Apple Silicon (chips serie M)."],
+          "answerUnverified": ["Aún no se ha publicado un instalador verificado, por lo que este sitio no afirma nada sobre compatibilidad de arquitectura."]
+        },
+        "intel": {
+          "question": "¿Es compatible con Mac Intel?",
+          "answerUnverified": ["Aún no se ha publicado un instalador verificado, por lo que este sitio no afirma nada sobre compatibilidad con Intel."],
+          "answerUniversal": ["Sí. La descarga es una app universal que se ejecuta de forma nativa tanto en Mac Intel como en Mac con Apple Silicon."],
+          "answerNo": ["Todavía no. El build publicado actualmente es solo para Mac con Apple Silicon. No se ha publicado un build compatible con Intel — esta página se actualizará si eso cambia."]
+        },
+        "macos-versions": {
+          "question": "¿Qué versiones de macOS son compatibles?",
+          "answer": ["{{macosName}} ({{macosVersion}}) o posterior, en Mac {{architecture}}."]
+        },
+        "security-warning": {
+          "question": "¿Por qué macOS muestra una advertencia de seguridad?",
+          "answer": [
+            "MacBook Cleaner todavía no está notarizada por Apple, así que la primera vez que la abres, Gatekeeper de macOS indica que no puede verificar al desarrollador. Esto es normal en apps distribuidas fuera de la Mac App Store sin notarización de Apple — no significa que se haya encontrado algo dañino.",
+            "Descarga la app solo desde este sitio web. Luego ábrela una vez a través de Ajustes del Sistema → Privacidad y seguridad → Abrir de todos modos. La página de Descarga te guía paso a paso."
+          ],
+          "linkLabel": "Cómo abrir la app"
+        },
+        "uninstall": {
+          "question": "¿Cómo desinstalo MacBook Cleaner?",
+          "answer": [
+            "Si activaste la Limpieza programada o Abrir al iniciar sesión, desactívalas primero en la app para que se eliminen sus ayudantes en segundo plano. Luego cierra la app y arrastra MacBook Cleaner desde Aplicaciones a la Papelera.",
+            "Para eliminar también sus ajustes y registros, borra ~/Library/Application Support/{{bundleId}} y ~/Library/Logs/{{bundleId}}. Si te saltaste el primer paso, borra también cualquier archivo {{bundleId}}.*.plist en ~/Library/LaunchAgents."
+          ]
+        }
+      }
+    },
+    "performance": {
+      "title": "Monitorización del rendimiento",
+      "items": {
+        "cpu": {
+          "question": "¿MacBook Cleaner monitoriza el uso de la CPU?",
+          "answer": ["Sí. La pestaña Rendimiento muestra el uso de CPU en vivo con un gráfico de 60 segundos, dividido en tiempo de usuario, sistema e inactivo, y el uso de CPU de cada app en ejecución. Los valores se muestran como porcentaje de la capacidad de procesamiento total de tu Mac."]
+        },
+        "ram-apps": {
+          "question": "¿Puedo ver qué apps usan más RAM?",
+          "answer": ["Sí. Apps en ejecución enumera tus apps abiertas con su memoria, CPU y tiempo de ejecución, y se puede ordenar por cualquiera de ellos. La memoria es la huella física — la misma medida que usa el Monitor de actividad — e incluye los procesos auxiliares de cada app.", "macOS no permite que las apps normales lean la CPU o la memoria de procesos propiedad de otros usuarios (como algunos servicios del sistema), así que esos muestran un guion en lugar de un número."]
+        },
+        "cycle-count": {
+          "question": "¿Puedo comprobar los ciclos de carga de la batería de mi MacBook?",
+          "answer": ["Sí. En los MacBook, la sección Batería muestra los ciclos de carga, la capacidad máxima, la carga, la fuente de alimentación y el estado de la batería tal como los informa macOS. Cuando la batería informa el número de ciclos para el que fue diseñada, también se muestra. Los Mac de sobremesa no tienen batería, así que la sección está oculta."]
+        },
+        "upload-apps": {
+          "question": "¿La app sube los datos de mis aplicaciones en ejecución?",
+          "answer": ["No. Las apps en ejecución, los detalles de procesos, la CPU, la memoria, la batería y la información del Mac se leen localmente desde macOS, se muestran en pantalla y solo se conservan en memoria mientras la app está abierta. Nada de esto se sube, se almacena en disco ni se usa con fines de análisis."],
+          "linkLabel": "Leer la Política de privacidad"
+        },
+        "mac-model": {
+          "question": "¿Puedo ver el modelo de mi Mac y su RAM?",
+          "answer": ["Sí. Info del Mac muestra tu modelo, chip, núcleos de CPU y GPU, memoria, almacenamiento, pantallas, versión y build de macOS, y tiempo de actividad. Tu número de serie nunca se lee."]
+        },
+        "macos-update": {
+          "question": "¿Puede decirme si macOS necesita una actualización?",
+          "answer": ["Muestra el resultado de la propia comprobación automática de Actualización de software de macOS — por ejemplo «Actualizado» o el nombre de una actualización disponible — junto con la última vez que macOS comprobó. MacBook Cleaner nunca contacta con Apple directamente ni instala actualizaciones; el botón Abrir Actualización de software te lleva a Ajustes del Sistema.", "Si macOS no ha registrado ninguna comprobación, el estado se muestra como desconocido en lugar de adivinarse."]
+        },
+        "monitoring-overhead": {
+          "question": "¿La monitorización del rendimiento ralentiza mi Mac?",
+          "answer": ["La monitorización solo se ejecuta mientras la pantalla de Rendimiento está abierta, se ralentiza cuando la ventana no tiene el foco, y se detiene por completo cuando la ventana está oculta o cambias a otra pantalla. Los detalles estáticos, como el modelo de tu Mac, se leen solo una vez por sesión.", "En nuestras mediciones en un MacBook Pro con Apple M1, el trabajo de monitorización promedió alrededor de medio por ciento de un único núcleo de CPU mientras la pantalla estaba abierta."]
+        }
+      }
+    },
+    "automation": {
+      "title": "Análisis y automatización",
+      "items": {
+        "how-often": {
+          "question": "¿Con qué frecuencia debería analizar mi Mac?",
+          "answer": ["No hay una respuesta única — depende de cómo uses tu Mac. Muchas personas consideran suficiente una comprobación semanal. Los desarrolladores que compilan con frecuencia pueden querer analizar más a menudo, ya que las cachés de compilación crecen rápido.", "La Limpieza programada puede avisarte automáticamente, solo cuando hay suficiente que limpiar o el espacio libre escasea."]
+        },
+        "automatic": {
+          "question": "¿La app se ejecuta automáticamente?",
+          "answer": [
+            "Solo si tú la activas. La Limpieza programada está desactivada de forma predeterminada. Cuando está activada, realiza una comprobación en segundo plano diaria, semanal o mensual a la hora que elijas.",
+            "En el modo «Avisarme» solo envía una notificación. En el modo «Limpiar automáticamente» — que requiere una confirmación explícita por separado — mueve a la Papelera una lista fija de seis cachés de desarrollo (Xcode DerivedData, npm, Yarn, pnpm, Gradle, CocoaPods), y solo cuando hay al menos 1 GB, con un límite de 10 GB y 50 elementos por ejecución. Tus archivos personales nunca se tocan automáticamente.",
+            "Abrir al iniciar sesión también es opcional y está desactivado de forma predeterminada."
+          ]
+        }
+      }
+    }
+  }
+}

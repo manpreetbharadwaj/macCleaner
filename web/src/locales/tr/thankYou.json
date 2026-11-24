@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Teşekkürler",
+  "title": "Satın alımınız için teşekkürler",
+  "intro": "Lisans anahtarınız için e-postanızı kontrol edin, ardından MacBook Cleaner'ı açıp Lisansı Etkinleştir'i seçin. Uygulamanın kendisi anahtarınızı onaylayana kadar satın alımınızın kilidi açılmaz — bu sayfa yalnızca onun kullanışlı bir kopyasıdır.",
+  "licenseKeyTitle": "Lisans anahtarınız",
+  "copy": "Kopyala",
+  "copied": "Kopyalandı",
+  "sentCopyTo": "Bir kopyası da {{email}} adresine gönderildi.",
+  "checkEmailTitle": "E-postanızı kontrol edin",
+  "noKeyFound": "Bu sayfanın bağlantısında bir lisans anahtarı bulamadık. Dodo Payments, ödemeden hemen sonra anahtarınızı e-posta ile gönderir — Dodo Payments'tan bir mesaj arayın veya spam klasörünüzü kontrol edin.",
+  "howToActivate": "Nasıl etkinleştirilir",
+  "activateSteps": ["MacBook Cleaner'ı açın (henüz yapmadıysanız aşağıdan indirin).", "Ayarlar → Lisans bölümüne gidin.", "Lisans anahtarınızı yapıştırın ve Etkinleştir'e dokunun."],
+  "oneMacNote": "Lisansınız her seferinde bir Mac'te çalışır. Ayarlar → Lisans üzerinden istediğiniz zaman devre dışı bırakıp başka bir Mac'e aktarabilirsiniz."
+}

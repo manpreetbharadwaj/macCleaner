@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Support",
+  "title": "Wie können wir helfen?",
+  "intro": "Die meisten Antworten finden Sie in den FAQ. Für alles andere ist eine E-Mail der schnellste Weg, uns zu erreichen.",
+  "cards": {
+    "email": { "title": "E-Mail-Support", "body": "Fragen zur Nutzung der App? Schreiben Sie uns, wir melden uns bei Ihnen.", "cta": "{{email}}" },
+    "bug": { "title": "Fehler melden", "body": "Etwas funktioniert nicht? Öffnet eine E-Mail mit einer kurzen Vorlage zum Ausfüllen.", "cta": "Fehler melden" },
+    "feature": { "title": "Funktion vorschlagen", "body": "Sagen Sie uns, was MacBook Cleaner für Sie nützlicher machen würde.", "cta": "Funktion vorschlagen" },
+    "install": { "title": "Installationshilfe", "body": "Schritt-für-Schritt-Installationsanleitung und was bei der Sicherheitswarnung beim ersten Start zu tun ist.", "cta": "Installationsanleitung" },
+    "faq": { "title": "FAQ", "body": "Sicherheit, Datenschutz, Berechtigungen, Kompatibilität und Deinstallation — beantwortet.", "cta": "FAQ durchsuchen" }
+  },
+  "emailSubject": "MacBook Cleaner Support",
+  "logsTitle": "Diagnoseprotokolle senden",
+  "logsBody": "Bei kniffligen Problemen bitten wir eventuell um die Protokolle der App. Diese werden nur auf Ihrem Mac gespeichert, in <code>~/Library/Logs/{{bundleId}}</code>, und nie automatisch gesendet. Protokolle können Dateipfade von Ihrem Mac enthalten — sehen Sie sie vor dem Anhängen durch und entfernen Sie, was Sie nicht teilen möchten.",
+  "bugTemplate": {
+    "subject": "Fehlerbericht — MacBook Cleaner {{version}}",
+    "body": "Was ist passiert:\n\n\nWas haben Sie erwartet:\n\n\nSchritte zur Reproduktion:\n1.\n2.\n\nMacBook Cleaner Version: {{version}}\nmacOS-Version:\nMac-Modell / Chip:\n"
+  },
+  "featureTemplate": {
+    "subject": "Funktionswunsch — MacBook Cleaner",
+    "body": "Was soll MacBook Cleaner tun können?\n\n\nWarum würde Ihnen das helfen?\n"
+  }
+}

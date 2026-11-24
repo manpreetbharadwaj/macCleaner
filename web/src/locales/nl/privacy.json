@@ -1,0 +1,159 @@
+{
+  "legalReviewNotice": "Deze vertaling is gemaakt met machinevertaling en is nog niet beoordeeld door een advocaat die bevoegd is in jouw rechtsgebied. De Engelse versie van dit beleid is de gezaghebbende tekst; bij tegenstrijdigheid geldt de Engelse versie.",
+  "title": "Privacybeleid",
+  "shortVersion": "<b>De korte versie.</b> {{siteName}} scant en maakt schoon op je Mac. De App heeft geen analyses, telemetrie, crashrapportage of accounts, en verstuurt nergens informatie over jou, je bestanden of de prestaties van je Mac naartoe. Deze Website gebruikt geen cookies of analyses; onze webhost verwerkt standaard verzoeklogboeken.",
+  "sections": {
+    "who-we-are": {
+      "title": "Wie we zijn",
+      "body": [
+        { "p": "Dit beleid wordt gepubliceerd door {{companyName}} (“wij”), {{companyAddress}}, de ontwikkelaar van {{siteName}}. Het behandelt twee afzonderlijke zaken, die heel verschillend met informatie omgaan:" },
+        { "ul": ["<b>De desktop-app {{siteName}}</b> voor macOS (de “App”) — zie de onderdelen die beginnen met “De App”.", "<b>Deze website</b>, {{siteHost}} (de “Website”), inclusief downloads van de App — zie de onderdelen die beginnen met “De Website”."] }
+      ]
+    },
+    "app-local": {
+      "title": "De App: informatie die op je Mac wordt verwerkt",
+      "body": [
+        { "p": "Om te laten zien wat je opslagruimte gebruikt en je te helpen deze op te schonen, leest de App het volgende op je Mac. Al deze verwerking vindt lokaal plaats, op je apparaat." },
+        { "h3": "Bestands- en mapinformatie" },
+        { "p": "Namen, locaties (paden), groottes en datums van bestanden en mappen in je mappen Downloads, Bureaublad, Documenten en Films; in <code>~/Library/Caches</code> en <code>~/Library/Logs</code>; op bekende locaties voor ontwikkelaarstools (bijvoorbeeld Xcode DerivedData, simulatorgegevens en caches van npm, Yarn, pnpm, Gradle en CocoaPods); en de totale grootte van mappen zoals Foto's en Bibliotheek om het opslagoverzicht op te bouwen. De App leest ook de totale, gebruikte en beschikbare capaciteit van je schijf." },
+        { "h3": "Bestandsinhoud — alleen voor duplicaten" },
+        { "p": "De App leest de inhoud van je documenten, foto's of andere bestanden niet, met één uitzondering: om te bevestigen dat twee bestanden exact identiek zijn, leest de App bestanden die al een identieke grootte hebben en berekent een SHA-256-controlesom van hun inhoud. De controlesom wordt in het geheugen op je Mac berekend en alleen voor die vergelijking gebruikt." },
+        { "h3": "Geïnstalleerde applicaties" },
+        { "p": "Voor App-opschoning leest de App de naam, versie, bundel-ID en het pictogram van elke applicatie uit het eigen <code>Info.plist</code>-bestand van de app, meet de grootte ervan, vraagt Spotlight van macOS naar de datum waarop de app voor het laatst is geopend, en meet gerelateerde caches, logboeken, voorkeuren en ondersteuningsbestanden in je bibliotheek." },
+        { "h3": "Webbrowsers" },
+        { "p": "Voor Safari, Chrome, Edge en Firefox meet de App alleen de grootte van de <b>cache</b>-mappen van elke browser. Het leest je browsegeschiedenis, cookies, wachtwoorden, bladwijzers, automatisch-invulgegevens of extensies niet." }
+      ]
+    },
+    "app-stored": {
+      "title": "De App: informatie die op je Mac wordt opgeslagen",
+      "body": [
+        { "p": "De App slaat een kleine hoeveelheid informatie lokaal op om je voorkeuren te kunnen onthouden. Niets daarvan wordt naar ons gestuurd." },
+        {
+          "ul": [
+            "<b>App-status</b> in <code>{{appSupport}}/state.json</code>: je instellingen, scanuitsluitingen (bestandspaden die je hebt gekozen om uit te sluiten), instellingen voor geplande opschoning, een geschiedenis van opschoningen (datums, hoeveelheden en betrokken items) en samenvattingen van geplande scans.",
+            "<b>Diagnostische logboeken</b> in <code>{{appLogs}}</code>, inclusief een <code>startup-crash.log</code> dat fouten registreert als de App niet kan starten. Logboeken registreren zaken zoals de App-versie, het processortype en de macOS-versie van je Mac, waar de App is geïnstalleerd, en wat scans en opschoningen hebben gedaan — wat bestandspaden kan omvatten.",
+            "<b>Achtergrondhelpers</b>: als je Geplande opschoning of Starten bij aanmelden inschakelt, voegt de App een klein configuratiebestand toe aan <code>~/Library/LaunchAgents</code>, zodat macOS deze op het juiste moment kan starten. De functie uitschakelen verwijdert dit bestand weer."
+          ]
+        },
+        { "p": "Je kunt de instellingen, uitsluitingen, planning en geschiedenis van de App op elk moment wissen met <b>Instellingen → Alle gegevens resetten</b>, of de bovenstaande mappen verwijderen na het deïnstalleren." }
+      ]
+    },
+    "app-network": {
+      "title": "De App: er verlaten geen gegevens je Mac",
+      "body": [
+        { "p": "De App verstuurt geen informatie over jou, je Mac of je bestanden naar ons of naar wie dan ook. In het bijzonder: de App:" },
+        { "ul": ["bevat geen analyses, gebruiksregistratie of telemetrie;", "bevat geen crashrapportagedienst — crashinformatie wordt alleen naar het hierboven beschreven lokale logboek geschreven;", "heeft geen gebruikersaccounts, aanmelding of licentieactivering;", "bevat geen advertenties en geen SDK's van derden die gegevens verzamelen;", "controleert niet automatisch op eigen updates en downloadt niets."] },
+        { "p": "De enige keer dat de App internet gebruikt, is wanneer je op een link erin klikt (zoals “Controleer op updates”, “Privacybeleid” of “Voorwaarden”). Dit opent een pagina van deze Website in je standaardbrowser, en vanaf dat moment gelden de onderstaande Website-onderdelen. De App opent alleen links naar het eigen domein van deze Website." },
+        { "p": "Los van de App kan macOS zelf diagnostische informatie verzamelen als je het delen van analyses met Apple hebt ingeschakeld in Systeeminstellingen. Dat valt onder het privacybeleid van Apple; wij ontvangen dit niet." }
+      ]
+    },
+    "app-cleaning": {
+      "title": "De App: hoe je bestanden worden behandeld tijdens het opschonen",
+      "body": [
+        { "p": "Items die je goedkeurt, worden verplaatst naar de Prullenmand van macOS — de App vraagt Finder dit te doen, zodat “Terugzetten” blijft werken. De App verwijdert bestanden nooit permanent en maakt je Prullenmand nooit leeg. Als je “Automatisch opschonen” inschakelt bij Geplande opschoning, verplaatst de App alleen een vaste lijst ontwikkelaarscaches naar de Prullenmand, binnen de grenzen die in de App en in onze <link-faq-automatic>veelgestelde vragen</link-faq-automatic> worden beschreven." },
+        { "p": "Bestanden blijven in elke stap op je Mac. We ontvangen er nooit kopieën van." }
+      ]
+    },
+    "app-permissions": {
+      "title": "De App: macOS-machtigingen",
+      "body": [
+        { "p": "macOS kan je vragen het volgende aan de App toe te staan. Je kunt elk van deze bekijken of intrekken via Systeeminstellingen → Privacy en beveiliging." },
+        {
+          "ul": [
+            "<b>Toegang tot Downloads, Bureaublad en Documenten</b> — om grote bestanden, oude downloads en duplicaten te vinden.",
+            "<b>Automatisering (Finder bedienen)</b> — om de items die je goedkeurt naar de Prullenmand te verplaatsen.",
+            "<b>Volledige toegang tot schijf (optioneel)</b> — om locaties te meten die macOS privé houdt, zoals sommige caches en de Prullenmand. De App werkt ook zonder.",
+            "<b>Meldingen (optioneel)</b> — voor herinneringen en samenvattingen van geplande opschoning. Meldingen worden lokaal door macOS aangemaakt; er is geen pushdienst bij betrokken."
+          ]
+        }
+      ]
+    },
+    "app-device": {
+      "title": "De App: apparaatinformatie",
+      "body": [{ "p": "De App leest basisinformatie over je Mac — macOS-versie, processorarchitectuur en schijfcapaciteit — om correct te werken en nuttige lokale logboeken te schrijven. Deze informatie blijft op je Mac." }]
+    },
+    "system-monitoring": {
+      "title": "De App: systeembewakingsgegevens",
+      "body": [
+        { "p": "Het tabblad Prestaties van de App laat zien hoe je Mac ervoor staat. Daarvoor leest het het volgende uit van macOS op je apparaat:" },
+        {
+          "ul": [
+            "CPU-gebruik (totaal, gebruiker, systeem en inactief) en geheugengebruik (gebruikt, beschikbaar, gecomprimeerd, in cache, swap en geheugendruk);",
+            "de apps en processen die momenteel actief zijn — hun namen, proces-ID's, CPU- en geheugengebruik, starttijden, aantal threads en bestandslocaties;",
+            "opslagcapaciteit en vrije ruimte;",
+            "op MacBooks, batterij-informatie: lading, oplaadstatus, stroombron, cyclusaantal, capaciteiten en de door macOS gerapporteerde batterijstatus;",
+            "Mac-hardware-informatie: model en modelidentificatie, chip, CPU- en GPU-kernen, geheugengrootte, schermen en de netwerkhostnaam van de Mac;",
+            "macOS-versie, build- en kernelversie, bedrijfstijd, en het resultaat van de eigen Software-updatecontrole van macOS, gelezen uit een bestand dat macOS op je Mac bijhoudt."
+          ]
+        },
+        { "p": "Deze informatie wordt alleen gebruikt om het Prestaties-dashboard weer te geven. Ze wordt lokaal verwerkt, alleen in het geheugen bewaard zolang de App open is (grafieken op korte termijn beslaan de laatste 60 seconden en worden gewist zodra je afsluit), en niet naar schijf geschreven, geüpload, gedeeld, verkocht of gebruikt voor analyses. De App leest het serienummer van je Mac niet, en neemt geen contact op met de servers van Apple om op updates te controleren." },
+        { "p": "Bewaking werkt alleen zolang het scherm Prestaties open is en pauzeert wanneer het venster van de App verborgen is." }
+      ]
+    },
+    "app-sharing-logs": {
+      "title": "De App: wanneer je ervoor kiest informatie met ons te delen",
+      "body": [{ "p": "Als je contact opneemt met ondersteuning, kun je ervoor kiezen ons schermafbeeldingen of de logboekbestanden van de App te sturen. Logboeken kunnen bestandspaden van je Mac bevatten, dus bekijk ze eerst voordat je ze verstuurt. We gebruiken alles wat je stuurt alleen om je met je verzoek te helpen." }]
+    },
+    "website": {
+      "title": "De Website: wat we verzamelen",
+      "body": [
+        { "p": "De Website is een statische site. Ze gebruikt geen cookies, analyses, advertenties, trackingpixels, socialmedia-widgets, of scripts of lettertypen van derden, en heeft geen gebruikersaccounts of formulieren. Je browser kan een gecachte kopie van de pagina's bewaren, zoals bij elke website." },
+        { "p": "<b>Hostinglogboeken.</b> De Website wordt gehost door {{hostingProvider}}. Zoals elke webhost verwerkt deze automatisch technische informatie die nodig is om pagina's te leveren en de dienst te beschermen — zoals je IP-adres, de user agent van je browser, de opgevraagde pagina, de verwijzende pagina en het tijdstip van het verzoek. Dit valt onder de eigen voorwaarden en het privacybeleid van de hostingprovider, en we combineren dit niet met andere informatie." },
+        { "p": "<b>Downloads.</b> Het installatiebestand van de App wordt geleverd door {{downloadHost}}, dat bij het downloaden hetzelfde soort technische verzoekinformatie verwerkt." },
+        { "p": "<b>E-mail.</b> Als je ons e-mailt (bijvoorbeeld via de Ondersteuning-pagina), ontvangen we je e-mailadres, je naam als je die vermeldt, en alles wat je schrijft of bijvoegt. We gebruiken dit alleen om je te antwoorden en om de App te verbeteren op basis van je feedback." }
+      ]
+    },
+    "website-cookies": {
+      "title": "De Website: cookies",
+      "body": [{ "p": "De Website plaatst geen cookies en gebruikt geen vergelijkbare technologieën zoals lokale opslag voor tracking. Als dat ooit verandert, werken we dit beleid eerst bij en vragen we, waar vereist, om je toestemming." }]
+    },
+    "third-parties": {
+      "title": "Diensten van derden en delen",
+      "body": [
+        { "p": "We verkopen, verhuren of ruilen geen persoonlijke informatie, en we delen deze niet voor advertentiedoeleinden. De enige betrokken derden zijn:" },
+        { "ul": ["onze host van de Website en van downloads, die verzoekinformatie verwerken zoals hierboven beschreven; en", "onze e-mailprovider, die ondersteuningse-mails opslaat die je ons stuurt."] },
+        { "p": "We kunnen ook informatie openbaar maken als dit wettelijk vereist is, of om onze rechten of de veiligheid van anderen te beschermen." }
+      ]
+    },
+    "legal-bases": {
+      "title": "Rechtsgronden voor verwerking",
+      "body": [{ "p": "Waar wetten zoals de EU- of UK-AVG van toepassing zijn, baseren we ons op onze gerechtvaardigde belangen om de Website te exploiteren en te beveiligen en op berichten te reageren, en op stappen die je ons vraagt te zetten wanneer je contact met ons opneemt. De lokale verwerking van de App op je Mac staat onder jouw controle en houdt niet in dat wij persoonsgegevens ontvangen." }]
+    },
+    "retention": {
+      "title": "Bewaring van gegevens",
+      "body": [
+        {
+          "ul": [
+            "<b>App-gegevens</b> blijven op je Mac totdat je ze verwijdert (Instellingen → Alle gegevens resetten, of door de mappen te verwijderen die worden genoemd onder “De App: informatie die op je Mac wordt opgeslagen”). De App beperkt automatisch hoeveel geschiedenis en logboekgegevens worden bewaard.",
+            "<b>Hosting- en downloadlogboeken</b> worden bewaard volgens het beleid van de hostingproviders.",
+            "<b>Ondersteuningse-mails</b> worden bewaard zolang nodig is om je te helpen en voor een redelijke periode daarna, en daarna verwijderd, tenzij we ze om juridische redenen moeten bewaren."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "title": "Beveiliging",
+      "body": [{ "p": "Omdat de App je bestanden lokaal verwerkt en niet verzendt, is de belangrijkste bescherming voor die gegevens de beveiliging van je eigen Mac. De App bevat waarborgen tegen het verwijderen van systeemlocaties en gevoelig ogende bestanden, en verplaatst items alleen naar de Prullenmand. De Website wordt via HTTPS geleverd. Geen enkele opslag- of verzendmethode is volledig veilig, maar we werken eraan om alle informatie die we bezitten te beschermen." }]
+    },
+    "your-rights": {
+      "title": "Jouw rechten",
+      "body": [{ "p": "Afhankelijk van waar je woont, kun je rechten hebben op toegang, correctie, verwijdering, beperking of bezwaar tegen de verwerking van je persoonlijke informatie, en op gegevensoverdraagbaarheid. Omdat we zeer weinig bewaren — doorgaans alleen e-mails die je ons hebt gestuurd — is de eenvoudigste manier om deze rechten uit te oefenen een e-mail naar {{privacyEmail}}. Je hebt ook het recht om een klacht in te dienen bij je lokale gegevensbeschermingsautoriteit." }]
+    },
+    "children": {
+      "title": "Privacy van kinderen",
+      "body": [{ "p": "De App en de Website zijn niet gericht op kinderen onder de 13 jaar (of de gelijkwaardige minimumleeftijd waar je woont), en we verzamelen niet bewust persoonlijke informatie van kinderen. Als je denkt dat een kind ons persoonlijke informatie heeft gestuurd, neem dan contact met ons op en we zullen deze verwijderen." }]
+    },
+    "international": {
+      "title": "Internationale gebruikers",
+      "body": [{ "p": "De App werkt overal op dezelfde manier: je gegevens blijven op je Mac. Informatie die door onze hosting- en e-mailproviders wordt verwerkt, kan worden behandeld in andere landen dan het jouwe, onder de waarborgen die deze providers bieden." }]
+    },
+    "changes": {
+      "title": "Wijzigingen in dit beleid",
+      "body": [{ "p": "We zullen dit beleid bijwerken als de App of de Website verandert in hoe informatie wordt behandeld — bijvoorbeeld voordat een App-versie wordt uitgebracht die een netwerkfunctie toevoegt. De datum “Laatst bijgewerkt” bovenaan toont wanneer het voor het laatst is herzien. Belangrijke wijzigingen worden ook vermeld in de releasenotities." }]
+    },
+    "contact": {
+      "title": "Contact",
+      "body": [{ "p": "Vragen over privacy? Mail naar {{privacyEmail}} of schrijf naar {{companyName}}, {{companyAddress}}." }]
+    }
+  }
+}

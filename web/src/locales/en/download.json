@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "iconAlt": "MacBook Cleaner app icon",
+    "title": "MacBook Cleaner for macOS",
+    "lead": "Storage cleanup and performance monitoring for your Mac — processed locally.",
+    "started": "Your download has started — <b>{{fileName}}</b>. When it finishes, follow the steps below.",
+    "fileInfo": "{{fileName}}{{sizePart}} · Disk image (.dmg)",
+    "quickSteps": ["Download MacBook Cleaner.", "Open the downloaded DMG.", "Drag MacBook Cleaner into Applications."],
+    "quickStepsNotarizedLast": "Launch the app.",
+    "quickStepsUnnotarizedLast": "Launch the app — the first time, <a>use Open Anyway</a>.",
+    "specs": { "version": "Version {{version}}", "released": "Released {{date}}", "built": "Built {{date}}", "macos": "{{macos}} or later" },
+    "links": { "releaseNotes": "Release notes", "privacy": "Privacy", "terms": "Terms" },
+    "checksumLabel": "SHA-256",
+    "releaseDetailsAria": "Release details"
+  },
+  "requirements": {
+    "eyebrow": "System requirements",
+    "title": "Will it run on my Mac?",
+    "macos": "macOS",
+    "macosValue": "{{macosName}} ({{macosVersion}}) or later",
+    "processor": "Processor",
+    "intelNote": "Intel Macs aren’t supported by this verified build.",
+    "account": "Account",
+    "accountValue": "None needed"
+  },
+  "install": {
+    "eyebrow": "Installation",
+    "title": "Install in under a minute.",
+    "steps": [
+      { "title": "Download the DMG", "body": "Click <b>Download for Mac</b>. The disk image is saved to your Downloads folder." },
+      { "title": "Open the DMG", "body": "Double-click <code>{{fileName}}</code> in Downloads. A window opens showing the app and your Applications folder." },
+      { "title": "Drag to Applications", "body": "Drag <b>MacBook Cleaner</b> onto the Applications folder, then eject the disk image from Finder’s sidebar." },
+      { "title": "Launch the app", "body": "Open MacBook Cleaner from Applications or Launchpad. Run it from Applications — scheduled cleanup only works from there." }
+    ]
+  },
+  "gatekeeper": {
+    "eyebrow": "First launch",
+    "title": "Seeing a security warning?",
+    "intro": "That’s expected right now — here’s why, and how to open the app safely.",
+    "noticeTitle": "MacBook Cleaner isn’t notarized by Apple yet",
+    "noticeBody1": "Apps distributed outside the Mac App Store are normally signed with an Apple Developer ID and notarized. This version is signed ad hoc — without a Developer ID — and isn’t notarized, so the first time you open it, macOS Gatekeeper says it can’t verify the developer or check the app for malicious software. This message doesn’t mean a problem was found — it means Apple hasn’t reviewed this build.",
+    "noticeBody2": "<b>Only download MacBook Cleaner from this website.</b> If you got the file anywhere else, delete it.",
+    "howtoTitle": "Open it once via System Settings",
+    "steps": [
+      "Open MacBook Cleaner from Applications. When the warning appears, click <b>Done</b> (or <b>Cancel</b>) — don’t move it to the Trash.",
+      "Open <b>System Settings → Privacy & Security</b> and scroll down to the <b>Security</b> section.",
+      "Next to the message about MacBook Cleaner being blocked, click <b>Open Anyway</b>, then confirm with your password or Touch ID.",
+      "Click <b>Open</b> in the final dialog. macOS remembers your choice, so you only need to do this once per version."
+    ],
+    "tip": "On macOS 14 Sonoma and earlier you can also Control-click the app in Applications, choose <b>Open</b>, then click <b>Open</b> again."
+  },
+  "afterInstall": {
+    "eyebrow": "After installing",
+    "title": "Good to know.",
+    "permissions": { "title": "Permissions", "body": "macOS may ask to let the app access Downloads, Desktop and Documents, and to control Finder when you first clean. Full Disk Access is optional.", "link": "Why each one is needed →" },
+    "updates": { "title": "Updates", "body": "<b>Settings → Check for Updates</b> checks, downloads, and verifies new versions for you — nothing installs without your confirmation, and you'll need to restart the app once to finish. Your settings are kept." },
+    "uninstalling": { "title": "Uninstalling", "body": "Turn off Scheduled Cleanup and Launch at Login, then drag the app to the Trash.", "link": "Full steps →" },
+    "stuck": "Stuck?",
+    "contactSupport": "Contact support →"
+  }
+}

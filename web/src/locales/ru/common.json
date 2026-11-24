@@ -1,0 +1,61 @@
+{
+  "skipToContent": "Перейти к содержимому",
+  "tagline": "Очистите свой Mac. Сохраните важное.",
+  "aria": {
+    "requirements": "Требования",
+    "primaryNav": "Основная",
+    "mobileNav": "Мобильная"
+  },
+  "nav": {
+    "features": "Возможности",
+    "pricing": "Цены",
+    "download": "Скачать",
+    "faq": "Вопросы",
+    "support": "Поддержка",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню"
+  },
+  "footer": {
+    "description": "Безопасная локальная очистка памяти и мониторинг производительности для macOS.",
+    "version": "Версия {{version}} · {{macos}} или новее",
+    "columns": {
+      "product": "Продукт",
+      "help": "Помощь",
+      "legal": "Правовая информация"
+    },
+    "links": {
+      "features": "Возможности",
+      "pricing": "Цены",
+      "download": "Скачать",
+      "releaseNotes": "Примечания к выпуску",
+      "faq": "Вопросы",
+      "support": "Поддержка",
+      "installation": "Установка",
+      "privacy": "Конфиденциальность",
+      "terms": "Условия"
+    },
+    "copyright": "© {{year}} {{name}}. Все права защищены.",
+    "trademark": "{{name}} — независимое приложение, не связанное с Apple Inc., не одобренное и не спонсируемое ею. Apple, Mac, MacBook, macOS, Finder, Safari и Xcode являются товарными знаками Apple Inc., зарегистрированными в США и других странах."
+  },
+  "download": {
+    "cta": "Скачать для Mac",
+    "navCta": "Скачать",
+    "starting": "Запуск…",
+    "started": "Загрузка началась",
+    "unavailable": "Загрузка недоступна",
+    "unavailableNote": "Проверенный установщик для Mac пока не опубликован.",
+    "downloading": "Загрузка {{fileName}}",
+    "error": "Не удалось начать загрузку. Повторите попытку через некоторое время или обратитесь в поддержку."
+  },
+  "legal": {
+    "eyebrow": "Правовая информация",
+    "lastUpdated": "Последнее обновление: {{date}}",
+    "onThisPage": "На этой странице"
+  },
+  "languageSwitcher": {
+    "label": "Язык",
+    "current": "Язык: {{language}}",
+    "resetToAutomatic": "Сбросить на автоматический",
+    "resetDescription": "Определять мой язык автоматически в следующий раз"
+  }
+}

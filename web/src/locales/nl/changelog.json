@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Releasenotities",
+  "title": "Nieuw",
+  "intro": "Elke versie van MacBook Cleaner en wat er is veranderd.",
+  "latestBadge": "Nieuwste",
+  "dateUnannounced": "Releasedatum nog niet bekend",
+  "downloadLatest": "Download de nieuwste versie →",
+  "releases": {
+    "firstRelease": {
+      "title": "Eerste release",
+      "summary": "De eerste openbare versie van MacBook Cleaner.",
+      "sections": {
+        "cleanupTools": {
+          "heading": "Schoonmaaktools",
+          "items": [
+            "Smart Clean: één scan gegroepeerd in Systeemrommel, Browsercaches, App-restanten, Logboeken en crashrapporten, Ontwikkelaarsrommel en Oude downloads",
+            "Storage Explorer met een gemeten overzicht per categorie",
+            "Zoeken naar grote bestanden met drempels van 500 MB, 1 GB, 5 GB en 10 GB en typefilters",
+            "Downloads controleren, gegroepeerd op ouderdom",
+            "Zoeken naar duplicaten met SHA-256-verificatie van de volledige inhoud",
+            "App-opschoning: bekijk de caches, logboeken en ondersteuningsbestanden van een app; maak ze leeg of verwijder de app",
+            "Systeemrommel en Ontwikkelaarsopschoning (Xcode, simulators, npm, Yarn, pnpm, Gradle, CocoaPods, Android-emulatorimages)"
+          ]
+        },
+        "performance": {
+          "heading": "Prestaties",
+          "items": [
+            "Nieuw tabblad Prestaties met live CPU- en geheugengrafieken, geheugendruk en swap",
+            "Actieve apps: CPU, geheugen en actieve tijd per app, met gegroepeerde helperprocessen en een detailvenster",
+            "Batterijstatus op MacBooks: lading, cyclusaantal, maximale capaciteit en status zoals gerapporteerd door macOS",
+            "Mac-informatie: model, chip, kernen, GPU, geheugen, schermen, macOS-versie en build, bedrijfstijd",
+            "macOS-updatestatus van de eigen Software-updatecontrole van macOS, met een snelkoppeling naar Systeeminstellingen",
+            "Mac-statussamenvatting met beschrijvende statussen (geen verzonnen scores)"
+          ]
+        },
+        "automation": {
+          "heading": "Automatisering",
+          "items": ["Geplande opschoning — dagelijks, wekelijks of maandelijks — met modi “Herinner me” en optioneel “Automatisch opschonen”", "Systeemeigen macOS-meldingen voor herinneringen en samenvattingen", "Optioneel starten bij aanmelden"]
+        },
+        "safety": {
+          "heading": "Veiligheid",
+          "items": [
+            "Alles wat wordt verwijderd, gaat naar de Prullenmand; niets wordt permanent gewist",
+            "Systeemeigen bescherming voor systeemlocaties, de hoofdmappen van je persoonlijke map, en paden die lijken op back-ups, sleutelhangers of sleutels",
+            "Persoonlijke bestanden worden nooit vooraf geselecteerd en vereisen altijd bevestiging",
+            "Scanuitsluitingen (“dit niet meer voorstellen”)"
+          ]
+        },
+        "interface": {
+          "heading": "Interface",
+          "items": ["Licht, donker en systeemuiterlijk", "Begeleide welkomstervaring bij de eerste start met een optionele stap voor volledige toegang tot schijf"]
+        }
+      }
+    }
+  }
+}
